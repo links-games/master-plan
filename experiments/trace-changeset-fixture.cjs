@@ -9,7 +9,7 @@ if (process.env.DEBUG_CHANGESET_FIXTURE) {
     console.error(
       `[changeset fixture] ${new Date().toISOString()} pid=${process.pid} ${operation}: ${JSON.stringify(value)}`
     );
-  report('start', process.argv);
+  report('start', { argv: process.argv, version: process.version });
   process.on('exit', (code) => report('process exit', code));
   for (const method of ['spawn', 'execFile']) {
     const original = childProcess[method];

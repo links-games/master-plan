@@ -204,6 +204,19 @@ describe('Changesets release formatter', () => {
 });
 
 describe('credential-free PR release versioning', () => {
+  it('provisions release Node and npm for every runtime integration test', () => {
+    const workflow = readFileSync('.github/workflows/release.yml', 'utf8');
+    const testJob = workflow
+      .split('\n  test:')[1]
+      .split('\n  docker-build:')[0];
+    const setup = testJob
+      .split('      - name: Setup Node.js')[1]
+      .split('\n      - name:')[0];
+    expect(setup).toContain('uses: actions/setup-node@v6');
+    expect(setup).toContain("node-version: '24.x'");
+    expect(setup).not.toContain('if:');
+  });
+
   it('checks the fresh merge in the independent lint job and discards changes', () => {
     const workflow = readFileSync('.github/workflows/release.yml', 'utf8');
     const lint = workflow.split('\n  lint:')[1].split('\n  test:')[0];
