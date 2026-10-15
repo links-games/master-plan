@@ -1,0 +1,332 @@
+# Reusable "issue -> latest formal-ai -> pull request" workflow.
+#
+# Destination: links-games/.github/.github/workflows/ai-solve.yml
+# Callers:     every game repository, via templates/workflows/ai-solve.yml
+# Design:      docs/master-plan/ai-pipeline.md (links-games/master-plan)
+#
+# One job decides *what* to solve (issues, PRs, comments, reviews, sweeps).
+# One job per target pulls the newest formal-ai binary, mounts it into the
+# hive-mind image and runs `solve`. A pull request URL continues the same
+# pull request, so the workflow can run on one pull request as many times as
+# needed; the concurrency group queues attempts on the same target instead of
+# cancelling them.
+name: AI solve (reusable)
+
+on:
+  workflow_call:
+    inputs:
+      tool:
+        description: hive-mind `--tool` (agent runs formal-ai through @link-assistant/agent).
+        type: string
+        default: agent
+      model:
+        description: hive-mind `--model`.
+        type: string
+        default: formal-ai
+      formal_ai_image:
+        description: Image the newest formal-ai binary is copied from.
+        type: string
+        default: ghcr.io/link-assistant/formal-ai:latest
+      hive_mind_image:
+        description: Image that runs `solve`.
+        type: string
+        default: konard/hive-mind:latest
+      trigger_label:
+        description: Label that asks for an AI attempt on an issue.
+        type: string
+        default: ai-solve
+      draft_label:
+        description: Label added to every pull request the pipeline worked on.
+        type: string
+        default: ai-draft
+      opt_out_label:
+        description: Label that disables the pipeline for an issue or pull request.
+        type: string
+        default: no-ai
+      max_sweep_attempts:
+        description: Scheduled sweeps stop retrying a pull request after this many attempts.
+        type: number
+        default: 5
+      check_workflows:
+        description: >-
+          Comma separated workflow files accepting `workflow_dispatch` that are
+          dispatched on the pull request head when the token cannot trigger
+          workflows by itself (see link-foundation/.github dispatch-checks).
+        type: string
+        default: ''
+      dispatch_target:
+        description: Issue or pull request number from a manual `workflow_dispatch`.
+        type: string
+        default: ''
+    secrets:
+      AUTOMATION_APP_PRIVATE_KEY:
+        required: false
+      AUTOMATION_TOKEN:
+        required: false
+      ANTHROPIC_API_KEY:
+        required: false
+      CLAUDE_CODE_OAUTH_TOKEN:
+        required: false
+      OPENAI_API_KEY:
+        required: false
+
+permissions: {}
+
+jobs:
+  decide:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: read
+      pull-requests: read
+    outputs:
+      targets: ${{ steps.decide.outputs.targets }}
+    steps:
+      - name: Decide which issues and pull requests to solve
+        id: decide
+        uses: actions/github-script@v8
+        env:
+          TRIGGER_LABEL: ${{ inputs.trigger_label }}
+          DRAFT_LABEL: ${{ inputs.draft_label }}
+          OPT_OUT_LABEL: ${{ inputs.opt_out_label }}
+          MAX_SWEEP_ATTEMPTS: ${{ inputs.max_sweep_attempts }}
+          DISPATCH_TARGET: ${{ inputs.dispatch_target }}
+        with:
+          script: |
+            const { TRIGGER_LABEL, DRAFT_LABEL, OPT_OUT_LABEL } = process.env;
+            const maxAttempts = Number(process.env.MAX_SWEEP_ATTEMPTS);
+            const MARKER = '<!-- ai-solve-attempt -->';
+            const TRUSTED = ['OWNER', 'MEMBER', 'COLLABORATOR'];
+            const { eventName, payload, repo } = context;
+            const base = `https://github.com/${repo.owner}/${repo.repo}`;
+            const isBot = (user) =>
+              !user || user.type === 'Bot' || /\[bot\]$/.test(user.login);
+            const optedOut = (labels) =>
+              (labels || []).some((l) => l.name === OPT_OUT_LABEL);
+            const targets = [];
+            const add = (kind, number, commentId = '') =>
+              targets.push({
+                key: `${kind}-${number}`,
+                kind,
+                number,
+                url: `${base}/${kind === 'pr' ? 'pull' : 'issues'}/${number}`,
+                comment_id: String(commentId),
+              });
+
+            if (eventName === 'issues') {
+              const { action, issue, sender, label } = payload;
+              const opened =
+                action === 'opened' &&
+                TRUSTED.includes(issue.author_association);
+              const labeled =
+                action === 'labeled' && label?.name === TRIGGER_LABEL;
+              if ((opened || labeled) && !isBot(sender) && !optedOut(issue.labels)) {
+                add('issue', issue.number);
+              }
+            } else if (eventName === 'issue_comment') {
+              const { comment, issue } = payload;
+              const command = /^\/(solve|retry|continue)\b/.test(
+                comment.body.trim(),
+              );
+              if (
+                command &&
+                TRUSTED.includes(comment.author_association) &&
+                !isBot(comment.user) &&
+                !optedOut(issue.labels)
+              ) {
+                add(issue.pull_request ? 'pr' : 'issue', issue.number, comment.id);
+              }
+            } else if (eventName === 'pull_request_review') {
+              const { review, pull_request: pr } = payload;
+              if (
+                review.state === 'changes_requested' &&
+                TRUSTED.includes(review.author_association) &&
+                !isBot(review.user) &&
+                /^issue-\d+-/.test(pr.head.ref) &&
+                !optedOut(pr.labels)
+              ) {
+                add('pr', pr.number);
+              }
+            } else if (eventName === 'workflow_dispatch') {
+              const number = Number(process.env.DISPATCH_TARGET);
+              if (number > 0) {
+                const { data } = await github.rest.issues.get({ ...repo, issue_number: number });
+                add(data.pull_request ? 'pr' : 'issue', number);
+              }
+            } else if (eventName === 'schedule') {
+              // Automatic restarts: retry pipeline pull requests that received
+              // human feedback after the last attempt, up to maxAttempts times.
+              const prs = await github.paginate(github.rest.pulls.list, {
+                ...repo,
+                state: 'open',
+                per_page: 100,
+              });
+              for (const pr of prs) {
+                const labels = pr.labels.map((l) => l.name);
+                if (!labels.includes(DRAFT_LABEL) || optedOut(pr.labels)) continue;
+                const comments = await github.paginate(
+                  github.rest.issues.listComments,
+                  { ...repo, issue_number: pr.number, per_page: 100 },
+                );
+                const attempts = comments.filter((c) => c.body?.includes(MARKER));
+                if (attempts.length >= maxAttempts) continue;
+                const last = attempts.at(-1)?.created_at ?? pr.created_at;
+                const feedback = comments.some(
+                  (c) => !isBot(c.user) && c.created_at > last && !c.body?.includes(MARKER),
+                );
+                if (feedback) add('pr', pr.number);
+              }
+            }
+
+            core.info(`Targets: ${JSON.stringify(targets)}`);
+            core.setOutput('targets', JSON.stringify(targets));
+
+  solve:
+    needs: decide
+    if: needs.decide.outputs.targets != '[]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      actions: write
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        target: ${{ fromJSON(needs.decide.outputs.targets) }}
+    # `queue: max` keeps every pending attempt (GitHub's default keeps only the
+    # newest). actionlint 1.7.12 does not know the key yet; formal-ai
+    # (docs/case-studies/issue-999) documents the same false positive.
+    concurrency:
+      group: ai-solve-${{ github.repository }}-${{ matrix.target.key }}
+      cancel-in-progress: false
+      queue: max
+    env:
+      TARGET_URL: ${{ matrix.target.url }}
+      TARGET_KIND: ${{ matrix.target.kind }}
+      TARGET_NUMBER: ${{ matrix.target.number }}
+    steps:
+      - name: Resolve GitHub credentials
+        id: gh
+        uses: link-foundation/.github/actions/resolve-github-token@main
+        with:
+          app-id: ${{ vars.AUTOMATION_APP_ID }}
+          app-private-key: ${{ secrets.AUTOMATION_APP_PRIVATE_KEY }}
+          token: ${{ secrets.AUTOMATION_TOKEN }}
+
+      - name: Acknowledge the command
+        if: matrix.target.comment_id != ''
+        env:
+          GH_TOKEN: ${{ steps.gh.outputs.token }}
+          COMMENT_ID: ${{ matrix.target.comment_id }}
+        run: >-
+          gh api --method POST
+          "repos/$GITHUB_REPOSITORY/issues/comments/$COMMENT_ID/reactions"
+          -f content=eyes
+
+      - name: Fetch the latest formal-ai binary
+        env:
+          FORMAL_AI_IMAGE: ${{ inputs.formal_ai_image }}
+        run: |
+          docker pull "$FORMAL_AI_IMAGE"
+          id=$(docker create "$FORMAL_AI_IMAGE")
+          docker cp "$id:/usr/local/bin/formal-ai" "$RUNNER_TEMP/formal-ai"
+          docker rm "$id"
+          chmod +x "$RUNNER_TEMP/formal-ai"
+          echo "formal-ai: $("$RUNNER_TEMP/formal-ai" --version)" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Run hive-mind solve with formal-ai
+        id: solve
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ steps.gh.outputs.token }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          HIVE_MIND_IMAGE: ${{ inputs.hive_mind_image }}
+          TOOL: ${{ inputs.tool }}
+          MODEL: ${{ inputs.model }}
+        run: |
+          LOG_DIR="$RUNNER_TEMP/ai-solve-logs"
+          mkdir -p "$LOG_DIR" && chmod 777 "$LOG_DIR"
+          # Secrets are forwarded by name (-e NAME), never written into argv.
+          # The URL is passed as one argv element, never through a shell string.
+          docker run --rm --user box \
+            -e GH_TOKEN -e ANTHROPIC_API_KEY -e CLAUDE_CODE_OAUTH_TOKEN -e OPENAI_API_KEY \
+            -e HIVE_MIND_EPHEMERAL_CONTAINER=1 \
+            -e HIVE_MIND_AUTO_CONTINUE_AGE_HOURS=0 \
+            -e HIVE_MIND_CI_RUN_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" \
+            -e GIT_CONFIG_COUNT=3 \
+            -e GIT_CONFIG_KEY_0=init.defaultBranch -e GIT_CONFIG_VALUE_0=main \
+            -e GIT_CONFIG_KEY_1=user.name -e "GIT_CONFIG_VALUE_1=github-actions[bot]" \
+            -e GIT_CONFIG_KEY_2=user.email \
+            -e "GIT_CONFIG_VALUE_2=41898282+github-actions[bot]@users.noreply.github.com" \
+            -v "$RUNNER_TEMP/formal-ai:/usr/local/bin/formal-ai:ro" \
+            -v "$LOG_DIR:/home/box/logs" \
+            "$HIVE_MIND_IMAGE" solve "$TARGET_URL" \
+            --tool "$TOOL" --model "$MODEL" --attribution formal-ai \
+            --auto-continue --attach-logs --development-log --verbose \
+            --log-dir /home/box/logs \
+            --no-auto-restart-until-mergeable \
+            --no-auto-restart-on-uncommitted-changes
+
+      - name: Find the pull request
+        id: pr
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ steps.gh.outputs.token }}
+        run: |
+          if [ "$TARGET_KIND" = pr ]; then
+            number="$TARGET_NUMBER"
+          else
+            number=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open \
+              --json number,headRefName \
+              --jq "[.[] | select(.headRefName | startswith(\"issue-$TARGET_NUMBER-\"))][0].number // empty")
+          fi
+          if [ -n "$number" ]; then
+            head=$(gh pr view "$number" --repo "$GITHUB_REPOSITORY" --json headRefName --jq .headRefName)
+            echo "number=$number" >> "$GITHUB_OUTPUT"
+            echo "head=$head" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Label and report the attempt
+        if: ${{ !cancelled() && steps.pr.outputs.number != '' }}
+        env:
+          GH_TOKEN: ${{ steps.gh.outputs.token }}
+          NUMBER: ${{ steps.pr.outputs.number }}
+          OUTCOME: ${{ steps.solve.outcome }}
+          DRAFT_LABEL: ${{ inputs.draft_label }}
+        run: |
+          gh label create "$DRAFT_LABEL" --repo "$GITHUB_REPOSITORY" \
+            --color FFD166 --description "Worked on by the AI pipeline" 2>/dev/null || true
+          gh pr edit "$NUMBER" --repo "$GITHUB_REPOSITORY" --add-label "$DRAFT_LABEL"
+          run_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          gh pr comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body \
+            "<!-- ai-solve-attempt --> AI attempt finished with \`$OUTCOME\` ([run]($run_url)). Comment \`/retry\` or request changes to run it again."
+
+      - name: Dispatch checks on the pull request head
+        if: ${{ !cancelled() && steps.pr.outputs.head != '' && inputs.check_workflows != '' }}
+        uses: link-foundation/.github/actions/dispatch-checks@main
+        with:
+          ref: ${{ steps.pr.outputs.head }}
+          workflows: ${{ inputs.check_workflows }}
+          token: ${{ steps.gh.outputs.token }}
+          triggers-workflows: ${{ steps.gh.outputs.triggers-workflows }}
+
+      - name: Upload the session logs
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: ai-solve-${{ matrix.target.key }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/ai-solve-logs
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Fail when the attempt failed
+        if: steps.solve.outcome == 'failure'
+        run: |
+          echo "::error title=AI solve failed::See the attached session log."
+          exit 1
