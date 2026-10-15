@@ -373,6 +373,10 @@ jobs:
       - name: Run tests (Deno)
         if: matrix.runtime == 'deno'
         shell: bash
+        # Fixture tests spawn Node/npm children; bound worker contention while
+        # retaining the existing per-child and whole-suite time budgets.
+        env:
+          DENO_JOBS: '2'
         run: bash scripts/run-with-budget-warning.sh 100 "Deno test suite" deno test -A --parallel
 
   # === DOCKER IMAGE BUILD CHECK (pull requests) ===
