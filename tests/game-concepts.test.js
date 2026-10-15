@@ -63,6 +63,13 @@ describe('visual game catalog', () => {
     expect(catalog.length).toBe(216);
     expect(new Set(catalog.map((game) => game.id)).size).toBe(216);
     expect(catalog.filter((game) => game.original).length).toBe(168);
+    for (const game of catalog) {
+      expect(typeof game.original).toBe('boolean');
+      for (const field of ['title', 'genre', 'lesson', 'cx', 'scene']) {
+        expect(typeof game[field]).toBe('string');
+        expect(game[field].trim().length > 0).toBe(true);
+      }
+    }
     for (const [family, count] of Object.entries(expectedOriginals)) {
       for (let number = 1; number <= count; number++) {
         const id = `${family.toUpperCase()}-${String(number).padStart(2, '0')}`;
@@ -132,6 +139,7 @@ describe('visual game catalog', () => {
         expect(hashes.has(hash)).toBe(false);
         hashes.add(hash);
         expect(entry.tool).toBe('image_gen.imagegen (built-in)');
+        expect(entry.modelRequested).toBe('GPT Image 2.5 or latest available');
         expect(entry.modelReported).toBe(null);
         expect(Number.isNaN(Date.parse(entry.generatedAt))).toBe(false);
         expect(entry.prompt).toBe(
