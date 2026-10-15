@@ -1,0 +1,182 @@
+[
+  {
+    "id": "WL-01",
+    "title": "Letter Train",
+    "genre": "Snake",
+    "lesson": "Spelling, counting",
+    "cx": "1",
+    "wave": "W1",
+    "original": true,
+    "scene": "Steer a letter-carrying toy train along a grid to spell a short word."
+  },
+  {
+    "id": "WL-02",
+    "title": "Alphabet Trace",
+    "genre": "Tracing",
+    "lesson": "Handwriting of many scripts",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Trace a large letter on a sand tablet, following a clear directional guide."
+  },
+  {
+    "id": "WL-03",
+    "title": "Phonics Pop",
+    "genre": "Bubble pop",
+    "lesson": "Letter sounds, reading readiness",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Tap a bubble bearing a letter that matches a pictured object's initial sound."
+  },
+  {
+    "id": "WL-04",
+    "title": "Word Search Garden",
+    "genre": "Word search",
+    "lesson": "Vocabulary, scanning",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Find a plant word along a highlighted line in a letter-search grid."
+  },
+  {
+    "id": "WL-05",
+    "title": "Translate Bridge",
+    "genre": "Matching",
+    "lesson": "Foreign words, cognates",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Connect a picture card to its translation card across a small bridge."
+  },
+  {
+    "id": "WL-06",
+    "title": "Word Links",
+    "genre": "Daily word guess",
+    "lesson": "Spelling, letter frequency",
+    "cx": "2",
+    "wave": "W1",
+    "original": true,
+    "scene": "Place letter tiles into a five-letter guess grid with patterned feedback markers."
+  },
+  {
+    "id": "WL-07",
+    "title": "Anagram Bakery",
+    "genre": "Word scramble",
+    "lesson": "Morphology, spelling",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Rearrange letter-shaped biscuits on a bakery tray to form a valid word."
+  },
+  {
+    "id": "WL-08",
+    "title": "Honeycomb Words",
+    "genre": "Letters-around-a-center word game",
+    "lesson": "Vocabulary, prefixes and suffixes",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Build words from six outer letter tiles and one mandatory center tile."
+  },
+  {
+    "id": "WL-09",
+    "title": "Crossword Links",
+    "genre": "Mini crossword",
+    "lesson": "Definitions, synonyms",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Fill a tiny crossword using pictured clues and intersecting letters."
+  },
+  {
+    "id": "WL-10",
+    "title": "Rhyme Time",
+    "genre": "Rhythm matching",
+    "lesson": "Rhymes, syllables, poetry",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Match pictured rhyming objects along a musical garden path."
+  },
+  {
+    "id": "WL-11",
+    "title": "Sign Friends",
+    "genre": "Matching / memory",
+    "lesson": "Sign-language alphabets",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Pair a carefully drawn sign-language alphabet handshape with its letter card."
+  },
+  {
+    "id": "WL-12",
+    "title": "Type the Rain",
+    "genre": "Typing tutor (falling words)",
+    "lesson": "Touch typing — words water the garden",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Type a short falling word before its raindrops reach a seedling bed."
+  },
+  {
+    "id": "WL-13",
+    "title": "Code Words",
+    "genre": "Cipher puzzles",
+    "lesson": "Cryptography from Caesar to public keys",
+    "cx": "2–3",
+    "wave": null,
+    "original": true,
+    "scene": "Rotate a Caesar-cipher wheel beside a short encoded postcard."
+  },
+  {
+    "id": "WL-14",
+    "title": "Prime Sprites",
+    "genre": "Sentence building",
+    "lesson": "Grammar, word order across languages",
+    "cx": "3",
+    "wave": "W3",
+    "original": true,
+    "scene": "Connect subject, verb and object cards into a visible sentence path."
+  },
+  {
+    "id": "WL-15",
+    "title": "Story Dice",
+    "genre": "Storytelling cards",
+    "lesson": "Narrative structure, speaking",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Arrange illustrated story dice into a beginning, middle and ending."
+  },
+  {
+    "id": "WL-16",
+    "title": "Word Ladder Grove",
+    "genre": "Word transformation ladder",
+    "lesson": "Spelling and edit distance",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Change one letter per rung on a treehouse ladder, turning COLD into WARM through valid words."
+  },
+  {
+    "id": "WL-17",
+    "title": "Category Picnic",
+    "genre": "Word grouping puzzle",
+    "lesson": "Semantic categories and ambiguity",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Sort sixteen word cards into four meaningful picnic baskets and explain the shared category."
+  },
+  {
+    "id": "WL-18",
+    "title": "Picture Phrase",
+    "genre": "Rebus puzzle",
+    "lesson": "Language inference and idioms",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Rearrange illustrated word-and-object tiles on a theater stage to reveal a familiar phrase."
+  }
+]

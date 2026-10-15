@@ -1,0 +1,102 @@
+[
+  {
+    "id": "MR-01",
+    "title": "Echo Links",
+    "genre": "Simon (repeat the sequence)",
+    "lesson": "Memory, pitch",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Repeat a short sequence of four glowing musical pads around a friendly ring."
+  },
+  {
+    "id": "MR-02",
+    "title": "Drum Circle",
+    "genre": "Rhythm toy",
+    "lesson": "Rhythms of world cultures",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Tap illustrated hand drums following a simple repeating rhythmic pattern."
+  },
+  {
+    "id": "MR-03",
+    "title": "Piano Steps",
+    "genre": "Falling tiles",
+    "lesson": "Reading notes, melody",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Tap falling note tiles as they meet the corresponding piano keys."
+  },
+  {
+    "id": "MR-04",
+    "title": "Rhythm Tap",
+    "genre": "Rhythm game",
+    "lesson": "Beats, note lengths as fractions",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Hit large rhythm targets as notes arrive on a clear beat line."
+  },
+  {
+    "id": "MR-05",
+    "title": "Ear Trainer",
+    "genre": "Matching",
+    "lesson": "Intervals, chords",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Match two illustrated musical intervals using a small keyboard."
+  },
+  {
+    "id": "MR-06",
+    "title": "Melody Garden",
+    "genre": "Step sequencer (melodies grow plants)",
+    "lesson": "Composition, scales",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Place notes in a step-sequencer grid whose rows grow different musical plants."
+  },
+  {
+    "id": "MR-07",
+    "title": "Conductor",
+    "genre": "Timing game",
+    "lesson": "Tempo, orchestra instruments",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Guide a tiny orchestra with a clear conducting arc and visible beat markers."
+  },
+  {
+    "id": "MR-08",
+    "title": "Sing Along",
+    "genre": "Karaoke with pitch line",
+    "lesson": "Pitch, breathing (microphone off in kids mode by default)",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Follow a melody line above a gentle singing character, with microphone control visibly optional."
+  },
+  {
+    "id": "MR-09",
+    "title": "Dance Dialogue",
+    "genre": "Rhythm duel",
+    "lesson": "Call-and-response and timing",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Two link friends exchange mirrored dance steps across a glowing beat circle, with no fighting."
+  },
+  {
+    "id": "MR-10",
+    "title": "Beat Path",
+    "genre": "Rhythm platformer",
+    "lesson": "Beat subdivision and anticipation",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Hop across musical stepping stones whose spacing follows a visible four-beat rhythm."
+  }
+]

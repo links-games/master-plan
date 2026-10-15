@@ -1,0 +1,182 @@
+[
+  {
+    "id": "BC-01",
+    "title": "Tic-Tac-Links",
+    "genre": "Tic-tac-toe and ultimate tic-tac-toe",
+    "lesson": "Strategy, forced moves",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Place a link counter into a three-by-three tic-tac-toe board."
+  },
+  {
+    "id": "BC-02",
+    "title": "Ropes and Ladders",
+    "genre": "Snakes and ladders (Moksha Patam)",
+    "lesson": "Counting, history of the game's moral lessons",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Move a round friend along a numbered path with rope bridges and ladders."
+  },
+  {
+    "id": "BC-03",
+    "title": "Happy Families",
+    "genre": "Go Fish / families",
+    "lesson": "Categories, asking politely",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Ask for a matching animal-family card at a friendly small card table."
+  },
+  {
+    "id": "BC-04",
+    "title": "Dominoes",
+    "genre": "Dominoes",
+    "lesson": "Number matching, addition",
+    "cx": "1–2",
+    "wave": null,
+    "original": true,
+    "scene": "Place a domino so matching dot counts touch at the open end of a chain."
+  },
+  {
+    "id": "BC-05",
+    "title": "Rela's Board Club",
+    "genre": "Reversi, checkers, mancala, four in a row",
+    "lesson": "Strategy, counting, fair play",
+    "cx": "2–3",
+    "wave": "W1",
+    "original": true,
+    "scene": "Flip a line of contrasting leaf counters on an original reversible-disc board."
+  },
+  {
+    "id": "BC-06",
+    "title": "Nim Garden",
+    "genre": "Nim",
+    "lesson": "Game theory, winning positions, binary XOR",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Choose how many acorns to remove from one of three visible piles."
+  },
+  {
+    "id": "BC-07",
+    "title": "Home Run Race",
+    "genre": "Ludo / pachisi (pieces go home, not \"die\")",
+    "lesson": "Counting, probability of dice",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Guide colored-and-patterned pieces along a shared race track toward home."
+  },
+  {
+    "id": "BC-08",
+    "title": "Solitaire",
+    "genre": "Klondike, FreeCell, spider",
+    "lesson": "Sequencing, suits",
+    "cx": "2",
+    "wave": "W2",
+    "original": true,
+    "scene": "Move a descending alternating-suit card sequence between solitaire columns."
+  },
+  {
+    "id": "BC-09",
+    "title": "Tile Pairs",
+    "genre": "Mahjong solitaire",
+    "lesson": "Chinese numerals and symbols",
+    "cx": "2",
+    "wave": "W2",
+    "original": true,
+    "scene": "Lift an exposed matching pair from a layered set of illustrated tiles."
+  },
+  {
+    "id": "BC-10",
+    "title": "Sets and Runs",
+    "genre": "Rummy",
+    "lesson": "Sets, sequences, planning",
+    "cx": "2–3",
+    "wave": null,
+    "original": true,
+    "scene": "Lay numbered cards into a same-rank set and a consecutive same-suit run."
+  },
+  {
+    "id": "BC-11",
+    "title": "Hex Bridges",
+    "genre": "Hex (connection game)",
+    "lesson": "Topology: one side always connects",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Connect opposite sides of a hexagonal board with stepping-stone counters."
+  },
+  {
+    "id": "BC-12",
+    "title": "Garden Plots",
+    "genre": "Go (territory)",
+    "lesson": "Territory, liberty, patience",
+    "cx": "3–4",
+    "wave": null,
+    "original": true,
+    "scene": "Place a stone to surround empty garden territory on a gridded board."
+  },
+  {
+    "id": "BC-13",
+    "title": "Chess Friends",
+    "genre": "Chess (captured pieces \"go home\")",
+    "lesson": "Planning, history of chess",
+    "cx": "3–4",
+    "wave": null,
+    "original": true,
+    "scene": "Move friendly chess-piece characters along legal squares toward a planning goal."
+  },
+  {
+    "id": "BC-14",
+    "title": "Island Rescue",
+    "genre": "Cooperative board game",
+    "lesson": "Teamwork, risk management",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Coordinate rescue boats and sandbags on a cooperative island board."
+  },
+  {
+    "id": "BC-15",
+    "title": "Acorn Backgammon",
+    "genre": "Backgammon",
+    "lesson": "Probability and risk-aware planning",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Move acorn counters around an original woodland backgammon board, showing the two dice and legal destinations."
+  },
+  {
+    "id": "BC-16",
+    "title": "Leaf Hearts",
+    "genre": "Hearts card game",
+    "lesson": "Counting suits and forecasting",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Choose a leaf-suit card from a visible hand at a friendly four-player woodland table."
+  },
+  {
+    "id": "BC-17",
+    "title": "Signal Crew",
+    "genre": "Cooperative trick-taking",
+    "lesson": "Communication constraints and deduction",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Coordinate a four-player space crew using original numbered signal cards and a shared research objective."
+  },
+  {
+    "id": "BC-18",
+    "title": "Expedition Deck",
+    "genre": "Roguelite deckbuilder",
+    "lesson": "Probability and resource trade-offs",
+    "cx": "4",
+    "wave": null,
+    "original": false,
+    "scene": "Play weather, rope and shelter cards to complete a mountain research expedition, without combat or gambling."
+  }
+]

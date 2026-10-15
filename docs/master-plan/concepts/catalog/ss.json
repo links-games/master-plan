@@ -1,0 +1,202 @@
+[
+  {
+    "id": "SS-01",
+    "title": "Idle Science",
+    "genre": "Idle / incremental",
+    "lesson": "Exponents, compound growth",
+    "cx": "2",
+    "wave": "W2",
+    "original": true,
+    "scene": "Allocate solar energy between research stations and watch compounding progress on a graph."
+  },
+  {
+    "id": "SS-02",
+    "title": "Garden Guard",
+    "genre": "Tower defense (nets and umbrellas vs weather)",
+    "lesson": "Geometry, resource planning",
+    "cx": "3",
+    "wave": "W2",
+    "original": true,
+    "scene": "Place umbrellas and water channels along a garden path to protect seedlings from weather."
+  },
+  {
+    "id": "SS-03",
+    "title": "Traffic Lights",
+    "genre": "Traffic puzzle",
+    "lesson": "Flow, queues, timing",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Time two traffic lights so toy pedestrians and carts cross safely."
+  },
+  {
+    "id": "SS-04",
+    "title": "Energy Grid",
+    "genre": "Balancing sim",
+    "lesson": "Supply and demand of power, storage",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Connect solar panels, storage and homes while balancing power supply and demand."
+  },
+  {
+    "id": "SS-05",
+    "title": "Water Commons",
+    "genre": "Commons management",
+    "lesson": "Ostrom's rules for shared resources",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Allocate a shared reservoir between households, gardens and a protected wetland."
+  },
+  {
+    "id": "SS-06",
+    "title": "Logistics Links",
+    "genre": "Transport tycoon (needs met, not profit)",
+    "lesson": "Networks, logistics",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Route small cargo vehicles between farms, workshops and shared storage."
+  },
+  {
+    "id": "SS-07",
+    "title": "Outbreak Stoppers",
+    "genre": "Cooperative epidemic game",
+    "lesson": "Epidemiology (SIR models), vaccines, hygiene",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Compare community health curves while choosing ventilation and vaccination resources."
+  },
+  {
+    "id": "SS-08",
+    "title": "Food Web",
+    "genre": "Ecosystem sim",
+    "lesson": "Predator–prey cycles as population curves",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Adjust a small food-web model and observe population curves beside the habitat."
+  },
+  {
+    "id": "SS-09",
+    "title": "Care Hospital",
+    "genre": "Hospital management",
+    "lesson": "Health systems, triage, empathy",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Assign care teams and beds in a friendly hospital planning board."
+  },
+  {
+    "id": "SS-10",
+    "title": "Town of Links",
+    "genre": "City builder",
+    "lesson": "Urban planning, resource flows",
+    "cx": "4–5",
+    "wave": null,
+    "original": true,
+    "scene": "Lay footpaths, homes and shared gardens around a town's visible resource flows."
+  },
+  {
+    "id": "SS-11",
+    "title": "Climate Council",
+    "genre": "Policy sim",
+    "lesson": "Climate models, trade-offs",
+    "cx": "5",
+    "wave": null,
+    "original": true,
+    "scene": "Compare emissions-reduction choices on a town model with an uncertainty-band chart."
+  },
+  {
+    "id": "SS-12",
+    "title": "Two Planets",
+    "genre": "4X without war (explore, expand, exchange, cooperate)",
+    "lesson": "Resource-based vs scarcity economies",
+    "cx": "5",
+    "wave": null,
+    "original": true,
+    "scene": "Exchange scientific observations between Reya and Shacados using peaceful diplomatic routes."
+  },
+  {
+    "id": "SS-13",
+    "title": "Mars Habitat",
+    "genre": "Survival / colony sim",
+    "lesson": "Life support: air, water, food, energy",
+    "cx": "5–6",
+    "wave": null,
+    "original": true,
+    "scene": "Balance air, water, food and electricity in a cutaway Mars habitat."
+  },
+  {
+    "id": "SS-14",
+    "title": "First Contact",
+    "genre": "Realistic multi-genre simulator",
+    "lesson": "Everything above, at real scale",
+    "cx": "7",
+    "wave": null,
+    "original": true,
+    "scene": "Coordinate a physically grounded peaceful first contact between two star systems, using delayed signals and orbital trajectories."
+  },
+  {
+    "id": "SS-15",
+    "title": "Circular Factory",
+    "genre": "Factory automation",
+    "lesson": "Flow rates and closed material loops",
+    "cx": "4",
+    "wave": null,
+    "original": false,
+    "scene": "Connect recycling machines with conveyor belts to transform recovered materials into shared repair parts."
+  },
+  {
+    "id": "SS-16",
+    "title": "Helper Teams",
+    "genre": "Non-combat autobattler",
+    "lesson": "Complementary roles and scheduling",
+    "cx": "4",
+    "wave": null,
+    "original": false,
+    "scene": "Arrange a team of gardening robots on a preparation grid, then watch their combined abilities restore a habitat."
+  },
+  {
+    "id": "SS-17",
+    "title": "Lunch for All",
+    "genre": "Restaurant time management",
+    "lesson": "Queueing and nutrition planning",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Sequence soup, bread and fruit preparation across a shared counter to serve all waiting friends."
+  },
+  {
+    "id": "SS-18",
+    "title": "Repair Cafe",
+    "genre": "Workshop management",
+    "lesson": "Repairability and resource allocation",
+    "cx": "4",
+    "wave": null,
+    "original": false,
+    "scene": "Assign returned toys and appliances to repair benches, budgeting spare parts and volunteer time."
+  },
+  {
+    "id": "SS-19",
+    "title": "Railway Signals",
+    "genre": "Train dispatch and track routing",
+    "lesson": "Scheduling and collision avoidance",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Switch tracks on a compact railway so two passenger trains reach their stations with safe separation."
+  },
+  {
+    "id": "SS-20",
+    "title": "Ready Together",
+    "genre": "Cooperative disaster preparation",
+    "lesson": "Preparedness and resilient systems",
+    "cx": "4",
+    "wave": null,
+    "original": false,
+    "scene": "Place rain gardens, water stores and safe footpaths on a town model before a forecast storm."
+  }
+]
