@@ -79,8 +79,10 @@ adds requirements **R50–R54**: expand missing genres, give each idea a page,
 generate four high-resolution concepts per idea with GPT Image 2.5 or the latest
 available generator, and make the visuals useful for choosing a first prototype.
 The [visual catalog](../../master-plan/concepts/README.md) preserves all 168
-previous IDs and adds 48, with 216 scoped pages and a target of 864 independent
-concept images. The [research note](data/research-visual-catalog.md) records
+previous IDs and adds 48, with 216 scoped pages and 864 independent concept
+images at native 1254 × 1254 resolution. All four views of every idea have been
+visually inspected; the [review record](data/visual-review.md) explains the method
+and limits. The [research note](data/research-visual-catalog.md) records
 primary sources and the tool's model-reporting limitation; the
 [raw request](data/pr-2-visual-feedback.json) preserves the feedback.
 

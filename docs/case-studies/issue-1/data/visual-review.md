@@ -1,6 +1,7 @@
 # Visual review of the game concepts
 
-Review date: 2026-10-15. Open the
+Review date: 2026-10-15. Coverage: **216 games, 864 images, all 12 collections**.
+All delivered full images are native 1254 × 1254 pixels. Open the
 [visual catalog](../../../master-plan/concepts/README.md) for the full artwork.
 
 ## Method and limits
@@ -64,3 +65,19 @@ SS-15 Expanded play was additionally inspected at full native resolution for the
 SS-13–SS-16: all four views inspected. Habitat life-support controls, peaceful first-contact signal planning, circular resource conveyors and cooperative helper placement have distinct compositions and recognizable interactions. Life-support balances, signal propagation, material processing and team-synergy rules need validated simulation or authored game data.
 
 SS-17–SS-20: all four views inspected. Shared meals and queues, repair assignment, railway dispatch and disaster preparation have recognizable interactions and varied compositions. Food and repair safety, rail interlocking and preparedness advice need authored rules and qualified review. All 80 Strategy and Simulation images inspected.
+
+WL-01–WL-04: all four views inspected. Letter ordering on trains, tracing strokes, phonics bubbles and word-search grids are recognizable and visually distinct. Exact letter forms, sound mappings and solvable word grids need authored content and language review.
+
+WL-05–WL-07: all four views inspected. Picture/translation bridge matching, feedback-based word guesses and anagram baking have distinct visual interactions. Translation pairs, feedback rules, dictionaries and valid word sets require authored language data.
+
+The initial Honeycomb Words set introduced multi-letter morphemes in later views, conflicting with the seven-single-letter scene. That uncommitted set was archived outside the repository and its prompts tightened before regeneration. All four replacements were inspected: each now shows seven distinct single-letter hexagons with a central A. The surrounding hints still need authored language data; only the replacement set is delivered.
+
+WL-09–WL-12: all four views inspected. Picture crosswords, sound/picture pairing, sign-letter matching and typing falling words have recognizable interactions and distinct views. Crossword validity, phonics pairs, sign-language handshapes and typing prompts require authored content and qualified language review.
+
+WL-13–WL-14: all four views inspected. Cipher wheels and sentence-part cards show recognizable actions and distinct views. Cipher mappings and grammatical correctness require authored language data and validated puzzle states.
+
+WL-15: all four views inspected. Story-symbol dice and beginning/middle/end spaces make the storytelling interaction recognizable. Images vary perspective and story setting; narrative sequencing and age-appropriate prompts need authored content.
+
+WL-16: all four views inspected. A vertical COLD-to-WARM ladder makes single-letter transformation explicit; the expanded views show the COLD/CORD/CARD/WARD/WARM chain. Production word sets and alternative valid paths still require dictionary-backed validation.
+
+WL-17–WL-18: all four views inspected. Category baskets and picture/word rebus tiles show recognizable, distinct interactions. Group membership, intended phrases, localization and valid solutions require authored language content. All 72 Words and Languages images inspected. All 216 games and 864 delivered images have now been visually reviewed.

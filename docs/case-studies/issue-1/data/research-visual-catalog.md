@@ -62,9 +62,9 @@ hidden model configuration.
 
 This session uses the built-in `image_gen.imagegen` tool, which has no model,
 quality or size parameter and does not report a model ID. Prompts request
-2048 × 2048 or the highest native resolution available. The first sample returned
-1254 × 1254. Manifests therefore report actual dimensions and `modelReported:
-null`, rather than claiming a verified 2.5 deployment or a fixed 2K output.
+2048 × 2048 or the highest native resolution available. The tool returned all
+864 delivered images at 1254 × 1254. Manifests report actual dimensions and
+`modelReported: null`, rather than claiming a verified 2.5 deployment or a fixed 2K output.
 The catalog minimum is 1024 pixels on both edges. Full art is encoded as WebP
 quality 92 without resizing; only index thumbnails are downscaled.
 

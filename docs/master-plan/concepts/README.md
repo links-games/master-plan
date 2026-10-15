@@ -46,14 +46,15 @@ alone does not prove the mechanic is readable or fun.
 
 ## Image generation and provenance
 
-The target is **four separately generated images for each of 216 ideas**:
+The catalog contains **four separately generated images for each of 216 ideas**:
 864 original concept images. Each is a standalone composition, with its own
 prompt and generation call; images are not crops from a shared contact sheet.
 Full images retain their native pixel dimensions, with a minimum of 1024 pixels
 on each edge. The tool is asked for 2048 × 2048 or its highest available native
-resolution. Actual dimensions are recorded; no image is upscaled to meet the
-minimum. WebP quality 92 keeps the repository practical without resizing the
-full images. Index-only thumbnails fit within 320 × 320.
+resolution. All 864 delivered images are **1254 × 1254** pixels. Actual dimensions
+are recorded; no image is upscaled to meet the minimum. WebP quality 92 keeps the
+repository practical without resizing the full images. Index-only thumbnails fit
+within 320 × 320.
 
 The requested generator is **GPT Image 2.5 or the latest available**. Generation
 uses the available built-in `image_gen.imagegen` tool. It exposes no model
