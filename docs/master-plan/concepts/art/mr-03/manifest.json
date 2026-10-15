@@ -1,0 +1,57 @@
+{
+  "gameId": "MR-03",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T13:47:12.167507+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d32a208d6a50fad0f1dfb52b178fb8f877e51d9db5eea7841f20989b3c7e09fe",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Piano Steps (MR-03). Genre/mechanic: Falling tiles.\nPrimary scene and action: Tap falling note tiles as they meet the corresponding piano keys.\nLearning objective expressed by the actual interaction: Reading notes, melody.\nWorld: a musical garden with acoustic instruments, in the shared Links universe.\nArt direction: Gameplay. Show the playable board or interaction from a readable overhead or side camera. Use crisp 2D shapes and an inviting hand-painted finish. The mechanic is the hero; keep environmental detail at the edges.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T13:47:48.038883+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b8b6e8622d32224012bc5f42c0f6a076867c35c65684961a432347b1a324e071",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Piano Steps (MR-03). Genre/mechanic: Falling tiles.\nPrimary scene and action: Tap falling note tiles as they meet the corresponding piano keys.\nLearning objective expressed by the actual interaction: Reading notes, melody.\nWorld: a musical garden with acoustic instruments, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T13:48:23.812366+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "ba7b6f48f1bb5f99dacf927ac3b352df13a2d06196d81f7a9f4987983f503fbc",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Piano Steps (MR-03). Genre/mechanic: Falling tiles.\nPrimary scene and action: Tap falling note tiles as they meet the corresponding piano keys.\nLearning objective expressed by the actual interaction: Reading notes, melody.\nWorld: a musical garden with acoustic instruments, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T13:49:18.373011+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "e622742274921a7242f5799fcf2fd91ba878510be26490ac860a871e3c68a15d",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Piano Steps (MR-03). Genre/mechanic: Falling tiles.\nPrimary scene and action: Tap falling note tiles as they meet the corresponding piano keys.\nLearning objective expressed by the actual interaction: Reading notes, melody.\nWorld: a musical garden with acoustic instruments, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

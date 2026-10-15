@@ -1,0 +1,57 @@
+{
+  "gameId": "MR-06",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T13:56:23.423608+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b5ac0af163fe67508980b0b6d15d2225a8fad8fd21c05b6e6db62890acd80c88",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Melody Garden (MR-06). Genre/mechanic: Step sequencer (melodies grow plants).\nPrimary scene and action: Place notes in a step-sequencer grid whose rows grow different musical plants.\nLearning objective expressed by the actual interaction: Composition, scales.\nWorld: a musical garden with acoustic instruments, in the shared Links universe.\nArt direction: Gameplay. Show the playable board or interaction from a readable overhead or side camera. Use crisp 2D shapes and an inviting hand-painted finish. The mechanic is the hero; keep environmental detail at the edges.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T13:57:22.726948+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "cf4c5afd51035ea69402455eb13ab779125ba5d910ab07f9953f6a91c96b9b39",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Melody Garden (MR-06). Genre/mechanic: Step sequencer (melodies grow plants).\nPrimary scene and action: Place notes in a step-sequencer grid whose rows grow different musical plants.\nLearning objective expressed by the actual interaction: Composition, scales.\nWorld: a musical garden with acoustic instruments, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T13:57:51.459135+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "3d0ac026c6baafe62bebf1dad2c751659f1cab171991849f31e9e7f26d536516",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Melody Garden (MR-06). Genre/mechanic: Step sequencer (melodies grow plants).\nPrimary scene and action: Place notes in a step-sequencer grid whose rows grow different musical plants.\nLearning objective expressed by the actual interaction: Composition, scales.\nWorld: a musical garden with acoustic instruments, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T13:58:47.402971+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "aab4c94404244a33f5e2ef0bfbab9c6ab36b56786c7e738b5cc801dafb38b993",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Melody Garden (MR-06). Genre/mechanic: Step sequencer (melodies grow plants).\nPrimary scene and action: Place notes in a step-sequencer grid whose rows grow different musical plants.\nLearning objective expressed by the actual interaction: Composition, scales.\nWorld: a musical garden with acoustic instruments, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}
