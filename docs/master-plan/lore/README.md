@@ -147,6 +147,17 @@ Each seed can become a game level pack, a short episode or a sticker set.
 | **Prime Sprites**            | Collect the 65 meaning-sprites; I + WANT + GOOD makes a sentence.                                                       | Every language shares small words.        |
 | **Cadets of Depth Academy**  | Players graduate point → doublet → triplet → sequence → network; the last level shows Omi contains itself.              | (adults) The self-describing world.       |
 
+## The second layer: First Contact (R42)
+
+Omi is the gentle layer for toddlers and children. Above it, for teens and
+adults, is the realistic layer of **[First Contact](first-contact.md)**: the
+peaceful, advanced civilization **Reya** meets the violent anti-utopia
+**Shacados**. It is the setting of our last, fully realistic multi-genre
+simulator, and its rules are real physics. The proposed bridge between the
+layers is that Omi is the learning world of Reyan children, so growing up
+through our games is growing up as a Reyan
+([details](first-contact.md#how-it-connects-to-omi-and-the-links-proposal)).
+
 ## How the universe connects all games (R15, D3)
 
 - **One cast** appears in every game: each game has a star from the
