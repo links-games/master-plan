@@ -19,6 +19,18 @@ import { itUnless, sandboxed } from './helpers/skip.js';
 
 const config = JSON.parse(readFileSync('.changeset/config.json', 'utf8'));
 const execFileAsync = promisify(execFile);
+const tracePreload = `--require ${JSON.stringify(resolve('experiments/trace-changeset-fixture.cjs'))}`;
+
+function reportChildFailure(error) {
+  console.error(
+    JSON.stringify({
+      code: error.code,
+      signal: error.signal,
+      killed: error.killed,
+    })
+  );
+  console.error(`${error}\n${error.stdout}\n${error.stderr}`);
+}
 
 function createPrettierBins(dependencies) {
   const bin = join(dependencies, '.bin');
@@ -135,6 +147,9 @@ describe('Changesets release formatter', () => {
               env: {
                 ...env,
                 DEBUG_CHANGESET_FIXTURE: '1',
+                NODE_OPTIONS: [env.NODE_OPTIONS, tracePreload]
+                  .filter(Boolean)
+                  .join(' '),
                 // Release formatting must use installed dependencies, never fetch.
                 npm_config_offline: 'true',
                 npm_config_yes: 'false',
@@ -149,7 +164,7 @@ describe('Changesets release formatter', () => {
             await execution;
           } catch (error) {
             // Print the primary child failure before cleanup can throw on Windows.
-            console.error(`${error}\n${error.stdout}\n${error.stderr}`);
+            reportChildFailure(error);
             assert.fail(`${error}\n${error.stdout}\n${error.stderr}`);
           }
         };

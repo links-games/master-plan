@@ -6,7 +6,11 @@ if (process.env.DEBUG_CHANGESET_FIXTURE) {
   const fs = require('node:fs');
   const { syncBuiltinESMExports } = require('node:module');
   const report = (operation, value) =>
-    console.error(`[changeset fixture] ${operation}: ${JSON.stringify(value)}`);
+    console.error(
+      `[changeset fixture] ${new Date().toISOString()} pid=${process.pid} ${operation}: ${JSON.stringify(value)}`
+    );
+  report('start', process.argv);
+  process.on('exit', (code) => report('process exit', code));
   for (const method of ['spawn', 'execFile']) {
     const original = childProcess[method];
     childProcess[method] = function (command, args, ...rest) {
