@@ -65,7 +65,7 @@ A change passes the gate only when **every applicable** item is ✅.
 ### Error states and edge cases
 
 - [ ] Loading screens, empty states, offline screens and crash dialogs use a
-      character and a gentle animation (e.g. _Null_ the sleepy ghost from the
+      character and a gentle animation (e.g. _Nully_ the sleepy ghost from the
       [character bible](characters.md)).
 - [ ] Error messages for adults are still precise and actionable.
 
