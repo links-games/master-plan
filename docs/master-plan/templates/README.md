@@ -12,6 +12,6 @@ planning repository.
 | [ISSUE_TEMPLATE/not-adorable.md](ISSUE_TEMPLATE/not-adorable.md)   | each repository → `.github/ISSUE_TEMPLATE/`                     | Report an "adorability bug" (R14).                      |
 
 The game template repositories (`game-template-pixi-react` and friends, see
-[infrastructure](../infrastructure.md#template-repositories)) include all of
+[infrastructure](../infrastructure.md#4-template-repositories)) include all of
 these files from day one, so a new game repository created from a template
 needs no manual setup.
