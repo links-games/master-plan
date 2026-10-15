@@ -5,6 +5,10 @@ Evidence (download numbers, revenue, court cases, trademark disputes) is in
 [research-market-games.md](../case-studies/issue-1/data/research-market-games.md)
 sections 2, 3 and 7.
 
+The full pool of ideas — more than 160 games in 12 genre collections,
+sorted by complexity from the simplest to the final realistic simulator — is
+in [game ideas](game-ideas.md). This catalog picks from that pool.
+
 ## How games are chosen
 
 Each candidate is scored on five things, in this order:
@@ -87,6 +91,16 @@ already has an audience: "Cadets of Depth Academy" (point → doublet →
 triplet → sequence → network levels, see [lore](lore/README.md)),
 "Prime Sprites" sentence-building collection, 3D exploration of Omi with the
 anime hosts, and short animated episodes that reuse game assets.
+
+## Beyond Wave 3 — collections and the simulator track
+
+After Wave 1 the games are also bundled into
+[collection apps](game-ideas.md#collections-in-a-single-app) (for example
+**Links Puzzle Box** with all puzzle games). In parallel, the physics games
+(Acorn Tower, Rope Friends, Seed Sling, Deflect!, Lunar Lander, Orbit
+Garden) grow the [simulation engine](simulation-engine.md) step by step up
+the [complexity ladder](game-ideas.md#complexity-ladder) to the final
+realistic multi-genre simulator, [First Contact](lore/first-contact.md).
 
 ## Clean-room rules for every game (D2)
 
