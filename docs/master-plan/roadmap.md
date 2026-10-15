@@ -1,6 +1,6 @@
 # Roadmap
 
-Covers requirements **R1, R10, R18, R22, R24, R27, R29, R35** and ties
+Covers requirements **R1, R10, R18, R22, R24, R27, R29, R35, R40** and ties
 every other requirement to a phase (see the [mapping](#requirement-to-phase-mapping)).
 
 Phases end on **exit criteria**, not on dates. The month ranges are
@@ -126,6 +126,22 @@ support without hurting anyone's experience.
   ([characters](lore/characters.md)).
 - Short animated episodes built from game assets; licensing partners.
 
+## Simulation track
+
+Runs in parallel with Phases 1–4 and is driven by the physics games of the
+[complexity ladder](game-ideas.md#complexity-ladder) (R40, R43–R48). Each
+step starts only when the previous step has shipped at least one game.
+
+| Step | What ships                                                                                                   | Exit criterion                                                                  |
+| ---- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| S1   | `@links-games/sim` (fixed-step loop, units, conservation tests) and `lod` (device tiers) with Acorn Tower    | Same result on web, Android and iOS for a recorded replay                       |
+| S2   | 2D rigid bodies and XPBD ropes (Rope Friends, Seed Sling, Mini Golf); analytic tests in CI                   | Projectile and pendulum tests within 0.1%; 60 fps on the low tier               |
+| S3   | WebGPU compute particles (Sand and Water, Density Tank) with a WASM fallback                                 | Mass conserved at every tier; fallback matches GPU within tolerance             |
+| S4   | 3D vector games (Explore Omi, Kart Friends) with PBR + toon rendering                                        | One scene rendered in chibi, anime and realistic styles from the same materials |
+| S5   | Domain simulators (Orbit Garden, Rocket Builder, Relativity Ride) and the `laws` library with an RML example | Orbits match JPL Horizons over a simulated year within the stated error budget  |
+| S6   | First Contact seeds (Station Watch, Deflect!, Probe Workshop, Light-Lag Chess)                               | Every scene number passes a physics check like `first-contact-physics.test.js`  |
+| S7   | [First Contact](lore/first-contact.md), the realistic multi-genre simulator                                  | Maintainers accept the lore, the error budget and the non-violence review       |
+
 ## Repositories to create
 
 Creating repositories is an outward-facing action, so this pull request
@@ -142,35 +158,45 @@ only lists them. Order of creation (all under `links-games`):
 8. `backend` (Phase 2)
 9. `game-template-phaser`, `game-template-r3f` (when the first game needs them)
 10. private `ops` (secrets and store configuration, Phase 2)
+11. `collection-puzzles` and the other [collection apps](game-ideas.md#collections-in-a-single-app) (Phase 2, once three games of a family exist)
+12. `simulation-lab` (simulation track step S3)
 
 ## Decisions needed from maintainers
 
-| Decision                                                             | Proposed default                                                | Needed by |
-| -------------------------------------------------------------------- | --------------------------------------------------------------- | --------- |
-| Canonical role colors (avatar vs figure 10 of Links Theory 0.0.2)    | red = source, green = linker, blue = target                     | Phase 0   |
-| Hero name ("Linky" is used by a French smart meter)                  | Keep as working name; trademark search decides                  | Phase 0   |
-| Code license                                                         | Unlicense for code, CC0 for art and texts, trademarks for names | Phase 0   |
-| Legal entity and jurisdiction (stores, VK, payments)                 | One company that owns the trademarks; see [legal](legal.md)     | Phase 2   |
-| Default AI tool for the pipeline when formal-ai cannot finish a task | Keep `formal-ai`; allow per-repository override                 | Phase 0   |
+| Decision                                                                 | Proposed default                                                                                                        | Needed by |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | --------- |
+| Canonical role colors (avatar vs figure 10 of Links Theory 0.0.2)        | red = source, green = linker, blue = target                                                                             | Phase 0   |
+| Hero name ("Linky" is used by a French smart meter)                      | Keep as working name; trademark search decides                                                                          | Phase 0   |
+| Code license                                                             | Unlicense for code, CC0 for art and texts, trademarks for names                                                         | Phase 0   |
+| Legal entity and jurisdiction (stores, VK, payments)                     | One company that owns the trademarks; see [legal](legal.md)                                                             | Phase 2   |
+| Default AI tool for the pipeline when formal-ai cannot finish a task     | Keep `formal-ai`; allow per-repository override                                                                         | Phase 0   |
+| Reya / Shacados reading of the pilot scene and its sub-light probe speed | Station is Reyan, object is a Shacados probe; probe at 0.5 _c_ ([open questions](lore/first-contact.md#open-questions)) | S6        |
+| Is Omi the learning world of Reyan children?                             | Yes, as the bridge between the two lore layers                                                                          | Phase 4   |
 
 ## Requirement-to-phase mapping
 
-| Requirement                                                       | Where it is planned                                                    | Phase |
-| ----------------------------------------------------------------- | ---------------------------------------------------------------------- | ----- |
-| R1 lots of mobile-first games                                     | [game-catalog.md](game-catalog.md)                                     | 1–4   |
-| R2 web, mobile, Telegram, VK and more                             | [infrastructure.md](infrastructure.md#3-the-platform-interface)        | 0–2   |
-| R3 game-core library                                              | [infrastructure.md](infrastructure.md#2-game-core-packages)            | 0     |
-| R4 template repositories                                          | [infrastructure.md](infrastructure.md#4-template-repositories)         | 0     |
-| R5 React + JS + Capacitor + Electron                              | [infrastructure.md](infrastructure.md)                                 | 0     |
-| R6–R9 formal-ai, auto PR, restartable CI/CD                       | [ai-pipeline.md](ai-pipeline.md)                                       | 0     |
-| R10 core infrastructure plan                                      | [infrastructure.md](infrastructure.md)                                 | 0     |
-| R11 popular, legally reimplementable games                        | [game-catalog.md](game-catalog.md), [legal.md](legal.md)               | 1     |
-| R12–R16 lore, cute characters, adorability, wisdom                | [lore/](lore/README.md)                                                | 0–4   |
-| R17 educational positioning                                       | [game-catalog.md](game-catalog.md), `learning` package                 | 1     |
-| R18 simplest games first                                          | Wave 1 order in [game-catalog.md](game-catalog.md)                     | 1     |
-| R19–R20 open source, public domain, quiet about it                | [legal.md](legal.md#licensing), [business-model.md](business-model.md) | 0     |
-| R21–R25 free to play, subscriptions, ads, generosity, experiments | [monetization.md](monetization.md)                                     | 1–3   |
-| R26–R28 community, hiring, donations, merch                       | [community.md](community.md), [business-model.md](business-model.md)   | 1–3   |
-| R29 profitable, attract capital                                   | [business-model.md](business-model.md)                                 | 2–3   |
-| R30 own anime characters in many styles                           | [lore/characters.md](lore/characters.md)                               | 0, 4  |
-| R31–R35 case study, requirements, solution plans                  | [case study](../case-studies/issue-1/README.md)                        | done  |
+| Requirement                                                       | Where it is planned                                                      | Phase |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------ | ----- |
+| R1 lots of mobile-first games                                     | [game-catalog.md](game-catalog.md)                                       | 1–4   |
+| R2 web, mobile, Telegram, VK and more                             | [infrastructure.md](infrastructure.md#3-the-platform-interface)          | 0–2   |
+| R3 game-core library                                              | [infrastructure.md](infrastructure.md#2-game-core-packages)              | 0     |
+| R4 template repositories                                          | [infrastructure.md](infrastructure.md#4-template-repositories)           | 0     |
+| R5 React + JS + Capacitor + Electron                              | [infrastructure.md](infrastructure.md)                                   | 0     |
+| R6–R9 formal-ai, auto PR, restartable CI/CD                       | [ai-pipeline.md](ai-pipeline.md)                                         | 0     |
+| R10 core infrastructure plan                                      | [infrastructure.md](infrastructure.md)                                   | 0     |
+| R11 popular, legally reimplementable games                        | [game-catalog.md](game-catalog.md), [legal.md](legal.md)                 | 1     |
+| R12–R16 lore, cute characters, adorability, wisdom                | [lore/](lore/README.md)                                                  | 0–4   |
+| R17 educational positioning                                       | [game-catalog.md](game-catalog.md), `learning` package                   | 1     |
+| R18 simplest games first                                          | Wave 1 order in [game-catalog.md](game-catalog.md)                       | 1     |
+| R19–R20 open source, public domain, quiet about it                | [legal.md](legal.md#licensing), [business-model.md](business-model.md)   | 0     |
+| R21–R25 free to play, subscriptions, ads, generosity, experiments | [monetization.md](monetization.md)                                       | 1–3   |
+| R26–R28 community, hiring, donations, merch                       | [community.md](community.md), [business-model.md](business-model.md)     | 1–3   |
+| R29 profitable, attract capital                                   | [business-model.md](business-model.md)                                   | 2–3   |
+| R30 own anime characters in many styles                           | [lore/characters.md](lore/characters.md)                                 | 0, 4  |
+| R31–R35 case study, requirements, solution plans                  | [case study](../case-studies/issue-1/README.md)                          | done  |
+| R36, R39, R40 game ideas, all genres, simplest to most complex    | [game-ideas.md](game-ideas.md)                                           | 1–4   |
+| R37 game collections in a single app                              | [game-ideas.md](game-ideas.md#collections-in-a-single-app)               | 2     |
+| R38 resource-based economy                                        | [economy.md](economy.md)                                                 | 1–4   |
+| R41, R42 non-violence, First Contact lore                         | [lore/first-contact.md](lore/first-contact.md)                           | 0, 4  |
+| R43–R48 physics, vector graphics, LOD, realism, universal formula | [simulation-engine.md](simulation-engine.md), [track](#simulation-track) | S1–S7 |
+| R49 advance education and science                                 | [game-ideas.md](game-ideas.md#games-that-advance-science)                | 1–4   |

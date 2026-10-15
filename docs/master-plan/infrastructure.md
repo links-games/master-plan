@@ -16,20 +16,22 @@ All repositories are planned, **not yet created** (creating them is an
 outward-facing action approved separately; see [roadmap](roadmap.md)
 Phase 0).
 
-| Repository                             | Type             | Contents                                                                               | License                |
-| -------------------------------------- | ---------------- | -------------------------------------------------------------------------------------- | ---------------------- |
-| `links-games/master-plan`              | docs (this repo) | Plan, case studies, templates source.                                                  | Unlicense              |
-| `links-games/.github`                  | org config       | Reusable workflows (AI pipeline, CI, release, deploy), org profile, default templates. | Unlicense              |
-| `links-games/game-core`                | pnpm monorepo    | `@links-games/*` packages (section 2).                                                 | Unlicense              |
-| `links-games/lore`                     | content          | Canonical lore, character sheets, wisdom bank as LiNo + Markdown, i18n strings.        | CC0 text, ™ names      |
-| `links-games/assets`                   | content          | Character art (SVG, Rive, Lottie, glTF), sounds, fonts, brand kit.                     | CC0 art, ™ characters  |
-| `links-games/game-template-pixi-react` | template repo    | Default 2D game template (section 4).                                                  | Unlicense              |
-| `links-games/game-template-phaser`     | template repo    | Physics/arcade 2D template.                                                            | Unlicense              |
-| `links-games/game-template-r3f`        | template repo    | 3D template (three.js + React Three Fiber).                                            | Unlicense              |
-| `links-games/<game>` (many)            | game             | One repository per game, created from a template.                                      | Unlicense / CC0 assets |
-| `links-games/hub`                      | app              | One "Links Playground" app hosting all games (web, stores, Telegram main app).         | Unlicense              |
-| `links-games/backend`                  | service          | Supabase schema/edge functions: profiles, saves, entitlements, leaderboards.           | Unlicense              |
-| private `links-games/ops`              | private          | Ad unit IDs, store credentials, signing keys, experiment configs (never public).       | proprietary            |
+| Repository                             | Type             | Contents                                                                                                                | License                |
+| -------------------------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| `links-games/master-plan`              | docs (this repo) | Plan, case studies, templates source.                                                                                   | Unlicense              |
+| `links-games/.github`                  | org config       | Reusable workflows (AI pipeline, CI, release, deploy), org profile, default templates.                                  | Unlicense              |
+| `links-games/game-core`                | pnpm monorepo    | `@links-games/*` packages (section 2).                                                                                  | Unlicense              |
+| `links-games/lore`                     | content          | Canonical lore, character sheets, wisdom bank as LiNo + Markdown, i18n strings.                                         | CC0 text, ™ names      |
+| `links-games/assets`                   | content          | Character art (SVG, Rive, Lottie, glTF), sounds, fonts, brand kit.                                                      | CC0 art, ™ characters  |
+| `links-games/game-template-pixi-react` | template repo    | Default 2D game template (section 4).                                                                                   | Unlicense              |
+| `links-games/game-template-phaser`     | template repo    | Physics/arcade 2D template.                                                                                             | Unlicense              |
+| `links-games/game-template-r3f`        | template repo    | 3D template (three.js + React Three Fiber).                                                                             | Unlicense              |
+| `links-games/<game>` (many)            | game             | One repository per game, created from a template.                                                                       | Unlicense / CC0 assets |
+| `links-games/hub`                      | app              | One "Links Playground" app hosting all games (web, stores, Telegram main app).                                          | Unlicense              |
+| `links-games/collection-<family>`      | app              | A [collection app](game-ideas.md#collections-in-a-single-app) bundling one family of games (e.g. all puzzles).          | Unlicense              |
+| `links-games/simulation-lab`           | research         | Physics benchmarks, reference comparisons, relative-meta-logic experiments ([simulation engine](simulation-engine.md)). | Unlicense              |
+| `links-games/backend`                  | service          | Supabase schema/edge functions: profiles, saves, entitlements, leaderboards.                                            | Unlicense              |
+| private `links-games/ops`              | private          | Ad unit IDs, store credentials, signing keys, experiment configs (never public).                                        | proprietary            |
 
 Why one repository per game: the AI pipeline works best on small,
 focused repositories (an issue maps to a few files), community members can
@@ -41,22 +43,27 @@ imports published game packages so the player still sees one universe.
 Published to npm as `@links-games/<name>`, versioned with Changesets, built
 with Vite library mode, documented in Storybook.
 
-| Package        | Responsibility                                                                                                                       | Built on (existing libraries)                                     |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
-| `core`         | Game loop helpers, scene/state machine, deterministic RNG (daily seeds), save/load with migrations, settings, timers.                | React 19, Zustand, `lino-objects-codec` for LiNo saves            |
-| `platform`     | One `Platform` interface + adapters (section 3).                                                                                     | `@capacitor/*`, `@tma.js/sdk`, `@vkontakte/vk-bridge`, Yandex SDK |
-| `profile`      | One player profile across games: avatar, collection of Links, streak, progress, parental settings, cloud sync.                       | Supabase anonymous auth + platform storage                        |
-| `monetization` | Entitlements (`supporter`, `no-ads`, `boost`), rewarded-ad facade, store catalog, generosity rules engine.                           | RevenueCat (Capacitor + Web Billing), Stars, VK votes, AdMob      |
-| `experiments`  | Feature flags, remote config, A/B assignment, event tracking with a kids-safe schema.                                                | PostHog (self-hosted for kids builds), GrowthBook as alternative  |
-| `learning`     | Learning objectives, spaced-repetition scheduler (1/3/7 days), difficulty adaptation (target 70–85% success), pre/post micro-checks. | own code (small)                                                  |
-| `ui`           | Adorable React UI kit: buttons, dialogs, HUD, "Let's try again!" screens, parental gate, settings, accessibility.                    | React DOM over canvas, Motion, Storybook                          |
-| `characters`   | Link characters as components (`<Linky mood="happy" />`), emotes, stickers, voice lines.                                             | Rive runtime (MIT), dotLottie, SVG                                |
-| `audio`        | Music/sfx with mobile unlock, ducking, mute by default in public places setting.                                                     | Howler.js                                                         |
-| `i18n`         | Strings shared across games (lore, UI), locale from platform, plural/ICU rules.                                                      | i18next + react-i18next, `lino-i18n`                              |
-| `render-pixi`  | React bindings and helpers for 2D games.                                                                                             | PixiJS v8 + `@pixi/react`                                         |
-| `render-three` | Helpers for 3D games.                                                                                                                | three.js + R3F + drei + Rapier                                    |
-| `testing`      | Playwright fixtures for mobile viewports, visual snapshots, adorability checks, platform adapter mocks.                              | Playwright, test-anywhere                                         |
-| `shells`       | Shell configs and scripts: PWA, Capacitor, Electron, Telegram, VK, portals; one command builds all.                                  | vite-plugin-pwa, Capacitor 8, Electron 44                         |
+| Package        | Responsibility                                                                                                                             | Built on (existing libraries)                                     |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| `core`         | Game loop helpers, scene/state machine, deterministic RNG (daily seeds), save/load with migrations, settings, timers.                      | React 19, Zustand, `lino-objects-codec` for LiNo saves            |
+| `platform`     | One `Platform` interface + adapters (section 3).                                                                                           | `@capacitor/*`, `@tma.js/sdk`, `@vkontakte/vk-bridge`, Yandex SDK |
+| `profile`      | One player profile across games: avatar, collection of Links, streak, progress, parental settings, cloud sync.                             | Supabase anonymous auth + platform storage                        |
+| `monetization` | Entitlements (`supporter`, `no-ads`, `boost`), rewarded-ad facade, store catalog, generosity rules engine.                                 | RevenueCat (Capacitor + Web Billing), Stars, VK votes, AdMob      |
+| `experiments`  | Feature flags, remote config, A/B assignment, event tracking with a kids-safe schema.                                                      | PostHog (self-hosted for kids builds), GrowthBook as alternative  |
+| `learning`     | Learning objectives, spaced-repetition scheduler (1/3/7 days), difficulty adaptation (target 70–85% success), pre/post micro-checks.       | own code (small)                                                  |
+| `ui`           | Adorable React UI kit: buttons, dialogs, HUD, "Let's try again!" screens, parental gate, settings, accessibility.                          | React DOM over canvas, Motion, Storybook                          |
+| `characters`   | Link characters as components (`<Linky mood="happy" />`), emotes, stickers, voice lines.                                                   | Rive runtime (MIT), dotLottie, SVG                                |
+| `audio`        | Music/sfx with mobile unlock, ducking, mute by default in public places setting.                                                           | Howler.js                                                         |
+| `i18n`         | Strings shared across games (lore, UI), locale from platform, plural/ICU rules.                                                            | i18next + react-i18next, `lino-i18n`                              |
+| `render-pixi`  | React bindings and helpers for 2D games.                                                                                                   | PixiJS v8 + `@pixi/react`                                         |
+| `render-three` | Helpers for 3D games.                                                                                                                      | three.js + R3F + drei + Rapier                                    |
+| `sim`          | Deterministic fixed-step simulation, units, XPBD, symplectic integrators, conservation checks ([simulation engine](simulation-engine.md)). | Rapier, own small solvers                                         |
+| `sim-gpu`      | WebGPU compute kernels for particles and continua, with a WASM fallback.                                                                   | WebGPU (WGSL)                                                     |
+| `lod`          | Device-tier benchmark, dynamic level of detail for geometry, shading, simulation and audio.                                                | own code (small)                                                  |
+| `laws`         | LiNo library of physical laws with validity domains; law selection with relative-meta-logic (research).                                    | `links-notation`, relative-meta-logic                             |
+| `economy`      | Resource flow graphs (sources, pools, converters, drains) for [resource-based economies](economy.md).                                      | own code (small)                                                  |
+| `testing`      | Playwright fixtures for mobile viewports, visual snapshots, adorability checks, platform adapter mocks.                                    | Playwright, test-anywhere                                         |
+| `shells`       | Shell configs and scripts: PWA, Capacitor, Electron, Telegram, VK, portals; one command builds all.                                        | vite-plugin-pwa, Capacitor 8, Electron 44                         |
 
 The packages follow the associative tech stack of `link-assistant/formal-ai`
 where it fits: data that is stored or exchanged (saves, lore, character
