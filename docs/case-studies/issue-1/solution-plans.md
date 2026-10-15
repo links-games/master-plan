@@ -16,40 +16,46 @@ here are in the [research data](README.md#data) (snapshot 2026-10-15).
 
 ## Summary
 
-| ID      | Requirement (short)                     | Solution in one line                                                                           | Status in this PR        |
-| ------- | --------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------ |
-| R1      | Lots of mobile-first mini games         | Waves of small games from templates; mobile viewports first                                    | Planned (catalog, waves) |
-| R2      | Web, mobile, Telegram, VK, …            | One Vite build + thin shells + `Platform` adapters                                             | Planned                  |
-| R3      | Game-core library                       | `@links-games/*` packages in a pnpm monorepo                                                   | Planned                  |
-| R4      | Template repositories                   | GitHub template repos per genre, starting from `examples/universal-app`                        | Planned                  |
-| R5      | React + JS + Capacitor + Electron       | React 19 + JavaScript (JSDoc), Capacitor 8, Electron 44                                        | Planned                  |
-| R6      | Use formal-ai                           | formal-ai as the pipeline brain; LiNo for game data                                            | Templates done           |
-| R7      | Issue → latest formal-ai → PR           | Reusable workflow: `formal-ai:latest` + hive-mind `solve`                                      | Templates + tests done   |
-| R8      | PR created the hive-mind way            | hive-mind `solve` opens and continues the draft PR                                             | Templates + tests done   |
-| R9      | Restartable on the same PR              | New events (`/retry`, reviews, labels, schedule) keyed to the same target                      | Templates + tests done   |
-| R10     | Detailed core infrastructure plan       | [infrastructure.md](../../master-plan/infrastructure.md)                                       | Done                     |
-| R11     | Popular, legally reimplementable games  | Ranked catalog with "avoid" notes per game                                                     | Done                     |
-| R12     | Lore core from linksplatform            | World of Omi built from Links Theory                                                           | Done                     |
-| R13     | Cute for toddlers, children, adults     | Primitive shapes, chibi first, age tiers                                                       | Done                     |
-| R14     | Not adorable = bug                      | Adorability gate checklist, label, template, visual tests                                      | Done (gate), CI planned  |
-| R15     | One universe                            | Shared lore, profile, collection, hub app                                                      | Planned                  |
-| R16     | Wisdom and lessons in the lore          | Wisdom bank linked to games                                                                    | Done                     |
-| R17     | Fun + learning                          | One learning objective per game, `learning` package                                            | Planned                  |
-| R18     | Simplest games first                    | Wave 1 ordered by complexity                                                                   | Done                     |
-| R19     | Open source, public domain              | Unlicense code, CC0 assets, trademarks kept                                                    | Done (policy)            |
-| R20     | Do not advertise it much                | License in repo and About screen only                                                          | Done (policy)            |
-| R21     | Free to play + custom subscriptions     | Supporter tier with cosmetic perks; entitlement model                                          | Planned                  |
-| R22     | Ad-free at start                        | Ads SDKs off by flag; kids builds link none                                                    | Planned                  |
-| R23     | Ads/subscriptions give advantages       | Opt-in rewarded ads and boosts, all earnable for free                                          | Planned (Phase 3)        |
-| R24     | More generous than competitors          | Public generosity charter enforced in code                                                     | Done (charter)           |
-| R25     | All mechanics in place for experiments  | Every mechanic behind a remote flag; PostHog experiments                                       | Planned                  |
-| R26     | Big global community                    | Channels, growth loops, AI-assisted contributions                                              | Planned                  |
-| R27     | Hiring when budget allows               | Hiring order and rules                                                                         | Planned                  |
-| R28     | Donations, merch                        | Sponsors/Open Collective/Ko-fi; print-on-demand; licensing                                     | Planned                  |
-| R29     | Profitable, attract capital             | Unit economics, break-even, capital instruments                                                | Planned                  |
-| R30     | Own anime characters in many styles     | Chibi 2D, normal anime 2D, 3D, anime hosts                                                     | Done (bible)             |
-| R31–R35 | Case study, requirements, plans, one PR | This folder and PR #2                                                                          | Done                     |
-| D1–D7   | Derived requirements                    | Kids privacy, legal checklist, shared identity, moat, AI cost, safe analytics, learning design | Done (plans)             |
+| ID      | Requirement (short)                                                          | Solution in one line                                                                           | Status in this PR          |
+| ------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------- |
+| R1      | Lots of mobile-first mini games                                              | Waves of small games from templates; mobile viewports first                                    | Planned (catalog, waves)   |
+| R2      | Web, mobile, Telegram, VK, …                                                 | One Vite build + thin shells + `Platform` adapters                                             | Planned                    |
+| R3      | Game-core library                                                            | `@links-games/*` packages in a pnpm monorepo                                                   | Planned                    |
+| R4      | Template repositories                                                        | GitHub template repos per genre, starting from `examples/universal-app`                        | Planned                    |
+| R5      | React + JS + Capacitor + Electron                                            | React 19 + JavaScript (JSDoc), Capacitor 8, Electron 44                                        | Planned                    |
+| R6      | Use formal-ai                                                                | formal-ai as the pipeline brain; LiNo for game data                                            | Templates done             |
+| R7      | Issue → latest formal-ai → PR                                                | Reusable workflow: `formal-ai:latest` + hive-mind `solve`                                      | Templates + tests done     |
+| R8      | PR created the hive-mind way                                                 | hive-mind `solve` opens and continues the draft PR                                             | Templates + tests done     |
+| R9      | Restartable on the same PR                                                   | New events (`/retry`, reviews, labels, schedule) keyed to the same target                      | Templates + tests done     |
+| R10     | Detailed core infrastructure plan                                            | [infrastructure.md](../../master-plan/infrastructure.md)                                       | Done                       |
+| R11     | Popular, legally reimplementable games                                       | Ranked catalog with "avoid" notes per game                                                     | Done                       |
+| R12     | Lore core from linksplatform                                                 | World of Omi built from Links Theory                                                           | Done                       |
+| R13     | Cute for toddlers, children, adults                                          | Primitive shapes, chibi first, age tiers                                                       | Done                       |
+| R14     | Not adorable = bug                                                           | Adorability gate checklist, label, template, visual tests                                      | Done (gate), CI planned    |
+| R15     | One universe                                                                 | Shared lore, profile, collection, hub app                                                      | Planned                    |
+| R16     | Wisdom and lessons in the lore                                               | Wisdom bank linked to games                                                                    | Done                       |
+| R17     | Fun + learning                                                               | One learning objective per game, `learning` package                                            | Planned                    |
+| R18     | Simplest games first                                                         | Wave 1 ordered by complexity                                                                   | Done                       |
+| R19     | Open source, public domain                                                   | Unlicense code, CC0 assets, trademarks kept                                                    | Done (policy)              |
+| R20     | Do not advertise it much                                                     | License in repo and About screen only                                                          | Done (policy)              |
+| R21     | Free to play + custom subscriptions                                          | Supporter tier with cosmetic perks; entitlement model                                          | Planned                    |
+| R22     | Ad-free at start                                                             | Ads SDKs off by flag; kids builds link none                                                    | Planned                    |
+| R23     | Ads/subscriptions give advantages                                            | Opt-in rewarded ads and boosts, all earnable for free                                          | Planned (Phase 3)          |
+| R24     | More generous than competitors                                               | Public generosity charter enforced in code                                                     | Done (charter)             |
+| R25     | All mechanics in place for experiments                                       | Every mechanic behind a remote flag; PostHog experiments                                       | Planned                    |
+| R26     | Big global community                                                         | Channels, growth loops, AI-assisted contributions                                              | Planned                    |
+| R27     | Hiring when budget allows                                                    | Hiring order and rules                                                                         | Planned                    |
+| R28     | Donations, merch                                                             | Sponsors/Open Collective/Ko-fi; print-on-demand; licensing                                     | Planned                    |
+| R29     | Profitable, attract capital                                                  | Unit economics, break-even, capital instruments                                                | Planned                    |
+| R30     | Own anime characters in many styles                                          | Chibi 2D, normal anime 2D, 3D, anime hosts                                                     | Done (bible)               |
+| R31–R35 | Case study, requirements, plans, one PR                                      | This folder and PR #2                                                                          | Done                       |
+| R36–R37 | Game ideas list, collections in one app                                      | 168 ideas in 12 collections; one repo per game, collection apps are configuration              | Done (list), apps planned  |
+| R38     | Resource-based economy                                                       | Real resources and needs, conservation, sharing; money only where it is the lesson             | Done (rules)               |
+| R39–R41 | All genres, learning inside, simplest first, non-violence                    | Proven genre per idea, complexity ladder Cx 1–7, non-violent reframing table                   | Done (list)                |
+| R42     | First Contact lore: Reya and Shacados                                        | Lore page, pilot source and translation, physics check script and test                         | Done (draft), review       |
+| R43–R48 | Accurate, efficient physics; vector 2D → 3D; LOD; realism; universal formula | Rapier/Box2D/XPBD/MPM on WebGPU; action principle; RML law selection as research               | Planned (simulation track) |
+| R49     | Advance education and science                                                | Real or transferable knowledge in every game; validated open simulators; citizen science       | Planned                    |
+| D1–D7   | Derived requirements                                                         | Kids privacy, legal checklist, shared identity, moat, AI cost, safe analytics, learning design | Done (plans)               |
 
 ## Products and platforms
 
@@ -504,3 +510,120 @@ here are in the [research data](README.md#data) (snapshot 2026-10-15).
   success), spaced repetition, pre/post micro-checks, published results.
 - **Plan:** [quality gates](../../master-plan/infrastructure.md#6-quality-gates),
   [learning research](data/research-market-games.md#41-learning-science-evidence).
+
+## Requirements from the PR #2 feedback
+
+Requirements R36–R49 come from the maintainer's
+[PR #2 comment](https://github.com/links-games/master-plan/pull/2#issuecomment-6189666260).
+
+### R36 — A list of game ideas, many small repositories
+
+- **Solution:** [game ideas](../../master-plan/game-ideas.md): 168 ideas
+  in 12 genre collections, each with a proven genre, a lesson and a
+  complexity; one repository per game.
+- **Reuse:** the Wave 1–3 games of the [catalog](../../master-plan/game-catalog.md)
+  are included and marked; the [game idea template](../../master-plan/templates/ISSUE_TEMPLATE/game-idea.md)
+  adds new ones.
+- **Evidence:** [research-genres-ideas.md](data/research-genres-ideas.md).
+
+### R37 — Game collections in a single app
+
+- **Solution:** each game publishes a package with a manifest; a
+  `collection-<family>` repository is only configuration (list of games,
+  store listing, theme). The same game can ship alone, in a collection and
+  in the hub.
+- **Alternatives:** one monorepo per collection — rejected, because small
+  repositories work best with the AI pipeline (R7) and community owners.
+- **Plan:** [collections](../../master-plan/game-ideas.md#collections-in-a-single-app),
+  [repository map](../../master-plan/infrastructure.md#1-repository-map).
+
+### R38 — Resource-based economy, not money
+
+- **Solution:** [economy](../../master-plan/economy.md): real resources and
+  needs, conservation of flows, sharing beats hoarding, success measured in
+  wellbeing; money only where it is the lesson; real money never buys
+  in-game resources.
+- **Reuse:** The Venus Project's resource-based economy idea, Ostrom's
+  commons principles, Machinations-style flow graphs.
+
+### R39 — All popular genres with useful and scientific learning inside
+
+- **Solution:** every idea names a proven genre and the knowledge used to
+  win; the science collections (Science Lab, Space, Strategy) carry real
+  physics, biology, chemistry and economics.
+- **Plan:** [game ideas](../../master-plan/game-ideas.md#rules-for-every-idea).
+
+### R40 — Simplest first, then progressively more complex
+
+- **Solution:** the [complexity ladder](../../master-plan/game-ideas.md#complexity-ladder)
+  extends the catalog's Cx 1–5 to Cx 6 (scientific simulators) and Cx 7
+  (First Contact); ideas are sorted by Cx in every collection; the
+  [simulation track](../../master-plan/roadmap.md#simulation-track) gates
+  each step on shipped games.
+
+### R41 — Non-violent games
+
+- **Solution:** a [reframing table](../../master-plan/game-ideas.md#non-violent-reframing)
+  keeps the fun of violent genres without harm; First Contact has no
+  "destroy" verb ([world rules](../../master-plan/lore/first-contact.md#world-rules-of-the-realistic-layer)).
+
+### R42 — First Contact lore: Reya and Shacados
+
+- **Solution:** [first-contact.md](../../master-plan/lore/first-contact.md)
+  with both civilizations, their start systems, the retold pilot, world
+  rules of the realistic layer, the proposed bridge to Omi and game seeds.
+  The [source text and translation](data/first-contact-pilot-scene.md) are
+  in the data folder.
+- **Verification:** [`examples/first-contact-physics.mjs`](../../../examples/first-contact-physics.mjs)
+  and `tests/first-contact-physics.test.js` check the scene with special
+  relativity; they found that the written probe speed (500,000 km/s) is
+  faster than light and propose 0.5 _c_.
+
+### R43 — Accurate and efficient physics engines
+
+- **Solution:** Rapier 2D/3D by default, Box2D v3 and MuJoCo as accuracy
+  references, XPBD and MPM on WebGPU for soft matter, symplectic
+  integrators for orbits.
+- **Plan:** [engines](../../master-plan/simulation-engine.md#engines-and-libraries-reuse-first);
+  evidence in [research-physics-simulation.md](data/research-physics-simulation.md).
+
+### R44 — 2D vector first, then 3D vector
+
+- **Solution:** SVG and Rive, then PixiJS and GPU vector rendering, then
+  low-poly and SDF 3D in three.js.
+- **Plan:** [path](../../master-plan/simulation-engine.md#path-2d-vector--3d-vector--realistic).
+
+### R45 — All screens, any quality, level of detail
+
+- **Solution:** measured device tiers and dynamic LOD for geometry,
+  shading, simulation and audio; the laws never change between tiers.
+- **Plan:** [LOD](../../master-plan/simulation-engine.md#level-of-detail-and-every-screen).
+
+### R46 — Toward an exactly real simulator, anime style kept
+
+- **Solution:** physically based light and materials with the anime style
+  as a final transfer; error budgets per simulator. The DNA idea is
+  recorded as a long-term thought experiment with an ethics boundary.
+- **Plan:** [rendering](../../master-plan/simulation-engine.md#rendering-from-physical-properties).
+
+### R47 — The 3D engine comes from physical properties
+
+- **Solution:** objects are described by measured physical properties
+  (glTF 2.0 PBR plus mass, elasticity, friction); motion and looks are
+  computed from them.
+
+### R48 — One universal formula on the GPU, laws per scale via relative-meta-logic
+
+- **Solution:** the principle of stationary action through variational
+  integrators as the universal formula; simplified laws stored with
+  validity domains; relative-meta-logic selects and justifies the law.
+  RML has no physics today, so this is a research track in
+  `simulation-lab`.
+- **Plan:** [universal formula](../../master-plan/simulation-engine.md#one-universal-formula-and-laws-per-scale).
+
+### R49 — Advance education and science
+
+- **Solution:** real or transferable knowledge in every game; open,
+  validated simulators; citizen-science modes for adults.
+- **Plan:** [games that advance science](../../master-plan/game-ideas.md#games-that-advance-science),
+  [education and science](../../master-plan/simulation-engine.md#education-and-science-r49).

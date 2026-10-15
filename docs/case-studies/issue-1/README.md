@@ -4,7 +4,8 @@
 
 - **Issue**: [#1 - Initial master plan](https://github.com/links-games/master-plan/issues/1)
 - **Pull request**: [#2](https://github.com/links-games/master-plan/pull/2)
-- **Raw copies**: [`data/issue-1.json`](data/issue-1.json), [`data/pr-2.json`](data/pr-2.json)
+- **Raw copies**: [`data/issue-1.json`](data/issue-1.json), [`data/pr-2.json`](data/pr-2.json), [`data/pr-2-comments.json`](data/pr-2-comments.json)
+- **Feedback**: the maintainer's [PR #2 comment](https://github.com/links-games/master-plan/pull/2#issuecomment-6189666260) added requirements R36–R49
 
 The issue asks for a complete plan for the `links-games` organization:
 
@@ -21,25 +22,28 @@ The issue asks for a complete plan for the `links-games` organization:
 
 ## Contents of this case study
 
-| Document                               | What it contains                                                                                        |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| [requirements.md](requirements.md)     | Every requirement from the issue (R1–R35) with a quote, plus 7 derived requirements (D1–D7).            |
-| [solution-plans.md](solution-plans.md) | For each requirement: the chosen solution, existing components and libraries checked, and alternatives. |
-| [The master plan](../../master-plan/)  | The result: roadmap, infrastructure, AI pipeline, game catalog, lore, monetization, community, legal.   |
-| [data/](data/)                         | Raw data and the online research notes listed below.                                                    |
+| Document                               | What it contains                                                                                                              |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| [requirements.md](requirements.md)     | Every requirement from the issue (R1–R35) and the PR #2 feedback (R36–R49) with a quote, plus 7 derived requirements (D1–D7). |
+| [solution-plans.md](solution-plans.md) | For each requirement: the chosen solution, existing components and libraries checked, and alternatives.                       |
+| [The master plan](../../master-plan/)  | The result: roadmap, infrastructure, AI pipeline, game catalog, lore, monetization, community, legal.                         |
+| [data/](data/)                         | Raw data and the online research notes listed below.                                                                          |
 
 ### Data
 
-| File                                                                        | What it is                                                                                                                       |
-| --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| [`research-formal-ai-hive-mind.md`](data/research-formal-ai-hive-mind.md)   | Source-level study of formal-ai and hive-mind (release channels, CLI, `solve` options, PR mechanics), AI-on-issues alternatives. |
-| [`research-platforms-tech.md`](data/research-platforms-tech.md)             | Distribution targets and their SDKs, game libraries, services (payments, ads, analytics, backend), monorepo tooling, licensing.  |
-| [`research-market-games.md`](data/research-market-games.md)                 | Market data, popular reimplementable games, legal cases, learning science, kids' privacy, monetization benchmarks, cute IP.      |
-| [`research-links-theory-lore.md`](data/research-links-theory-lore.md)       | Links Theory concepts, Links Notation, existing visual identity, concept-to-character mapping, anime styles, tone guide.         |
-| [`issue-1.json`](data/issue-1.json), [`pr-2.json`](data/pr-2.json)          | Raw issue and pull request at the start of the work.                                                                             |
-| [`linksplatform-repos.json`](data/linksplatform-repos.json) (88 repos)      | Repository list of the `linksplatform` organization (source of the lore).                                                        |
-| [`link-assistant-repos.json`](data/link-assistant-repos.json) (29 repos)    | Repository list of `link-assistant` (formal-ai, hive-mind, agent).                                                               |
-| [`link-foundation-repos.json`](data/link-foundation-repos.json) (175 repos) | Repository list of `link-foundation` (Links Notation, shared actions, templates).                                                |
+| File                                                                                                                | What it is                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`research-formal-ai-hive-mind.md`](data/research-formal-ai-hive-mind.md)                                           | Source-level study of formal-ai and hive-mind (release channels, CLI, `solve` options, PR mechanics), AI-on-issues alternatives.                               |
+| [`research-platforms-tech.md`](data/research-platforms-tech.md)                                                     | Distribution targets and their SDKs, game libraries, services (payments, ads, analytics, backend), monorepo tooling, licensing.                                |
+| [`research-market-games.md`](data/research-market-games.md)                                                         | Market data, popular reimplementable games, legal cases, learning science, kids' privacy, monetization benchmarks, cute IP.                                    |
+| [`research-links-theory-lore.md`](data/research-links-theory-lore.md)                                               | Links Theory concepts, Links Notation, existing visual identity, concept-to-character mapping, anime styles, tone guide.                                       |
+| [`research-genres-ideas.md`](data/research-genres-ideas.md)                                                         | Proven game genres, educational and citizen-science games, game collections, non-violent design and resource-based economies (for R36–R41, R49).               |
+| [`research-physics-simulation.md`](data/research-physics-simulation.md)                                             | Physics engines for JS/WASM, the "universal formula" candidates, WebGPU reach, PBR and anime rendering, LOD, determinism, real-world validation (for R43–R48). |
+| [`first-contact-pilot-scene.md`](data/first-contact-pilot-scene.md)                                                 | The First Contact pilot scene (Russian original, English translation) and the maintainer's framing (for R42).                                                  |
+| [`issue-1.json`](data/issue-1.json), [`pr-2.json`](data/pr-2.json), [`pr-2-comments.json`](data/pr-2-comments.json) | Raw issue, pull request and pull request comments.                                                                                                             |
+| [`linksplatform-repos.json`](data/linksplatform-repos.json) (88 repos)                                              | Repository list of the `linksplatform` organization (source of the lore).                                                                                      |
+| [`link-assistant-repos.json`](data/link-assistant-repos.json) (29 repos)                                            | Repository list of `link-assistant` (formal-ai, hive-mind, agent).                                                                                             |
+| [`link-foundation-repos.json`](data/link-foundation-repos.json) (175 repos)                                         | Repository list of `link-foundation` (Links Notation, shared actions, templates).                                                                              |
 
 Each research note has its own snapshot date (2026-10-15) and a source URL
 next to every fact. Prices, fees, store policies and library versions
@@ -47,18 +51,22 @@ change often, so re-check them before relying on them.
 
 ## Timeline
 
-| Time (UTC)       | Event                                                                                                      |
-| ---------------- | ---------------------------------------------------------------------------------------------------------- |
-| 2026-10-15 09:02 | Issue #1 opened (labels `documentation`, `enhancement`).                                                   |
-| 2026-10-15 09:10 | Draft pull request #2 opened by the AI issue solver on branch `issue-1-fb26bf6c9ffd`.                      |
-| 2026-10-15 09:15 | Requirements list (R1–R35, D1–D7), master plan index, adorability gate and repository templates committed. |
-| 2026-10-15 09:27 | Online research notes committed (formal-ai/hive-mind, lore, market, platforms).                            |
-| 2026-10-15 09:31 | Restartable AI pipeline design, workflow templates and their tests committed.                              |
-| 2026-10-15 09:32 | Core infrastructure plan committed.                                                                        |
-| 2026-10-15 09:36 | Game catalog and phased roadmap committed.                                                                 |
-| 2026-10-15 09:39 | Lore core and character bible committed.                                                                   |
-| 2026-10-15 09:42 | Monetization, business model, community and legal plans committed.                                         |
-| 2026-10-15       | This case study, the solution plans and the documentation link tests committed.                            |
+| Time (UTC)       | Event                                                                                                                                                     |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-10-15 09:02 | Issue #1 opened (labels `documentation`, `enhancement`).                                                                                                  |
+| 2026-10-15 09:10 | Draft pull request #2 opened by the AI issue solver on branch `issue-1-fb26bf6c9ffd`.                                                                     |
+| 2026-10-15 09:15 | Requirements list (R1–R35, D1–D7), master plan index, adorability gate and repository templates committed.                                                |
+| 2026-10-15 09:27 | Online research notes committed (formal-ai/hive-mind, lore, market, platforms).                                                                           |
+| 2026-10-15 09:31 | Restartable AI pipeline design, workflow templates and their tests committed.                                                                             |
+| 2026-10-15 09:32 | Core infrastructure plan committed.                                                                                                                       |
+| 2026-10-15 09:36 | Game catalog and phased roadmap committed.                                                                                                                |
+| 2026-10-15 09:39 | Lore core and character bible committed.                                                                                                                  |
+| 2026-10-15 09:42 | Monetization, business model, community and legal plans committed.                                                                                        |
+| 2026-10-15       | This case study, the solution plans and the documentation link tests committed.                                                                           |
+| 2026-10-15 10:02 | All CI checks passed; the pull request was marked ready.                                                                                                  |
+| 2026-10-15 10:11 | The maintainer's feedback asked for a game ideas list, collections, a resource-based economy, the First Contact lore and a realistic simulator (R36–R49). |
+| 2026-10-15 10:33 | The pilot scene source, the feedback data and a relativistic physics check of the scene committed.                                                        |
+| 2026-10-15       | Game ideas, economy, simulation engine and First Contact lore documents, and the two new research notes, committed.                                       |
 
 ## Method
 
@@ -150,6 +158,29 @@ formal-ai` uses formal-ai; the `ghcr.io/link-assistant/formal-ai:latest`
   personality line, and characters that travel without the game (stickers,
   merch, short videos).
 
+### Feedback on PR #2
+
+- **The written pilot scene is faster than light.** The probe is said to
+  fly at 500,000 km/s, which is above _c_ (299,792 km/s). The scene works
+  at 0.5 _c_; every number is recomputed by
+  [`examples/first-contact-physics.mjs`](../../../examples/first-contact-physics.mjs)
+  and tested in
+  [`tests/first-contact-physics.test.js`](../../../tests/first-contact-physics.test.js)
+  ([physics check](../../master-plan/lore/first-contact.md#physics-check-of-the-pilot)).
+- **relative-meta-logic has no physics yet** (checked at commit
+  `c5513f2`). Using it to choose simplified laws per scale is a research
+  track, not a dependency; no existing product does this automatically.
+- **"Fully realistic" is only reachable per phenomenon**, within measured
+  error bars, so every game declares a
+  [fidelity level](../../master-plan/simulation-engine.md#determinism-and-fidelity-levels)
+  from L0 (arcade) to L4 (reproducible in real life).
+- **WebGPU reaches about 87.8% of users** and WebGL 2 has no compute
+  shaders, so every GPU kernel needs a CPU reference, and GPU floats never
+  drive state that must match across devices.
+- **Box2D v3 and Rapier** are the most accurate permissive engines with
+  documented cross-platform determinism in WASM; NVIDIA FleX is
+  non-permissive and is not used.
+
 ### Business and law
 
 - **Generous is a strategy, not a cost.** Big players now compete on "no
@@ -183,15 +214,21 @@ lists them for maintainers in the
    ("Linky" is already used by a French smart meter).
 5. **"Latest formal-ai"** means the `latest` container image, pulled on
    every run.
+6. **The DNA idea** from the feedback is recorded as a long-term thought
+   experiment with an ethics boundary; the plan keeps characters
+   biomechanically plausible instead.
+7. **Start systems of Reya and Shacados** are a proposal until the
+   maintainers confirm them.
 
 ## Verification
 
-| Check                                                                         | What it proves                                                                                         |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [`tests/ai-solve-workflow.test.js`](../../../tests/ai-solve-workflow.test.js) | The AI pipeline template triggers, permissions, restart logic and same-PR targeting behave as planned. |
-| [`tests/master-plan-docs.test.js`](../../../tests/master-plan-docs.test.js)   | Every relative link and `#anchor` in the master plan and this case study resolves.                     |
-| `actionlint` and the repository's workflow checks                             | The workflow templates are valid GitHub Actions.                                                       |
-| Lychee (`links.yml`)                                                          | External links in the documents are reachable.                                                         |
+| Check                                                                                 | What it proves                                                                                         |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| [`tests/ai-solve-workflow.test.js`](../../../tests/ai-solve-workflow.test.js)         | The AI pipeline template triggers, permissions, restart logic and same-PR targeting behave as planned. |
+| [`tests/master-plan-docs.test.js`](../../../tests/master-plan-docs.test.js)           | Every relative link and `#anchor` in the master plan and this case study resolves.                     |
+| [`tests/first-contact-physics.test.js`](../../../tests/first-contact-physics.test.js) | The physics numbers of the First Contact pilot scene are computed, not guessed.                        |
+| `actionlint` and the repository's workflow checks                                     | The workflow templates are valid GitHub Actions.                                                       |
+| Lychee (`links.yml`)                                                                  | External links in the documents are reachable.                                                         |
 
 Run locally:
 

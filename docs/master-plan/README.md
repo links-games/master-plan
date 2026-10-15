@@ -46,6 +46,15 @@ a fact, a skill, or a piece of wisdom from our shared lore.
    global community cannot ([community](community.md)).
 10. **Profit funds quality.** Sustainable revenue is reinvested into more and
     better games ([business model](business-model.md)).
+11. **Every proven genre, kind and smart.** We collect every popular genre,
+    wrap real or transferable knowledge in it, and climb from the simplest
+    games to a fully realistic simulator ([game ideas](game-ideas.md)).
+12. **Non-violent, resource-based.** Nobody is hurt to win, and in-game
+    economies count real resources and needs, not money
+    ([economy](economy.md), [First Contact](lore/first-contact.md)).
+13. **Physics, not guesswork.** Looks and behavior come from physical
+    properties, accurate and efficient at every scale and on every device
+    ([simulation engine](simulation-engine.md)).
 
 ## Documents
 
@@ -55,8 +64,12 @@ a fact, a skill, or a piece of wisdom from our shared lore.
 | [infrastructure.md](infrastructure.md)               | Repositories, game-core library, templates, platforms, tech stack. |
 | [ai-pipeline.md](ai-pipeline.md)                     | Issue → formal-ai → auto pull request → restartable CI/CD.         |
 | [game-catalog.md](game-catalog.md)                   | Ranked list of first games, educational angle, legal notes.        |
+| [game-ideas.md](game-ideas.md)                       | The big list: 160+ game ideas by genre, collections, ladder.       |
+| [economy.md](economy.md)                             | Resource-based in-game economy, not money.                         |
+| [simulation-engine.md](simulation-engine.md)         | Physics engines, 2D/3D vector graphics, LOD, path to realism.      |
 | [lore/README.md](lore/README.md)                     | The Links universe: world, characters, wisdom, styles.             |
 | [lore/characters.md](lore/characters.md)             | Character bible — every Link character with traits and lessons.    |
+| [lore/first-contact.md](lore/first-contact.md)       | Reya and Shacados: the setting of the final realistic simulator.   |
 | [lore/adorability-gate.md](lore/adorability-gate.md) | The "not adorable = bug" checklist used in reviews.                |
 | [monetization.md](monetization.md)                   | Generosity charter, all monetization mechanics, experiments.       |
 | [business-model.md](business-model.md)               | Revenue streams, unit economics, profitability and capital.        |
@@ -68,7 +81,7 @@ a fact, a skill, or a piece of wisdom from our shared lore.
 
 | Area                  | Status in this pull request                                     |
 | --------------------- | --------------------------------------------------------------- |
-| Requirements analysis | Done — 35 explicit + 7 derived requirements.                    |
+| Requirements analysis | Done — 35 from the issue + 14 from PR feedback + 7 derived.     |
 | Research & case study | Done — see `docs/case-studies/issue-1/`.                        |
 | Master plan documents | Done — this folder.                                             |
 | AI pipeline templates | Done — ready-to-copy workflow in `templates/`.                  |
