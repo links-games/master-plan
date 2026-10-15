@@ -160,3 +160,10 @@ These are not experiments; they are out of scope for good.
 
 The [adorability gate](lore/adorability-gate.md) checks the same list in
 every pull request, and [legal](legal.md) explains the laws behind it.
+
+## Inside the games: resources, not money
+
+Monetization is about how the organization is funded. Inside the games
+there is no money where a real resource can do the job: players manage
+water, energy, materials, time and knowledge, and real money never buys
+in-game resources or progress. The rules are in [economy](economy.md).
