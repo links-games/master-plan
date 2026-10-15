@@ -21,6 +21,11 @@ flowchart LR
 **Goal:** a new game can be started from a template in one day, and an
 issue in any repository produces an AI pull request.
 
+Before selecting the first prototype, review the
+[216-game visual concept catalog](concepts/README.md). Compare the four views
+on candidate pages, then prefer Cx 1–2 from the existing Wave 1 plan. Concept
+appeal informs the choice; an authored playable challenge validates the loop.
+
 | #   | Task                                                                                                                                                                                                    | Output                  |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | 0.1 | Merge this master plan.                                                                                                                                                                                 | `master-plan` on `main` |
@@ -175,28 +180,29 @@ only lists them. Order of creation (all under `links-games`):
 
 ## Requirement-to-phase mapping
 
-| Requirement                                                       | Where it is planned                                                      | Phase |
-| ----------------------------------------------------------------- | ------------------------------------------------------------------------ | ----- |
-| R1 lots of mobile-first games                                     | [game-catalog.md](game-catalog.md)                                       | 1–4   |
-| R2 web, mobile, Telegram, VK and more                             | [infrastructure.md](infrastructure.md#3-the-platform-interface)          | 0–2   |
-| R3 game-core library                                              | [infrastructure.md](infrastructure.md#2-game-core-packages)              | 0     |
-| R4 template repositories                                          | [infrastructure.md](infrastructure.md#4-template-repositories)           | 0     |
-| R5 React + JS + Capacitor + Electron                              | [infrastructure.md](infrastructure.md)                                   | 0     |
-| R6–R9 formal-ai, auto PR, restartable CI/CD                       | [ai-pipeline.md](ai-pipeline.md)                                         | 0     |
-| R10 core infrastructure plan                                      | [infrastructure.md](infrastructure.md)                                   | 0     |
-| R11 popular, legally reimplementable games                        | [game-catalog.md](game-catalog.md), [legal.md](legal.md)                 | 1     |
-| R12–R16 lore, cute characters, adorability, wisdom                | [lore/](lore/README.md)                                                  | 0–4   |
-| R17 educational positioning                                       | [game-catalog.md](game-catalog.md), `learning` package                   | 1     |
-| R18 simplest games first                                          | Wave 1 order in [game-catalog.md](game-catalog.md)                       | 1     |
-| R19–R20 open source, public domain, quiet about it                | [legal.md](legal.md#licensing), [business-model.md](business-model.md)   | 0     |
-| R21–R25 free to play, subscriptions, ads, generosity, experiments | [monetization.md](monetization.md)                                       | 1–3   |
-| R26–R28 community, hiring, donations, merch                       | [community.md](community.md), [business-model.md](business-model.md)     | 1–3   |
-| R29 profitable, attract capital                                   | [business-model.md](business-model.md)                                   | 2–3   |
-| R30 own anime characters in many styles                           | [lore/characters.md](lore/characters.md)                                 | 0, 4  |
-| R31–R35 case study, requirements, solution plans                  | [case study](../case-studies/issue-1/README.md)                          | done  |
-| R36, R39, R40 game ideas, all genres, simplest to most complex    | [game-ideas.md](game-ideas.md)                                           | 1–4   |
-| R37 game collections in a single app                              | [game-ideas.md](game-ideas.md#collections-in-a-single-app)               | 2     |
-| R38 resource-based economy                                        | [economy.md](economy.md)                                                 | 1–4   |
-| R41, R42 non-violence, First Contact lore                         | [lore/first-contact.md](lore/first-contact.md)                           | 0, 4  |
-| R43–R48 physics, vector graphics, LOD, realism, universal formula | [simulation-engine.md](simulation-engine.md), [track](#simulation-track) | S1–S7 |
-| R49 advance education and science                                 | [game-ideas.md](game-ideas.md#games-that-advance-science)                | 1–4   |
+| Requirement                                                         | Where it is planned                                                      | Phase |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------ | ----- |
+| R1 lots of mobile-first games                                       | [game-catalog.md](game-catalog.md)                                       | 1–4   |
+| R2 web, mobile, Telegram, VK and more                               | [infrastructure.md](infrastructure.md#3-the-platform-interface)          | 0–2   |
+| R3 game-core library                                                | [infrastructure.md](infrastructure.md#2-game-core-packages)              | 0     |
+| R4 template repositories                                            | [infrastructure.md](infrastructure.md#4-template-repositories)           | 0     |
+| R5 React + JS + Capacitor + Electron                                | [infrastructure.md](infrastructure.md)                                   | 0     |
+| R6–R9 formal-ai, auto PR, restartable CI/CD                         | [ai-pipeline.md](ai-pipeline.md)                                         | 0     |
+| R10 core infrastructure plan                                        | [infrastructure.md](infrastructure.md)                                   | 0     |
+| R11 popular, legally reimplementable games                          | [game-catalog.md](game-catalog.md), [legal.md](legal.md)                 | 1     |
+| R12–R16 lore, cute characters, adorability, wisdom                  | [lore/](lore/README.md)                                                  | 0–4   |
+| R17 educational positioning                                         | [game-catalog.md](game-catalog.md), `learning` package                   | 1     |
+| R18 simplest games first                                            | Wave 1 order in [game-catalog.md](game-catalog.md)                       | 1     |
+| R19–R20 open source, public domain, quiet about it                  | [legal.md](legal.md#licensing), [business-model.md](business-model.md)   | 0     |
+| R21–R25 free to play, subscriptions, ads, generosity, experiments   | [monetization.md](monetization.md)                                       | 1–3   |
+| R26–R28 community, hiring, donations, merch                         | [community.md](community.md), [business-model.md](business-model.md)     | 1–3   |
+| R29 profitable, attract capital                                     | [business-model.md](business-model.md)                                   | 2–3   |
+| R30 own anime characters in many styles                             | [lore/characters.md](lore/characters.md)                                 | 0, 4  |
+| R31–R35 case study, requirements, solution plans                    | [case study](../case-studies/issue-1/README.md)                          | done  |
+| R36, R39, R40 game ideas, all genres, simplest to most complex      | [game-ideas.md](game-ideas.md)                                           | 1–4   |
+| R37 game collections in a single app                                | [game-ideas.md](game-ideas.md#collections-in-a-single-app)               | 2     |
+| R38 resource-based economy                                          | [economy.md](economy.md)                                                 | 1–4   |
+| R41, R42 non-violence, First Contact lore                           | [lore/first-contact.md](lore/first-contact.md)                           | 0, 4  |
+| R43–R48 physics, vector graphics, LOD, realism, universal formula   | [simulation-engine.md](simulation-engine.md), [track](#simulation-track) | S1–S7 |
+| R49 advance education and science                                   | [game-ideas.md](game-ideas.md#games-that-advance-science)                | 1–4   |
+| R50–R54 expanded ideas, individual pages and four generated visuals | [visual catalog](concepts/README.md)                                     | 0     |

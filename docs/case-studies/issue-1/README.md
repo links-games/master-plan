@@ -6,6 +6,7 @@
 - **Pull request**: [#2](https://github.com/links-games/master-plan/pull/2)
 - **Raw copies**: [`data/issue-1.json`](data/issue-1.json), [`data/pr-2.json`](data/pr-2.json), [`data/pr-2-comments.json`](data/pr-2-comments.json)
 - **Feedback**: the maintainer's [PR #2 comment](https://github.com/links-games/master-plan/pull/2#issuecomment-6189666260) added requirements R36–R49
+- **Visual feedback**: the [later comment](https://github.com/links-games/master-plan/pull/2#issuecomment-6190555786) adds R50–R54, recorded in [raw form](data/pr-2-visual-feedback.json).
 
 The issue asks for a complete plan for the `links-games` organization:
 
@@ -24,7 +25,7 @@ The issue asks for a complete plan for the `links-games` organization:
 
 | Document                               | What it contains                                                                                                              |
 | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| [requirements.md](requirements.md)     | Every requirement from the issue (R1–R35) and the PR #2 feedback (R36–R49) with a quote, plus 7 derived requirements (D1–D7). |
+| [requirements.md](requirements.md)     | Every requirement from the issue (R1–R35) and the PR #2 feedback (R36–R54) with a quote, plus 7 derived requirements (D1–D7). |
 | [solution-plans.md](solution-plans.md) | For each requirement: the chosen solution, existing components and libraries checked, and alternatives.                       |
 | [The master plan](../../master-plan/)  | The result: roadmap, infrastructure, AI pipeline, game catalog, lore, monetization, community, legal.                         |
 | [data/](data/)                         | Raw data and the online research notes listed below.                                                                          |
@@ -38,6 +39,8 @@ The issue asks for a complete plan for the `links-games` organization:
 | [`research-market-games.md`](data/research-market-games.md)                                                         | Market data, popular reimplementable games, legal cases, learning science, kids' privacy, monetization benchmarks, cute IP.                                    |
 | [`research-links-theory-lore.md`](data/research-links-theory-lore.md)                                               | Links Theory concepts, Links Notation, existing visual identity, concept-to-character mapping, anime styles, tone guide.                                       |
 | [`research-genres-ideas.md`](data/research-genres-ideas.md)                                                         | Proven game genres, educational and citizen-science games, game collections, non-violent design and resource-based economies (for R36–R41, R49).               |
+| [`research-visual-catalog.md`](data/research-visual-catalog.md)                                                     | Primary sources for the 48 added mechanics, four concept-art directions, resolution and model-reporting limits (R50–R54).                                      |
+| [`pr-2-visual-feedback.json`](data/pr-2-visual-feedback.json)                                                       | Raw request for an expanded catalog with individual pages and four generated images per idea.                                                                  |
 | [`research-physics-simulation.md`](data/research-physics-simulation.md)                                             | Physics engines for JS/WASM, the "universal formula" candidates, WebGPU reach, PBR and anime rendering, LOD, determinism, real-world validation (for R43–R48). |
 | [`first-contact-pilot-scene.md`](data/first-contact-pilot-scene.md)                                                 | The First Contact pilot scene (Russian original, English translation) and the maintainer's framing (for R42).                                                  |
 | [`issue-1.json`](data/issue-1.json), [`pr-2.json`](data/pr-2.json), [`pr-2-comments.json`](data/pr-2-comments.json) | Raw issue, pull request and pull request comments.                                                                                                             |
@@ -67,8 +70,24 @@ change often, so re-check them before relying on them.
 | 2026-10-15 10:11 | The maintainer's feedback asked for a game ideas list, collections, a resource-based economy, the First Contact lore and a realistic simulator (R36–R49). |
 | 2026-10-15 10:33 | The pilot scene source, the feedback data and a relativistic physics check of the scene committed.                                                        |
 | 2026-10-15       | Game ideas, economy, simulation engine and First Contact lore documents, and the two new research notes, committed.                                       |
+| 2026-10-15 11:04 | The maintainer requested missing popular ideas, a page and four generated high-resolution images per idea, for visual prototype selection (R50–R54).      |
 
 ## Method
+
+The later [visual-catalog request](https://github.com/links-games/master-plan/pull/2#issuecomment-6190555786)
+adds requirements **R50–R54**: expand missing genres, give each idea a page,
+generate four high-resolution concepts per idea with GPT Image 2.5 or the latest
+available generator, and make the visuals useful for choosing a first prototype.
+The [visual catalog](../../master-plan/concepts/README.md) preserves all 168
+previous IDs and adds 48, with 216 scoped pages and a target of 864 independent
+concept images. The [research note](data/research-visual-catalog.md) records
+primary sources and the tool's model-reporting limitation; the
+[raw request](data/pr-2-visual-feedback.json) preserves the feedback.
+
+Catalog integrity is checked by
+[`tests/game-concepts.test.js`](../../../tests/game-concepts.test.js): complete
+page and art coverage, actual WebP dimensions, unique byte hashes and exact
+prompt provenance. The original documentation-link test checks navigation.
 
 1. **Split the issue into atomic requirements.** Every sentence of the
    issue became one or more checkable requirements with a stable ID and the
@@ -226,6 +245,7 @@ lists them for maintainers in the
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | [`tests/ai-solve-workflow.test.js`](../../../tests/ai-solve-workflow.test.js)         | The AI pipeline template triggers, permissions, restart logic and same-PR targeting behave as planned. |
 | [`tests/master-plan-docs.test.js`](../../../tests/master-plan-docs.test.js)           | Every relative link and `#anchor` in the master plan and this case study resolves.                     |
+| [`tests/game-concepts.test.js`](../../../tests/game-concepts.test.js)                 | All 216 ideas have pages, four unique high-resolution images, matching hashes and exact prompts.       |
 | [`tests/first-contact-physics.test.js`](../../../tests/first-contact-physics.test.js) | The physics numbers of the First Contact pilot scene are computed, not guessed.                        |
 | `actionlint` and the repository's workflow checks                                     | The workflow templates are valid GitHub Actions.                                                       |
 | Lychee (`links.yml`)                                                                  | External links in the documents are reachable.                                                         |

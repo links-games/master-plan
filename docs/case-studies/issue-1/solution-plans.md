@@ -49,12 +49,13 @@ here are in the [research data](README.md#data) (snapshot 2026-10-15).
 | R29     | Profitable, attract capital                                                  | Unit economics, break-even, capital instruments                                                | Planned                    |
 | R30     | Own anime characters in many styles                                          | Chibi 2D, normal anime 2D, 3D, anime hosts                                                     | Done (bible)               |
 | R31–R35 | Case study, requirements, plans, one PR                                      | This folder and PR #2                                                                          | Done                       |
-| R36–R37 | Game ideas list, collections in one app                                      | 168 ideas in 12 collections; one repo per game, collection apps are configuration              | Done (list), apps planned  |
+| R36–R37 | Game ideas list, collections in one app                                      | 216 ideas in 12 collections; one repo per game, collection apps are configuration              | Done (list), apps planned  |
 | R38     | Resource-based economy                                                       | Real resources and needs, conservation, sharing; money only where it is the lesson             | Done (rules)               |
 | R39–R41 | All genres, learning inside, simplest first, non-violence                    | Proven genre per idea, complexity ladder Cx 1–7, non-violent reframing table                   | Done (list)                |
 | R42     | First Contact lore: Reya and Shacados                                        | Lore page, pilot source and translation, physics check script and test                         | Done (draft), review       |
 | R43–R48 | Accurate, efficient physics; vector 2D → 3D; LOD; realism; universal formula | Rapier/Box2D/XPBD/MPM on WebGPU; action principle; RML law selection as research               | Planned (simulation track) |
 | R49     | Advance education and science                                                | Real or transferable knowledge in every game; validated open simulators; citizen science       | Planned                    |
+| R50–R54 | Expanded ideas and a visual page per game                                    | 216 scoped pages, four independent high-resolution concepts each, prompts and provenance       | Visual catalog             |
 | D1–D7   | Derived requirements                                                         | Kids privacy, legal checklist, shared identity, moat, AI cost, safe analytics, learning design | Done (plans)               |
 
 ## Products and platforms
@@ -518,7 +519,7 @@ Requirements R36–R49 come from the maintainer's
 
 ### R36 — A list of game ideas, many small repositories
 
-- **Solution:** [game ideas](../../master-plan/game-ideas.md): 168 ideas
+- **Solution:** [game ideas](../../master-plan/game-ideas.md): 216 ideas
   in 12 genre collections, each with a proven genre, a lesson and a
   complexity; one repository per game.
 - **Reuse:** the Wave 1–3 games of the [catalog](../../master-plan/game-catalog.md)
@@ -627,3 +628,64 @@ Requirements R36–R49 come from the maintainer's
   validated simulators; citizen-science modes for adults.
 - **Plan:** [games that advance science](../../master-plan/game-ideas.md#games-that-advance-science),
   [education and science](../../master-plan/simulation-engine.md#education-and-science-r49).
+
+## Visual-catalog feedback (R50–R54)
+
+### R50 — Expand missing popular game ideas
+
+- **Existing components checked:** the 168-idea table and previous genre
+  research; publisher catalogs from King, Dream Games, Voodoo and Dinosaur Polo
+  Club; developer listings for deckbuilding, inventory packing, unpacking and
+  cleaning; Simon Tatham's classic logic-puzzle collection.
+- **Solution:** retain all 168 stable IDs and add 48 distinct concepts, including
+  match-3, bubble shooting, drop-and-merge, sorting queues, deckbuilding,
+  inventory packing, cleaning, railway dispatch and automation. Keep the same
+  12 collections and the existing complexity ladder. Shipped examples are genre
+  evidence, not a market ranking or a guarantee of demand.
+- **Plan:** [expanded list](../../master-plan/game-ideas.md),
+  [primary-source research](data/research-visual-catalog.md).
+
+### R51 — A page for every idea
+
+- **Existing components checked:** GitHub Markdown rendering, the existing
+  documentation-link checker and the catalog's stable IDs.
+- **Solution:** 216 Markdown pages, generated from collection-scoped JSON
+  records. Each page specifies the actual interaction, practiced knowledge,
+  first prototype, scope boundary, shared technology and acceptance checks.
+  Collection indexes and previous/next links make every page reachable.
+- **Verification:** `tests/game-concepts.test.js` preserves the original IDs
+  and checks page coverage; `tests/master-plan-docs.test.js` checks navigation.
+
+### R52 — At least four high-resolution concept images per game
+
+- **Existing components checked:** the available built-in image generator,
+  WebP encoding with Pillow and GitHub's support for linked repository images.
+- **Solution:** four independent prompts and compositions per idea: Gameplay,
+  World, Characters and materials, Expanded play. Save full images with native
+  dimensions (at least 1024 pixels on both edges), with separate small index
+  thumbnails. Never count crops, repeated images or upscaled thumbnails as
+  independent concept art.
+- **Verification:** artifact checks compare file signatures, native dimensions,
+  hashes, four distinct entries and the exact generation prompts.
+
+### R53 — GPT Image 2.5 or latest available
+
+- **Existing components checked:** official OpenAI image documentation and the
+  built-in `image_gen.imagegen` tool schema.
+- **Solution:** use the available built-in generator. Record the user's
+  requested model separately from the actual reported model; this tool exposes
+  neither a selector nor a returned model ID, so `modelReported` remains null.
+  Record actual dimensions rather than claiming the requested 2048-pixel size.
+- **Limit:** the exact backend model cannot be independently attested through
+  this tool. The catalog makes this limitation explicit in its provenance.
+
+### R54 — Choose a prototype by key visuals
+
+- **Existing components checked:** Markdown image links and collection tables
+  keep review within this repository and PR, without requiring an app install.
+- **Solution:** one illustrated index per collection, full images on each game
+  page, consistent four-view comparisons and a Cx 1–2 shortlist. Explain what to
+  evaluate in each view, then check scope before selecting a first prototype.
+- **Plan:** [visual selection catalog](../../master-plan/concepts/README.md).
+  Art explores appeal; player testing and domain review establish usability and
+  educational correctness.

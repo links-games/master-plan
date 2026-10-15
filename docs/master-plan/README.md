@@ -58,30 +58,31 @@ a fact, a skill, or a piece of wisdom from our shared lore.
 
 ## Documents
 
-| Document                                             | What it answers                                                    |
-| ---------------------------------------------------- | ------------------------------------------------------------------ |
-| [roadmap.md](roadmap.md)                             | What we do first, next, and later — phases with exit criteria.     |
-| [infrastructure.md](infrastructure.md)               | Repositories, game-core library, templates, platforms, tech stack. |
-| [ai-pipeline.md](ai-pipeline.md)                     | Issue → formal-ai → auto pull request → restartable CI/CD.         |
-| [game-catalog.md](game-catalog.md)                   | Ranked list of first games, educational angle, legal notes.        |
-| [game-ideas.md](game-ideas.md)                       | The big list: 160+ game ideas by genre, collections, ladder.       |
-| [economy.md](economy.md)                             | Resource-based in-game economy, not money.                         |
-| [simulation-engine.md](simulation-engine.md)         | Physics engines, 2D/3D vector graphics, LOD, path to realism.      |
-| [lore/README.md](lore/README.md)                     | The Links universe: world, characters, wisdom, styles.             |
-| [lore/characters.md](lore/characters.md)             | Character bible — every Link character with traits and lessons.    |
-| [lore/first-contact.md](lore/first-contact.md)       | Reya and Shacados: the setting of the final realistic simulator.   |
-| [lore/adorability-gate.md](lore/adorability-gate.md) | The "not adorable = bug" checklist used in reviews.                |
-| [monetization.md](monetization.md)                   | Generosity charter, all monetization mechanics, experiments.       |
-| [business-model.md](business-model.md)               | Revenue streams, unit economics, profitability and capital.        |
-| [community.md](community.md)                         | Global community, contributors, hiring, donations, merchandise.    |
-| [legal.md](legal.md)                                 | Clean-room reimplementation rules, kids' privacy, licensing.       |
-| [templates/](templates/)                             | Ready-to-copy workflow and issue templates for every game repo.    |
+| Document                                             | What it answers                                                          |
+| ---------------------------------------------------- | ------------------------------------------------------------------------ |
+| [roadmap.md](roadmap.md)                             | What we do first, next, and later — phases with exit criteria.           |
+| [infrastructure.md](infrastructure.md)               | Repositories, game-core library, templates, platforms, tech stack.       |
+| [ai-pipeline.md](ai-pipeline.md)                     | Issue → formal-ai → auto pull request → restartable CI/CD.               |
+| [game-catalog.md](game-catalog.md)                   | Ranked list of first games, educational angle, legal notes.              |
+| [game-ideas.md](game-ideas.md)                       | The big list: 216 game ideas by genre, collections, ladder.              |
+| [Visual concept catalog](concepts/README.md)         | A page and four art directions per game, to choose a prototype visually. |
+| [economy.md](economy.md)                             | Resource-based in-game economy, not money.                               |
+| [simulation-engine.md](simulation-engine.md)         | Physics engines, 2D/3D vector graphics, LOD, path to realism.            |
+| [lore/README.md](lore/README.md)                     | The Links universe: world, characters, wisdom, styles.                   |
+| [lore/characters.md](lore/characters.md)             | Character bible — every Link character with traits and lessons.          |
+| [lore/first-contact.md](lore/first-contact.md)       | Reya and Shacados: the setting of the final realistic simulator.         |
+| [lore/adorability-gate.md](lore/adorability-gate.md) | The "not adorable = bug" checklist used in reviews.                      |
+| [monetization.md](monetization.md)                   | Generosity charter, all monetization mechanics, experiments.             |
+| [business-model.md](business-model.md)               | Revenue streams, unit economics, profitability and capital.              |
+| [community.md](community.md)                         | Global community, contributors, hiring, donations, merchandise.          |
+| [legal.md](legal.md)                                 | Clean-room reimplementation rules, kids' privacy, licensing.             |
+| [templates/](templates/)                             | Ready-to-copy workflow and issue templates for every game repo.          |
 
 ## Status
 
 | Area                  | Status in this pull request                                     |
 | --------------------- | --------------------------------------------------------------- |
-| Requirements analysis | Done — 35 from the issue + 14 from PR feedback + 7 derived.     |
+| Requirements analysis | 35 from the issue + 19 from PR feedback + 7 derived.            |
 | Research & case study | Done — see `docs/case-studies/issue-1/`.                        |
 | Master plan documents | Done — this folder.                                             |
 | AI pipeline templates | Done — ready-to-copy workflow in `templates/`.                  |
