@@ -1,0 +1,57 @@
+{
+  "gameId": "SM-02",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T17:44:28.167090+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "340c3ea994a37bd862b06ece27e031e3fc39828daac99b2a743b8c3e016659f7",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Linky Run (SM-02). Genre/mechanic: Endless runner.\nPrimary scene and action: Guide a runner between three lanes of picture-category gates.\nLearning objective expressed by the actual interaction: Categories (lanes), quick recall.\nWorld: an accessible outdoor movement park, in the shared Links universe.\nArt direction: Gameplay. Show the playable board or interaction from a readable overhead or side camera. Use crisp 2D shapes and an inviting hand-painted finish. The mechanic is the hero; keep environmental detail at the edges.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T17:45:05.691433+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "581c1f4e26e294cae6f62c79ed697c6b3ba2602adc6bc9001029543ba0fd0c8d",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Linky Run (SM-02). Genre/mechanic: Endless runner.\nPrimary scene and action: Guide a runner between three lanes of picture-category gates.\nLearning objective expressed by the actual interaction: Categories (lanes), quick recall.\nWorld: an accessible outdoor movement park, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T17:45:39.967163+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "cd8328b8c5a94c01f63f782050d442554bd0b2c4fcb8e15f07d85c434abd4295",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Linky Run (SM-02). Genre/mechanic: Endless runner.\nPrimary scene and action: Guide a runner between three lanes of picture-category gates.\nLearning objective expressed by the actual interaction: Categories (lanes), quick recall.\nWorld: an accessible outdoor movement park, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T17:46:12.450798+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "9ff8f4989127bde96a53a989565f2d88f210b6307e9a4f496b9e37f6ceee9262",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Linky Run (SM-02). Genre/mechanic: Endless runner.\nPrimary scene and action: Guide a runner between three lanes of picture-category gates.\nLearning objective expressed by the actual interaction: Categories (lanes), quick recall.\nWorld: an accessible outdoor movement park, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

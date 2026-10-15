@@ -1,0 +1,57 @@
+{
+  "gameId": "SM-11",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T18:02:49.490419+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "ed1323c7f5703518de870a72980bf5992ab725426eb33da9ae021198d203405a",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Kart Friends (SM-11). Genre/mechanic: Kart racing (no items that hurt).\nPrimary scene and action: Drive friendly electric karts along an original garden circuit with visible racing lines.\nLearning objective expressed by the actual interaction: Vectors, grip, racing lines.\nWorld: an accessible outdoor movement park, in the shared Links universe.\nArt direction: Gameplay. Show the playable board or interaction from a readable overhead or side camera. Use crisp 2D shapes and an inviting hand-painted finish. The mechanic is the hero; keep environmental detail at the edges.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T18:03:25.557836+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "de907591819a181888168c31cf2c0de9634ac201fd8d1187f8d52017a9b97eca",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Kart Friends (SM-11). Genre/mechanic: Kart racing (no items that hurt).\nPrimary scene and action: Drive friendly electric karts along an original garden circuit with visible racing lines.\nLearning objective expressed by the actual interaction: Vectors, grip, racing lines.\nWorld: an accessible outdoor movement park, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T18:04:01.069816+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "8f16577c071a3e596362260eb0dd550fb9ede20a17ef0353abb14f6e9ebc9386",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Kart Friends (SM-11). Genre/mechanic: Kart racing (no items that hurt).\nPrimary scene and action: Drive friendly electric karts along an original garden circuit with visible racing lines.\nLearning objective expressed by the actual interaction: Vectors, grip, racing lines.\nWorld: an accessible outdoor movement park, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T18:04:29.237031+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "2c257124f5cecbb92572717ef4d8729c23f52b54b38f5e46aa1a899d4032ad08",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Kart Friends (SM-11). Genre/mechanic: Kart racing (no items that hurt).\nPrimary scene and action: Drive friendly electric karts along an original garden circuit with visible racing lines.\nLearning objective expressed by the actual interaction: Vectors, grip, racing lines.\nWorld: an accessible outdoor movement park, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

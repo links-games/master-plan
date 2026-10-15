@@ -1,0 +1,57 @@
+{
+  "gameId": "SM-01",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T17:42:32.222777+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d2416aceaf1c7e0584c0a46a6b3a9d90881370c51da69a263c1aecd963db6a45",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Juggle (SM-01). Genre/mechanic: Timing.\nPrimary scene and action: Keep three soft balls following distinct parabolic juggling paths.\nLearning objective expressed by the actual interaction: Rhythm, parabolas.\nWorld: an accessible outdoor movement park, in the shared Links universe.\nArt direction: Gameplay. Show the playable board or interaction from a readable overhead or side camera. Use crisp 2D shapes and an inviting hand-painted finish. The mechanic is the hero; keep environmental detail at the edges.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T17:42:59.152398+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "e3f9d85c3f6da517dfe0570cd4742b5a51433ceea4965e62b1f38015c9af0f9f",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Juggle (SM-01). Genre/mechanic: Timing.\nPrimary scene and action: Keep three soft balls following distinct parabolic juggling paths.\nLearning objective expressed by the actual interaction: Rhythm, parabolas.\nWorld: an accessible outdoor movement park, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T17:43:31.940594+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "75b552474ae26a54c0f38a5139ee3ffd537614aabad30f363a32952f7cce8d18",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Juggle (SM-01). Genre/mechanic: Timing.\nPrimary scene and action: Keep three soft balls following distinct parabolic juggling paths.\nLearning objective expressed by the actual interaction: Rhythm, parabolas.\nWorld: an accessible outdoor movement park, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T17:43:56.916885+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "0c2ab13a2bd6d2d4a1eb0af32c71a60a9d88ed11d32bafaae663d598072bd426",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Juggle (SM-01). Genre/mechanic: Timing.\nPrimary scene and action: Keep three soft balls following distinct parabolic juggling paths.\nLearning objective expressed by the actual interaction: Rhythm, parabolas.\nWorld: an accessible outdoor movement park, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}
