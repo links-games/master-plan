@@ -77,3 +77,6 @@ These tests catch missing deliverables and accidental duplicate reuse. They
 cannot establish educational correctness, market success, usability or perfect
 character continuity. Each concept is a proposal to review before prototyping;
 playtesting and domain review remain necessary.
+
+The [visual review record](visual-review.md) preserves collection observations
+and distinguishes overview inspection from scientific or rule validation.

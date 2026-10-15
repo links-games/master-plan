@@ -76,6 +76,9 @@ and perform the usual name, likeness and trade-dress review before release.
 Existing games are research references for mechanics; their imagery was not
 used as generation input.
 
+The [visual review record](../../case-studies/issue-1/data/visual-review.md)
+describes the inspection method and observations for completed collections.
+
 ## Maintaining the catalog
 
 1. Edit a game record in `catalog/<family>.json`, retaining its stable ID.
