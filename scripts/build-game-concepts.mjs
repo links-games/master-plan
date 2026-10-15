@@ -50,7 +50,7 @@ Asset type: standalone high-resolution concept art for an original educational m
 Game: ${game.title} (${game.id}). Genre/mechanic: ${game.genre}.
 Primary scene and action: ${game.scene}
 Learning objective expressed by the actual interaction: ${game.lesson}.
-World: ${families[family][1]}, in the shared Links universe.
+${game.artConstraint ? `Visual constraint: ${game.artConstraint}\n` : ''}World: ${families[family][1]}, in the shared Links universe.
 Art direction: ${direction[1]}. ${direction[2]}
 Identity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.
 Constraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.`;

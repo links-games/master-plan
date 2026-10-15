@@ -77,7 +77,8 @@
     "cx": "2",
     "wave": null,
     "original": true,
-    "scene": "Build words from six outer letter tiles and one mandatory center tile."
+    "scene": "Build words from six outer letter tiles and one mandatory center tile.",
+    "artConstraint": "The playable board is exactly seven large hexagonal tiles: one central A, surrounded by six single-letter tiles C, R, T, E, S, P. Every tile contains exactly one letter. Show a player building a word that uses the center A. Keep all seven tiles visible and distinct; any learning hints are pictograms beside the board."
   },
   {
     "id": "WL-09",
