@@ -11,8 +11,9 @@ checks whether the interaction is recognizable, the compositions differ and the
 art can support a prototype-selection discussion. Review sheets are not delivered
 as concept art and do not count toward the four independently generated images.
 
-Pair Friends and Blossom Swap gameplay and Research Backpack materials were
-also inspected at full native resolution as proposed pull-request previews.
+Pair Friends and Blossom Swap gameplay, Research Backpack materials and Circular
+Factory expanded play were also inspected at full native resolution as proposed
+pull-request previews.
 Automated checks separately verify coverage, file signatures, native dimensions,
 hashes, exact prompts, thumbnails and navigation links.
 
@@ -51,3 +52,15 @@ SL-01–SL-20: all four views inspected across five sheets. Color mixing, elemen
 SM-01–SM-17: all four views inspected across five sheets. Juggling, category running, mini-golf, curling, basketball, billiards, paper planes, kites, skiing, table tennis, karting, sailing, climbing, skating, crossing, cooperative volleyball and precision platforming have distinct compositions and recognizable interactions. Trajectory overlays, motion models, timing and authored challenges need implementation validation. All 68 Sports and Motion images inspected.
 
 SP-01–SP-17: all four views inspected across five sheets. Constellations, planet matching, trajectory planning, landing, orbital speed, light travel, spacecraft assembly, turn planning, telescopes, solar sails, satellite networks, rocket staging, planetary conditions, relativity, docking, rescue teams and rover geology have recognizable interactions and different perspectives. Illustrated orbits, scale, times, equations and instrument readings are proposals rather than verified physical models. All 68 Space and Physics images inspected.
+
+SS-01–SS-04: all four views inspected. Research allocation, irrigation routing, traffic signals and renewable-energy storage are distinct and recognizable. Curves, water flows, signal safety and energy balances require authored models and subject validation.
+
+SS-05–SS-08: all four views inspected. Shared-water gates, resource logistics, outbreak intervention boards and food-web balancing show distinct interactions. Water budgets, route constraints, epidemiological curves and ecological relationships need authored models and expert validation.
+
+SS-09–SS-12: all four views inspected. Care scheduling, settlement infrastructure, climate policy cards and cooperative interplanetary resource exchange are recognizable and visually distinct. Clinical processes, emissions curves, resource conservation and simulation behavior require domain validation; these illustrations are selection concepts.
+
+SS-15 Expanded play was additionally inspected at full native resolution for the PR preview. Resource streams and conveyors are readable; depicted material transformations are illustrative and need validated production rules.
+
+SS-13–SS-16: all four views inspected. Habitat life-support controls, peaceful first-contact signal planning, circular resource conveyors and cooperative helper placement have distinct compositions and recognizable interactions. Life-support balances, signal propagation, material processing and team-synergy rules need validated simulation or authored game data.
+
+SS-17–SS-20: all four views inspected. Shared meals and queues, repair assignment, railway dispatch and disaster preparation have recognizable interactions and varied compositions. Food and repair safety, rail interlocking and preparedness advice need authored rules and qualified review. All 80 Strategy and Simulation images inspected.
