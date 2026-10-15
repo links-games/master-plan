@@ -163,7 +163,7 @@
     "id": "ML-17",
     "title": "Proof Steps",
     "genre": "Rule-rewrite puzzle",
-    "lesson": "Logic and proofs in Links Notation (relative-meta-logic)",
+    "lesson": "Logic and proofs in Links Notation ([relative-meta-logic](https://github.com/link-foundation/relative-meta-logic))",
     "cx": "3–4",
     "wave": null,
     "original": true,

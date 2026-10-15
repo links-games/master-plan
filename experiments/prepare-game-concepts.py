@@ -242,8 +242,7 @@ def main():
             continue
         identifier, title, genre, lesson, cx = [x.strip() for x in line.split("|")[1:6]]
         wave = re.search(r"\*\*(W\d)\*\*", title)
-        title = re.sub(r"\*\*| \(final\)", "", re.sub(r"\s+\*\*W\d\*\*", "", title))
-        lesson = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", lesson)
+        title = re.sub(r"\*\*", "", re.sub(r"\s+\*\*W\d\*\*", "", title))
         family = identifier.split("-")[0]
         groups.setdefault(family, []).append(dict(id=identifier, title=title, genre=genre, lesson=lesson, cx=cx, wave=wave[1] if wave else None, original=True))
     assert sum(map(len, groups.values())) == 168, "Importer requires original 168-idea table"
