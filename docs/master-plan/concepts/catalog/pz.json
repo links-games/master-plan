@@ -1,0 +1,302 @@
+[
+  {
+    "id": "PZ-01",
+    "title": "Pair Friends",
+    "genre": "Memory / pairs",
+    "lesson": "Vocabulary in many languages, memory",
+    "cx": "1",
+    "wave": "W1",
+    "original": true,
+    "scene": "Turn over two leaf cards in a small wooden memory grid, revealing a matching pair."
+  },
+  {
+    "id": "PZ-02",
+    "title": "Bead Merge",
+    "genre": "Slide-merge (2048)",
+    "lesson": "Doubling, powers of two",
+    "cx": "1",
+    "wave": "W1",
+    "original": true,
+    "scene": "Slide numbered beads on a four-by-four tray, merging equal values into doubled beads."
+  },
+  {
+    "id": "PZ-03",
+    "title": "Tangram Friends",
+    "genre": "Tangram",
+    "lesson": "Shapes, area stays the same when pieces move",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Fit seven geometric wooden tangram pieces into a friendly animal outline."
+  },
+  {
+    "id": "PZ-04",
+    "title": "Jigsaw of Omi",
+    "genre": "Jigsaw",
+    "lesson": "Public-domain art, maps, anatomy pictures",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Drag one final jigsaw piece into an illustrated map of Omi."
+  },
+  {
+    "id": "PZ-05",
+    "title": "Spot the Change",
+    "genre": "Spot the difference",
+    "lesson": "Attention; real photos of animals and plants",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Compare two botanical pictures side by side and circle one changed leaf."
+  },
+  {
+    "id": "PZ-06",
+    "title": "Hidden Links",
+    "genre": "Hidden object",
+    "lesson": "Vocabulary, observation",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Find small link-shaped objects among carefully arranged study-room treasures."
+  },
+  {
+    "id": "PZ-07",
+    "title": "Slide Home",
+    "genre": "Sliding tiles (15-puzzle)",
+    "lesson": "Permutations, why half of the positions are unsolvable",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Slide numbered wooden tiles into the empty cell of a four-by-four board."
+  },
+  {
+    "id": "PZ-08",
+    "title": "Color Cups",
+    "genre": "Water / color sort",
+    "lesson": "Color mixing, sorting, planning",
+    "cx": "1–2",
+    "wave": "W1",
+    "original": true,
+    "scene": "Pour a top layer between transparent patterned cups without mixing unlike layers."
+  },
+  {
+    "id": "PZ-09",
+    "title": "Shape Garden",
+    "genre": "Block placement",
+    "lesson": "Area, spatial reasoning",
+    "cx": "2",
+    "wave": "W1",
+    "original": true,
+    "scene": "Fit flower-shaped polyominoes into an open garden grid to complete a row."
+  },
+  {
+    "id": "PZ-10",
+    "title": "Link It!",
+    "genre": "Connect pairs with non-crossing paths",
+    "lesson": "Planning, matching concepts",
+    "cx": "2",
+    "wave": "W1",
+    "original": true,
+    "scene": "Draw separate non-crossing paths between matching endpoints on a square grid."
+  },
+  {
+    "id": "PZ-11",
+    "title": "Pixel Itsy",
+    "genre": "Nonogram",
+    "lesson": "Logic, grid coordinates",
+    "cx": "2–3",
+    "wave": "W1",
+    "original": true,
+    "scene": "Fill cells in a nonogram whose clues reveal an infinity-loop friend."
+  },
+  {
+    "id": "PZ-12",
+    "title": "Light the Links",
+    "genre": "Lights Out",
+    "lesson": "Parity, linear algebra over two values",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Toggle a lamp in a small grid, showing that its orthogonal neighbors change too."
+  },
+  {
+    "id": "PZ-13",
+    "title": "Pipe Garden",
+    "genre": "Rotate pipes (Pipe Mania, Net)",
+    "lesson": "Water flow, closed circuits",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Rotate pipe elbows to connect a water tank to planted beds in a small grid."
+  },
+  {
+    "id": "PZ-14",
+    "title": "Untangle",
+    "genre": "Planar graph untangling",
+    "lesson": "Graph theory, planarity",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Drag graph nodes apart until every crossing edge becomes separate."
+  },
+  {
+    "id": "PZ-15",
+    "title": "Laser Mirrors",
+    "genre": "Reflection puzzle",
+    "lesson": "Optics: angle of incidence equals angle of reflection",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Rotate a mirror to reflect one laser beam into a distant flower-shaped receiver."
+  },
+  {
+    "id": "PZ-16",
+    "title": "Screw Garden",
+    "genre": "Screw / pin puzzle",
+    "lesson": "Order of operations",
+    "cx": "2",
+    "wave": "W2",
+    "original": true,
+    "scene": "Unscrew brass fasteners in a clear dependency order to release wooden plates."
+  },
+  {
+    "id": "PZ-17",
+    "title": "Push & Think",
+    "genre": "Box pushing (Sokoban)",
+    "lesson": "Planning, irreversible moves",
+    "cx": "3",
+    "wave": "W2",
+    "original": true,
+    "scene": "Push one seed crate toward its marked destination in a small walled warehouse."
+  },
+  {
+    "id": "PZ-18",
+    "title": "Gravity Turn",
+    "genre": "Rotate-the-world puzzle",
+    "lesson": "Gravity as a direction, falling bodies",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Rotate a miniature room so gravity rolls a seed into a sheltered planter."
+  },
+  {
+    "id": "PZ-19",
+    "title": "Blossom Swap",
+    "genre": "Match-3",
+    "lesson": "Planning cascades and recognizing plant parts",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Swap adjacent leaf and flower tiles on a six-by-six garden bed to complete a visible collection goal."
+  },
+  {
+    "id": "PZ-20",
+    "title": "Bubble Canopy",
+    "genre": "Bubble shooter",
+    "lesson": "Reflection angles and color grouping",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Aim a seed bubble at a suspended canopy of matching bubbles, with a dotted wall-bounce preview."
+  },
+  {
+    "id": "PZ-21",
+    "title": "Tiny Triples",
+    "genre": "Triple-match object tray",
+    "lesson": "Classification and limited working space",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Find three identical field-study objects in a shallow pile and place them in a seven-slot tray."
+  },
+  {
+    "id": "PZ-22",
+    "title": "Pebble Pop",
+    "genre": "Tap-to-collapse puzzle",
+    "lesson": "Connected components and planning",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Tap connected same-pattern pebbles in a basin to open a channel for a seed boat."
+  },
+  {
+    "id": "PZ-23",
+    "title": "Harvest Drop",
+    "genre": "Physics drop-and-merge",
+    "lesson": "Size ordering and collision prediction",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Drop round seed pods into a glass planter; matching pods combine into the next larger botanical model."
+  },
+  {
+    "id": "PZ-24",
+    "title": "Habitat Merge",
+    "genre": "Merge-3 map puzzle",
+    "lesson": "Habitat succession and spatial planning",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Arrange three seed tokens on a hexagonal restoration map to unlock a sapling model, with growth clearly presented as a game abstraction."
+  },
+  {
+    "id": "PZ-25",
+    "title": "Bicycle Jam",
+    "genre": "Parking escape puzzle",
+    "lesson": "Dependencies and route planning",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Slide little cargo bicycles along their marked axes until the library delivery bike can exit."
+  },
+  {
+    "id": "PZ-26",
+    "title": "Shuttle Queue",
+    "genre": "Bus-seat sorting puzzle",
+    "lesson": "Capacity and queue management",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Send color-and-symbol-coded shuttles to a station so waiting link friends can all board safely."
+  },
+  {
+    "id": "PZ-27",
+    "title": "Parcel Conveyor",
+    "genre": "Conveyor tile matching",
+    "lesson": "Ordering and buffer capacity",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Route patterned parcels from a conveyor into three labeled-by-symbol sorting bays without overflowing a small buffer."
+  },
+  {
+    "id": "PZ-28",
+    "title": "One Stroke Garden",
+    "genre": "One-line drawing puzzle",
+    "lesson": "Euler paths and graph degree",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Trace every path of a small garden graph exactly once, linking all its flower-shaped junctions."
+  },
+  {
+    "id": "PZ-29",
+    "title": "Ribbon Rescue",
+    "genre": "Rope sorting and untangling",
+    "lesson": "Spatial reasoning and crossing order",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Move ribbon endpoints between wooden pegs until all colored-and-patterned ribbons lie separately."
+  },
+  {
+    "id": "PZ-30",
+    "title": "Trail Numbers",
+    "genre": "Numbered Hamiltonian path puzzle",
+    "lesson": "Sequencing and constraint propagation",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Draw one continuous route through every garden square, visiting numbered checkpoints in order."
+  }
+]

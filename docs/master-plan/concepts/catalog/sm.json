@@ -1,0 +1,172 @@
+[
+  {
+    "id": "SM-01",
+    "title": "Juggle",
+    "genre": "Timing",
+    "lesson": "Rhythm, parabolas",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Keep three soft balls following distinct parabolic juggling paths."
+  },
+  {
+    "id": "SM-02",
+    "title": "Linky Run",
+    "genre": "Endless runner",
+    "lesson": "Categories (lanes), quick recall",
+    "cx": "2–3",
+    "wave": "W2",
+    "original": true,
+    "scene": "Guide a runner between three lanes of picture-category gates."
+  },
+  {
+    "id": "SM-03",
+    "title": "Mini Golf",
+    "genre": "Mini golf",
+    "lesson": "Angles, friction, energy",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Aim a miniature golf ball around a curved garden obstacle toward a cup."
+  },
+  {
+    "id": "SM-04",
+    "title": "Curling Friends",
+    "genre": "Curling / bowling",
+    "lesson": "Friction, momentum",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Slide a curling stone toward a target while showing a friction trail."
+  },
+  {
+    "id": "SM-05",
+    "title": "Hoops",
+    "genre": "Basketball shots",
+    "lesson": "Projectile motion",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Choose the launch angle for a soft basketball heading toward a low hoop."
+  },
+  {
+    "id": "SM-06",
+    "title": "Billiard Links",
+    "genre": "Billiards",
+    "lesson": "Elastic collisions, momentum",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Aim a cue ball at a second ball with a visible collision-angle guide."
+  },
+  {
+    "id": "SM-07",
+    "title": "Paper Planes",
+    "genre": "Glider",
+    "lesson": "Lift, drag, glide ratio",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Adjust the wing fold of a paper glider flying through a gentle air current."
+  },
+  {
+    "id": "SM-08",
+    "title": "Kite Day",
+    "genre": "Flying toy",
+    "lesson": "Wind, lift, tension",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Guide a kite on a visible taut string with wind ribbons showing direction."
+  },
+  {
+    "id": "SM-09",
+    "title": "Ski Slalom",
+    "genre": "Downhill",
+    "lesson": "Slopes, gravity, friction",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Steer a tiny skier between slalom gates on a gentle snowy slope."
+  },
+  {
+    "id": "SM-10",
+    "title": "Table Tennis",
+    "genre": "Racket sports",
+    "lesson": "Spin, the Magnus effect",
+    "cx": "3–4",
+    "wave": null,
+    "original": true,
+    "scene": "Return a table-tennis ball with a spin trail and a clear landing target."
+  },
+  {
+    "id": "SM-11",
+    "title": "Kart Friends",
+    "genre": "Kart racing (no items that hurt)",
+    "lesson": "Vectors, grip, racing lines",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Drive friendly electric karts along an original garden circuit with visible racing lines."
+  },
+  {
+    "id": "SM-12",
+    "title": "Sailing",
+    "genre": "Sailing sim",
+    "lesson": "Real sail physics, wind vectors",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Trim a small sailboat's sail relative to wind arrows on a lake."
+  },
+  {
+    "id": "SM-13",
+    "title": "Climbing",
+    "genre": "Physics climber",
+    "lesson": "Balance, center of mass",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Choose handholds for a friendly climber on a low safe climbing wall."
+  },
+  {
+    "id": "SM-14",
+    "title": "Skate Park",
+    "genre": "Trick sports",
+    "lesson": "Rotation, angular momentum",
+    "cx": "4–5",
+    "wave": null,
+    "original": true,
+    "scene": "Guide a skateboard through a smooth half-pipe with an angular-momentum trail."
+  },
+  {
+    "id": "SM-15",
+    "title": "Crossing Friends",
+    "genre": "Endless crossing arcade",
+    "lesson": "Timing and gap estimation",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Guide a tiny link friend across a stream of toy carts and lily-pad channels toward a library."
+  },
+  {
+    "id": "SM-16",
+    "title": "Keep It Up",
+    "genre": "Cooperative volleyball",
+    "lesson": "Trajectories and cooperation",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Two friendly teams keep a soft ball airborne over a low garden net, predicting its landing circle."
+  },
+  {
+    "id": "SM-17",
+    "title": "Rooftop Routes",
+    "genre": "Precision platformer",
+    "lesson": "Momentum and safe route planning",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Choose jumps between low rooftop gardens with soft landing pads and visible wind ribbons."
+  }
+]

@@ -6,6 +6,23 @@ This repository publishes the real test package
 `@link-foundation/example-package-name` so the template release pipeline is
 validated end to end with npm trusted publishing.
 
+## Links Games Master Plan
+
+This repository also holds the master plan of the
+[links-games](https://github.com/links-games) organization: lots of
+adorable, educational, mobile-first mini games that share one universe of
+cute Links and ship to web, mobile, desktop, Telegram and VK from one
+codebase.
+
+- [Master plan](docs/master-plan/README.md): roadmap, infrastructure,
+  AI pipeline, game catalog, lore and characters, monetization, business
+  model, community and legal plans.
+- [Issue #1 case study](docs/case-studies/issue-1/README.md): every
+  requirement, the solution plan for each one, and the research data.
+- [Templates](docs/master-plan/templates/README.md): the restartable AI
+  pipeline workflow and the issue and pull request templates for every game
+  repository.
+
 ## Features
 
 - **Multi-runtime support**: Works with Bun, Node.js, and Deno

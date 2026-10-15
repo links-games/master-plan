@@ -1,0 +1,152 @@
+[
+  {
+    "id": "SA-01",
+    "title": "Choose Your Path",
+    "genre": "Interactive picture book",
+    "lesson": "Reading, choices and consequences",
+    "cx": "1–2",
+    "wave": null,
+    "original": true,
+    "scene": "Choose between two illustrated paths in a cozy interactive picture book."
+  },
+  {
+    "id": "SA-02",
+    "title": "Kindness Quests",
+    "genre": "Daily quests",
+    "lesson": "Social and emotional learning",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Help a neighbor carry books through a small town square."
+  },
+  {
+    "id": "SA-03",
+    "title": "Museum Night",
+    "genre": "Point and click",
+    "lesson": "Art history",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Inspect a painting and its material clues in a quiet nighttime museum."
+  },
+  {
+    "id": "SA-04",
+    "title": "Little Detective",
+    "genre": "Mystery / deduction",
+    "lesson": "Evidence, reasoning, fair judgment",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Compare footprints and timestamped notes on a gentle mystery board."
+  },
+  {
+    "id": "SA-05",
+    "title": "Escape Room Together",
+    "genre": "Cooperative escape room",
+    "lesson": "Teamwork, logic",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Coordinate two friends using mirror and switch clues in a friendly escape room."
+  },
+  {
+    "id": "SA-06",
+    "title": "Archaeology Dig",
+    "genre": "Dig and restore",
+    "lesson": "Stratigraphy, history",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Brush soil layers away from a pottery fragment beside a stratigraphy chart."
+  },
+  {
+    "id": "SA-07",
+    "title": "Language Quest",
+    "genre": "Adventure in a foreign language",
+    "lesson": "Immersion learning",
+    "cx": "3–4",
+    "wave": null,
+    "original": true,
+    "scene": "Follow illustrated dialogue clues through a village in a new language."
+  },
+  {
+    "id": "SA-08",
+    "title": "Time Travel Diary",
+    "genre": "Visual novel",
+    "lesson": "History from many points of view",
+    "cx": "3–4",
+    "wave": null,
+    "original": true,
+    "scene": "Read two perspectives on a historical event in an illustrated diary."
+  },
+  {
+    "id": "SA-09",
+    "title": "Messages Across the Dark",
+    "genre": "Language and code puzzle",
+    "lesson": "Building a shared language from math",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Build a shared code from repeated mathematical signal patterns across space."
+  },
+  {
+    "id": "SA-10",
+    "title": "Cadets of Depth Academy",
+    "genre": "Story-led puzzle campaign",
+    "lesson": "Links theory: point → doublet → network",
+    "cx": "4",
+    "wave": "W3",
+    "original": true,
+    "scene": "Connect points, doublets and networks on an academy puzzle table."
+  },
+  {
+    "id": "SA-11",
+    "title": "Explore Omi",
+    "genre": "3D exploration with the anime hosts",
+    "lesson": "Geography, ecology of Omi mapped to Earth",
+    "cx": "5",
+    "wave": "W3",
+    "original": true,
+    "scene": "Explore a low-poly Omi coastline with an anime-style science guide."
+  },
+  {
+    "id": "SA-12",
+    "title": "The Escape (13+)",
+    "genre": "Narrative adventure",
+    "lesson": "Empathy for people inside a violent system",
+    "cx": "5",
+    "wave": null,
+    "original": true,
+    "scene": "Guide a teen traveler toward a safe exit using empathetic dialogue and non-violent routes."
+  },
+  {
+    "id": "SA-13",
+    "title": "Lantern Labyrinth",
+    "genre": "Exploration metroidvania",
+    "lesson": "Mapping and tool-based reasoning",
+    "cx": "4",
+    "wave": null,
+    "original": false,
+    "scene": "Explore a connected cave garden, using a newly found mirror lantern to open a previously inaccessible light gate."
+  },
+  {
+    "id": "SA-14",
+    "title": "Evidence Circle",
+    "genre": "Social deduction without elimination",
+    "lesson": "Evidence quality and revising beliefs",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Compare weather-station clues around a round table to identify a faulty sensor together, with no accusing people."
+  },
+  {
+    "id": "SA-15",
+    "title": "Map of Whispers",
+    "genre": "Non-combat roguelike exploration",
+    "lesson": "Risk assessment and navigation",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Choose between procedurally arranged forest rooms using a small map, food supplies and weather clues."
+  }
+]

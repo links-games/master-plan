@@ -1,0 +1,57 @@
+{
+  "gameId": "WL-08",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T20:22:59.089236+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "143e6a993f3694176ff2e4e4f7d458258d2f0bd7ea0d0724ac847f6f9d1340b7",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Honeycomb Words (WL-08). Genre/mechanic: Letters-around-a-center word game.\nPrimary scene and action: Build words from six outer letter tiles and one mandatory center tile.\nLearning objective expressed by the actual interaction: Vocabulary, prefixes and suffixes.\nVisual constraint: The playable board is exactly seven large hexagonal tiles: one central A, surrounded by six single-letter tiles C, R, T, E, S, P. Every tile contains exactly one letter. Show a player building a word that uses the center A. Keep all seven tiles visible and distinct; any learning hints are pictograms beside the board.\nWorld: a cozy library village and word garden, in the shared Links universe.\nArt direction: Gameplay. Show the playable board or interaction from a readable overhead or side camera. Use crisp 2D shapes and an inviting hand-painted finish. The mechanic is the hero; keep environmental detail at the edges.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T20:23:26.525590+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f40713c11d17d091c41474d544e6b4280da609e69c8626d8ccb0ad459381506c",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Honeycomb Words (WL-08). Genre/mechanic: Letters-around-a-center word game.\nPrimary scene and action: Build words from six outer letter tiles and one mandatory center tile.\nLearning objective expressed by the actual interaction: Vocabulary, prefixes and suffixes.\nVisual constraint: The playable board is exactly seven large hexagonal tiles: one central A, surrounded by six single-letter tiles C, R, T, E, S, P. Every tile contains exactly one letter. Show a player building a word that uses the center A. Keep all seven tiles visible and distinct; any learning hints are pictograms beside the board.\nWorld: a cozy library village and word garden, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T20:23:55.846944+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "4f8cca339a47e41342725a15fc5aac26bb3fc8f0dd5c3f6f4c89cd20b3027a3b",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Honeycomb Words (WL-08). Genre/mechanic: Letters-around-a-center word game.\nPrimary scene and action: Build words from six outer letter tiles and one mandatory center tile.\nLearning objective expressed by the actual interaction: Vocabulary, prefixes and suffixes.\nVisual constraint: The playable board is exactly seven large hexagonal tiles: one central A, surrounded by six single-letter tiles C, R, T, E, S, P. Every tile contains exactly one letter. Show a player building a word that uses the center A. Keep all seven tiles visible and distinct; any learning hints are pictograms beside the board.\nWorld: a cozy library village and word garden, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-15T20:24:31.523576+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6c16183c3ad6c309ddb8006b158db6dc0f779032111b153e33df4480d9dc54df",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Honeycomb Words (WL-08). Genre/mechanic: Letters-around-a-center word game.\nPrimary scene and action: Build words from six outer letter tiles and one mandatory center tile.\nLearning objective expressed by the actual interaction: Vocabulary, prefixes and suffixes.\nVisual constraint: The playable board is exactly seven large hexagonal tiles: one central A, surrounded by six single-letter tiles C, R, T, E, S, P. Every tile contains exactly one letter. Show a player building a word that uses the center A. Keep all seven tiles visible and distinct; any learning hints are pictograms beside the board.\nWorld: a cozy library village and word garden, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

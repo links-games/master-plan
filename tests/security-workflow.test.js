@@ -73,7 +73,10 @@ describe('security workflow', () => {
     const dependencyReview = getJobBlock('dependency-review');
 
     expect(dependencyReview).toContain(
-      "    if: github.event_name == 'pull_request'"
+      "        if: github.event_name == 'pull_request' && steps.graph.outputs.enabled == 'true'"
+    );
+    expect(dependencyReview).toContain(
+      '        run: bash scripts/check-dependency-graph.sh'
     );
     expect(dependencyReview).toContain('    timeout-minutes: 10');
     expect(dependencyReview).toContain(

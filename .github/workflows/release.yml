@@ -329,8 +329,9 @@ jobs:
         shell: bash
         run: bash scripts/simulate-fresh-merge.sh
 
+      # All runtimes exercise the real Node/npm release formatter fixture.
+      # Pin its toolchain instead of relying on the runner's system installation.
       - name: Setup Node.js
-        if: matrix.runtime == 'node'
         uses: actions/setup-node@v6
         with:
           node-version: '24.x'

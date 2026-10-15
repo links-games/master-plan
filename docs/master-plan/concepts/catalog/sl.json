@@ -1,0 +1,202 @@
+[
+  {
+    "id": "SL-01",
+    "title": "Light and Color",
+    "genre": "Color mixing toy",
+    "lesson": "Additive (light) vs subtractive (paint) mixing",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Overlap red, green and blue spotlights on a white laboratory wall."
+  },
+  {
+    "id": "SL-02",
+    "title": "Element Cards",
+    "genre": "Collectible cards",
+    "lesson": "The periodic table",
+    "cx": "1–2",
+    "wave": null,
+    "original": true,
+    "scene": "Arrange illustrated element cards around a simplified periodic-table board."
+  },
+  {
+    "id": "SL-03",
+    "title": "Acorn Tower",
+    "genre": "Stack / tower timing",
+    "lesson": "Balance, center of mass",
+    "cx": "2",
+    "wave": "W1",
+    "original": true,
+    "scene": "Drop a wooden acorn block onto a gently swaying tower, keeping its center of mass above the base."
+  },
+  {
+    "id": "SL-04",
+    "title": "Body Explorer",
+    "genre": "Hidden object / jigsaw",
+    "lesson": "Anatomy, organs and what they do",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Fit illustrated organ pieces into a friendly transparent body model."
+  },
+  {
+    "id": "SL-05",
+    "title": "Density Tank",
+    "genre": "Drop-and-see physics toy",
+    "lesson": "Buoyancy, density",
+    "cx": "2–3",
+    "wave": null,
+    "original": true,
+    "scene": "Drop equal-volume objects of different densities into a clear water tank."
+  },
+  {
+    "id": "SL-06",
+    "title": "Magnet Maze",
+    "genre": "Tilt maze",
+    "lesson": "Magnetic fields",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Guide a steel bead through a maze using a movable magnet outside the glass."
+  },
+  {
+    "id": "SL-07",
+    "title": "Rope Friends",
+    "genre": "Rope cutting physics",
+    "lesson": "Forces, tension, pendulums",
+    "cx": "3",
+    "wave": "W2",
+    "original": true,
+    "scene": "Cut one support rope so a seed swings into a waiting planter."
+  },
+  {
+    "id": "SL-08",
+    "title": "Seed Sling",
+    "genre": "Slingshot physics (launch seeds to plant)",
+    "lesson": "Projectile motion, angles",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Adjust a slingshot angle to launch a seed along a visible parabolic path."
+  },
+  {
+    "id": "SL-09",
+    "title": "Atom Merge",
+    "genre": "Merge-2",
+    "lesson": "Atoms to molecules, chemical bonds",
+    "cx": "3",
+    "wave": "W2",
+    "original": true,
+    "scene": "Connect atom models into a correctly bonded water molecule on a workbench."
+  },
+  {
+    "id": "SL-10",
+    "title": "Circuit Garden",
+    "genre": "Circuit building",
+    "lesson": "Ohm's law, logic gates",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Close a simple battery, resistor and lamp circuit on a safe low-voltage breadboard."
+  },
+  {
+    "id": "SL-11",
+    "title": "Optics Bench",
+    "genre": "Laser / lens puzzle",
+    "lesson": "Refraction, lenses, focal length",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Move a convex lens along an optical bench to bring light to a focus."
+  },
+  {
+    "id": "SL-12",
+    "title": "Simple Machines",
+    "genre": "Contraption builder (Incredible Machine)",
+    "lesson": "Levers, pulleys, gears, energy",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Arrange a lever, pulley and wheel into a small chain-reaction machine."
+  },
+  {
+    "id": "SL-13",
+    "title": "Sound Waves",
+    "genre": "Music toy with an oscilloscope",
+    "lesson": "Frequency, amplitude, resonance",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Match a plucked string's vibration to a visible oscilloscope wave."
+  },
+  {
+    "id": "SL-14",
+    "title": "Weather Maker",
+    "genre": "Sandbox",
+    "lesson": "Water cycle, clouds, pressure",
+    "cx": "3–4",
+    "wave": null,
+    "original": true,
+    "scene": "Adjust sun and water inputs in a miniature water-cycle terrarium."
+  },
+  {
+    "id": "SL-15",
+    "title": "Bridge Builder",
+    "genre": "Bridge construction (Poly Bridge)",
+    "lesson": "Structural forces, tension and compression",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Place bridge beams between riverbanks with tension and compression overlays."
+  },
+  {
+    "id": "SL-16",
+    "title": "Sand and Water",
+    "genre": "Falling-sand sandbox (Powder Toy)",
+    "lesson": "States of matter, reactions",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Draw a barrier in a falling-sand sandbox to redirect water into a reservoir."
+  },
+  {
+    "id": "SL-17",
+    "title": "Microscope Explorer",
+    "genre": "Exploration / collection",
+    "lesson": "Cells, microorganisms, scale",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Move a microscope slide to observe a magnified cell with clearly drawn structures."
+  },
+  {
+    "id": "SL-18",
+    "title": "Momentum Pinball",
+    "genre": "Pinball",
+    "lesson": "Momentum and angle of reflection",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Use two flippers to guide a polished ball through a botanical laboratory pinball table with spring bumpers."
+  },
+  {
+    "id": "SL-19",
+    "title": "Prism Breaker",
+    "genre": "Brick-breaker",
+    "lesson": "Angles and elastic collision models",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Move a small paddle to bounce a light sphere through an ordered wall of translucent research tiles."
+  },
+  {
+    "id": "SL-20",
+    "title": "Watergate Pins",
+    "genre": "Pull-pin flow puzzle",
+    "lesson": "Gravity and connectivity",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Remove a brass pin between transparent chambers so clean water reaches a thirsty seedling."
+  }
+]
