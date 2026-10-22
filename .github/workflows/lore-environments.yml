@@ -41,6 +41,7 @@ jobs:
         run: |
           mkdir -p ci-logs
           /usr/bin/python3 experiments/render-lore-scenes.py --batch "$RENDER_BATCH" --out /tmp/lore-scenes > ci-logs/blender.log 2>&1
+          /usr/bin/python3 experiments/check-lore-render-visibility.py /tmp/lore-scenes > ci-logs/scene-visibility.jsonl
           /usr/bin/python3 experiments/encode-lore-scenes.py /tmp/lore-scenes
           node scripts/validate-scenes.mjs /tmp/lore-scenes "$RENDER_BATCH" > ci-logs/scene-budgets.json
           cat ci-logs/scene-budgets.json

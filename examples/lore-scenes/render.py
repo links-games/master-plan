@@ -506,8 +506,8 @@ def setup(spec,width,samples):
     background.inputs[0].default_value=(.28,.34,.42,1) if sh else (.50,.66,.78,1)
     background.inputs[1].default_value=.25 if spec['night'] else .65
     if spec['night']:
-        background.inputs[0].default_value=(.018,.025,.045,1)
-        background.inputs[1].default_value=.18
+        background.inputs[0].default_value=(.045,.065,.11,1)
+        background.inputs[1].default_value=.35
         celestial=material('Distant starlight',(.65,.78,1),.5,0,0)
         bsdf=celestial.node_tree.nodes.get('Principled BSDF')
         bsdf.inputs['Emission Color'].default_value=(.65,.78,1,1)
@@ -523,18 +523,20 @@ def setup(spec,width,samples):
     bpy.ops.object.light_add(type='SUN',location=(-8,-8,15))
     sun=bpy.context.object
     sun.rotation_euler=(math.radians(38),math.radians(-28),math.radians(-28))
-    sun.data.energy=0 if indoor else (2.5 if kind=='orbit' else .35 if spec['night'] else .35 if sh else .9)
+    sun.data.energy=0 if indoor else (2.5 if kind=='orbit' else .6 if spec['night'] else 1.0 if sh else 1.3)
     sun.data.angle=.30 if sh else .10
-    sun.data.color=(.85,.73,.51) if sh or spec['night'] else (1,.88,.71)
-    bpy.ops.object.light_add(type='AREA',location=(-3,-1,4.8 if indoor else 14 if kind=='nest' else 8))
-    bpy.context.object.data.energy=(120 if indoor else 180) if sh else (300 if indoor else 1000 if spec['night'] else 500)
+    sun.data.color=(.55,.68,1) if spec['night'] else (.85,.80,.66) if sh else (1,.88,.71)
+    bpy.ops.object.light_add(type='AREA',location=(-3,-1,4.8 if indoor else 14 if kind=='nest' else 10))
+    bpy.context.object.data.energy=(900 if indoor else 2500) if sh else (500 if indoor else 2500 if spec['night'] else 850)
     bpy.context.object.data.shape='DISK'
     bpy.context.object.data.size=8
-    bpy.context.object.data.color=(1,.78,.52) if sh else (.75,.87,1)
+    bpy.context.object.data.color=(1,.78,.52) if indoor else (.68,.78,1) if spec['night'] else (.85,.88,1)
+    light=bpy.context.object
+    light.rotation_euler=(Vector((0,3,1.5) if indoor else (0,12,4 if kind=='nest' else 1.5))-light.location).to_track_quat('-Z','Y').to_euler()
     if indoor:
         bpy.ops.object.light_add(type='AREA',location=(1,7.5,4))
         light=bpy.context.object
-        light.data.energy=140 if sh else 350
+        light.data.energy=700 if sh else 500
         light.data.size=3
         light.data.color=(.52,.72,1)
         light.rotation_euler=(Vector((0,2,1.5))-light.location).to_track_quat('-Z','Y').to_euler()
@@ -542,6 +544,9 @@ def setup(spec,width,samples):
     camera=(8,-10,5) if indoor else (7,-10,height(7,-10,seed)+1.8)
     target=(0,3,1.7) if indoor else (0,22,3)
     if kind=='repair': camera=(7,-8,4.5); target=(0,3,2.5)
+    if kind=='school': camera=(6,-5,4); target=(-.5,4,1.5)
+    if kind=='tracking': camera=(7,-7,4.5); target=(0,5,2.2)
+    if kind=='launch': camera=(16,0,6); target=(0,28,7)
     if kind=='orbit': camera=(22,-28,15); target=(0,14,2)
     if kind=='two-skies': camera=(0,-21,9); target=(0,8,2)
     if kind=='nest': camera=(7,-10,10); target=(0,6,9)
@@ -551,7 +556,7 @@ def setup(spec,width,samples):
     scene.camera=bpy.context.object
     scene.view_settings.view_transform='AgX' if bpy.app.version[0]>=4 else 'Filmic'
     scene.view_settings.look='None'
-    scene.view_settings.exposure=.7 if sh else .5 if spec['night'] else 0
+    scene.view_settings.exposure=1.2 if sh else .7 if spec['night'] else 0
     scene.view_settings.gamma=1
     return camera,target
 

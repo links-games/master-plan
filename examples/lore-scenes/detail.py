@@ -212,7 +212,7 @@ def weathered_stone(obj, seed):
         p.z+=math.sin(p.x*7+p.y*3)*.055
     # Dense geometry creates real silhouette detail, not just shader bumps.
     modifier=obj.modifiers.new('Fractured stone subdivision','SUBSURF')
-    modifier.subdivision_type='SIMPLE'
+    modifier.subdivision_type='CATMULL_CLARK'
     modifier.levels=2
     texture=bpy.data.textures.new('Fine rock erosion',type='CLOUDS')
     texture.noise_scale=.20
@@ -220,6 +220,66 @@ def weathered_stone(obj, seed):
     displace.texture=texture
     displace.strength=.075
     displace.texture_coords='GLOBAL'
+
+
+def woven_nest(z, material):
+    """Continuous ceramic weave around an open, ellipsoidal tree nest."""
+    def strand(name, points):
+        data=bpy.data.curves.new(name,'CURVE')
+        data.dimensions='3D'
+        data.resolution_u=1
+        data.bevel_depth=.035
+        data.bevel_resolution=2
+        spline=data.splines.new('POLY')
+        spline.points.add(len(points)-1)
+        for point,position in zip(spline.points,points): point.co=(*position,1)
+        obj=bpy.data.objects.new(name,data)
+        bpy.context.collection.objects.link(obj)
+        data.materials.append(material)
+        obj['render_only']=True
+    for index in range(32):
+        angle=index*math.tau/32
+        points=[]
+        for step in range(49):
+            latitude=-math.pi/2+step/48*math.pi
+            p=(4*math.cos(latitude)*math.cos(angle),
+               6+3*math.cos(latitude)*math.sin(angle),z+2.2+2.3*math.sin(latitude))
+            if -2.3<angle-math.tau<-.8 and p[2]<z+3.0: continue
+            points.append(p)
+        if len(points)>1: strand('Curved ceramic nest meridian',points)
+    for index in range(1,17):
+        latitude=-math.pi/2+index/17*math.pi
+        points=[]
+        for step in range(97):
+            angle=step/96*math.tau
+            p=(4*math.cos(latitude)*math.cos(angle),
+               6+3*math.cos(latitude)*math.sin(angle),z+2.2+2.3*math.sin(latitude))
+            entrance=-2.3<angle-math.tau<-.8 and p[2]<z+3.0
+            if entrance:
+                if len(points)>1: strand('Woven nest latitude',points)
+                points=[]
+            else: points.append(p)
+        if len(points)>1: strand('Woven nest latitude',points)
+
+
+def snow_drift(x,y,seed,material,height):
+    """Wind-shaped snow accumulation, continuous with its natural ground."""
+    from mathutils import noise
+    vertices,faces=[],[]
+    for row in range(33):
+        for column in range(37):
+            dx,dy=(column/36-.5)*8,(row/32-.5)*10
+            px,py=x+dx,y+dy
+            radius=(dx/4)**2+(dy/5)**2
+            depth=2.8*max(0,1-radius)**1.7
+            ripple=noise.noise(Vector((px*.7,py*.7,seed*.01)))*.12
+            vertices.append((px,py,height(px,py,seed)+depth+ripple+.03))
+    for row in range(32):
+        for column in range(36):
+            a=row*37+column
+            faces.append((a,a+1,a+38,a+37))
+    obj=detail_mesh('Wind-shaped drift meeting the ground',vertices,faces,material)
+    for face in obj.data.polygons: face.use_smooth=True
 
 
 def sky(scene, spec):
@@ -296,7 +356,9 @@ def landmarks(spec, mats, helpers):
         for shelter in shelters:
             x,y,z=shelter.location
             for dx in [-3,3]:
-                ball('Deep drift around the buried house',(x+dx,y,z-1),(3.5,4.5,2.2),mats['snow'],3)
+                proxy=ball('Deep drift around the buried house',(x+dx,y,z-1),(3.5,4.5,2.2),mats['snow'],3)
+                proxy.hide_render=True
+                snow_drift(x+dx,y,seed,mats['snow'],height)
             ball('Snow tunnel entrance',(x,y-3,z-1),(.65,1.2,.7),mats['dark'],3)
     if kind=='launch':
         pole('Heavy steel pusher plate',(0,28,-.1),(0,28,.45),4.8,mats['rust'],48)
@@ -322,6 +384,11 @@ def landmarks(spec, mats, helpers):
             a=i*math.tau/20
             pole('Open white lattice nest',(math.cos(a)*4,5+math.sin(a)*4,z),
                  (math.cos(a+.7)*3,5+math.sin(a+.7)*3,z+4),.065,mats['white'])
+            bpy.context.object.hide_render=True
+        woven_nest(z,mats['white'])
+        if kind=='nest':
+            for x,y in [(-5,8),(5,9)]:
+                tree(x,y,height(x,y,seed),15,mats['bark'],mats['leaf'],rng)
         for i in range(30):
             x,y=rng.uniform(-9,9),rng.uniform(1,20)
             ball('Warm firefly',(x,y,rng.uniform(1,6)),(.025,.025,.025),mats['lamp'],1)
@@ -366,7 +433,7 @@ def surface_textures(materials, shacados):
             tint=nodes.new('ShaderNodeMixRGB')
             tint.blend_type='MULTIPLY'
             tint.inputs[0].default_value=1 if shacados else .65
-            tint.inputs[2].default_value=(.30,.27,.20,1) if shacados else (.32,.72,.18,1)
+            tint.inputs[2].default_value=(.40,.36,.28,1) if shacados else (.32,.72,.18,1)
             links.new(image.outputs['Color'],tint.inputs[1])
             links.new(tint.outputs[0],bsdf.inputs[socket])
         elif socket:
@@ -396,7 +463,7 @@ def surface_textures(materials, shacados):
                 soot=nodes.new('ShaderNodeMixRGB')
                 soot.blend_type='MULTIPLY'
                 soot.inputs[0].default_value=1
-                soot.inputs[2].default_value={'bark':(.50,.36,.22,1),'brick':(.22,.19,.16,1),'rust':(.24,.16,.10,1)}[key]
+                soot.inputs[2].default_value={'bark':(.60,.46,.32,1),'brick':(.45,.39,.32,1),'rust':(.42,.32,.22,1)}[key]
                 links.new(image.outputs['Color'],soot.inputs[1])
                 links.new(soot.outputs[0],bsdf.inputs[socket])
             else:
@@ -407,6 +474,35 @@ def surface_textures(materials, shacados):
                 relief.inputs['Distance'].default_value=.035
                 links.new(image.outputs['Color'],relief.inputs['Height'])
                 links.new(relief.outputs[0],bsdf.inputs['Normal'])
+
+    # Triplanar photogrammetry detail also covers authored cliff silhouettes
+    # and the orbital rock. Desaturation removes terrestrial moss coloration.
+    mat=materials['rock']
+    nodes,links=mat.node_tree.nodes,mat.node_tree.links
+    bsdf=nodes.get('Principled BSDF')
+    coords=nodes.new('ShaderNodeTexCoord')
+    for suffix,socket in [('diff','Base Color'),('rough','Roughness'),('nor_gl',None)]:
+        texture=nodes.new('ShaderNodeTexImage')
+        extension='exr' if suffix=='nor_gl' else 'jpg'
+        texture.image=bpy.data.images.load(str(root/'rock_moss_set_01'/'textures'/f'rock_moss_set_01_{suffix}_1k.{extension}'),check_existing=True)
+        texture.projection='BOX'
+        texture.projection_blend=.3
+        links.new(coords.outputs['Object'],texture.inputs['Vector'])
+        if suffix!='diff': texture.image.colorspace_settings.name='Non-Color'
+        if suffix=='diff':
+            gray=nodes.new('ShaderNodeRGBToBW')
+            ramp=nodes.new('ShaderNodeValToRGB')
+            ramp.color_ramp.elements[0].color=(.08,.09,.085,1)
+            ramp.color_ramp.elements[1].color=(.48,.50,.47,1)
+            links.new(texture.outputs['Color'],gray.inputs[0])
+            links.new(gray.outputs[0],ramp.inputs[0])
+            links.new(ramp.outputs[0],bsdf.inputs[socket])
+        elif socket: links.new(texture.outputs['Color'],bsdf.inputs[socket])
+        else:
+            normal=nodes.new('ShaderNodeNormalMap')
+            normal.inputs['Strength'].default_value=.8
+            links.new(texture.outputs['Color'],normal.inputs['Color'])
+            links.new(normal.outputs[0],bsdf.inputs['Normal'])
 
 
 def scanned_understory(seed, ground_height):
