@@ -6,7 +6,7 @@ Every story ends with one line from the [wisdom bank](README.md#wisdom-bank) or 
 
 Status: **draft for maintainer review.** Story names and small details that the lore does not already state are _(proposal)_. The only new named characters are Sora _(proposal)_, who also appears in the scenery pilots, and Pell _(proposal)_, a child of the Last Woods.
 
-**Age rules for these stories.** The tiers follow the [age tiers](characters.md#age-tiers).
+**Age rules for these stories.** The tiers follow the [age tiers](characters.md#age-tiers); the children's tier is split into 6–9 and 10–12 by reading level.
 
 - **1–3 and 3–5:** only Link creatures, Orbis, Raya's meadows and gentle Rayan children. No Shacados, no danger, no death, no villains.
 - **6–9:** Raya's everyday life: the Guard, Renewal, the towers. Problems are puzzles and misunderstandings.
@@ -422,7 +422,7 @@ Mira woke up in her nest, high in a big blue-green tree. Her Orbi, Pip, floated 
 
 "Good morning, Mira," said Pip.
 
-They floated down together, slowly, through the leaves and the mist, to the meadow below. The grass was wet and cold on Mira's toes.
+They climbed down the soft ladder of her nest together, slowly, through the leaves and the mist, to the meadow below. Pip floated beside her all the way. The grass was wet and cold on Mira's toes.
 
 At the edge of the forest stood the old apple tree. One apple hung low. It was round and red and shiny.
 
@@ -450,13 +450,13 @@ Mira put her hand down. "But I'm hungry," she said.
 
 "Tomorrow," said Pip. "One night for one apple."
 
-Mira ate berries for breakfast instead.
+Mira ate yesterday's copied berries for breakfast instead.
 
 That night, when the two moons, Pim and Pom, came up over the trees, the garden in Mira's nest hummed a quiet hum. Slowly, slowly, an apple grew in a little cradle of white.
 
 In the morning, Mira took a big crunchy bite. It was sweet and juicy, exactly like the real one.
 
-She floated down to the old tree to look. The apple was still there, round and red. A small bird sat on the branch, pecking at it happily. And in the nest, one blue egg had a crack in it.
+She climbed down and ran to the old tree to look. The apple was still there, round and red. A small bird sat on the branch, pecking at it happily. And in the nest, one blue egg had a crack in it.
 
 "Good morning, bird," said Mira, very softly.
 
@@ -542,13 +542,13 @@ Doubl gasped. "Trip! You can't ask that!"
 
 But the Professor laughed his slow, warm laugh. "Of course he can. It is a very good question. Questions are seeds."
 
-He took off his spectacles and wiped them on his robe with the leaf pattern.
+He took off his spectacles and wiped them on the sleeve of his white suit, the one with the leaf pattern.
 
-"A long, long time ago," he said, "I looked just like your mother. Young and quick. Then one day I wondered: what does it feel like to change? Not just to learn new things, but to change all the way, like a tree changes from spring to autumn?"
+"A long, long time ago," he said, "I looked just like your mother. Young and quick. Then one day I wondered: if nobody ever grows old, how will children know what old looks like? How will they know what it feels like to change all the way, like a tree changes from spring to autumn?"
 
 "So you switched it off?" asked Doubl.
 
-"So I switched it off," said the Professor. "Renewal still helps me when I am sick. But my face, my hair and my hands are free to change now."
+"So I switched it off," said the Professor. "So that you would know. The healers' Orbis still help me when I am sick. But my face, my hair and my hands are free to change now."
 
 His Orbi floated closer and showed a picture in the air: a young man with dark hair and the very same spectacles.
 
@@ -562,7 +562,7 @@ Trip looked at the picture. He looked at the Professor. He looked at the picture
 
 "Sometimes my knees grumble on the stairs," said the Professor. "And sometimes it is wonderful. I can feel time going by, like a river around my feet."
 
-From the pocket of his robe he took a small brown acorn and put it in Trip's hand.
+From a pocket of his suit he took a small brown acorn and put it in Trip's hand.
 
 "Plant it tomorrow," he said. "Someday it will have bark like my hands. And it will still be the same little acorn."
 
@@ -732,7 +732,7 @@ Talk about it:
 
 _Ages 13+ · Raya, a glacier valley in early spring · Sora (proposal), Professor Acorn_
 
-At nineteen, Sora had been allowed to switch off her Guard for one year. She had not used it once. She had waited for the right wall.
+Like every Rayan adult, Sora could switch off her own Guard whenever she chose. At nineteen, she never had. She had waited for the right wall.
 
 It stood above the glacier, three hundred meters of gray granite with the morning sun just reaching its top. No tower stood close enough to catch a falling climber. No flight suit. Just rock, chalk and her own hands.
 
@@ -779,9 +779,11 @@ _Ages 13+ · Shacados, the launch pad of the Rocket Hold · Kesh, Holder Vask_
 
 The booster stood on its pusher plate like a cathedral built by people who had never been allowed inside one. Riveted steel, weld seams, stains running down from every joint. When it launched, a chain of bombs would explode under the plate one after another and push it into the sky. The wind would carry the dust east, over the shanty towns, as it always did.
 
-Kesh had flown once before. He was the only one who had come back.
+The probe on top would go on alone, steered by relays and a clockwork timer. But the relays failed in the shaking of the climb, so someone had to ride a capsule on the booster's nose and fire the bombs by hand, all the way up to orbit.
 
-At the crew gate he put his helmet down on a crate.
+Kesh had flown that seat once before. He was the only one who had come back.
+
+At the crew gate, on the morning of the launch, he put his helmet down on a crate.
 
 The Warden looked at it. "Pick it up," he said. He did not sound angry. He sounded tired, and a little afraid.
 
@@ -793,6 +795,8 @@ The Warden looked at it. "Pick it up," he said. He did not sound angry. He sound
 
 The Warden wrote his name in a book. Everybody knew what the book meant: no card, no bread. Then the Warden did something he did not have to do. He took a ration bar from his own pocket and put it on the crate next to the helmet, and walked away.
 
+At noon the booster launched anyway. Kesh watched the flashes climb the sky from the barracks yard, with a scarf over his face. The young pilot who took his seat fired the bombs by hand up to orbit and came down that afternoon on a parachute, coughing, alive. The probe went on alone, toward the brightest star.
+
 That evening a car stopped at the barracks. It was clean, which nothing in the warm belt ever was. Holder Vask got out alone.
 
 He was younger than Kesh had expected, and thinner.
@@ -801,9 +805,9 @@ He was younger than Kesh had expected, and thinner.
 
 "Here I am," said Kesh.
 
-Vask was quiet for a while. "My father says fear keeps people working. He says if one man says no, a hundred will follow." He looked at the booster, black against the red sunset. "I have read the failure reports. All of them. I think you are right about the rockets."
+Vask was quiet for a while. "My father says fear keeps people working. He says if one man says no, a hundred will follow." He looked at the empty pad, at the smoke still hanging in the east, red in the sunset. "I have read the failure reports. All of them. I think you are right about the rockets."
 
-"Then stop the launch."
+"Then stop the launches."
 
 "I can't. Not yet. I don't have the votes in my own family." Vask's hands were shaking slightly. "But I can delay the next one. I can ask for the welders' reports. I can ask why the fallout always goes east."
 
@@ -811,7 +815,7 @@ Vask was quiet for a while. "My father says fear keeps people working. He says i
 
 "No," said Vask. "But it's how stopping starts."
 
-The probe launched the next day, uncrewed. The young pilot who took Kesh's seat flew the chase vehicle behind it. Kesh watched the flashes climb the sky from a hill, with a scarf over his face. Two weeks later, the next launch was postponed, for reasons nobody would explain.
+Two weeks later, the next launch was postponed, for reasons nobody would explain.
 
 One small word had become a slightly bigger one.
 
@@ -848,25 +852,25 @@ They drank weak tea and waited until the stars moved behind the chimneys. Nothin
 
 The next night, the answer came: seventeen pulses.
 
-Then a picture, line by line, beeps and gaps that Wren drew as dots on her slate. A large circle. A small circle. A line between them.
-
 Teyo laughed so loud that Brann had to cover his mouth, though Brann was laughing too.
+
+Then nothing came, night after night. Teyo climbed up anyway. On the twenty-fourth night, a picture came, line by line, beeps and gaps that Wren drew as dots on her slate. A large circle. A small circle. A line between them.
 
 ---
 
-Far away, on a station of white ceramic rings around a dark asteroid, a young woman sat in a quiet garden, among potted plants, next to a scorched steel probe. She had touched its weld marks many times. Someone had built it by hand, from very little, and had sent it out to take.
+Far away, eleven and a half days after Teyo tapped his thirteen pulses, on a station of white ceramic rings around a dark asteroid, a young woman sat in a quiet garden, among potted plants, next to a scorched steel probe. She had touched its weld marks many times. Someone had built it by hand, from very little, and had sent it out to take.
 
-Her Orbi blinked. "A reply," it said. "Thirteen."
+Her Orbi blinked. "A reply," it said. "Thirteen. Our probe out there answered seventeen, as planned."
 
-She closed her eyes. The station's systems had decided long ago how to answer, in a thousandth of a second. But she had asked to send this one herself.
+She closed her eyes. The station's systems had decided long ago how to answer, in a thousandth of a second. But she had asked to send the next one herself.
 
-"Seventeen," she said. "And the picture. Two worlds. One line."
+"The picture," she said. "Two worlds. One line."
 
-"Sent," said the Orbi. "It will take a while."
+"Sent," said the Orbi. "Eleven and a half days to our probe, and a few hours more to them."
 
 "I know," she said. "I'll wait."
 
-On both worlds, two people who would never stand on the same ground looked up at the same strip of sky, each toward the other's faint star, and waited for the next number.
+On both worlds, two people who would never stand on the same ground looked up at the same strip of sky, each toward the other's bright star, and waited for the next number.
 
 > **Wisdom:** "There is always one more way to link." — Linky
 

@@ -28,18 +28,18 @@ that the maintainer did not state is marked _(proposal)_ or listed in
 
 ## Raya at a glance
 
-| Aspect      | Canon (from the maintainer)                                                      | Detail we propose                                                                                              |
-| ----------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Landscape   | Untouched nature and many tall white acoustic and telecom towers                 | Forests, steppes, wetlands, mountains and reefs; towers every 20–40 km; no roads, no fields, no visible cities |
-| People      | Wear futuristic, tight, mainly white clothes                                     | A white smart fabric called **lattice**; small role-color accents; modest cuts                                 |
-| Movement    | Walk, play, or fly acoustically                                                  | **Chord flight**: tower arrays push on suit panels near towers                                                 |
-| Companions  | Spherical white robots; electromagnetic transmitters for a "telepathy internet"  | Named **Orbis**; the network is the **Chord**                                                                  |
-| Telekinesis | Spheres let people move and copy things without damage                           | Diamagnetic and acoustic fields up to about 1 m and a few kg; copies assembled overnight                       |
-| Ethics      | Highly ethical by default; in harmony with nature                                | A short default charter, the **Gentle Defaults**                                                               |
-| Laws        | Entirely optional; defaults are peaceful; two citizens can waive rules instantly | **Waivers**: personal and mutual, instant and revocable; third parties and nature stay protected               |
-| Safety      | Spheres can take neural control of muscles to prevent damage; thoughts are free  | The **Guard**: it pauses a movement and never writes a thought; each citizen may switch it off for themselves  |
-| Age         | Immortal and forever young (18–21); old people only if they disabled treatment   | **Renewal**: a default, gentle treatment; elders are rare and honored                                          |
-| Backgrounds | Loading screens and backgrounds use Raya's landscape                             | One [loading-screen place per collection](#loading-screens-and-backgrounds)                                    |
+| Aspect      | Canon (from the maintainer)                                                      | Detail we propose                                                                                                     |
+| ----------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Landscape   | Untouched nature and many tall white acoustic and telecom towers                 | Forests, steppes, wetlands, mountains and reefs; towers every 20–40 km; no roads, no fields, no visible cities        |
+| People      | Wear futuristic, tight, mainly white clothes                                     | A white smart fabric called **lattice**; small role-color accents; modest cuts                                        |
+| Movement    | Walk, play, or fly acoustically                                                  | **Chord flight**: tower arrays push on suit panels near towers                                                        |
+| Companions  | Spherical white robots; electromagnetic transmitters for a "telepathy internet"  | Named **Orbis**; the network is the **Chord**                                                                         |
+| Telekinesis | Spheres let people move and copy things without damage                           | Diamagnetic and acoustic fields up to about 1 m and a few kg; copies assembled overnight                              |
+| Ethics      | Highly ethical by default; in harmony with nature                                | A short default charter, the **Gentle Defaults**                                                                      |
+| Laws        | Entirely optional; defaults are peaceful; two citizens can waive rules instantly | **Waivers**: personal and mutual, instant and revocable; third parties and nature stay protected                      |
+| Safety      | Spheres can take neural control of muscles to prevent damage; thoughts are free  | The **Guard**: it pauses a movement and never writes a thought; each citizen may switch it off for themselves         |
+| Age         | Immortal and forever young (18–21); old people only if they disabled treatment   | **Renewal**: a default, gentle treatment; elders are rare and honored                                                 |
+| Backgrounds | Loading screens and backgrounds use Raya's landscape                             | One [loading-screen place per collection](#loading-screens-and-backgrounds); only Shacados games show their own world |
 
 ## The planet
 
@@ -47,6 +47,9 @@ that the maintainer did not state is marked _(proposal)_ or listed in
   older than the Sun. Its year is 401 Rayan days and its day is 26 hours.
   Two small moons, **Pim** and **Pom**, give gentle tides and double
   eclipses, a favorite sight in the [scenery pilots](scenery-pilots.md).
+  The brightest point in the night sky, as bright as a half moon, is
+  Shacados' orange star, 11.6 light-days away in a wide binary with Raya's
+  star ([start systems](first-contact.md#the-two-civilizations)).
 - **Climate:** slightly warmer and wetter than Earth's, with a long green
   spring. Rayans never industrialized the way Earth did, or they cleaned it
   up so long ago that no trace remains. The air is clear enough to see
@@ -120,14 +123,14 @@ other, because they love voices.
 
 ### Clothing — the white lattice
 
-| Rule     | Detail                                                                                                                                                                    |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Color    | Mainly white (canon). Small accents in the [role colors](README.md#visual-rules): coral red at the left wrist, sky blue at the right wrist, green on the collar or belt.  |
-| Fit      | Tight and futuristic (canon), like a sleek sports suit. Modest and non-sexualized in every age tier: long sleeves or soft panels, no cutouts, no emphasis on body shape.  |
-| Material | **Lattice** _(proposal)_: a self-cleaning, temperature-adjusting smart fabric. Its rigid micro-panels catch the tower fields for flight, and it closes into a rain shell. |
-| Variants | Daily suit; flight suit with visible pearl panels on the back, arms and shins; festival suit with flowing white over-layers; field suit with soft gray mud patches.       |
-| Children | Same suits in looser cuts, with bigger accent shapes for recognition.                                                                                                     |
-| Elders   | Often choose softer, looser white robes over the suit. Nobody tells them what to wear.                                                                                    |
+| Rule     | Detail                                                                                                                                                                                  |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Color    | Mainly white (canon). Small accents in the [role colors](README.md#visual-rules): coral red at the left wrist, sky blue at the right wrist, green on the collar or belt.                |
+| Fit      | Tight and futuristic (canon), like a sleek sports suit. Modest and non-sexualized in every age tier: long sleeves or soft panels, no cutouts, no emphasis on body shape.                |
+| Material | **Lattice** _(proposal)_: a self-cleaning, temperature-adjusting smart fabric. Its rigid micro-panels catch the tower fields for flight, and it closes into a rain shell.               |
+| Variants | Daily suit; flight suit with visible pearl panels on the back, arms and shins; festival suit whose lattice glows with slow white light patterns; field suit with soft gray mud patches. |
+| Children | Same suits in looser cuts, with bigger accent shapes for recognition.                                                                                                                   |
+| Elders   | The same fitted white suits, often with a soft pattern (leaves, waves) woven into the lattice. Nobody tells them what to wear.                                                          |
 
 Why white? _(proposal)_ White lattice reflects the towers' fields evenly,
 shows the wearer's mood through faint color glows when they want it to, and
@@ -302,7 +305,7 @@ explore:
 
 > Dawn. Mira, 9, wakes in a nest of white lattice high in a blue-green
 > tree. Her Orbi, Pip, drifts over with two sleepy eyes, one red and one
-> blue. They float down to the meadow, where a herd of grazers moves
+> blue. They climb down the nest ladder to the meadow, where a herd of grazers moves
 > through the mist. Pip shows her the herd's calves as tiny glowing links in
 > her mind; she counts them and gets it right this time.
 >
@@ -312,7 +315,7 @@ explore:
 > says. "Tonight the garden will make one."
 >
 > In the afternoon her teacher, who looks 20 and is 1,400 years old, takes
-> the class riding the Chord around the valley tower. They glide at the speed of
+> the class, in flight suits, riding the Chord around the valley tower. They glide at the speed of
 > a bicycle over a river full of salmon-like fish. Theo tries to push Mira
 > into the water as a joke, and his arm simply stops — the Guard. He
 > laughs, embarrassed. Mira grins and says, through the Chord, "Next time
@@ -326,7 +329,7 @@ explore:
 ## Loading screens and backgrounds
 
 Every game uses Raya's landscape for its loading screen and its
-backgrounds (canon). Each collection has a **home place** on Raya. Prompts
+backgrounds (canon), except the Shacados games, which show their own world. Each collection has a **home place** on Raya. Prompts
 for them are generated with the game prompts in
 [`concepts/jobs/loading-screens.json`](../concepts/jobs/loading-screens.json),
 ready for the image-generation pass.
@@ -374,18 +377,19 @@ playing or gliding.
 
 We checked every earlier lore document against this vision:
 
-| Earlier text                                                                                                | Conflict                                                                    | Resolution                                                                                                                                                                                             |
-| ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Omi world rule 5: "No friendship is made twice", lesson "Share instead of copying" ([lore core](README.md)) | Rayans copy apples                                                          | Rule 5 is about **links**: the same relationship is never stored twice. A copied apple is a new object with a new address. The lesson now reads "Share what exists; copy only to give, never to take". |
-| "Reya" in First Contact, the economy and the roadmap                                                        | Spelling                                                                    | Renamed to Raya everywhere, except quotes.                                                                                                                                                             |
-| Shacados drives: "chemical or simple fusion drives" ([First Contact](first-contact.md))                     | Fusion is too advanced for "the least advanced and most unsafe" spaceflight | Chemical rockets and crude nuclear-pulse boosters.                                                                                                                                                     |
-| Pilot object at 40,000 km/s                                                                                 | Beyond any primitive drive                                                  | Proposal: about 10,000 km/s, detected at 500,000 km, keeping the 50 s window ([physics check](first-contact.md#physics-check-of-the-pilot)).                                                           |
-| Shacados as a "violent anti-utopia"                                                                         | The new vision adds poverty, exploitation, hunger and pollution             | Kept and deepened in [Shacados](shacados.md).                                                                                                                                                          |
-| Professor Acorn is "Old" ([characters](characters.md))                                                      | Old people are rare                                                         | He is one of the rare elders who chose to age.                                                                                                                                                         |
-| Hosts' outfits (hoodies, coats)                                                                             | Clothes are mainly white and tight                                          | Hosts wear white lattice suits with their accent colors; hoodie and coat shapes become soft over-layers.                                                                                               |
-| Toddler tier starts at age 2                                                                                | The new collection covers ages 1–3                                          | A co-play stage for ages 1–2 is added to the [age tiers](characters.md#age-tiers).                                                                                                                     |
-| Concept art: "tiny Links guide" creature                                                                    | Companions are white spheres                                                | Compatible: in the kids' layer, the Links guide is an Orbi's face. New prompts describe the white sphere directly.                                                                                     |
-| Pilot: "minimizing damage", lasers                                                                          | Raya is non-violent                                                         | Compatible: the laser disables one wire to save both sides.                                                                                                                                            |
+| Earlier text                                                                                                      | Conflict                                                                    | Resolution                                                                                                                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Omi world rule 5: "No friendship is made twice", lesson "Share instead of copying" ([lore core](README.md))       | Rayans copy apples                                                          | Rule 5 is about **links**: the same relationship is never stored twice. A copied apple is a new object with a new address. The lesson now reads "Share what exists; copy only to give, never to take". |
+| "Reya" in First Contact, the economy and the roadmap                                                              | Spelling                                                                    | Renamed to Raya everywhere, except quotes and the recorded generation prompts of the existing SS-12 art, which stay unchanged as provenance.                                                           |
+| Shacados drives: "chemical or simple fusion drives" ([First Contact](first-contact.md))                           | Fusion is too advanced for "the least advanced and most unsafe" spaceflight | Chemical rockets and crude nuclear-pulse boosters.                                                                                                                                                     |
+| Pilot object at 40,000 km/s                                                                                       | Beyond any primitive drive                                                  | Proposal: about 10,000 km/s, detected at 500,000 km, keeping the 50 s window ([physics check](first-contact.md#physics-check-of-the-pilot)).                                                           |
+| Shacados as a "violent anti-utopia"                                                                               | The new vision adds poverty, exploitation, hunger and pollution             | Kept and deepened in [Shacados](shacados.md).                                                                                                                                                          |
+| Professor Acorn is "Old" ([characters](characters.md))                                                            | Old people are rare                                                         | He is one of the rare elders who chose to age.                                                                                                                                                         |
+| Hosts' outfits (hoodies, coats)                                                                                   | Clothes are mainly white and tight                                          | Hosts wear fitted white lattice suits; their colors are accent lines and lights, never colored over-layers. Elders wear the same fitted suits.                                                         |
+| Omi creatures "Go, Stop & Hop" as traffic lights; the LiNo Family's "car and house" ([characters](characters.md)) | Raya has no roads or cars                                                   | Go, Stop & Hop are signal lanterns at a stream crossing; the LiNo Family has an Orbi and a nest.                                                                                                       |
+| Toddler tier starts at age 2                                                                                      | The new collection covers ages 1–3                                          | A co-play stage for ages 1–2 and a preschool tier for ages 3–5 are added to the [age tiers](characters.md#age-tiers); toddlers are 2–3.                                                                |
+| Concept art: "tiny Links guide" creature                                                                          | Companions are white spheres                                                | Compatible: in the kids' layer, the Links guide is an Orbi's face. New prompts describe the white sphere directly.                                                                                     |
+| Pilot: "minimizing damage", lasers                                                                                | Raya is non-violent                                                         | Compatible: the laser disables one wire to save both sides.                                                                                                                                            |
 
 ## Open questions
 

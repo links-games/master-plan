@@ -5,6 +5,7 @@ import {
   SHACADOS_PROBE_VARIANT,
   SPEED_OF_LIGHT_KM_S,
   analyzeScene,
+  analyzeStartSystems,
   lorentzFactor,
   relativeClosingSpeed,
 } from '../examples/first-contact-physics.mjs';
@@ -64,6 +65,16 @@ describe('First Contact pilot scene physics check', () => {
     expect(Math.round(result.trueDistanceAtDetectionKm / 1000)).toBe(1733);
     expect(Math.round(result.objectEnergyPerTonneMt)).toBe(194);
     expect(Math.round(result.maxCorrelationDistanceKm)).toBe(300);
+  });
+
+  it('keeps both worlds within one Shacados lifetime of each other', () => {
+    const result = analyzeStartSystems();
+    expect(Number(result.lightDays.toFixed(1))).toBe(11.6);
+    expect(Math.round(result.shacadosProbeDays)).toBe(346);
+    expect(Math.round(result.rayanProbeDays)).toBe(23);
+    expect(Math.round(result.orbitYears / 1000)).toBe(67);
+    expect(Math.round(result.rayaSunSeenFromShacados)).toBe(-10);
+    expect(Math.round(result.shacadosSunSeenFromRaya)).toBe(-9);
   });
 
   it('uses relativistic velocity addition and the Lorentz factor', () => {

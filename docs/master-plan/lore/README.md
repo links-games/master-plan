@@ -148,10 +148,10 @@ Each seed can become a game level pack, a short episode or a sticker set.
 | **The First Link** (origin)  | Akoren, alone and hugging itself, reaches out a red hand and a blue hand and becomes two; the two link and become many. | Everything begins somewhere.           |
 | **Linky's Lost Hand**        | Linky's blue hand holds nothing; the quest is to find a friend to hold.                                                 | It's OK to look for friends.           |
 | **Itsy's Mirror**            | Itsy learns that hugging yourself helps you hug others.                                                                 | Self-acceptance before connection.     |
-| **Go, Stop and Hop**         | Traffic-light siblings run a crossing and argue about when to go.                                                       | Self-regulation.                       |
+| **Go, Stop and Hop**         | Signal-lantern siblings guide friends across a stream and argue about when to go.                                       | Self-regulation.                       |
 | **Oopsy's Very Big Oops**    | Oopsy makes a duplicate link; Uni explains gently.                                                                      | Mistakes are fine; one link is enough. |
 | **Choo-Choo Seq's Train**    | Building trains from pairs of pairs.                                                                                    | Patterns, counting, recursion.         |
-| **The LiNo Family Picnic**   | "papa has car", "mama has house" become links on screen.                                                                | Early reading as linking words.        |
+| **The LiNo Family Picnic**   | "papa has orbi", "mama has nest" become links on screen.                                                                | Early reading as linking words.        |
 | **Letgo and the Moving Day** | A gentle story about moving house.                                                                                      | Change and goodbyes.                   |
 | **Prime Sprites**            | Collect the 65 meaning-sprites; I + WANT + GOOD makes a sentence.                                                       | Every language shares small words.     |
 | **Cadets of Depth Academy**  | Players graduate point → doublet → triplet → sequence → network; the last level shows Omi contains itself.              | (adults) The self-describing world.    |

@@ -9,6 +9,7 @@
 //   node examples/first-contact-physics.mjs            # scene as written
 //   node examples/first-contact-physics.mjs 0.5        # probe at 0.5 c
 //   node examples/first-contact-physics.mjs shacados   # nuclear-pulse probe
+//   node examples/first-contact-physics.mjs binary     # the start systems
 //
 // Units: km, s, kg, J. One-dimensional approximation along the line from
 // the station to the object; the station is at rest at x = 0.
@@ -50,6 +51,50 @@ export const SHACADOS_PROBE_VARIANT = Object.freeze({
   probeSpeedKmS: 0.5 * SPEED_OF_LIGHT_KM_S,
   driveLimitKmS: NUCLEAR_PULSE_MAX_KM_S,
 });
+
+// The start systems (docs/master-plan/lore/first-contact.md): a wide binary
+// of Raya's yellow star and Shacados' dimmer orange star. Absolute visual
+// magnitudes: the Sun is 4.83; a K dwarf like Shacados' star is about 6.
+export const KM_PER_AU = 149597870.7;
+const AU_PER_PARSEC = 206264.806;
+const SECONDS_PER_DAY = 86400;
+export const START_SYSTEMS = Object.freeze({
+  separationAu: 2000,
+  rayaStar: { massSun: 1, absoluteMagnitude: 4.83 },
+  shacadosStar: { massSun: 0.8, absoluteMagnitude: 6 },
+  shacadosProbeKmS: NUCLEAR_PULSE_MAX_KM_S,
+  rayanProbeKmS: 0.5 * SPEED_OF_LIGHT_KM_S,
+});
+
+// Apparent magnitude of a star of the given absolute magnitude.
+function apparentMagnitude(absoluteMagnitude, distanceAu) {
+  const parsecs = distanceAu / AU_PER_PARSEC;
+  return absoluteMagnitude + 5 * Math.log10(parsecs / 10);
+}
+
+export function analyzeStartSystems(systems = START_SYSTEMS) {
+  const distanceKm = systems.separationAu * KM_PER_AU;
+  const days = (seconds) => seconds / SECONDS_PER_DAY;
+  return {
+    distanceKm,
+    lightDays: days(lightTimeSeconds(distanceKm)),
+    shacadosProbeDays: days(distanceKm / systems.shacadosProbeKmS),
+    rayanProbeDays: days(distanceKm / systems.rayanProbeKmS),
+    // Kepler's third law in years, AU and solar masses.
+    orbitYears: Math.sqrt(
+      systems.separationAu ** 3 /
+        (systems.rayaStar.massSun + systems.shacadosStar.massSun)
+    ),
+    rayaSunSeenFromShacados: apparentMagnitude(
+      systems.rayaStar.absoluteMagnitude,
+      systems.separationAu
+    ),
+    shacadosSunSeenFromRaya: apparentMagnitude(
+      systems.shacadosStar.absoluteMagnitude,
+      systems.separationAu
+    ),
+  };
+}
 
 export function lorentzFactor(speedKmS) {
   const beta = speedKmS / SPEED_OF_LIGHT_KM_S;
@@ -163,13 +208,17 @@ const isMain =
 
 if (isMain) {
   const argument = process.argv[2];
-  const beta = argument && argument !== 'shacados' ? Number(argument) : null;
+  const named = ['shacados', 'binary'].includes(argument);
+  const beta = argument && !named ? Number(argument) : null;
   const scene = beta
     ? { ...PILOT_SCENE, probeSpeedKmS: beta * SPEED_OF_LIGHT_KM_S }
     : argument === 'shacados'
       ? SHACADOS_PROBE_VARIANT
       : PILOT_SCENE;
-  const result = analyzeScene(scene);
+  const result =
+    argument === 'binary'
+      ? { ...analyzeStartSystems(), findings: [] }
+      : analyzeScene(scene);
   for (const [key, value] of Object.entries(result)) {
     if (key !== 'findings') {
       console.log(`${key}: ${format(value)}`);

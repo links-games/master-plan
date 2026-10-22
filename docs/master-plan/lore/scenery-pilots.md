@@ -50,7 +50,7 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 **Beats:**
 
-1. Mira, 9, and Pip float down from her nest in the tree crown to the meadow.
+1. Mira, 9, climbs down from her nest in the tree crown to the meadow, with Pip floating beside her.
 2. Mira reaches for a red apple. Pip says, "Ask first." She looks, and finds a nest with three blue eggs on the next branch.
 3. Pip rises to the apple. A thin ring of light passes through it from top to bottom. The apple does not swing, and no leaf falls.
 4. Night. Pim and Pom hang over the trees. In the nest, the garden assembler hums, and a new apple slowly takes shape in a cradle of white lattice.
@@ -170,7 +170,7 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 **Beats:**
 
-1. People arrive walking and gliding, in festival suits with flowing white over-layers. A herd of grazers watches from a distance.
+1. People arrive walking and gliding, in fitted white festival suits with glowing trim. A herd of grazers watches from a distance.
 2. The near tower plays one low note. The grass trembles.
 3. A minute and a half later, the far tower's answer rolls in over the steppe and fits the melody perfectly.
 4. Children dance in circles. Orbis glow in rhythm. Someone plays a reed flute in harmony.
@@ -178,7 +178,7 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 **Wisdom:** "A link is a beginning and an end holding hands." — Soru & Tari
 
-**Image description:** Very wide shot of a flower steppe at dusk, painterly anime style, warm violet and rose sky. In the middle ground, dozens of small figures in white suits with flowing white over-layers dance in loose circles among tall grasses and wildflowers. Many white sphere companions glow softly above them like lanterns. A slender white tower stands close on the left, its ring nodes glowing faintly. A second white tower stands tiny on the far horizon. A herd of deer-like grazers watches calmly from the right. A small pale moon rises low over the grass. Palette of violet, rose, wheat gold and pearl white. No crowds pressing together, lots of open space. Festive, gentle, spacious mood.
+**Image description:** Very wide shot of a flower steppe at dusk, painterly anime style, warm violet and rose sky. In the middle ground, dozens of small figures in tight white festival suits with softly glowing trim dance in loose circles among tall grasses and wildflowers. Many white sphere companions glow softly above them like lanterns. A slender white tower stands close on the left, its ring nodes glowing faintly. A second white tower stands tiny on the far horizon. A herd of deer-like grazers watches calmly from the right. A small pale moon rises low over the grass. Palette of violet, rose, wheat gold and pearl white. No crowds pressing together, lots of open space. Festive, gentle, spacious mood.
 
 **Sound and mood:** One deep tower note, a delayed answering note, a reed flute, crickets; festive and spacious.
 
@@ -236,7 +236,7 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 ### 10. Why is Professor Acorn old?
 
-**Logline:** At dusk, a child asks the only old man in the valley why his skin is wrinkled, and he tells her.
+**Logline:** At dusk, a child asks the only old man in the valley why his skin is wrinkled, and he tells him.
 
 **Setting:** The words home place: a reading nest village in giant tree crowns, linked by sky-lanes. Evening, cool air, the towers glowing softly, Pim and Pom rising, small glowing insects in the leaves. Physics note: Renewal keeps adults looking 18–21 by default. Children grow up naturally to about 18. Acorn switched Renewal off long ago, so he ages.
 
@@ -250,7 +250,7 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 **Wisdom:** "Two can be one, and one can be two." — Akoren
 
-**Image description:** Cozy medium shot inside a round open nest woven from white lattice, high in a giant tree crown at dusk, hand-painted anime style. An old man with round infinity-shaped spectacles, white hair and a loose white robe with a leaf pattern sits on a cushion, holding out his wrinkled hand. A boy of seven in a white suit with green accents touches it gently, curious. Three other children listen. A white sphere companion floats nearby and projects a soft, ghostly image of the same man, young. Through the open weave: other nests in neighboring trees, thin glowing sky-lanes, two small moons and a slender white tower with a softly glowing crown. Tiny glowing insects drift. Palette of dusk blue, warm cream, white and firefly gold. Tender, curious mood.
+**Image description:** Cozy medium shot inside a round open nest woven from white lattice, high in a giant tree crown at dusk, hand-painted anime style. An old man with round infinity-shaped spectacles, white hair and a fitted white suit with a leaf pattern sits on a cushion, holding out his wrinkled hand. A boy of seven in a white suit with green accents touches it gently, curious. Three other children listen. A white sphere companion floats nearby and projects a soft, ghostly image of the same man, young. Through the open weave: other nests in neighboring trees, thin glowing sky-lanes, two small moons and a slender white tower with a softly glowing crown. Tiny glowing insects drift. Palette of dusk blue, warm cream, white and firefly gold. Tender, curious mood.
 
 **Sound and mood:** Leaves, night insects, an old man's slow laugh; tender and calm.
 
@@ -334,17 +334,17 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 ### 14. Launch day
 
-**Logline:** A nuclear-pulse booster stands on cracked concrete, a shanty town lies downwind, and one pilot refuses to board the chase vehicle.
+**Logline:** A nuclear-pulse booster stands on cracked concrete, a shanty town lies downwind, and one pilot refuses to ride it.
 
-**Setting:** The pad of the Rocket Hold in the warm belt. Overcast noon, sick-yellow light through smog. Physics note: a ground-launched nuclear-pulse booster is a heavy steel pusher plate with bombs exploding behind it one by one. Fallout poisons the region downwind, and the Rocket Hold chose a region where the poorest Hands live. Today's payload is the first uncrewed probe; a crewed chase vehicle _(proposal)_ will follow it to keep radio control. The launch is seen only from far away, as a ladder of flashes; sound arrives later, about 3 seconds per kilometer.
+**Setting:** The pad of the Rocket Hold in the warm belt. Overcast noon, sick-yellow light through smog. Physics note: a ground-launched nuclear-pulse booster is a heavy steel pusher plate with bombs exploding behind it one by one. Fallout poisons the region downwind, and the Rocket Hold chose a region where the poorest Hands live. Today's payload is the first probe. It is uncrewed and will steer itself with a relay autopilot, tracked from the ground; nobody follows it. But the relays fail in the shaking of the climb, so a debt pilot must ride a capsule on the booster's nose and fire the bombs by hand up to orbit, then fall home on a parachute _(proposal, see [Shacados spaceflight](shacados.md#spaceflight--the-least-advanced-and-most-unsafe-way))_. The launch is seen only from far away, as a ladder of flashes; sound arrives later, about 3 seconds per kilometer.
 
 **Beats:**
 
 1. The booster: a riveted steel tower on a pusher plate as wide as a town square, covered in weld marks.
 2. Downwind, in the shanty town, a mother tapes rags over a window. Children are sent down into a cellar.
-3. At the crew gate, Kesh, the only survivor of a failed launch, puts down his helmet. "Not until it's safe." The Warden does not grab him. He only writes in a book.
-4. High in the Hold's tower, Holder Vask stands with one hand on the window glass. He signs the order, slowly.
-5. On a hill 30 km away, Old Brann and Teyo see a chain of flashes climb the sky. Teyo counts the seconds until the thuds arrive. "I welded that plate," Brann says, and pulls his scarf over the boy's face as the wind turns.
+3. At the crew gate that morning, Kesh, the only survivor of a failed launch, puts down his helmet. "Not until it's safe." The Warden does not grab him. He only writes in a book.
+4. High in the Hold's tower, Holder Vask stands with one hand on the window glass. He signs the order, slowly. A young pilot climbs into the capsule in Kesh's place.
+5. At noon, on a hill 30 km away, Old Brann and Teyo see a chain of flashes climb the sky. Teyo counts the seconds until the thuds arrive. "I welded that plate," Brann says, and pulls his scarf over the boy's face as the wind turns.
 
 **Wisdom:** "Small words build big ideas." — Prime Sprites (Kesh's word was "no")
 
@@ -396,7 +396,7 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 **Wisdom:** "There is always one more way to link." — Linky
 
-**Image description:** Medium-wide shot of a fifteen-year-old boy sitting on a corrugated tin roof at night, gritty painterly style. He wears a patched soot-colored jacket, a scarf and oversized headphones made from old parts, and holds a homemade radio whose vacuum tubes glow warm orange in a wooden box. A long copper-wire antenna stretches from a pole to a chimney. Above him, a rare clear patch of sky full of stars between drifting brown clouds; one faint pale-yellow star is a little brighter than the others. Below, a dark rail town of chimneys and water towers, with gas flares burning orange on the horizon. A small potted green plant sits next to him on the roof. Palette of night blue, soot, rust and tube orange. Secret, wondering, hopeful mood.
+**Image description:** Medium-wide shot of a fifteen-year-old boy sitting on a corrugated tin roof at night, gritty painterly style. He wears a patched soot-colored jacket, a scarf and oversized headphones made from old parts, and holds a homemade radio whose vacuum tubes glow warm orange in a wooden box. A long copper-wire antenna stretches from a pole to a chimney. Above him, a rare clear patch of sky full of stars between drifting brown clouds; one pale-yellow star shines far brighter than all the others. Below, a dark rail town of chimneys and water towers, with gas flares burning orange on the horizon. A small potted green plant sits next to him on the roof. Palette of night blue, soot, rust and tube orange. Secret, wondering, hopeful mood.
 
 **Sound and mood:** Wind on tin, crackling static, then clean rhythmic beeps; secret wonder.
 
@@ -478,25 +478,25 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 **Seeds games:** [Station Watch](../concepts/pages/sp-06.md), [Deflect!](../concepts/pages/sp-03.md), [Probe Workshop](../concepts/pages/sp-07.md)
 
-### 20. Fifty seconds — the chase crew's side
+### 20. Fifty seconds — the tracking room's side
 
-**Logline:** Far behind the probe, a debt crew watches their laser return go dark and thinks they have failed.
+**Logline:** Eleven days after the capture, a debt crew in a frozen tracking room hears their probe go silent and thinks they have failed.
 
-**Setting:** The chase vehicle _(proposal)_ that follows the Shacados probe a few light-seconds behind, because radio lag from home makes control impossible ([physics check](first-contact.md#physics-check-of-the-pilot)). A riveted steel capsule with three debt workers, frost on the inside walls, a vacuum-tube radio, an infrared laser rig for tracking, a slide rule. Physics note: the crew rode the same dirty push as the probe. There is no life support worth the name, and they cannot turn back quickly.
+**Setting:** The Rocket Hold's tracking station in the frozen regions, where the air is clear enough for radio: a riveted hut under a big mesh dish, frost on the inside walls, vacuum-tube receivers, a pen recorder, a slide rule. The probe is uncrewed and steers itself with a relay autopilot; nobody follows it, because radio lag makes control from home impossible ([physics check](first-contact.md#physics-check-of-the-pilot)). Physics note: after 346 days of flight the probe is 11.6 light-days away ([start systems](first-contact.md#the-two-civilizations)), so everything the crew hears happened 11.6 days ago. By the time its carrier stops, the probe has long been resting in a Rayan hangar.
 
 **Beats:**
 
-1. Inside: frost, one lamp, three faces in scarves. The youngest, who took Kesh's seat, listens to the laser return clicking like a clock.
-2. The clicks stop. The probe's radio carrier goes silent.
-3. The pilot works the slide rule. The radio man taps the receiver. They decide it exploded, like most things they ever built. The youngest says, "We go home with nothing. The debt stays."
-4. The pilot breaks the last ration bar into three equal pieces.
-5. Days later, a white point grows in the porthole. It slows and matches their speed, which no Shacados ship can do. Two small lights glow on it, red and blue _(proposal)_. The youngest raises his hand to the glass.
+1. Inside: frost, one lamp, three faces in scarves. The youngest, the pilot who took Kesh's seat in the capsule and still coughs, listens to the telemetry clicking like a clock.
+2. The clicks stop. The probe's radio carrier goes silent. The pen on the recorder draws a flat line.
+3. The chief works the slide rule. "Eleven and a half days," she says. "Whatever happened, it is long over." They decide it exploded, like most things they ever built. The youngest says, "We go home with nothing. The debt stays."
+4. The chief breaks the last ration bar into three equal pieces.
+5. The others sleep. The youngest keeps the receiver on through the night. In the log he writes "Silence. Cause unknown." Under it, smaller: "Not exploded?" Through the frosted window, the brightest star in the sky shines over the dish.
 
 **Wisdom:** "Truth can depend on where you stand." — Rela
 
-**Image description:** Cramped interior of a riveted steel space capsule, gritty painterly style with 1950s details. Frost coats the curved walls and pipes. Three crew members in patched padded suits and scarves float close together around a dented instrument panel of round dials and a glowing vacuum-tube radio. An older pilot breaks a small ration bar into three pieces. The youngest crewman, barely an adult, presses his palm against a small round porthole. Outside the porthole, in black space, a smooth white sphere-shaped probe approaches with one small coral-red light and one sky-blue light. One warm lamp-orange bulb lights the cabin. A tiny dried flower is tucked behind a pipe. No injuries, no weapons. Palette of steel gray, frost blue, soot and lamp orange, with the white probe as the only clean shape. Exhausted, then astonished mood.
+**Image description:** Cramped interior of a riveted steel tracking hut at night, gritty painterly style with 1950s details. Frost coats the walls and pipes. Three operators in patched padded coats and scarves sit close together around a dented instrument panel of round dials, glowing vacuum-tube receivers and a pen recorder whose line has gone flat. An older woman, the chief, breaks a small ration bar into three pieces. The youngest, barely an adult, presses his palm against a small frosted window. Outside the window, a huge mesh radio dish stands against a dark sky over a snowfield, and above it shines one pale-yellow star, far brighter than all the others. One warm lamp-orange bulb lights the hut. A tiny dried flower is tucked behind a pipe. No injuries, no weapons. Palette of steel gray, frost blue, soot and lamp orange, with the bright star as the only clean light. Exhausted, quietly wondering mood.
 
-**Sound and mood:** Clicking stops; breathing, creaking metal, a ration wrapper; total silence when the white light appears. Astonished.
+**Sound and mood:** Clicking stops; breathing, creaking metal, a ration wrapper, the hiss of an empty carrier. Exhausted, then quietly wondering.
 
 **Ages:** 13+
 
@@ -506,19 +506,19 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 **Logline:** Teyo, Wren and Old Brann answer the primes from the sky with the next prime.
 
-**Setting:** Brann's stall, then the radio roof, some weeks after scene 16. Cold, windy, clear nights. Brann builds a small transmitter from scrap; transmitters are even more illegal than receivers. Physics note _(proposal)_: the Rayan contact probe is light-hours away in the outer system, so an answer takes about a night to come back. Pictures can be sent as grids of dots, like Earth's 1974 Arecibo message.
+**Setting:** Brann's stall, then the radio roof, some weeks after scene 16. Cold, windy, clear nights. Brann builds a small transmitter from scrap; transmitters are even more illegal than receivers. Physics note _(proposal)_: the Rayan contact probe is parked light-hours away in the outer Shacados system, so its own answer takes about a night to come back. A message from Raya itself needs 11.6 days each way ([start systems](first-contact.md#the-two-civilizations)), so the keeper's picture arrives about 24 nights after Teyo's thirteen. Pictures can be sent as grids of dots, like Earth's 1974 Arecibo message.
 
 **Beats:**
 
 1. Under the bridge, Brann builds a transmitter from the leftovers of the three radios. Wren checks the sequence on a slate.
 2. On the roof, Teyo taps the key: thirteen pulses.
 3. They wait under one blanket and drink weak tea. Wren explains, "Light is fast, but the sky is big."
-4. The next night, the answer: seventeen. Then a picture made of dots: two circles, one large and one small, and a line between them.
+4. The next night, the answer: seventeen. Twenty-three nights later, a picture made of dots: two circles, one large and one small, and a line between them.
 5. Teyo laughs out loud on the roof for the first time in his life. Brann hushes him, grinning.
 
 **Wisdom:** "No one is lost; everyone has an address." — Postie
 
-**Image description:** Night shot on a corrugated tin rooftop under a rare clear sky, painterly style. Three figures sit huddled under one patched blanket: a fifteen-year-old boy with homemade headphones and one hand on a brass telegraph key, a young woman teacher holding a small slate with rows of chalk dots, and an old bearded man with scarred hands adjusting a homemade transmitter of glowing vacuum tubes in a wooden box. Steam rises from three tin cups. A copper-wire antenna stretches to a chimney. Above, between brown clouds, stars, and one faint pale-yellow star. Below, a dark rail town with gas flares on the horizon and one lit window. A small green plant grows in a tin on the roof edge. Palette of night blue, rust, soot and warm tube orange. Breathless, joyful, secret mood.
+**Image description:** Night shot on a corrugated tin rooftop under a rare clear sky, painterly style. Three figures sit huddled under one patched blanket: a fifteen-year-old boy with homemade headphones and one hand on a brass telegraph key, a young woman teacher holding a small slate with rows of chalk dots, and an old bearded man with scarred hands adjusting a homemade transmitter of glowing vacuum tubes in a wooden box. Steam rises from three tin cups. A copper-wire antenna stretches to a chimney. Above, between brown clouds, stars, and one pale-yellow star far brighter than the rest. Below, a dark rail town with gas flares on the horizon and one lit window. A small green plant grows in a tin on the roof edge. Palette of night blue, rust, soot and warm tube orange. Breathless, joyful, secret mood.
 
 **Sound and mood:** Telegraph key clicks, wind, static, then the answering beeps and a burst of laughter; joyful.
 
@@ -530,7 +530,7 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 **Logline:** On two worlds, two children look up on the same night and see each other's star.
 
-**Setting:** A split frame. Left: Raya, a clear night on a ridge near the tallest tower, Pim and Pom, the Milky Way. Mira sits with Pip, looking at a faint orange star. Right: Shacados, a rare clear night after a dust storm. Teyo sits on his tin roof, looking at a faint yellow star. Physics note: "the same night" is only a picture. The light each child sees left the other star long ago, years or more, depending on the distance between the start systems _(open question in [First Contact](first-contact.md#open-questions))_.
+**Setting:** A split frame. Left: Raya, a clear night on a flower plain below a tower, Pim and Pom, the Milky Way. Mira sits with Pip, looking at a bright orange star. Right: Shacados, a rare clear night after a dust storm. Teyo sits on his tin roof, looking at a bright pale-yellow star. Physics note: the two stars are a wide binary 11.6 light-days apart, so each is the brightest point in the other's night sky, as bright as a half moon but still a point ([start systems](first-contact.md#the-two-civilizations)). "The same night" is only a picture: the light each child sees left the other star 11.6 days ago.
 
 **Beats:**
 
@@ -542,7 +542,7 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 **Wisdom:** "Everything is connected." — Linky
 
-**Image description:** Split-screen night composition divided by a thin vertical line, painterly style, both halves mirroring each other. Left half: a calm green ridge on Raya under a deep blue night sky with the Milky Way and two small moons; a slender white tower glows softly; a girl of nine in a white lattice suit sits in the grass beside a floating white sphere with coral-red and sky-blue eyes, pointing up at a faint orange star. Right half: a rusted tin rooftop on Shacados under a brown sky with a rare clear patch of stars; a fifteen-year-old boy in a patched jacket and homemade headphones points up at a faint yellow star; gas flares glow on the horizon and one window shines lamp orange below. Their pointing arms line up across the divide. Palettes contrast: white, green and blue left; rust, soot and orange right. Hopeful, connected mood.
+**Image description:** Split-screen night composition divided by a thin vertical line, painterly style, both halves mirroring each other. Left half: a calm green flower plain on Raya under a deep blue night sky with the Milky Way and two small moons; a slender white tower glows softly; a girl of nine in a white lattice suit sits in the grass beside a floating white sphere with coral-red and sky-blue eyes, pointing up at a bright orange star, the brightest point in the sky. Right half: a rusted tin rooftop on Shacados under a brown sky with a rare clear patch of stars; a fifteen-year-old boy in a patched jacket and homemade headphones points up at a bright pale-yellow star, the brightest point in his sky; gas flares glow on the horizon and one window shines lamp orange below. Their pointing arms line up across the divide. Palettes contrast: white, green and blue left; rust, soot and orange right. Hopeful, connected mood.
 
 **Sound and mood:** Left: crickets and a soft tower hum. Right: wind and faint static. They meet in one shared two-note "boop-bip". Hopeful.
 
@@ -556,8 +556,8 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 2. **Pim and Pom.** Are the moons small enough that a double eclipse is always partial (scene 4)? Which one looks bigger, and how often do they cross the star together?
 3. **The tower song as a round.** Is a song written around the 90-second delay of sound between towers (scene 7) a good festival rule?
 4. **Tower assemblers.** Are swarms of fist-sized white assemblers the right picture of how a tower grows (scene 6)?
-5. **The chase vehicle.** To stay a few light-seconds behind the probe, a crewed chase vehicle must also reach about 10,000 km/s on the same dirty push (scenes 14 and 20). Is that acceptable, or should control come from an uncrewed relay?
-6. **Rayan contact probes.** Should Rayan probes show the Orbi's red-left, blue-right lights as a visual link (scene 20), or stay plain white?
-7. **Light delay to Shacados.** Scenes 16 and 21 place the Rayan contact probe light-hours from Shacados. That depends on the distance between the start systems, still open in [First Contact](first-contact.md#open-questions).
-8. **New names.** Sora (scene 9) is a proposal. The station keeper, the chase crew and the raker girl stay unnamed until the maintainer decides.
+5. **Probe control.** We chose an uncrewed probe that steers itself with a relay autopilot and is only tracked from the ground (scenes 14 and 20); no crew follows it. Is a pilot firing the climb to orbit by hand (scene 14) a believable reason for Kesh's refusal?
+6. **Rayan contact probes.** Should Rayan probes show the Orbi's red-left, blue-right lights as a visual link, or stay plain white?
+7. **Light delay to Shacados.** We chose a wide binary 2,000 AU apart ([start systems](first-contact.md#the-two-civilizations)): 11.6 days each way between the worlds, about a night to the Rayan contact probe parked near Shacados (scenes 16, 20 and 21). Is that the right distance?
+8. **New names.** Sora (scene 9) is a proposal. The station keeper, the tracking crew and the raker girl stay unnamed until the maintainer decides.
 9. **Age ratings.** Are Shacados scenes with children in hard places (scenes 11, 12, 13, 17) right at 10+? Should the station's side of the pilot (scene 19), which shows no harm, be 10+ instead of 13+?

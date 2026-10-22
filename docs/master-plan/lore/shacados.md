@@ -59,7 +59,10 @@ harm. That is the seed that First Contact grows.
   smokestacks, rail yards and shanty towns. This is where most people live.
 - **The sky** is brown-gray by day and red at sunset because of soot and
   sulfur. On rare clear nights after a storm, people climb roofs to see the
-  stars. One of those faint stars is Raya's sun.
+  stars. The brightest of them, a hard pale-yellow point as bright as a
+  half moon, is Raya's sun, 11.6 light-days away; it is so bright that most
+  people think it is a planet, or a lamp the Holders hung in the sky
+  ([start systems](first-contact.md#the-two-civilizations)).
 - **Water:** the big rivers are gray with mine waste and dye. Clean water
   comes from deep wells, which are owned, and from rain, which is acid.
   Every family has a homemade filter of sand, charcoal and cloth.
@@ -117,14 +120,14 @@ that fit.
 
 Example characters, for teen and adult stories:
 
-| Name _(proposal)_ | Who                                                               | Hope they carry                                |
-| ----------------- | ----------------------------------------------------------------- | ---------------------------------------------- |
-| **Teyo**          | A 15-year-old raker who sorts scrap and builds radios             | The first person on Shacados to hear the Chord |
-| **Old Brann**     | A former rocket welder, now a mender with burned hands            | Knows exactly how unsafe the rockets are       |
-| **Sela**          | A seed keeper in the Last Woods                                   | Keeps a jar of seeds for "after"               |
-| **Wren**          | A night-school teacher                                            | Teaches children that numbers do not lie       |
-| **Holder Vask**   | Heir of the Rocket Hold, lonely, doubts his family                | Can change the system from inside              |
-| **Kesh**          | A pilot from the debt crews, the only survivor of a failed launch | Refuses to fly again until rockets are safe    |
+| Name _(proposal)_ | Who                                                               | Hope they carry                             |
+| ----------------- | ----------------------------------------------------------------- | ------------------------------------------- |
+| **Teyo**          | A 15-year-old raker who sorts scrap and builds radios             | The first to hear Raya's radio beacon       |
+| **Old Brann**     | A former rocket welder, now a mender with burned hands            | Knows exactly how unsafe the rockets are    |
+| **Sela**          | A seed keeper in the Last Woods                                   | Keeps a jar of seeds for "after"            |
+| **Wren**          | A night-school teacher                                            | Teaches children that numbers do not lie    |
+| **Holder Vask**   | Heir of the Rocket Hold, lonely, doubts his family                | Can change the system from inside           |
+| **Kesh**          | A pilot from the debt crews, the only survivor of a failed launch | Refuses to fly again until rockets are safe |
 
 ## Technology and energy
 
@@ -153,13 +156,22 @@ Shacados reaches space the way a desperate civilization would:
   poorest Hands live.
 - **No life support worth the name.** Crewed flights are short, and crews
   return sick, if they return at all.
-- **Remote control** by radio from a crew vehicle trailing behind a probe,
-  because radio lag makes control from home impossible. This explains the
-  pilot scene's need for a nearby controller
+- **No remote control.** Radio lag makes control from home impossible, and
+  no crew could ride a dirty push for a year, so probes are uncrewed and
+  steer themselves with a crude **relay autopilot**: a star tracker, a
+  clockwork timer and racks of relays. Home only tracks the radio carrier
+  with a big mesh dish, and hears everything late. The autopilot is the
+  controlling circuit the Rayan correlation center finds in the pilot scene
   ([physics check](first-contact.md#physics-check-of-the-pilot)).
+- **The climb by hand** _(proposal)_: the relays fail too often in the
+  shaking of the first, ground-launched climb, so a debt pilot rides a small
+  capsule on top of the booster and fires the bomb sequence by hand up to
+  orbit. Then the capsule separates and falls home on a parachute, and the
+  probe goes on alone. This is the seat Kesh refuses.
 - **The first probe** _(proposal)_: an uncrewed nuclear-pulse probe, pushed
   by hundreds of dirty bombs to about 10,000 km/s (Dyson's optimistic limit
-  for such a design), aimed at the nearest star system. It is the object
+  for such a design), aimed at the companion star, which it reaches in
+  about 346 days. It is the object
   in the pilot scene. Nobody on Shacados knows that the target system is
   inhabited. They hope to find resources.
 

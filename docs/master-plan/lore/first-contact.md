@@ -27,22 +27,37 @@ The earlier spelling "Reya" is now **Raya**.
 
 ## The two civilizations
 
-|                     | **Raya**                                                                                                      | **Shacados**                                                                                                 |
-| ------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Who they are        | Humanlike beings; a highly advanced scientific and technological civilization, immortal and forever young     | A violent anti-utopia; a hierarchy where fear is the main tool of control; most people poor and exploited    |
-| Principles          | Reduce pain, keep the peace, minimize harm (verbatim from the pilot); laws optional, defaults peaceful        | Strength decides; the ones on top take, the ones below obey _(proposal)_                                     |
-| Economy             | Resource-based: shared resources, needs-first allocation, no money _(proposal, see [economy](../economy.md))_ | Scarcity and tribute; resources are hoarded by whoever controls the force _(proposal)_                       |
-| Technology          | Electromagnetic launch rails, full-spectrum sensors, autonomous correlation centers, precise lasers, Orbis    | No advanced tech: coal, oil and gas; chemical rockets and crude nuclear-pulse boosters; radio remote control |
-| Space               | Frontier asteroid stations around their start system                                                          | Their own start system; first probes sent outward, in the least advanced and most unsafe way                 |
-| How they compute    | A distributed network of supercomputers that finishes an analysis in milliseconds                             | Centralized, slow; remote control needs a nearby operator (see [physics check](#physics-check-of-the-pilot)) |
-| What they can learn | That kindness needs strength and patience, not only rules                                                     | That cooperation produces more than force — the hope of the whole story                                      |
+|                     | **Raya**                                                                                                      | **Shacados**                                                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Who they are        | Humanlike beings; a highly advanced scientific and technological civilization, immortal and forever young     | A violent anti-utopia; a hierarchy where fear is the main tool of control; most people poor and exploited                |
+| Principles          | Reduce pain, keep the peace, minimize harm (verbatim from the pilot); laws optional, defaults peaceful        | Strength decides; the ones on top take, the ones below obey _(proposal)_                                                 |
+| Economy             | Resource-based: shared resources, needs-first allocation, no money _(proposal, see [economy](../economy.md))_ | Scarcity and tribute; resources are hoarded by whoever controls the force _(proposal)_                                   |
+| Technology          | Electromagnetic launch rails, full-spectrum sensors, autonomous correlation centers, precise lasers, Orbis    | No advanced tech: coal, oil and gas; chemical rockets and crude nuclear-pulse boosters; relay autopilots                 |
+| Space               | Frontier asteroid stations around their start system                                                          | Their own start system; first probes sent outward, in the least advanced and most unsafe way                             |
+| How they compute    | A distributed network of supercomputers that finishes an analysis in milliseconds                             | Centralized, slow; probes steer themselves with a crude onboard autopilot ([physics check](#physics-check-of-the-pilot)) |
+| What they can learn | That kindness needs strength and patience, not only rules                                                     | That cooperation produces more than force — the hope of the whole story                                                  |
 
 **Start systems** _(proposal)_: each civilization starts on its own planet
-in its own star system. The systems are close enough for slow, primitive
-probes to cross in a human-scale time, which suggests a binary star or two
-neighboring systems a few light-years apart; the exact astronomy is chosen
-with the simulator (real orbits, real light delays, no faster-than-light
-travel, see [world rules](#world-rules-of-the-realistic-layer)).
+around its own star, and the two stars form a **wide binary about 2,000 AU
+apart** (300 billion km). That is close enough for a primitive probe to
+cross while the people who launched it are still alive:
+
+- light and radio need about **11.6 days** each way between the two worlds;
+- the 10,000 km/s Shacados probe needs about **346 days**, just under an
+  Earth year;
+- a Rayan contact probe at 0.5 _c_ needs about **23 days** plus braking;
+- each star is the brightest point in the other world's night sky, about
+  as bright as a half moon (magnitude −10 for Raya's star seen from
+  Shacados, −9 the other way), yet still only a point;
+- the two stars circle each other once in about 67,000 years, too slowly to
+  matter in any story, and planets in each habitable zone keep stable
+  orbits at this separation.
+
+A few light-years would turn the probe's trip into a century, longer than
+any Shacados life, so we do not use it. The script of the [physics check](#physics-check-of-the-pilot) checks
+every number (`node examples/first-contact-physics.mjs binary`); they follow real physics
+(real orbits, real light delays, no faster-than-light travel, see
+[world rules](#world-rules-of-the-realistic-layer)).
 
 **The contrast** is the engine of the story: Raya are strong but refuse to
 harm; Shacados are weak but willing to harm. Every encounter asks the
@@ -80,20 +95,20 @@ checked the scene like a level. The script is
 _c_, for example `0.5`); the numbers below are asserted by
 [`tests/first-contact-physics.test.js`](../../../tests/first-contact-physics.test.js).
 
-| Check                              | Result                                                                                                                                                                                   |
-| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Impact window                      | 2,000,000 km / 40,000 km/s = **50 s** — consistent with the text.                                                                                                                        |
-| Launch time                        | 0.01 s analysis + max(2.4 + 1.2, 4.5) s refit + 0.5 s rails + 0.001 s launch = **5.011 s**.                                                                                              |
-| Probe speed 500,000 km/s           | **Faster than light** (_c_ ≈ 299,792 km/s) — the only physical error in the scene.                                                                                                       |
-| Proposed fix: probe at 0.5 _c_     | Intercept at **14.5 s**, about 1.42 million km out, leaving **35.5 s** before impact — still a tense, winnable scene.                                                                    |
-| Light delay                        | Light from 2 million km takes **6.67 s**; the object is really at about **1,733,000 km** when it is "seen". Rayan sensors must predict, not just look.                                   |
-| Energy of the object               | At 40,000 km/s (γ ≈ 1.009) every tonne carries about **194 megatons TNT** — the object is a planet-killer by speed alone, even with no warhead.                                          |
-| Stop or deflect?                   | Stopping it before the station (probe at 0.5 _c_) needs about 57,000 _g_ for 35 s; a sideways push of only **2.8 km/s** makes it miss by 100 km. Deflecting is the harm-minimizing move. |
-| Escorting the object               | To fly "synchronously", the probe must change its speed by about **178,000 km/s** relative to the object (relativistic velocity addition) — a huge maneuver budget.                      |
-| Correlation center in 0.002 s      | A round trip of 0.002 s at light speed limits the center to **about 300 km** away, so it is on board the probe or on the station's nearby escort.                                        |
-| Laser remote control of the object | Light lag over millions of km makes real-time remote control impossible, so a **Shacados controller must be near** — a hook for the next scene.                                          |
-| Launch rails                       | 0.5 _c_ in 0.001 s means about 1.5 × 10¹⁰ _g_; even Rayan rails need a longer track or a slower launch _(open question)_.                                                                |
-| Probe energy at 0.5 _c_            | About **3.3 megatons TNT per kilogram** of probe — Raya are clearly powerful, which makes their restraint meaningful.                                                                    |
+| Check                              | Result                                                                                                                                                                                     |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Impact window                      | 2,000,000 km / 40,000 km/s = **50 s** — consistent with the text.                                                                                                                          |
+| Launch time                        | 0.01 s analysis + max(2.4 + 1.2, 4.5) s refit + 0.5 s rails + 0.001 s launch = **5.011 s**.                                                                                                |
+| Probe speed 500,000 km/s           | **Faster than light** (_c_ ≈ 299,792 km/s) — the only physical error in the scene.                                                                                                         |
+| Proposed fix: probe at 0.5 _c_     | Intercept at **14.5 s**, about 1.42 million km out, leaving **35.5 s** before impact — still a tense, winnable scene.                                                                      |
+| Light delay                        | Light from 2 million km takes **6.67 s**; the object is really at about **1,733,000 km** when it is "seen". Rayan sensors must predict, not just look.                                     |
+| Energy of the object               | At 40,000 km/s (γ ≈ 1.009) every tonne carries about **194 megatons TNT** — the object is a planet-killer by speed alone, even with no warhead.                                            |
+| Stop or deflect?                   | Stopping it before the station (probe at 0.5 _c_) needs about 57,000 _g_ for 35 s; a sideways push of only **2.8 km/s** makes it miss by 100 km. Deflecting is the harm-minimizing move.   |
+| Escorting the object               | To fly "synchronously", the probe must change its speed by about **178,000 km/s** relative to the object (relativistic velocity addition) — a huge maneuver budget.                        |
+| Correlation center in 0.002 s      | A round trip of 0.002 s at light speed limits the center to **about 300 km** away, so it is on board the probe or on the station's nearby escort.                                          |
+| Laser remote control of the object | Light lag over millions of km makes real-time remote control impossible, so the object **steers itself**: the controlling circuit is its own crude relay autopilot, and nobody follows it. |
+| Launch rails                       | 0.5 _c_ in 0.001 s means about 1.5 × 10¹⁰ _g_; even Rayan rails need a longer track or a slower launch _(open question)_.                                                                  |
+| Probe energy at 0.5 _c_            | About **3.3 megatons TNT per kilogram** of probe — Raya are clearly powerful, which makes their restraint meaningful.                                                                      |
 
 **The object's speed and Shacados' technology.** At 40,000 km/s
 (about 13% of _c_) the object is four times faster than even Dyson's
@@ -156,8 +171,8 @@ cheaper than stopping.
   creatures are how Rayan children see their knowledge network; the
   autonomous correlation centers of the pilot are the adult form of the same
   idea.
-- **Linky is the face of an Orbi**, the white companion sphere every
-  Rayan child floats beside ([Raya](raya.md#how-raya-connects-to-omi)).
+- **Linky is the face of an Orbi**, the white companion sphere most
+  Rayan children float beside ([Raya](raya.md#how-raya-connects-to-omi)).
 - **Lina and the hosts are young Rayans** — the "Cadets of Depth Academy"
   story seed in the [lore core](README.md#story-seeds) becomes the Rayan
   academy that trains station crews.
@@ -167,19 +182,19 @@ cheaper than stopping.
 
 ## Game seeds from the setting
 
-| Seed                     | Genre                           | What it teaches                                           |
-| ------------------------ | ------------------------------- | --------------------------------------------------------- |
-| Station Watch            | Idle / monitoring sim           | Orbits, detection, light delay                            |
-| Deflect!                 | Physics puzzle (2D vector)      | Momentum, impulse, why a small push early is enough       |
-| Probe Workshop           | Construction / engineering      | Mass budgets, sensors, rails, energy                      |
-| Correlation Center       | Logic / deduction               | Signal analysis, finding the controlling circuit          |
-| Light-Lag Chess          | Turn-based strategy             | Information arrives late; plan with predictions           |
-| Two Planets              | Economy / city builder          | Resource-based economy versus scarcity                    |
-| Messages Across the Dark | Language and code puzzle        | Building a shared language from math (first contact)      |
-| The Escape               | Narrative adventure (13+)       | Empathy for people inside a violent system                |
-| Shacados collection      | Repair, sharing, seed saving    | Fourteen games in the [Shacados style](../concepts/sh.md) |
-| Raya life collection     | Everyday life on Raya           | Fourteen games about [life on Raya](../concepts/ry.md)    |
-| First Contact (final)    | Realistic multi-genre simulator | All of the above at once, at real scale                   |
+| Seed                     | Genre                           | What it teaches                                          |
+| ------------------------ | ------------------------------- | -------------------------------------------------------- |
+| Station Watch            | Idle / monitoring sim           | Orbits, detection, light delay                           |
+| Deflect!                 | Physics puzzle (2D vector)      | Momentum, impulse, why a small push early is enough      |
+| Probe Workshop           | Construction / engineering      | Mass budgets, sensors, rails, energy                     |
+| Correlation Center       | Logic / deduction               | Signal analysis, finding the controlling circuit         |
+| Light-Lag Chess          | Turn-based strategy             | Information arrives late; plan with predictions          |
+| Two Planets              | Cooperative exchange sim        | Resource-based economy versus scarcity                   |
+| Messages Across the Dark | Language and code puzzle        | Building a shared language from math (first contact)     |
+| The Escape               | Narrative adventure (13+)       | Empathy for people inside a violent system               |
+| Shacados collection      | Repair, sharing, seed saving    | Sixteen games in the [Shacados style](../concepts/sh.md) |
+| Raya life collection     | Everyday life on Raya           | Sixteen games about [life on Raya](../concepts/ry.md)    |
+| First Contact (final)    | Realistic multi-genre simulator | All of the above at once, at real scale                  |
 
 The full list lives in the [game ideas](../game-ideas.md) catalog.
 
@@ -189,7 +204,8 @@ The full list lives in the [game ideas](../game-ideas.md) catalog.
 2. Should the probe speed become 0.5 _c_ (or another sub-light value), and
    the rail launch longer than 0.001 s? Should the object become the
    10,000 km/s nuclear-pulse Shacados probe seen at 500,000 km?
-3. How far apart are the two start systems, and is it one binary system?
+3. Is the wide binary about 2,000 AU apart (11.6 light-days) the right
+   distance between the start systems?
 4. Is Omi a Rayan learning world, and are Lina and the hosts young Rayans?
 5. How do Shacados look — humanlike like Raya, or a different species?
    (Proposed: humanlike, see [Shacados](shacados.md#people).)
