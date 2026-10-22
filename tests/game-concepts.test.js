@@ -168,6 +168,24 @@ const views = {
 };
 
 describe('art-pending collections', () => {
+  it('keeps toddler prototype acceptance observable during caregiver co-play', () => {
+    for (const game of pending.filter((item) => item.id.startsWith('TD-'))) {
+      const page = read(join(base, 'pages', `${game.id.toLowerCase()}.md`));
+      const rows = page.split('\n');
+      const prototype = rows.find((row) => row.startsWith('| First prototype'));
+      const acceptance = rows.find((row) =>
+        row.startsWith('| Prototype acceptance')
+      );
+      expect(prototype.includes('tap')).toBe(true);
+      expect(prototype.includes('No score or fail state')).toBe(true);
+      expect(acceptance.includes('caregiver co-play')).toBe(true);
+      expect(acceptance.includes('no reading or spoken explanation')).toBe(
+        true
+      );
+      expect(acceptance.includes('without help')).toBe(false);
+    }
+  });
+
   it('adds toddler, preschool, Raya life and Shacados ideas with stories', () => {
     expect(new Set(pending.map((game) => game.id)).size).toBe(84);
     expect(new Set([...catalog, ...pending].map((game) => game.id)).size).toBe(

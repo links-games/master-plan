@@ -159,6 +159,7 @@ function header(game, family) {
 function pageFor(game, family, neighbors, context) {
   const [previous, next] = neighbors;
   const cx = Number(game.cx[0]);
+  const toddler = family === 'td';
   const loreCheck = LORE_CHECKS[family] ? `\n- ${LORE_CHECKS[family]}` : '';
   return `# ${game.title}
 
@@ -170,11 +171,11 @@ ${header(game, family)}
 | --- | --- |
 | Familiar mechanic | ${game.genre} |
 | Learning objective | ${game.lesson} |
-| First prototype | One authored challenge built around the interaction above, with a clear goal, immediate feedback, restart and unlimited retries. |
+| First prototype | ${toddler ? 'One sensory toy or guided interaction with a large tap target, immediate gentle feedback and unlimited repetition. Introduce dragging only after an accessible tap alternative. No score or fail state; invite caregiver co-play under age 2.' : 'One authored challenge built around the interaction above, with a clear goal, immediate feedback, restart and unlimited retries.'} |
 | Technology | ${technology(game)} |
 | Scope boundary | ${cx <= 2 ? 'One board and one rule set; defer accounts, multiplayer, procedural content and platform SDKs.' : 'One bounded scenario and one core system; defer a full campaign, network play and production-scale content.'} |
 | Reuse | Shared input, saves, accessibility, seeded state and the ${families[family][0].toLowerCase()} collection shell. |
-| Prototype acceptance | A player can identify the next action from the screen, complete one challenge, explain the practiced idea and restart without help. Check touch and keyboard play at narrow and wide sizes. |
+| Prototype acceptance | ${toddler ? 'During caregiver co-play, the child can explore one clear interaction and repeat it willingly. Observe recognition or purposeful action; require no reading or spoken explanation. Check large touch targets and a keyboard-accessible caregiver alternative at narrow and wide sizes.' : 'A player can identify the next action from the screen, complete one challenge, explain the practiced idea and restart without help. Check touch and keyboard play at narrow and wide sizes.'} |
 | Main uncertainty | ${cx >= 4 ? 'Simulation accuracy and device cost need measured evidence before extending the scenario.' : 'Test whether the lesson follows from play and whether the first interaction is understandable without reading.'} |
 
 ${estimateSection(context.ranked.get(game.id), context.library)}${storySection(game)}${imagesSection(game, family)}
