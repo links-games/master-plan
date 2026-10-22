@@ -7,7 +7,9 @@ prompts and actual file hashes/dimensions remain reviewable in the repository.
 
 import hashlib
 import json
+import os
 import sys
+import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -17,10 +19,25 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / "docs/master-plan/concepts"
 
 
+def atomic_image_save(picture, target, quality):
+    """An interrupted encode must never look like a delivered image."""
+    descriptor, name = tempfile.mkstemp(prefix='encoding-', suffix='.tmp', dir=target.parent)
+    os.close(descriptor)
+    temporary = Path(name)
+    try:
+        picture.convert('RGB').save(temporary, 'WEBP', quality=quality, method=6)
+        temporary.replace(target)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
 def main():
     job_id, source = sys.argv[1:]
+    loading = job_id.startswith("loading/")
     family = job_id.split("-")[0]
-    jobs = json.loads((BASE / "jobs" / f"{family}.json").read_text())
+    extra_style = job_id.split('/')[1] in ['05-storybook', '06-anime']
+    job_file = 'style-variations.json' if extra_style else 'loading-screens.json' if loading else f'{family}.json'
+    jobs = json.loads((BASE / 'jobs' / job_file).read_text())
     job = next(job for job in jobs if job["id"] == job_id)
     game, direction = job_id.split("/")
     target_dir = BASE / "art" / game
@@ -31,18 +48,24 @@ def main():
     with Image.open(source) as picture:
         picture.load()
         width, height = picture.size
-        if min(width, height) < 1024:
+        minimum = 900 if loading else 1024
+        if min(width, height) < minimum or width*height < 1_500_000:
             raise SystemExit(f"Native resolution too small: {width} x {height}")
-        picture.convert("RGB").save(target, "WEBP", quality=92, method=6)
+        if loading:
+            portrait = job['orientation'] == 'portrait'
+            expected_ratio = 9/16 if portrait else 16/9
+            if abs(width/height-expected_ratio) > .004:
+                raise SystemExit(f"Unexpected loading-screen aspect ratio: {width} x {height}")
+        atomic_image_save(picture, target, quality=92)
         if direction == "01-gameplay":
             thumbnail = picture.copy()
             thumbnail.thumbnail((320, 320))
-            thumbnail.convert("RGB").save(target_dir / "thumbnail.webp", "WEBP", quality=82, method=6)
+            atomic_image_save(thumbnail, target_dir / "thumbnail.webp", quality=82)
     manifest_path = target_dir / "manifest.json"
-    manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {"gameId": job["gameId"], "images": []}
+    manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else ({"collection": "loading", "images": []} if loading else {"gameId": job["gameId"], "images": []})
     manifest["images"].append({
         "file": target.name,
-        "direction": job["direction"],
+        "direction": job.get("direction", job.get("orientation")),
         "tool": "image_gen.imagegen (built-in)",
         "modelRequested": "GPT Image 2.5 or latest available",
         "modelReported": None,
@@ -54,7 +77,9 @@ def main():
         "encoding": "WebP quality 92, original pixel dimensions; no upscaling",
     })
     manifest["images"].sort(key=lambda image: image["file"])
-    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
+    temporary_manifest = manifest_path.with_suffix('.json.tmp')
+    temporary_manifest.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
+    temporary_manifest.replace(manifest_path)
     print(json.dumps({"id": job_id, "size": [width, height], "bytes": target.stat().st_size}))
 
 

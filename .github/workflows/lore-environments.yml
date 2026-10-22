@@ -35,6 +35,9 @@ jobs:
           sudo apt-get install -y --no-install-recommends python3-pil &
           wait $!
           bash experiments/install-lore-blender.sh /tmp/master-plan-blender
+      - name: Verify interrupted artwork encoding stays unpublished
+        if: matrix.batch == '0/6'
+        run: /usr/bin/python3 experiments/test-save-concept-art.py
       - name: Render every pilot from source
         env:
           RENDER_BATCH: ${{ matrix.batch }}
