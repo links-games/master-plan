@@ -66,7 +66,8 @@ describe('development plan (R66, R67, R69)', () => {
 
   it('is regenerated from the estimates', async () => {
     const expected = await format(renderPlan(data), { filepath: PLAN });
-    expect(readFileSync(PLAN, 'utf8')).toBe(expected);
+    // Windows checkouts may convert the committed file to CRLF.
+    expect(readFileSync(PLAN, 'utf8').replaceAll('\r\n', '\n')).toBe(expected);
   });
 
   it('shows the estimated plan on every concept page', () => {

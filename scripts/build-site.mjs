@@ -16,7 +16,7 @@ import {
   rmSync,
   writeFileSync,
 } from 'node:fs';
-import { dirname, join, posix, relative } from 'node:path';
+import { dirname, join, posix } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { rankGames } from './build-development-plan.mjs';
 import { hasArt } from './game-families.mjs';
@@ -34,13 +34,15 @@ const DOCS = 'docs/master-plan';
 const EXCLUDED = ['templates/'];
 const IMAGE = /\.(webp|png|jpe?g|svg|gif)$/i;
 
+// Doc keys always use "/" so the concept-page and link rules match on
+// Windows too, where path.relative would return backslashes.
 function markdownFiles(dir = DOCS) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
-    const path = join(dir, entry.name);
+    const path = posix.join(dir, entry.name);
     if (entry.isDirectory()) {
       return markdownFiles(path);
     }
-    return entry.name.endsWith('.md') ? [relative(DOCS, path)] : [];
+    return entry.name.endsWith('.md') ? [posix.relative(DOCS, path)] : [];
   });
 }
 
