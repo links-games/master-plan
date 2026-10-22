@@ -1,0 +1,47 @@
+{
+  "id": "08-rain-in-the-delta",
+  "number": 8,
+  "title": "Rain in the delta",
+  "world": "Raya",
+  "kind": "delta",
+  "seed": 2726,
+  "night": false,
+  "ages": 3,
+  "pilot": "scenery-pilots.md#8-rain-in-the-delta",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [
+    1280,
+    720
+  ],
+  "triangles": 20532,
+  "files": {
+    "scene.json": {
+      "bytes": 2215351,
+      "sha256": "a760925335e943e729dcc05a8bc2f9944651e085c23fd2493b99bbb424e0466f"
+    },
+    "environment.blend": {
+      "bytes": 36288416,
+      "sha256": "b3de9a7d569c9de2ddf5537b0f32d7c28addde9c8ebc75e3247bbd6811faf507"
+    },
+    "poster.png": {
+      "bytes": 1927682,
+      "sha256": "e31fe35945bddce0cb1ff4afb3cffcd45292cbf034641f91a8db377a15c00eaa"
+    },
+    "poster.webp": {
+      "bytes": 247456,
+      "sha256": "22b851405c09315406c775e9ec3fa6cd01e392779c9b0d90e658219460169388"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

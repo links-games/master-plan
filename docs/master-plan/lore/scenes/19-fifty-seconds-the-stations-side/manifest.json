@@ -1,0 +1,47 @@
+{
+  "id": "19-fifty-seconds-the-stations-side",
+  "number": 19,
+  "title": "Fifty seconds \u2014 the station's side",
+  "world": "Raya",
+  "kind": "orbit",
+  "seed": 2737,
+  "night": false,
+  "ages": 13,
+  "pilot": "scenery-pilots.md#19-fifty-seconds--the-stations-side",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [
+    1280,
+    720
+  ],
+  "triangles": 5248,
+  "files": {
+    "scene.json": {
+      "bytes": 578739,
+      "sha256": "4de735c2120dc85d0853a2223561d69760744374c96038c627dd62f5991e4c68"
+    },
+    "environment.blend": {
+      "bytes": 10528787,
+      "sha256": "9beb0601900ca8c4fd9c811fe090dfe63933ef4d5ab248e0d4882bd48bce89ec"
+    },
+    "poster.png": {
+      "bytes": 989422,
+      "sha256": "c2363c9384649f116c658e143f3ad03024ff552878407bd40b5538dfd26b54d3"
+    },
+    "poster.webp": {
+      "bytes": 24524,
+      "sha256": "eac6d92ebf57f9a7e1f944b5de696f0efd7e73911a7aa57b13abd7332055733b"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

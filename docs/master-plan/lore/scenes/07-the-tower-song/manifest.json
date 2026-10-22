@@ -1,0 +1,47 @@
+{
+  "id": "07-the-tower-song",
+  "number": 7,
+  "title": "The tower song",
+  "world": "Raya",
+  "kind": "festival",
+  "seed": 2725,
+  "night": true,
+  "ages": 3,
+  "pilot": "scenery-pilots.md#7-the-tower-song",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [
+    1280,
+    720
+  ],
+  "triangles": 20768,
+  "files": {
+    "scene.json": {
+      "bytes": 2253542,
+      "sha256": "4dc65865becaf6453973aebdce5d17c433a501b50b1f9991e13fdac7b8117486"
+    },
+    "environment.blend": {
+      "bytes": 35187262,
+      "sha256": "0743c5784e95f23ae5674c0f3a9eb4e3fe838a8e397bb2261826d4e61bb79ddd"
+    },
+    "poster.png": {
+      "bytes": 1855410,
+      "sha256": "6370bf495cadc965809df04fb97246373d32dcd83802ac6cc68c8462d940cf30"
+    },
+    "poster.webp": {
+      "bytes": 222920,
+      "sha256": "ae64c042f158aaf2450194ca230c9ede6b89b44fad629d2709bc466631cc0f2e"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

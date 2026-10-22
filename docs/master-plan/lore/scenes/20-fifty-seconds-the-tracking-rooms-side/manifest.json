@@ -1,0 +1,47 @@
+{
+  "id": "20-fifty-seconds-the-tracking-rooms-side",
+  "number": 20,
+  "title": "Fifty seconds \u2014 the tracking room's side",
+  "world": "Shacados",
+  "kind": "tracking",
+  "seed": 2738,
+  "night": true,
+  "ages": 13,
+  "pilot": "scenery-pilots.md#20-fifty-seconds--the-tracking-rooms-side",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [
+    1280,
+    720
+  ],
+  "triangles": 7848,
+  "files": {
+    "scene.json": {
+      "bytes": 838515,
+      "sha256": "872bfd2efc822bae6639384ee5db2842abca19aa1eda00730152c4188bde5717"
+    },
+    "environment.blend": {
+      "bytes": 6878710,
+      "sha256": "6526b153aa0918d67e632ce75d0bbd800a760f5422fe6f63c8cd26c68a19bda2"
+    },
+    "poster.png": {
+      "bytes": 1929473,
+      "sha256": "73f052d8365c9f41596049f9502ade4c7197ed4560e7311d8de2785f13585af5"
+    },
+    "poster.webp": {
+      "bytes": 206536,
+      "sha256": "93d00394025d04c04d9210a40465953bd406197216a07ab6e169c6679e60a793"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

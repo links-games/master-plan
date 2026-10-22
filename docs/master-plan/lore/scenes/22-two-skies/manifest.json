@@ -1,0 +1,61 @@
+{
+  "id": "22-two-skies",
+  "number": 22,
+  "title": "Two skies",
+  "world": "Raya and Shacados",
+  "kind": "two-skies",
+  "seed": 2740,
+  "night": true,
+  "ages": 10,
+  "pilot": "scenery-pilots.md#22-two-skies",
+  "nativeFrames": [
+    {
+      "side": "left",
+      "world": "Raya",
+      "kind": "meadow",
+      "night": true
+    },
+    {
+      "side": "right",
+      "world": "Shacados",
+      "kind": "radio",
+      "night": true
+    }
+  ],
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [
+    1280,
+    720
+  ],
+  "triangles": 7212,
+  "files": {
+    "scene.json": {
+      "bytes": 797249,
+      "sha256": "afce3e8e4cefca1d79997facfdef7129e5bbeee3a37778653642201f7df5d656"
+    },
+    "environment.blend": {
+      "bytes": 48033688,
+      "sha256": "25d93cab6867d0953b18c6aaa3dbe027a147be9fd4dcb7038ab3a94fbe7d7f00"
+    },
+    "poster.png": {
+      "bytes": 1360916,
+      "sha256": "b5b2dfe48412f86e60df641942e21f8c0f8f9a6429d0b1582adce90523a99cec"
+    },
+    "poster.webp": {
+      "bytes": 103128,
+      "sha256": "b8389ae5397121b1ae156cd4cf6beb53d990023ba70315da06efe6cb1f2c6a85"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

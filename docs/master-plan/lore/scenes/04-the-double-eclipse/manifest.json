@@ -1,0 +1,47 @@
+{
+  "id": "04-the-double-eclipse",
+  "number": 4,
+  "title": "The double eclipse",
+  "world": "Raya",
+  "kind": "eclipse",
+  "seed": 2722,
+  "night": false,
+  "ages": 3,
+  "pilot": "scenery-pilots.md#4-the-double-eclipse",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [
+    1280,
+    720
+  ],
+  "triangles": 24108,
+  "files": {
+    "scene.json": {
+      "bytes": 2616171,
+      "sha256": "2139b841ad1b53c30b27a67a2a0c68c9ca6e4eb9736ab325c0d62e6e6075e405"
+    },
+    "environment.blend": {
+      "bytes": 39742558,
+      "sha256": "c1ca76154e0adf2124500c08f7b95aae7eccfc9ece18c18a94f3af203efa616d"
+    },
+    "poster.png": {
+      "bytes": 2016261,
+      "sha256": "ab6ed894da45d7ad43c0a18cedcb58be6ddca34930267568b9040ab058e81ca9"
+    },
+    "poster.webp": {
+      "bytes": 282508,
+      "sha256": "08ef310820374ca2535ebdf30e0c452720c2887f7765b71d09c2789f2e36314c"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

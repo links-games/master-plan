@@ -1,0 +1,47 @@
+{
+  "id": "11-ration-line-at-dawn",
+  "number": 11,
+  "title": "Ration line at dawn",
+  "world": "Shacados",
+  "kind": "ration",
+  "seed": 2729,
+  "night": false,
+  "ages": 10,
+  "pilot": "scenery-pilots.md#11-ration-line-at-dawn",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [
+    1280,
+    720
+  ],
+  "triangles": 16312,
+  "files": {
+    "poster.png": {
+      "bytes": 1349030,
+      "sha256": "ef8bb7b1956424886674f073d850cd5e55e57379f5cd4555aa8a8f68240f4b91"
+    },
+    "environment.blend": {
+      "bytes": 9674965,
+      "sha256": "5bfc470b6bbfd7f2f8ffbc96d709d9eefeb9d9a15a14881fb8555f9b92b3b784"
+    },
+    "scene.json": {
+      "bytes": 1738073,
+      "sha256": "6f38699282d7345c46bf9f2efae347a48292b108df4426bfc7379c0211cf0f28"
+    },
+    "poster.webp": {
+      "bytes": 89136,
+      "sha256": "aadd783a39ea0622f213004d7f52a905c8b3c4b9756eaf93cac172109e9d792c"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "18-three-dead-radios",
+  "number": 18,
+  "title": "Three dead radios",
+  "world": "Shacados",
+  "kind": "repair",
+  "seed": 2736,
+  "night": false,
+  "ages": 10,
+  "pilot": "scenery-pilots.md#18-three-dead-radios",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [
+    1280,
+    720
+  ],
+  "triangles": 8936,
+  "files": {
+    "scene.json": {
+      "bytes": 935269,
+      "sha256": "2aa88a9f293f8f75a07b90b90310ffe9102254f4e4292ba1027a8390298a7d9e"
+    },
+    "environment.blend": {
+      "bytes": 6864530,
+      "sha256": "8f1018c341ccf21dc23ed43072d1edf58da309258f246edc3fe025f24825fc76"
+    },
+    "poster.png": {
+      "bytes": 1742737,
+      "sha256": "e304ff08f8cd6dd803dec3e66bcab4b77e24f67f94e23380d72c4f8cacac26e5"
+    },
+    "poster.webp": {
+      "bytes": 194640,
+      "sha256": "ec7958dc04eb4c991e69030516f49da8755738c234a207db095010381b3bed41"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

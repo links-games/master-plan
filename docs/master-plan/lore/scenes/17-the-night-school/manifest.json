@@ -1,0 +1,47 @@
+{
+  "id": "17-the-night-school",
+  "number": 17,
+  "title": "The night school",
+  "world": "Shacados",
+  "kind": "school",
+  "seed": 2735,
+  "night": true,
+  "ages": 10,
+  "pilot": "scenery-pilots.md#17-the-night-school",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [
+    1280,
+    720
+  ],
+  "triangles": 7256,
+  "files": {
+    "poster.png": {
+      "bytes": 1782517,
+      "sha256": "86bb37d828e9c7ed4ac458e30245d44a8588c1c9eff3cd3627765e5681920fa2"
+    },
+    "environment.blend": {
+      "bytes": 6881187,
+      "sha256": "9fc1b3c0e3235f57f19cbabd52b0dd3f98209533b2ac589d5f4a70f4e03c4269"
+    },
+    "scene.json": {
+      "bytes": 775702,
+      "sha256": "b81591918f6a9cff8373c6ec80da3f39fceb4359c301a52f9e048a12a123f0bd"
+    },
+    "poster.webp": {
+      "bytes": 207350,
+      "sha256": "5712584e8ef3ae90ba022557e7ab487836ca93538d11f2ab73dc0f698fa0e368"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

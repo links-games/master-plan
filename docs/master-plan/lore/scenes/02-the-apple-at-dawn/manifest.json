@@ -1,0 +1,47 @@
+{
+  "id": "02-the-apple-at-dawn",
+  "number": 2,
+  "title": "The apple at dawn",
+  "world": "Raya",
+  "kind": "apple",
+  "seed": 2720,
+  "night": false,
+  "ages": 3,
+  "pilot": "scenery-pilots.md#2-the-apple-at-dawn",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [
+    1280,
+    720
+  ],
+  "triangles": 22140,
+  "files": {
+    "scene.json": {
+      "bytes": 2396983,
+      "sha256": "6c5885e290b07a32228e027cd116e5fe8f519f567f42ef4df5fa75ea4212cf73"
+    },
+    "environment.blend": {
+      "bytes": 36441873,
+      "sha256": "9d0a60c736ec66b794d247ee63857314c1f1a96d1ab5651c5b597599b692817e"
+    },
+    "poster.png": {
+      "bytes": 2139794,
+      "sha256": "343444081460260bc05b2cd04592078e20f7fab6fd248c3e8e8aef540ed67a19"
+    },
+    "poster.webp": {
+      "bytes": 325554,
+      "sha256": "5565d00c0321f868d8c8850ee16a926c3526a6ffcee1c2f68cfc660f3c8a0f0d"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}
