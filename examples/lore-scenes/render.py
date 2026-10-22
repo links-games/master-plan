@@ -283,7 +283,12 @@ def room(seed,mats,kind):
         for y in [1.15,2.85]: cube('Table leg',(x,y,.58),(.12,.12,1.2),mats['rust'])
     radio((0 if repair else -.5,2,1.36),mats)
     cube('Folded paper and slate',(1.3,1.5,1.39),(1,.7,.03),mats['paper'])
-    ball('Living plant',(2,2.6,1.7),(.25,.25,.35),mats['leaf'])
+    pole('Handmade plant pot',(2,2.6,1.39),(2,2.6,1.68),.17,mats['brick'],24)
+    for index in range(9):
+        angle=index*math.tau/9
+        leaf=ball('Living windowsill plant leaf',
+                  (2+math.cos(angle)*.16,2.6+math.sin(angle)*.16,1.78+index*.025),(.08,.21,.025),mats['leaf'],2)
+        leaf.rotation_euler=(.3,angle*.2,angle)
     cube('Small warm lamp',(-2,2.5,1.8),(.25,.25,.8),mats['lamp'],.05)
     # A working room with handmade tools and visible analog construction.
     for x in [-6,-4.5,4.5,6]:
@@ -297,9 +302,18 @@ def room(seed,mats,kind):
         x=-3+index*.5
         pole('Hanging hand tool',(x,7.7,1.8),(x+.06,7.7,2.35),.025,mats['rust'])
         cube('Tool grip',(x,7.7,2.4),(.07,.06,.2),mats['bark'],.02)
+    cube('Tool hanging rail',(0,7.75,2.58),(7,.15,.16),mats['bark'],.02)
     if kind=='school':
         for i in range(5):
-            cube('Slates for sharing',(-3+i*1.4,4.8,1),(.8,.7,.05),mats['dark'])
+            sx=-3+i*1.4
+            cube('Small study desk',(sx,4.8,1.03),(1.15,.9,.12),mats['bark'],.025)
+            for dx in [-.45,.45]:
+                for dy in [-.33,.33]:
+                    cube('Study desk leg',(sx+dx,4.8+dy,.49),(.09,.09,.98),mats['bark'],.01)
+            cube('Slates for sharing',(sx,4.8,1.12),(.8,.7,.05),mats['dark'])
+            cube('Low stool',(sx,3.8,.49),(.7,.6,.10),mats['bark'],.02)
+            for dx in [-.23,.23]:
+                pole('Stool leg',(sx+dx,3.8,0),(sx+dx,3.8,.45),.05,mats['bark'])
         cube('Small coal stove',(-5,3,.6),(1.3,1.3,1.2),mats['dark'],.04)
         pole('Stove pipe',(-5,3,1.1),(-5,3,5.9),.11,mats['rust'],12)
         pole('Dented soup pot',(-5,3,1.25),(-5,3,1.75),.40,mats['rust'],16)
@@ -312,12 +326,31 @@ def room(seed,mats,kind):
 
 def orbit(mats):
     bpy.context.scene.world.color=(.002,.003,.008)
-    ball('Carbonaceous asteroid',(0,18,1),(10,8,7),mats['rock'],3)
+    asteroid=ball('Carbonaceous asteroid',(0,18,1),(10,8,7),mats['rock'],3)
+    weathered_stone(asteroid,2737)
     bpy.ops.mesh.primitive_torus_add(major_segments=48,minor_segments=8,
         location=(0,17,2),major_radius=12,minor_radius=.42)
     bpy.context.object.data.materials.append(mats['white'])
     for x in [-3,3]: cube('Electromagnetic launch rail',(x,3,0),(.2,30,.2),mats['white'])
     cube('White ceramic receiving hangar',(0,12,1),(7,5,3),mats['white'],.2)
+    cube('Recessed receiving hangar aperture',(0,9.48,1),(5,.04,2.2),mats['dark'],.10)
+    for index in range(48):
+        angle=index*math.tau/48
+        x,y=math.cos(angle)*12,17+math.sin(angle)*12
+        panel=cube('Segmented ceramic ring cladding',(x,y,2),(.40,1.42,.45),mats['white'],.025)
+        panel.rotation_euler.z=angle
+        if index%4==0:
+            pole('Ring service strut',(x,y,1.9),(x*.73,17+(y-17)*.73,1.9),.09,mats['rust'],10)
+    for index in range(22):
+        for x in [-3,3]:
+            cube('Accelerator coil housing',(x,-11+index*1.25,0),(.5,.48,.55),mats['white'],.04)
+    for side in [-1,1]:
+        for row in range(12):
+            cube('Thermal radiator fin',(side*(7+row*.26),8,2.8),(.16,6,.08),mats['dark'],.012)
+        pole('Radiator support',(side*3.5,12,2.7),(side*10,8,2.7),.08,mats['white'],10)
+    for column in range(6):
+        for row in range(3):
+            cube('Hangar ceramic service panel',(-2.85+column*1.14,10+row*1.35,2.53),(1.10,1.30,.04),mats['white'],.014)
     for i in range(100):
         rng=random.Random(i)
         ball('Distant star',(rng.uniform(-90,90),100,rng.uniform(-15,80)),(.05,.05,.05),mats['lamp'],1)
@@ -490,7 +523,7 @@ def setup(spec,width,samples):
     bpy.ops.object.light_add(type='SUN',location=(-8,-8,15))
     sun=bpy.context.object
     sun.rotation_euler=(math.radians(38),math.radians(-28),math.radians(-28))
-    sun.data.energy=0 if indoor else (.35 if spec['night'] else .35 if sh else .9)
+    sun.data.energy=0 if indoor else (2.5 if kind=='orbit' else .35 if spec['night'] else .35 if sh else .9)
     sun.data.angle=.30 if sh else .10
     sun.data.color=(.85,.73,.51) if sh or spec['night'] else (1,.88,.71)
     bpy.ops.object.light_add(type='AREA',location=(-3,-1,4.8 if indoor else 14 if kind=='nest' else 8))
