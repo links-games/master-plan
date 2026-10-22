@@ -117,7 +117,8 @@
     "cx": "5",
     "wave": null,
     "original": true,
-    "scene": "Exchange scientific observations between Reya and Shacados using peaceful diplomatic routes."
+    "scene": "Exchange scientific observations between Raya and Shacados using peaceful diplomatic routes.",
+    "promptScene": "Exchange scientific observations between Reya and Shacados using peaceful diplomatic routes."
   },
   {
     "id": "SS-13",
