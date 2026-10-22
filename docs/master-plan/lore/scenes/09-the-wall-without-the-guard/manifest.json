@@ -12,10 +12,7 @@
   "engine": "Cycles CPU",
   "samples": 64,
   "denoiser": "OpenImageDenoise",
-  "resolution": [
-    1280,
-    720
-  ],
+  "resolution": [1280, 720],
   "triangles": 29832,
   "files": {
     "scene.json": {
