@@ -175,8 +175,8 @@ only lists them. Order of creation (all under `links-games`):
 | Code license                                                             | Unlicense for code, CC0 for art and texts, trademarks for names                                                         | Phase 0   |
 | Legal entity and jurisdiction (stores, VK, payments)                     | One company that owns the trademarks; see [legal](legal.md)                                                             | Phase 2   |
 | Default AI tool for the pipeline when formal-ai cannot finish a task     | Keep `formal-ai`; allow per-repository override                                                                         | Phase 0   |
-| Reya / Shacados reading of the pilot scene and its sub-light probe speed | Station is Reyan, object is a Shacados probe; probe at 0.5 _c_ ([open questions](lore/first-contact.md#open-questions)) | S6        |
-| Is Omi the learning world of Reyan children?                             | Yes, as the bridge between the two lore layers                                                                          | Phase 4   |
+| Raya / Shacados reading of the pilot scene and its sub-light probe speed | Station is Rayan, object is a Shacados probe; probe at 0.5 _c_ ([open questions](lore/first-contact.md#open-questions)) | S6        |
+| Is Omi the learning world of Rayan children?                             | Yes, as the bridge between the two lore layers                                                                          | Phase 4   |
 
 ## Requirement-to-phase mapping
 

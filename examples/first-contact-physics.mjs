@@ -8,6 +8,7 @@
 //
 //   node examples/first-contact-physics.mjs            # scene as written
 //   node examples/first-contact-physics.mjs 0.5        # probe at 0.5 c
+//   node examples/first-contact-physics.mjs shacados   # nuclear-pulse probe
 //
 // Units: km, s, kg, J. One-dimensional approximation along the line from
 // the station to the object; the station is at rest at x = 0.
@@ -31,6 +32,23 @@ export const PILOT_SCENE = Object.freeze({
   launchSeconds: 0.001,
   correlationSeconds: 0.002,
   returnSpeedKmS: 250,
+});
+
+// Dyson's optimistic nuclear-pulse ("ablation") ship reaches about c/30
+// (F. J. Dyson, "Interstellar Transport", Physics Today, October 1968).
+// It is the fastest drive the least advanced spacefaring civilization,
+// Shacados, could build (docs/master-plan/lore/shacados.md).
+export const NUCLEAR_PULSE_MAX_KM_S = 1e4;
+
+// Proposed variant: a crude Shacados nuclear-pulse probe at the drive limit,
+// detected at 500,000 km so the scene keeps its 50 second window, and the
+// Rayan probe at half the speed of light.
+export const SHACADOS_PROBE_VARIANT = Object.freeze({
+  ...PILOT_SCENE,
+  detectionDistanceKm: 5e5,
+  objectSpeedKmS: NUCLEAR_PULSE_MAX_KM_S,
+  probeSpeedKmS: 0.5 * SPEED_OF_LIGHT_KM_S,
+  driveLimitKmS: NUCLEAR_PULSE_MAX_KM_S,
 });
 
 export function lorentzFactor(speedKmS) {
@@ -84,6 +102,11 @@ export function analyzeScene(scene = PILOT_SCENE) {
   }
   if (scene.objectSpeedKmS >= SPEED_OF_LIGHT_KM_S) {
     findings.push(`object speed ${scene.objectSpeedKmS} km/s exceeds c`);
+  }
+  if (scene.driveLimitKmS && scene.objectSpeedKmS > scene.driveLimitKmS) {
+    findings.push(
+      `object speed ${scene.objectSpeedKmS} km/s exceeds the drive limit of ${scene.driveLimitKmS} km/s`
+    );
   }
   if (interceptAt >= impactSeconds) {
     findings.push('the probe cannot reach the object before impact');
@@ -139,10 +162,13 @@ const isMain =
   process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 
 if (isMain) {
-  const beta = process.argv[2] ? Number(process.argv[2]) : null;
+  const argument = process.argv[2];
+  const beta = argument && argument !== 'shacados' ? Number(argument) : null;
   const scene = beta
     ? { ...PILOT_SCENE, probeSpeedKmS: beta * SPEED_OF_LIGHT_KM_S }
-    : PILOT_SCENE;
+    : argument === 'shacados'
+      ? SHACADOS_PROBE_VARIANT
+      : PILOT_SCENE;
   const result = analyzeScene(scene);
   for (const [key, value] of Object.entries(result)) {
     if (key !== 'findings') {

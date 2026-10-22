@@ -70,7 +70,7 @@ a fact, a skill, or a piece of wisdom from our shared lore.
 | [simulation-engine.md](simulation-engine.md)         | Physics engines, 2D/3D vector graphics, LOD, path to realism.            |
 | [lore/README.md](lore/README.md)                     | The Links universe: world, characters, wisdom, styles.                   |
 | [lore/characters.md](lore/characters.md)             | Character bible — every Link character with traits and lessons.          |
-| [lore/first-contact.md](lore/first-contact.md)       | Reya and Shacados: the setting of the final realistic simulator.         |
+| [lore/first-contact.md](lore/first-contact.md)       | Raya and Shacados: the setting of the final realistic simulator.         |
 | [lore/adorability-gate.md](lore/adorability-gate.md) | The "not adorable = bug" checklist used in reviews.                      |
 | [monetization.md](monetization.md)                   | Generosity charter, all monetization mechanics, experiments.             |
 | [business-model.md](business-model.md)               | Revenue streams, unit economics, profitability and capital.              |

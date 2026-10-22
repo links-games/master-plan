@@ -103,7 +103,7 @@ Introduced game by game; each gets a full sheet when its first game starts.
 | 10  | **Go, Stop & Hop**  | `Continue` / `Break` / `Skip`         | Traffic-light siblings: green Go, red Stop, yellow Hop           | Eager / careful / playful                     | Self-regulation: keep going, stop, or come back later     | Linky Hop             |
 | 11  | **Oopsy**           | `Error`                               | Clumsy little robot with a band-aid and a big smile              | Makes mistakes, laughs, tries again           | Mistakes are how we learn (replaces "Game Over")          | every game            |
 | 12  | **Postie Index**    | Index, address                        | Mail-carrier snail with a satchel of numbered envelopes          | Reliable, knows where everyone lives          | Addresses help us find each other                         | Postie's Treasure     |
-| 13  | **Uni**             | Uniqueness (no duplicate links)       | A sparkle with one big eye                                       | Gently says "we already have that one!"       | Share instead of copying                                  | Uni's Grid            |
+| 13  | **Uni**             | Uniqueness (no duplicate links)       | A sparkle with one big eye                                       | Gently says "we already have that one!"       | Share what exists; copy only to give                      | Uni's Grid            |
 | 14  | **Letgo**           | Unlinking (reset to `(0, 0)`)         | Soft cloud whose hands open slowly                               | Kind about goodbyes                           | Let go gently; check who still needs you                  | Screw puzzle (Wave 2) |
 | 15  | **Swappy**          | Substitution, the universal operation | Little magician with a two-headed-arrow wand                     | Playful, loves "turn this into that"          | You can always change things for the better               | Box pushing (Wave 2)  |
 | 16  | **Beadles**         | Unary numbers as chains               | Bead-chain creatures; the Beadle of 3 has 3 beads                | One personality per number                    | Counting; addition as linking chains                      | Bead Merge            |
@@ -140,12 +140,17 @@ toddler mode, see open question 4 in the [lore core](README.md)). They are
 the "trainers" next to the Link creatures, the way Pokémon partners stand
 next to people.
 
-| Host                | Who they are                      | Look                                                                                    | Partner Link       |
-| ------------------- | --------------------------------- | --------------------------------------------------------------------------------------- | ------------------ |
-| **Lina**            | Link-keeper, the main host        | Red and blue hair clips, green ring necklace (from the avatar), carries a LiNo notebook | Linky              |
-| **Doubl and Trip**  | Siblings: the pair and the third  | Doubl in a half-red, half-blue hoodie; Trip, the younger one, in green                  | Soru & Tari, Verbi |
-| **Professor Acorn** | Human form of Akoren, the scholar | Old, round, infinity-shaped spectacles, a coat of leaves                                | Akoren             |
-| **Ana**             | Friendly guide, easy to localize  | Changes outfit by country and season; a "?" pin                                         | Anya               |
+The hosts are young Rayans from the home world [Raya](raya.md): they wear
+tight, mainly white **lattice** suits with small accents in their colors, and
+each floats beside a white **Orbi** companion sphere that wears their
+partner Link's face.
+
+| Host                | Who they are                      | Look                                                                                                                                  | Partner Link       |
+| ------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| **Lina**            | Link-keeper, the main host        | White lattice suit; red and blue hair clips, green ring necklace (from the avatar), carries a LiNo notebook                           | Linky              |
+| **Doubl and Trip**  | Siblings: the pair and the third  | Doubl's white suit has a half-red, half-blue hooded over-layer; Trip, the younger one, has green accents                              | Soru & Tari, Verbi |
+| **Professor Acorn** | Human form of Akoren, the scholar | One of Raya's rare elders, who chose to switch off Renewal; round, infinity-shaped spectacles, a loose white robe with a leaf pattern | Akoren             |
+| **Ana**             | Friendly guide, easy to localize  | White suit with seasonal over-layers that change by country; a "?" pin                                                                | Anya               |
 
 ## Style sheets
 
@@ -195,11 +200,12 @@ from the [lore core](README.md#styles-r30). Production notes per style:
 The same characters, tuned per tier (tiers are a `game-core` setting, see
 [infrastructure](../infrastructure.md)):
 
-| Tier             | Ages | What changes                                                                                                    |
-| ---------------- | ---- | --------------------------------------------------------------------------------------------------------------- |
-| Toddlers         | 2–5  | Creatures only, no text (icons and voice), no timers, no fail states, parental gate on everything outside play. |
-| Children         | 6–12 | Hosts appear; short text with voice-over; gentle challenges; lesson cards.                                      |
-| Teens and adults | 13+  | Full puzzles, theory Easter eggs, LiNo snippets, optional leaderboards, adult jokes in the second layer.        |
+| Tier             | Ages | What changes                                                                                                                                                                                                            |
+| ---------------- | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| First steps      | 1–2  | Co-play only: a parent holds the device; one big target, tap only, songs and naming, sessions end by themselves ([research](../../case-studies/issue-1/data/research-raya-shacados.md#7-toddlers-and-screens-r68-r69)). |
+| Toddlers         | 2–5  | Creatures only, no text (icons and voice), no timers, no fail states, parental gate on everything outside play.                                                                                                         |
+| Children         | 6–12 | Hosts appear; short text with voice-over; gentle challenges; lesson cards.                                                                                                                                              |
+| Teens and adults | 13+  | Full puzzles, theory Easter eggs, LiNo snippets, optional leaderboards, adult jokes in the second layer.                                                                                                                |
 
 ## Adding a new character
 

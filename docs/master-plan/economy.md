@@ -63,7 +63,7 @@ Some genres and lessons are about money itself. We keep money only where it
 | Financial literacy for children (counting coins, saving) | Money is the topic; prices are real, there is no premium currency.                            |
 | Shop and restaurant simulators                           | Reframe as a community kitchen or a repair café that serves needs; ingredients are resources. |
 | Trading and tycoon genres                                | Reframe as logistics: move resources to where they are needed; score is needs met per energy. |
-| Strategy with two economies (First Contact)              | Reya run a resource-based economy, Shacados a scarcity economy; the contrast is the lesson.   |
+| Strategy with two economies (First Contact)              | Raya run a resource-based economy, Shacados a scarcity economy; the contrast is the lesson.   |
 
 ## The economy as an educational ladder
 

@@ -44,12 +44,17 @@ of them is a lore bug.
 | 2   | Everyone has an address; no one is ever lost.       | Every link has an index; Ω addresses everything.     | You can always be found; ask for help.       |
 | 3   | Two hands, one direction.                           | Doublet `(source, target)`; an edge is two doublets. | Kindness flows; you can make it mutual.      |
 | 4   | When two friends meet, a third one makes it happen. | Triplet `source–linker–target`.                      | Actions connect us.                          |
-| 5   | No friendship is made twice.                        | Uniqueness resolver: no duplicate links.             | Share instead of copying.                    |
+| 5   | No friendship is made twice.                        | Uniqueness resolver: no duplicate links.             | Share what exists; copy only to give.        |
 | 6   | Let go gently before you leave.                     | Reset to `(0, 0)` before delete; usages validator.   | Healthy goodbyes; check who needs you.       |
 | 7   | There is one magic spell: "this becomes that".      | Substitution is the one universal operation.         | You can always change things for the better. |
 | 8   | Zero is a resting place, not a scary void.          | `Null = 0` means "no link".                          | Rest is important; empty is OK.              |
 | 9   | "Any" opens doors that match everyone.              | `Any` is the wildcard of queries.                    | Everyone is welcome.                         |
 | 10  | The world describes itself.                         | Ω and the cycle of definitions point to themselves.  | (adults) You are part of the story.          |
+
+Rule 5 is about **links**, not things: the same relationship is never stored
+twice. On [Raya](raya.md), people copy an apple instead of picking it; the
+copy is a new thing with a new address, made so that nothing is taken. That
+is why the lesson is "copy only to give, never to take".
 
 ### Visual rules
 
@@ -105,22 +110,26 @@ checklist that every pull request passes.
 One-liners for loading screens, level ends and the "lesson of the day".
 Every new line must be true both in Links Theory and in life.
 
-| Line                                              | Character     | Theory link                  |
-| ------------------------------------------------- | ------------- | ---------------------------- |
-| "Everything is connected."                        | Linky         | `L ↦ L²`                     |
-| "A link is a beginning and an end holding hands." | Soru & Tari   | Doublet                      |
-| "Big trees grow from tiny acorns."                | Akoren        | `∞`, the associative root    |
-| "No one is lost; everyone has an address."        | Postie        | Index, Ω                     |
-| "Let go gently."                                  | Letgo         | Reset before delete          |
-| "Oops means you're learning."                     | Oopsy         | `Error`                      |
-| "Rest is important. Nothing is also something."   | Nully         | `Null`                       |
-| "Everyone is welcome."                            | Anya          | `Any`                        |
-| "Big things are made of small steps."             | Choo-Choo Seq | Sequences of pairs           |
-| "Share instead of copying."                       | Uni           | Uniqueness                   |
-| "Truth can depend on where you stand."            | Rela          | Relative meta logic          |
-| "Small words build big ideas."                    | Prime Sprites | Semantic primes              |
-| "Two can be one, and one can be two."             | Akoren        | Two-in-oneness (deep theory) |
-| "There is always one more way to link."           | Linky         | Unlimited alphabet of links  |
+| Line                                              | Character            | Theory link                     |
+| ------------------------------------------------- | -------------------- | ------------------------------- |
+| "Everything is connected."                        | Linky                | `L ↦ L²`                        |
+| "A link is a beginning and an end holding hands." | Soru & Tari          | Doublet                         |
+| "Big trees grow from tiny acorns."                | Akoren               | `∞`, the associative root       |
+| "No one is lost; everyone has an address."        | Postie               | Index, Ω                        |
+| "Let go gently."                                  | Letgo                | Reset before delete             |
+| "Oops means you're learning."                     | Oopsy                | `Error`                         |
+| "Rest is important. Nothing is also something."   | Nully                | `Null`                          |
+| "Everyone is welcome."                            | Anya                 | `Any`                           |
+| "Big things are made of small steps."             | Choo-Choo Seq        | Sequences of pairs              |
+| "We already have that one — let's share it."      | Uni                  | Uniqueness                      |
+| "Copy, don't take."                               | Orbi                 | Copy (Raya's first courtesy)    |
+| "Ask first."                                      | Orbi                 | Consent, the Gentle Defaults    |
+| "Thoughts are free."                              | Professor Acorn      | The Guard never writes thoughts |
+| "Plant for someone you will never meet."          | Sela (Shacados, 13+) | Seed keepers                    |
+| "Truth can depend on where you stand."            | Rela                 | Relative meta logic             |
+| "Small words build big ideas."                    | Prime Sprites        | Semantic primes                 |
+| "Two can be one, and one can be two."             | Akoren               | Two-in-oneness (deep theory)    |
+| "There is always one more way to link."           | Linky                | Unlimited alphabet of links     |
 
 The wisdom bank lives as LiNo in `links-games/lore`, so the games,
 translators and formal-ai all read the same data:
@@ -134,29 +143,36 @@ wisdom (tiny-acorns: (says Akoren) (text "Big trees grow from tiny acorns."))
 
 Each seed can become a game level pack, a short episode or a sticker set.
 
-| Seed                         | Story                                                                                                                   | Lesson                                    |
-| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| **The First Link** (origin)  | Akoren, alone and hugging itself, reaches out a red hand and a blue hand and becomes two; the two link and become many. | Everything begins somewhere.              |
-| **Linky's Lost Hand**        | Linky's blue hand holds nothing; the quest is to find a friend to hold.                                                 | It's OK to look for friends.              |
-| **Itsy's Mirror**            | Itsy learns that hugging yourself helps you hug others.                                                                 | Self-acceptance before connection.        |
-| **Go, Stop and Hop**         | Traffic-light siblings run a crossing and argue about when to go.                                                       | Self-regulation.                          |
-| **Oopsy's Very Big Oops**    | Oopsy makes a duplicate link; Uni explains gently.                                                                      | Mistakes are fine; sharing beats copying. |
-| **Choo-Choo Seq's Train**    | Building trains from pairs of pairs.                                                                                    | Patterns, counting, recursion.            |
-| **The LiNo Family Picnic**   | "papa has car", "mama has house" become links on screen.                                                                | Early reading as linking words.           |
-| **Letgo and the Moving Day** | A gentle story about moving house.                                                                                      | Change and goodbyes.                      |
-| **Prime Sprites**            | Collect the 65 meaning-sprites; I + WANT + GOOD makes a sentence.                                                       | Every language shares small words.        |
-| **Cadets of Depth Academy**  | Players graduate point → doublet → triplet → sequence → network; the last level shows Omi contains itself.              | (adults) The self-describing world.       |
+| Seed                         | Story                                                                                                                   | Lesson                                 |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| **The First Link** (origin)  | Akoren, alone and hugging itself, reaches out a red hand and a blue hand and becomes two; the two link and become many. | Everything begins somewhere.           |
+| **Linky's Lost Hand**        | Linky's blue hand holds nothing; the quest is to find a friend to hold.                                                 | It's OK to look for friends.           |
+| **Itsy's Mirror**            | Itsy learns that hugging yourself helps you hug others.                                                                 | Self-acceptance before connection.     |
+| **Go, Stop and Hop**         | Traffic-light siblings run a crossing and argue about when to go.                                                       | Self-regulation.                       |
+| **Oopsy's Very Big Oops**    | Oopsy makes a duplicate link; Uni explains gently.                                                                      | Mistakes are fine; one link is enough. |
+| **Choo-Choo Seq's Train**    | Building trains from pairs of pairs.                                                                                    | Patterns, counting, recursion.         |
+| **The LiNo Family Picnic**   | "papa has car", "mama has house" become links on screen.                                                                | Early reading as linking words.        |
+| **Letgo and the Moving Day** | A gentle story about moving house.                                                                                      | Change and goodbyes.                   |
+| **Prime Sprites**            | Collect the 65 meaning-sprites; I + WANT + GOOD makes a sentence.                                                       | Every language shares small words.     |
+| **Cadets of Depth Academy**  | Players graduate point → doublet → triplet → sequence → network; the last level shows Omi contains itself.              | (adults) The self-describing world.    |
 
 ## The second layer: First Contact (R42)
 
-Omi is the gentle layer for toddlers and children. Above it, for teens and
-adults, is the realistic layer of **[First Contact](first-contact.md)**: the
-peaceful, advanced civilization **Reya** meets the violent anti-utopia
-**Shacados**. It is the setting of our last, fully realistic multi-genre
+Omi is the gentle layer for toddlers and children. Around it is the home
+world **[Raya](raya.md)**: untouched nature, tall white Chord towers, people
+in white lattice suits with white Orbi companions, optional laws with
+peaceful defaults, and forever-young citizens. Toddlers and children see
+Raya's meadows and Omi. For teens and adults, there is the realistic layer
+of **[First Contact](first-contact.md)**: the peaceful, advanced civilization
+**Raya** meets the rusted, hungry and violent anti-utopia
+**[Shacados](shacados.md)**. It is the setting of our last, fully realistic multi-genre
 simulator, and its rules are real physics. The proposed bridge between the
-layers is that Omi is the learning world of Reyan children, so growing up
-through our games is growing up as a Reyan
+layers is that Omi is the learning world of Rayan children, so growing up
+through our games is growing up as a Rayan
 ([details](first-contact.md#how-it-connects-to-omi-and-the-links-proposal)).
+
+Longer reading: [stories with wisdom](stories.md) and
+[scenery pilots](scenery-pilots.md) with image descriptions for future art.
 
 ## How the universe connects all games (R15, D3)
 

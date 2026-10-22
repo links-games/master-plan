@@ -102,7 +102,7 @@ ones. Every game is still its own repository and its own package:
 | **Omi Workshop**              | Building and creating       | [Build](#build-and-create-bd)           |
 | **Links Music**               | Music and rhythm            | [Music](#music-and-rhythm-mr)           |
 | **Links Sports**              | Sports and motion           | [Sports](#sports-and-motion-sm)         |
-| **Reya Space Academy**        | Space and physics           | [Space](#space-and-physics-sp)          |
+| **Raya Space Academy**        | Space and physics           | [Space](#space-and-physics-sp)          |
 | **Omi Stories**               | Stories and adventures      | [Stories](#stories-and-adventures-sa)   |
 | **Two Planets**               | Strategy and simulation     | [Strategy](#strategy-and-simulation-ss) |
 
