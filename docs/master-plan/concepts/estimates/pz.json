@@ -1,0 +1,637 @@
+[
+  {
+    "id": "PZ-01",
+    "algorithms": ["card-memory", "grid-board", "shuffle-deal", "tap-feedback"],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 24,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 24,
+      "levels": 8,
+      "content": 48,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "First playable: one wooden memory table with 2x2 to 4x4 grids of leaf cards, 24 picture pairs with voiced names in two languages; matched pairs stay open. No timer, no move counter and no extra languages yet."
+  },
+  {
+    "id": "PZ-02",
+    "algorithms": ["slide-merge", "swipe-gesture", "grid-board"],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 14,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 0,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "First playable: one 4x4 bead tray with swipe and arrow-key sliding, doubling beads up to 2048, undo and a powers-of-two strip showing each doubling. No scores, leaderboards or alternative board sizes."
+  },
+  {
+    "id": "PZ-03",
+    "algorithms": ["polygon-fit", "drag-drop-snap", "tap-feedback"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 10,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 20,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "First playable: seven wooden tangram pieces with drag to move and tap to rotate, 20 animal outlines from three-piece starters to full seven-piece shapes, with an area-stays-the-same overlay. No free-create mode or outline editor."
+  },
+  {
+    "id": "PZ-04",
+    "algorithms": ["jigsaw-cut", "drag-drop-snap"],
+    "extraLoc": 200,
+    "assets": {
+      "sprites": 4,
+      "animations": 2,
+      "backgrounds": 8,
+      "ui": 3,
+      "sfx": 6,
+      "music": 1,
+      "voice": 8,
+      "levels": 0,
+      "content": 12,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "First playable: eight public-domain maps and pictures of Omi cut into 4, 9 or 16 big tabbed pieces with edge snapping and a voiced caption on completion. No piece rotation, photo import or 100-piece mode."
+  },
+  {
+    "id": "PZ-05",
+    "algorithms": ["spot-difference", "tap-feedback"],
+    "extraLoc": 200,
+    "assets": {
+      "sprites": 6,
+      "animations": 2,
+      "backgrounds": 16,
+      "ui": 2,
+      "sfx": 6,
+      "music": 1,
+      "voice": 10,
+      "levels": 8,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "First playable: eight side-by-side botanical picture pairs with one to five changes each, forgiving tap circles, glow hints and a short voiced plant fact after each pair. No timer, zoom mode or photo import."
+  },
+  {
+    "id": "PZ-06",
+    "algorithms": ["hidden-object", "tap-feedback"],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 32,
+      "animations": 3,
+      "backgrounds": 4,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 32,
+      "levels": 4,
+      "content": 32,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "First playable: four busy study-room scenes hiding 32 link-shaped objects, a picture list with voiced names and slow hint glows. Word-list mode, extra rooms and seasonal scenes come later."
+  },
+  {
+    "id": "PZ-07",
+    "algorithms": ["sliding-tiles", "grid-board", "tap-feedback"],
+    "extraLoc": 200,
+    "assets": {
+      "sprites": 6,
+      "animations": 2,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 6,
+      "music": 1,
+      "voice": 6,
+      "levels": 6,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: picture boards from 2x3 up to the 4x4 numbered fifteen-puzzle with tap-to-slide, undo and an explainer that shows why swapping two tiles makes a board unsolvable. No timed or ranked modes."
+  },
+  {
+    "id": "PZ-08",
+    "algorithms": ["tap-feedback", "puzzle-solver-hints", "tween-cause-effect"],
+    "extraLoc": 350,
+    "assets": {
+      "sprites": 10,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 4,
+      "levels": 30,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "First playable: tap-to-pour between patterned transparent cups across 30 authored levels checked by the solver, with undo and a next-pour hint. No colour-mixing levels, generator or move limits yet."
+  },
+  {
+    "id": "PZ-09",
+    "algorithms": [
+      "grid-board",
+      "drag-drop-snap",
+      "shuffle-deal",
+      "particle-effects"
+    ],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 20,
+      "animations": 4,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 4,
+      "levels": 10,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: an 8x8 garden grid where three flower polyominoes are dealt per round, rows and columns bloom when full, plus 10 goal gardens. No endless high-score mode, boosters or piece rotation."
+  },
+  {
+    "id": "PZ-10",
+    "algorithms": ["grid-board", "puzzle-solver-hints", "tap-feedback"],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 12,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 4,
+      "levels": 40,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "First playable: 40 authored square-grid levels from 4x4 to 8x8 where the player draws non-crossing paths between matching endpoints, some pairing concept pictures, with a solver hint. No generator, hex grids or bridges."
+  },
+  {
+    "id": "PZ-11",
+    "algorithms": ["grid-board", "sudoku-solver"],
+    "extraLoc": 500,
+    "assets": {
+      "sprites": 8,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 4,
+      "levels": 40,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "First playable: 40 nonograms from 5x5 to 10x10 that each reveal a link friend, verified unique by the line solver, with mark and cross tools and undo. No colour nonograms, editor or giant boards."
+  },
+  {
+    "id": "PZ-12",
+    "algorithms": ["grid-board", "tap-feedback", "puzzle-solver-hints"],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 8,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 4,
+      "levels": 25,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 25 Lights Out lamp boards from 3x3 to 5x5 with a visible neighbour-toggle preview, undo and a solver hint based on the parity system. No toroidal or three-state variants yet."
+  },
+  {
+    "id": "PZ-13",
+    "algorithms": [
+      "grid-board",
+      "graph-network",
+      "tap-feedback",
+      "level-generator"
+    ],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 16,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 4,
+      "levels": 20,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "First playable: tap-to-rotate pipe tiles on 3x3 to 7x7 garden grids, water flowing from the tank through closed connections to beds, 20 tutorial levels plus generated boards. No leaks, timer or wrap-around boards."
+  },
+  {
+    "id": "PZ-14",
+    "algorithms": ["graph-network", "level-generator"],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 8,
+      "animations": 2,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 6,
+      "music": 1,
+      "voice": 4,
+      "levels": 10,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: drag graph nodes until no edges cross, generated planar graphs from 4 to 20 nodes with crossing highlights and 10 tutorial graphs. No non-planar explanation chapter or editor."
+  },
+  {
+    "id": "PZ-15",
+    "algorithms": ["optics-rays", "grid-board", "tap-feedback"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 14,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 6,
+      "levels": 30,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 30 grid levels where tapping rotates mirrors and splitters to guide a beam into flower receivers, with angle markers showing incidence equals reflection. No lenses, colour filters or free placement."
+  },
+  {
+    "id": "PZ-16",
+    "algorithms": ["physics-2d", "tap-feedback", "particle-effects"],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 20,
+      "animations": 3,
+      "backgrounds": 3,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 4,
+      "levels": 30,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "First playable: 30 authored boards of wooden plates held by brass screws; tap a screw to move it to a free hole and watch plates fall, with undo. No limited screw boxes, timers or boosters."
+  },
+  {
+    "id": "PZ-17",
+    "algorithms": ["grid-board", "puzzle-solver-hints", "pathfinding"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 16,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 10,
+      "music": 2,
+      "voice": 6,
+      "levels": 50,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 50 small warehouse levels with one to four seed crates, swipe or tap-to-walk movement, unlimited undo and a solver hint that flags dead-end positions. No level editor or move-count medals."
+  },
+  {
+    "id": "PZ-18",
+    "algorithms": ["physics-2d", "swipe-gesture", "tween-cause-effect"],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 18,
+      "animations": 5,
+      "backgrounds": 4,
+      "ui": 4,
+      "sfx": 10,
+      "music": 2,
+      "voice": 6,
+      "levels": 30,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 30 miniature rooms rotated in 90-degree steps by swipe or buttons so seeds roll and fall into planters, with doors and blocks that obey gravity. No free-angle rotation or editor."
+  },
+  {
+    "id": "PZ-19",
+    "algorithms": [
+      "match-cascade",
+      "grid-board",
+      "swipe-gesture",
+      "particle-effects"
+    ],
+    "extraLoc": 500,
+    "assets": {
+      "sprites": 20,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 12,
+      "music": 2,
+      "voice": 6,
+      "levels": 30,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: a 6x6 garden bed with swap-to-match leaf and flower tiles, cascades and 30 levels with visible collection goals and plant-part cards. No lives, timers, boosters or purchases."
+  },
+  {
+    "id": "PZ-20",
+    "algorithms": [
+      "projectile-arc",
+      "grid-board",
+      "particle-effects",
+      "shuffle-deal"
+    ],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 20,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 12,
+      "music": 2,
+      "voice": 4,
+      "levels": 40,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: a hex canopy of patterned bubbles, aim with a dotted wall-bounce preview, groups of three pop and unsupported bubbles drop, across 40 levels. No descending ceiling timer or power-ups."
+  },
+  {
+    "id": "PZ-21",
+    "algorithms": ["sort-classify", "tap-feedback", "shuffle-deal"],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 40,
+      "animations": 4,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 20,
+      "levels": 20,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "First playable: 20 layered piles of field-study objects; tap an object to send it to a seven-slot tray, triples clear and each set names its category. No timer, extra tray slots or boosters."
+  },
+  {
+    "id": "PZ-22",
+    "algorithms": [
+      "grid-board",
+      "tap-feedback",
+      "particle-effects",
+      "puzzle-solver-hints"
+    ],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 12,
+      "animations": 4,
+      "backgrounds": 3,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 4,
+      "levels": 25,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "First playable: 25 basin levels where tapping connected same-pattern pebbles pops them and the rest settle, opening a channel for a seed boat, with a solver hint. No score chasing or random endless mode."
+  },
+  {
+    "id": "PZ-23",
+    "algorithms": ["physics-2d", "tap-feedback", "particle-effects"],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 14,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 12,
+      "music": 2,
+      "voice": 12,
+      "levels": 0,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "First playable: one glass planter where tapped seed pods drop and matching pods merge up an 11-step chain of botanical models with voiced names. No leaderboards, daily modes or shake power-ups."
+  },
+  {
+    "id": "PZ-24",
+    "algorithms": ["grid-board", "shuffle-deal", "tap-feedback"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 24,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 10,
+      "levels": 10,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: a hexagonal restoration map where three matching tokens merge from seed to sapling to grove across six tiers, with 10 goal maps and short succession notes. No storage slot, wandering creatures or endless mode."
+  },
+  {
+    "id": "PZ-25",
+    "algorithms": ["grid-board", "drag-drop-snap", "puzzle-solver-hints"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 14,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 4,
+      "levels": 40,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 40 solver-checked parking grids where cargo bicycles slide only along their axes until the delivery bike exits, with undo and a next-move hint. No generator, timers or move medals."
+  },
+  {
+    "id": "PZ-26",
+    "algorithms": [
+      "grid-board",
+      "pathfinding",
+      "tap-feedback",
+      "puzzle-solver-hints"
+    ],
+    "extraLoc": 500,
+    "assets": {
+      "sprites": 18,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 4,
+      "levels": 30,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 30 station levels where tapped colour-and-symbol shuttles leave the lot and waiting friends walk aboard by matching symbol, with limited bays and undo. No timers, boosters or random levels."
+  },
+  {
+    "id": "PZ-27",
+    "algorithms": [
+      "sort-classify",
+      "tap-feedback",
+      "tween-cause-effect",
+      "puzzle-solver-hints"
+    ],
+    "extraLoc": 500,
+    "assets": {
+      "sprites": 16,
+      "animations": 5,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 4,
+      "levels": 30,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 30 turn-based conveyor levels where tapping a patterned parcel routes it to one of three symbol bays, with a small buffer that must not overflow. No real-time belt speed or scores."
+  },
+  {
+    "id": "PZ-28",
+    "algorithms": ["graph-network", "tap-feedback"],
+    "extraLoc": 350,
+    "assets": {
+      "sprites": 10,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 4,
+      "levels": 30,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 30 garden graphs traced in one stroke, with junction degree counters that reveal why odd junctions must be the start and end, plus undo. No directed edges or generated graphs."
+  },
+  {
+    "id": "PZ-29",
+    "algorithms": ["rope-cloth", "drag-drop-snap", "puzzle-solver-hints"],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 12,
+      "animations": 4,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 4,
+      "levels": 30,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 30 peg boards with soft simulated ribbons; drag endpoints between pegs until no ribbons cross, with crossing highlights and a hint. No knots, timers or 3D ribbons."
+  },
+  {
+    "id": "PZ-30",
+    "algorithms": ["grid-board", "sudoku-solver"],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 8,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 4,
+      "levels": 40,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 40 grids from 3x3 to 7x7 where one drawn route must cover every square and pass numbered checkpoints in order, checked unique by the solver. No walls, timers or daily puzzles."
+  }
+]

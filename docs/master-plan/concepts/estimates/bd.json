@@ -1,0 +1,304 @@
+[
+  {
+    "id": "BD-01",
+    "algorithms": ["flood-fill", "tap-feedback"],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 6,
+      "animations": 3,
+      "backgrounds": 12,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 20,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 3,
+    "plan": "First playable: 12 botanical and art-history line drawings with tap-to-fill regions, a numbered palette for colour by number and a free-colour mode for toddlers, plus a gallery. No brushes, photo import or sharing."
+  },
+  {
+    "id": "BD-02",
+    "algorithms": ["grid-board", "tap-feedback"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 10,
+      "animations": 2,
+      "backgrounds": 2,
+      "ui": 5,
+      "sfx": 8,
+      "music": 1,
+      "voice": 6,
+      "levels": 15,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "First playable: a 16x16 pixel grid with palette, mirror symmetry tools, undo, save to gallery and 15 half-finished creatures to complete. No animation frames, layers or online sharing."
+  },
+  {
+    "id": "BD-03",
+    "algorithms": ["dress-up-layers", "drag-drop-snap"],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 60,
+      "animations": 4,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 20,
+      "levels": 0,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 3,
+    "plan": "First playable: a friendly mannequin with drag-on costume pieces, a recolour palette and 12 fabric patterns from world cultures with short notes, saved as photo cards. No pattern designer or fashion contests."
+  },
+  {
+    "id": "BD-04",
+    "algorithms": ["swipe-gesture", "tween-cause-effect", "polygon-fit"],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 10,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 6,
+      "music": 1,
+      "voice": 20,
+      "levels": 12,
+      "content": 12,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: a square sheet folded along highlighted creases with swipe gestures, layered polygon folding and 12 step-by-step models from a cup to a bird. No free folding, 3D view or crease-pattern editor."
+  },
+  {
+    "id": "BD-05",
+    "algorithms": ["grid-board", "drag-drop-snap", "tween-cause-effect"],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 20,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 6,
+      "sfx": 10,
+      "music": 1,
+      "voice": 20,
+      "levels": 30,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: snap movement, turn and repeat blocks into a program that a small robot runs step by step on 30 grid levels, adding functions late. No text code, sensors or level sharing."
+  },
+  {
+    "id": "BD-06",
+    "algorithms": ["draw-trace", "sticker-scene", "map-geo"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 40,
+      "animations": 4,
+      "backgrounds": 4,
+      "ui": 6,
+      "sfx": 8,
+      "music": 1,
+      "voice": 20,
+      "levels": 10,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "First playable: draw paths and place map symbols on a gridded sheet with a compass rose and a scale bar, plus 10 challenges to map a walking route with correct distances. No real-world map data or GPS."
+  },
+  {
+    "id": "BD-07",
+    "algorithms": [
+      "physics-2d",
+      "drag-drop-snap",
+      "grid-board",
+      "particle-effects"
+    ],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 30,
+      "animations": 4,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 14,
+      "music": 1,
+      "voice": 12,
+      "levels": 20,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "First playable: a tabletop board with drag-and-snap ramps, loops and funnels, run and edit modes, an energy meter and 20 goal puzzles plus free build. No 3D tracks or sharing."
+  },
+  {
+    "id": "BD-08",
+    "algorithms": ["draw-trace", "timeline"],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 20,
+      "animations": 4,
+      "backgrounds": 6,
+      "ui": 6,
+      "sfx": 8,
+      "music": 2,
+      "voice": 16,
+      "levels": 6,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: draw frames of a bouncing seed with onion skinning, reorder them on a timeline, choose playback speed and follow 6 guided lessons on timing. No sound tracks, export to video or layers."
+  },
+  {
+    "id": "BD-09",
+    "algorithms": [
+      "platformer-controller",
+      "grid-board",
+      "drag-drop-snap",
+      "pathfinding"
+    ],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 40,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 8,
+      "sfx": 12,
+      "music": 2,
+      "voice": 12,
+      "levels": 6,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "First playable: a tile-palette editor for small platformer levels with drag-placed platforms, a goal and a test-play button using the shared controller, saved locally with 6 samples. No sharing or other game types."
+  },
+  {
+    "id": "BD-10",
+    "algorithms": [
+      "grid-board",
+      "drag-drop-snap",
+      "stacking-stability",
+      "pathfinding"
+    ],
+    "extraLoc": 1800,
+    "assets": {
+      "sprites": 60,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 8,
+      "sfx": 14,
+      "music": 2,
+      "voice": 24,
+      "levels": 15,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "First playable: a 2D blueprint and side view where a tiny home is built from frame parts and materials, checked for load paths and a step-free route with ramps, across 15 client briefs. No 3D walkthrough or costs."
+  },
+  {
+    "id": "BD-11",
+    "algorithms": [
+      "voxel-build",
+      "character-3d",
+      "camera-3d",
+      "terrain-gen",
+      "logic-circuit",
+      "day-cycle"
+    ],
+    "extraLoc": 2500,
+    "assets": {
+      "sprites": 40,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 10,
+      "sfx": 24,
+      "music": 3,
+      "voice": 20,
+      "levels": 6,
+      "content": 40,
+      "models3d": 20
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "First playable: one small seeded 3D meadow where the player places and removes blocks, builds a greenhouse and wires simple switches and lamps, with 6 guided challenges. No survival, crafting tree or multiplayer."
+  },
+  {
+    "id": "BD-12",
+    "algorithms": ["drag-drop-snap", "grid-board", "pathfinding"],
+    "extraLoc": 500,
+    "assets": {
+      "sprites": 50,
+      "animations": 4,
+      "backgrounds": 6,
+      "ui": 4,
+      "sfx": 14,
+      "music": 1,
+      "voice": 12,
+      "levels": 6,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "First playable: six tiny rooms whose boxes open item by item; drag study objects to fitting spots while a path from door to desk must stay clear and wide enough. No story chapters or furniture shop."
+  },
+  {
+    "id": "BD-13",
+    "algorithms": ["grid-board", "drag-drop-snap", "puzzle-solver-hints"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 30,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 8,
+      "levels": 25,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: a gridded backpack and 30 field tools with tetromino-like shapes; drag and rotate them to fit, with glowing synergy links for complementary neighbours across 25 packing tasks. No combat or loot."
+  },
+  {
+    "id": "BD-14",
+    "algorithms": ["draw-trace", "tween-cause-effect", "particle-effects"],
+    "extraLoc": 1000,
+    "assets": {
+      "sprites": 16,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 10,
+      "music": 2,
+      "voice": 16,
+      "levels": 12,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "First playable: a spinning clay pot shaped by touch on its side profile, rendered as a pseudo-3D lathe, with 12 reference silhouettes and a volume and symmetry check. No kiln, glazing or 3D export."
+  }
+]

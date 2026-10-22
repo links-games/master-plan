@@ -1,0 +1,447 @@
+[
+  {
+    "id": "ML-01",
+    "algorithms": ["runner-loop", "arithmetic-gen", "tap-feedback"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 16,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 20,
+      "levels": 10,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "First playable: Linky hops between clouds and one tap picks one of two or three answer gates for addition and subtraction within 20, over 10 gentle stages; a wrong gate just loops back. Scores and speed-up are left out."
+  },
+  {
+    "id": "ML-02",
+    "algorithms": [
+      "counting",
+      "arithmetic-gen",
+      "tap-feedback",
+      "tween-cause-effect"
+    ],
+    "extraLoc": 350,
+    "assets": {
+      "sprites": 14,
+      "animations": 5,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 30,
+      "levels": 15,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 15 stages where the friend hops along a number line of stones by tapping jump sizes to reach a target, first 0 to 10 then crossing zero into negatives. Free-form equations come later."
+  },
+  {
+    "id": "ML-03",
+    "algorithms": ["grid-board", "tap-feedback", "arithmetic-gen", "counting"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 16,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 25,
+      "levels": 12,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "First playable: 12 garden beds where flowers are planted in rows and columns to make a requested area, showing the matching multiplication fact and skip counting. Division and timed tables are left out."
+  },
+  {
+    "id": "ML-04",
+    "algorithms": ["pattern-sequence", "drag-drop-snap", "tap-feedback"],
+    "extraLoc": 200,
+    "assets": {
+      "sprites": 18,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 10,
+      "music": 1,
+      "voice": 15,
+      "levels": 20,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "First playable: 20 toy-train patterns from AB to ABC and growing patterns where one of three big carriages is chosen or dragged into the gap, with a choo-choo reward. Number sequences come later."
+  },
+  {
+    "id": "ML-05",
+    "algorithms": [
+      "grid-board",
+      "sudoku-solver",
+      "level-generator",
+      "tap-feedback"
+    ],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 12,
+      "animations": 2,
+      "backgrounds": 2,
+      "ui": 5,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 10,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "First playable: picture 4x4 and number 6x6 Sudoku generated with unique solutions, 10 tutorial grids, notes, undo and a next-step hint. 9x9 and variant rules come later."
+  },
+  {
+    "id": "ML-06",
+    "algorithms": [
+      "grid-board",
+      "level-generator",
+      "puzzle-solver-hints",
+      "tap-feedback"
+    ],
+    "extraLoc": 350,
+    "assets": {
+      "sprites": 14,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 10,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "First playable: no-guess treasure fields from 5x5 to 9x9 where clue envelopes count adjacent treasure, with flagging, undo and a solver hint; mistakes reveal a friendly mole instead of losing. Probability mode comes later."
+  },
+  {
+    "id": "ML-07",
+    "algorithms": ["swipe-gesture", "drag-drop-snap", "tap-feedback"],
+    "extraLoc": 650,
+    "assets": {
+      "sprites": 24,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 12,
+      "music": 1,
+      "voice": 30,
+      "levels": 20,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 20 kitchen orders where a pie or vegetable is cut into equal shares with guided slices and the shares are served to plates, from halves to eighths. Fraction addition and number notation come later."
+  },
+  {
+    "id": "ML-08",
+    "algorithms": [
+      "drag-drop-snap",
+      "tween-cause-effect",
+      "puzzle-solver-hints"
+    ],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 24,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 30,
+      "levels": 30,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 30 balance puzzles where tokens are added or removed from both pans of a scale until one mystery box stands alone, slowly turning into letters and numbers. Fractions and parentheses are deferred."
+  },
+  {
+    "id": "ML-09",
+    "algorithms": [
+      "grid-board",
+      "sudoku-solver",
+      "level-generator",
+      "tap-feedback"
+    ],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 10,
+      "animations": 2,
+      "backgrounds": 2,
+      "ui": 5,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 12,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "First playable: generated small Kakuro grids from 3x3 to 6x6 with sum clues, a factor-pair helper panel and 12 tutorial grids. Large grids and multiplication cages are left out."
+  },
+  {
+    "id": "ML-10",
+    "algorithms": ["drag-drop-snap", "tap-feedback", "tween-cause-effect"],
+    "extraLoc": 350,
+    "assets": {
+      "sprites": 12,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 15,
+      "levels": 6,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: three pegs with 2 to 7 acorn disks, a gentle refusal for illegal moves, a move counter compared with the minimum and an optional recursion replay. Four-peg variants are left out."
+  },
+  {
+    "id": "ML-11",
+    "algorithms": ["tap-feedback", "counting", "tween-cause-effect"],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 12,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 15,
+      "levels": 20,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "First playable: 20 bead strings of 3 to 8 switches toggled to reach a target number, with a running place-value total under each bead. Binary addition and hexadecimal are left for later."
+  },
+  {
+    "id": "ML-12",
+    "algorithms": ["sort-classify", "shuffle-deal", "tap-feedback"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 12,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 10,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "First playable: cards drawn from shape, colour, count and pattern; early rounds pick one of three cards sharing an attribute, later rounds find full sets in a deal of nine. Competitive speed play is left out."
+  },
+  {
+    "id": "ML-13",
+    "algorithms": ["grid-board", "puzzle-solver-hints", "tap-feedback"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 30,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 5,
+      "sfx": 8,
+      "music": 1,
+      "voice": 40,
+      "levels": 20,
+      "content": 80,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "First playable: 20 authored 3x3 and 4x4 logic grids with illustrated friends and voiced picture clues, cross and tick marks and a contradiction-explaining hint. Generated puzzles come later."
+  },
+  {
+    "id": "ML-14",
+    "algorithms": ["tap-feedback", "tween-cause-effect"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 14,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 5,
+      "sfx": 8,
+      "music": 1,
+      "voice": 25,
+      "levels": 12,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: 12 experiments with an editable spinner and two dice where the child predicts, spins 1 to 100 times and watches a bar chart approach the expected shape. Betting and conditional probability are left out."
+  },
+  {
+    "id": "ML-15",
+    "algorithms": ["drag-drop-snap", "tap-feedback", "puzzle-solver-hints"],
+    "extraLoc": 1400,
+    "assets": {
+      "sprites": 12,
+      "animations": 4,
+      "backgrounds": 3,
+      "ui": 6,
+      "sfx": 8,
+      "music": 1,
+      "voice": 30,
+      "levels": 20,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 9,
+    "plan": "First playable: a compass and straightedge geometry kernel with snapping intersections and 20 goal-checked constructions, from perpendicular bisectors to a hexagon. Proof writing and free play are left out."
+  },
+  {
+    "id": "ML-16",
+    "algorithms": [
+      "graph-network",
+      "pathfinding",
+      "level-generator",
+      "tap-feedback"
+    ],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 18,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 10,
+      "music": 1,
+      "voice": 30,
+      "levels": 20,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "First playable: 20 delivery maps where routes are drawn between flower junctions on weighted paths, compared with the shortest route and replayed step by step as Dijkstra search. Travelling-salesman rounds come later."
+  },
+  {
+    "id": "ML-17",
+    "algorithms": [
+      "lino-parser",
+      "puzzle-solver-hints",
+      "drag-drop-snap",
+      "graph-network"
+    ],
+    "extraLoc": 1600,
+    "assets": {
+      "sprites": 14,
+      "animations": 4,
+      "backgrounds": 3,
+      "ui": 7,
+      "sfx": 8,
+      "music": 1,
+      "voice": 30,
+      "levels": 30,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "First playable: 30 proof puzzles where a Links Notation expression is rewritten by dragging one of a few visible inference rules onto it until the goal appears, with a proof tree and hints. Free proving is left out."
+  },
+  {
+    "id": "ML-18",
+    "algorithms": [
+      "grid-board",
+      "graph-network",
+      "level-generator",
+      "puzzle-solver-hints",
+      "tap-feedback"
+    ],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 10,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 10,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "First playable: generated Hashi boards from 5x5 to 9x9 where taps place one or two bridges, with connectivity checking, 10 tutorial boards and a next-bridge hint. Daily boards are left out."
+  },
+  {
+    "id": "ML-19",
+    "algorithms": [
+      "grid-board",
+      "sudoku-solver",
+      "level-generator",
+      "tap-feedback"
+    ],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 10,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 10,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "First playable: generated Futoshiki gardens from 4x4 to 6x6 with clear greater-than gates, notes, undo and 10 tutorial boards. Larger boards and killer variants are left out."
+  },
+  {
+    "id": "ML-20",
+    "algorithms": ["drag-drop-snap", "arithmetic-gen", "tap-feedback"],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 10,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 0,
+      "content": 100,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "First playable: 100 solvable hands of four number cards dragged with operation tiles into an expression tree that evaluates live, with a solver hint for stuck hands. Fractions and target numbers other than 24 come later."
+  }
+]

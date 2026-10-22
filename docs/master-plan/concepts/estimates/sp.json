@@ -1,0 +1,378 @@
+[
+  {
+    "id": "SP-01",
+    "algorithms": ["tap-feedback", "graph-network", "particle-effects"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 15,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 24,
+      "levels": 12,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "First playable: 12 constellations on a dark sky chart where the next star glows and a tap draws the line, ending with the voiced figure and one real star fact. Free-form drawing and a full sky map are left out."
+  },
+  {
+    "id": "SP-02",
+    "algorithms": ["card-memory", "grid-board", "shuffle-deal", "tap-feedback"],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 24,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 30,
+      "levels": 8,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "First playable: 8 desk layouts from 2x2 to 4x4 pairing each planet with its moon card, voiced names and a short fact on each match, no timer. Scoring, dwarf planets and exoplanets are deferred."
+  },
+  {
+    "id": "SP-03",
+    "algorithms": [
+      "orbital-mechanics",
+      "projectile-arc",
+      "swipe-gesture",
+      "particle-effects"
+    ],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 20,
+      "animations": 6,
+      "backgrounds": 4,
+      "ui": 5,
+      "sfx": 15,
+      "music": 2,
+      "voice": 20,
+      "levels": 24,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "First playable: 24 puzzles where one swipe gives a comet an impulse at a chosen moment and the projected orbit redraws, showing that early small pushes beat late big ones. Multi-body chaos and a level editor are left out."
+  },
+  {
+    "id": "SP-04",
+    "algorithms": ["physics-2d", "vehicle-sim", "particle-effects"],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 18,
+      "animations": 6,
+      "backgrounds": 4,
+      "ui": 5,
+      "sfx": 14,
+      "music": 2,
+      "voice": 15,
+      "levels": 15,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "First playable: 15 landing sites on the Moon with a throttle and tilt control, a visible fuel gauge and an assist mode that slows gravity. Other bodies, docking and terrain generation are left out."
+  },
+  {
+    "id": "SP-05",
+    "algorithms": ["orbital-mechanics", "projectile-arc", "particle-effects"],
+    "extraLoc": 1100,
+    "assets": {
+      "sprites": 22,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 6,
+      "sfx": 12,
+      "music": 2,
+      "voice": 25,
+      "levels": 20,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: a sandbox where dragging sets a planet starting velocity and traced ellipses reveal Kepler laws, plus 20 garden challenges such as making a round orbit. Moons of moons and save sharing are deferred."
+  },
+  {
+    "id": "SP-06",
+    "algorithms": [
+      "idle-progression",
+      "orbital-mechanics",
+      "timeline",
+      "quest-state"
+    ],
+    "extraLoc": 1400,
+    "assets": {
+      "sprites": 30,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 10,
+      "sfx": 15,
+      "music": 2,
+      "voice": 30,
+      "levels": 15,
+      "content": 80,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 9,
+    "plan": "First playable: one calm station display where delayed telescope readings arrive on a timeline and the player predicts where tracked objects will be, over 15 shifts. Multiple stations and real survey data are deferred."
+  },
+  {
+    "id": "SP-07",
+    "algorithms": [
+      "drag-drop-snap",
+      "inventory-crafting",
+      "orbital-mechanics",
+      "particle-effects"
+    ],
+    "extraLoc": 1500,
+    "assets": {
+      "sprites": 40,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 10,
+      "sfx": 15,
+      "music": 2,
+      "voice": 30,
+      "levels": 20,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "First playable: a workbench with about 20 modules where the player assembles a probe within a mass budget, sees the rocket equation result and flies it on 20 short missions. Custom parts and 3D views are left out."
+  },
+  {
+    "id": "SP-08",
+    "algorithms": ["board-rules", "game-ai-minimax", "grid-board"],
+    "extraLoc": 1300,
+    "assets": {
+      "sprites": 24,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 8,
+      "sfx": 12,
+      "music": 2,
+      "voice": 25,
+      "levels": 15,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "First playable: one space board where each move travels as a visible light signal so both sides act on old information, with a kind AI and 15 scenario puzzles. Online play and large maps are deferred."
+  },
+  {
+    "id": "SP-09",
+    "algorithms": ["map-geo", "multi-touch", "hidden-object", "quest-state"],
+    "extraLoc": 1200,
+    "assets": {
+      "sprites": 50,
+      "animations": 6,
+      "backgrounds": 6,
+      "ui": 8,
+      "sfx": 12,
+      "music": 2,
+      "voice": 40,
+      "levels": 20,
+      "content": 300,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "First playable: a pannable and zoomable star field built from a real catalog with 20 guided tours that ask the child to find objects and show their distance in light-years. Deep-sky photography and AR are left out."
+  },
+  {
+    "id": "SP-10",
+    "algorithms": ["orbital-mechanics", "multi-touch", "particle-effects"],
+    "extraLoc": 1500,
+    "assets": {
+      "sprites": 25,
+      "animations": 6,
+      "backgrounds": 5,
+      "ui": 8,
+      "sfx": 12,
+      "music": 2,
+      "voice": 25,
+      "levels": 20,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 9,
+    "plan": "First playable: 20 navigation challenges where the player rotates a solar sail so sunlight slowly bends the probe path toward a target orbit. Planetary flybys and mission planning tools are deferred."
+  },
+  {
+    "id": "SP-11",
+    "algorithms": [
+      "orbital-mechanics",
+      "graph-network",
+      "map-geo",
+      "pathfinding"
+    ],
+    "extraLoc": 2200,
+    "assets": {
+      "sprites": 30,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 10,
+      "sfx": 14,
+      "music": 2,
+      "voice": 30,
+      "levels": 24,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 9,
+    "plan": "First playable: a globe view where the player places satellites on a few orbit types, links them to cover isolated ground stations and watches message delay, across 24 coverage puzzles. Launch costs and 3D globes are deferred."
+  },
+  {
+    "id": "SP-12",
+    "algorithms": [
+      "orbital-mechanics",
+      "camera-3d",
+      "drag-drop-snap",
+      "inventory-crafting",
+      "particle-effects"
+    ],
+    "extraLoc": 3000,
+    "assets": {
+      "sprites": 20,
+      "animations": 6,
+      "backgrounds": 4,
+      "ui": 14,
+      "sfx": 20,
+      "music": 3,
+      "voice": 40,
+      "levels": 20,
+      "content": 80,
+      "models3d": 30
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "First playable: a 3D rocket assembly bay with about 25 parts and a staging panel showing delta-v, then a flight to orbit around one planet over 20 missions. Other planets, docking and crew are left out."
+  },
+  {
+    "id": "SP-13",
+    "algorithms": ["weather-sim", "terrain-gen", "camera-3d", "day-cycle"],
+    "extraLoc": 4500,
+    "assets": {
+      "sprites": 30,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 16,
+      "sfx": 18,
+      "music": 3,
+      "voice": 40,
+      "levels": 15,
+      "content": 120,
+      "models3d": 25
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "First playable: one 3D fictional planet whose atmosphere, star distance and sunlight sliders change temperature, oceans and ice, with 15 habitability goals. Evolving life, civilizations and multiple stars are deferred."
+  },
+  {
+    "id": "SP-14",
+    "algorithms": [
+      "relativity",
+      "vehicle-sim",
+      "camera-3d",
+      "particle-effects"
+    ],
+    "extraLoc": 5000,
+    "assets": {
+      "sprites": 20,
+      "animations": 6,
+      "backgrounds": 6,
+      "ui": 14,
+      "sfx": 20,
+      "music": 3,
+      "voice": 50,
+      "levels": 30,
+      "content": 80,
+      "models3d": 35
+    },
+    "toddler": 1,
+    "minAge": 12,
+    "plan": "First playable: a 3D cockpit flight between a home station and nearby beacons where speed sliders show time dilation, Doppler color and aberration, with clocks compared on return over 30 legs. Free-form galaxy travel is left out."
+  },
+  {
+    "id": "SP-15",
+    "algorithms": ["physics-2d", "vehicle-sim", "particle-effects"],
+    "extraLoc": 1400,
+    "assets": {
+      "sprites": 22,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 8,
+      "sfx": 14,
+      "music": 2,
+      "voice": 25,
+      "levels": 18,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "First playable: 18 docking runs where tiny reaction-control puffs align a capsule with a rotating ring, with a relative-velocity readout and a calm practice mode. 3D views and fuel economy campaigns are deferred."
+  },
+  {
+    "id": "SP-16",
+    "algorithms": ["agent-steering", "physics-2d", "particle-effects"],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 30,
+      "animations": 10,
+      "backgrounds": 4,
+      "ui": 6,
+      "sfx": 18,
+      "music": 2,
+      "voice": 15,
+      "levels": 12,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "First playable: 12 short rescue sweeps where a drone uses tractor-field arcs to push drifting debris aside and reach stranded probes, choosing which to save first. Upgrades trees and endless mode are left out."
+  },
+  {
+    "id": "SP-17",
+    "algorithms": [
+      "vehicle-sim",
+      "terrain-gen",
+      "quest-state",
+      "sort-classify"
+    ],
+    "extraLoc": 1300,
+    "assets": {
+      "sprites": 35,
+      "animations": 8,
+      "backgrounds": 6,
+      "ui": 8,
+      "sfx": 14,
+      "music": 2,
+      "voice": 30,
+      "levels": 12,
+      "content": 80,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "First playable: a side-view rover driving over generated terrain to 12 outcrops, sampling rocks and comparing instrument readings with an uncertainty bar to sort rock types. Full 3D Mars maps are deferred."
+  }
+]
