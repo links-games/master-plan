@@ -1,6 +1,7 @@
 node_modules
 coverage
 dist
+_site
 *.min.js
 package-lock.json
 .eslintcache

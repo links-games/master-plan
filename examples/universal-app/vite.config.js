@@ -6,6 +6,11 @@ function resolveBasePath() {
     return './';
   }
 
+  // Set when the app is published below the Pages root, e.g. /repo/example-app/.
+  if (process.env.PAGES_BASE_PATH) {
+    return process.env.PAGES_BASE_PATH;
+  }
+
   const repository = process.env.GITHUB_REPOSITORY?.split('/').at(-1);
   return repository ? `/${repository}/` : './';
 }

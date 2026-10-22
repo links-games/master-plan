@@ -28,3 +28,7 @@ https://web\.archive\.org
 # Absolute links to the master plan on main, used by templates that are copied
 # into other repositories; they resolve once the plan is merged to main
 https://github\.com/links-games/master-plan/blob/main/docs/master-plan
+
+# The master-plan website; it is served after GitHub Pages is enabled and the
+# Pages workflow has deployed main
+https://links-games\.github\.io/master-plan
