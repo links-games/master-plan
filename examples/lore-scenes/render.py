@@ -105,13 +105,17 @@ def pole(name, start, end, radius, mat, vertices=8):
 
 def height(x, y, seed):
     value=noise.noise_vector(Vector((x*.045, y*.045, seed*.01)))[0]*2.4 + math.sin(y*.09)*.65
-    if seed in [2721,2723,2726,2727] and abs(x-2)<5:
-        value=min(value,-1.2+max(0,abs(x-2)-2.5)*.5)
+    if seed in [2721,2723,2726,2727]:
+        distance=abs(x-2-math.sin(y*.04)*.6)
+        if distance<6:
+            bed=min(.55,-1.4+max(0,distance-1.8)*1.2)+value*.08
+            blend=max(0,min(1,(distance-4)/2))
+            value=bed*(1-blend)+value*blend
     return value
 
 
-def terrain(seed, mat):
-    n = 80
+def terrain(seed, mat, fine=False):
+    n = 240 if fine else 80
     verts = []
     for j in range(n+1):
         for i in range(n+1):
@@ -119,9 +123,13 @@ def terrain(seed, mat):
             verts.append((x, y, height(x,y,seed)))
     faces = [(j*(n+1)+i, j*(n+1)+i+1, (j+1)*(n+1)+i+1, (j+1)*(n+1)+i)
              for j in range(n) for i in range(n)]
-    obj = mesh('Continuous natural ground', verts, faces, mat)
+    obj = mesh('Fine continuous natural ground' if fine else 'Natural ground proxy', verts, faces, mat)
+    obj['render_only']=fine
+    obj.hide_render=not fine
     for p in obj.data.polygons:
         p.use_smooth = True
+    if not fine:
+        terrain(seed,mat,True)
 
 
 def tower(x, y, z, h, white):
@@ -414,7 +422,13 @@ def setup(spec,width,samples):
             tower(-12,47,height(-12,47,seed),20,mats['white'])
             if kind in ['river','pebbles','delta','glacier']:
                 water=material('Water',(.035,.20,.20),.12,.22,.025)
-                surface=cube('Quiet river',(2,15,-.12),(7,74,.12),water)
+                vertices=[]
+                for row in range(81):
+                    y=-65+row*2.5
+                    center=2+math.sin(y*.04)*.6
+                    vertices.extend([(center-4,y,-.15),(center+4,y,-.15)])
+                mesh('River surface meeting its carved banks',vertices,
+                     [(row*2,row*2+1,row*2+3,row*2+2) for row in range(80)],water)
                 for i in range(25):
                     x=(-1 if i%2 else 1)*rng.uniform(4,6)
                     y=rng.uniform(-10,45)
@@ -479,8 +493,8 @@ def setup(spec,width,samples):
     sun.data.energy=0 if indoor else (.35 if spec['night'] else .35 if sh else .9)
     sun.data.angle=.30 if sh else .10
     sun.data.color=(.85,.73,.51) if sh or spec['night'] else (1,.88,.71)
-    bpy.ops.object.light_add(type='AREA',location=(-3,-1,4.8 if indoor else 8))
-    bpy.context.object.data.energy=(120 if indoor else 180) if sh else (300 if indoor else 500)
+    bpy.ops.object.light_add(type='AREA',location=(-3,-1,4.8 if indoor else 14 if kind=='nest' else 8))
+    bpy.context.object.data.energy=(120 if indoor else 180) if sh else (300 if indoor else 1000 if spec['night'] else 500)
     bpy.context.object.data.shape='DISK'
     bpy.context.object.data.size=8
     bpy.context.object.data.color=(1,.78,.52) if sh else (.75,.87,1)
@@ -504,7 +518,7 @@ def setup(spec,width,samples):
     scene.camera=bpy.context.object
     scene.view_settings.view_transform='AgX' if bpy.app.version[0]>=4 else 'Filmic'
     scene.view_settings.look='None'
-    scene.view_settings.exposure=.7 if sh else 0
+    scene.view_settings.exposure=.7 if sh else .5 if spec['night'] else 0
     scene.view_settings.gamma=1
     return camera,target
 

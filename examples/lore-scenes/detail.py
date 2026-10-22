@@ -311,9 +311,11 @@ def landmarks(spec, mats, helpers):
         ice.node_tree.nodes.get('Principled BSDF').inputs['Base Color'].default_value=ice.diffuse_color
         for i in range(15):
             x=-22+i*3
-            wall=cube('Granite climbing face',(x,26,9+math.sin(i)*2),(3.5,7,22),mats['rock'],.3)
+            wall=ball('Fractured granite climbing face',(x,26,9+math.sin(i)*2),(3.2,6,12),mats['rock'],2)
+            weathered_stone(wall,seed+i)
             wall.rotation_euler.y=rng.uniform(-.12,.12)
-            ball('Blue glacier serac',(x,17,1),(2.5,5,rng.uniform(2,5)),ice,2)
+            serac=ball('Blue glacier serac',(x,17,1),(2.5,5,rng.uniform(2,5)),ice,2)
+            weathered_stone(serac,seed+i+30)
     if kind in ['nest','festival']:
         z=8 if kind=='nest' else 0
         for i in range(20):
