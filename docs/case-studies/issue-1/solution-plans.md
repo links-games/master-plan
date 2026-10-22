@@ -49,13 +49,14 @@ here are in the [research data](README.md#data) (snapshot 2026-10-15).
 | R29     | Profitable, attract capital                                                  | Unit economics, break-even, capital instruments                                                | Planned                    |
 | R30     | Own anime characters in many styles                                          | Chibi 2D, normal anime 2D, 3D, anime hosts                                                     | Done (bible)               |
 | R31–R35 | Case study, requirements, plans, one PR                                      | This folder and PR #2                                                                          | Done                       |
-| R36–R37 | Game ideas list, collections in one app                                      | 216 ideas in 12 collections; one repo per game, collection apps are configuration              | Done (list), apps planned  |
+| R36–R37 | Game ideas list, collections in one app                                      | 300 ideas in 16 collections; one repo per game, collection apps are configuration              | Done (list), apps planned  |
 | R38     | Resource-based economy                                                       | Real resources and needs, conservation, sharing; money only where it is the lesson             | Done (rules)               |
 | R39–R41 | All genres, learning inside, simplest first, non-violence                    | Proven genre per idea, complexity ladder Cx 1–7, non-violent reframing table                   | Done (list)                |
 | R42     | First Contact lore: Reya and Shacados                                        | Lore page, pilot source and translation, physics check script and test                         | Done (draft), review       |
 | R43–R48 | Accurate, efficient physics; vector 2D → 3D; LOD; realism; universal formula | Rapier/Box2D/XPBD/MPM on WebGPU; action principle; RML law selection as research               | Planned (simulation track) |
 | R49     | Advance education and science                                                | Real or transferable knowledge in every game; validated open simulators; citizen science       | Planned                    |
 | R50–R54 | Expanded ideas and a visual page per game                                    | 216 scoped pages, four independent high-resolution concepts each, prompts and provenance       | Visual catalog             |
+| R55–R76 | Raya vision, Shacados, toddler games, estimates, website                     | Raya and Shacados lore, 84 new ideas, estimated plan per game, mobile-first Pages site         | Done (art pending)         |
 | D1–D7   | Derived requirements                                                         | Kids privacy, legal checklist, shared identity, moat, AI cost, safe analytics, learning design | Done (plans)               |
 
 ## Products and platforms
@@ -689,3 +690,122 @@ Requirements R36–R49 come from the maintainer's
 - **Plan:** [visual selection catalog](../../master-plan/concepts/README.md).
   Art explores appeal; player testing and domain review establish usability and
   educational correctness.
+
+## Raya, Shacados, toddlers and the website (R55–R76)
+
+### R55–R60 — Raya: landscape, clothing, Orbis, loading screens, telekinesis, ethics
+
+- **Existing components checked:** the World of Omi rules and the First
+  Contact pilot (where Raya was spelled "Reya"); published acoustic levitation,
+  diamagnetic levitation, brain-interface and partial-reprogramming research.
+- **Solution:** a dedicated lore page, [Raya](../../master-plan/lore/raya.md).
+  Untouched nature with tall white
+  [Chord towers](../../master-plan/lore/raya.md#the-chord-towers) (R55); the
+  [white lattice](../../master-plan/lore/raya.md#clothing--the-white-lattice)
+  flight suit (R56);
+  [Orbis](../../master-plan/lore/raya.md#orbis--the-companion-spheres) and the
+  [Chord](../../master-plan/lore/raya.md#the-chord--the-telepathy-internet),
+  with walking, play and acoustic flight near towers (R57);
+  [loading screens and backgrounds](../../master-plan/lore/raya.md#loading-screens-and-backgrounds)
+  plus 32 loading-screen prompts in
+  [`loading-screens.json`](../../master-plan/concepts/jobs/loading-screens.json)
+  (R58); copying an apple in one night without picking it (R59); and the
+  [Gentle Defaults](../../master-plan/lore/raya.md#the-gentle-defaults) of a
+  society that takes nothing from nature that it can copy instead (R60).
+- **Realism:** every step beyond today's science is a numbered lore exception
+  (E1 Chord flight, E2 Orbi field, E3 Copy, E4 the Chord and the Guard,
+  E5 Renewal) with its real-world anchor in the
+  [Raya and Shacados research note](data/research-raya-shacados.md).
+
+### R61–R63 — Optional laws, the Guard, Renewal
+
+- **Solution:** [Waivers](../../master-plan/lore/raya.md#waivers--laws-are-optional)
+  let two consenting citizens lift a default between themselves, applied at
+  once through the Chord (R61). [The Guard](../../master-plan/lore/raya.md#the-guard--thoughts-are-free)
+  pauses a harmful motor command before the muscle moves, never reads or
+  writes thoughts, and can be switched off by each citizen for themselves
+  (R62). [Renewal](../../master-plan/lore/raya.md#renewal--forever-young)
+  keeps adults at an apparent 18–21; elders are rare and are the people who
+  switched it off (R63).
+- **Alternatives:** a law-free society without defaults (rejected: the
+  maintainer asked for peaceful defaults) and a Guard that also filters
+  thoughts (rejected: "each citizen can think anything").
+
+### R64, R70 — No contradictions, maximum detail
+
+- **Solution:** a [consistency check](../../master-plan/lore/raya.md#lore-consistency-check-r64)
+  lists every earlier lore statement that conflicts with the vision and how
+  it now reads (for example, the pilot's "Reya" is renamed Raya, Professor
+  Acorn is one of the rare elders who chose to age, and the hosts wear white
+  lattice suits). The First Contact page, the Omi lore, the wisdom bank,
+  all 300 idea pages and the stories were reviewed against R55–R63. Each new
+  idea has a story, a wisdom line and three image descriptions, and each new
+  lore page ends with open questions instead of silent gaps.
+
+### R65 — Scenery pilots
+
+- **Solution:** [22 scenery pilots](../../master-plan/lore/scenery-pilots.md)
+  (Raya, Shacados and First Contact). Each one has a setting, characters, the
+  beat, the wisdom, an image description and the lore rules it shows, so it
+  can be pictured later.
+
+### R66, R67, R69 — Estimated plan per game, sorted by simplicity
+
+- **Existing components checked:** the complexity ladder Cx 1–7, the shared
+  technology named on each page and the platform plan.
+- **Solution:** every one of the 300 games has an estimate in
+  [`concepts/estimates/`](../../master-plan/concepts/estimates/): the
+  algorithms it needs (from a library of reusable algorithms with lines of
+  code and difficulty), extra game code, assets by type and count, and a
+  toddler learnability rating 1–5. A script computes code size, asset hours,
+  effort days, risk and a start score (effort × learnability factor), writes
+  an **Estimated plan** section on each page and generates the
+  [development plan](../../master-plan/development-plan.md): all games sorted
+  by effort, the 40 lowest start scores, a toddler-first list and the
+  algorithm reuse table.
+- **Limit:** the numbers are planning estimates for ordering work, not
+  promises; the formula and the productivity constants are written down so
+  they can be recalibrated after the first games ship.
+
+### R68 — Toddler games for ages 1–3 and up
+
+- **Solution:** a [toddler collection](../../master-plan/concepts/td.md) (30
+  ideas for ages 1–3, co-play first) and a
+  [preschool collection](../../master-plan/concepts/pk.md) (22 ideas for ages
+  3–5), designed with the WHO and AAP screen-time guidance and the touch
+  research in the [research note](data/research-raya-shacados.md#7-toddlers-and-screens-r68-r69).
+
+### R71, R72 — Mobile-first GitHub Pages website
+
+- **Existing components checked:** the existing Pages workflow for the
+  example app; static site generators (rejected for now: one more dependency
+  for a site that only renders this repository's Markdown and JSON).
+- **Solution:** `scripts/build-site.mjs` renders every master-plan document,
+  every idea page and a games explorer that searches and filters by
+  collection, age, toddler rating, effort and art status and sorts by start
+  score, effort, toddler rating or age, so the
+  first game is easy to choose on a phone. The CSS is written for small
+  screens first and widens at 640 px. The Pages workflow publishes the site
+  at the root, with the example app under `example-app/`.
+- **Verification:** `tests/site.test.js` builds the site and checks every
+  page, the viewport tag, the 300 game cards and every relative link and
+  anchor.
+
+### R73–R75 — Shacados and its games
+
+- **Solution:** [Shacados](../../master-plan/lore/shacados.md): rust, dust and
+  junk, coal, oil and gas, dying forests and rivers, frozen regions, poverty
+  and exploitation, and what keeps people human (R73). A
+  [Shacados collection](../../master-plan/concepts/sh.md) of 16 ideas with
+  image descriptions and prompts (R74). Spaceflight is a crude nuclear-pulse
+  probe launched at the cost of a poisoned region of the planet — the
+  [least advanced and most unsafe way](../../master-plan/lore/shacados.md#spaceflight--the-least-advanced-and-most-unsafe-way)
+  that is still physically possible (R75).
+
+### R76 — Descriptions now, images later
+
+- **Solution:** the 84 new ideas (toddler, preschool, Raya life, Shacados)
+  have four image descriptions and four generation prompts each, in the same
+  job format as the existing art, plus 32 loading-screen prompts. Their pages
+  say "art pending" and link to the prompts, so an image agent can generate
+  them later without changing the text.

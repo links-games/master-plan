@@ -22,9 +22,12 @@ flowchart LR
 issue in any repository produces an AI pull request.
 
 Before selecting the first prototype, review the
-[216-game visual concept catalog](concepts/README.md). Compare the four views
-on candidate pages, then prefer Cx 1–2 from the existing Wave 1 plan. Concept
-appeal informs the choice; an authored playable challenge validates the loop.
+[300-game concept catalog](concepts/README.md) and the
+[development plan](development-plan.md), or browse both on the
+[website](README.md#website). Compare the four views on candidate pages, then
+prefer the lowest start scores (easy to develop and easy to play) and Cx 1–2
+from the existing Wave 1 plan. Concept appeal informs the choice; an authored
+playable challenge validates the loop.
 
 | #   | Task                                                                                                                                                                                                    | Output                  |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |

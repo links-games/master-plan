@@ -4,7 +4,7 @@ Source: [links-games/master-plan#1](https://github.com/links-games/master-plan/i
 (raw copy: [`data/issue-1.json`](data/issue-1.json)).
 
 Every sentence of the issue was split into atomic, checkable requirements.
-Each requirement has a stable ID (`R1`…`R35` from the issue, `R36`…`R54`
+Each requirement has a stable ID (`R1`…`R35` from the issue, `R36`…`R76`
 from the [PR #2 feedback](#requirements-from-the-pr-2-feedback)) that is
 referenced from the
 [solution plans](solution-plans.md) and the [roadmap](../../master-plan/roadmap.md).
@@ -103,3 +103,37 @@ Added from the maintainer's [2026-10-15 11:04 UTC comment](https://github.com/li
 
 See the [visual-catalog solution plans](solution-plans.md#visual-catalog-feedback-r50r54)
 for coverage, provenance and validation limits.
+
+## Raya, Shacados, toddlers and the website (R55–R76)
+
+Added from the maintainer's
+[2026-10-22 10:30 UTC comment](https://github.com/links-games/master-plan/pull/2#issuecomment-6338585632)
+(raw copy: [`data/pr-2-raya-feedback.json`](data/pr-2-raya-feedback.json)).
+
+| ID  | Requirement                                                                                                                                                                    | Kind | Quote                                                                                                          |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- | -------------------------------------------------------------------------------------------------------------- |
+| R55 | Raya's landscape is **untouched nature** with many **tall white acoustic and telecom towers**.                                                                                 | L    | "untouched nature + lots of high white acoustic transmission and telecom towers"                               |
+| R56 | Rayan clothing is **futuristic, tight and primarily white**.                                                                                                                   | L    | "futuristic tight clothing primary white"                                                                      |
+| R57 | Characters **walk, play or fly acoustically**, with or without **white robotic spheres** that are electromagnetic transmitters of a **telepathy internet**.                    | L    | "walking, playing or flying acoustically … spherical while robotic companions"                                 |
+| R58 | **Loading screens and backgrounds** show the Raya landscape.                                                                                                                   | L, D | "when games have loading screens or have something on background, we should use our Raya planet landscape"     |
+| R59 | The spheres give **telekinesis**; scenes where characters **copy an apple** from a tree without damaging it.                                                                   | L    | "characters copy an apple from a tree without ever damaging it"                                                |
+| R60 | Rayan society is **highly ethical by default** and **in harmony with nature**.                                                                                                 | L    | "highly ethical and moral by default … in harmony with nature"                                                 |
+| R61 | **Laws are optional** with peaceful defaults; **two citizens can disable rules** between themselves, applied at once via the telepathy internet.                               | L    | "if two citizen decide to disable some laws/rules, they can do totally so"                                     |
+| R62 | By default the spheres can **override muscles to prevent harm**; **thoughts are free**; each citizen can **disable** this on themselves.                                       | L    | "Each citizen can think anything, but their control over muscles … can be overridden"                          |
+| R63 | Citizens are **immortal and forever young (18–21)**; old people are rare and only those who disabled the wellness treatment.                                                   | L    | "all citizen are immortal and forever young like in 18-21 years range"                                         |
+| R64 | **Nothing in the lore contradicts** this vision.                                                                                                                               | L, D | "Double check nothing in the lore contradicts this vision."                                                    |
+| R65 | Expand the vision in detail, **more realistic**, with ideas for **scenery pilots** to picture later.                                                                           | L, D | "expand on in details it to make it more realistic and provide ideas on different scenery pilots"              |
+| R66 | A list of games **sorted by development simplicity**: algorithms needed, estimated codebase size, assets.                                                                      | P, D | "a list of games that will be sorted by how simple the development is"                                         |
+| R67 | Each game has a **detailed estimated plan** of assets and algorithms, so games can be **scored by complexity**.                                                                | P, D | "Each our game should have detailed estimated plan"                                                            |
+| R68 | Ideas for **all typical toddler games (ages 1–3)** and older.                                                                                                                  | P, D | "ideas of all typical games for toddlers from 1-3 years and so on"                                             |
+| R69 | Rate each game on **how likely a toddler can learn it**; build games that are easy to play and easy to develop first.                                                          | P, D | "rate each game on how likely toddler will able to learn how to play it"                                       |
+| R70 | All details, lore and descriptions are **as detailed as they can get**.                                                                                                        | D    | "Double check all details, lore, descriptions are detailed as they can get."                                   |
+| R71 | A **GitHub Pages website** presenting all the data: game ideas, lore, **stories with wisdom**, and **image descriptions** where art is missing.                                | D    | "make a GitHub Page website to present all the data we have"                                                   |
+| R72 | The website is **mobile first** and makes it easy to **choose what to develop first**.                                                                                         | D    | "Website must be mobile first, so it will be each to browse games ideas to select what we will develop first." |
+| R73 | **Shacados is much darker**: poverty and exploitation, food shortage, rust, dust and junk, oil, coal and gas, dying polluted water and forests, frozen barely livable regions. | L    | "Shacados planet is much darker"                                                                               |
+| R74 | **Shacados-style games**, at least with concept art.                                                                                                                           | P, D | "We may also have some games in that style too, at least we need to have concept art."                         |
+| R75 | Shacados is space-capable in the **least advanced and most unsafe way possible**.                                                                                              | L    | "space travel capable, but in least advanced and unsafe way possible"                                          |
+| R76 | This pass covers **lore, descriptions and the website**; images are generated later by another agent.                                                                          | D    | "you focus on lore, description and website, later other agent will work with image generation"                |
+
+Where each one is answered:
+[solution plans](solution-plans.md#raya-shacados-toddlers-and-the-website-r55r76).

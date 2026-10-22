@@ -58,33 +58,63 @@ a fact, a skill, or a piece of wisdom from our shared lore.
 
 ## Documents
 
-| Document                                             | What it answers                                                          |
-| ---------------------------------------------------- | ------------------------------------------------------------------------ |
-| [roadmap.md](roadmap.md)                             | What we do first, next, and later — phases with exit criteria.           |
-| [infrastructure.md](infrastructure.md)               | Repositories, game-core library, templates, platforms, tech stack.       |
-| [ai-pipeline.md](ai-pipeline.md)                     | Issue → formal-ai → auto pull request → restartable CI/CD.               |
-| [game-catalog.md](game-catalog.md)                   | Ranked list of first games, educational angle, legal notes.              |
-| [game-ideas.md](game-ideas.md)                       | The big list: 216 game ideas by genre, collections, ladder.              |
-| [Visual concept catalog](concepts/README.md)         | A page and four art directions per game, to choose a prototype visually. |
-| [economy.md](economy.md)                             | Resource-based in-game economy, not money.                               |
-| [simulation-engine.md](simulation-engine.md)         | Physics engines, 2D/3D vector graphics, LOD, path to realism.            |
-| [lore/README.md](lore/README.md)                     | The Links universe: world, characters, wisdom, styles.                   |
-| [lore/characters.md](lore/characters.md)             | Character bible — every Link character with traits and lessons.          |
-| [lore/first-contact.md](lore/first-contact.md)       | Raya and Shacados: the setting of the final realistic simulator.         |
-| [lore/adorability-gate.md](lore/adorability-gate.md) | The "not adorable = bug" checklist used in reviews.                      |
-| [monetization.md](monetization.md)                   | Generosity charter, all monetization mechanics, experiments.             |
-| [business-model.md](business-model.md)               | Revenue streams, unit economics, profitability and capital.              |
-| [community.md](community.md)                         | Global community, contributors, hiring, donations, merchandise.          |
-| [legal.md](legal.md)                                 | Clean-room reimplementation rules, kids' privacy, licensing.             |
-| [templates/](templates/)                             | Ready-to-copy workflow and issue templates for every game repo.          |
+| Document                                             | What it answers                                                              |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [roadmap.md](roadmap.md)                             | What we do first, next, and later — phases with exit criteria.               |
+| [infrastructure.md](infrastructure.md)               | Repositories, game-core library, templates, platforms, tech stack.           |
+| [ai-pipeline.md](ai-pipeline.md)                     | Issue → formal-ai → auto pull request → restartable CI/CD.                   |
+| [game-catalog.md](game-catalog.md)                   | Ranked list of first games, educational angle, legal notes.                  |
+| [game-ideas.md](game-ideas.md)                       | The big list: 300 game ideas by genre, collections, ladder.                  |
+| [development-plan.md](development-plan.md)           | All 300 games sorted by effort, with algorithms, assets and toddler ratings. |
+| [Visual concept catalog](concepts/README.md)         | A page per game with four art views or four image descriptions.              |
+| [economy.md](economy.md)                             | Resource-based in-game economy, not money.                                   |
+| [simulation-engine.md](simulation-engine.md)         | Physics engines, 2D/3D vector graphics, LOD, path to realism.                |
+| [lore/README.md](lore/README.md)                     | The Links universe: world, characters, wisdom, styles.                       |
+| [lore/characters.md](lore/characters.md)             | Character bible — every Link character with traits and lessons.              |
+| [lore/first-contact.md](lore/first-contact.md)       | Raya and Shacados: the setting of the final realistic simulator.             |
+| [lore/raya.md](lore/raya.md)                         | Raya: untouched nature, white towers, Orbis, the Chord, Guard and Renewal.   |
+| [lore/shacados.md](lore/shacados.md)                 | Shacados: rust, coal, hunger, frozen belts and the most unsafe spaceflight.  |
+| [lore/scenery-pilots.md](lore/scenery-pilots.md)     | 22 scenes to picture later, each with beats and an image description.        |
+| [lore/stories.md](lore/stories.md)                   | 14 short stories by age, each with a wisdom line and questions.              |
+| [lore/adorability-gate.md](lore/adorability-gate.md) | The "not adorable = bug" checklist used in reviews.                          |
+| [monetization.md](monetization.md)                   | Generosity charter, all monetization mechanics, experiments.                 |
+| [business-model.md](business-model.md)               | Revenue streams, unit economics, profitability and capital.                  |
+| [community.md](community.md)                         | Global community, contributors, hiring, donations, merchandise.              |
+| [legal.md](legal.md)                                 | Clean-room reimplementation rules, kids' privacy, licensing.                 |
+| [templates/](templates/)                             | Ready-to-copy workflow and issue templates for every game repo.              |
 
 ## Status
 
-| Area                  | Status in this pull request                                     |
-| --------------------- | --------------------------------------------------------------- |
-| Requirements analysis | 35 from the issue + 19 from PR feedback + 7 derived.            |
-| Research & case study | Done — see `docs/case-studies/issue-1/`.                        |
-| Master plan documents | Done — this folder.                                             |
-| AI pipeline templates | Done — ready-to-copy workflow in `templates/`.                  |
-| New repositories      | Planned — list and order in [roadmap.md](roadmap.md) (Phase 0). |
-| First games           | Planned — Phase 1 of the roadmap.                               |
+| Area                  | Status in this pull request                                                             |
+| --------------------- | --------------------------------------------------------------------------------------- |
+| Requirements analysis | 35 from the issue + 41 from PR feedback + 7 derived.                                    |
+| Research & case study | Done — see `docs/case-studies/issue-1/`.                                                |
+| Master plan documents | Done — this folder.                                                                     |
+| AI pipeline templates | Done — ready-to-copy workflow in `templates/`.                                          |
+| New repositories      | Planned — list and order in [roadmap.md](roadmap.md) (Phase 0).                         |
+| First games           | Planned — Phase 1 of the roadmap.                                                       |
+| Website               | Built by CI; published once GitHub Pages is enabled ([Website](#website)).              |
+| Concept art           | 216 ideas illustrated; 84 newer ideas and 32 loading screens have prompts, art pending. |
+
+## Website
+
+The [Pages workflow](../../.github/workflows/example-app.yml) turns this
+folder into a mobile-first website (R71, R72) with
+[`scripts/build-site.mjs`](../../scripts/build-site.mjs): a home page with the
+easiest games to start, a filterable **Choose a game** explorer (collection,
+age, toddler rating, days of work, art or descriptions), the
+[development plan](development-plan.md), every concept page with its art or
+image descriptions, the [lore](lore/README.md) and the
+[stories](lore/stories.md). The explorer keeps its filters in the URL, so a
+shortlist can be shared as a link.
+
+- **Address:** [links-games.github.io/master-plan](https://links-games.github.io/master-plan/), with the
+  universal example app at `example-app/`.
+- **Build locally:** `node scripts/build-site.mjs`, then open
+  `_site/index.html`. Add `--no-art` for a fast build without images.
+- **Publishing:** each push to `main` that changes these documents deploys the
+  site. GitHub Pages must be enabled once in **Settings → Pages → Source:
+  GitHub Actions**; pull requests upload the built site as the
+  `master-plan-website` artifact instead.
+- **Tests:** [`tests/site.test.js`](../../tests/site.test.js) builds the site
+  and checks every page for the mobile viewport and every link and anchor.

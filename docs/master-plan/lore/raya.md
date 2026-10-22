@@ -99,8 +99,9 @@ comment.
 | Sound        | The emitters work in ultrasound, above human hearing. Audible "tower songs" are played only at festivals, and never during animal breeding seasons.                          |
 | Construction | Grown layer by layer by assemblers from local stone and air, with no roads or cranes. A tower takes about a year to grow.                                                    |
 
-**Sky-lanes.** Between neighboring towers, the arrays shape invisible
-channels in the air. A person in a flight suit can glide along them at
+**Sky-lanes.** Around each tower, the arrays shape invisible channels in
+the air. Towers stand 20–40 km apart, so the lanes of neighboring towers do
+not meet: long trips are walked, or made by boat or glider. A person in a flight suit can glide along them at
 walking to cycling speed, 5–40 km/h. Flight works only within about 2 km of
 a tower, and it is never fast: the lore keeps it gentle and believable
 (lore exception E1 in the
@@ -311,7 +312,7 @@ explore:
 > says. "Tonight the garden will make one."
 >
 > In the afternoon her teacher, who looks 20 and is 1,400 years old, takes
-> the class riding the Chord to the next tower. They glide at the speed of
+> the class riding the Chord around the valley tower. They glide at the speed of
 > a bicycle over a river full of salmon-like fish. Theo tries to push Mira
 > into the water as a joke, and his arm simply stops — the Guard. He
 > laughs, embarrassed. Mira grins and says, through the Chord, "Next time

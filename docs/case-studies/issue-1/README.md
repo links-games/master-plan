@@ -7,6 +7,7 @@
 - **Raw copies**: [`data/issue-1.json`](data/issue-1.json), [`data/pr-2.json`](data/pr-2.json), [`data/pr-2-comments.json`](data/pr-2-comments.json)
 - **Feedback**: the maintainer's [PR #2 comment](https://github.com/links-games/master-plan/pull/2#issuecomment-6189666260) added requirements R36–R49
 - **Visual feedback**: the [later comment](https://github.com/links-games/master-plan/pull/2#issuecomment-6190555786) adds R50–R54, recorded in [raw form](data/pr-2-visual-feedback.json).
+- **Raya feedback**: the [Raya comment](https://github.com/links-games/master-plan/pull/2#issuecomment-6338585632) adds R55–R76, recorded in [raw form](data/pr-2-raya-feedback.json).
 
 The issue asks for a complete plan for the `links-games` organization:
 
@@ -25,7 +26,7 @@ The issue asks for a complete plan for the `links-games` organization:
 
 | Document                               | What it contains                                                                                                              |
 | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| [requirements.md](requirements.md)     | Every requirement from the issue (R1–R35) and the PR #2 feedback (R36–R54) with a quote, plus 7 derived requirements (D1–D7). |
+| [requirements.md](requirements.md)     | Every requirement from the issue (R1–R35) and the PR #2 feedback (R36–R76) with a quote, plus 7 derived requirements (D1–D7). |
 | [solution-plans.md](solution-plans.md) | For each requirement: the chosen solution, existing components and libraries checked, and alternatives.                       |
 | [The master plan](../../master-plan/)  | The result: roadmap, infrastructure, AI pipeline, game catalog, lore, monetization, community, legal.                         |
 | [data/](data/)                         | Raw data and the online research notes listed below.                                                                          |
@@ -41,6 +42,8 @@ The issue asks for a complete plan for the `links-games` organization:
 | [`research-genres-ideas.md`](data/research-genres-ideas.md)                                                         | Proven game genres, educational and citizen-science games, game collections, non-violent design and resource-based economies (for R36–R41, R49).               |
 | [`research-visual-catalog.md`](data/research-visual-catalog.md)                                                     | Primary sources for the 48 added mechanics, four concept-art directions, resolution and model-reporting limits (R50–R54).                                      |
 | [`pr-2-visual-feedback.json`](data/pr-2-visual-feedback.json)                                                       | Raw request for an expanded catalog with individual pages and four generated images per idea.                                                                  |
+| [`research-raya-shacados.md`](data/research-raya-shacados.md)                                                       | Real-world anchors and lore exceptions E1–E5 for Raya, Shacados spaceflight and industry, and toddler screen-time and touch research (R55–R76).                |
+| [`pr-2-raya-feedback.json`](data/pr-2-raya-feedback.json)                                                           | Raw request for the Raya vision, Shacados, toddler games, estimated plans and the website.                                                                     |
 | [`research-physics-simulation.md`](data/research-physics-simulation.md)                                             | Physics engines for JS/WASM, the "universal formula" candidates, WebGPU reach, PBR and anime rendering, LOD, determinism, real-world validation (for R43–R48). |
 | [`first-contact-pilot-scene.md`](data/first-contact-pilot-scene.md)                                                 | The First Contact pilot scene (Russian original, English translation) and the maintainer's framing (for R42).                                                  |
 | [`issue-1.json`](data/issue-1.json), [`pr-2.json`](data/pr-2.json), [`pr-2-comments.json`](data/pr-2-comments.json) | Raw issue, pull request and pull request comments.                                                                                                             |
@@ -54,23 +57,24 @@ change often, so re-check them before relying on them.
 
 ## Timeline
 
-| Time (UTC)       | Event                                                                                                                                                     |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2026-10-15 09:02 | Issue #1 opened (labels `documentation`, `enhancement`).                                                                                                  |
-| 2026-10-15 09:10 | Draft pull request #2 opened by the AI issue solver on branch `issue-1-fb26bf6c9ffd`.                                                                     |
-| 2026-10-15 09:15 | Requirements list (R1–R35, D1–D7), master plan index, adorability gate and repository templates committed.                                                |
-| 2026-10-15 09:27 | Online research notes committed (formal-ai/hive-mind, lore, market, platforms).                                                                           |
-| 2026-10-15 09:31 | Restartable AI pipeline design, workflow templates and their tests committed.                                                                             |
-| 2026-10-15 09:32 | Core infrastructure plan committed.                                                                                                                       |
-| 2026-10-15 09:36 | Game catalog and phased roadmap committed.                                                                                                                |
-| 2026-10-15 09:39 | Lore core and character bible committed.                                                                                                                  |
-| 2026-10-15 09:42 | Monetization, business model, community and legal plans committed.                                                                                        |
-| 2026-10-15       | This case study, the solution plans and the documentation link tests committed.                                                                           |
-| 2026-10-15 10:02 | All CI checks passed; the pull request was marked ready.                                                                                                  |
-| 2026-10-15 10:11 | The maintainer's feedback asked for a game ideas list, collections, a resource-based economy, the First Contact lore and a realistic simulator (R36–R49). |
-| 2026-10-15 10:33 | The pilot scene source, the feedback data and a relativistic physics check of the scene committed.                                                        |
-| 2026-10-15       | Game ideas, economy, simulation engine and First Contact lore documents, and the two new research notes, committed.                                       |
-| 2026-10-15 11:04 | The maintainer requested missing popular ideas, a page and four generated high-resolution images per idea, for visual prototype selection (R50–R54).      |
+| Time (UTC)       | Event                                                                                                                                                          |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-10-15 09:02 | Issue #1 opened (labels `documentation`, `enhancement`).                                                                                                       |
+| 2026-10-15 09:10 | Draft pull request #2 opened by the AI issue solver on branch `issue-1-fb26bf6c9ffd`.                                                                          |
+| 2026-10-15 09:15 | Requirements list (R1–R35, D1–D7), master plan index, adorability gate and repository templates committed.                                                     |
+| 2026-10-15 09:27 | Online research notes committed (formal-ai/hive-mind, lore, market, platforms).                                                                                |
+| 2026-10-15 09:31 | Restartable AI pipeline design, workflow templates and their tests committed.                                                                                  |
+| 2026-10-15 09:32 | Core infrastructure plan committed.                                                                                                                            |
+| 2026-10-15 09:36 | Game catalog and phased roadmap committed.                                                                                                                     |
+| 2026-10-15 09:39 | Lore core and character bible committed.                                                                                                                       |
+| 2026-10-15 09:42 | Monetization, business model, community and legal plans committed.                                                                                             |
+| 2026-10-15       | This case study, the solution plans and the documentation link tests committed.                                                                                |
+| 2026-10-15 10:02 | All CI checks passed; the pull request was marked ready.                                                                                                       |
+| 2026-10-15 10:11 | The maintainer's feedback asked for a game ideas list, collections, a resource-based economy, the First Contact lore and a realistic simulator (R36–R49).      |
+| 2026-10-15 10:33 | The pilot scene source, the feedback data and a relativistic physics check of the scene committed.                                                             |
+| 2026-10-15       | Game ideas, economy, simulation engine and First Contact lore documents, and the two new research notes, committed.                                            |
+| 2026-10-15 11:04 | The maintainer requested missing popular ideas, a page and four generated high-resolution images per idea, for visual prototype selection (R50–R54).           |
+| 2026-10-22 10:30 | The maintainer described the Raya vision and Shacados, and asked for toddler games, estimated plans sorted by simplicity and a mobile-first website (R55–R76). |
 
 ## Method
 
@@ -90,6 +94,22 @@ Catalog integrity is checked by
 [`tests/game-concepts.test.js`](../../../tests/game-concepts.test.js): complete
 page and art coverage, actual WebP dimensions, unique byte hashes and exact
 prompt provenance. The original documentation-link test checks navigation.
+
+The [Raya comment](https://github.com/links-games/master-plan/pull/2#issuecomment-6338585632)
+adds requirements **R55–R76**. The vision was written into its own lore pages,
+[Raya](../../master-plan/lore/raya.md) and
+[Shacados](../../master-plan/lore/shacados.md); every step beyond today's
+science is a numbered lore exception backed by the
+[research note](data/research-raya-shacados.md), and every earlier lore
+statement was checked against the vision (R64). The catalog grows from 216 to
+300 ideas with toddler, preschool, Raya life and Shacados collections whose
+images are described and prompted but not yet generated (R76). Every idea has
+an estimate (algorithms, code size, assets, toddler learnability) from which
+the [development plan](../../master-plan/development-plan.md) is generated,
+and `scripts/build-site.mjs` turns all of it into a mobile-first GitHub Pages
+website. [`tests/development-plan.test.js`](../../../tests/development-plan.test.js)
+and [`tests/site.test.js`](../../../tests/site.test.js) check the estimates,
+the ranking, the generated plan and the website.
 
 1. **Split the issue into atomic requirements.** Every sentence of the
    issue became one or more checkable requirements with a stable ID and the
@@ -238,19 +258,21 @@ lists them for maintainers in the
 6. **The DNA idea** from the feedback is recorded as a long-term thought
    experiment with an ethics boundary; the plan keeps characters
    biomechanically plausible instead.
-7. **Start systems of Reya and Shacados** are a proposal until the
+7. **Start systems of Raya and Shacados** are a proposal until the
    maintainers confirm them.
 
 ## Verification
 
-| Check                                                                                 | What it proves                                                                                         |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [`tests/ai-solve-workflow.test.js`](../../../tests/ai-solve-workflow.test.js)         | The AI pipeline template triggers, permissions, restart logic and same-PR targeting behave as planned. |
-| [`tests/master-plan-docs.test.js`](../../../tests/master-plan-docs.test.js)           | Every relative link and `#anchor` in the master plan and this case study resolves.                     |
-| [`tests/game-concepts.test.js`](../../../tests/game-concepts.test.js)                 | All 216 ideas have pages, four unique high-resolution images, matching hashes and exact prompts.       |
-| [`tests/first-contact-physics.test.js`](../../../tests/first-contact-physics.test.js) | The physics numbers of the First Contact pilot scene are computed, not guessed.                        |
-| `actionlint` and the repository's workflow checks                                     | The workflow templates are valid GitHub Actions.                                                       |
-| Lychee (`links.yml`)                                                                  | External links in the documents are reachable.                                                         |
+| Check                                                                                 | What it proves                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`tests/ai-solve-workflow.test.js`](../../../tests/ai-solve-workflow.test.js)         | The AI pipeline template triggers, permissions, restart logic and same-PR targeting behave as planned.                                                                                      |
+| [`tests/master-plan-docs.test.js`](../../../tests/master-plan-docs.test.js)           | Every relative link and `#anchor` in the master plan and this case study resolves.                                                                                                          |
+| [`tests/game-concepts.test.js`](../../../tests/game-concepts.test.js)                 | All 300 ideas have pages; the 216 illustrated ones have four unique high-resolution images, matching hashes and exact prompts; the 84 art-pending ones have image descriptions and prompts. |
+| [`tests/first-contact-physics.test.js`](../../../tests/first-contact-physics.test.js) | The physics numbers of the First Contact pilot scene are computed, not guessed.                                                                                                             |
+| [`tests/development-plan.test.js`](../../../tests/development-plan.test.js)           | All 300 games have valid estimates, the formula is applied as documented, the plan is sorted and regenerated from the data.                                                                 |
+| [`tests/site.test.js`](../../../tests/site.test.js)                                   | The website builds every page mobile-first, lists all 300 games and has no broken links or anchors.                                                                                         |
+| `actionlint` and the repository's workflow checks                                     | The workflow templates are valid GitHub Actions.                                                                                                                                            |
+| Lychee (`links.yml`)                                                                  | External links in the documents are reachable.                                                                                                                                              |
 
 Run locally:
 

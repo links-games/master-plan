@@ -1,10 +1,13 @@
 # Game Ideas — the Big List
 
 **[Browse the visual concept catalog](concepts/README.md)** to choose a
-prototype by its key visuals. The expanded list has **216 ideas** (the original
-168 plus 48 additions); every title below opens its own concept page with four
-art directions and prototype scope. Added genre evidence is in the
-[visual-catalog research](../case-studies/issue-1/data/research-visual-catalog.md).
+prototype by its key visuals. The expanded list has **300 ideas**: the original
+168, 48 visual-catalog additions and 84 ideas for toddlers, preschoolers, Raya
+life and Shacados. Every title below opens its own concept page with four art
+directions (or, where art is pending, four image descriptions), prototype scope
+and an estimated plan. The [development plan](development-plan.md) sorts all
+300 by development effort and toddler learnability. Added genre evidence is in
+the [visual-catalog research](../case-studies/issue-1/data/research-visual-catalog.md).
 
 Covers requirements **R36, R37, R39, R40, R41, R49** (see the
 [requirements](../case-studies/issue-1/requirements.md#requirements-from-the-pr-2-feedback)).
