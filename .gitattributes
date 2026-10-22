@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.blend binary
+*.hdr binary
+*.exr binary
+*.png binary
+*.jpg binary
+*.webp binary

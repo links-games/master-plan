@@ -144,3 +144,10 @@ reports/
 
 # Generated master-plan website (scripts/build-site.mjs)
 _site/
+ci-logs/
+
+# Blender backup copies; the current reproducible sources are committed.
+*.blend1
+examples/lore-scenes/__pycache__/
+
+experiments/__pycache__/

@@ -2,6 +2,7 @@ node_modules
 coverage
 dist
 _site
+ci-logs
 *.min.js
 package-lock.json
 .eslintcache
@@ -9,3 +10,6 @@ package-lock.json
 CLAUDE.md
 # Case study raw data files (downloaded from external sources)
 docs/case-studies/*/data/
+
+# Blender exports are compact numeric buffers validated by validate-scenes.mjs.
+docs/master-plan/lore/scenes/*/scene.json

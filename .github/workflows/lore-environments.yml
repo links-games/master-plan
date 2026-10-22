@@ -1,0 +1,56 @@
+name: Lore environments
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lore-render:
+    name: Render lore environments (${{ matrix.batch }})
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        batch: ['0/6', '1/6', '2/6', '3/6', '4/6', '5/6']
+    concurrency:
+      group: check-${{ github.workflow }}-${{ github.ref }}-lore-${{ matrix.batch }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24.x'
+      - name: Install open-source rendering tools
+        run: |
+          sudo apt-get update &
+          wait $!
+          sudo apt-get install -y --no-install-recommends python3-pil &
+          wait $!
+          bash experiments/install-lore-blender.sh /tmp/master-plan-blender
+      - name: Render every pilot from source
+        env:
+          RENDER_BATCH: ${{ matrix.batch }}
+        run: |
+          mkdir -p ci-logs
+          /usr/bin/python3 experiments/render-lore-scenes.py --batch "$RENDER_BATCH" --out /tmp/lore-scenes > ci-logs/blender.log 2>&1
+          /usr/bin/python3 experiments/encode-lore-scenes.py /tmp/lore-scenes
+          node scripts/validate-scenes.mjs /tmp/lore-scenes "$RENDER_BATCH" > ci-logs/scene-budgets.json
+          cat ci-logs/scene-budgets.json
+      - name: Upload sources, renders and diagnostic logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: lore-environments-${{ strategy.job-index }}
+          path: |
+            /tmp/lore-scenes
+            ci-logs/
+          if-no-files-found: error
+          retention-days: 7
