@@ -5,6 +5,14 @@ import { validateSceneAssets } from '../scripts/validate-scenes.mjs';
 import { renderMarkdown } from '../scripts/site-markdown.mjs';
 
 describe('offline lore scene sources', () => {
+  it('keeps both distant settings of Two skies at night', () => {
+    const scene = SCENES.find((entry) => entry.number === 22);
+    expect(scene.nativeFrames).toEqual([
+      { side: 'left', world: 'Raya', kind: 'meadow', night: true },
+      { side: 'right', world: 'Shacados', kind: 'radio', night: true },
+    ]);
+  });
+
   it('retains licensed, checksum-verified lighting, surfaces and scanned plants', () => {
     expect(validateSceneAssets().length).toBe(25);
   });

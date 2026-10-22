@@ -239,6 +239,10 @@
     "seed": 2740,
     "night": true,
     "ages": 10,
-    "pilot": "scenery-pilots.md#22-two-skies"
+    "pilot": "scenery-pilots.md#22-two-skies",
+    "nativeFrames": [
+      { "side": "left", "world": "Raya", "kind": "meadow", "night": true },
+      { "side": "right", "world": "Shacados", "kind": "radio", "night": true }
+    ]
   }
 ]

@@ -515,11 +515,25 @@ def setup(spec,width,samples):
         bsdf.inputs['Emission Strength'].default_value=4
         for index in range(70):
             ball('Night star',(rng.uniform(-100,100),110,rng.uniform(12,85)),(.035,.035,.035),celestial,1)
-        if sh:
-            ball('Raya as one bright unresolved point',(-24,105,35),(.17,.17,.17),celestial,2)
-        elif kind in ['festival','nest']:
+        if sh or spec['number']==22:
+            color=(1,.90,.60) if sh else (1,.32,.065)
+            companion=material('Companion star light',color,.5,0,0)
+            shader=companion.node_tree.nodes.get('Principled BSDF')
+            shader.inputs['Emission Color'].default_value=(*color,1)
+            shader.inputs['Emission Strength'].default_value=12
+            ball('Raya as one pale-yellow unresolved point' if sh else
+                 'Shacados as one orange unresolved point',(-24,105,35),
+                 (.17,.17,.17),companion,2)
+        if not sh and (kind in ['festival','nest'] or spec['number']==22):
             ball('Pim, the larger moon',(-22,100,34),(1.2,1.2,1.2),mats['flower'],3)
             ball('Pom, the smaller moon',(-16,100,36),(.7,.7,.7),mats['flower'],3)
+        if not sh and spec['number']==22:
+            for index in range(180):
+                x=rng.uniform(-100,100)
+                z=42+x*.18+rng.gauss(0,5)
+                radius=rng.uniform(.018,.045)
+                star=ball('Milky Way star field',(x,115,z),(radius,)*3,celestial,1)
+                star['render_only']=True
     if kind=='orbit': background.inputs[1].default_value=.015
     bpy.ops.object.light_add(type='SUN',location=(-8,-8,15))
     sun=bpy.context.object
@@ -571,14 +585,16 @@ def split_worlds(spec, out, width, samples):
     """
     composite=bpy.context.scene
     composite.name='Two skies — split frame'
+    composite.use_fake_user=True
     for obj in list(composite.objects):
         if obj.type!='CAMERA': bpy.data.objects.remove(obj,do_unlink=True)
     images=[]
-    for side,world,kind,night in [('left','Raya','meadow',False),
-                                  ('right','Shacados','radio',True)]:
+    for frame in spec['nativeFrames']:
+        side,world=frame['side'],frame['world']
         scene=bpy.data.scenes.new(f'Two skies — {world} environment')
+        scene.use_fake_user=True
         bpy.context.window.scene=scene
-        setup({**spec,'world':world,'kind':kind,'night':night},width,samples)
+        setup({**spec,**frame},width,samples)
         scene.render.resolution_x=width//2
         scene.render.resolution_y=round(width*9/16)
         # Scene-linear frames avoid applying the display transform twice.
@@ -588,15 +604,17 @@ def split_worlds(spec, out, width, samples):
         path=out/f'{side}-native-frame.exr'
         scene.render.filepath=str(path)
         bpy.ops.render.render(write_still=True)
-        images.append(bpy.data.images.load(str(path),check_existing=True))
+        # setup() purges unused data while building the next world. Defer
+        # loading these frames until both scenes exist, then link them at once.
+        images.append(path)
     bpy.context.window.scene=composite
     composite.use_nodes=True
     nodes=composite.node_tree.nodes
     nodes.clear()
     previous=nodes.new('CompositorNodeRLayers')
-    for index,picture in enumerate(images):
+    for index,path in enumerate(images):
         source=nodes.new('CompositorNodeImage')
-        source.image=picture
+        source.image=bpy.data.images.load(str(path),check_existing=True)
         transform=nodes.new('CompositorNodeTransform')
         transform.inputs['X'].default_value=(-1 if index==0 else 1)*width/4
         composite.node_tree.links.new(source.outputs['Image'],transform.inputs['Image'])
