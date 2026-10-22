@@ -37,7 +37,10 @@ function apply() {
   const data = new FormData(form);
   const filters = Object.fromEntries(data.entries());
   filters.q = (filters.q || '').trim().toLowerCase();
-  const sorted = [...cards].sort(SORTS[filters.sort] || SORTS.start);
+  const sort = Object.hasOwn(SORTS, filters.sort)
+    ? SORTS[filters.sort]
+    : SORTS.start;
+  const sorted = [...cards].sort(sort);
   let shown = 0;
   for (const card of sorted) {
     card.hidden = !matches(card, filters);
@@ -57,9 +60,16 @@ function apply() {
   );
 }
 
+// Only the form's own fields are restored, so a query key such as
+// __proto__ never reaches a property assignment.
+const fields = new Map(
+  [...form.elements]
+    .filter((field) => field.name)
+    .map((field) => [field.name, field])
+);
 for (const [key, value] of new URLSearchParams(window.location.search)) {
-  if (form.elements[key]) {
-    form.elements[key].value = value;
+  if (fields.has(key)) {
+    fields.get(key).value = value;
   }
 }
 form.addEventListener('input', apply);
