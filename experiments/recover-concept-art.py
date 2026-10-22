@@ -54,7 +54,9 @@ def complete(job):
         return False
     entries = json.loads(manifest.read_text())['images']
     entry = next((item for item in entries if item['file'] == target.name), None)
-    return (entry is not None and entry['prompt'] == job['prompt']
+    # A reviewed replacement can intentionally supersede this frozen job list.
+    # Recovery repairs incomplete writes; it must preserve valid newer artwork.
+    return (entry is not None
             and hashlib.sha256(target.read_bytes()).hexdigest() == entry['sha256'])
 
 
