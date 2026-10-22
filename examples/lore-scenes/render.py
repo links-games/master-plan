@@ -15,7 +15,7 @@ from pathlib import Path
 import bpy
 from mathutils import Vector, noise
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from detail import meadow, distant_hills, masonry, sky, landmarks, surface_textures, scanned_understory, settlement_detail, weathered_stone
+from detail import meadow, distant_hills, masonry, sky, landmarks, surface_textures, scanned_understory, settlement_detail, weathered_stone, reset_detail
 from trees import natural_tree, reset as reset_trees
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -393,7 +393,8 @@ def paired_worlds(seed,mats):
 
 def setup(spec,width,samples):
     reset_trees()
-    for obj in list(bpy.data.objects): bpy.data.objects.remove(obj,do_unlink=True)
+    reset_detail()
+    for obj in list(bpy.context.scene.objects): bpy.data.objects.remove(obj,do_unlink=True)
     bpy.data.orphans_purge(do_recursive=True)
     bpy.context.preferences.filepaths.save_version=0
     seed=spec['seed']
@@ -561,6 +562,54 @@ def setup(spec,width,samples):
     return camera,target
 
 
+def split_worlds(spec, out, width, samples):
+    """Render distant settings independently for the pilot's split frame.
+
+    Full environments and packed native frames stay in the Blender project.
+    Re-running this script refreshes both frames before composing the result.
+    The lightweight browser export remains a separate paired study.
+    """
+    composite=bpy.context.scene
+    composite.name='Two skies — split frame'
+    for obj in list(composite.objects):
+        if obj.type!='CAMERA': bpy.data.objects.remove(obj,do_unlink=True)
+    images=[]
+    for side,world,kind,night in [('left','Raya','meadow',False),
+                                  ('right','Shacados','radio',True)]:
+        scene=bpy.data.scenes.new(f'Two skies — {world} environment')
+        bpy.context.window.scene=scene
+        setup({**spec,'world':world,'kind':kind,'night':night},width,samples)
+        scene.render.resolution_x=width//2
+        scene.render.resolution_y=round(width*9/16)
+        # Scene-linear frames avoid applying the display transform twice.
+        scene.render.image_settings.file_format='OPEN_EXR'
+        scene.render.image_settings.color_depth='32'
+        scene.render.image_settings.color_mode='RGBA'
+        path=out/f'{side}-native-frame.exr'
+        scene.render.filepath=str(path)
+        bpy.ops.render.render(write_still=True)
+        images.append(bpy.data.images.load(str(path),check_existing=True))
+    bpy.context.window.scene=composite
+    composite.use_nodes=True
+    nodes=composite.node_tree.nodes
+    nodes.clear()
+    previous=nodes.new('CompositorNodeRLayers')
+    for index,picture in enumerate(images):
+        source=nodes.new('CompositorNodeImage')
+        source.image=picture
+        transform=nodes.new('CompositorNodeTransform')
+        transform.inputs['X'].default_value=(-1 if index==0 else 1)*width/4
+        composite.node_tree.links.new(source.outputs['Image'],transform.inputs['Image'])
+        over=nodes.new('CompositorNodeAlphaOver')
+        over.inputs[0].default_value=1
+        composite.node_tree.links.new(previous.outputs['Image'],over.inputs[1])
+        composite.node_tree.links.new(transform.outputs['Image'],over.inputs[2])
+        previous=over
+    output=nodes.new('CompositorNodeComposite')
+    composite.node_tree.links.new(previous.outputs['Image'],output.inputs['Image'])
+    composite['composition']='Independent Raya and Shacados environments; split frame'
+
+
 def export_web(path,camera,target,spec):
     # Export base geometry (without render modifiers) as flat-shaded triangles.
     # Each triangle repeats vertices: no uint32-index extension or large assets.
@@ -611,6 +660,7 @@ def main():
         out=args.out/spec['id']
         out.mkdir(parents=True,exist_ok=True)
         triangles=export_web(out/'scene.json',camera,target,spec)
+        if spec['kind']=='two-skies': split_worlds(spec,out,args.width,args.samples)
         bpy.context.scene.render.filepath=str(out/'poster.png')
         bpy.ops.file.pack_all()
         bpy.ops.wm.save_as_mainfile(filepath=str(out/'environment.blend'),compress=True)

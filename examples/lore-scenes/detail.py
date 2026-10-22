@@ -8,7 +8,44 @@ import random
 from pathlib import Path
 
 import bpy
-from mathutils import Vector
+from mathutils import Matrix, Vector
+
+ROCK_TEMPLATES = []
+
+
+def reset_detail():
+    ROCK_TEMPLATES.clear()
+
+
+def scanned_stone(proxy, seed):
+    """Use measured stone silhouettes offline; retain the authored web proxy."""
+    if not ROCK_TEMPLATES:
+        path=Path(__file__).parent/'assets/rock_moss_set_01/rock_moss_set_01_1k.blend'
+        with bpy.data.libraries.load(str(path),link=False) as (source,target):
+            target.objects=list(source.objects)
+        ROCK_TEMPLATES.extend(obj for obj in target.objects if obj and obj.type=='MESH')
+    template=ROCK_TEMPLATES[seed%len(ROCK_TEMPLATES)]
+    bounds=[Vector(point) for point in template.bound_box]
+    low=Vector(tuple(min(point[axis] for point in bounds) for axis in range(3)))
+    high=Vector(tuple(max(point[axis] for point in bounds) for axis in range(3)))
+    center=(low+high)/2
+    dimensions=high-low
+    normalize=Matrix.Diagonal(tuple(2/max(value,.001) for value in dimensions)+(1,))
+    instance=template.copy()
+    instance.data=template.data
+    instance.parent=proxy
+    instance.matrix_parent_inverse=Matrix.Identity(4)
+    instance.matrix_basis=normalize @ Matrix.Translation(-center)
+    instance.hide_render=False
+    instance['render_only']=True
+    instance.name='Photogrammetry stone: '+proxy.name
+    bpy.context.collection.objects.link(instance)
+    material=proxy.data.materials[0]
+    if proxy.name.startswith(('Carbonaceous','Fractured')) or material.name!='Granite':
+        for slot in instance.material_slots:
+            slot.link='OBJECT'
+            slot.material=material
+    proxy.hide_render=True
 
 
 def detail_mesh(name, vertices, faces, material):
@@ -220,6 +257,8 @@ def weathered_stone(obj, seed):
     displace.texture=texture
     displace.strength=.075
     displace.texture_coords='GLOBAL'
+    if not obj.name.startswith('Blue glacier'):
+        scanned_stone(obj,seed)
 
 
 def woven_nest(z, material):
