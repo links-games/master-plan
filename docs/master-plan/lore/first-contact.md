@@ -99,16 +99,23 @@ _c_, for example `0.5`); the numbers below are asserted by
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Impact window                      | 2,000,000 km / 40,000 km/s = **50 s** — consistent with the text.                                                                                                                          |
 | Launch time                        | 0.01 s analysis + max(2.4 + 1.2, 4.5) s refit + 0.5 s rails + 0.001 s launch = **5.011 s**.                                                                                                |
-| Probe speed 500,000 km/s           | **Faster than light** (_c_ ≈ 299,792 km/s) — the only physical error in the scene.                                                                                                         |
+| Probe speed 500,000 km/s           | **Faster than light** (_c_ ≈ 299,792 km/s). Propulsion and launch acceleration also need the checks below.                                                                                 |
 | Proposed fix: probe at 0.5 _c_     | Intercept at **14.5 s**, about 1.42 million km out, leaving **35.5 s** before impact — still a tense, winnable scene.                                                                      |
 | Light delay                        | Light from 2 million km takes **6.67 s**; the object is really at about **1,733,000 km** when it is "seen". Rayan sensors must predict, not just look.                                     |
-| Energy of the object               | At 40,000 km/s (γ ≈ 1.009) every tonne carries about **194 megatons TNT** — the object is a planet-killer by speed alone, even with no warhead.                                            |
+| Energy of the object               | At 40,000 km/s (γ ≈ 1.009) every tonne carries about **194 megatons TNT** — a catastrophic impact for a tonne-scale object, even with no warhead.                                          |
 | Stop or deflect?                   | Stopping it before the station (probe at 0.5 _c_) needs about 57,000 _g_ for 35 s; a sideways push of only **2.8 km/s** makes it miss by 100 km. Deflecting is the harm-minimizing move.   |
 | Escorting the object               | To fly "synchronously", the probe must change its speed by about **178,000 km/s** relative to the object (relativistic velocity addition) — a huge maneuver budget.                        |
 | Correlation center in 0.002 s      | A round trip of 0.002 s at light speed limits the center to **about 300 km** away, so it is on board the probe or on the station's nearby escort.                                          |
 | Laser remote control of the object | Light lag over millions of km makes real-time remote control impossible, so the object **steers itself**: the controlling circuit is its own crude relay autopilot, and nobody follows it. |
 | Launch rails                       | 0.5 _c_ in 0.001 s means about 1.5 × 10¹⁰ _g_; even Rayan rails need a longer track or a slower launch _(open question)_.                                                                  |
 | Probe energy at 0.5 _c_            | About **3.3 megatons TNT per kilogram** of probe — Raya are clearly powerful, which makes their restraint meaningful.                                                                      |
+
+Total impact energy depends on the object’s mass, which the pilot does not
+specify. Speed alone cannot determine the scale of destruction. These
+kinematic calculations do not establish engineering feasibility: propulsion,
+heat, shielding, structural loads and survivable acceleration need separate
+models. An empty diagnostic list means only that this script's limited
+speed and interception checks passed.
 
 **The object's speed and Shacados' technology.** At 40,000 km/s
 (about 13% of _c_) the object is four times faster than even Dyson's
@@ -123,7 +130,7 @@ unsafe" spaceflight cannot launch it. The script now encodes this limit
 | Object speed and detection distance | **10,000 km/s**, seen at **500,000 km**: the impact window stays **50 s**.                                                                                          |
 | Rayan probe at 0.5 _c_              | Same 5.011 s launch; intercept at **7.8 s**, leaving **42.2 s** before impact.                                                                                      |
 | Light delay                         | **1.67 s**: Rayan sensors still predict, not just look.                                                                                                             |
-| Energy of the object                | About **12 megatons TNT per tonne** — still a planet-scale danger, which keeps the scene's stakes.                                                                  |
+| Energy of the object                | About **12 megatons TNT per tonne** — still a catastrophic local danger, which keeps the scene's stakes.                                                            |
 | Deflection                          | A sideways push of **2.4 km/s** makes it miss by 100 km.                                                                                                            |
 | Story hook                          | The probe was pushed by hundreds of dirty bombs launched from the ground ([Shacados spaceflight](shacados.md#spaceflight--the-least-advanced-and-most-unsafe-way)). |
 
@@ -159,8 +166,10 @@ cheaper than stopping.
    lore exceptions E1–E5 (Chord flight, the Orbi field, Copy, the Chord,
    Renewal), each justified in the
    [research note](../../case-studies/issue-1/data/research-raya-shacados.md).
-   Shacados has no exceptions: every one of its machines existed on Earth
-   or was seriously designed there.
+   Shacados has no magical exceptions. Its machines draw on historical
+   technology or serious engineering proposals; the extreme propulsion and
+   survival claims still require feasibility work. A design or kinematic
+   upper bound does not demonstrate buildable hardware.
 
 ## How it connects to Omi and the Links (proposal)
 
