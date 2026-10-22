@@ -141,3 +141,6 @@ vite.config.ts.timestamp-*
 
 # jscpd reports
 reports/
+
+# Generated master-plan website (scripts/build-site.mjs)
+_site/

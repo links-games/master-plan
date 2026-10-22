@@ -1,0 +1,42 @@
+# Caller of the shared AI pipeline. Copy into every links-games repository
+# as .github/workflows/ai-solve.yml. Design: docs/master-plan/ai-pipeline.md
+# in links-games/master-plan.
+#
+# Starts an attempt when:
+#   - a maintainer opens an issue, or anyone with triage rights adds `ai-solve`;
+#   - a maintainer comments `/solve`, `/retry` or `/continue` on an issue or PR;
+#   - a maintainer requests changes on an `issue-N-*` pull request;
+#   - the schedule finds new human feedback on an `ai-draft` pull request;
+#   - someone runs it manually with an issue or pull request number.
+name: AI solve
+
+on:
+  issues:
+    types: [opened, labeled]
+  issue_comment:
+    types: [created]
+  pull_request_review:
+    types: [submitted]
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Issue or pull request number to (re)solve
+        required: true
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  actions: write
+
+jobs:
+  ai-solve:
+    uses: links-games/.github/.github/workflows/ai-solve.yml@main
+    with:
+      dispatch_target: ${{ github.event.inputs.target || '' }}
+      # Workflows that must run on AI pull requests when the token cannot
+      # trigger them by itself; each must accept `workflow_dispatch`.
+      check_workflows: ci.yml
+    secrets: inherit

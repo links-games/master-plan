@@ -1,0 +1,142 @@
+[
+  {
+    "id": "BD-01",
+    "title": "Omi Colors",
+    "genre": "Coloring / color by number",
+    "lesson": "Colors, numbers, art history",
+    "cx": "2",
+    "wave": "W1",
+    "original": true,
+    "scene": "Fill a numbered botanical illustration with carefully chosen color swatches."
+  },
+  {
+    "id": "BD-02",
+    "title": "Pixel Studio",
+    "genre": "Pixel art editor",
+    "lesson": "Grids, symmetry",
+    "cx": "1–2",
+    "wave": null,
+    "original": true,
+    "scene": "Place mirrored pixels on a small grid to complete a symmetric creature."
+  },
+  {
+    "id": "BD-03",
+    "title": "Costume Designer",
+    "genre": "Dress-up / fashion",
+    "lesson": "Color theory, patterns of world cultures",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Arrange fabric patterns and reusable costume pieces on a friendly mannequin."
+  },
+  {
+    "id": "BD-04",
+    "title": "Origami Folds",
+    "genre": "Folding puzzle",
+    "lesson": "Geometry of folding",
+    "cx": "2–3",
+    "wave": null,
+    "original": true,
+    "scene": "Fold a square sheet along a clear crease to form a simple paper bird."
+  },
+  {
+    "id": "BD-05",
+    "title": "Robot Programmer",
+    "genre": "Visual coding (Lightbot, Scratch Jr)",
+    "lesson": "Sequences, loops, functions",
+    "cx": "2–3",
+    "wave": null,
+    "original": true,
+    "scene": "Snap movement and repeat blocks into a program guiding a small robot."
+  },
+  {
+    "id": "BD-06",
+    "title": "Map Maker",
+    "genre": "Map editor",
+    "lesson": "Cartography, scale, compass directions",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Draw a walking map with a compass rose and a consistent distance scale."
+  },
+  {
+    "id": "BD-07",
+    "title": "Marble Run",
+    "genre": "Construction physics",
+    "lesson": "Gravity, energy conservation",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Connect ramps and loops into a visible tabletop marble run."
+  },
+  {
+    "id": "BD-08",
+    "title": "Animation Studio",
+    "genre": "Flipbook maker",
+    "lesson": "Frames, timing, persistence of vision",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Arrange successive drawings of a bouncing seed in a flipbook timeline."
+  },
+  {
+    "id": "BD-09",
+    "title": "Level Maker",
+    "genre": "Level editor for our other games",
+    "lesson": "Design, testing, sharing",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Place a platform and a goal in a miniature level editor, then test the route."
+  },
+  {
+    "id": "BD-10",
+    "title": "Tiny Architect",
+    "genre": "Building design",
+    "lesson": "Structures, materials, accessibility",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Build a tiny accessible home with a clear ramp and load-bearing frame."
+  },
+  {
+    "id": "BD-11",
+    "title": "Block World",
+    "genre": "Voxel sandbox (Minecraft)",
+    "lesson": "Geometry, volume, engineering, redstone-like logic",
+    "cx": "5",
+    "wave": null,
+    "original": true,
+    "scene": "Construct a small voxel greenhouse using visible blocks and simple logic wiring."
+  },
+  {
+    "id": "BD-12",
+    "title": "Room for Everyone",
+    "genre": "Unpacking and room organization",
+    "lesson": "Spatial fit and accessible design",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Unpack study objects into a tiny room, leaving a clear accessible path from the door to the desk."
+  },
+  {
+    "id": "BD-13",
+    "title": "Research Backpack",
+    "genre": "Inventory packing and synergies",
+    "lesson": "Area and adjacency constraints",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Fit differently shaped field tools into a gridded backpack, keeping complementary items adjacent."
+  },
+  {
+    "id": "BD-14",
+    "title": "Clay and Symmetry",
+    "genre": "Pottery shaping",
+    "lesson": "Rotational symmetry and volume",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Shape a spinning clay pot with a gentle touch, with a side profile and reference silhouette visible."
+  }
+]

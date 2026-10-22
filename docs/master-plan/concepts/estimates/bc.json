@@ -1,0 +1,435 @@
+[
+  {
+    "id": "BC-01",
+    "algorithms": [
+      "grid-board",
+      "board-rules",
+      "game-ai-minimax",
+      "tap-feedback"
+    ],
+    "extraLoc": 150,
+    "assets": {
+      "sprites": 10,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 15,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "3x3 tic-tac-toe against a kind AI with three levels and hot-seat play, plus ultimate tic-tac-toe unlocked after five wins. Online play and larger boards are left out."
+  },
+  {
+    "id": "BC-02",
+    "algorithms": [
+      "board-rules",
+      "tap-feedback",
+      "counting",
+      "tween-cause-effect"
+    ],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 14,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 25,
+      "levels": 2,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "A 1 to 50 path board with rope bridges and ladders where tapping the big die moves the piece with voiced counting, for one to four players. The 100-square board and history notes come later."
+  },
+  {
+    "id": "BC-03",
+    "algorithms": ["card-rules", "shuffle-deal", "tap-feedback"],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 24,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 30,
+      "levels": 0,
+      "content": 24,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "Six animal families of four cards, two to four players with friendly AI that remembers asks, and a polite voiced ask on each turn. Custom families and online play are left out."
+  },
+  {
+    "id": "BC-04",
+    "algorithms": ["board-rules", "shuffle-deal", "drag-drop-snap"],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 8,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 15,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "Double-six dominoes against one gentle AI where matching dot counts glow at open chain ends and a tap places the domino. Scoring variants like Muggins and double-nine sets come later."
+  },
+  {
+    "id": "BC-05",
+    "algorithms": [
+      "grid-board",
+      "board-rules",
+      "game-ai-minimax",
+      "tap-feedback"
+    ],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 20,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 6,
+      "sfx": 10,
+      "music": 2,
+      "voice": 30,
+      "levels": 0,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "The club hub with reversi and four in a row against Rela at three kind levels, legal-move highlights and hot-seat play. Checkers and mancala are deferred to later updates."
+  },
+  {
+    "id": "BC-06",
+    "algorithms": ["board-rules", "tap-feedback", "counting"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 10,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 8,
+      "music": 1,
+      "voice": 20,
+      "levels": 12,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "Three to five acorn piles against a gardener AI with deliberate kind mistakes, 12 guided positions and an optional binary view that reveals the XOR strategy. Misere Nim comes later."
+  },
+  {
+    "id": "BC-07",
+    "algorithms": [
+      "board-rules",
+      "tap-feedback",
+      "game-ai-minimax",
+      "tween-cause-effect"
+    ],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 16,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 25,
+      "levels": 1,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "A four-colour patterned race track where pieces sent back simply go home, tap-to-roll dice, highlighted legal moves and AI or hot-seat seats. Team and rule variants are left out."
+  },
+  {
+    "id": "BC-08",
+    "algorithms": [
+      "card-rules",
+      "shuffle-deal",
+      "drag-drop-snap",
+      "puzzle-solver-hints"
+    ],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 20,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 5,
+      "sfx": 8,
+      "music": 1,
+      "voice": 5,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "Klondike and FreeCell with drag or tap moves, unlimited undo, auto-complete and a solver that offers winnable deals and next-move hints. Spider and daily challenges come later."
+  },
+  {
+    "id": "BC-09",
+    "algorithms": ["tap-feedback", "shuffle-deal", "puzzle-solver-hints"],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 42,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 36,
+      "levels": 10,
+      "content": 36,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "10 layered layouts of original illustrated tiles where free matching pairs are tapped away, with solvable deals, shuffle and info cards for Chinese numerals. Timed modes are left out."
+  },
+  {
+    "id": "BC-10",
+    "algorithms": [
+      "card-rules",
+      "shuffle-deal",
+      "drag-drop-snap",
+      "game-ai-minimax"
+    ],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 16,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 5,
+      "sfx": 8,
+      "music": 1,
+      "voice": 20,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "Two-player rummy against one AI with numbered cards in four suits, drag-to-meld sets and runs, laying off and a planning hint. Joker variants and more players are left out."
+  },
+  {
+    "id": "BC-11",
+    "algorithms": [
+      "grid-board",
+      "board-rules",
+      "game-ai-minimax",
+      "graph-network",
+      "tap-feedback"
+    ],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 12,
+      "animations": 4,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 8,
+      "music": 1,
+      "voice": 20,
+      "levels": 10,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "Hex on 7x7 and 9x9 boards against a Monte Carlo AI with three levels, the swap rule, a highlighted winning chain and 10 teaching puzzles. Bigger boards and online play come later."
+  },
+  {
+    "id": "BC-12",
+    "algorithms": [
+      "grid-board",
+      "board-rules",
+      "game-ai-minimax",
+      "tap-feedback"
+    ],
+    "extraLoc": 1400,
+    "assets": {
+      "sprites": 12,
+      "animations": 4,
+      "backgrounds": 3,
+      "ui": 6,
+      "sfx": 8,
+      "music": 2,
+      "voice": 30,
+      "levels": 30,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "Capture Go and 9x9 Go with liberty highlights, territory scoring, a gentle AI and 30 tutorial and life-and-death problems. 13x13 and 19x19 boards are deferred."
+  },
+  {
+    "id": "BC-13",
+    "algorithms": [
+      "grid-board",
+      "board-rules",
+      "game-ai-minimax",
+      "tap-feedback",
+      "tween-cause-effect"
+    ],
+    "extraLoc": 1600,
+    "assets": {
+      "sprites": 16,
+      "animations": 12,
+      "backgrounds": 3,
+      "ui": 6,
+      "sfx": 10,
+      "music": 2,
+      "voice": 40,
+      "levels": 20,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "Full chess rules with friendly piece characters that go home when captured, 20 mini-game lessons per piece, a kind AI with hints and short history cards. Openings library and clocks are left out."
+  },
+  {
+    "id": "BC-14",
+    "algorithms": [
+      "board-rules",
+      "shuffle-deal",
+      "graph-network",
+      "drag-drop-snap"
+    ],
+    "extraLoc": 1300,
+    "assets": {
+      "sprites": 30,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 6,
+      "sfx": 12,
+      "music": 2,
+      "voice": 40,
+      "levels": 6,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "One island board with rising water cards, four rescuer roles with special actions, AI or hot-seat teammates and 6 scenarios of growing difficulty. Online co-op and a map editor are left out."
+  },
+  {
+    "id": "BC-15",
+    "algorithms": [
+      "board-rules",
+      "game-ai-minimax",
+      "drag-drop-snap",
+      "tap-feedback"
+    ],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 12,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 5,
+      "sfx": 8,
+      "music": 1,
+      "voice": 25,
+      "levels": 8,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "Full backgammon on an original woodland board with highlighted legal destinations, bearing off, an expectiminimax AI and 8 lessons on dice odds. The doubling cube and match play are left out."
+  },
+  {
+    "id": "BC-16",
+    "algorithms": [
+      "card-rules",
+      "shuffle-deal",
+      "game-ai-minimax",
+      "tap-feedback"
+    ],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 14,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 20,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "Four-player Hearts with leaf suits against three woodland AI players, passing, a played-cards tracker and gentle advice. Shooting the moon variants and online play are left out."
+  },
+  {
+    "id": "BC-17",
+    "algorithms": [
+      "card-rules",
+      "shuffle-deal",
+      "game-ai-minimax",
+      "quest-state"
+    ],
+    "extraLoc": 1000,
+    "assets": {
+      "sprites": 20,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 6,
+      "sfx": 10,
+      "music": 2,
+      "voice": 30,
+      "levels": 20,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 9,
+    "plan": "Four-seat cooperative trick-taking with numbered signal cards, one limited signal per player, AI crewmates that read signals and 20 research missions. Online crews are left out."
+  },
+  {
+    "id": "BC-18",
+    "algorithms": [
+      "card-rules",
+      "shuffle-deal",
+      "quest-state",
+      "level-generator",
+      "drag-drop-snap"
+    ],
+    "extraLoc": 1800,
+    "assets": {
+      "sprites": 70,
+      "animations": 10,
+      "backgrounds": 5,
+      "ui": 8,
+      "sfx": 16,
+      "music": 3,
+      "voice": 40,
+      "levels": 12,
+      "content": 120,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 9,
+    "plan": "One mountain expedition of a branching map with weather, rope and shelter cards, a 60-card pool to draft from and 12 encounter types, with no combat or gambling. More regions and characters are deferred."
+  }
+]

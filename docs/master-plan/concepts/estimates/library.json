@@ -1,0 +1,686 @@
+{
+  "$comment": "Libraries for the per-game estimates in docs/master-plan/concepts/estimates/<family>.json. LOC are game-specific lines of code for a first playable version (prototype plus polish), excluding the shared platform. Asset hours assume the AI-assisted pipeline of docs/master-plan/ai-pipeline.md plus human review. Rough relative estimates for ranking, not commitments.",
+  "productivity": {
+    "locPerDay": 120,
+    "assetHoursPerDay": 6
+  },
+  "playFactor": {
+    "5": 1.0,
+    "4": 1.25,
+    "3": 1.5,
+    "2": 2.0,
+    "1": 3.0
+  },
+  "toddlerRubric": {
+    "5": "One tap anywhere gives an instant response; no goal or failure; works with co-play from age 1.",
+    "4": "Tap a specific big target or drag one object to a big slot; one-step goal; ages 2-3.",
+    "3": "Choose among 2-4 options, sort or match, or a two-step action; ages 3-4.",
+    "2": "Needs simple rules, turns, a sequence or remembering several steps; ages 4-6.",
+    "1": "Needs reading, precise motor control, timing pressure or abstract rules; not a toddler game (6+)."
+  },
+  "shared": [
+    {
+      "id": "app-shell",
+      "name": "App shell, menus, settings and parental gate",
+      "loc": 1500
+    },
+    {
+      "id": "input-a11y",
+      "name": "Touch, keyboard and accessibility layer",
+      "loc": 800
+    },
+    {
+      "id": "save-profile",
+      "name": "Saves and the shared profile",
+      "loc": 600
+    },
+    {
+      "id": "audio-engine",
+      "name": "Audio playback, mixing and voice",
+      "loc": 500
+    },
+    {
+      "id": "i18n",
+      "name": "Localization and voice-over loading",
+      "loc": 400
+    },
+    {
+      "id": "loading-screen",
+      "name": "Raya loading screens and transitions",
+      "loc": 300
+    },
+    {
+      "id": "rng-seed",
+      "name": "Seeded randomness and daily seeds",
+      "loc": 100
+    }
+  ],
+  "algorithms": [
+    {
+      "id": "tap-feedback",
+      "name": "Tap feedback",
+      "loc": 80,
+      "difficulty": 1,
+      "description": "Large tap targets that answer instantly with sound, motion and color."
+    },
+    {
+      "id": "drag-drop-snap",
+      "name": "Drag and snap",
+      "loc": 150,
+      "difficulty": 1,
+      "description": "Drag an object and snap it into a matching slot, with forgiving hit areas."
+    },
+    {
+      "id": "swipe-gesture",
+      "name": "Swipe gestures",
+      "loc": 80,
+      "difficulty": 1,
+      "description": "Recognize swipes and flicks with direction and speed."
+    },
+    {
+      "id": "multi-touch",
+      "name": "Multi-touch gestures",
+      "loc": 150,
+      "difficulty": 2,
+      "description": "Pinch, rotate and two-finger gestures."
+    },
+    {
+      "id": "typing-input",
+      "name": "Keyboard and letter input",
+      "loc": 150,
+      "difficulty": 1,
+      "description": "On-screen and physical keyboard input for letters and words."
+    },
+    {
+      "id": "draw-trace",
+      "name": "Freehand drawing",
+      "loc": 250,
+      "difficulty": 2,
+      "description": "Finger painting and strokes with smoothing, brushes and undo."
+    },
+    {
+      "id": "trace-check",
+      "name": "Trace checking",
+      "loc": 200,
+      "difficulty": 2,
+      "description": "Compare a traced stroke with a template path (letters, numbers, shapes) with tolerance."
+    },
+    {
+      "id": "flood-fill",
+      "name": "Coloring fill",
+      "loc": 200,
+      "difficulty": 2,
+      "description": "Tap-to-fill regions of line art, with region maps."
+    },
+    {
+      "id": "tween-cause-effect",
+      "name": "Cause-and-effect animation",
+      "loc": 100,
+      "difficulty": 1,
+      "description": "Scripted reactions: pop, bounce, grow, hide and reveal."
+    },
+    {
+      "id": "particle-effects",
+      "name": "Particles",
+      "loc": 150,
+      "difficulty": 1,
+      "description": "Bubbles, sparkles, confetti, smoke, rain and snow."
+    },
+    {
+      "id": "peekaboo-reveal",
+      "name": "Hide and reveal",
+      "loc": 80,
+      "difficulty": 1,
+      "description": "Objects hide behind covers and reappear on tap or after a pause."
+    },
+    {
+      "id": "dress-up-layers",
+      "name": "Layered dress-up",
+      "loc": 150,
+      "difficulty": 1,
+      "description": "Swap clothing and accessory layers on a character with anchor points."
+    },
+    {
+      "id": "sticker-scene",
+      "name": "Sticker scene",
+      "loc": 200,
+      "difficulty": 1,
+      "description": "Place, scale and arrange stickers in a scene; save the scene."
+    },
+    {
+      "id": "camera-photo",
+      "name": "Camera input",
+      "loc": 250,
+      "difficulty": 3,
+      "description": "Use the device camera with permission (scan, photo); offline processing only."
+    },
+    {
+      "id": "microphone-input",
+      "name": "Microphone input",
+      "loc": 200,
+      "difficulty": 3,
+      "description": "Volume and pitch detection from the microphone, processed on device."
+    },
+    {
+      "id": "grid-board",
+      "name": "Grid board",
+      "loc": 150,
+      "difficulty": 1,
+      "description": "Grid model, rendering, selection and highlighting."
+    },
+    {
+      "id": "card-memory",
+      "name": "Memory cards",
+      "loc": 120,
+      "difficulty": 1,
+      "description": "Flip, compare and match pairs of cards."
+    },
+    {
+      "id": "shuffle-deal",
+      "name": "Seeded shuffle and deal",
+      "loc": 60,
+      "difficulty": 1,
+      "description": "Deterministic shuffling and dealing from a seed."
+    },
+    {
+      "id": "slide-merge",
+      "name": "Slide and merge",
+      "loc": 200,
+      "difficulty": 1,
+      "description": "Slide tiles in four directions and merge equal ones (2048 family)."
+    },
+    {
+      "id": "match-cascade",
+      "name": "Match-3 cascade",
+      "loc": 400,
+      "difficulty": 2,
+      "description": "Swap, detect lines, clear, refill and cascade."
+    },
+    {
+      "id": "sliding-tiles",
+      "name": "Sliding tile puzzle",
+      "loc": 200,
+      "difficulty": 2,
+      "description": "Fifteen-puzzle movement with solvability checks."
+    },
+    {
+      "id": "jigsaw-cut",
+      "name": "Jigsaw pieces",
+      "loc": 300,
+      "difficulty": 2,
+      "description": "Cut images into pieces with tabs, snap neighbors and edges."
+    },
+    {
+      "id": "polygon-fit",
+      "name": "Shape fitting",
+      "loc": 350,
+      "difficulty": 3,
+      "description": "Fit rotated polygons into an outline and detect coverage (tangram)."
+    },
+    {
+      "id": "spot-difference",
+      "name": "Spot the difference",
+      "loc": 120,
+      "difficulty": 1,
+      "description": "Hit regions for differences with forgiving radius."
+    },
+    {
+      "id": "hidden-object",
+      "name": "Hidden objects",
+      "loc": 150,
+      "difficulty": 1,
+      "description": "Find listed objects in a busy scene; hint glows."
+    },
+    {
+      "id": "sort-classify",
+      "name": "Sorting by attribute",
+      "loc": 120,
+      "difficulty": 1,
+      "description": "Sort objects into bins by color, shape, size or category."
+    },
+    {
+      "id": "pattern-sequence",
+      "name": "Pattern completion",
+      "loc": 150,
+      "difficulty": 1,
+      "description": "Generate and check repeating patterns and sequences."
+    },
+    {
+      "id": "counting",
+      "name": "Counting and quantity",
+      "loc": 120,
+      "difficulty": 1,
+      "description": "Count objects, match numerals to quantities, subitizing."
+    },
+    {
+      "id": "arithmetic-gen",
+      "name": "Arithmetic generator",
+      "loc": 200,
+      "difficulty": 2,
+      "description": "Generate graded arithmetic tasks and check answers."
+    },
+    {
+      "id": "sudoku-solver",
+      "name": "Constraint puzzle solver",
+      "loc": 400,
+      "difficulty": 3,
+      "description": "Constraint propagation and backtracking for Sudoku-like grids."
+    },
+    {
+      "id": "puzzle-solver-hints",
+      "name": "Puzzle solver and hints",
+      "loc": 400,
+      "difficulty": 3,
+      "description": "Search-based solver that validates levels and gives the next-step hint."
+    },
+    {
+      "id": "level-generator",
+      "name": "Procedural level generator",
+      "loc": 500,
+      "difficulty": 3,
+      "description": "Generate levels from a seed and keep only solvable ones within a difficulty band."
+    },
+    {
+      "id": "board-rules",
+      "name": "Board game rules",
+      "loc": 400,
+      "difficulty": 2,
+      "description": "Turn order, legal moves and win conditions for a board game."
+    },
+    {
+      "id": "card-rules",
+      "name": "Card game rules",
+      "loc": 450,
+      "difficulty": 3,
+      "description": "Deck, hands, tricks or melds, legal plays and scoring."
+    },
+    {
+      "id": "game-ai-minimax",
+      "name": "Turn-based AI",
+      "loc": 500,
+      "difficulty": 3,
+      "description": "Minimax or Monte Carlo opponent with difficulty levels and kind play."
+    },
+    {
+      "id": "graph-network",
+      "name": "Node-link graph",
+      "loc": 300,
+      "difficulty": 2,
+      "description": "Create, connect and lay out nodes and links; detect paths and cycles."
+    },
+    {
+      "id": "logic-circuit",
+      "name": "Logic circuit simulation",
+      "loc": 450,
+      "difficulty": 3,
+      "description": "Gates, wires and signal propagation."
+    },
+    {
+      "id": "word-list",
+      "name": "Word lists and validation",
+      "loc": 150,
+      "difficulty": 1,
+      "description": "Per-language word lists, lookup and validation."
+    },
+    {
+      "id": "phonics-audio",
+      "name": "Letter sounds",
+      "loc": 120,
+      "difficulty": 1,
+      "description": "Play phonemes and letter names with matching visuals."
+    },
+    {
+      "id": "word-search-gen",
+      "name": "Word search generator",
+      "loc": 300,
+      "difficulty": 2,
+      "description": "Place words in a grid in several directions; fill the rest."
+    },
+    {
+      "id": "crossword-gen",
+      "name": "Crossword generator",
+      "loc": 600,
+      "difficulty": 3,
+      "description": "Fill a crossword grid from a word list with clues."
+    },
+    {
+      "id": "spaced-repetition",
+      "name": "Spaced repetition",
+      "loc": 250,
+      "difficulty": 2,
+      "description": "Schedule reviews of items by recall success."
+    },
+    {
+      "id": "speech-recognition",
+      "name": "Speech recognition",
+      "loc": 400,
+      "difficulty": 4,
+      "description": "On-device recognition of short words; optional, never required."
+    },
+    {
+      "id": "lino-parser",
+      "name": "Links Notation parser",
+      "loc": 300,
+      "difficulty": 2,
+      "description": "Parse and render LiNo snippets as links."
+    },
+    {
+      "id": "dialogue-branching",
+      "name": "Branching dialogue",
+      "loc": 300,
+      "difficulty": 2,
+      "description": "Dialogue trees with conditions and voice lines."
+    },
+    {
+      "id": "audio-synth",
+      "name": "Playable instrument",
+      "loc": 250,
+      "difficulty": 2,
+      "description": "Web Audio synthesis or samples with low-latency playback."
+    },
+    {
+      "id": "rhythm-timing",
+      "name": "Rhythm timing",
+      "loc": 300,
+      "difficulty": 2,
+      "description": "Beat clock, timing windows, latency calibration."
+    },
+    {
+      "id": "music-sequencer",
+      "name": "Music sequencer",
+      "loc": 450,
+      "difficulty": 3,
+      "description": "Step sequencer with tracks, loops and tempo."
+    },
+    {
+      "id": "physics-2d",
+      "name": "2D physics",
+      "loc": 300,
+      "difficulty": 2,
+      "description": "Rigid bodies, collisions and joints through a physics library adapter."
+    },
+    {
+      "id": "stacking-stability",
+      "name": "Stacking and balance",
+      "loc": 250,
+      "difficulty": 2,
+      "description": "Stability checks, wobble and gentle collapse."
+    },
+    {
+      "id": "rope-cloth",
+      "name": "Ropes and cloth",
+      "loc": 350,
+      "difficulty": 3,
+      "description": "Verlet ropes and cloth with constraints."
+    },
+    {
+      "id": "soft-body",
+      "name": "Soft bodies",
+      "loc": 400,
+      "difficulty": 3,
+      "description": "Jelly-like objects with spring meshes."
+    },
+    {
+      "id": "fluid-2d",
+      "name": "2D fluid",
+      "loc": 700,
+      "difficulty": 4,
+      "description": "Grid or particle fluid for water, sand or air."
+    },
+    {
+      "id": "projectile-arc",
+      "name": "Projectile arcs",
+      "loc": 150,
+      "difficulty": 1,
+      "description": "Aim and launch with a predicted arc."
+    },
+    {
+      "id": "platformer-controller",
+      "name": "Platformer controller",
+      "loc": 600,
+      "difficulty": 3,
+      "description": "Run, jump and climb on a tile map with forgiving controls."
+    },
+    {
+      "id": "runner-loop",
+      "name": "Endless runner",
+      "loc": 350,
+      "difficulty": 2,
+      "description": "Scrolling lanes, spawning and collisions."
+    },
+    {
+      "id": "vehicle-sim",
+      "name": "Vehicle handling",
+      "loc": 500,
+      "difficulty": 3,
+      "description": "Simple car, boat or glider handling with tuned forces."
+    },
+    {
+      "id": "character-3d",
+      "name": "3D character controller",
+      "loc": 700,
+      "difficulty": 4,
+      "description": "Walk, look and interact in 3D with touch controls."
+    },
+    {
+      "id": "camera-3d",
+      "name": "3D camera",
+      "loc": 300,
+      "difficulty": 3,
+      "description": "Orbit, follow and framing cameras for touch screens."
+    },
+    {
+      "id": "terrain-gen",
+      "name": "Procedural terrain",
+      "loc": 600,
+      "difficulty": 4,
+      "description": "Height-map terrain and biomes from a seed."
+    },
+    {
+      "id": "voxel-build",
+      "name": "Voxel building",
+      "loc": 900,
+      "difficulty": 4,
+      "description": "Place and remove blocks in a 3D grid with meshing."
+    },
+    {
+      "id": "pose-tracking",
+      "name": "Body pose tracking",
+      "loc": 600,
+      "difficulty": 4,
+      "description": "Camera pose estimation on device for movement games."
+    },
+    {
+      "id": "pathfinding",
+      "name": "Pathfinding",
+      "loc": 250,
+      "difficulty": 2,
+      "description": "A* on grids and graphs."
+    },
+    {
+      "id": "agent-steering",
+      "name": "Agent steering",
+      "loc": 350,
+      "difficulty": 3,
+      "description": "Flocking, seeking and avoidance for creatures and crowds."
+    },
+    {
+      "id": "ecosystem-sim",
+      "name": "Ecosystem simulation",
+      "loc": 700,
+      "difficulty": 4,
+      "description": "Food webs, populations and seasons."
+    },
+    {
+      "id": "economy-sim",
+      "name": "Resource economy",
+      "loc": 600,
+      "difficulty": 3,
+      "description": "Resources, production chains and needs, without money."
+    },
+    {
+      "id": "city-sim",
+      "name": "Settlement simulation",
+      "loc": 800,
+      "difficulty": 4,
+      "description": "Zoned grid, services, flows and needs."
+    },
+    {
+      "id": "weather-sim",
+      "name": "Weather and climate",
+      "loc": 500,
+      "difficulty": 3,
+      "description": "Temperature, rain, wind and seasons over a map."
+    },
+    {
+      "id": "orbital-mechanics",
+      "name": "Orbital mechanics",
+      "loc": 500,
+      "difficulty": 4,
+      "description": "N-body or patched-conic orbits with stable integration."
+    },
+    {
+      "id": "relativity",
+      "name": "Relativistic physics",
+      "loc": 600,
+      "difficulty": 5,
+      "description": "Light delay, Lorentz factors and relativistic kinematics."
+    },
+    {
+      "id": "optics-rays",
+      "name": "Ray optics",
+      "loc": 450,
+      "difficulty": 3,
+      "description": "Mirrors, lenses and refraction with ray tracing."
+    },
+    {
+      "id": "electric-circuit",
+      "name": "Electric circuits",
+      "loc": 500,
+      "difficulty": 3,
+      "description": "Batteries, resistors, bulbs and switches with circuit solving."
+    },
+    {
+      "id": "chemistry-reactions",
+      "name": "Chemistry reactions",
+      "loc": 500,
+      "difficulty": 3,
+      "description": "Elements, bonds and reaction rules for a safe virtual lab."
+    },
+    {
+      "id": "molecule-builder",
+      "name": "Molecule builder",
+      "loc": 400,
+      "difficulty": 3,
+      "description": "Atoms and bonds with valence rules and 3D view."
+    },
+    {
+      "id": "acoustics-sim",
+      "name": "Acoustics and waves",
+      "loc": 450,
+      "difficulty": 3,
+      "description": "Standing waves, resonance and levitation nodes."
+    },
+    {
+      "id": "day-cycle",
+      "name": "Day and season cycle",
+      "loc": 120,
+      "difficulty": 1,
+      "description": "Time of day, seasons and lighting changes."
+    },
+    {
+      "id": "idle-progression",
+      "name": "Idle progression",
+      "loc": 250,
+      "difficulty": 2,
+      "description": "Gentle, capped progress over real time with no pressure."
+    },
+    {
+      "id": "inventory-crafting",
+      "name": "Inventory and crafting",
+      "loc": 400,
+      "difficulty": 2,
+      "description": "Items, recipes and repair."
+    },
+    {
+      "id": "quest-state",
+      "name": "Quest and story state",
+      "loc": 300,
+      "difficulty": 2,
+      "description": "Goals, flags and chapters with save and resume."
+    },
+    {
+      "id": "map-geo",
+      "name": "Maps and geography",
+      "loc": 400,
+      "difficulty": 3,
+      "description": "Map projection, regions and places."
+    },
+    {
+      "id": "timeline",
+      "name": "Timeline",
+      "loc": 250,
+      "difficulty": 2,
+      "description": "Ordering events on a time axis with zoom."
+    },
+    {
+      "id": "multiplayer-sync",
+      "name": "Network play",
+      "loc": 1200,
+      "difficulty": 5,
+      "description": "Real-time or turn-based sync, rooms and safety. Deferred by default."
+    }
+  ],
+  "assets": [
+    {
+      "id": "sprites",
+      "hours": 1.5,
+      "description": "2D character or object drawing, cleaned and exported"
+    },
+    {
+      "id": "animations",
+      "hours": 3,
+      "description": "Animated state of a character or object (Rive or sprite sheet)"
+    },
+    {
+      "id": "backgrounds",
+      "hours": 4,
+      "description": "Full background or loading-screen painting"
+    },
+    {
+      "id": "ui",
+      "hours": 2,
+      "description": "UI screen or panel design"
+    },
+    {
+      "id": "sfx",
+      "hours": 0.5,
+      "description": "Sound effect"
+    },
+    {
+      "id": "music",
+      "hours": 6,
+      "description": "Music loop or short track"
+    },
+    {
+      "id": "voice",
+      "hours": 0.3,
+      "description": "Voice line in the base language (translations are counted separately)"
+    },
+    {
+      "id": "levels",
+      "hours": 1,
+      "description": "Authored level, puzzle or scenario, tested"
+    },
+    {
+      "id": "content",
+      "hours": 0.1,
+      "description": "Content item: word, fact, card text or prompt"
+    },
+    {
+      "id": "models3d",
+      "hours": 8,
+      "description": "3D model, textured and rigged when needed"
+    }
+  ]
+}

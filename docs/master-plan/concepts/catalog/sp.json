@@ -1,0 +1,172 @@
+[
+  {
+    "id": "SP-01",
+    "title": "Star Names",
+    "genre": "Connect the dots",
+    "lesson": "Constellations and real star data",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Connect stars on a dark sky chart to reveal a recognizable constellation."
+  },
+  {
+    "id": "SP-02",
+    "title": "Planet Pairs",
+    "genre": "Memory",
+    "lesson": "Planets and moons",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Turn over paired planet and moon cards on a small observatory desk."
+  },
+  {
+    "id": "SP-03",
+    "title": "Deflect!",
+    "genre": "Physics puzzle (2D vector)",
+    "lesson": "Impulse: a small push early beats a big push late",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Apply a gentle early impulse to a comet so its projected orbit misses a protected station."
+  },
+  {
+    "id": "SP-04",
+    "title": "Lunar Lander",
+    "genre": "Lander",
+    "lesson": "Thrust, gravity, fuel budget",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Throttle a tiny lunar lander above a level landing pad with a visible fuel reserve."
+  },
+  {
+    "id": "SP-05",
+    "title": "Orbit Garden",
+    "genre": "Gravity sandbox",
+    "lesson": "Kepler's laws, orbits",
+    "cx": "3–4",
+    "wave": null,
+    "original": true,
+    "scene": "Adjust a planet's initial velocity in a simple orbital sandbox with traced ellipses."
+  },
+  {
+    "id": "SP-06",
+    "title": "Station Watch",
+    "genre": "Monitoring / idle sim",
+    "lesson": "Detection, light delay, prediction",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Compare delayed telescope readings on a calm orbital-station monitoring display."
+  },
+  {
+    "id": "SP-07",
+    "title": "Probe Workshop",
+    "genre": "Engineering builder",
+    "lesson": "Mass budgets, the rocket equation, sensors",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Assemble a probe from sensors, battery and thruster modules on a workbench."
+  },
+  {
+    "id": "SP-08",
+    "title": "Light-Lag Chess",
+    "genre": "Turn-based strategy with delayed information",
+    "lesson": "Light speed and information",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Send a move across a space-strategy board where a visible signal takes time to arrive."
+  },
+  {
+    "id": "SP-09",
+    "title": "Telescope Tour",
+    "genre": "Exploration",
+    "lesson": "Real sky catalogs, distances, light-years",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Explore a mapped star field through a telescope with distance-scale markers."
+  },
+  {
+    "id": "SP-10",
+    "title": "Solar Sail",
+    "genre": "Navigation",
+    "lesson": "Radiation pressure, slow but endless thrust",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Orient a thin solar sail so sunlight changes a probe's trajectory."
+  },
+  {
+    "id": "SP-11",
+    "title": "Satellite Network",
+    "genre": "Network builder",
+    "lesson": "Orbits, coverage, communication delay",
+    "cx": "4–5",
+    "wave": null,
+    "original": true,
+    "scene": "Connect satellites around a globe to cover isolated ground stations."
+  },
+  {
+    "id": "SP-12",
+    "title": "Rocket Builder",
+    "genre": "Rocket sim (Kerbal Space Program)",
+    "lesson": "Staging, delta-v, orbital mechanics",
+    "cx": "5",
+    "wave": null,
+    "original": true,
+    "scene": "Stage a small research rocket with a clear propellant and dry-mass cutaway."
+  },
+  {
+    "id": "SP-13",
+    "title": "Planet Maker",
+    "genre": "God game",
+    "lesson": "Habitable zones, atmospheres, climate",
+    "cx": "5–6",
+    "wave": null,
+    "original": true,
+    "scene": "Adjust a fictional planet's atmosphere and incoming sunlight using model controls."
+  },
+  {
+    "id": "SP-14",
+    "title": "Relativity Ride",
+    "genre": "Flight sim near light speed",
+    "lesson": "Time dilation, Doppler, aberration",
+    "cx": "6",
+    "wave": null,
+    "original": true,
+    "scene": "Compare clocks on a near-light-speed spacecraft and its home station."
+  },
+  {
+    "id": "SP-15",
+    "title": "Orbital Dock",
+    "genre": "Precision docking simulator",
+    "lesson": "Relative velocity and reference frames",
+    "cx": "4",
+    "wave": null,
+    "original": false,
+    "scene": "Align a small research capsule with a rotating station docking ring using tiny reaction-control puffs."
+  },
+  {
+    "id": "SP-16",
+    "title": "Debris Sweep",
+    "genre": "Survivor-like rescue arcade",
+    "lesson": "Vectors and prioritization",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Pilot a rescue drone through drifting debris, using gentle tractor-field arcs to clear paths for stranded probes."
+  },
+  {
+    "id": "SP-17",
+    "title": "Rover Geologist",
+    "genre": "Rover exploration simulator",
+    "lesson": "Geology and instrument uncertainty",
+    "cx": "4",
+    "wave": null,
+    "original": false,
+    "scene": "Drive a compact scientific rover to layered rock outcrops and compare a sample with instrument readings."
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "id": "NC-01",
+    "title": "Healthy Habits",
+    "genre": "Routine toy (brush teeth, wash hands)",
+    "lesson": "Hygiene, sleep, healthy food",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Help a round link friend complete a gentle illustrated handwashing routine."
+  },
+  {
+    "id": "NC-02",
+    "title": "Weather Dress-Up",
+    "genre": "Dress-up",
+    "lesson": "Weather, temperature, seasons",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Choose a raincoat and boots for a friend beside a window showing rainy weather."
+  },
+  {
+    "id": "NC-03",
+    "title": "Recycling Sorter",
+    "genre": "Sorting",
+    "lesson": "Materials, recycling rules",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Sort paper, glass and metal objects into distinct symbol-marked recycling bins."
+  },
+  {
+    "id": "NC-04",
+    "title": "Bird Watch",
+    "genre": "Photo safari (instead of hunting)",
+    "lesson": "Real species identification",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Photograph a recognizable garden bird through a field-guide camera view."
+  },
+  {
+    "id": "NC-05",
+    "title": "Ocean Cleanup",
+    "genre": "Collecting arcade",
+    "lesson": "Plastic in the ocean, marine life",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Collect floating litter with a soft net while marine animals remain free."
+  },
+  {
+    "id": "NC-06",
+    "title": "Pollinator Path",
+    "genre": "Path drawing",
+    "lesson": "Bees, flowers, pollination",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Draw a bee's route between flowers and its hive on a garden map."
+  },
+  {
+    "id": "NC-07",
+    "title": "Animal Vet",
+    "genre": "Care / hospital sim",
+    "lesson": "Animal health, empathy",
+    "cx": "2–3",
+    "wave": null,
+    "original": true,
+    "scene": "Wrap a small animal's paw in a friendly veterinary care station."
+  },
+  {
+    "id": "NC-08",
+    "title": "Linky Home",
+    "genre": "Virtual pet",
+    "lesson": "Care routines, emotions",
+    "cx": "3",
+    "wave": "W1",
+    "original": true,
+    "scene": "Give a sleepy link pet water, rest and a comfortable corner in its home."
+  },
+  {
+    "id": "NC-09",
+    "title": "Garden Grow",
+    "genre": "Garden sim",
+    "lesson": "Plant biology, light, water, soil",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Choose water and light for seedlings in a cutaway planter showing roots."
+  },
+  {
+    "id": "NC-10",
+    "title": "Community Kitchen",
+    "genre": "Cooking (Cooking Mama, Overcooked)",
+    "lesson": "Recipes, nutrition, measuring",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Measure vegetables and grain into a shared meal using marked measuring cups."
+  },
+  {
+    "id": "NC-11",
+    "title": "Seasons Farm",
+    "genre": "Farming sim (Harvest Moon, Stardew Valley)",
+    "lesson": "Crop rotation, seasons, soil",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Plan crop beds across seasons on a small farm with a compost heap."
+  },
+  {
+    "id": "NC-12",
+    "title": "Migration Map",
+    "genre": "Route strategy",
+    "lesson": "Geography, animal migration",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Choose a safe migration route using wetlands and rest stops on a map."
+  },
+  {
+    "id": "NC-13",
+    "title": "Aquarium Balance",
+    "genre": "Ecosystem sim",
+    "lesson": "Food webs, nitrogen cycle",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Balance plants, filters and fish in a cutaway aquarium with oxygen and nitrogen indicators."
+  },
+  {
+    "id": "NC-14",
+    "title": "Forest Keeper",
+    "genre": "Management sim",
+    "lesson": "Forest ecology, fire prevention, commons",
+    "cx": "4",
+    "wave": null,
+    "original": true,
+    "scene": "Design forest paths and firebreaks on a small community woodland map."
+  },
+  {
+    "id": "NC-15",
+    "title": "Clean Little World",
+    "genre": "Cleaning simulator",
+    "lesson": "Material care and water budgeting",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Sweep a gentle water jet across a muddy playground tile, exposing a bright mosaic while a water gauge stays visible."
+  },
+  {
+    "id": "NC-16",
+    "title": "Terrarium Journal",
+    "genre": "Creature collection and care",
+    "lesson": "Microhabitats and species observation",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Photograph tiny real-world invertebrates in a planted terrarium and place observations into a field journal."
+  },
+  {
+    "id": "NC-17",
+    "title": "Magnet Fishing Day",
+    "genre": "Fishing-style cleanup",
+    "lesson": "Magnetism and material classification",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "scene": "Lower a magnet from a small dock to retrieve metal litter while fish swim safely past."
+  }
+]

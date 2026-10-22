@@ -1,0 +1,452 @@
+[
+  {
+    "id": "SS-01",
+    "algorithms": ["idle-progression", "tap-feedback"],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 20,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 6,
+      "sfx": 10,
+      "music": 1,
+      "voice": 15,
+      "levels": 0,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "One screen allocating solar energy among 4 research stations with about 40 upgrades and a live graph that shows compounding growth, capped and pressure-free. Prestige loops and ads are never included."
+  },
+  {
+    "id": "SS-02",
+    "algorithms": [
+      "pathfinding",
+      "drag-drop-snap",
+      "particle-effects",
+      "grid-board"
+    ],
+    "extraLoc": 1000,
+    "assets": {
+      "sprites": 35,
+      "animations": 12,
+      "backgrounds": 4,
+      "ui": 6,
+      "sfx": 16,
+      "music": 2,
+      "voice": 20,
+      "levels": 15,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "15 garden paths where umbrellas, nets and water channels are dragged into place to shield seedlings from rain, wind and hail waves, with no losing state. Endless mode and upgrade trees are deferred."
+  },
+  {
+    "id": "SS-03",
+    "algorithms": ["agent-steering", "tap-feedback", "graph-network"],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 25,
+      "animations": 10,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 12,
+      "music": 2,
+      "voice": 20,
+      "levels": 20,
+      "content": 15,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "20 crossings where tapping toggles two traffic lights so toy pedestrians and carts flow safely, with queue lengths shown as stacks. City-wide networks and scoring by speed are left out."
+  },
+  {
+    "id": "SS-04",
+    "algorithms": [
+      "electric-circuit",
+      "graph-network",
+      "day-cycle",
+      "drag-drop-snap"
+    ],
+    "extraLoc": 1500,
+    "assets": {
+      "sprites": 30,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 10,
+      "sfx": 14,
+      "music": 2,
+      "voice": 30,
+      "levels": 20,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "20 grid puzzles where solar panels, batteries and homes are connected and supply must match demand through a day-night cycle. Markets, weather forecasts and large maps are deferred."
+  },
+  {
+    "id": "SS-05",
+    "algorithms": ["economy-sim", "weather-sim", "dialogue-branching"],
+    "extraLoc": 1500,
+    "assets": {
+      "sprites": 30,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 10,
+      "sfx": 12,
+      "music": 2,
+      "voice": 40,
+      "levels": 12,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 9,
+    "plan": "12 seasons of sharing one reservoir among households, gardens and a wetland, where the player proposes Ostrom-style rules with voiced neighbors and sees outcomes. Multiple villages are deferred."
+  },
+  {
+    "id": "SS-06",
+    "algorithms": ["graph-network", "pathfinding", "economy-sim"],
+    "extraLoc": 1700,
+    "assets": {
+      "sprites": 40,
+      "animations": 10,
+      "backgrounds": 4,
+      "ui": 10,
+      "sfx": 14,
+      "music": 2,
+      "voice": 25,
+      "levels": 20,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "20 maps where cargo vehicles are routed between farms, workshops and shared storage so every need is met, with flow counters instead of money. Trains, ships and terrain editing are deferred."
+  },
+  {
+    "id": "SS-07",
+    "algorithms": ["graph-network", "board-rules", "shuffle-deal"],
+    "extraLoc": 1600,
+    "assets": {
+      "sprites": 30,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 10,
+      "sfx": 12,
+      "music": 2,
+      "voice": 30,
+      "levels": 12,
+      "content": 80,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 9,
+    "plan": "A cooperative board of 12 scenarios where a simple SIR model spreads on a community graph and players spend ventilation, vaccine and hygiene actions while watching the curves. Online play is deferred."
+  },
+  {
+    "id": "SS-08",
+    "algorithms": ["ecosystem-sim", "agent-steering", "drag-drop-snap"],
+    "extraLoc": 1200,
+    "assets": {
+      "sprites": 40,
+      "animations": 16,
+      "backgrounds": 4,
+      "ui": 8,
+      "sfx": 15,
+      "music": 2,
+      "voice": 30,
+      "levels": 12,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "One habitat with about 10 species where adding or removing animals shows predator and prey population curves, plus 12 balance challenges. Evolution and large biomes are left out."
+  },
+  {
+    "id": "SS-09",
+    "algorithms": [
+      "economy-sim",
+      "pathfinding",
+      "drag-drop-snap",
+      "dialogue-branching"
+    ],
+    "extraLoc": 1500,
+    "assets": {
+      "sprites": 45,
+      "animations": 14,
+      "backgrounds": 5,
+      "ui": 10,
+      "sfx": 15,
+      "music": 2,
+      "voice": 50,
+      "levels": 15,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "A friendly hospital planning board over 15 days where care teams and beds are assigned by triage need, with voiced patient stories rewarding empathy. Medical procedures and staff management are left out."
+  },
+  {
+    "id": "SS-10",
+    "algorithms": ["city-sim", "pathfinding", "grid-board", "economy-sim"],
+    "extraLoc": 2000,
+    "assets": {
+      "sprites": 60,
+      "animations": 14,
+      "backgrounds": 4,
+      "ui": 12,
+      "sfx": 18,
+      "music": 3,
+      "voice": 30,
+      "levels": 10,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "One town grid where footpaths, homes and shared gardens are laid out and visible water, food and energy flows meet resident needs over 10 goals. Traffic, disasters and large maps are deferred."
+  },
+  {
+    "id": "SS-11",
+    "algorithms": [
+      "weather-sim",
+      "economy-sim",
+      "camera-3d",
+      "dialogue-branching"
+    ],
+    "extraLoc": 3000,
+    "assets": {
+      "sprites": 25,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 16,
+      "sfx": 15,
+      "music": 3,
+      "voice": 60,
+      "levels": 12,
+      "content": 150,
+      "models3d": 20
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "A 3D town model where council choices on energy, transport and food change emissions and an uncertainty-band chart over 12 decades-long scenarios. Global models and multiplayer councils are deferred."
+  },
+  {
+    "id": "SS-12",
+    "algorithms": [
+      "terrain-gen",
+      "economy-sim",
+      "game-ai-minimax",
+      "dialogue-branching",
+      "camera-3d"
+    ],
+    "extraLoc": 3500,
+    "assets": {
+      "sprites": 40,
+      "animations": 10,
+      "backgrounds": 4,
+      "ui": 18,
+      "sfx": 20,
+      "music": 4,
+      "voice": 60,
+      "levels": 8,
+      "content": 200,
+      "models3d": 25
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "Two generated planets, Raya and Shacados, seen side by side: the player helps Shacados explore and grow cleaner within its own system and exchanges observations with an AI partner by radio messages that take 11.6 days each way, over 8 scenarios. Nothing is ever built on Raya, war is never included and online play is deferred."
+  },
+  {
+    "id": "SS-13",
+    "algorithms": [
+      "economy-sim",
+      "grid-board",
+      "pathfinding",
+      "camera-3d",
+      "day-cycle"
+    ],
+    "extraLoc": 4500,
+    "assets": {
+      "sprites": 30,
+      "animations": 12,
+      "backgrounds": 4,
+      "ui": 16,
+      "sfx": 20,
+      "music": 3,
+      "voice": 60,
+      "levels": 10,
+      "content": 120,
+      "models3d": 30
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "A 3D cutaway Mars habitat where air, water, food and electricity loops are built and balanced for a small crew across 10 scenarios with sol cycles. Expansion to a city and trade are deferred."
+  },
+  {
+    "id": "SS-14",
+    "algorithms": [
+      "orbital-mechanics",
+      "relativity",
+      "camera-3d",
+      "dialogue-branching",
+      "economy-sim",
+      "quest-state",
+      "timeline"
+    ],
+    "extraLoc": 5000,
+    "assets": {
+      "sprites": 40,
+      "animations": 15,
+      "backgrounds": 8,
+      "ui": 24,
+      "sfx": 30,
+      "music": 6,
+      "voice": 200,
+      "levels": 15,
+      "content": 300,
+      "models3d": 50
+    },
+    "toddler": 1,
+    "minAge": 12,
+    "plan": "A vertical slice of 15 missions combining delayed signals, orbital transfers and peaceful contact talks between two star systems at real scale. The full campaign and every earlier subsystem are deferred."
+  },
+  {
+    "id": "SS-15",
+    "algorithms": ["economy-sim", "grid-board", "drag-drop-snap"],
+    "extraLoc": 1800,
+    "assets": {
+      "sprites": 45,
+      "animations": 14,
+      "backgrounds": 3,
+      "ui": 8,
+      "sfx": 16,
+      "music": 2,
+      "voice": 20,
+      "levels": 20,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "20 factory floors where recycling machines are linked by conveyors to turn recovered materials into repair parts, with flow rates shown and loops rewarded. Blueprints and large maps are deferred."
+  },
+  {
+    "id": "SS-16",
+    "algorithms": [
+      "grid-board",
+      "drag-drop-snap",
+      "agent-steering",
+      "pathfinding"
+    ],
+    "extraLoc": 1600,
+    "assets": {
+      "sprites": 40,
+      "animations": 20,
+      "backgrounds": 4,
+      "ui": 8,
+      "sfx": 18,
+      "music": 2,
+      "voice": 20,
+      "levels": 20,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "20 habitats where up to six gardening robots are arranged on a preparation grid and then restore plants on their own, showing how roles complement. Online matches and loot are left out."
+  },
+  {
+    "id": "SS-17",
+    "algorithms": ["drag-drop-snap", "tap-feedback", "sort-classify"],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 40,
+      "animations": 12,
+      "backgrounds": 3,
+      "ui": 6,
+      "sfx": 15,
+      "music": 2,
+      "voice": 30,
+      "levels": 20,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "20 lunch rounds where soup, bread and fruit are prepared and dragged to waiting friends who say what they need, with a relaxed mode without timers. Restaurant upgrades and money are left out."
+  },
+  {
+    "id": "SS-18",
+    "algorithms": ["inventory-crafting", "economy-sim", "drag-drop-snap"],
+    "extraLoc": 1400,
+    "assets": {
+      "sprites": 45,
+      "animations": 10,
+      "backgrounds": 3,
+      "ui": 8,
+      "sfx": 15,
+      "music": 2,
+      "voice": 30,
+      "levels": 15,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "15 cafe days where returned toys and appliances go to repair benches while spare parts and volunteer time are budgeted. Complex repair mini-games and shop expansion are deferred."
+  },
+  {
+    "id": "SS-19",
+    "algorithms": ["graph-network", "tap-feedback", "pathfinding"],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 25,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 12,
+      "music": 2,
+      "voice": 20,
+      "levels": 24,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "24 compact railways where tapping switches routes two or three trains to their stations with safe separation and no crashes shown. Timetables and large networks are deferred."
+  },
+  {
+    "id": "SS-20",
+    "algorithms": [
+      "grid-board",
+      "drag-drop-snap",
+      "weather-sim",
+      "pathfinding"
+    ],
+    "extraLoc": 1500,
+    "assets": {
+      "sprites": 35,
+      "animations": 10,
+      "backgrounds": 4,
+      "ui": 8,
+      "sfx": 15,
+      "music": 2,
+      "voice": 30,
+      "levels": 12,
+      "content": 50,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "12 town models where rain gardens, water stores and safe footpaths are placed before a forecast storm that then plays out and shows what held. Real hazard maps and multiplayer are deferred."
+  }
+]

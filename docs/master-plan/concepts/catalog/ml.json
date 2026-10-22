@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ML-01",
+    "title": "Linky Hop",
+    "genre": "One-tap flyer",
+    "lesson": "Mental arithmetic",
+    "cx": "1",
+    "wave": "W1",
+    "original": true,
+    "scene": "Choose an arithmetic answer gate for a round link friend hopping between clouds."
+  },
+  {
+    "id": "ML-02",
+    "title": "Number Line Jump",
+    "genre": "Platform hop",
+    "lesson": "Number line, negatives",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Hop along a number line from negative stones toward a target value."
+  },
+  {
+    "id": "ML-03",
+    "title": "Times Table Garden",
+    "genre": "Tap to grow",
+    "lesson": "Multiplication as area",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Plant flowers in rows and columns to show multiplication as rectangular area."
+  },
+  {
+    "id": "ML-04",
+    "title": "Pattern Train",
+    "genre": "Sequence completion",
+    "lesson": "Patterns, sequences",
+    "cx": "1",
+    "wave": null,
+    "original": true,
+    "scene": "Place the missing patterned carriage into a toy train sequence."
+  },
+  {
+    "id": "ML-05",
+    "title": "Uni's Grid",
+    "genre": "Sudoku",
+    "lesson": "Uniqueness, deduction",
+    "cx": "2",
+    "wave": "W1",
+    "original": true,
+    "scene": "Place a number bead into a Sudoku grid with row and column guides."
+  },
+  {
+    "id": "ML-06",
+    "title": "Postie's Treasure",
+    "genre": "Minesweeper-like deduction",
+    "lesson": "Adjacency, probability",
+    "cx": "2",
+    "wave": "W1",
+    "original": true,
+    "scene": "Mark safe treasure squares using adjacent numbered clue envelopes."
+  },
+  {
+    "id": "ML-07",
+    "title": "Fraction Kitchen",
+    "genre": "Cutting / slicing",
+    "lesson": "Fractions, equal shares",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Divide a round vegetable pie into equal fractional shares."
+  },
+  {
+    "id": "ML-08",
+    "title": "Balance Friends",
+    "genre": "Balance-scale algebra (DragonBox-like)",
+    "lesson": "Equations: do the same to both sides",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Balance identical tokens on both pans of a scale to preserve an equation."
+  },
+  {
+    "id": "ML-09",
+    "title": "Cage Sums",
+    "genre": "Kakuro / arithmetic cages",
+    "lesson": "Sums, factor pairs",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Fill a small arithmetic-cage grid using sum clues printed along its edges."
+  },
+  {
+    "id": "ML-10",
+    "title": "Tower of Hanoi Acorns",
+    "genre": "Tower of Hanoi",
+    "lesson": "Recursion, powers of two",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Move an acorn disk between three pegs without placing larger disks above smaller ones."
+  },
+  {
+    "id": "ML-11",
+    "title": "Binary Beads",
+    "genre": "Switch puzzles",
+    "lesson": "Binary numbers, bits",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Toggle binary bead switches to represent a target decimal number."
+  },
+  {
+    "id": "ML-12",
+    "title": "Match the Kind",
+    "genre": "Attribute matching card game",
+    "lesson": "Sets, logic of attributes",
+    "cx": "2",
+    "wave": null,
+    "original": true,
+    "scene": "Select cards sharing one attribute while differing in other attributes."
+  },
+  {
+    "id": "ML-13",
+    "title": "Detective Grid",
+    "genre": "Logic grid (zebra puzzle)",
+    "lesson": "Deduction, truth tables",
+    "cx": "2–3",
+    "wave": null,
+    "original": true,
+    "scene": "Fill a compact logic-deduction grid using illustrated friends and their preferences."
+  },
+  {
+    "id": "ML-14",
+    "title": "Lucky Spinner Lab",
+    "genre": "Dice / spinner experiments",
+    "lesson": "Probability, law of large numbers",
+    "cx": "2–3",
+    "wave": null,
+    "original": true,
+    "scene": "Spin a probability wheel beside a growing bar chart of observed outcomes."
+  },
+  {
+    "id": "ML-15",
+    "title": "Compass Garden",
+    "genre": "Compass-and-straightedge (Euclid)",
+    "lesson": "Geometry constructions",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Use a compass and straightedge to construct a perpendicular bisector."
+  },
+  {
+    "id": "ML-16",
+    "title": "Shortest Path Postie",
+    "genre": "Route puzzle",
+    "lesson": "Graphs, shortest paths, algorithms",
+    "cx": "3",
+    "wave": null,
+    "original": true,
+    "scene": "Draw the shortest delivery route between flower-shaped graph junctions."
+  },
+  {
+    "id": "ML-17",
+    "title": "Proof Steps",
+    "genre": "Rule-rewrite puzzle",
+    "lesson": "Logic and proofs in Links Notation ([relative-meta-logic](https://github.com/link-foundation/relative-meta-logic))",
+    "cx": "3–4",
+    "wave": null,
+    "original": true,
+    "scene": "Rewrite one symbolic link expression using a visible valid inference rule."
+  },
+  {
+    "id": "ML-18",
+    "title": "Island Bridges",
+    "genre": "Hashi bridges puzzle",
+    "lesson": "Graph degree and connectivity",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Connect numbered islands with one or two bridges while keeping every island reachable."
+  },
+  {
+    "id": "ML-19",
+    "title": "Greater Garden",
+    "genre": "Futoshiki inequality puzzle",
+    "lesson": "Ordering and inequalities",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "scene": "Place number stones in a small Latin-square garden with clearly visible greater-than gates."
+  },
+  {
+    "id": "ML-20",
+    "title": "Make Twenty-Four",
+    "genre": "Arithmetic expression puzzle",
+    "lesson": "Arithmetic and order of operations",
+    "cx": "1",
+    "wave": null,
+    "original": false,
+    "scene": "Arrange four number cards and operation tiles on a kitchen table to make twenty-four."
+  }
+]

@@ -1,0 +1,457 @@
+[
+  {
+    "id": "SL-01",
+    "algorithms": ["tap-feedback", "drag-drop-snap", "tween-cause-effect"],
+    "extraLoc": 350,
+    "assets": {
+      "sprites": 14,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 8,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 3,
+    "plan": "One lab wall where tapping toggles red, green and blue spotlights and dragging them shows the mixed colors, plus 8 voiced find-this-color goals; the paint-mixing mode is left for later."
+  },
+  {
+    "id": "SL-02",
+    "algorithms": [
+      "grid-board",
+      "drag-drop-snap",
+      "shuffle-deal",
+      "sort-classify"
+    ],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 30,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 20,
+      "levels": 10,
+      "content": 120,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "The first 20 elements as illustrated cards with voiced names and facts, placed by drag onto a simplified periodic board in 10 sorting rounds; trading, rare cards and the full table are left out."
+  },
+  {
+    "id": "SL-03",
+    "algorithms": [
+      "physics-2d",
+      "stacking-stability",
+      "tap-feedback",
+      "particle-effects"
+    ],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 18,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 10,
+      "levels": 10,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "One swaying tower scene where a tap drops the next acorn block, a center-of-mass marker shows balance and the tower collapses gently without failure, across 10 block sets; scores and leaderboards are left out."
+  },
+  {
+    "id": "SL-04",
+    "algorithms": [
+      "drag-drop-snap",
+      "hidden-object",
+      "tap-feedback",
+      "tween-cause-effect"
+    ],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 30,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 30,
+      "levels": 8,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "A friendly transparent body where 8 organ pieces are dragged into big outlined slots, each answering with a voiced line and a small animation of what it does; detailed systems and quizzes are left out."
+  },
+  {
+    "id": "SL-05",
+    "algorithms": [
+      "physics-2d",
+      "drag-drop-snap",
+      "particle-effects",
+      "sort-classify"
+    ],
+    "extraLoc": 550,
+    "assets": {
+      "sprites": 24,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 16,
+      "levels": 10,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 3,
+    "plan": "One water tank where 12 equal-size objects are dragged in to float or sink, with an optional guess-first mode over 10 rounds; changing the liquid and salt water are left for later."
+  },
+  {
+    "id": "SL-06",
+    "algorithms": ["physics-2d", "drag-drop-snap", "grid-board"],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 20,
+      "animations": 4,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 10,
+      "levels": 20,
+      "content": 15,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "A glass maze where dragging a magnet outside the glass pulls the steel bead along visible field lines through 20 authored mazes; repelling poles, timers and a level editor are left out."
+  },
+  {
+    "id": "SL-07",
+    "algorithms": [
+      "rope-cloth",
+      "physics-2d",
+      "swipe-gesture",
+      "particle-effects"
+    ],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 25,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 12,
+      "music": 1,
+      "voice": 10,
+      "levels": 24,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "24 authored levels where tapping or swiping a rope releases a seed that swings into a planter, with pendulum trails; stars, extra gadgets and a level editor are left out."
+  },
+  {
+    "id": "SL-08",
+    "algorithms": ["projectile-arc", "physics-2d", "particle-effects"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 22,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 10,
+      "levels": 20,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "A pull-and-release slingshot with a visible parabola preview that plants seeds in 20 authored garden plots at different heights and distances; wind and destructible structures are left out."
+  },
+  {
+    "id": "SL-09",
+    "algorithms": [
+      "molecule-builder",
+      "drag-drop-snap",
+      "grid-board",
+      "tap-feedback"
+    ],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 30,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 20,
+      "levels": 20,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "A workbench grid where matching atoms are dragged together to bond by valence rules, building 20 target molecules from water to glucose with voiced names; reactions and a 3D view are left out."
+  },
+  {
+    "id": "SL-10",
+    "algorithms": ["electric-circuit", "drag-drop-snap", "grid-board"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 24,
+      "animations": 5,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 15,
+      "levels": 20,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "A breadboard grid where batteries, wires, resistors and lamps snap into place to light garden lamps in 20 authored circuits with brightness feedback; logic gates are left for a later chapter."
+  },
+  {
+    "id": "SL-11",
+    "algorithms": ["optics-rays", "drag-drop-snap", "grid-board"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 18,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 20,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "An optical bench where lenses and mirrors are dragged to bend light rays onto targets in 20 authored puzzles, with a focus point marker; prisms, color dispersion and free sandbox are left out."
+  },
+  {
+    "id": "SL-12",
+    "algorithms": [
+      "physics-2d",
+      "drag-drop-snap",
+      "rope-cloth",
+      "particle-effects"
+    ],
+    "extraLoc": 1100,
+    "assets": {
+      "sprites": 30,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 14,
+      "music": 1,
+      "voice": 12,
+      "levels": 20,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "Edit and run modes for 20 chain-reaction puzzles with one missing lever, pulley, gear or ramp each, using 8 part types; free sandbox building and sharing are left out."
+  },
+  {
+    "id": "SL-13",
+    "algorithms": ["audio-synth", "acoustics-sim", "tap-feedback"],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 16,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 12,
+      "music": 1,
+      "voice": 12,
+      "levels": 12,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "A free string instrument whose plucked notes draw live waves on an oscilloscope, plus 12 match-the-wave goals for pitch and loudness; microphone input and resonance experiments are left out."
+  },
+  {
+    "id": "SL-14",
+    "algorithms": [
+      "weather-sim",
+      "particle-effects",
+      "tap-feedback",
+      "day-cycle"
+    ],
+    "extraLoc": 1100,
+    "assets": {
+      "sprites": 24,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 12,
+      "music": 1,
+      "voice": 16,
+      "levels": 8,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "One terrarium with sun and water controls where evaporation, clouds and rain play out visibly, plus 8 guided goals such as make it rain; pressure maps and a world climate view are left out."
+  },
+  {
+    "id": "SL-15",
+    "algorithms": [
+      "physics-2d",
+      "graph-network",
+      "drag-drop-snap",
+      "grid-board"
+    ],
+    "extraLoc": 1600,
+    "assets": {
+      "sprites": 25,
+      "animations": 6,
+      "backgrounds": 4,
+      "ui": 6,
+      "sfx": 14,
+      "music": 1,
+      "voice": 12,
+      "levels": 20,
+      "content": 15,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "A snap grid for beams and cables between riverbanks, a test run with a cart and tension and compression colors, over 20 authored crossings with a material limit; suspension decks and sharing are left out."
+  },
+  {
+    "id": "SL-16",
+    "algorithms": [
+      "fluid-2d",
+      "draw-trace",
+      "chemistry-reactions",
+      "particle-effects"
+    ],
+    "extraLoc": 1300,
+    "assets": {
+      "sprites": 12,
+      "animations": 2,
+      "backgrounds": 2,
+      "ui": 5,
+      "sfx": 14,
+      "music": 1,
+      "voice": 10,
+      "levels": 12,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "A free falling-sand canvas with 8 materials (sand, water, stone, ice, steam, lava, plant, wood) drawn by finger, plus 12 redirect-the-water goals; saving creations and a large material list are left out."
+  },
+  {
+    "id": "SL-17",
+    "algorithms": [
+      "multi-touch",
+      "hidden-object",
+      "sticker-scene",
+      "agent-steering"
+    ],
+    "extraLoc": 1400,
+    "assets": {
+      "sprites": 50,
+      "animations": 15,
+      "backgrounds": 8,
+      "ui": 6,
+      "sfx": 14,
+      "music": 2,
+      "voice": 30,
+      "levels": 15,
+      "content": 80,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "A microscope with three zoom steps and tap-to-zoom over 15 slides (cells, pond life, leaves) where moving microbes are found and added to a sticker journal; real camera input and staining are left out."
+  },
+  {
+    "id": "SL-18",
+    "algorithms": ["physics-2d", "tap-feedback", "particle-effects"],
+    "extraLoc": 1000,
+    "assets": {
+      "sprites": 30,
+      "animations": 8,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 16,
+      "music": 1,
+      "voice": 10,
+      "levels": 3,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "One botanical pinball table with two tap flippers, spring bumpers and momentum arrows, plus a gentle mode where the ball never drains; two extra tables and multiball are left for later."
+  },
+  {
+    "id": "SL-19",
+    "algorithms": ["physics-2d", "particle-effects"],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 20,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 12,
+      "music": 1,
+      "voice": 8,
+      "levels": 20,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "A wide paddle bouncing a slow light sphere through 20 authored walls of research tiles, with a reflection angle guide line; power-ups, bosses and speed modes are left out."
+  },
+  {
+    "id": "SL-20",
+    "algorithms": ["fluid-2d", "physics-2d", "tap-feedback"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 20,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 8,
+      "levels": 30,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "30 authored chamber puzzles where tapping brass pins in the right order lets water reach a seedling while sand and stones fall; hazards, timers and a level editor are left out."
+  }
+]

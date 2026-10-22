@@ -1,0 +1,362 @@
+[
+  {
+    "id": "SA-01",
+    "algorithms": ["dialogue-branching", "tap-feedback", "tween-cause-effect"],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 24,
+      "animations": 6,
+      "backgrounds": 8,
+      "ui": 4,
+      "sfx": 15,
+      "music": 2,
+      "voice": 50,
+      "levels": 0,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Two short fully narrated picture-book stories with 8 illustrated pages and a choice between two pictures on each page leading to kind endings. Typing, reading tests and long story trees are left out."
+  },
+  {
+    "id": "SA-02",
+    "algorithms": [
+      "quest-state",
+      "drag-drop-snap",
+      "tap-feedback",
+      "day-cycle"
+    ],
+    "extraLoc": 500,
+    "assets": {
+      "sprites": 24,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 5,
+      "sfx": 12,
+      "music": 1,
+      "voice": 40,
+      "levels": 14,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "A small town square with 14 voiced kindness quests such as carrying books or sharing an umbrella, one new quest a day and a gratitude scrapbook. Social sharing and streak rewards are left out."
+  },
+  {
+    "id": "SA-03",
+    "algorithms": [
+      "hidden-object",
+      "quest-state",
+      "dialogue-branching",
+      "tap-feedback",
+      "multi-touch"
+    ],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 40,
+      "animations": 8,
+      "backgrounds": 8,
+      "ui": 6,
+      "sfx": 15,
+      "music": 2,
+      "voice": 50,
+      "levels": 8,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "A museum with 8 rooms where the player zooms into paintings, finds material clues and solves 8 voiced art-history puzzles with a friendly guard. Real museum licensing and a full collection are deferred."
+  },
+  {
+    "id": "SA-04",
+    "algorithms": [
+      "quest-state",
+      "hidden-object",
+      "dialogue-branching",
+      "sort-classify"
+    ],
+    "extraLoc": 1000,
+    "assets": {
+      "sprites": 35,
+      "animations": 8,
+      "backgrounds": 6,
+      "ui": 8,
+      "sfx": 12,
+      "music": 2,
+      "voice": 50,
+      "levels": 6,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "6 gentle cases on a mystery board where footprints and timestamped notes are collected, sorted as strong or weak evidence and used to explain a fair conclusion. Procedural cases and blame scenes are left out."
+  },
+  {
+    "id": "SA-05",
+    "algorithms": [
+      "quest-state",
+      "inventory-crafting",
+      "optics-rays",
+      "tap-feedback"
+    ],
+    "extraLoc": 1000,
+    "assets": {
+      "sprites": 35,
+      "animations": 8,
+      "backgrounds": 5,
+      "ui": 6,
+      "sfx": 15,
+      "music": 2,
+      "voice": 30,
+      "levels": 15,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "5 friendly rooms with 15 mirror and switch puzzles played by two friends on one device in split view, each seeing different clues. Online co-op and a room editor are deferred."
+  },
+  {
+    "id": "SA-06",
+    "algorithms": ["draw-trace", "jigsaw-cut", "timeline", "sort-classify"],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 40,
+      "animations": 6,
+      "backgrounds": 5,
+      "ui": 6,
+      "sfx": 14,
+      "music": 2,
+      "voice": 40,
+      "levels": 10,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "10 dig sites where rubbing brushes soil off artifacts layer by layer, shards are restored as a simple jigsaw and finds are placed on a stratigraphy chart. Real site data and 3D artifacts are left out."
+  },
+  {
+    "id": "SA-07",
+    "algorithms": [
+      "dialogue-branching",
+      "word-list",
+      "quest-state",
+      "spaced-repetition",
+      "tap-feedback"
+    ],
+    "extraLoc": 1300,
+    "assets": {
+      "sprites": 40,
+      "animations": 10,
+      "backgrounds": 8,
+      "ui": 8,
+      "sfx": 12,
+      "music": 2,
+      "voice": 150,
+      "levels": 6,
+      "content": 150,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "One village with 6 areas where illustrated, voiced dialogue in one target language guides errands, using about 150 words reviewed with spaced repetition. Extra languages and speech recognition are deferred."
+  },
+  {
+    "id": "SA-08",
+    "algorithms": ["dialogue-branching", "timeline", "quest-state"],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 30,
+      "animations": 6,
+      "backgrounds": 12,
+      "ui": 6,
+      "sfx": 10,
+      "music": 3,
+      "voice": 120,
+      "levels": 0,
+      "content": 150,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 9,
+    "plan": "One historical event told through an illustrated diary from three viewpoints, with choices that reveal how each person saw it and a final timeline. Further eras and free roaming are left out."
+  },
+  {
+    "id": "SA-09",
+    "algorithms": [
+      "pattern-sequence",
+      "puzzle-solver-hints",
+      "typing-input",
+      "quest-state"
+    ],
+    "extraLoc": 1500,
+    "assets": {
+      "sprites": 30,
+      "animations": 6,
+      "backgrounds": 4,
+      "ui": 8,
+      "sfx": 15,
+      "music": 2,
+      "voice": 20,
+      "levels": 30,
+      "content": 80,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "30 signal puzzles where repeated number patterns build a shared glyph vocabulary from counting to arithmetic, ending in a short reply message. Free composition and multiplayer exchange are deferred."
+  },
+  {
+    "id": "SA-10",
+    "algorithms": [
+      "graph-network",
+      "lino-parser",
+      "puzzle-solver-hints",
+      "dialogue-branching",
+      "quest-state"
+    ],
+    "extraLoc": 1600,
+    "assets": {
+      "sprites": 40,
+      "animations": 12,
+      "backgrounds": 8,
+      "ui": 10,
+      "sfx": 15,
+      "music": 3,
+      "voice": 80,
+      "levels": 30,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "An academy campaign of 30 puzzles moving from points to doublets to small networks, shown both as links and as Links Notation, with voiced cadet story beats. Free graph sandbox and later terms are deferred."
+  },
+  {
+    "id": "SA-11",
+    "algorithms": [
+      "character-3d",
+      "camera-3d",
+      "terrain-gen",
+      "dialogue-branching",
+      "quest-state"
+    ],
+    "extraLoc": 3000,
+    "assets": {
+      "sprites": 20,
+      "animations": 15,
+      "backgrounds": 4,
+      "ui": 12,
+      "sfx": 25,
+      "music": 4,
+      "voice": 120,
+      "levels": 6,
+      "content": 120,
+      "models3d": 35
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "A low-poly Omi coastline with 6 regions to walk through, guided by anime hosts who compare each biome to its Earth counterpart in voiced field notes. The full world, seasons and vehicles are deferred."
+  },
+  {
+    "id": "SA-12",
+    "algorithms": [
+      "character-3d",
+      "camera-3d",
+      "dialogue-branching",
+      "quest-state",
+      "pathfinding"
+    ],
+    "extraLoc": 3200,
+    "assets": {
+      "sprites": 15,
+      "animations": 15,
+      "backgrounds": 4,
+      "ui": 12,
+      "sfx": 25,
+      "music": 4,
+      "voice": 250,
+      "levels": 6,
+      "content": 150,
+      "models3d": 30
+    },
+    "toddler": 1,
+    "minAge": 13,
+    "plan": "6 chapters of a 3D narrative where a teen finds non-violent routes and empathetic dialogue toward a safe exit, with consequences tracked across chapters. Combat is never included and side stories are deferred."
+  },
+  {
+    "id": "SA-13",
+    "algorithms": [
+      "platformer-controller",
+      "optics-rays",
+      "quest-state",
+      "particle-effects"
+    ],
+    "extraLoc": 1800,
+    "assets": {
+      "sprites": 50,
+      "animations": 16,
+      "backgrounds": 8,
+      "ui": 8,
+      "sfx": 20,
+      "music": 3,
+      "voice": 20,
+      "levels": 30,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "A connected cave garden of 30 rooms with a map, where a found mirror lantern bends light to open earlier gates. Combat, extra tools beyond three and procedural maps are left out."
+  },
+  {
+    "id": "SA-14",
+    "algorithms": [
+      "board-rules",
+      "shuffle-deal",
+      "sort-classify",
+      "game-ai-minimax"
+    ],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 30,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 8,
+      "sfx": 12,
+      "music": 2,
+      "voice": 40,
+      "levels": 10,
+      "content": 120,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "10 round-table scenarios with about 120 weather-station clue cards where players rate evidence quality together and find the faulty sensor, with AI friends for solo play. Online play and accusations are left out."
+  },
+  {
+    "id": "SA-15",
+    "algorithms": ["level-generator", "graph-network", "inventory-crafting"],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 40,
+      "animations": 8,
+      "backgrounds": 6,
+      "ui": 8,
+      "sfx": 14,
+      "music": 2,
+      "voice": 25,
+      "levels": 0,
+      "content": 80,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "Seeded forest runs of about 12 rooms on a small map, choosing paths by food supply and weather clues, with 80 room events and gentle return-home endings. Combat and meta-progression trees are left out."
+  }
+]

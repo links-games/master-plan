@@ -1,0 +1,222 @@
+[
+  {
+    "id": "MR-01",
+    "algorithms": ["pattern-sequence", "audio-synth", "tap-feedback"],
+    "extraLoc": 200,
+    "assets": {
+      "sprites": 8,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "A ring of four big glowing pads with distinct pitches that replays sequences growing from one to eight notes, slowing down after mistakes. No speed mode, scores or extra pads."
+  },
+  {
+    "id": "MR-02",
+    "algorithms": ["audio-synth", "tap-feedback", "tween-cause-effect"],
+    "extraLoc": 200,
+    "assets": {
+      "sprites": 14,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 24,
+      "music": 3,
+      "voice": 8,
+      "levels": 0,
+      "content": 8,
+      "models3d": 0
+    },
+    "toddler": 5,
+    "minAge": 2,
+    "plan": "Six illustrated hand drums from different cultures that sound on any tap, over three gentle backing loops with an optional echo pattern to copy. No scoring, recording or timing judgement."
+  },
+  {
+    "id": "MR-03",
+    "algorithms": ["rhythm-timing", "audio-synth", "tap-feedback"],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 10,
+      "animations": 4,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 6,
+      "music": 10,
+      "voice": 4,
+      "levels": 10,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "Four piano lanes with falling note tiles for 10 public-domain melodies, a slow practice speed and a note-name strip on the keys. No song import, endless mode or leaderboards."
+  },
+  {
+    "id": "MR-04",
+    "algorithms": [
+      "rhythm-timing",
+      "audio-synth",
+      "tap-feedback",
+      "particle-effects"
+    ],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 10,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 8,
+      "music": 8,
+      "voice": 6,
+      "levels": 8,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "One beat line with big targets for quarter, half and eighth notes over 8 short tracks, latency calibration and a no-fail mode that shows notes as fractions. No charts editor or combos."
+  },
+  {
+    "id": "MR-05",
+    "algorithms": ["audio-synth", "tap-feedback", "spaced-repetition"],
+    "extraLoc": 350,
+    "assets": {
+      "sprites": 12,
+      "animations": 3,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 6,
+      "music": 1,
+      "voice": 20,
+      "levels": 12,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "A small keyboard where the player hears and matches illustrated intervals and major or minor chords across 12 graded sets, scheduled by spaced repetition. No scales, notation or singing."
+  },
+  {
+    "id": "MR-06",
+    "algorithms": [
+      "music-sequencer",
+      "audio-synth",
+      "grid-board",
+      "tween-cause-effect"
+    ],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 24,
+      "animations": 10,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 10,
+      "music": 2,
+      "voice": 8,
+      "levels": 8,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "An 8-step by 5-row pentatonic grid where tapped notes loop and each row grows its own singing plant, with free play and 8 short melody challenges. No scale switching, export or chords."
+  },
+  {
+    "id": "MR-07",
+    "algorithms": [
+      "rhythm-timing",
+      "audio-synth",
+      "swipe-gesture",
+      "tween-cause-effect"
+    ],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 16,
+      "animations": 16,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 10,
+      "music": 5,
+      "voice": 12,
+      "levels": 5,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "A tiny orchestra plays 5 short pieces whose tempo follows the conducting arc traced on visible beat markers, with instrument sections that can be cued. No full scores or free composition."
+  },
+  {
+    "id": "MR-08",
+    "algorithms": ["microphone-input", "rhythm-timing", "audio-synth"],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 10,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 6,
+      "music": 8,
+      "voice": 16,
+      "levels": 8,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "8 familiar songs with a scrolling pitch line and a singing character; microphone pitch feedback is opt-in and off in kids mode, with a tap-along fallback. No recording, sharing or scoring."
+  },
+  {
+    "id": "MR-09",
+    "algorithms": [
+      "rhythm-timing",
+      "pattern-sequence",
+      "tap-feedback",
+      "audio-synth"
+    ],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 12,
+      "animations": 20,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 10,
+      "music": 5,
+      "voice": 10,
+      "levels": 10,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "Two link friends trade four-beat dance phrases on a glowing beat circle; the player copies each call with taps across 10 songs, with no fighting and a no-fail mode. No online duels."
+  },
+  {
+    "id": "MR-10",
+    "algorithms": ["runner-loop", "rhythm-timing", "audio-synth"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 20,
+      "animations": 10,
+      "backgrounds": 4,
+      "ui": 4,
+      "sfx": 10,
+      "music": 6,
+      "voice": 6,
+      "levels": 12,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "12 auto-scrolling levels where the hero hops across stepping stones spaced to a visible four-beat rhythm, with latency calibration and slow mode. No level editor or free movement."
+  }
+]

@@ -133,6 +133,8 @@ export default [
       '.eslintcache',
       // The jscpd HTML reporter writes a bundled prism.js here
       'reports/**',
+      // Generated master-plan website (scripts/build-site.mjs)
+      '_site/**',
       // Case study raw data files (downloaded from external sources)
       'docs/case-studies/*/data/**',
     ],

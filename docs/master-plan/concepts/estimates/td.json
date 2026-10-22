@@ -1,0 +1,612 @@
+[
+  {
+    "id": "TD-01",
+    "algorithms": ["tap-feedback", "particle-effects"],
+    "extraLoc": 100,
+    "assets": {
+      "sprites": 10,
+      "animations": 3,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 8,
+      "music": 1,
+      "voice": 4,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 5,
+    "minAge": 1,
+    "plan": "One meadow screen where bubbles drift up and pop into sparkles and a soft note on any tap, plus a sleepy goodbye scene; dusk bubbles, splitting bubbles and light blossoms are left out."
+  },
+  {
+    "id": "TD-02",
+    "algorithms": ["tap-feedback", "peekaboo-reveal", "tween-cause-effect"],
+    "extraLoc": 80,
+    "assets": {
+      "sprites": 8,
+      "animations": 4,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 5,
+    "minAge": 1,
+    "plan": "Six friends hide behind clover, fern and blanket covers and appear with a voiced peekaboo on any tap, ending with a yawning goodnight; parent voice recording and longer suspense steps are left out."
+  },
+  {
+    "id": "TD-03",
+    "algorithms": ["tap-feedback", "tween-cause-effect", "phonics-audio"],
+    "extraLoc": 120,
+    "assets": {
+      "sprites": 18,
+      "animations": 9,
+      "backgrounds": 2,
+      "ui": 1,
+      "sfx": 12,
+      "music": 1,
+      "voice": 18,
+      "levels": 0,
+      "content": 9,
+      "models3d": 0
+    },
+    "toddler": 5,
+    "minAge": 1,
+    "plan": "Nine wild animals on two habitats, each entering on a tap with its call and a voiced name; the listening guess mode and the night wood habitat are left out."
+  },
+  {
+    "id": "TD-04",
+    "algorithms": ["tap-feedback", "audio-synth", "particle-effects"],
+    "extraLoc": 150,
+    "assets": {
+      "sprites": 14,
+      "animations": 4,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 10,
+      "music": 1,
+      "voice": 4,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 5,
+    "minAge": 1,
+    "plan": "Eight pentatonic chime stones plus a log drum, each tap ringing a note and blooming a flower, with a bird that answers; extra instruments and the parent play-along song mode are left out."
+  },
+  {
+    "id": "TD-05",
+    "algorithms": ["tap-feedback", "tween-cause-effect", "particle-effects"],
+    "extraLoc": 130,
+    "assets": {
+      "sprites": 14,
+      "animations": 8,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 12,
+      "music": 1,
+      "voice": 8,
+      "levels": 0,
+      "content": 8,
+      "models3d": 0
+    },
+    "toddler": 5,
+    "minAge": 1,
+    "plan": "One basket that pops out eight springy toys in turn on any tap, each with its own bounce and sound, and a goodnight clean-up where the toys climb back in; hide-again tricks are left out."
+  },
+  {
+    "id": "TD-06",
+    "algorithms": ["tap-feedback", "particle-effects"],
+    "extraLoc": 100,
+    "assets": {
+      "sprites": 8,
+      "animations": 4,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 8,
+      "music": 1,
+      "voice": 6,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 5,
+    "minAge": 1,
+    "plan": "One pond where a tap on the water makes one of six colored fish leap from that spot, wave and splash home, ending at sunset; the frog, turtle, night pond and bubble window are left out."
+  },
+  {
+    "id": "TD-07",
+    "algorithms": ["tap-feedback", "particle-effects"],
+    "extraLoc": 120,
+    "assets": {
+      "sprites": 8,
+      "animations": 4,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 6,
+      "music": 1,
+      "voice": 6,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 5,
+    "minAge": 1,
+    "plan": "One night meadow where taps sprinkle humming stars and fireflies over a sleeping fawn while the lullaby slows and the screen dims by itself; star pictures and the shooting star are left out."
+  },
+  {
+    "id": "TD-08",
+    "algorithms": ["draw-trace", "particle-effects", "tap-feedback"],
+    "extraLoc": 180,
+    "assets": {
+      "sprites": 10,
+      "animations": 3,
+      "backgrounds": 1,
+      "ui": 2,
+      "sfx": 8,
+      "music": 1,
+      "voice": 8,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 5,
+    "minAge": 1,
+    "plan": "One canvas where any finger smear paints thick sparkly color from five big pots, a clear-and-start-over button and a keep-for-parents save; stamps, sound paint and the meadow gallery are left out."
+  },
+  {
+    "id": "TD-09",
+    "algorithms": ["tap-feedback", "tween-cause-effect", "phonics-audio"],
+    "extraLoc": 140,
+    "assets": {
+      "sprites": 16,
+      "animations": 8,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 10,
+      "music": 1,
+      "voice": 10,
+      "levels": 0,
+      "content": 8,
+      "models3d": 0
+    },
+    "toddler": 5,
+    "minAge": 1,
+    "plan": "A toy meadow where each tap sends the next of eight toy vehicles past with its sound and voiced name, ending in a goodnight parking row; the sound guessing mode and sky-lane glider are left out."
+  },
+  {
+    "id": "TD-10",
+    "algorithms": ["tap-feedback", "tween-cause-effect", "rhythm-timing"],
+    "extraLoc": 160,
+    "assets": {
+      "sprites": 10,
+      "animations": 6,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 6,
+      "music": 3,
+      "voice": 12,
+      "levels": 3,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 5,
+    "minAge": 1,
+    "plan": "Three short original songs on one hill where each tap starts the next sung line and the friends clap and sway in time; the slow parent mode and the full songbook are left out."
+  },
+  {
+    "id": "TD-11",
+    "algorithms": [
+      "tap-feedback",
+      "word-list",
+      "phonics-audio",
+      "tween-cause-effect"
+    ],
+    "extraLoc": 120,
+    "assets": {
+      "sprites": 20,
+      "animations": 2,
+      "backgrounds": 1,
+      "ui": 2,
+      "sfx": 6,
+      "music": 1,
+      "voice": 22,
+      "levels": 0,
+      "content": 24,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 2,
+    "plan": "Two themed sets of twelve picture leaves (home and animals), each tap bouncing the picture with a voiced word and a big next arrow; the pointing mode and parent voice recording are left out."
+  },
+  {
+    "id": "TD-12",
+    "algorithms": ["flood-fill", "tap-feedback", "particle-effects"],
+    "extraLoc": 200,
+    "assets": {
+      "sprites": 10,
+      "animations": 3,
+      "backgrounds": 1,
+      "ui": 2,
+      "sfx": 8,
+      "music": 1,
+      "voice": 8,
+      "levels": 10,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 2,
+    "plan": "Ten meadow line drawings with three to six large parts, filled by tapping after picking from five paint drops, each finished picture doing one small animation; rainbow brush and album are left out."
+  },
+  {
+    "id": "TD-13",
+    "algorithms": ["drag-drop-snap", "jigsaw-cut", "tween-cause-effect"],
+    "extraLoc": 150,
+    "assets": {
+      "sprites": 14,
+      "animations": 6,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 8,
+      "music": 1,
+      "voice": 8,
+      "levels": 9,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 2,
+    "plan": "Nine pictures cut into two, three or four straight pieces with glowing slots and generous snapping, each finished picture coming alive; tab-shaped pieces and the finished-puzzle meadow are left out."
+  },
+  {
+    "id": "TD-14",
+    "algorithms": ["drag-drop-snap", "tween-cause-effect", "phonics-audio"],
+    "extraLoc": 140,
+    "assets": {
+      "sprites": 14,
+      "animations": 6,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 10,
+      "music": 1,
+      "voice": 14,
+      "levels": 0,
+      "content": 7,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 2,
+    "plan": "Linky on a picnic blanket with seven plant foods, two at a time on a leaf plate, dragged to its mouth for munch animations and voiced names; other hungry friends and sharing mode are left out."
+  },
+  {
+    "id": "TD-15",
+    "algorithms": ["swipe-gesture", "particle-effects", "tween-cause-effect"],
+    "extraLoc": 140,
+    "assets": {
+      "sprites": 12,
+      "animations": 5,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 10,
+      "music": 1,
+      "voice": 10,
+      "levels": 3,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 2,
+    "plan": "Three washes of the muddy fawn with a sponge rub that clears mud into bubbles, a rinse tap and a towel shake; other friends and floating bath toys are left out."
+  },
+  {
+    "id": "TD-16",
+    "algorithms": ["swipe-gesture", "particle-effects", "tween-cause-effect"],
+    "extraLoc": 130,
+    "assets": {
+      "sprites": 10,
+      "animations": 4,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 2,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 2,
+    "plan": "The baby otter with four big teeth brushed by rubbing to a short brushing song, rinse and smile, plus a brush-along screen; extra animals and a brushing timer are left out."
+  },
+  {
+    "id": "TD-17",
+    "algorithms": ["tap-feedback", "tween-cause-effect", "phonics-audio"],
+    "extraLoc": 130,
+    "assets": {
+      "sprites": 10,
+      "animations": 8,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 10,
+      "music": 1,
+      "voice": 14,
+      "levels": 0,
+      "content": 8,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 2,
+    "plan": "One large fawn with eight tappable body parts, each wiggling with a voiced name, and Linky copying the move; the where-is mode and the duck and frog are left out."
+  },
+  {
+    "id": "TD-18",
+    "algorithms": ["swipe-gesture", "particle-effects", "tween-cause-effect"],
+    "extraLoc": 150,
+    "assets": {
+      "sprites": 14,
+      "animations": 5,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 10,
+      "music": 1,
+      "voice": 8,
+      "levels": 4,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 2,
+    "plan": "Four muddy train cars washed one at a time with soap rub, cloud rinse and warm-wind dry, rolling off shiny; the boat, bike and balloon washes are left out."
+  },
+  {
+    "id": "TD-19",
+    "algorithms": ["tap-feedback", "tween-cause-effect", "idle-progression"],
+    "extraLoc": 160,
+    "assets": {
+      "sprites": 18,
+      "animations": 6,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 8,
+      "music": 1,
+      "voice": 8,
+      "levels": 0,
+      "content": 5,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 2,
+    "plan": "Three seed bumps that grow over five watering taps into a sunflower, tulip and pea vine, with the garden kept between sessions; seasons, visiting bees and new seeds are left out."
+  },
+  {
+    "id": "TD-20",
+    "algorithms": ["drag-drop-snap", "stacking-stability", "physics-2d"],
+    "extraLoc": 180,
+    "assets": {
+      "sprites": 10,
+      "animations": 3,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 8,
+      "music": 1,
+      "voice": 8,
+      "levels": 4,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 2,
+    "plan": "One meadow building spot with eight chunky ringed blocks and a glowing crown block, soft tumbles and a reset; round blocks, sitting friends and two linked towers are left out."
+  },
+  {
+    "id": "TD-21",
+    "algorithms": ["tap-feedback", "hidden-object", "tween-cause-effect"],
+    "extraLoc": 140,
+    "assets": {
+      "sprites": 12,
+      "animations": 5,
+      "backgrounds": 2,
+      "ui": 1,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 6,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 2,
+    "plan": "Six hide-and-seek rounds in two meadow areas with two to three big hiding spots and a wiggle and glow hint; switching turns so the child hides Linky is left out."
+  },
+  {
+    "id": "TD-22",
+    "algorithms": [
+      "tap-feedback",
+      "tween-cause-effect",
+      "pattern-sequence",
+      "day-cycle"
+    ],
+    "extraLoc": 150,
+    "assets": {
+      "sprites": 12,
+      "animations": 6,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 0,
+      "content": 6,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 2,
+    "plan": "Six bedtime steps in a fixed order, each one big glowing object tapped in turn, ending with the lights fading and the app closing; parent step reordering and extra friends are left out."
+  },
+  {
+    "id": "TD-23",
+    "algorithms": ["drag-drop-snap", "sort-classify", "tween-cause-effect"],
+    "extraLoc": 130,
+    "assets": {
+      "sprites": 10,
+      "animations": 4,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 6,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 2,
+    "plan": "A sorter box with round, square and triangle holes and six rounds of shape friends sliding back with a giggle at the wrong hole; star and heart holes and the picture mode are left out."
+  },
+  {
+    "id": "TD-24",
+    "algorithms": ["dress-up-layers", "drag-drop-snap", "tween-cause-effect"],
+    "extraLoc": 150,
+    "assets": {
+      "sprites": 16,
+      "animations": 4,
+      "backgrounds": 4,
+      "ui": 1,
+      "sfx": 10,
+      "music": 1,
+      "voice": 14,
+      "levels": 4,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 2,
+    "plan": "Four weather scenes with two clothing choices each dragged onto Linky and voiced kindly whatever is chosen; two-change walks and the fawn and duck are left out."
+  },
+  {
+    "id": "TD-25",
+    "algorithms": ["tap-feedback", "sort-classify", "tween-cause-effect"],
+    "extraLoc": 120,
+    "assets": {
+      "sprites": 18,
+      "animations": 4,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 8,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 2,
+    "plan": "Eight big-and-small pairs given to a deer and her fawn or a duck and duckling by tapping, with a happy dance; three-size families and grow-and-shrink play are left out."
+  },
+  {
+    "id": "TD-26",
+    "algorithms": ["drag-drop-snap", "sort-classify", "particle-effects"],
+    "extraLoc": 130,
+    "assets": {
+      "sprites": 16,
+      "animations": 3,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 8,
+      "music": 1,
+      "voice": 10,
+      "levels": 6,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 2,
+    "plan": "Six rounds sorting fallen treasures into two then three colored baskets, each color also carrying a shape; four colors, light and dark and color mixing are left out."
+  },
+  {
+    "id": "TD-27",
+    "algorithms": ["drag-drop-snap", "tween-cause-effect", "phonics-audio"],
+    "extraLoc": 140,
+    "assets": {
+      "sprites": 16,
+      "animations": 6,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 12,
+      "music": 1,
+      "voice": 14,
+      "levels": 6,
+      "content": 6,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 2,
+    "plan": "Six animal families where a baby is dragged to its mama among two then three choices for a hug animation and voiced names; homes and the call-and-answer mode are left out."
+  },
+  {
+    "id": "TD-28",
+    "algorithms": ["drag-drop-snap", "sort-classify", "tween-cause-effect"],
+    "extraLoc": 130,
+    "assets": {
+      "sprites": 16,
+      "animations": 3,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 8,
+      "music": 1,
+      "voice": 8,
+      "levels": 8,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 2,
+    "plan": "Eight rounds matching a bright object to one of three soft gray shadows on a lattice screen, each turning colored and waving; wiggling shadows and shadow puppets are left out."
+  },
+  {
+    "id": "TD-29",
+    "algorithms": ["tap-feedback", "counting", "tween-cause-effect"],
+    "extraLoc": 140,
+    "assets": {
+      "sprites": 12,
+      "animations": 4,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 6,
+      "music": 1,
+      "voice": 14,
+      "levels": 9,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 2,
+    "plan": "Nine counting rounds from one to three with fawns, ducks and apples, each tap hopping an item as a voice counts and a dot lights; basket choices, feeding and counting to five are left out."
+  },
+  {
+    "id": "TD-30",
+    "algorithms": ["tap-feedback", "tween-cause-effect", "camera-photo"],
+    "extraLoc": 160,
+    "assets": {
+      "sprites": 10,
+      "animations": 8,
+      "backgrounds": 1,
+      "ui": 1,
+      "sfx": 6,
+      "music": 1,
+      "voice": 16,
+      "levels": 6,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 2,
+    "plan": "Six feelings shown by Linky in the pond, chosen from two big face bubbles, plus an optional parent mirror that is never saved; feeling scenes with other friends are left out."
+  }
+]

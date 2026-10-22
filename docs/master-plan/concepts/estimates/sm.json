@@ -1,0 +1,377 @@
+[
+  {
+    "id": "SM-01",
+    "algorithms": [
+      "rhythm-timing",
+      "projectile-arc",
+      "tap-feedback",
+      "particle-effects"
+    ],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 14,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 10,
+      "music": 2,
+      "voice": 8,
+      "levels": 10,
+      "content": 5,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "Tapping left and right hands on the beat to keep one, two and then three soft balls on visible parabolic paths over 10 steps; tricks, clubs and scores are left out."
+  },
+  {
+    "id": "SM-02",
+    "algorithms": [
+      "runner-loop",
+      "swipe-gesture",
+      "tap-feedback",
+      "sort-classify",
+      "shuffle-deal"
+    ],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 40,
+      "animations": 10,
+      "backgrounds": 4,
+      "ui": 4,
+      "sfx": 12,
+      "music": 2,
+      "voice": 25,
+      "levels": 6,
+      "content": 80,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "A slow three-lane runner where tapping or swiping picks the gate matching a voiced category, with 80 picture items across 6 category tracks; speed-up modes, coins and leaderboards are left out."
+  },
+  {
+    "id": "SM-03",
+    "algorithms": ["physics-2d", "projectile-arc", "particle-effects"],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 20,
+      "animations": 4,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 8,
+      "levels": 18,
+      "content": 5,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "One 18-hole garden course with pull-to-aim putting, friction surfaces, ramps and a shot line preview; course editor, multiplayer and par scoring are left out."
+  },
+  {
+    "id": "SM-04",
+    "algorithms": ["physics-2d", "swipe-gesture", "particle-effects"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 16,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 10,
+      "levels": 10,
+      "content": 5,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "One sheet where a stone is pulled back and released or flicked, with friction trails and sweeping to extend glide, plus 10 target challenges; full ends, teams and AI opponents are left out."
+  },
+  {
+    "id": "SM-05",
+    "algorithms": ["projectile-arc", "physics-2d", "particle-effects"],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 16,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 10,
+      "levels": 12,
+      "content": 5,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "A low hoop and a soft ball where dragging sets the launch angle and power with an arc preview, over 12 shot spots; dribbling, defense and timers are left out."
+  },
+  {
+    "id": "SM-06",
+    "algorithms": ["physics-2d", "board-rules"],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 18,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 8,
+      "levels": 15,
+      "content": 5,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "One table with a cue aim line and collision angle guide, 15 trick-shot puzzles and a relaxed two-player pass-and-play game; AI opponents and full rule sets are left out."
+  },
+  {
+    "id": "SM-07",
+    "algorithms": ["vehicle-sim", "particle-effects", "swipe-gesture"],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 22,
+      "animations": 6,
+      "backgrounds": 4,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 10,
+      "levels": 12,
+      "content": 15,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 4,
+    "plan": "Choosing one of 4 wing folds, flicking to launch and gently tilting through air currents to land on 12 targets with a glide ratio readout; free fold editing and long flights are left out."
+  },
+  {
+    "id": "SM-08",
+    "algorithms": ["rope-cloth", "physics-2d", "particle-effects"],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 20,
+      "animations": 6,
+      "backgrounds": 4,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 10,
+      "levels": 8,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "A hill with a kite on a taut string that rises and dips as the finger pulls, wind ribbons and 8 gentle goals such as fly through the cloud ring; kite builder and contests are left out."
+  },
+  {
+    "id": "SM-09",
+    "algorithms": ["runner-loop", "vehicle-sim", "particle-effects"],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 20,
+      "animations": 6,
+      "backgrounds": 4,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 8,
+      "levels": 10,
+      "content": 5,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "A gentle snowy slope steered by dragging left or right through slalom gates, with speed shown by slope and snow friction over 10 runs; jumps, timers and races are left out."
+  },
+  {
+    "id": "SM-10",
+    "algorithms": [
+      "projectile-arc",
+      "swipe-gesture",
+      "physics-2d",
+      "particle-effects"
+    ],
+    "extraLoc": 1300,
+    "assets": {
+      "sprites": 18,
+      "animations": 10,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 12,
+      "music": 1,
+      "voice": 12,
+      "levels": 8,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "One table with swipe strokes that add topspin or backspin, a spin trail and a landing target, against a kind practice partner over 8 drills; tournaments and doubles are left out."
+  },
+  {
+    "id": "SM-11",
+    "algorithms": ["vehicle-sim", "agent-steering", "particle-effects"],
+    "extraLoc": 1800,
+    "assets": {
+      "sprites": 40,
+      "animations": 12,
+      "backgrounds": 4,
+      "ui": 8,
+      "sfx": 16,
+      "music": 3,
+      "voice": 15,
+      "levels": 4,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "4 top-down garden circuits with friendly electric karts, auto-accelerate, grip and a racing line overlay, and 3 kind AI drivers; items, online play and cups are left out."
+  },
+  {
+    "id": "SM-12",
+    "algorithms": ["vehicle-sim", "weather-sim", "particle-effects"],
+    "extraLoc": 1600,
+    "assets": {
+      "sprites": 25,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 6,
+      "sfx": 12,
+      "music": 2,
+      "voice": 15,
+      "levels": 12,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "One lake with shifting wind arrows where dragging trims the sail and steering tacks the boat through 12 buoy courses; regattas and multiple boat types are left out."
+  },
+  {
+    "id": "SM-13",
+    "algorithms": ["physics-2d", "stacking-stability", "tap-feedback"],
+    "extraLoc": 1600,
+    "assets": {
+      "sprites": 30,
+      "animations": 10,
+      "backgrounds": 4,
+      "ui": 5,
+      "sfx": 12,
+      "music": 1,
+      "voice": 12,
+      "levels": 15,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 5,
+    "plan": "A low safe wall where tapping handholds moves one limb at a time while a center-of-mass marker shows balance, over 15 routes with soft falls; free climbing and gear choices are left out."
+  },
+  {
+    "id": "SM-14",
+    "algorithms": [
+      "physics-2d",
+      "vehicle-sim",
+      "swipe-gesture",
+      "particle-effects"
+    ],
+    "extraLoc": 2200,
+    "assets": {
+      "sprites": 30,
+      "animations": 20,
+      "backgrounds": 4,
+      "ui": 6,
+      "sfx": 16,
+      "music": 3,
+      "voice": 12,
+      "levels": 8,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "One half-pipe and small park where swipes pump, spin and flip the board with an angular momentum trail, 12 tricks and 8 trick goals; a park editor and competitions are left out."
+  },
+  {
+    "id": "SM-15",
+    "algorithms": [
+      "grid-board",
+      "runner-loop",
+      "tap-feedback",
+      "swipe-gesture"
+    ],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 30,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 3,
+      "sfx": 12,
+      "music": 1,
+      "voice": 10,
+      "levels": 6,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "Tap-to-hop crossing over lanes of toy carts and lily-pad channels to reach the library, with a gentle mode where carts pause near the friend, over 6 themed stretches; endless scoring and unlocks are left out."
+  },
+  {
+    "id": "SM-16",
+    "algorithms": [
+      "physics-2d",
+      "projectile-arc",
+      "agent-steering",
+      "tap-feedback"
+    ],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 24,
+      "animations": 12,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 12,
+      "music": 1,
+      "voice": 12,
+      "levels": 6,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "A garden court where tapping the landing circle moves your friend to bump the ball up, with helpful teammates and 6 keep-it-up goals counted together; competitive scoring is left out."
+  },
+  {
+    "id": "SM-17",
+    "algorithms": [
+      "platformer-controller",
+      "projectile-arc",
+      "particle-effects"
+    ],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 30,
+      "animations": 10,
+      "backgrounds": 4,
+      "ui": 4,
+      "sfx": 12,
+      "music": 2,
+      "voice": 10,
+      "levels": 20,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "20 authored rooftop garden levels with forgiving jumps, a jump arc preview, wind ribbons and soft landing pads; collectibles, time trials and a level editor are left out."
+  }
+]
