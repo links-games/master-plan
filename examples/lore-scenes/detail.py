@@ -125,6 +125,12 @@ def sky(scene, spec):
         atmosphere.dust_density=3.0 if spec['world']=='Shacados' else .7
         scene.world.node_tree.links.new(atmosphere.outputs['Color'],background.inputs['Color'])
         background.inputs['Strength'].default_value=.24
+        if spec['world']=='Shacados':
+            # Dense particulate haze hides the blue sky. A diffuse olive-grey
+            # environment and broad sun retain readable, physically lit forms.
+            scene.world.node_tree.links.remove(background.inputs['Color'].links[0])
+            background.inputs['Color'].default_value=(.18,.17,.12,1)
+            background.inputs['Strength'].default_value=.4
     # An actual CC0 HDR panorama supplies natural outdoor illumination.
     if not spec['night'] and spec['kind']!='orbit' and spec['world']=='Raya':
         image=scene.world.node_tree.nodes.new('ShaderNodeTexEnvironment')
@@ -154,7 +160,7 @@ def landmarks(spec, mats, helpers):
     kind=spec['kind']
     if kind=='woods':
         for obj in list(bpy.context.scene.objects):
-            if any(obj.name.startswith(name) for name in ['Repaired brick shelter','Corrugated patched roof','Roof seam','Warm window','Chimney','Salvaged rusted metal','Hand-laid brick']):
+            if any(obj.name.startswith(name) for name in ['Repaired brick shelter','Shelter masonry foundation','Corrugated patched roof','Roof seam','Warm window','Recessed window','Window mullion','Stored rooftop','Reused rooftop','Chimney','Salvaged rusted metal','Hand-laid brick']):
                 bpy.data.objects.remove(obj,do_unlink=True)
         for i in range(30):
             x,y=rng.uniform(-20,20),rng.uniform(-1,45)
@@ -244,11 +250,11 @@ def surface_textures(materials, shacados):
         image.image=bpy.data.images.load(str(root/f'{asset}_{suffix}_1k.jpg'),check_existing=True)
         if suffix!='diff': image.image.colorspace_settings.name='Non-Color'
         links.new(mapping.outputs[0],image.inputs['Vector'])
-        if suffix=='diff' and not shacados:
+        if suffix=='diff':
             tint=nodes.new('ShaderNodeMixRGB')
             tint.blend_type='MULTIPLY'
-            tint.inputs[0].default_value=.65
-            tint.inputs[2].default_value=(.32,.72,.18,1)
+            tint.inputs[0].default_value=1 if shacados else .65
+            tint.inputs[2].default_value=(.30,.27,.20,1) if shacados else (.32,.72,.18,1)
             links.new(image.outputs['Color'],tint.inputs[1])
             links.new(tint.outputs[0],bsdf.inputs[socket])
         elif socket:
@@ -274,7 +280,15 @@ def surface_textures(materials, shacados):
             image.projection_blend=.2
             links.new(mapping.outputs[0],image.inputs['Vector'])
             if suffix!='diff': image.image.colorspace_settings.name='Non-Color'
-            links.new(image.outputs['Color'],bsdf.inputs[socket])
+            if suffix=='diff' and shacados:
+                soot=nodes.new('ShaderNodeMixRGB')
+                soot.blend_type='MULTIPLY'
+                soot.inputs[0].default_value=1
+                soot.inputs[2].default_value={'bark':(.50,.36,.22,1),'brick':(.22,.19,.16,1),'rust':(.24,.16,.10,1)}[key]
+                links.new(image.outputs['Color'],soot.inputs[1])
+                links.new(soot.outputs[0],bsdf.inputs[socket])
+            else:
+                links.new(image.outputs['Color'],bsdf.inputs[socket])
             if suffix=='rough':
                 relief=nodes.new('ShaderNodeBump')
                 relief.inputs['Strength'].default_value=.3

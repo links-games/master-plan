@@ -199,15 +199,25 @@ def buildings(seed,mats,snow=False):
     for i in range(9):
         x=(-1 if i%2 else 1)*rng.uniform(7,21)
         y=8+i*4
-        z=height(x,y,seed)
+        footprint=[height(x+dx,y+dy,seed) for dx in [-2.5,0,2.5] for dy in [-2,0,2]]
+        z=max(footprint)+.08
+        bottom=min(footprint)-.6
+        cube('Shelter masonry foundation',(x,y,(z+bottom)/2),(5,4,z-bottom),mats['rock'])
         h=rng.uniform(2.1,4.2)
         cube('Repaired brick shelter',(x,y,z+h/2),(5,4,h),mats['brick'],.08)
         roof=cube('Corrugated patched roof',(x,y,z+h+.1),(5.5,4.7,.18),mats['snow'] if snow else mats['rust'])
         roof.rotation_euler.y=.08
         for n in range(6):
             pole('Roof seam',(x-2.4+n*.9,y-2.35,z+h+.20),(x-2.4+n*.9,y+2.35,z+h+.20),.035,mats['rust'],4)
-        cube('Warm window',(x,y-2.02,z+h*.55),(1.1,.04,.9),mats['lamp'])
+        cube('Recessed window frame',(x,y-2.025,z+h*.55),(1.3,.06,1.1),mats['dark'],.025)
+        cube('Warm window',(x,y-2.065,z+h*.55),(1.0,.025,.8),mats['lamp'])
+        cube('Window mullion',(x,y-2.085,z+h*.55),(.055,.025,.85),mats['rust'])
         pole('Chimney',(x+1.5,y,z+h),(x+1.5,y,z+h+1.2),.14,mats['rust'])
+        roof_rng=random.Random(seed+i*101)
+        for item in range(4):
+            rx,ry=x+roof_rng.uniform(-1.8,1.8),y+roof_rng.uniform(-1.4,1.4)
+            pole('Stored rooftop pipe',(rx,ry,z+h+.28),(rx+.8,ry+.3,z+h+.28),.09,mats['rust'],8)
+        cube('Reused rooftop timber',(x-1,y+.7,z+h+.25),(1.5,.25,.15),mats['bark'],.025)
     for _ in range(28):
         x,y=rng.uniform(-25,25),rng.uniform(-5,40)
         if abs(x)<4: continue
@@ -376,7 +386,7 @@ def setup(spec,width,samples):
         if sh:
             buildings(seed,mats,snow)
             tree(5,5,height(5,5,seed),3,mats['bark'],mats['leaf'],rng)
-            masonry(mats,seed,height)
+            masonry(mats,seed,lambda x,y,s: max(height(x+dx,y+dy,s) for dx in [-2.5,0,2.5] for dy in [-2,0,2])+.08)
             if kind in ['radio','answer','two-skies']:
                 cube('Patched roof',(0,3,1),(10,10,.25),mats['rust'])
                 radio((-.8,2,1.13),mats,True)
@@ -451,18 +461,18 @@ def setup(spec,width,samples):
     bpy.ops.object.light_add(type='SUN',location=(-8,-8,15))
     sun=bpy.context.object
     sun.rotation_euler=(math.radians(38),math.radians(-28),math.radians(-28))
-    sun.data.energy=0 if indoor else (.35 if spec['night'] else .9)
-    sun.data.angle=.10
-    sun.data.color=(1,.71,.46) if sh or spec['night'] else (1,.88,.71)
+    sun.data.energy=0 if indoor else (.35 if spec['night'] else .35 if sh else .9)
+    sun.data.angle=.30 if sh else .10
+    sun.data.color=(.85,.73,.51) if sh or spec['night'] else (1,.88,.71)
     bpy.ops.object.light_add(type='AREA',location=(-3,-1,4.8 if indoor else 8))
-    bpy.context.object.data.energy=300 if indoor else 500
+    bpy.context.object.data.energy=(120 if indoor else 180) if sh else (300 if indoor else 500)
     bpy.context.object.data.shape='DISK'
     bpy.context.object.data.size=8
     bpy.context.object.data.color=(1,.78,.52) if sh else (.75,.87,1)
     if indoor:
         bpy.ops.object.light_add(type='AREA',location=(1,7.5,4))
         light=bpy.context.object
-        light.data.energy=350
+        light.data.energy=140 if sh else 350
         light.data.size=3
         light.data.color=(.52,.72,1)
         light.rotation_euler=(Vector((0,2,1.5))-light.location).to_track_quat('-Z','Y').to_euler()
