@@ -112,6 +112,116 @@ def masonry(materials, seed, ground_height):
     detail_mesh('Hand-laid brick faces and recessed mortar',vertices,faces,materials['brick'])
 
 
+def settlement_detail(spec, mats, helpers):
+    """Weathered construction; offline detail leaves browser proxies bounded."""
+    ball,cube,pole,tree,height=helpers
+    seed=spec['seed']
+    rng=random.Random(seed+918)
+    before=set(bpy.context.scene.objects)
+    shelters=[obj for obj in bpy.context.scene.objects if obj.name.startswith('Repaired brick shelter')]
+    for shelter in shelters:
+        x,y,center=shelter.location
+        h=shelter.dimensions.z
+        base=center-h/2
+        dx=x-1.5
+        cube('Dark recessed doorway',(dx,y-2.05,base+1.02),(1.10,.08,2.04),mats['dark'],.015)
+        for offset in [-.59,.59]:
+            cube('Reclaimed door jamb',(dx+offset,y-2.13,base+1.07),(.10,.13,2.18),mats['bark'],.015)
+        cube('Door lintel',(dx,y-2.13,base+2.18),(1.28,.18,.16),mats['bark'],.015)
+        for board in range(6):
+            cube('Uneven timber door board',(dx-.43+board*.17,y-2.14,base+1.04),(.16,.07,1.93-rng.uniform(0,.035)),mats['bark'],.008)
+        for level in [.43,1.65]:
+            cube('Hand-forged door hinge',(dx-.3,y-2.19,base+level),(.48,.035,.05),mats['rust'],.009)
+        pole('Door latch',(dx+.27,y-2.24,base+.95),(dx+.41,y-2.24,base+.95),.025,mats['rust'],8)
+        for step in range(2):
+            cube('Worn entrance step',(dx,y-2.4-step*.3,base-.10-step*.12),(1.5,.65,.24),mats['rock'],.025)
+        # True corrugation, overlapping seams and thin sheet edges catch light.
+        for column in range(5):
+            vertices,faces=[],[]
+            left=x-2.8+column*1.12
+            for row in range(31):
+                ry=y-2.5+row/30*5
+                for across in range(15):
+                    rx=left+across/14*1.18
+                    rz=base+h+.22-(rx-x)*.08+math.sin(across/14*math.tau*4)*.026
+                    vertices.append((rx,ry,rz))
+            for row in range(30):
+                for across in range(14):
+                    a=row*15+across
+                    faces.append((a,a+1,a+16,a+15))
+            panel=detail_mesh('Overlapping corrugated iron roof sheet',vertices,faces,mats['rust'])
+            solid=panel.modifiers.new('Thin iron sheet edge','SOLIDIFY')
+            solid.thickness=.012
+        pole('Eaves gutter',(x-2.8,y-2.52,base+h+.19),(x+2.8,y-2.52,base+h-.25),.065,mats['rust'],12)
+        pole('Reused drain pipe',(x+2.72,y-2.48,base+.22),(x+2.72,y-2.48,base+h-.22),.065,mats['rust'],12)
+        pole('Drain elbow',(x+2.72,y-2.48,base+.22),(x+2.95,y-2.8,base+.12),.065,mats['rust'],12)
+        for side in [-1,1]:
+            cube('Old window shutter',(x+side*.82,y-2.13,base+h*.55),(.32,.08,1.12),mats['bark'],.012)
+        cube('Projecting stone window sill',(x,y-2.20,base+h*.55-.57),(1.60,.42,.14),mats['rock'],.02)
+        for level in range(3):
+            cube('Wall repair plate',(x+2.15,y-2.03,base+.45+level*.65),(.48,.045,.50),mats['rust'],.016)
+            for bx in [-.17,.17]:
+                for bz in [-.17,.17]:
+                    ball('Repair plate bolt',(x+2.15+bx,y-2.07,base+.45+level*.65+bz),(.025,.018,.025),mats['rust'],1)
+        for item in range(14):
+            rx,ry=x+rng.uniform(-2.8,2.8),y-rng.uniform(2.3,3.6)
+            brick=cube('Broken brick at the foundation',(rx,ry,height(rx,ry,seed)+.07),(.24,.12,.10),mats['brick'],.014)
+            brick.rotation_euler.z=rng.random()*math.tau
+    for obj in set(bpy.context.scene.objects)-before:
+        obj['render_only']=True
+    if spec['kind']=='scrap':
+        salvage_dunes(spec,mats,helpers)
+
+
+def salvage_dunes(spec, mats, helpers):
+    """Layered heaps of steel sheets, pipes and dismantled cylindrical boilers."""
+    ball,cube,pole,tree,height=helpers
+    rng=random.Random(spec['seed']+730)
+    before=set(bpy.context.scene.objects)
+    for cx,cy,radius,peak in [(-6,3,5,3.2),(7,15,6,4.8),(-11,23,7,5.5)]:
+        for index in range(110):
+            angle=rng.random()*math.tau
+            distance=radius*math.sqrt(rng.random())
+            x,y=cx+math.cos(angle)*distance,cy+math.sin(angle)*distance
+            z=height(x,y,spec['seed'])+peak*(1-distance/radius)*rng.uniform(.4,1)
+            sheet=cube('Layered salvaged steel plate',(x,y,z),
+                       (rng.uniform(.4,1.8),rng.uniform(.4,1.5),rng.uniform(.025,.08)),mats['rust'],.025)
+            sheet.rotation_euler=(rng.uniform(-.7,.7),rng.uniform(-.7,.7),rng.random()*math.tau)
+            if index%7==0:
+                pole('Exposed bent pipe',(x,y,z+.12),(x+.6,y+.9,z+.35),.09,mats['rust'],12)
+        for index in range(3):
+            x,y=cx+rng.uniform(-2,2),cy+rng.uniform(-2,2)
+            z=height(x,y,spec['seed'])+1
+            pole('Salvaged cylindrical boiler',(x-.65,y,z),(x+.65,y,z),.48,mats['rust'],32)
+            for end in [-.65,.65]:
+                bpy.ops.mesh.primitive_torus_add(major_segments=24,minor_segments=6,
+                    major_radius=.47,minor_radius=.045,location=(x+end,y,z),rotation=(0,math.pi/2,0))
+                bpy.context.object.data.materials.append(mats['rust'])
+                bpy.context.object.name='Boiler rolled steel rim'
+    for obj in set(bpy.context.scene.objects)-before:
+        obj['render_only']=True
+
+
+def weathered_stone(obj, seed):
+    """Break spherical silhouettes with deterministic erosion and strata."""
+    from mathutils import noise
+    for vertex in obj.data.vertices:
+        p=vertex.co
+        variation=noise.fractal(p*3+Vector((seed*.13,0,0)),1,2,3)
+        p*=.88+variation*.24
+        p.z+=math.sin(p.x*7+p.y*3)*.055
+    # Dense geometry creates real silhouette detail, not just shader bumps.
+    modifier=obj.modifiers.new('Fractured stone subdivision','SUBSURF')
+    modifier.subdivision_type='SIMPLE'
+    modifier.levels=2
+    texture=bpy.data.textures.new('Fine rock erosion',type='CLOUDS')
+    texture.noise_scale=.20
+    displace=obj.modifiers.new('Fine chipped stone','DISPLACE')
+    displace.texture=texture
+    displace.strength=.075
+    displace.texture_coords='GLOBAL'
+
+
 def sky(scene, spec):
     background=scene.world.node_tree.nodes.get('Background')
     if not spec['night'] and spec['kind']!='orbit':

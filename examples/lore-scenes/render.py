@@ -15,7 +15,7 @@ from pathlib import Path
 import bpy
 from mathutils import Vector, noise
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from detail import meadow, distant_hills, masonry, sky, landmarks, surface_textures, scanned_understory
+from detail import meadow, distant_hills, masonry, sky, landmarks, surface_textures, scanned_understory, settlement_detail, weathered_stone
 from trees import natural_tree, reset as reset_trees
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -210,7 +210,7 @@ def buildings(seed,mats,snow=False):
         for n in range(6):
             pole('Roof seam',(x-2.4+n*.9,y-2.35,z+h+.20),(x-2.4+n*.9,y+2.35,z+h+.20),.035,mats['rust'],4)
         cube('Recessed window frame',(x,y-2.025,z+h*.55),(1.3,.06,1.1),mats['dark'],.025)
-        cube('Warm window',(x,y-2.065,z+h*.55),(1.0,.025,.8),mats['lamp'])
+        cube('Warm window',(x,y-2.065,z+h*.55),(1.0,.025,.8),mats['window'])
         cube('Window mullion',(x,y-2.085,z+h*.55),(.055,.025,.85),mats['rust'])
         pole('Chimney',(x+1.5,y,z+h),(x+1.5,y,z+h+1.2),.14,mats['rust'])
         roof_rng=random.Random(seed+i*101)
@@ -327,12 +327,23 @@ def paired_worlds(seed,mats):
         x,y=rng.uniform(-16,-2),rng.uniform(-2,20)
         ball('Raya clover',(x,y,.1),(.18,.18,.08),mats['leaf'],1)
     for x,y in [(6,11),(13,16),(5,20)]:
-        cube('Shacados brick home',(x,y,1.5),(4,4,3),mats['brick'],.04)
-        cube('Rusted shelter roof',(x,y,3.1),(4.7,4.7,.15),mats['rust'])
-        cube('A light kept burning',(x,y-2.02,1.5),(.9,.025,1),mats['lamp'])
+        cube('Repaired brick shelter',(x,y,1.5),(5,4,3),mats['brick'],.04)
+        cube('Rusted shelter roof',(x,y,3.1),(5.5,4.7,.15),mats['rust'])
+        cube('A light kept burning',(x,y-2.02,1.5),(.9,.025,1),mats['window'])
     cube('Radio roof',(9,4,.5),(10,9,.25),mats['rust'])
     radio((9,3,.65),mats)
     ball('One living rooftop plant',(13,3,.9),(.25,.25,.4),mats['leaf'])
+    settlement_detail({'seed':seed,'kind':'two-skies'},mats,(ball,cube,pole,tree,lambda x,y,s:0))
+    # Fine vegetation remains on Raya's own stage; no shared planetary ground.
+    from detail import detail_mesh
+    vertices,faces=[],[]
+    for index in range(18000):
+        x,y=rng.uniform(-16.8,-1.2),rng.uniform(-3.4,21.4)
+        z=rng.uniform(.09,.32)
+        a=len(vertices)
+        vertices.extend([(x-.012,y,0),(x+.012,y,0),(x+.05,y+.03,z)])
+        faces.append((a,a+1,a+2))
+    detail_mesh('Raya stage fine meadow',vertices,faces,mats['leaf'])
     bpy.ops.object.light_add(type='AREA',location=(-9,4,12))
     bpy.context.object.data.energy=750
     bpy.context.object.data.color=(.35,.55,1)
@@ -375,6 +386,11 @@ def setup(spec,width,samples):
     emission=lamp.inputs.get('Emission Color') or lamp.inputs.get('Emission')
     emission.default_value=(1,.25,.025,1)
     if lamp.inputs.get('Emission Strength'): lamp.inputs['Emission Strength'].default_value=3
+    mats['window']=mats['lamp'].copy()
+    mats['window'].name='Dusty window with diffuse interior light'
+    window=mats['window'].node_tree.nodes.get('Principled BSDF')
+    window.inputs['Emission Strength'].default_value=.7
+    window.inputs['Roughness'].default_value=.48
     surface_textures(mats,sh)
     kind=spec['kind']
     indoor=kind in ['school','repair','tracking']
@@ -390,10 +406,6 @@ def setup(spec,width,samples):
             if kind in ['radio','answer','two-skies']:
                 cube('Patched roof',(0,3,1),(10,10,.25),mats['rust'])
                 radio((-.8,2,1.13),mats,True)
-            if kind=='scrap':
-                for i in range(20):
-                    x,y=rng.uniform(-10,10),rng.uniform(4,22)
-                    cube('Salvaged boiler',(x,y,height(x,y,seed)+.5),(1.6,.9,1),mats['rust'],.15)
             if kind=='launch':
                 pole('Uncrewed probe booster',(0,28,0),(0,28,14),.8,mats['rust'],16)
                 cube('Distant empty launch platform',(0,28,.3),(5,5,.5),mats['rock'])
@@ -411,7 +423,8 @@ def setup(spec,width,samples):
             if kind in ['ridge','glacier','eclipse']:
                 for i in range(9):
                     x,y=rng.uniform(-26,26),rng.uniform(3,35)
-                    ball('Weathered granite',(x,y,height(x,y,seed)),(2,2,2.2),mats['snow'] if kind=='glacier' else mats['rock'])
+                    stone=ball('Weathered granite',(x,y,height(x,y,seed)),(2,2,2.2),mats['snow'] if kind=='glacier' else mats['rock'],3)
+                    weathered_stone(stone,seed+i)
             if kind=='nest':
                 cube('White lattice reading platform',(0,6,8),(6,5,.2),mats['white'],.1)
                 for i in range(8): pole('Living nest ribs',(-3+i*.85,4,8.1),(-3+i*.85,9,8.1),.045,mats['white'])
@@ -424,6 +437,8 @@ def setup(spec,width,samples):
             meadow(seed,mats,height,kind=='delta')
             scanned_understory(seed,height)
     landmarks(spec,mats,(ball,cube,pole,tree,height))
+    if sh and not indoor and kind!='woods':
+        settlement_detail(spec,mats,(ball,cube,pole,tree,height))
     scene=bpy.context.scene
     scene.render.engine='CYCLES'
     scene.cycles.samples=samples
@@ -489,7 +504,7 @@ def setup(spec,width,samples):
     scene.camera=bpy.context.object
     scene.view_settings.view_transform='AgX' if bpy.app.version[0]>=4 else 'Filmic'
     scene.view_settings.look='None'
-    scene.view_settings.exposure=0
+    scene.view_settings.exposure=.7 if sh else 0
     scene.view_settings.gamma=1
     return camera,target
 
