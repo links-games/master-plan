@@ -85,7 +85,7 @@ describe('visual game catalog', () => {
     expect(
       readdirSync(join(base, 'pages')).filter((name) => name.endsWith('.md'))
         .length
-    ).toBe(216);
+    ).toBe(300);
     for (const game of catalog) {
       const id = game.id.toLowerCase();
       const family = id.split('-')[0];
@@ -152,5 +152,107 @@ describe('visual game catalog', () => {
     }
     expect(errors).toEqual([]);
     expect(hashes.size).toBe(864);
+  });
+});
+
+// Collections added for the Raya feedback (R55–R76): image descriptions and
+// prompts now, images later (R76).
+const pendingCounts = { td: 30, pk: 22, ry: 16, sh: 16 };
+const pending = Object.keys(pendingCounts).flatMap((family) =>
+  json(join(base, 'catalog', `${family}.json`))
+);
+const views = {
+  '02-world': 'world',
+  '03-details': 'details',
+  '04-discovery': 'discovery',
+};
+
+describe('art-pending collections', () => {
+  it('adds toddler, preschool, Raya life and Shacados ideas with stories', () => {
+    expect(new Set(pending.map((game) => game.id)).size).toBe(84);
+    expect(new Set([...catalog, ...pending].map((game) => game.id)).size).toBe(
+      300
+    );
+    for (const [family, count] of Object.entries(pendingCounts)) {
+      const games = pending.filter((game) =>
+        game.id.startsWith(family.toUpperCase())
+      );
+      expect(games.length).toBe(count);
+    }
+    for (const game of pending) {
+      expect(game.original).toBe(false);
+      for (const field of [
+        'title',
+        'genre',
+        'lesson',
+        'ages',
+        'scene',
+        'story',
+        'wisdom',
+      ]) {
+        expect(typeof game[field]).toBe('string');
+        expect(game[field].trim().length > 0).toBe(true);
+      }
+      for (const view of Object.values(views)) {
+        expect(game.views[view].trim().length > 40).toBe(true);
+      }
+    }
+    for (const game of pending.filter((item) => item.id.startsWith('TD'))) {
+      expect(/^[1-3]/.test(game.ages)).toBe(true);
+    }
+  });
+
+  it('renders image descriptions, the story and the prompt IDs on each page', () => {
+    for (const game of pending) {
+      const id = game.id.toLowerCase();
+      const family = id.split('-')[0];
+      const page = read(join(base, 'pages', `${id}.md`));
+      for (const text of [
+        game.title,
+        game.scene,
+        game.story,
+        game.wisdom,
+        ...Object.values(views).map((view) => game.views[view]),
+        '## Estimated plan',
+        'Four image descriptions (art pending)',
+        `](../jobs/${family}.json)`,
+      ]) {
+        expect(page.includes(text)).toBe(true);
+      }
+      expect(page.includes('.webp)')).toBe(false);
+      expect(existsSync(join(base, 'art', id))).toBe(false);
+    }
+  });
+
+  it('writes four generation prompts per idea from its descriptions', () => {
+    for (const family of Object.keys(pendingCounts)) {
+      const jobs = json(join(base, 'jobs', `${family}.json`));
+      const games = pending.filter((game) =>
+        game.id.startsWith(family.toUpperCase())
+      );
+      expect(jobs.length).toBe(games.length * 4);
+      for (const game of games) {
+        const id = game.id.toLowerCase();
+        for (const direction of directions) {
+          const job = jobs.find((item) => item.id === `${id}/${direction}`);
+          expect(job.gameId).toBe(game.id);
+          const text =
+            direction === '01-gameplay'
+              ? game.scene
+              : game.views[views[direction]];
+          expect(job.prompt.includes(text)).toBe(true);
+        }
+      }
+    }
+  });
+
+  it('prompts a portrait and a landscape loading screen per collection (R58)', () => {
+    const jobs = json(join(base, 'jobs', 'loading-screens.json'));
+    expect(jobs.length).toBe(32);
+    for (const job of jobs) {
+      const world = job.family === 'sh' ? 'Shacados' : 'Raya';
+      expect(job.prompt.includes(`The planet ${world}`)).toBe(true);
+      expect(job.prompt.includes('no text')).toBe(true);
+    }
   });
 });

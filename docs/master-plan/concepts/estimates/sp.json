@@ -17,7 +17,7 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: 12 constellations on a dark sky chart where the next star glows and a tap draws the line, ending with the voiced figure and one real star fact. Free-form drawing and a full sky map are left out."
+    "plan": "12 constellations on a dark sky chart where the next star glows and a tap draws the line, ending with the voiced figure and one real star fact. Free-form drawing and a full sky map are left out."
   },
   {
     "id": "SP-02",
@@ -37,7 +37,7 @@
     },
     "toddler": 3,
     "minAge": 3,
-    "plan": "First playable: 8 desk layouts from 2x2 to 4x4 pairing each planet with its moon card, voiced names and a short fact on each match, no timer. Scoring, dwarf planets and exoplanets are deferred."
+    "plan": "8 desk layouts from 2x2 to 4x4 pairing each planet with its moon card, voiced names and a short fact on each match, no timer. Scoring, dwarf planets and exoplanets are deferred."
   },
   {
     "id": "SP-03",
@@ -62,7 +62,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: 24 puzzles where one swipe gives a comet an impulse at a chosen moment and the projected orbit redraws, showing that early small pushes beat late big ones. Multi-body chaos and a level editor are left out."
+    "plan": "24 puzzles where one swipe gives a comet an impulse at a chosen moment and the projected orbit redraws, showing that early small pushes beat late big ones. Multi-body chaos and a level editor are left out."
   },
   {
     "id": "SP-04",
@@ -82,7 +82,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: 15 landing sites on the Moon with a throttle and tilt control, a visible fuel gauge and an assist mode that slows gravity. Other bodies, docking and terrain generation are left out."
+    "plan": "15 landing sites on the Moon with a throttle and tilt control, a visible fuel gauge and an assist mode that slows gravity. Other bodies, docking and terrain generation are left out."
   },
   {
     "id": "SP-05",
@@ -102,7 +102,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: a sandbox where dragging sets a planet starting velocity and traced ellipses reveal Kepler laws, plus 20 garden challenges such as making a round orbit. Moons of moons and save sharing are deferred."
+    "plan": "A sandbox where dragging sets a planet starting velocity and traced ellipses reveal Kepler laws, plus 20 garden challenges such as making a round orbit. Moons of moons and save sharing are deferred."
   },
   {
     "id": "SP-06",
@@ -127,7 +127,7 @@
     },
     "toddler": 1,
     "minAge": 9,
-    "plan": "First playable: one calm station display where delayed telescope readings arrive on a timeline and the player predicts where tracked objects will be, over 15 shifts. Multiple stations and real survey data are deferred."
+    "plan": "One calm station display where delayed telescope readings arrive on a timeline and the player predicts where tracked objects will be, over 15 shifts. Multiple stations and real survey data are deferred."
   },
   {
     "id": "SP-07",
@@ -152,7 +152,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: a workbench with about 20 modules where the player assembles a probe within a mass budget, sees the rocket equation result and flies it on 20 short missions. Custom parts and 3D views are left out."
+    "plan": "A workbench with about 20 modules where the player assembles a probe within a mass budget, sees the rocket equation result and flies it on 20 short missions. Custom parts and 3D views are left out."
   },
   {
     "id": "SP-08",
@@ -172,7 +172,7 @@
     },
     "toddler": 1,
     "minAge": 10,
-    "plan": "First playable: one space board where each move travels as a visible light signal so both sides act on old information, with a kind AI and 15 scenario puzzles. Online play and large maps are deferred."
+    "plan": "One space board where each move travels as a visible light signal so both sides act on old information, with a kind AI and 15 scenario puzzles. Online play and large maps are deferred."
   },
   {
     "id": "SP-09",
@@ -192,7 +192,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: a pannable and zoomable star field built from a real catalog with 20 guided tours that ask the child to find objects and show their distance in light-years. Deep-sky photography and AR are left out."
+    "plan": "A pannable and zoomable star field built from a real catalog with 20 guided tours that ask the child to find objects and show their distance in light-years. Deep-sky photography and AR are left out."
   },
   {
     "id": "SP-10",
@@ -212,7 +212,7 @@
     },
     "toddler": 1,
     "minAge": 9,
-    "plan": "First playable: 20 navigation challenges where the player rotates a solar sail so sunlight slowly bends the probe path toward a target orbit. Planetary flybys and mission planning tools are deferred."
+    "plan": "20 navigation challenges where the player rotates a solar sail so sunlight slowly bends the probe path toward a target orbit. Planetary flybys and mission planning tools are deferred."
   },
   {
     "id": "SP-11",
@@ -237,7 +237,7 @@
     },
     "toddler": 1,
     "minAge": 9,
-    "plan": "First playable: a globe view where the player places satellites on a few orbit types, links them to cover isolated ground stations and watches message delay, across 24 coverage puzzles. Launch costs and 3D globes are deferred."
+    "plan": "A globe view where the player places satellites on a few orbit types, links them to cover isolated ground stations and watches message delay, across 24 coverage puzzles. Launch costs and 3D globes are deferred."
   },
   {
     "id": "SP-12",
@@ -263,7 +263,7 @@
     },
     "toddler": 1,
     "minAge": 10,
-    "plan": "First playable: a 3D rocket assembly bay with about 25 parts and a staging panel showing delta-v, then a flight to orbit around one planet over 20 missions. Other planets, docking and crew are left out."
+    "plan": "A 3D rocket assembly bay with about 25 parts and a staging panel showing delta-v, then a flight to orbit around one planet over 20 missions. Other planets, docking and crew are left out."
   },
   {
     "id": "SP-13",
@@ -283,7 +283,7 @@
     },
     "toddler": 1,
     "minAge": 10,
-    "plan": "First playable: one 3D fictional planet whose atmosphere, star distance and sunlight sliders change temperature, oceans and ice, with 15 habitability goals. Evolving life, civilizations and multiple stars are deferred."
+    "plan": "One 3D fictional planet whose atmosphere, star distance and sunlight sliders change temperature, oceans and ice, with 15 habitability goals. Evolving life, civilizations and multiple stars are deferred."
   },
   {
     "id": "SP-14",
@@ -308,7 +308,7 @@
     },
     "toddler": 1,
     "minAge": 12,
-    "plan": "First playable: a 3D cockpit flight between a home station and nearby beacons where speed sliders show time dilation, Doppler color and aberration, with clocks compared on return over 30 legs. Free-form galaxy travel is left out."
+    "plan": "A 3D cockpit flight between a home station and nearby beacons where speed sliders show time dilation, Doppler color and aberration, with clocks compared on return over 30 legs. Free-form galaxy travel is left out."
   },
   {
     "id": "SP-15",
@@ -328,7 +328,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: 18 docking runs where tiny reaction-control puffs align a capsule with a rotating ring, with a relative-velocity readout and a calm practice mode. 3D views and fuel economy campaigns are deferred."
+    "plan": "18 docking runs where tiny reaction-control puffs align a capsule with a rotating ring, with a relative-velocity readout and a calm practice mode. 3D views and fuel economy campaigns are deferred."
   },
   {
     "id": "SP-16",
@@ -348,7 +348,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: 12 short rescue sweeps where a drone uses tractor-field arcs to push drifting debris aside and reach stranded probes, choosing which to save first. Upgrades trees and endless mode are left out."
+    "plan": "12 short rescue sweeps where a drone uses tractor-field arcs to push drifting debris aside and reach stranded probes, choosing which to save first. Upgrades trees and endless mode are left out."
   },
   {
     "id": "SP-17",
@@ -373,6 +373,6 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: a side-view rover driving over generated terrain to 12 outcrops, sampling rocks and comparing instrument readings with an uncertainty bar to sort rock types. Full 3D Mars maps are deferred."
+    "plan": "A side-view rover driving over generated terrain to 12 outcrops, sampling rocks and comparing instrument readings with an uncertainty bar to sort rock types. Full 3D Mars maps are deferred."
   }
 ]

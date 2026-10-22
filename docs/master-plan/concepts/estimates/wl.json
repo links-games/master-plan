@@ -17,7 +17,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: a toy train steered with four big arrow buttons on a 6x6 grid collects voiced letters in order to spell 12 three-letter words; the train never crashes, it just waits. No speed-up, no endless mode."
+    "plan": "A toy train steered with four big arrow buttons on a 6x6 grid collects voiced letters in order to spell 12 three-letter words; the train never crashes, it just waits. No speed-up, no endless mode."
   },
   {
     "id": "WL-02",
@@ -42,7 +42,7 @@
     },
     "toddler": 3,
     "minAge": 3,
-    "plan": "First playable: the 26 Latin capital letters on a sand tablet with animated stroke-order arrows, generous tolerance and a voiced letter name on success. Other scripts, lowercase and cursive come later."
+    "plan": "The 26 Latin capital letters on a sand tablet with animated stroke-order arrows, generous tolerance and a voiced letter name on success. Other scripts, lowercase and cursive come later."
   },
   {
     "id": "WL-03",
@@ -62,7 +62,7 @@
     },
     "toddler": 3,
     "minAge": 3,
-    "plan": "First playable: a pictured object is named aloud and three slow bubbles carry letters; tapping the one with the matching first sound pops it with the phoneme. 30 pictures, no misses counted and no timer."
+    "plan": "A pictured object is named aloud and three slow bubbles carry letters; tapping the one with the matching first sound pops it with the phoneme. 30 pictures, no misses counted and no timer."
   },
   {
     "id": "WL-04",
@@ -82,7 +82,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: 10 plant-themed word lists placed by the generator into 8x8 grids with horizontal and vertical words and a drag-to-select line. Diagonal and backward words and timed modes are left out."
+    "plan": "10 plant-themed word lists placed by the generator into 8x8 grids with horizontal and vertical words and a drag-to-select line. Diagonal and backward words and timed modes are left out."
   },
   {
     "id": "WL-05",
@@ -102,7 +102,7 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: 8 bridge sets where a picture card is dragged to one of three voiced translation cards in one second language, 30 words with cognate hints. Extra languages and spaced review are left out."
+    "plan": "8 bridge sets where a picture card is dragged to one of three voiced translation cards in one second language, 30 words with cognate hints. Extra languages and spaced review are left out."
   },
   {
     "id": "WL-06",
@@ -122,7 +122,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: a daily seeded five-letter guess grid with six rows, on-screen keyboard, colour plus shape feedback markers and 300 curated child-safe answers. Sharing, streak pressure and other languages are left out."
+    "plan": "A daily seeded five-letter guess grid with six rows, on-screen keyboard, colour plus shape feedback markers and 300 curated child-safe answers. Sharing, streak pressure and other languages are left out."
   },
   {
     "id": "WL-07",
@@ -147,7 +147,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: 20 bakery trays where letter biscuits are dragged into slots to make a valid word, with a bonus for extra words found and a shuffle button. Prefix and suffix chapters come later."
+    "plan": "20 bakery trays where letter biscuits are dragged into slots to make a valid word, with a bonus for extra words found and a shuffle button. Prefix and suffix chapters come later."
   },
   {
     "id": "WL-08",
@@ -167,7 +167,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: seven tappable hex tiles with a mandatory centre letter, puzzles generated from a curated kid-safe word list, a found-words list and gentle rank badges. Daily mode and other languages are deferred."
+    "plan": "Seven tappable hex tiles with a mandatory centre letter, puzzles generated from a curated kid-safe word list, a found-words list and gentle rank badges. Daily mode and other languages are deferred."
   },
   {
     "id": "WL-09",
@@ -187,7 +187,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: 20 authored 4x4 and 5x5 mini crosswords with picture clues, voiced clue reading and letter-by-letter checking. The crossword generator and text-only clues are left for later."
+    "plan": "20 authored 4x4 and 5x5 mini crosswords with picture clues, voiced clue reading and letter-by-letter checking. The crossword generator and text-only clues are left for later."
   },
   {
     "id": "WL-10",
@@ -207,7 +207,7 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: a musical garden path of 10 songs where the friend stops at each beat and the child taps which of three pictures rhymes with the voiced word; the beat waits for the child. Syllable clapping comes later."
+    "plan": "A musical garden path of 10 songs where the friend stops at each beat and the child taps which of three pictures rhymes with the voiced word; the beat waits for the child. Syllable clapping comes later."
   },
   {
     "id": "WL-11",
@@ -227,7 +227,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: memory pairs matching reviewed handshape drawings of one fingerspelling alphabet to letter cards over 8 grids from 4 to 12 cards. Signed words, other sign languages and camera checking are left out."
+    "plan": "Memory pairs matching reviewed handshape drawings of one fingerspelling alphabet to letter cards over 8 grids from 4 to 12 cards. Signed words, other sign languages and camera checking are left out."
   },
   {
     "id": "WL-12",
@@ -247,7 +247,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: 15 home-row-first typing lessons where short words fall as rain clouds and typing them waters a seedling bed, with a finger guide and a no-timer practice mode. Sentences and racing are left out."
+    "plan": "15 home-row-first typing lessons where short words fall as rain clouds and typing them waters a seedling bed, with a finger guide and a no-timer practice mode. Sentences and racing are left out."
   },
   {
     "id": "WL-13",
@@ -267,7 +267,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: 24 postcard puzzles over a rotating Caesar wheel, simple substitution and a letter-frequency chart, each decoding a short friendly message. Vigenere and public-key chapters come later."
+    "plan": "24 postcard puzzles over a rotating Caesar wheel, simple substitution and a letter-frequency chart, each decoding a short friendly message. Vigenere and public-key chapters come later."
   },
   {
     "id": "WL-14",
@@ -292,7 +292,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: 24 scenes where voiced subject, verb and object cards are linked into a sentence path that the sprites then act out, in two languages with different word order. Tenses and more languages are deferred."
+    "plan": "24 scenes where voiced subject, verb and object cards are linked into a sentence path that the sprites then act out, in two languages with different word order. Tenses and more languages are deferred."
   },
   {
     "id": "WL-15",
@@ -317,7 +317,7 @@
     },
     "toddler": 2,
     "minAge": 4,
-    "plan": "First playable: roll six picture dice and drag three faces into beginning, middle and ending slots, then watch a short narrated animated story built from them. Voice recording and shared stories are left out."
+    "plan": "Roll six picture dice and drag three faces into beginning, middle and ending slots, then watch a short narrated animated story built from them. Voice recording and shared stories are left out."
   },
   {
     "id": "WL-16",
@@ -337,7 +337,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: 25 authored treehouse ladders of three to six rungs with four-letter words, one-letter changes checked against the word list and a graph-search hint for the next rung. Daily ladders come later."
+    "plan": "25 authored treehouse ladders of three to six rungs with four-letter words, one-letter changes checked against the word list and a graph-search hint for the next rung. Daily ladders come later."
   },
   {
     "id": "WL-17",
@@ -357,7 +357,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: 30 tested puzzles of sixteen word cards sorted into four picnic baskets, with one gentle hint per puzzle and a reveal that explains each category. Picture-only and daily puzzles are left out."
+    "plan": "30 tested puzzles of sixteen word cards sorted into four picnic baskets, with one gentle hint per puzzle and a reveal that explains each category. Picture-only and daily puzzles are left out."
   },
   {
     "id": "WL-18",
@@ -377,6 +377,6 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: 20 rebus phrases on a theatre stage built from illustrated word and object tiles that are dragged into order, with a voiced reveal of the idiom meaning. Player-made rebuses are left out."
+    "plan": "20 rebus phrases on a theatre stage built from illustrated word and object tiles that are dragged into order, with a voiced reveal of the idiom meaning. Player-made rebuses are left out."
   }
 ]

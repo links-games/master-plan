@@ -1,0 +1,477 @@
+[
+  {
+    "id": "PK-01",
+    "algorithms": [
+      "trace-check",
+      "phonics-audio",
+      "particle-effects",
+      "tap-feedback"
+    ],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 20,
+      "animations": 4,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 10,
+      "music": 1,
+      "voice": 40,
+      "levels": 26,
+      "content": 26,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "One sand beach screen with 26 capital letters traced from a glowing start pebble, voiced letter sounds and a sand picture reward per letter. Lowercase partners and name tracing are left for later."
+  },
+  {
+    "id": "PK-02",
+    "algorithms": [
+      "trace-check",
+      "counting",
+      "tap-feedback",
+      "tween-cause-effect"
+    ],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 25,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 10,
+      "music": 1,
+      "voice": 30,
+      "levels": 10,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Ten levels for numerals 1 to 10: trace the sand numeral, then tap each waddling chick once while the Orbi counts aloud. Turtle and fawn variants and the Beadle line are deferred."
+  },
+  {
+    "id": "PK-03",
+    "algorithms": [
+      "phonics-audio",
+      "word-list",
+      "tap-feedback",
+      "tween-cause-effect"
+    ],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 30,
+      "animations": 4,
+      "backgrounds": 1,
+      "ui": 2,
+      "sfx": 8,
+      "music": 1,
+      "voice": 60,
+      "levels": 0,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "A single pool screen where three leaf boats carry pictures and the Orbi voices a first sound; 60 picture words over 12 sounds with a stone harbor reward. Four-boat rounds and close sounds come later."
+  },
+  {
+    "id": "PK-04",
+    "algorithms": ["drag-drop-snap", "word-list", "tween-cause-effect"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 30,
+      "animations": 5,
+      "backgrounds": 1,
+      "ui": 2,
+      "sfx": 8,
+      "music": 1,
+      "voice": 50,
+      "levels": 0,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Sandbar screen where Soru shows a picture and the child drags its rhyme from three choices to Tari; 20 rhyme pairs, all voiced. Rhyme chains and the sing-along mode are left out."
+  },
+  {
+    "id": "PK-05",
+    "algorithms": ["tap-feedback", "tween-cause-effect", "shuffle-deal"],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 40,
+      "animations": 5,
+      "backgrounds": 1,
+      "ui": 2,
+      "sfx": 8,
+      "music": 1,
+      "voice": 50,
+      "levels": 0,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Dusk beach where Rela shows one side of an opposite and the child taps the other from three picture pebbles; 20 opposite pairs with voiced names. Drag acting and the light and dark night round are deferred."
+  },
+  {
+    "id": "PK-06",
+    "algorithms": ["pattern-sequence", "drag-drop-snap", "tween-cause-effect"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 20,
+      "animations": 5,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 10,
+      "music": 1,
+      "voice": 25,
+      "levels": 20,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Twenty stepping stone levels covering AB, ABB, AAB and ABC color and shape patterns; drag the missing stone and Linky hops across. Sound stones and the build-your-own path come later."
+  },
+  {
+    "id": "PK-07",
+    "algorithms": [
+      "sort-classify",
+      "drag-drop-snap",
+      "tween-cause-effect",
+      "shuffle-deal"
+    ],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 40,
+      "animations": 5,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 35,
+      "levels": 20,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "Tree screen with four nests: 20 levels moving from color only to shape only to color and shape together, 40 items to sort. Size as a third rule and the secret rule game are left out."
+  },
+  {
+    "id": "PK-08",
+    "algorithms": ["trace-check", "tap-feedback", "tween-cause-effect"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 25,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 2,
+      "sfx": 10,
+      "music": 1,
+      "voice": 25,
+      "levels": 16,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Sixteen wide finger mazes over three riverbank scenes; the chick follows the finger home and turns back with a giggle and voiced hint at dead ends. Drawing paths for friends is deferred."
+  },
+  {
+    "id": "PK-09",
+    "algorithms": ["jigsaw-cut", "drag-drop-snap", "tween-cause-effect"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 10,
+      "animations": 15,
+      "backgrounds": 15,
+      "ui": 2,
+      "sfx": 8,
+      "music": 1,
+      "voice": 20,
+      "levels": 15,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Fifteen chunky puzzles of 6, 9 and 12 pieces with a fading ghost outline, each picture animating when finished. The gallery nest and mixed-picture mode are left for later."
+  },
+  {
+    "id": "PK-10",
+    "algorithms": [
+      "card-memory",
+      "shuffle-deal",
+      "tap-feedback",
+      "peekaboo-reveal"
+    ],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 20,
+      "animations": 12,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 20,
+      "music": 1,
+      "voice": 25,
+      "levels": 6,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Beach memory game with 6, 8 and 12 pebbles hiding ten animal friends with their own sounds, ending with the Orbi tidying every pebble back. The sound-only round is deferred."
+  },
+  {
+    "id": "PK-11",
+    "algorithms": ["spot-difference", "tap-feedback", "tween-cause-effect"],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 20,
+      "animations": 3,
+      "backgrounds": 8,
+      "ui": 2,
+      "sfx": 8,
+      "music": 1,
+      "voice": 20,
+      "levels": 20,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Twenty twin nest pictures over eight nest scenes with one to three big differences and a wiggle hint after a pause. Seasonal nests and making a change for a friend are left out."
+  },
+  {
+    "id": "PK-12",
+    "algorithms": [
+      "counting",
+      "tap-feedback",
+      "tween-cause-effect",
+      "particle-effects"
+    ],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 20,
+      "animations": 10,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 12,
+      "music": 1,
+      "voice": 25,
+      "levels": 12,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Twelve dot-to-dot animals of 3 to 10 glowing pebbles tapped in order with voiced counting; each animal comes alive. No printed numerals; the night parade and count-back round come later."
+  },
+  {
+    "id": "PK-13",
+    "algorithms": ["tap-feedback", "tween-cause-effect", "particle-effects"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 15,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 10,
+      "music": 1,
+      "voice": 20,
+      "levels": 8,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 3,
+    "plan": "After-rain screen with three primary puddles; tap two and the Orbi mixes them into orange, green or purple, plus eight friend wishes to match. Painting the whole beach is deferred."
+  },
+  {
+    "id": "PK-14",
+    "algorithms": ["tap-feedback", "tween-cause-effect", "shuffle-deal"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 25,
+      "animations": 12,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 8,
+      "music": 1,
+      "voice": 50,
+      "levels": 0,
+      "content": 24,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Mirror pond scenes for four feelings: tap the face pebble that matches a friend, then pick a kind action, 24 little scenes, all voiced. Two-friend scenes and proud or surprised come later."
+  },
+  {
+    "id": "PK-15",
+    "algorithms": ["drag-drop-snap", "tween-cause-effect"],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 40,
+      "animations": 14,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 10,
+      "music": 1,
+      "voice": 60,
+      "levels": 12,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "Twelve three- and four-stone stories, starting with a nest day routine and then seeds, eggs and rain; the right order plays a short voiced cartoon. The silly free-order story mode is left out."
+  },
+  {
+    "id": "PK-16",
+    "algorithms": ["drag-drop-snap", "tween-cause-effect", "counting"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 35,
+      "animations": 10,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 12,
+      "music": 1,
+      "voice": 30,
+      "levels": 0,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 4,
+    "minAge": 3,
+    "plan": "One picnic cloth screen where the child drags copied fruit, bowls and cups to three to six friends, one each, with munch and thank-you reactions. New picnic places and the cooking corner are deferred."
+  },
+  {
+    "id": "PK-17",
+    "algorithms": ["drag-drop-snap", "tap-feedback", "tween-cause-effect"],
+    "extraLoc": 500,
+    "assets": {
+      "sprites": 40,
+      "animations": 15,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 15,
+      "music": 1,
+      "voice": 50,
+      "levels": 0,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Nest clinic with four plush patients and five gentle problems, each solved by asking first, scanning and dragging the right soft tool. Two-problem patients and the plush maker are left out."
+  },
+  {
+    "id": "PK-18",
+    "algorithms": ["drag-drop-snap", "tween-cause-effect", "shuffle-deal"],
+    "extraLoc": 500,
+    "assets": {
+      "sprites": 45,
+      "animations": 12,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 12,
+      "music": 1,
+      "voice": 60,
+      "levels": 0,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Sharing circle with five friends showing thought bubbles; the child drags a matching gift and gets one back, with share, swap and turn-taking rounds. No coins, prices or stalls; borrowing comes later."
+  },
+  {
+    "id": "PK-19",
+    "algorithms": [
+      "grid-board",
+      "drag-drop-snap",
+      "puzzle-solver-hints",
+      "tween-cause-effect"
+    ],
+    "extraLoc": 350,
+    "assets": {
+      "sprites": 20,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 3,
+      "sfx": 10,
+      "music": 1,
+      "voice": 30,
+      "levels": 24,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 2,
+    "minAge": 4,
+    "plan": "Twenty-four arrow stone puzzles on 2x2 to 3x3 sand grids; the Orbi rolls the path and giggles back on a wrong step. Loop stones, obstacles and 4x4 grids are deferred."
+  },
+  {
+    "id": "PK-20",
+    "algorithms": ["hidden-object", "tap-feedback"],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 15,
+      "animations": 4,
+      "backgrounds": 6,
+      "ui": 2,
+      "sfx": 8,
+      "music": 1,
+      "voice": 25,
+      "levels": 12,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Six panorama scenes where the Orbi asks for circles, squares, triangles or rectangles and the child taps them, 12 rounds. The build-a-friend collecting mode is left for later."
+  },
+  {
+    "id": "PK-21",
+    "algorithms": ["tap-feedback", "drag-drop-snap", "tween-cause-effect"],
+    "extraLoc": 350,
+    "assets": {
+      "sprites": 30,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 2,
+      "sfx": 10,
+      "music": 1,
+      "voice": 30,
+      "levels": 20,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Twenty comparison rounds: tap the longer stick or watch the leaf balance tip under the heavier thing, then order three. Measuring in pebbles and full or empty cups come later."
+  },
+  {
+    "id": "PK-22",
+    "algorithms": ["day-cycle", "drag-drop-snap", "particle-effects"],
+    "extraLoc": 300,
+    "assets": {
+      "sprites": 25,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 2,
+      "sfx": 12,
+      "music": 1,
+      "voice": 30,
+      "levels": 8,
+      "content": 0,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "One riverbank tree shown in four seasons; drag matching weather, animals and clothes into the picture over eight rounds. The season wheel and daily weather dress choices are deferred."
+  }
+]

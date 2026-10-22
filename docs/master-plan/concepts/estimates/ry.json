@@ -1,0 +1,369 @@
+[
+  {
+    "id": "RY-01",
+    "algorithms": [
+      "tap-feedback",
+      "tween-cause-effect",
+      "drag-drop-snap",
+      "particle-effects",
+      "day-cycle"
+    ],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 16,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 2,
+      "sfx": 14,
+      "music": 1,
+      "voice": 36,
+      "levels": 0,
+      "content": 24,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Pick the Orbi's name from 12 voiced sound-names, then four care loops in one meadow (polish, charge at the tower, pinecone catch, goodnight). No text, no needs meters, no timers; peekaboo and seasons come later."
+  },
+  {
+    "id": "RY-02",
+    "algorithms": [
+      "tap-feedback",
+      "tween-cause-effect",
+      "particle-effects",
+      "day-cycle"
+    ],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 16,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 1,
+      "sfx": 10,
+      "music": 1,
+      "voice": 15,
+      "levels": 1,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "One apple tree told in five tap steps (look for the bird nest, scan, hold still, night with the assembler, morning apple), replayable with three fruits. The orchard of more trees and animals is left for later."
+  },
+  {
+    "id": "RY-03",
+    "algorithms": [
+      "character-3d",
+      "camera-3d",
+      "vehicle-sim",
+      "particle-effects",
+      "day-cycle"
+    ],
+    "extraLoc": 1200,
+    "assets": {
+      "sprites": 10,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 6,
+      "sfx": 20,
+      "music": 2,
+      "voice": 30,
+      "levels": 8,
+      "content": 30,
+      "models3d": 14
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "One 3D glacier valley with one tower and 8 authored sky-lane routes inside its 2 km ring, speed 5 to 40 km/h, bird flocks to yield to and a soft landing at the ring edge. Multi-tower maps and the survey mode come later."
+  },
+  {
+    "id": "RY-04",
+    "algorithms": ["acoustics-sim", "audio-synth", "particle-effects"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 20,
+      "animations": 4,
+      "backgrounds": 4,
+      "ui": 5,
+      "sfx": 15,
+      "music": 1,
+      "voice": 30,
+      "levels": 24,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "24 tuning puzzles on one tower ring with two or three dials, a live standing-wave view, the eight-octaves-down listening mode and a test water drop held in the node. Wind, twin towers and whole sky-lanes are left out."
+  },
+  {
+    "id": "RY-05",
+    "algorithms": ["sticker-scene", "drag-drop-snap", "dialogue-branching"],
+    "extraLoc": 500,
+    "assets": {
+      "sprites": 35,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 12,
+      "music": 1,
+      "voice": 60,
+      "levels": 12,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "A picture-message composer with 40 icons and 12 short episodes where friends are quiet, open to friends or open to all, plus a private thought bubble that never sends by itself. Replies and passing on pictures come later."
+  },
+  {
+    "id": "RY-06",
+    "algorithms": [
+      "dialogue-branching",
+      "tap-feedback",
+      "quest-state",
+      "tween-cause-effect"
+    ],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 30,
+      "animations": 10,
+      "backgrounds": 4,
+      "ui": 4,
+      "sfx": 12,
+      "music": 1,
+      "voice": 60,
+      "levels": 14,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "14 frozen meadow moments where the player, as an Orbi, chooses hold or let be, each followed by a short talk scene about feelings. Fog, cliff chapters and asked-for piggybacks are left for later."
+  },
+  {
+    "id": "RY-07",
+    "algorithms": [
+      "sort-classify",
+      "drag-drop-snap",
+      "dialogue-branching",
+      "shuffle-deal"
+    ],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 30,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 40,
+      "levels": 16,
+      "content": 80,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "16 scenarios where two adult friends sort 80 proposal cards into waivable or never, covering children, passers-by, wild animals and shared nature, with the waiver ending at either friend's thought. Group waivers come later."
+  },
+  {
+    "id": "RY-08",
+    "algorithms": [
+      "physics-2d",
+      "stacking-stability",
+      "drag-drop-snap",
+      "day-cycle"
+    ],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 35,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 4,
+      "sfx": 16,
+      "music": 1,
+      "voice": 30,
+      "levels": 20,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "20 tree-crown building levels with lattice strips, branch health, no-go zones for bird nests and growing tips, and a wobble test in wind. Tree growth over seasons, cliff and tower sites and the take-apart mode come later."
+  },
+  {
+    "id": "RY-09",
+    "algorithms": ["tap-feedback", "tween-cause-effect", "peekaboo-reveal"],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 20,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 1,
+      "sfx": 12,
+      "music": 1,
+      "voice": 20,
+      "levels": 3,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Three short meadow, forest and beach walks where the child taps big glowing stones and logs, animals peek out, and a calm viewpoint shows who was noticed. No fail state, no timer; the night walk is left out."
+  },
+  {
+    "id": "RY-10",
+    "algorithms": ["agent-steering", "draw-trace", "tap-feedback"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 30,
+      "animations": 12,
+      "backgrounds": 4,
+      "ui": 5,
+      "sfx": 15,
+      "music": 1,
+      "voice": 30,
+      "levels": 4,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "One mangrove delta with 12 animals that behave naturally, a viewfinder that rewards calm, well-framed shots and patience, and a journal with a trace-over sketch mode. Canyon, reef and night places come later."
+  },
+  {
+    "id": "RY-11",
+    "algorithms": [
+      "dialogue-branching",
+      "quest-state",
+      "day-cycle",
+      "drag-drop-snap"
+    ],
+    "extraLoc": 500,
+    "assets": {
+      "sprites": 25,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 4,
+      "sfx": 10,
+      "music": 2,
+      "voice": 80,
+      "levels": 4,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "Four seasonal visits to Professor Acorn with one helping task each (planting, walking, seed sorting, a winter talk about Renewal) and choices that ask before helping. The chapters about other Rayans' choices come later."
+  },
+  {
+    "id": "RY-12",
+    "algorithms": ["tap-feedback", "drag-drop-snap", "counting"],
+    "extraLoc": 250,
+    "assets": {
+      "sprites": 20,
+      "animations": 6,
+      "backgrounds": 2,
+      "ui": 1,
+      "sfx": 10,
+      "music": 1,
+      "voice": 20,
+      "levels": 8,
+      "content": 10,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "8 garden rounds where the child taps fruit into the basket, then shares one by one into two to five nest baskets, with one bush always left for the animals. Picnic and night copy scenes come later."
+  },
+  {
+    "id": "RY-13",
+    "algorithms": [
+      "tap-feedback",
+      "tween-cause-effect",
+      "day-cycle",
+      "particle-effects"
+    ],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 30,
+      "animations": 14,
+      "backgrounds": 7,
+      "ui": 2,
+      "sfx": 25,
+      "music": 2,
+      "voice": 30,
+      "levels": 0,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 3,
+    "minAge": 3,
+    "plan": "Seven slowly drifting biome panoramas with 30 tappable animals that answer with a motion, a sound and a voiced name, plus a calm sleep mode. Weather, eclipses and festival windows come later; there are no goals."
+  },
+  {
+    "id": "RY-14",
+    "algorithms": ["day-cycle", "particle-effects", "tween-cause-effect"],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 20,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 30,
+      "levels": 8,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "One island beach with a 26-hour time wheel, moon phases for Pim and Pom, tides, a double eclipse and tower light dimming, plus 8 predict-and-watch tasks. Meteor showers and seasonal events come later."
+  },
+  {
+    "id": "RY-15",
+    "algorithms": ["music-sequencer", "audio-synth", "rhythm-timing"],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 25,
+      "animations": 10,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 30,
+      "music": 4,
+      "voice": 25,
+      "levels": 12,
+      "content": 20,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "A four-ring tower sequencer with an audible tower song, 12 festival songs to complete or compose, and a gentle clap-along rhythm mode. Two-tower call and answer and the breeding-season calendar puzzle come later."
+  },
+  {
+    "id": "RY-16",
+    "algorithms": [
+      "dialogue-branching",
+      "quest-state",
+      "drag-drop-snap",
+      "sort-classify"
+    ],
+    "extraLoc": 1000,
+    "assets": {
+      "sprites": 35,
+      "animations": 10,
+      "backgrounds": 3,
+      "ui": 6,
+      "sfx": 10,
+      "music": 1,
+      "voice": 60,
+      "levels": 12,
+      "content": 80,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "12 council topics where the player listens to six citizens, including one without an Orbi, and builds a default from proposal pieces until all agree, with personal opt-outs. The woven valley charter comes later."
+  }
+]

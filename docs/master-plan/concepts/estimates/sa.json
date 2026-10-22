@@ -17,7 +17,7 @@
     },
     "toddler": 3,
     "minAge": 3,
-    "plan": "First playable: two short fully narrated picture-book stories with 8 illustrated pages and a choice between two pictures on each page leading to kind endings. Typing, reading tests and long story trees are left out."
+    "plan": "Two short fully narrated picture-book stories with 8 illustrated pages and a choice between two pictures on each page leading to kind endings. Typing, reading tests and long story trees are left out."
   },
   {
     "id": "SA-02",
@@ -42,7 +42,7 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: a small town square with 14 voiced kindness quests such as carrying books or sharing an umbrella, one new quest a day and a gratitude scrapbook. Social sharing and streak rewards are left out."
+    "plan": "A small town square with 14 voiced kindness quests such as carrying books or sharing an umbrella, one new quest a day and a gratitude scrapbook. Social sharing and streak rewards are left out."
   },
   {
     "id": "SA-03",
@@ -68,7 +68,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: a museum with 8 rooms where the player zooms into paintings, finds material clues and solves 8 voiced art-history puzzles with a friendly guard. Real museum licensing and a full collection are deferred."
+    "plan": "A museum with 8 rooms where the player zooms into paintings, finds material clues and solves 8 voiced art-history puzzles with a friendly guard. Real museum licensing and a full collection are deferred."
   },
   {
     "id": "SA-04",
@@ -93,7 +93,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: 6 gentle cases on a mystery board where footprints and timestamped notes are collected, sorted as strong or weak evidence and used to explain a fair conclusion. Procedural cases and blame scenes are left out."
+    "plan": "6 gentle cases on a mystery board where footprints and timestamped notes are collected, sorted as strong or weak evidence and used to explain a fair conclusion. Procedural cases and blame scenes are left out."
   },
   {
     "id": "SA-05",
@@ -118,7 +118,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: 5 friendly rooms with 15 mirror and switch puzzles played by two friends on one device in split view, each seeing different clues. Online co-op and a room editor are deferred."
+    "plan": "5 friendly rooms with 15 mirror and switch puzzles played by two friends on one device in split view, each seeing different clues. Online co-op and a room editor are deferred."
   },
   {
     "id": "SA-06",
@@ -138,7 +138,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: 10 dig sites where rubbing brushes soil off artifacts layer by layer, shards are restored as a simple jigsaw and finds are placed on a stratigraphy chart. Real site data and 3D artifacts are left out."
+    "plan": "10 dig sites where rubbing brushes soil off artifacts layer by layer, shards are restored as a simple jigsaw and finds are placed on a stratigraphy chart. Real site data and 3D artifacts are left out."
   },
   {
     "id": "SA-07",
@@ -164,7 +164,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: one village with 6 areas where illustrated, voiced dialogue in one target language guides errands, using about 150 words reviewed with spaced repetition. Extra languages and speech recognition are deferred."
+    "plan": "One village with 6 areas where illustrated, voiced dialogue in one target language guides errands, using about 150 words reviewed with spaced repetition. Extra languages and speech recognition are deferred."
   },
   {
     "id": "SA-08",
@@ -184,7 +184,7 @@
     },
     "toddler": 1,
     "minAge": 9,
-    "plan": "First playable: one historical event told through an illustrated diary from three viewpoints, with choices that reveal how each person saw it and a final timeline. Further eras and free roaming are left out."
+    "plan": "One historical event told through an illustrated diary from three viewpoints, with choices that reveal how each person saw it and a final timeline. Further eras and free roaming are left out."
   },
   {
     "id": "SA-09",
@@ -209,7 +209,7 @@
     },
     "toddler": 1,
     "minAge": 10,
-    "plan": "First playable: 30 signal puzzles where repeated number patterns build a shared glyph vocabulary from counting to arithmetic, ending in a short reply message. Free composition and multiplayer exchange are deferred."
+    "plan": "30 signal puzzles where repeated number patterns build a shared glyph vocabulary from counting to arithmetic, ending in a short reply message. Free composition and multiplayer exchange are deferred."
   },
   {
     "id": "SA-10",
@@ -235,7 +235,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: an academy campaign of 30 puzzles moving from points to doublets to small networks, shown both as links and as Links Notation, with voiced cadet story beats. Free graph sandbox and later terms are deferred."
+    "plan": "An academy campaign of 30 puzzles moving from points to doublets to small networks, shown both as links and as Links Notation, with voiced cadet story beats. Free graph sandbox and later terms are deferred."
   },
   {
     "id": "SA-11",
@@ -261,7 +261,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: a low-poly Omi coastline with 6 regions to walk through, guided by anime hosts who compare each biome to its Earth counterpart in voiced field notes. The full world, seasons and vehicles are deferred."
+    "plan": "A low-poly Omi coastline with 6 regions to walk through, guided by anime hosts who compare each biome to its Earth counterpart in voiced field notes. The full world, seasons and vehicles are deferred."
   },
   {
     "id": "SA-12",
@@ -287,7 +287,7 @@
     },
     "toddler": 1,
     "minAge": 13,
-    "plan": "First playable: 6 chapters of a 3D narrative where a teen finds non-violent routes and empathetic dialogue toward a safe exit, with consequences tracked across chapters. Combat is never included and side stories are deferred."
+    "plan": "6 chapters of a 3D narrative where a teen finds non-violent routes and empathetic dialogue toward a safe exit, with consequences tracked across chapters. Combat is never included and side stories are deferred."
   },
   {
     "id": "SA-13",
@@ -312,7 +312,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: a connected cave garden of 30 rooms with a map, where a found mirror lantern bends light to open earlier gates. Combat, extra tools beyond three and procedural maps are left out."
+    "plan": "A connected cave garden of 30 rooms with a map, where a found mirror lantern bends light to open earlier gates. Combat, extra tools beyond three and procedural maps are left out."
   },
   {
     "id": "SA-14",
@@ -337,7 +337,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: 10 round-table scenarios with about 120 weather-station clue cards where players rate evidence quality together and find the faulty sensor, with AI friends for solo play. Online play and accusations are left out."
+    "plan": "10 round-table scenarios with about 120 weather-station clue cards where players rate evidence quality together and find the faulty sensor, with AI friends for solo play. Online play and accusations are left out."
   },
   {
     "id": "SA-15",
@@ -357,6 +357,6 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: seeded forest runs of about 12 rooms on a small map, choosing paths by food supply and weather clues, with 80 room events and gentle return-home endings. Combat and meta-progression trees are left out."
+    "plan": "Seeded forest runs of about 12 rooms on a small map, choosing paths by food supply and weather clues, with 80 room events and gentle return-home endings. Combat and meta-progression trees are left out."
   }
 ]

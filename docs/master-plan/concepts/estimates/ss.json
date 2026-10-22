@@ -17,7 +17,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: one screen allocating solar energy among 4 research stations with about 40 upgrades and a live graph that shows compounding growth, capped and pressure-free. Prestige loops and ads are never included."
+    "plan": "One screen allocating solar energy among 4 research stations with about 40 upgrades and a live graph that shows compounding growth, capped and pressure-free. Prestige loops and ads are never included."
   },
   {
     "id": "SS-02",
@@ -42,7 +42,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: 15 garden paths where umbrellas, nets and water channels are dragged into place to shield seedlings from rain, wind and hail waves, with no losing state. Endless mode and upgrade trees are deferred."
+    "plan": "15 garden paths where umbrellas, nets and water channels are dragged into place to shield seedlings from rain, wind and hail waves, with no losing state. Endless mode and upgrade trees are deferred."
   },
   {
     "id": "SS-03",
@@ -62,7 +62,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: 20 crossings where tapping toggles two traffic lights so toy pedestrians and carts flow safely, with queue lengths shown as stacks. City-wide networks and scoring by speed are left out."
+    "plan": "20 crossings where tapping toggles two traffic lights so toy pedestrians and carts flow safely, with queue lengths shown as stacks. City-wide networks and scoring by speed are left out."
   },
   {
     "id": "SS-04",
@@ -87,7 +87,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: 20 grid puzzles where solar panels, batteries and homes are connected and supply must match demand through a day-night cycle. Markets, weather forecasts and large maps are deferred."
+    "plan": "20 grid puzzles where solar panels, batteries and homes are connected and supply must match demand through a day-night cycle. Markets, weather forecasts and large maps are deferred."
   },
   {
     "id": "SS-05",
@@ -107,7 +107,7 @@
     },
     "toddler": 1,
     "minAge": 9,
-    "plan": "First playable: 12 seasons of sharing one reservoir among households, gardens and a wetland, where the player proposes Ostrom-style rules with voiced neighbors and sees outcomes. Multiple villages are deferred."
+    "plan": "12 seasons of sharing one reservoir among households, gardens and a wetland, where the player proposes Ostrom-style rules with voiced neighbors and sees outcomes. Multiple villages are deferred."
   },
   {
     "id": "SS-06",
@@ -127,7 +127,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: 20 maps where cargo vehicles are routed between farms, workshops and shared storage so every need is met, with flow counters instead of money. Trains, ships and terrain editing are deferred."
+    "plan": "20 maps where cargo vehicles are routed between farms, workshops and shared storage so every need is met, with flow counters instead of money. Trains, ships and terrain editing are deferred."
   },
   {
     "id": "SS-07",
@@ -147,7 +147,7 @@
     },
     "toddler": 1,
     "minAge": 9,
-    "plan": "First playable: a cooperative board of 12 scenarios where a simple SIR model spreads on a community graph and players spend ventilation, vaccine and hygiene actions while watching the curves. Online play is deferred."
+    "plan": "A cooperative board of 12 scenarios where a simple SIR model spreads on a community graph and players spend ventilation, vaccine and hygiene actions while watching the curves. Online play is deferred."
   },
   {
     "id": "SS-08",
@@ -167,7 +167,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: one habitat with about 10 species where adding or removing animals shows predator and prey population curves, plus 12 balance challenges. Evolution and large biomes are left out."
+    "plan": "One habitat with about 10 species where adding or removing animals shows predator and prey population curves, plus 12 balance challenges. Evolution and large biomes are left out."
   },
   {
     "id": "SS-09",
@@ -192,7 +192,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: a friendly hospital planning board over 15 days where care teams and beds are assigned by triage need, with voiced patient stories rewarding empathy. Medical procedures and staff management are left out."
+    "plan": "A friendly hospital planning board over 15 days where care teams and beds are assigned by triage need, with voiced patient stories rewarding empathy. Medical procedures and staff management are left out."
   },
   {
     "id": "SS-10",
@@ -212,7 +212,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: one town grid where footpaths, homes and shared gardens are laid out and visible water, food and energy flows meet resident needs over 10 goals. Traffic, disasters and large maps are deferred."
+    "plan": "One town grid where footpaths, homes and shared gardens are laid out and visible water, food and energy flows meet resident needs over 10 goals. Traffic, disasters and large maps are deferred."
   },
   {
     "id": "SS-11",
@@ -237,7 +237,7 @@
     },
     "toddler": 1,
     "minAge": 10,
-    "plan": "First playable: a 3D town model where council choices on energy, transport and food change emissions and an uncertainty-band chart over 12 decades-long scenarios. Global models and multiplayer councils are deferred."
+    "plan": "A 3D town model where council choices on energy, transport and food change emissions and an uncertainty-band chart over 12 decades-long scenarios. Global models and multiplayer councils are deferred."
   },
   {
     "id": "SS-12",
@@ -263,7 +263,7 @@
     },
     "toddler": 1,
     "minAge": 10,
-    "plan": "First playable: two generated planets, Reya and Shacados, where the player explores, expands and exchanges observations through peaceful diplomacy with an AI partner over 8 scenarios. War is never included and online play is deferred."
+    "plan": "Two generated planets, Reya and Shacados, where the player explores, expands and exchanges observations through peaceful diplomacy with an AI partner over 8 scenarios. War is never included and online play is deferred."
   },
   {
     "id": "SS-13",
@@ -289,7 +289,7 @@
     },
     "toddler": 1,
     "minAge": 10,
-    "plan": "First playable: a 3D cutaway Mars habitat where air, water, food and electricity loops are built and balanced for a small crew across 10 scenarios with sol cycles. Expansion to a city and trade are deferred."
+    "plan": "A 3D cutaway Mars habitat where air, water, food and electricity loops are built and balanced for a small crew across 10 scenarios with sol cycles. Expansion to a city and trade are deferred."
   },
   {
     "id": "SS-14",
@@ -317,7 +317,7 @@
     },
     "toddler": 1,
     "minAge": 12,
-    "plan": "First playable: a vertical slice of 15 missions combining delayed signals, orbital transfers and peaceful contact talks between two star systems at real scale. The full campaign and every earlier subsystem are deferred."
+    "plan": "A vertical slice of 15 missions combining delayed signals, orbital transfers and peaceful contact talks between two star systems at real scale. The full campaign and every earlier subsystem are deferred."
   },
   {
     "id": "SS-15",
@@ -337,7 +337,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: 20 factory floors where recycling machines are linked by conveyors to turn recovered materials into repair parts, with flow rates shown and loops rewarded. Blueprints and large maps are deferred."
+    "plan": "20 factory floors where recycling machines are linked by conveyors to turn recovered materials into repair parts, with flow rates shown and loops rewarded. Blueprints and large maps are deferred."
   },
   {
     "id": "SS-16",
@@ -362,7 +362,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: 20 habitats where up to six gardening robots are arranged on a preparation grid and then restore plants on their own, showing how roles complement. Online matches and loot are left out."
+    "plan": "20 habitats where up to six gardening robots are arranged on a preparation grid and then restore plants on their own, showing how roles complement. Online matches and loot are left out."
   },
   {
     "id": "SS-17",
@@ -382,7 +382,7 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: 20 lunch rounds where soup, bread and fruit are prepared and dragged to waiting friends who say what they need, with a relaxed mode without timers. Restaurant upgrades and money are left out."
+    "plan": "20 lunch rounds where soup, bread and fruit are prepared and dragged to waiting friends who say what they need, with a relaxed mode without timers. Restaurant upgrades and money are left out."
   },
   {
     "id": "SS-18",
@@ -402,7 +402,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: 15 cafe days where returned toys and appliances go to repair benches while spare parts and volunteer time are budgeted. Complex repair mini-games and shop expansion are deferred."
+    "plan": "15 cafe days where returned toys and appliances go to repair benches while spare parts and volunteer time are budgeted. Complex repair mini-games and shop expansion are deferred."
   },
   {
     "id": "SS-19",
@@ -422,7 +422,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: 24 compact railways where tapping switches routes two or three trains to their stations with safe separation and no crashes shown. Timetables and large networks are deferred."
+    "plan": "24 compact railways where tapping switches routes two or three trains to their stations with safe separation and no crashes shown. Timetables and large networks are deferred."
   },
   {
     "id": "SS-20",
@@ -447,6 +447,6 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: 12 town models where rain gardens, water stores and safe footpaths are placed before a forecast storm that then plays out and shows what held. Real hazard maps and multiplayer are deferred."
+    "plan": "12 town models where rain gardens, water stores and safe footpaths are placed before a forecast storm that then plays out and shows what held. Real hazard maps and multiplayer are deferred."
   }
 ]

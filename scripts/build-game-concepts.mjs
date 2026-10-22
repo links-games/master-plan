@@ -105,7 +105,11 @@ function estimateSection(ranked, library) {
   const algorithms = new Map(library.algorithms.map((a) => [a.id, a]));
   const assets = library.assets
     .filter((asset) => e.assets[asset.id])
-    .map((asset) => `${e.assets[asset.id]} ${ASSET_LABELS[asset.id]}`)
+    .map((asset) => {
+      const count = e.assets[asset.id];
+      const label = ASSET_LABELS[asset.id];
+      return `${count} ${count === 1 ? label.replace(/s$/, '') : label}`;
+    })
     .join(', ');
   const used = e.algorithms
     .map(

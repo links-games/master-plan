@@ -1,1 +1,290 @@
-[]
+[
+  {
+    "id": "SH-01",
+    "title": "Three Dead Radios",
+    "genre": "Repair puzzle, salvage and rebuild",
+    "lesson": "Basic circuits, troubleshooting, the value of mending",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "10+",
+    "scene": "A mender's workbench seen from above: three gutted radios in a row, their tubes, coils and dials laid out on a rag. The player drags a good tube into the one sound chassis while a lamp warms the bench.",
+    "views": {
+      "world": "A narrow mender's stall under a rusted rail bridge in a warm-belt coal town. Brown smog hangs over soot-black brick, and freight trains rattle overhead. Dead machines lie piled outside like driftwood. Inside, one oil lamp glows lamp orange over the bench, and a sprouting tuber in a tin cup sits on the windowsill, the only green thing in the street.",
+      "details": "Old Brann, a former rocket welder with burned, careful hands, wears a patched mustard coat, a soot-gray scarf and goggles pushed up on his forehead. Beside him a raker girl holds a soldering iron for the first time. Brass knobs, cracked bakelite cases, cloth-wrapped wire, glass tubes and copper coils. Rust, soot, ash and mustard tones, lit by one warm lamp.",
+      "discovery": "Later benches bring harder salvage: a torn speaker cone to patch with paper and glue, a coil to rewind by counting turns, a tube that only works when warm. The view widens to a shelf of radios mended for neighbors and a quiet line of people at the door, each holding a broken kettle, clock or lamp, waiting their turn with patience."
+    },
+    "story": "Nobody in the coal town could get a new radio. So they brought the dead ones to Old Brann. He opened three of them on his bench and laid out every part like bread on a cloth. This tube is tired. This coil is good. This dial still turns. By evening one radio sang, and two empty cases sat beside it. A girl asked if the other two were wasted. Brann shook his head. They gave their best parts to a friend, he said. That is not waste. That is mending.",
+    "wisdom": "Nothing is junk to someone who mends."
+  },
+  {
+    "id": "SH-02",
+    "title": "Static on the Roof",
+    "genre": "Signal listening and pattern-finding puzzle",
+    "lesson": "Patterns, signal and noise, prime numbers, patience",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "10+",
+    "scene": "Teyo sits on a tin roof at night with headphones and a homemade antenna. A wide band of hissing static scrolls across the screen, and the player taps the repeating pulses to pull a hidden rhythm out of the noise.",
+    "views": {
+      "world": "A shanty roof of patched corrugated tin above the warm belt, on a rare clear night after a dust storm. Gas flares glow red on the horizon and chimneys breathe smoke below, but above them the stars show through. One faint star is Raya's sun. A candle in a jar gives the one lamp-orange light, and a tin of moss grows by the chimney.",
+      "details": "Teyo, a 15-year-old raker with a thin face and bright eyes, wears a patched rust jacket, a long ash scarf and goggles around his neck. His receiver is a crate of salvaged tubes, a coil wound on a bottle and an antenna of bent wire and a bicycle rim. His little sister holds the candle jar. Soot, rust and mustard, with one warm glow.",
+      "discovery": "As the nights pass the static grows cleverer: pulses in groups of two, three, five and seven, then a slow repeating chord. The player turns the bicycle-rim antenna toward different stars, winds a better coil and fills a notebook with pulse drawings. The final view shows neighbors climbing onto the roof to listen too, their faces lit by the candle."
+    },
+    "story": "Every night Teyo climbed the roof and listened to the hiss. His neighbors said the sky had nothing to say. One night, after a storm washed the smoke away, the hiss changed. Two clicks. Three clicks. Five. Seven. Then a long, soft tone, like a choir holding one note. Teyo did not tell the Wardens. He woke his sister and gave her one side of the headphones. They sat together under the stars and heard someone far away say, in numbers every mind can count, we are here. Teyo smiled. So are we.",
+    "wisdom": "Listen long enough and the noise starts talking."
+  },
+  {
+    "id": "SH-03",
+    "title": "Jars for After",
+    "genre": "Collect, sort and plant (seed saving)",
+    "lesson": "Plant life cycles, seed saving, caring for the future",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "10+",
+    "scene": "In a hidden valley, Sela holds an open glass jar while the player drags dry seed heads onto a cloth, shakes out the seeds, saves half in the jar and plants half in a sheltered patch of dark soil.",
+    "views": {
+      "world": "The Last Woods: a small green valley tucked between gray slag heaps, its stream half clean, its trees thin but alive. Smog lies like a lid over the hills, yet sunlight leaks through in one patch. Inside a moss-covered root cellar, shelves of seed jars wait under a single lamp-orange lantern, and a fern unfurls at the doorway.",
+      "details": "Sela, a seed keeper with gray-streaked braids, wears layered patched wool in mustard and ash, a soil-stained apron and fingerless gloves. Her apprentice, a boy in an oversized coat, marks jars with drawn pictures instead of words. Glass jars, waxed cloth, wooden trays, dried pods and husks, wet dark soil. Rust, ash and sick green, with one warm lantern.",
+      "discovery": "Seasons turn in the valley. The player learns which seeds need cold, which need ash and which must dry for a month. New jars arrive from far towns with quiet couriers. A picture map of plantings spreads across the cellar wall, and the final view shows one young tree standing bravely at the foot of a slag heap, planted by the player."
+    },
+    "story": "Sela keeps a jar on the top shelf that she never opens. The boy asked her why. These are oak seeds, she said. My grandmother saved them. The soil here is still too sour for oaks. Then why keep them? Because one day it will not be. She showed him how to dry beans, wrap them in cloth and plant half while saving half. Eat some, plant some, keep some for after, she said. The boy looked at the top shelf for a long time. Then he started a jar of his own.",
+    "wisdom": "Plant for someone you will never meet."
+  },
+  {
+    "id": "SH-04",
+    "title": "One Stove for the Block",
+    "genre": "Heat logistics puzzle",
+    "lesson": "Heat and insulation, planning scarce resources, fairness",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "10+",
+    "scene": "A cutaway of a frosty tenement block, each room a box. The player moves families and blankets into the room with the big stove, stuffs drafts with rags and routes the last coal until the frost on its window melts.",
+    "views": {
+      "world": "A five-story brick tenement in a coal town at the edge of the frozen north, soot-black against gray snow. Icicles hang from rusted fire escapes and chimneys smoke thinly. Through one window a single cast-iron stove glows lamp orange, the only warm light on the street. On that windowsill a potted bean plant leans toward the heat.",
+      "details": "Families in layered patched coats, scarves over their mouths and mittens made from old socks. A grandmother knits by the stove, a miner carries half a bucket of coal up the stairs, and children sleep in a heap of blankets. Rusted pipes, cracked plaster, rag-stuffed windows and frost ferns on the glass. Soot, ash and rust, with one orange glow.",
+      "discovery": "Colder weeks bring harder blocks: a draft in the stairwell, a baby who needs warmth first, a neighbor block whose stove has cracked. The player learns to carry heat through pipes, insulate walls with sawdust and paper and swap coal for soup. The final view shows two blocks joined by a covered walkway, every resident gathered around one fire."
+    },
+    "story": "The coal ran short in the first week of the deep cold. Each family in the block had a little stove and a little coal, and every room was cold. Old Dalla knocked on every door. If we burn our coal together, she said, one room can be warm instead of six rooms being cold. People grumbled. They moved anyway, dragging blankets and chairs. That night the block slept in one room, packed close around one stove. It was crowded and noisy, and someone snored. But nobody was cold, and the coal lasted until spring.",
+    "wisdom": "A shared fire burns longer."
+  },
+  {
+    "id": "SH-05",
+    "title": "Sand, Charcoal, Cloth",
+    "genre": "Build-and-test science puzzle",
+    "lesson": "Water filtration, turbidity, testing and improving a design",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "10+",
+    "scene": "A cut-open bottle hangs over a tin cup. The player drags layers of gravel, sand, charcoal and cloth into it, pours gray river water through and holds the cup against the lamp to judge how clear it runs.",
+    "views": {
+      "world": "A riverside shanty beside a gray river stained with mine waste and dye, under a brown sky. Oily rainbows float near the bank, and dead reeds lean in the current. On a crate by the water stands a row of homemade filters, dripping slowly. A kerosene lamp gives the scene its one warm orange glow, and watercress sprouts in a clean puddle below the filters.",
+      "details": "A mother and her two children in patched rust and mustard coats, sleeves rolled up and scarves loose. The older child scratches marks on a board to compare cups. Cut bottles, tin cans, burnt-wood charcoal, washed sand, folded cotton rags and a white saucer with a painted dark disc for judging cloudiness. Ash, soot, rust and sick-green water, with one lamp.",
+      "discovery": "New sources bring new problems: sour rain that needs crushed shell, mine water that must settle first, a whole street that needs a barrel-sized filter. The player tests each cup against the disc on the saucer and always boils as the last step. The final view shows a shared filter tower of stacked barrels on a rooftop, with neighbors filling cans in turn."
+    },
+    "story": "The river near Mara's home was gray, and the deep well belonged to a Holder. So her mother taught her to build a filter. First stones, then sand, then charcoal from the stove, then a clean cloth. The first cup came out brown. Mara wanted to quit. Her mother poured it back through and added more charcoal. The second cup was paler. The third was almost clear. Now we boil it, her mother said. Clear is not the same as clean. That evening Mara built a second filter and carried it to the old man next door.",
+    "wisdom": "Clear is not the same as clean."
+  },
+  {
+    "id": "SH-06",
+    "title": "Raker's Dune",
+    "genre": "Sorting and salvage puzzle",
+    "lesson": "Materials and their properties, sorting, reuse",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "10+",
+    "scene": "A slope of rusted scrap tumbles gently down the screen. The player tests each piece with a magnet or a scratch and drops it into big baskets for iron, copper wire, glass and rubber, while a sack kite flies overhead.",
+    "views": {
+      "world": "The scrap dunes: rolling hills of rusted machines, wheels, pipes and broken glass stretching to a smoky horizon. Red-brown dust blows across them in ribbons, and dead trucks lie where they stopped. A child flies a kite made from a grain sack. In the shade of an upturned boiler, a kettle sits on a small orange fire beside a single blooming thistle.",
+      "details": "Rakers of all ages in layered patched clothes, goggles against the dust, scarves over noses and gloves sewn from old boot leather. Teyo carries a horseshoe magnet on a string and shows a younger boy how to use it. Woven wire baskets, a rusted wheelbarrow, sorted heaps of copper, green glass and iron. Rust, soot, mustard and ash, with one orange fire.",
+      "discovery": "Deeper in the dunes the player finds mixed treasures: tubes still good for radios, springs for menders, bottle glass for greenhouse panes. Requests from neighbors appear as pictures, a mender asking for copper, a gardener asking for glass. The final view shows a greenhouse, a working radio and a mended stove in town, each built from what the player sorted."
+    },
+    "story": "Most people walked past the scrap dunes and saw garbage. Teyo saw a library. Iron sticks to the magnet. Copper shines when you scratch it. Green glass came from old medicine bottles, and good tubes still have a silver patch inside. One day a small boy followed him, kicking cans. Teyo gave him the magnet. Find me ten things that stick, he said. The boy came back with nine and a grin. That one did not stick, Teyo said, but it is copper, and copper is better. The boy kept the magnet. Teyo found another by noon.",
+    "wisdom": "Every heap is full of answers."
+  },
+  {
+    "id": "SH-07",
+    "title": "Lamplight Lessons",
+    "genre": "Teaching game, explain and check",
+    "lesson": "Reading, arithmetic, explaining ideas to others",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "10+",
+    "scene": "In a cellar classroom, Wren points at a slate while the player picks which of three big picture cards will help a struggling child understand sharing out, and the child's face brightens as beans are split into piles.",
+    "views": {
+      "world": "A coal cellar under a laundry in the warm belt, its walls whitewashed long ago and now gray with soot. Steam pipes run along the ceiling and drip. A single oil lamp hangs from a hook, its lamp-orange circle of light holding eight children on crates. Outside the small high window, boots pass in the smog. A pot of chives grows under the lamp.",
+      "details": "Wren, a night-school teacher with ink-stained fingers, wears a patched mustard cardigan over two shirts and a gray scarf. Children of different ages share slates, chalk stubs and one torn primer. A soup pot rests on a brick, the price of the lessons. Beans for counting, string for measuring, chalk and paper scraps. Soot, ash and rust, with one lamp.",
+      "discovery": "Each night brings new learners: a miner who wants to read his own ration card, a girl who already knows multiplication and wants more, a boy too tired to listen until he has eaten. The player learns to pair older pupils with younger ones, so the cellar starts teaching itself. The final view shows a former pupil teaching her own small class under the same lamp."
+    },
+    "story": "Wren lost her school when the Grain Hold closed it. So she opened another in a cellar. The price was a cup of soup. Children came after their shifts, tired and dusty. One night a boy named Ollan said he would never understand numbers. Wren gave him twelve beans and asked him to share them between three friends. He did it without thinking. That is division, Wren said. You already knew it. Your hands just learned first. Ollan stared at the beans as if they were magic. Numbers do not lie, Wren said. Learn them and nobody can cheat you.",
+    "wisdom": "Numbers do not lie, so learn them."
+  },
+  {
+    "id": "SH-08",
+    "title": "The Fair Ladle",
+    "genre": "Cooperative sharing puzzle",
+    "lesson": "Fair division, needs versus equal shares, fractions, empathy",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "13+",
+    "scene": "At a long plank soup table at dawn, the player drags ladles of soup, gray loaves and tubers into the bowls of a waiting line, each person showing a small picture of their need, until the cooperative agrees every share is fair.",
+    "views": {
+      "world": "A coal-town square at dawn under a sky thick with smoke. A long line of Hands waits with tin bowls beside a soot-streaked brick wall, while chimneys and a mine's winding tower rise behind them. Neighbors run a soup table of planks on barrels. A big kettle on a coal brazier gives the one warm orange glow, and a sprig of parsley floats in the pot.",
+      "details": "Cooks in patched aprons and wool caps, a girl handing out spoons, an elder counting bread on a cloth. In line: a miner with a lamp helmet, a mother with a baby in a sling, an old man leaning on a crutch. Tin bowls, cracked ladles, gray loaves, knobby tubers and ration cards tucked into coat pockets. Rust, soot, mustard and ash, with one brazier.",
+      "discovery": "Harder mornings bring short deliveries, a newcomer with no ration card, a sick neighbor who cannot come and a miner starting a double shift. The player decides together with the cooperative, by a show of raised hands, and sees how the street fares over a week. The final view shows the cooperative's own small vegetable patch on a roof, now feeding the table."
+    },
+    "story": "On the morning the grain cart came half full, the cooperative stood around the table in silence. There were sixty bowls and bread for forty. Split it the same, said one cook. The miners need more, said another. The baby needs milk, not bread, said a third. They argued quietly while the line waited in the cold. Then old Ferro, who had worked the mines for fifty years, set down his own bowl. Give mine to the mother, he said. I ate yesterday. One by one, others did the same. Nobody got enough. Everybody got some.",
+    "wisdom": "Fair does not always mean the same."
+  },
+  {
+    "id": "SH-09",
+    "title": "Seam Town Winter",
+    "genre": "Survival town-building simulation",
+    "lesson": "Resource planning, community roles, heat and food chains",
+    "cx": "4",
+    "wave": null,
+    "original": false,
+    "ages": "13+",
+    "scene": "A top-down view of a small town half buried in snow around a steaming coal seam. The player assigns neighbors to dig coal, tend cave fungus and mend roofs, and lays warm pipes between huts as a blizzard rolls in.",
+    "views": {
+      "world": "An ice town in the frozen north: rows of huts dug into the snow around an open coal seam that steams in the cold. The chimneys of an older, buried town poke out of the drifts. The sky is pale gray with a red sun low on the horizon. At the town's heart a greenhouse dome of patched glass glows lamp orange, and inside it one cabbage is green.",
+      "details": "Townsfolk in fur-lined patched parkas, frost-crusted goggles and scarves wrapped three times. A mender fixes a sled runner, a teacher leads children through a snow tunnel, a cook stirs fungus soup. Coal carts on rails, frosted rusted pipes, canvas windbreaks, ice-block walls and fungus trays in a mine tunnel. Ash, soot, rust and frost white, with one warm glow.",
+      "discovery": "Each winter grows longer and asks for new ideas: pipe the seam's waste heat under the greenhouse, open a school in the warm tunnel, swap fungus for medicine with a passing train, take in families from a town whose seam ran out. The final view shows the town at night from above, dark except the greenhouse dome, with people skating on a frozen pond in its light."
+    },
+    "story": "When the first blizzard came, the seam town had coal but little food, and the greenhouse had food but little heat. Each half could have kept what it had. Instead, the miners ran a pipe from the hot seam to the greenhouse, and the gardeners sent fungus soup down the mine. Nobody in the town was rich. Nobody in the town went hungry for long. In spring, a train arrived from the south with tired families aboard. The town did the only thing it knew how to do. It made room around the fire.",
+    "wisdom": "Cold divides people, warmth gathers them."
+  },
+  {
+    "id": "SH-10",
+    "title": "Brann's Red Chalk",
+    "genre": "Inspection and fault-finding puzzle",
+    "lesson": "Engineering safety, systematic checking, moral courage",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "13+",
+    "scene": "Under a riveted kerosene rocket on a cracked pad, the player sweeps a lantern across seams, valves and welds, circling each fault in red chalk, while a blank inspection sheet waits unsigned on a clipboard.",
+    "views": {
+      "world": "A launch yard of the Rocket Hold at dusk: a tall rocket of riveted steel plates stands on a pad of cracked concrete, tied to a rusted gantry. Kerosene drips into oily puddles. Gas flares burn on the horizon, and the shanty town of the debt crews huddles beyond the fence. Old Brann's lantern is the one warm orange light, and a dandelion grows from a crack in the pad.",
+      "details": "Old Brann, a former rocket welder with burned hands, wears a long patched mustard coat, a leather apron and goggles. Beside him the player's apprentice holds the red chalk. Rivets, weld beads, rubber gaskets, round pressure gauges with blank faces, kerosene cans, ropes and pulleys. Rust, soot and ash-gray steel, with bright red chalk circles and one warm lantern.",
+      "discovery": "Later rockets hide subtler faults: a weld that cracks only when cold, a valve fitted backwards, a fuel line rubbed thin by a shaking strut, a crew couch with no straps. The player learns to listen to pumps and tap welds by ear. After every rocket the same quiet choice returns: sign, or refuse and explain. The final view shows a young crew walking home for breakfast."
+    },
+    "story": "The rocket was due to fly at dawn. The Rocket Hold sent Brann to sign the safety sheet, as he had signed a hundred before. He walked under the rocket with his lantern and found a weld he did not trust, then another, then a valve that hissed. He thought of the crews, young Hands flying to clear their families' debts. He knew what refusing could cost him. He took out his red chalk, circled every fault and wrote one word on the sheet. No. In the morning the rocket stayed on the ground, and three young people went home to breakfast.",
+    "wisdom": "A safe no beats a fast yes."
+  },
+  {
+    "id": "SH-11",
+    "title": "Before the Pulse",
+    "genre": "Evacuation planning and route puzzle",
+    "lesson": "Wind and fallout maps, planning, care for the vulnerable",
+    "cx": "4",
+    "wave": null,
+    "original": false,
+    "ages": "13+",
+    "scene": "A hand-drawn map of a shanty valley lies on a crate. The player reads the chalk wind arrows, draws safe routes uphill and assigns carts and helpers, so every family reaches the upwind ridge while a distant booster waits on its pad.",
+    "views": {
+      "world": "Launch day in a shanty valley far below a ground-launched nuclear-pulse booster: a squat steel tower with a huge round pusher plate, standing on cracked concrete across the plain. Wind socks snap on poles and dust blows toward the huts. Families climb a rocky ridge upwind with bundles and goats. A lantern hanging from a cart gives one warm orange glow, and a child carries a potted seedling.",
+      "details": "Neighbors in layered patched coats with wet scarves pulled over their mouths and goggles on. A volunteer runner with a whistle, an old woman riding in a wheelbarrow, a mender carrying a crackling radio. Hand-drawn maps on brown paper, chalk wind arrows, rope, carts, tarps and water cans. Rust, soot, mustard and ash, with one warm lantern.",
+      "discovery": "Later valleys bring shifting winds, a bridge too weak for carts, a clinic that must move its beds, and a family that will not leave without their goats. The player learns to read clouds and dust, place water stations and send runners. Every level ends before the launch. The final view shows the whole valley safe on the upwind ridge, sharing tea under a tarp."
+    },
+    "story": "The Rocket Hold announced the launch day. It did not say which way the wind would blow. Ana did. She had watched the dust for twenty years. The night before, she drew a map on brown paper and knocked on every door. Uphill, she said, toward the old quarry. Wet cloth over your mouth. Bring water, not furniture. Some people laughed at her. By dawn, most of them were on the ridge, and the rest came when they saw the others go. The launch was only a far light behind the clouds. Ana counted heads twice. Everyone was there.",
+    "wisdom": "Watch the wind, then walk together."
+  },
+  {
+    "id": "SH-12",
+    "title": "Ember Watch",
+    "genre": "Firebreak strategy and replanting puzzle",
+    "lesson": "How fires spread, firebreaks, forest regrowth",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "10+",
+    "scene": "A grid map of the Last Woods seen from above, with a thin line of smoke creeping in from a slag heap. The player taps big tiles to clear firebreaks, sends a bucket line from the stream, then plants saplings in the scorched squares.",
+    "views": {
+      "world": "The Last Woods at the edge of a coal district: a valley of birches and pines, thin but alive, ringed by smoking slag heaps. A hot cinder has rolled into dry grass at the valley mouth, and gray smoke drifts low. Downhill, a stream still runs clear over stones. A watch hut's lantern glows lamp orange, and a young fern grows by its door.",
+      "details": "Sela and the valley watchers in patched wool and canvas, damp scarves over their faces and goggles on. Children pass buckets hand to hand from the stream while an elder rakes leaves off a path. Tin buckets, shovels, wet sacks, a bell on a post and seedlings in tin cans. Rust, ash, soot and sick green, with one warm lantern and no flames near people.",
+      "discovery": "After each dry season the player replants: hardy grasses first, then birches, then slow oaks from Sela's top shelf. Scorched tiles turn green over the years. New valleys join the watch, and the player builds stone firebreaks and small ponds. The final view shows the valley from a ridge, green creeping up an old slag heap and a hawk circling above."
+    },
+    "story": "The smoke came on a dry afternoon. A hot cinder had rolled from a slag heap into the grass. The bell rang in the watch hut, and everyone in the valley came running, even the smallest children. They did not rush at the fire. They cleared a line of bare earth and passed buckets from the stream to keep it wet. The fire reached the line and stopped. The next week the children came back with seedlings in tin cans. A scorched patch, Sela told them, is only a garden that has not started yet.",
+    "wisdom": "Every ash patch can grow green again."
+  },
+  {
+    "id": "SH-13",
+    "title": "Kesh on the Ground",
+    "genre": "Branching narrative adventure",
+    "lesson": "Moral courage, saying no under pressure, solidarity",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "13+",
+    "scene": "In a crew barracks lit by a single lamp, Kesh sits on a bunk facing a young recruit. The player chooses what Kesh says from three large speech cards, and the recruit's tense shoulders slowly relax.",
+    "views": {
+      "world": "The debt-crew barracks beside a rocket yard: rows of iron bunks in a long tin hut, soot on every surface, patched flight suits on hooks. Through the window a riveted rocket stands under floodlights in the smog. Many bunks are neatly made and empty. A single oil lamp glows lamp orange on Kesh's bunk, and a sprouting onion sits in a tin on the sill.",
+      "details": "Kesh, a pilot in her late twenties who looks older, wears a patched rust flight jacket with a scorched sleeve, a mustard scarf and cracked goggles on a cord. Young recruits in oversized suits, and a Warden who looks as scared as they are. Rivets, wool blankets, tin mugs, a debt card in a coat pocket. Soot, rust and ash, with one warm lamp.",
+      "discovery": "The story branches across the week before a launch. The player helps Kesh talk with recruits, with Old Brann, with a nervous Warden and with her own mother, who still carries the family debt. No choice ever harms anyone; choices build trust or lose it. Endings show crews refusing together, a launch delayed or Kesh teaching safety. The final view shows Kesh and recruits studying a rocket drawing."
+    },
+    "story": "Kesh was the only one who came back from the last launch. They gave her a new suit and a new date. She hung the suit on a hook and did not put it on. The Warden said her family's debt would grow. Kesh nodded. A new recruit asked her if she was afraid. I was afraid before, Kesh said. Now I know. The rocket has the same welds and the same valves. Nothing has changed except me. The recruit sat down next to her. The next morning there were two suits on hooks. By the end of the week there were nine.",
+    "wisdom": "Courage can mean staying on the ground."
+  },
+  {
+    "id": "SH-14",
+    "title": "The Heir's Ledger",
+    "genre": "Investigation puzzle and narrative choice",
+    "lesson": "Cause and effect in systems, responsibility, change from within",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "13+",
+    "scene": "On a wide desk, the player links entries across open ledger pages with red thread, tracing one family's debt through three generations, then chooses a single rule to strike out and rewrite.",
+    "views": {
+      "world": "The archive tower of the Rocket Hold: a cold stone room with tall shelves of leather ledgers, a cast-iron radiator that never works and a high window looking down on the smoking rocket yards and shanty roofs. Dust floats in the gray light. A single desk lamp glows lamp orange, and a potted ivy, left by a clerk, climbs one shelf.",
+      "details": "Holder Vask, a lonely young heir in a fine but worn dark coat, sleeves rolled up, wearing a knitted scarf a Hand once gave him. An old archivist in patched gray brings him more books. Leather ledgers with ink columns and no readable words, red thread, pins, a punched-card calculator and wax seals. Soot, ash, mustard and rust, with one lamp.",
+      "discovery": "Each ledger reveals a deeper link: the bread ration tied to the coal quota, launches placed over the poorest valleys, debts passed from parents to children. Short scenes show the people behind the numbers. In the end Vask may change only one rule, and the final view shows a mother and her son walking out of a debt office into smoky daylight, lighter than before."
+    },
+    "story": "Vask grew up above the rocket yards and never went down. When his father fell ill, the ledgers came to him. He read them at night by one lamp. He found a mother who had flown twice to pay her father's debt. He found her son, already owing at six. The numbers never lied, but they never cried either. Vask could not change the whole Hold. His family would not let him. But he could change one line. In the morning he signed a new rule: no child inherits a debt. The clerk who read it had to sit down.",
+    "wisdom": "Change one rule and many lives change."
+  },
+  {
+    "id": "SH-15",
+    "title": "Rain-Glass Garden",
+    "genre": "Greenhouse building and gardening simulation",
+    "lesson": "Soil acidity, plant needs, building with salvage",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "10+",
+    "scene": "A rooftop greenhouse of mismatched scrap glass. The player fits panes into a rusted frame, catches sour rain in barrels, stirs in crushed eggshell and ash until a cabbage-juice test turns from pink to purple, and watches tuber sprouts open.",
+    "views": {
+      "world": "A flat tenement rooftop in the warm belt, surrounded by chimneys and laundry lines under a brown sky. Acid rain streaks the soot on the walls. In the middle stands a greenhouse built from window glass, bottle bottoms and an old truck windshield in an iron frame, its seams patched with tar. A lantern inside glows lamp orange, and green leaves press against the fogged panes.",
+      "details": "A grandfather and his granddaughter in patched rust and ash coats, boots cut from old tires, scarves and goggles. Neighbors hand up buckets of ash and eggshells. Mismatched glass, tar seams, a rusted iron frame, rain barrels, jars of red cabbage juice for testing, crates of soil, tuber sprouts and beans on strings. Sick green leaves turning healthy green, with one lamp.",
+      "discovery": "As seasons pass the greenhouse grows: a worm bin for richer soil, a filter for the rain barrels, a bed of cave fungus underneath, and new crops like beans, kale and a tiny apple seedling. Neighbors build their own glasshouses on nearby roofs. The final view shows a skyline of glinting scrap-glass gardens between the chimneys."
+    },
+    "story": "The rain on Shacados stings the eyes and burns the leaves. Grandfather Tobb built a greenhouse on the roof anyway, out of every broken window he could find. The panes did not match. Some were green, some were cracked, one was the windshield of a truck. When the rain was too sour, his granddaughter crushed eggshells and stirred them in. When the test turned purple, she watered the beans. In autumn they had a basket of beans and three fat tubers. Tobb gave the first basket to the neighbors who had brought the glass.",
+    "wisdom": "Broken glass can still hold a garden."
+  },
+  {
+    "id": "SH-16",
+    "title": "Answer to the Stars",
+    "genre": "Signal-crafting puzzle and community narrative",
+    "lesson": "Universal messages, primes, picture grids, light delay, consensus",
+    "cx": "5",
+    "wave": null,
+    "original": false,
+    "ages": "13+",
+    "scene": "In a radio shack on a water tower, the player punches dots into a paper tape to build a simple picture grid, then gathers neighbors' hands on one shared telegraph key to send the reply toward a faint star.",
+    "views": {
+      "world": "A hidden radio station on a water tower above the scrap dunes, built from salvaged dish reflectors and copper wire, on a clear cold night after a storm. Below, the town sleeps under smoke and gas-flare glow. Above, one faint star is Raya's sun. A kerosene lamp glows lamp orange inside the shack, and a small fern grows in a can by its door.",
+      "details": "Teyo, now older, Wren with her slate, Old Brann at the transmitter, Sela holding a jar of seeds and a dozen neighbors crowded into the shack. Patched coats, scarves and goggles pushed up. Vacuum tubes, punched paper tape, a hand-wound coil, a brass telegraph key and a chalk grid of dots on a board. Soot, rust, mustard and ash, with one warm lamp.",
+      "discovery": "The campaign grows from decoding the Chord's pulses to building a stronger transmitter from town salvage, composing a reply in primes and dot pictures, and keeping the station hidden from the Radio Hold. The town debates what to send: a warning about the probe, a greeting or a picture of a seed. The final view shows the reply leaving as faint rings over the dunes, years from arrival."
+    },
+    "story": "For a year the listeners on the water tower decoded the pattern from the faint star. Two, three, five, seven. Then pictures made of dots: a tree, a person, an open, empty hand. Now they had to answer. Brann wanted to warn them about the probe the Holders had launched. Wren wanted to teach them our numbers. Sela wanted to send a seed. They argued until dawn. In the end they sent all three in one message, with every neighbor's hand on the key. The reply would take years to arrive. Good, said Sela. Then we have years to become worth meeting.",
+    "wisdom": "Answer the dark with an open hand."
+  }
+]

@@ -17,7 +17,7 @@
     },
     "toddler": 4,
     "minAge": 3,
-    "plan": "First playable: one lab wall where tapping toggles red, green and blue spotlights and dragging them shows the mixed colors, plus 8 voiced find-this-color goals; the paint-mixing mode is left for later."
+    "plan": "One lab wall where tapping toggles red, green and blue spotlights and dragging them shows the mixed colors, plus 8 voiced find-this-color goals; the paint-mixing mode is left for later."
   },
   {
     "id": "SL-02",
@@ -42,7 +42,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: the first 20 elements as illustrated cards with voiced names and facts, placed by drag onto a simplified periodic board in 10 sorting rounds; trading, rare cards and the full table are left out."
+    "plan": "The first 20 elements as illustrated cards with voiced names and facts, placed by drag onto a simplified periodic board in 10 sorting rounds; trading, rare cards and the full table are left out."
   },
   {
     "id": "SL-03",
@@ -67,7 +67,7 @@
     },
     "toddler": 3,
     "minAge": 3,
-    "plan": "First playable: one swaying tower scene where a tap drops the next acorn block, a center-of-mass marker shows balance and the tower collapses gently without failure, across 10 block sets; scores and leaderboards are left out."
+    "plan": "One swaying tower scene where a tap drops the next acorn block, a center-of-mass marker shows balance and the tower collapses gently without failure, across 10 block sets; scores and leaderboards are left out."
   },
   {
     "id": "SL-04",
@@ -92,7 +92,7 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: a friendly transparent body where 8 organ pieces are dragged into big outlined slots, each answering with a voiced line and a small animation of what it does; detailed systems and quizzes are left out."
+    "plan": "A friendly transparent body where 8 organ pieces are dragged into big outlined slots, each answering with a voiced line and a small animation of what it does; detailed systems and quizzes are left out."
   },
   {
     "id": "SL-05",
@@ -117,7 +117,7 @@
     },
     "toddler": 4,
     "minAge": 3,
-    "plan": "First playable: one water tank where 12 equal-size objects are dragged in to float or sink, with an optional guess-first mode over 10 rounds; changing the liquid and salt water are left for later."
+    "plan": "One water tank where 12 equal-size objects are dragged in to float or sink, with an optional guess-first mode over 10 rounds; changing the liquid and salt water are left for later."
   },
   {
     "id": "SL-06",
@@ -137,7 +137,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: a glass maze where dragging a magnet outside the glass pulls the steel bead along visible field lines through 20 authored mazes; repelling poles, timers and a level editor are left out."
+    "plan": "A glass maze where dragging a magnet outside the glass pulls the steel bead along visible field lines through 20 authored mazes; repelling poles, timers and a level editor are left out."
   },
   {
     "id": "SL-07",
@@ -162,7 +162,7 @@
     },
     "toddler": 2,
     "minAge": 4,
-    "plan": "First playable: 24 authored levels where tapping or swiping a rope releases a seed that swings into a planter, with pendulum trails; stars, extra gadgets and a level editor are left out."
+    "plan": "24 authored levels where tapping or swiping a rope releases a seed that swings into a planter, with pendulum trails; stars, extra gadgets and a level editor are left out."
   },
   {
     "id": "SL-08",
@@ -182,7 +182,7 @@
     },
     "toddler": 2,
     "minAge": 4,
-    "plan": "First playable: a pull-and-release slingshot with a visible parabola preview that plants seeds in 20 authored garden plots at different heights and distances; wind and destructible structures are left out."
+    "plan": "A pull-and-release slingshot with a visible parabola preview that plants seeds in 20 authored garden plots at different heights and distances; wind and destructible structures are left out."
   },
   {
     "id": "SL-09",
@@ -207,7 +207,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: a workbench grid where matching atoms are dragged together to bond by valence rules, building 20 target molecules from water to glucose with voiced names; reactions and a 3D view are left out."
+    "plan": "A workbench grid where matching atoms are dragged together to bond by valence rules, building 20 target molecules from water to glucose with voiced names; reactions and a 3D view are left out."
   },
   {
     "id": "SL-10",
@@ -227,7 +227,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: a breadboard grid where batteries, wires, resistors and lamps snap into place to light garden lamps in 20 authored circuits with brightness feedback; logic gates are left for a later chapter."
+    "plan": "A breadboard grid where batteries, wires, resistors and lamps snap into place to light garden lamps in 20 authored circuits with brightness feedback; logic gates are left for a later chapter."
   },
   {
     "id": "SL-11",
@@ -247,7 +247,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: an optical bench where lenses and mirrors are dragged to bend light rays onto targets in 20 authored puzzles, with a focus point marker; prisms, color dispersion and free sandbox are left out."
+    "plan": "An optical bench where lenses and mirrors are dragged to bend light rays onto targets in 20 authored puzzles, with a focus point marker; prisms, color dispersion and free sandbox are left out."
   },
   {
     "id": "SL-12",
@@ -272,7 +272,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: edit and run modes for 20 chain-reaction puzzles with one missing lever, pulley, gear or ramp each, using 8 part types; free sandbox building and sharing are left out."
+    "plan": "Edit and run modes for 20 chain-reaction puzzles with one missing lever, pulley, gear or ramp each, using 8 part types; free sandbox building and sharing are left out."
   },
   {
     "id": "SL-13",
@@ -292,7 +292,7 @@
     },
     "toddler": 3,
     "minAge": 3,
-    "plan": "First playable: a free string instrument whose plucked notes draw live waves on an oscilloscope, plus 12 match-the-wave goals for pitch and loudness; microphone input and resonance experiments are left out."
+    "plan": "A free string instrument whose plucked notes draw live waves on an oscilloscope, plus 12 match-the-wave goals for pitch and loudness; microphone input and resonance experiments are left out."
   },
   {
     "id": "SL-14",
@@ -317,7 +317,7 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: one terrarium with sun and water controls where evaporation, clouds and rain play out visibly, plus 8 guided goals such as make it rain; pressure maps and a world climate view are left out."
+    "plan": "One terrarium with sun and water controls where evaporation, clouds and rain play out visibly, plus 8 guided goals such as make it rain; pressure maps and a world climate view are left out."
   },
   {
     "id": "SL-15",
@@ -342,7 +342,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: a snap grid for beams and cables between riverbanks, a test run with a cart and tension and compression colors, over 20 authored crossings with a material limit; suspension decks and sharing are left out."
+    "plan": "A snap grid for beams and cables between riverbanks, a test run with a cart and tension and compression colors, over 20 authored crossings with a material limit; suspension decks and sharing are left out."
   },
   {
     "id": "SL-16",
@@ -367,7 +367,7 @@
     },
     "toddler": 3,
     "minAge": 3,
-    "plan": "First playable: a free falling-sand canvas with 8 materials (sand, water, stone, ice, steam, lava, plant, wood) drawn by finger, plus 12 redirect-the-water goals; saving creations and a large material list are left out."
+    "plan": "A free falling-sand canvas with 8 materials (sand, water, stone, ice, steam, lava, plant, wood) drawn by finger, plus 12 redirect-the-water goals; saving creations and a large material list are left out."
   },
   {
     "id": "SL-17",
@@ -392,7 +392,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: a microscope with three zoom steps and tap-to-zoom over 15 slides (cells, pond life, leaves) where moving microbes are found and added to a sticker journal; real camera input and staining are left out."
+    "plan": "A microscope with three zoom steps and tap-to-zoom over 15 slides (cells, pond life, leaves) where moving microbes are found and added to a sticker journal; real camera input and staining are left out."
   },
   {
     "id": "SL-18",
@@ -412,7 +412,7 @@
     },
     "toddler": 2,
     "minAge": 4,
-    "plan": "First playable: one botanical pinball table with two tap flippers, spring bumpers and momentum arrows, plus a gentle mode where the ball never drains; two extra tables and multiball are left for later."
+    "plan": "One botanical pinball table with two tap flippers, spring bumpers and momentum arrows, plus a gentle mode where the ball never drains; two extra tables and multiball are left for later."
   },
   {
     "id": "SL-19",
@@ -432,7 +432,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: a wide paddle bouncing a slow light sphere through 20 authored walls of research tiles, with a reflection angle guide line; power-ups, bosses and speed modes are left out."
+    "plan": "A wide paddle bouncing a slow light sphere through 20 authored walls of research tiles, with a reflection angle guide line; power-ups, bosses and speed modes are left out."
   },
   {
     "id": "SL-20",
@@ -452,6 +452,6 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: 30 authored chamber puzzles where tapping brass pins in the right order lets water reach a seedling while sand and stones fall; hazards, timers and a level editor are left out."
+    "plan": "30 authored chamber puzzles where tapping brass pins in the right order lets water reach a seedling while sand and stones fall; hazards, timers and a level editor are left out."
   }
 ]

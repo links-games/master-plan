@@ -61,7 +61,7 @@ justification.
   surgery.
 - **Muscle control.** Barker, Jalinous and Freeston, "Non-invasive magnetic
   stimulation of human motor cortex", _The Lancet_ 1985; 1(8437):1106–1107,
-  [doi:10.1016/s0140-6736(85)92413-4](<https://doi.org/10.1016/S0140-6736(85)92413-4>).
+  [doi:10.1016/s0140-6736(85)92413-4](https://doi.org/10.1016/S0140-6736%2885%2992413-4).
   A magnetic pulse over the motor cortex makes a hand muscle twitch.
   Functional electrical stimulation (FES) moves paralyzed limbs in clinical
   practice today.

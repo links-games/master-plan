@@ -22,7 +22,7 @@
     },
     "toddler": 2,
     "minAge": 4,
-    "plan": "First playable: 3x3 tic-tac-toe against a kind AI with three levels and hot-seat play, plus ultimate tic-tac-toe unlocked after five wins. Online play and larger boards are left out."
+    "plan": "3x3 tic-tac-toe against a kind AI with three levels and hot-seat play, plus ultimate tic-tac-toe unlocked after five wins. Online play and larger boards are left out."
   },
   {
     "id": "BC-02",
@@ -47,7 +47,7 @@
     },
     "toddler": 3,
     "minAge": 3,
-    "plan": "First playable: a 1 to 50 path board with rope bridges and ladders where tapping the big die moves the piece with voiced counting, for one to four players. The 100-square board and history notes come later."
+    "plan": "A 1 to 50 path board with rope bridges and ladders where tapping the big die moves the piece with voiced counting, for one to four players. The 100-square board and history notes come later."
   },
   {
     "id": "BC-03",
@@ -67,7 +67,7 @@
     },
     "toddler": 2,
     "minAge": 4,
-    "plan": "First playable: six animal families of four cards, two to four players with friendly AI that remembers asks, and a polite voiced ask on each turn. Custom families and online play are left out."
+    "plan": "Six animal families of four cards, two to four players with friendly AI that remembers asks, and a polite voiced ask on each turn. Custom families and online play are left out."
   },
   {
     "id": "BC-04",
@@ -87,7 +87,7 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: double-six dominoes against one gentle AI where matching dot counts glow at open chain ends and a tap places the domino. Scoring variants like Muggins and double-nine sets come later."
+    "plan": "Double-six dominoes against one gentle AI where matching dot counts glow at open chain ends and a tap places the domino. Scoring variants like Muggins and double-nine sets come later."
   },
   {
     "id": "BC-05",
@@ -112,7 +112,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: the club hub with reversi and four in a row against Rela at three kind levels, legal-move highlights and hot-seat play. Checkers and mancala are deferred to later updates."
+    "plan": "The club hub with reversi and four in a row against Rela at three kind levels, legal-move highlights and hot-seat play. Checkers and mancala are deferred to later updates."
   },
   {
     "id": "BC-06",
@@ -132,7 +132,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: three to five acorn piles against a gardener AI with deliberate kind mistakes, 12 guided positions and an optional binary view that reveals the XOR strategy. Misere Nim comes later."
+    "plan": "Three to five acorn piles against a gardener AI with deliberate kind mistakes, 12 guided positions and an optional binary view that reveals the XOR strategy. Misere Nim comes later."
   },
   {
     "id": "BC-07",
@@ -157,7 +157,7 @@
     },
     "toddler": 2,
     "minAge": 4,
-    "plan": "First playable: a four-colour patterned race track where pieces sent back simply go home, tap-to-roll dice, highlighted legal moves and AI or hot-seat seats. Team and rule variants are left out."
+    "plan": "A four-colour patterned race track where pieces sent back simply go home, tap-to-roll dice, highlighted legal moves and AI or hot-seat seats. Team and rule variants are left out."
   },
   {
     "id": "BC-08",
@@ -182,7 +182,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: Klondike and FreeCell with drag or tap moves, unlimited undo, auto-complete and a solver that offers winnable deals and next-move hints. Spider and daily challenges come later."
+    "plan": "Klondike and FreeCell with drag or tap moves, unlimited undo, auto-complete and a solver that offers winnable deals and next-move hints. Spider and daily challenges come later."
   },
   {
     "id": "BC-09",
@@ -202,7 +202,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: 10 layered layouts of original illustrated tiles where free matching pairs are tapped away, with solvable deals, shuffle and info cards for Chinese numerals. Timed modes are left out."
+    "plan": "10 layered layouts of original illustrated tiles where free matching pairs are tapped away, with solvable deals, shuffle and info cards for Chinese numerals. Timed modes are left out."
   },
   {
     "id": "BC-10",
@@ -227,7 +227,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: two-player rummy against one AI with numbered cards in four suits, drag-to-meld sets and runs, laying off and a planning hint. Joker variants and more players are left out."
+    "plan": "Two-player rummy against one AI with numbered cards in four suits, drag-to-meld sets and runs, laying off and a planning hint. Joker variants and more players are left out."
   },
   {
     "id": "BC-11",
@@ -253,7 +253,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: Hex on 7x7 and 9x9 boards against a Monte Carlo AI with three levels, the swap rule, a highlighted winning chain and 10 teaching puzzles. Bigger boards and online play come later."
+    "plan": "Hex on 7x7 and 9x9 boards against a Monte Carlo AI with three levels, the swap rule, a highlighted winning chain and 10 teaching puzzles. Bigger boards and online play come later."
   },
   {
     "id": "BC-12",
@@ -278,7 +278,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: capture Go and 9x9 Go with liberty highlights, territory scoring, a gentle AI and 30 tutorial and life-and-death problems. 13x13 and 19x19 boards are deferred."
+    "plan": "Capture Go and 9x9 Go with liberty highlights, territory scoring, a gentle AI and 30 tutorial and life-and-death problems. 13x13 and 19x19 boards are deferred."
   },
   {
     "id": "BC-13",
@@ -304,7 +304,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: full chess rules with friendly piece characters that go home when captured, 20 mini-game lessons per piece, a kind AI with hints and short history cards. Openings library and clocks are left out."
+    "plan": "Full chess rules with friendly piece characters that go home when captured, 20 mini-game lessons per piece, a kind AI with hints and short history cards. Openings library and clocks are left out."
   },
   {
     "id": "BC-14",
@@ -329,7 +329,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: one island board with rising water cards, four rescuer roles with special actions, AI or hot-seat teammates and 6 scenarios of growing difficulty. Online co-op and a map editor are left out."
+    "plan": "One island board with rising water cards, four rescuer roles with special actions, AI or hot-seat teammates and 6 scenarios of growing difficulty. Online co-op and a map editor are left out."
   },
   {
     "id": "BC-15",
@@ -354,7 +354,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: full backgammon on an original woodland board with highlighted legal destinations, bearing off, an expectiminimax AI and 8 lessons on dice odds. The doubling cube and match play are left out."
+    "plan": "Full backgammon on an original woodland board with highlighted legal destinations, bearing off, an expectiminimax AI and 8 lessons on dice odds. The doubling cube and match play are left out."
   },
   {
     "id": "BC-16",
@@ -379,7 +379,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: four-player Hearts with leaf suits against three woodland AI players, passing, a played-cards tracker and gentle advice. Shooting the moon variants and online play are left out."
+    "plan": "Four-player Hearts with leaf suits against three woodland AI players, passing, a played-cards tracker and gentle advice. Shooting the moon variants and online play are left out."
   },
   {
     "id": "BC-17",
@@ -404,7 +404,7 @@
     },
     "toddler": 1,
     "minAge": 9,
-    "plan": "First playable: four-seat cooperative trick-taking with numbered signal cards, one limited signal per player, AI crewmates that read signals and 20 research missions. Online crews are left out."
+    "plan": "Four-seat cooperative trick-taking with numbered signal cards, one limited signal per player, AI crewmates that read signals and 20 research missions. Online crews are left out."
   },
   {
     "id": "BC-18",
@@ -430,6 +430,6 @@
     },
     "toddler": 1,
     "minAge": 9,
-    "plan": "First playable: one mountain expedition of a branching map with weather, rope and shelter cards, a 60-card pool to draft from and 12 encounter types, with no combat or gambling. More regions and characters are deferred."
+    "plan": "One mountain expedition of a branching map with weather, rope and shelter cards, a 60-card pool to draft from and 12 encounter types, with no combat or gambling. More regions and characters are deferred."
   }
 ]

@@ -22,7 +22,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: tapping left and right hands on the beat to keep one, two and then three soft balls on visible parabolic paths over 10 steps; tricks, clubs and scores are left out."
+    "plan": "Tapping left and right hands on the beat to keep one, two and then three soft balls on visible parabolic paths over 10 steps; tricks, clubs and scores are left out."
   },
   {
     "id": "SM-02",
@@ -48,7 +48,7 @@
     },
     "toddler": 2,
     "minAge": 4,
-    "plan": "First playable: a slow three-lane runner where tapping or swiping picks the gate matching a voiced category, with 80 picture items across 6 category tracks; speed-up modes, coins and leaderboards are left out."
+    "plan": "A slow three-lane runner where tapping or swiping picks the gate matching a voiced category, with 80 picture items across 6 category tracks; speed-up modes, coins and leaderboards are left out."
   },
   {
     "id": "SM-03",
@@ -68,7 +68,7 @@
     },
     "toddler": 2,
     "minAge": 4,
-    "plan": "First playable: one 18-hole garden course with pull-to-aim putting, friction surfaces, ramps and a shot line preview; course editor, multiplayer and par scoring are left out."
+    "plan": "One 18-hole garden course with pull-to-aim putting, friction surfaces, ramps and a shot line preview; course editor, multiplayer and par scoring are left out."
   },
   {
     "id": "SM-04",
@@ -88,7 +88,7 @@
     },
     "toddler": 2,
     "minAge": 4,
-    "plan": "First playable: one sheet where a stone is pulled back and released or flicked, with friction trails and sweeping to extend glide, plus 10 target challenges; full ends, teams and AI opponents are left out."
+    "plan": "One sheet where a stone is pulled back and released or flicked, with friction trails and sweeping to extend glide, plus 10 target challenges; full ends, teams and AI opponents are left out."
   },
   {
     "id": "SM-05",
@@ -108,7 +108,7 @@
     },
     "toddler": 2,
     "minAge": 4,
-    "plan": "First playable: a low hoop and a soft ball where dragging sets the launch angle and power with an arc preview, over 12 shot spots; dribbling, defense and timers are left out."
+    "plan": "A low hoop and a soft ball where dragging sets the launch angle and power with an arc preview, over 12 shot spots; dribbling, defense and timers are left out."
   },
   {
     "id": "SM-06",
@@ -128,7 +128,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: one table with a cue aim line and collision angle guide, 15 trick-shot puzzles and a relaxed two-player pass-and-play game; AI opponents and full rule sets are left out."
+    "plan": "One table with a cue aim line and collision angle guide, 15 trick-shot puzzles and a relaxed two-player pass-and-play game; AI opponents and full rule sets are left out."
   },
   {
     "id": "SM-07",
@@ -148,7 +148,7 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: choosing one of 4 wing folds, flicking to launch and gently tilting through air currents to land on 12 targets with a glide ratio readout; free fold editing and long flights are left out."
+    "plan": "Choosing one of 4 wing folds, flicking to launch and gently tilting through air currents to land on 12 targets with a glide ratio readout; free fold editing and long flights are left out."
   },
   {
     "id": "SM-08",
@@ -168,7 +168,7 @@
     },
     "toddler": 3,
     "minAge": 3,
-    "plan": "First playable: a hill with a kite on a taut string that rises and dips as the finger pulls, wind ribbons and 8 gentle goals such as fly through the cloud ring; kite builder and contests are left out."
+    "plan": "A hill with a kite on a taut string that rises and dips as the finger pulls, wind ribbons and 8 gentle goals such as fly through the cloud ring; kite builder and contests are left out."
   },
   {
     "id": "SM-09",
@@ -188,7 +188,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: a gentle snowy slope steered by dragging left or right through slalom gates, with speed shown by slope and snow friction over 10 runs; jumps, timers and races are left out."
+    "plan": "A gentle snowy slope steered by dragging left or right through slalom gates, with speed shown by slope and snow friction over 10 runs; jumps, timers and races are left out."
   },
   {
     "id": "SM-10",
@@ -213,7 +213,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: one table with swipe strokes that add topspin or backspin, a spin trail and a landing target, against a kind practice partner over 8 drills; tournaments and doubles are left out."
+    "plan": "One table with swipe strokes that add topspin or backspin, a spin trail and a landing target, against a kind practice partner over 8 drills; tournaments and doubles are left out."
   },
   {
     "id": "SM-11",
@@ -233,7 +233,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: 4 top-down garden circuits with friendly electric karts, auto-accelerate, grip and a racing line overlay, and 3 kind AI drivers; items, online play and cups are left out."
+    "plan": "4 top-down garden circuits with friendly electric karts, auto-accelerate, grip and a racing line overlay, and 3 kind AI drivers; items, online play and cups are left out."
   },
   {
     "id": "SM-12",
@@ -253,7 +253,7 @@
     },
     "toddler": 1,
     "minAge": 8,
-    "plan": "First playable: one lake with shifting wind arrows where dragging trims the sail and steering tacks the boat through 12 buoy courses; regattas and multiple boat types are left out."
+    "plan": "One lake with shifting wind arrows where dragging trims the sail and steering tacks the boat through 12 buoy courses; regattas and multiple boat types are left out."
   },
   {
     "id": "SM-13",
@@ -273,7 +273,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: a low safe wall where tapping handholds moves one limb at a time while a center-of-mass marker shows balance, over 15 routes with soft falls; free climbing and gear choices are left out."
+    "plan": "A low safe wall where tapping handholds moves one limb at a time while a center-of-mass marker shows balance, over 15 routes with soft falls; free climbing and gear choices are left out."
   },
   {
     "id": "SM-14",
@@ -298,7 +298,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: one half-pipe and small park where swipes pump, spin and flip the board with an angular momentum trail, 12 tricks and 8 trick goals; a park editor and competitions are left out."
+    "plan": "One half-pipe and small park where swipes pump, spin and flip the board with an angular momentum trail, 12 tricks and 8 trick goals; a park editor and competitions are left out."
   },
   {
     "id": "SM-15",
@@ -323,7 +323,7 @@
     },
     "toddler": 2,
     "minAge": 4,
-    "plan": "First playable: tap-to-hop crossing over lanes of toy carts and lily-pad channels to reach the library, with a gentle mode where carts pause near the friend, over 6 themed stretches; endless scoring and unlocks are left out."
+    "plan": "Tap-to-hop crossing over lanes of toy carts and lily-pad channels to reach the library, with a gentle mode where carts pause near the friend, over 6 themed stretches; endless scoring and unlocks are left out."
   },
   {
     "id": "SM-16",
@@ -348,7 +348,7 @@
     },
     "toddler": 2,
     "minAge": 4,
-    "plan": "First playable: a garden court where tapping the landing circle moves your friend to bump the ball up, with helpful teammates and 6 keep-it-up goals counted together; competitive scoring is left out."
+    "plan": "A garden court where tapping the landing circle moves your friend to bump the ball up, with helpful teammates and 6 keep-it-up goals counted together; competitive scoring is left out."
   },
   {
     "id": "SM-17",
@@ -372,6 +372,6 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: 20 authored rooftop garden levels with forgiving jumps, a jump arc preview, wind ribbons and soft landing pads; collectibles, time trials and a level editor are left out."
+    "plan": "20 authored rooftop garden levels with forgiving jumps, a jump arc preview, wind ribbons and soft landing pads; collectibles, time trials and a level editor are left out."
   }
 ]

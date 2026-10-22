@@ -105,6 +105,10 @@ ones. Every game is still its own repository and its own package:
 | **Raya Space Academy**        | Space and physics           | [Space](#space-and-physics-sp)          |
 | **Omi Stories**               | Stories and adventures      | [Stories](#stories-and-adventures-sa)   |
 | **Two Planets**               | Strategy and simulation     | [Strategy](#strategy-and-simulation-ss) |
+| **Omi Little Meadow**         | Toddlers (1–3)              | [Toddlers](#toddlers-td)                |
+| **Omi Pebble School**         | Preschool (3–5)             | [Preschool](#preschool-pk)              |
+| **Raya Days**                 | Raya life                   | [Raya life](#raya-life-ry)              |
+| **Shacados Lamplight**        | Shacados (10+ and 13+)      | [Shacados](#shacados-sh)                |
 
 ## Puzzles (PZ)
 
@@ -386,6 +390,129 @@ The First Contact seeds (Station Watch, Deflect!, Probe Workshop,
 Light-Lag Chess, Messages Across the Dark, The Escape, Two Planets) are
 small games first, so the final simulator is assembled from games players
 already know ([lore](lore/first-contact.md#game-seeds-from-the-setting)).
+
+## Toddlers (TD)
+
+Added for the [Raya feedback](../case-studies/issue-1/requirements.md#raya-shacados-toddlers-and-the-website-r55r76)
+(R68, R69): the typical toddler games for ages 1–3. They follow the
+[toddler design rules](../case-studies/issue-1/data/research-raya-shacados.md#7-toddlers-and-screens-r68-r69):
+tap before drag, no reading, no failure, no timers, co-play under age 2.
+Every game has a toddler learnability rating in the
+[development plan](development-plan.md#toddler-learnability-rubric). Art is
+pending; each page carries four image descriptions.
+
+| ID    | Idea                                              | Proven genre (example)                | What it teaches                                 | Cx  |
+| ----- | ------------------------------------------------- | ------------------------------------- | ----------------------------------------------- | --- |
+| TD-01 | [Bubble Meadow](concepts/pages/td-01.md)          | Tap-to-pop bubbles                    | Cause and effect, pointing, colors              | 1   |
+| TD-02 | [Clover Peekaboo](concepts/pages/td-02.md)        | Peekaboo hide and reveal              | Object permanence, waiting, joy of surprise     | 1   |
+| TD-03 | [Who Says Hello?](concepts/pages/td-03.md)        | Animal sounds toy                     | Animal names and sounds, listening              | 1   |
+| TD-04 | [Clover Chimes](concepts/pages/td-04.md)          | Musical toy (xylophone and drums)     | Sound, rhythm, high and low notes               | 1   |
+| TD-05 | [Pop-Up Basket](concepts/pages/td-05.md)          | Cause-and-effect toy box              | Cause and effect, surprise, naming toys         | 1   |
+| TD-06 | [Hello, Little Fish](concepts/pages/td-06.md)     | Tap fishing (fish jump and say hello) | Cause and effect, colors, caring for animals    | 1   |
+| TD-07 | [Pim and Pom Lullaby](concepts/pages/td-07.md)    | Lullaby night sky toy                 | Calming down, bedtime, the night sky            | 1   |
+| TD-08 | [Clover Fingerpaint](concepts/pages/td-08.md)     | Finger painting                       | Creativity, colors, hand control                | 2   |
+| TD-09 | [Choo-Choo Parade](concepts/pages/td-09.md)       | Vehicles and their sounds             | Vehicle names and sounds, things that move      | 1   |
+| TD-10 | [Hum-Along Hill](concepts/pages/td-10.md)         | Nursery-rhyme sing-along              | Rhythm of language, singing, gestures           | 1   |
+| TD-11 | [Word Leaves](concepts/pages/td-11.md)            | First words picture cards             | First words, naming everyday things             | 1   |
+| TD-12 | [Clover Coloring](concepts/pages/td-12.md)        | Tap-to-color pictures                 | Colors, choosing, finishing a picture           | 2   |
+| TD-13 | [Snap-Together Pictures](concepts/pages/td-13.md) | Simple 2-4 piece puzzles              | Parts and wholes, shapes, hand-eye coordination | 1   |
+| TD-14 | [Linky's Snack Time](concepts/pages/td-14.md)     | Feeding a hungry friend               | Food names, caring, healthy food                | 1   |
+| TD-15 | [Bubble Bath Buddy](concepts/pages/td-15.md)      | Bath time washing toy                 | Washing, body care, cause and effect            | 1   |
+| TD-16 | [Sparkly Teeth](concepts/pages/td-16.md)          | Brushing teeth routine                | Tooth brushing habit, body care                 | 1   |
+| TD-17 | [Fawn's Nose and Toes](concepts/pages/td-17.md)   | Body parts naming                     | Body part names, self-awareness                 | 1   |
+| TD-18 | [Muddy Train Wash](concepts/pages/td-18.md)       | Car wash toy                          | Washing steps, cause and effect                 | 1   |
+| TD-19 | [Sprout Patch](concepts/pages/td-19.md)           | Garden grow (tap to water)            | Plants need water and sun, patience             | 1   |
+| TD-20 | [Tiny White Tower](concepts/pages/td-20.md)       | Stacking blocks                       | Balance, big and small, building                | 2   |
+| TD-21 | [Where's Orbi?](concepts/pages/td-21.md)          | Hide and seek                         | Looking and searching, object permanence        | 1   |
+| TD-22 | [Goodnight Nest](concepts/pages/td-22.md)         | Bedtime routine                       | Routines, calming down, bedtime steps           | 1   |
+| TD-23 | [Shape Friends Sorter](concepts/pages/td-23.md)   | Shape sorter                          | Shapes: circle, square, triangle                | 1   |
+| TD-24 | [Rain or Shine Closet](concepts/pages/td-24.md)   | Dress-up for weather                  | Weather words, choosing clothes                 | 1   |
+| TD-25 | [Big Fawn, Little Fawn](concepts/pages/td-25.md)  | Big and small comparison              | Size words: big, small, bigger                  | 1   |
+| TD-26 | [Color Baskets](concepts/pages/td-26.md)          | Color sorting                         | Color names, sorting by color                   | 1   |
+| TD-27 | [Who Is My Mama?](concepts/pages/td-27.md)        | Mommy and baby animal matching        | Animal families, baby animal names              | 1   |
+| TD-28 | [Shadow Friends](concepts/pages/td-28.md)         | Shadow matching                       | Shape recognition, visual matching              | 1   |
+| TD-29 | [One, Two, Three Fawns](concepts/pages/td-29.md)  | Counting 1 to 3                       | Counting to three, small amounts                | 1   |
+| TD-30 | [Feelings Mirror](concepts/pages/td-30.md)        | Mirror faces and emotions             | Naming feelings, facial expressions, empathy    | 2   |
+
+## Preschool (PK)
+
+The step after toddlers, for ages 3–5: tracing, first sounds, patterns,
+sorting and pretend play, with every instruction voiced.
+
+| ID    | Idea                                               | Proven genre (example)                | What it teaches                                          | Cx  |
+| ----- | -------------------------------------------------- | ------------------------------------- | -------------------------------------------------------- | --- |
+| PK-01 | [Wet Sand Letters](concepts/pages/pk-01.md)        | Letter tracing in sand                | Letter shapes and letter sounds, finger control          | 1   |
+| PK-02 | [Footprint Numbers](concepts/pages/pk-02.md)       | Number tracing and counting to ten    | Numerals 1 to 10, one-to-one counting                    | 1   |
+| PK-03 | [First Sound Boats](concepts/pages/pk-03.md)       | First sound listening game            | Hearing the first sound of a word, early phonics         | 1   |
+| PK-04 | [Rhyming Twins](concepts/pages/pk-04.md)           | Rhyme matching pairs                  | Hearing rhymes, playing with sounds                      | 1   |
+| PK-05 | [Rela's Two Sides](concepts/pages/pk-05.md)        | Opposites matching                    | Opposites: big and small, full and empty, up and down    | 1   |
+| PK-06 | [Stepping Stone Patterns](concepts/pages/pk-06.md) | AB and ABB pattern completion         | Repeating patterns, predicting what comes next           | 1   |
+| PK-07 | [Four Nest Sorting](concepts/pages/pk-07.md)       | Sorting by two attributes             | Sorting by color and shape together, classification      | 2   |
+| PK-08 | [Little Paths Home](concepts/pages/pk-08.md)       | Simple finger mazes                   | Planning a path, finger control, trying again            | 1   |
+| PK-09 | [Big Piece Pictures](concepts/pages/pk-09.md)      | Chunky jigsaw puzzles, 6 to 12 pieces | Part and whole, shapes and spatial thinking              | 2   |
+| PK-10 | [Peek Under Pebbles](concepts/pages/pk-10.md)      | Memory pairs with 6 to 12 pebbles     | Visual and sound memory, matching                        | 1   |
+| PK-11 | [Twin Nests](concepts/pages/pk-11.md)              | Spot one to three differences         | Careful looking, same and different                      | 1   |
+| PK-12 | [Pebble Dot Friends](concepts/pages/pk-12.md)      | Dot-to-dot counting from 1 to 10      | Counting in order from 1 to 10, number names             | 1   |
+| PK-13 | [Mixing Puddles](concepts/pages/pk-13.md)          | Color mixing toy                      | Primary and mixed colors, cause and effect               | 1   |
+| PK-14 | [Mirror Pond Feelings](concepts/pages/pk-14.md)    | Emotions matching                     | Naming feelings, empathy, choosing a kind action         | 1   |
+| PK-15 | [Story Stones](concepts/pages/pk-15.md)            | Picture sequencing, 3 to 4 pictures   | Before and after, daily routines, retelling a story      | 2   |
+| PK-16 | [Pebble Beach Picnic](concepts/pages/pk-16.md)     | Pretend picnic play                   | Sharing food, one for each friend, plant foods           | 1   |
+| PK-17 | [Plush Patch Clinic](concepts/pages/pk-17.md)      | Pretend doctor for plush toys         | Caring for others, body parts, feeling brave             | 2   |
+| PK-18 | [Sharing Circle](concepts/pages/pk-18.md)          | Pretend sharing and swapping day      | Sharing, swapping, taking turns, saying thank you        | 2   |
+| PK-19 | [Arrow Stones for Orbi](concepts/pages/pk-19.md)   | First coding with arrow paths         | Steps in order, directions, early coding                 | 2   |
+| PK-20 | [Shape Spotting Walk](concepts/pages/pk-20.md)     | Find shapes in a scene                | Circles, squares, triangles and rectangles in the world  | 1   |
+| PK-21 | [Long Stick, Heavy Stone](concepts/pages/pk-21.md) | Comparing length and weight           | Longer and shorter, heavier and lighter, first measuring | 1   |
+| PK-22 | [One Tree, Four Seasons](concepts/pages/pk-22.md)  | Seasons and weather matching          | The four seasons, weather, and what nature does in each  | 1   |
+
+## Raya life (RY)
+
+Games that let players live the [Raya](lore/raya.md) vision: Orbis,
+copying instead of taking, acoustic flight, the Chord, the Guard and the
+Gentle Defaults.
+
+| ID    | Idea                                            | Proven genre (example)                          | What it teaches                                                        | Cx  |
+| ----- | ----------------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------- | --- |
+| RY-01 | [Hello, Orbi](concepts/pages/ry-01.md)          | Companion care toy (name, polish, charge, play) | Gentle care, daily routines, honest friendship                         | 1   |
+| RY-02 | [One Night Apple](concepts/pages/ry-02.md)      | Step-by-step story toy (ask, scan, wait, enjoy) | Copy, don't take; patience; caring for birds                           | 1   |
+| RY-03 | [Riding the Chord](concepts/pages/ry-03.md)     | 3D gliding along guided sky-lanes               | Speed and distance, reading a map, sharing the sky with birds          | 4   |
+| RY-04 | [Ring Tuner](concepts/pages/ry-04.md)           | Wave-tuning puzzle                              | Sound waves, frequency, resonance and standing-wave nodes              | 3   |
+| RY-05 | [Thought Postcards](concepts/pages/ry-05.md)    | Picture-message composer with consent steps     | Consent online, privacy, kind messages                                 | 2   |
+| RY-06 | [Soft Hold](concepts/pages/ry-06.md)            | Scenario choices (pause or let be)              | Body safety, consent, feelings are free while harmful moves pause      | 2   |
+| RY-07 | [Two Yeses](concepts/pages/ry-07.md)            | Card sorting and scenario puzzles               | Mutual consent, rights and their limits, protecting others             | 2   |
+| RY-08 | [Crown Nest](concepts/pages/ry-08.md)           | Physics building in a living tree               | Balance and structure, building without harming nature                 | 3   |
+| RY-09 | [Quiet Feet](concepts/pages/ry-09.md)           | Tap-the-stepping-stone walk                     | Leave no trace, noticing animals, gentle movement                      | 1   |
+| RY-10 | [Field Sketchbook](concepts/pages/ry-10.md)     | Wildlife photo framing and sketching            | Observation, patience, composition, animal behavior                    | 2   |
+| RY-11 | [Acorn's Long Seasons](concepts/pages/ry-11.md) | Story visits with gentle helping tasks          | Respect for elders, respecting other people's choices, empathy         | 2   |
+| RY-12 | [Share Basket](concepts/pages/ry-12.md)         | Gather, count and share                         | Sharing fairly, counting to five, taking only what animals do not need | 1   |
+| RY-13 | [Windows on Raya](concepts/pages/ry-13.md)      | Ambient landscape explorer                      | Biomes and animals of a living world, calm attention                   | 2   |
+| RY-14 | [Pim and Pom Night](concepts/pages/ry-14.md)    | Sky and time simulation with a day wheel        | Day and night, moon phases, tides, eclipses, dark skies for animals    | 2   |
+| RY-15 | [Tower Song Festival](concepts/pages/ry-15.md)  | Music composing and rhythm performance          | Melody, rhythm and harmony, choosing the right time to be loud         | 3   |
+| RY-16 | [Valley Circle](concepts/pages/ry-16.md)        | Consensus-building council game                 | Listening, compromise, consensus and optional rules                    | 3   |
+
+## Shacados (SH)
+
+Games set on [Shacados](lore/shacados.md), the rusted world, for ages 10+
+(repair, sharing and hope) and 13+. Dark but never hopeless: the player
+mends, shares, teaches and protects, and never harms anyone.
+
+| ID    | Idea                                               | Proven genre (example)                         | What it teaches                                                   | Cx  |
+| ----- | -------------------------------------------------- | ---------------------------------------------- | ----------------------------------------------------------------- | --- |
+| SH-01 | [Three Dead Radios](concepts/pages/sh-01.md)       | Repair puzzle, salvage and rebuild             | Basic circuits, troubleshooting, the value of mending             | 3   |
+| SH-02 | [Static on the Roof](concepts/pages/sh-02.md)      | Signal listening and pattern-finding puzzle    | Patterns, signal and noise, prime numbers, patience               | 3   |
+| SH-03 | [Jars for After](concepts/pages/sh-03.md)          | Collect, sort and plant (seed saving)          | Plant life cycles, seed saving, caring for the future             | 2   |
+| SH-04 | [One Stove for the Block](concepts/pages/sh-04.md) | Heat logistics puzzle                          | Heat and insulation, planning scarce resources, fairness          | 3   |
+| SH-05 | [Sand, Charcoal, Cloth](concepts/pages/sh-05.md)   | Build-and-test science puzzle                  | Water filtration, turbidity, testing and improving a design       | 3   |
+| SH-06 | [Raker's Dune](concepts/pages/sh-06.md)            | Sorting and salvage puzzle                     | Materials and their properties, sorting, reuse                    | 2   |
+| SH-07 | [Lamplight Lessons](concepts/pages/sh-07.md)       | Teaching game, explain and check               | Reading, arithmetic, explaining ideas to others                   | 2   |
+| SH-08 | [The Fair Ladle](concepts/pages/sh-08.md)          | Cooperative sharing puzzle                     | Fair division, needs versus equal shares, fractions, empathy      | 3   |
+| SH-09 | [Seam Town Winter](concepts/pages/sh-09.md)        | Survival town-building simulation              | Resource planning, community roles, heat and food chains          | 4   |
+| SH-10 | [Brann's Red Chalk](concepts/pages/sh-10.md)       | Inspection and fault-finding puzzle            | Engineering safety, systematic checking, moral courage            | 3   |
+| SH-11 | [Before the Pulse](concepts/pages/sh-11.md)        | Evacuation planning and route puzzle           | Wind and fallout maps, planning, care for the vulnerable          | 4   |
+| SH-12 | [Ember Watch](concepts/pages/sh-12.md)             | Firebreak strategy and replanting puzzle       | How fires spread, firebreaks, forest regrowth                     | 3   |
+| SH-13 | [Kesh on the Ground](concepts/pages/sh-13.md)      | Branching narrative adventure                  | Moral courage, saying no under pressure, solidarity               | 3   |
+| SH-14 | [The Heir's Ledger](concepts/pages/sh-14.md)       | Investigation puzzle and narrative choice      | Cause and effect in systems, responsibility, change from within   | 3   |
+| SH-15 | [Rain-Glass Garden](concepts/pages/sh-15.md)       | Greenhouse building and gardening simulation   | Soil acidity, plant needs, building with salvage                  | 3   |
+| SH-16 | [Answer to the Stars](concepts/pages/sh-16.md)     | Signal-crafting puzzle and community narrative | Universal messages, primes, picture grids, light delay, consensus | 5   |
 
 ## Non-violent reframing
 

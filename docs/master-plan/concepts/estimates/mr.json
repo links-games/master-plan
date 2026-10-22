@@ -17,7 +17,7 @@
     },
     "toddler": 3,
     "minAge": 3,
-    "plan": "First playable: a ring of four big glowing pads with distinct pitches that replays sequences growing from one to eight notes, slowing down after mistakes. No speed mode, scores or extra pads."
+    "plan": "A ring of four big glowing pads with distinct pitches that replays sequences growing from one to eight notes, slowing down after mistakes. No speed mode, scores or extra pads."
   },
   {
     "id": "MR-02",
@@ -37,7 +37,7 @@
     },
     "toddler": 5,
     "minAge": 2,
-    "plan": "First playable: six illustrated hand drums from different cultures that sound on any tap, over three gentle backing loops with an optional echo pattern to copy. No scoring, recording or timing judgement."
+    "plan": "Six illustrated hand drums from different cultures that sound on any tap, over three gentle backing loops with an optional echo pattern to copy. No scoring, recording or timing judgement."
   },
   {
     "id": "MR-03",
@@ -57,7 +57,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: four piano lanes with falling note tiles for 10 public-domain melodies, a slow practice speed and a note-name strip on the keys. No song import, endless mode or leaderboards."
+    "plan": "Four piano lanes with falling note tiles for 10 public-domain melodies, a slow practice speed and a note-name strip on the keys. No song import, endless mode or leaderboards."
   },
   {
     "id": "MR-04",
@@ -82,7 +82,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: one beat line with big targets for quarter, half and eighth notes over 8 short tracks, latency calibration and a no-fail mode that shows notes as fractions. No charts editor or combos."
+    "plan": "One beat line with big targets for quarter, half and eighth notes over 8 short tracks, latency calibration and a no-fail mode that shows notes as fractions. No charts editor or combos."
   },
   {
     "id": "MR-05",
@@ -102,7 +102,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: a small keyboard where the player hears and matches illustrated intervals and major or minor chords across 12 graded sets, scheduled by spaced repetition. No scales, notation or singing."
+    "plan": "A small keyboard where the player hears and matches illustrated intervals and major or minor chords across 12 graded sets, scheduled by spaced repetition. No scales, notation or singing."
   },
   {
     "id": "MR-06",
@@ -127,7 +127,7 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: an 8-step by 5-row pentatonic grid where tapped notes loop and each row grows its own singing plant, with free play and 8 short melody challenges. No scale switching, export or chords."
+    "plan": "An 8-step by 5-row pentatonic grid where tapped notes loop and each row grows its own singing plant, with free play and 8 short melody challenges. No scale switching, export or chords."
   },
   {
     "id": "MR-07",
@@ -152,7 +152,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: a tiny orchestra plays 5 short pieces whose tempo follows the conducting arc traced on visible beat markers, with instrument sections that can be cued. No full scores or free composition."
+    "plan": "A tiny orchestra plays 5 short pieces whose tempo follows the conducting arc traced on visible beat markers, with instrument sections that can be cued. No full scores or free composition."
   },
   {
     "id": "MR-08",
@@ -172,7 +172,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: 8 familiar songs with a scrolling pitch line and a singing character; microphone pitch feedback is opt-in and off in kids mode, with a tap-along fallback. No recording, sharing or scoring."
+    "plan": "8 familiar songs with a scrolling pitch line and a singing character; microphone pitch feedback is opt-in and off in kids mode, with a tap-along fallback. No recording, sharing or scoring."
   },
   {
     "id": "MR-09",
@@ -197,7 +197,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: two link friends trade four-beat dance phrases on a glowing beat circle; the player copies each call with taps across 10 songs, with no fighting and a no-fail mode. No online duels."
+    "plan": "Two link friends trade four-beat dance phrases on a glowing beat circle; the player copies each call with taps across 10 songs, with no fighting and a no-fail mode. No online duels."
   },
   {
     "id": "MR-10",
@@ -217,6 +217,6 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: 12 auto-scrolling levels where the hero hops across stepping stones spaced to a visible four-beat rhythm, with latency calibration and slow mode. No level editor or free movement."
+    "plan": "12 auto-scrolling levels where the hero hops across stepping stones spaced to a visible four-beat rhythm, with latency calibration and slow mode. No level editor or free movement."
   }
 ]

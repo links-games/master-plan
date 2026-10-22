@@ -17,7 +17,7 @@
     },
     "toddler": 4,
     "minAge": 3,
-    "plan": "First playable: 12 botanical and art-history line drawings with tap-to-fill regions, a numbered palette for colour by number and a free-colour mode for toddlers, plus a gallery. No brushes, photo import or sharing."
+    "plan": "12 botanical and art-history line drawings with tap-to-fill regions, a numbered palette for colour by number and a free-colour mode for toddlers, plus a gallery. No brushes, photo import or sharing."
   },
   {
     "id": "BD-02",
@@ -37,7 +37,7 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: a 16x16 pixel grid with palette, mirror symmetry tools, undo, save to gallery and 15 half-finished creatures to complete. No animation frames, layers or online sharing."
+    "plan": "A 16x16 pixel grid with palette, mirror symmetry tools, undo, save to gallery and 15 half-finished creatures to complete. No animation frames, layers or online sharing."
   },
   {
     "id": "BD-03",
@@ -57,7 +57,7 @@
     },
     "toddler": 4,
     "minAge": 3,
-    "plan": "First playable: a friendly mannequin with drag-on costume pieces, a recolour palette and 12 fabric patterns from world cultures with short notes, saved as photo cards. No pattern designer or fashion contests."
+    "plan": "A friendly mannequin with drag-on costume pieces, a recolour palette and 12 fabric patterns from world cultures with short notes, saved as photo cards. No pattern designer or fashion contests."
   },
   {
     "id": "BD-04",
@@ -77,7 +77,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: a square sheet folded along highlighted creases with swipe gestures, layered polygon folding and 12 step-by-step models from a cup to a bird. No free folding, 3D view or crease-pattern editor."
+    "plan": "A square sheet folded along highlighted creases with swipe gestures, layered polygon folding and 12 step-by-step models from a cup to a bird. No free folding, 3D view or crease-pattern editor."
   },
   {
     "id": "BD-05",
@@ -97,7 +97,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: snap movement, turn and repeat blocks into a program that a small robot runs step by step on 30 grid levels, adding functions late. No text code, sensors or level sharing."
+    "plan": "Snap movement, turn and repeat blocks into a program that a small robot runs step by step on 30 grid levels, adding functions late. No text code, sensors or level sharing."
   },
   {
     "id": "BD-06",
@@ -117,7 +117,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: draw paths and place map symbols on a gridded sheet with a compass rose and a scale bar, plus 10 challenges to map a walking route with correct distances. No real-world map data or GPS."
+    "plan": "Draw paths and place map symbols on a gridded sheet with a compass rose and a scale bar, plus 10 challenges to map a walking route with correct distances. No real-world map data or GPS."
   },
   {
     "id": "BD-07",
@@ -142,7 +142,7 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: a tabletop board with drag-and-snap ramps, loops and funnels, run and edit modes, an energy meter and 20 goal puzzles plus free build. No 3D tracks or sharing."
+    "plan": "A tabletop board with drag-and-snap ramps, loops and funnels, run and edit modes, an energy meter and 20 goal puzzles plus free build. No 3D tracks or sharing."
   },
   {
     "id": "BD-08",
@@ -162,7 +162,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: draw frames of a bouncing seed with onion skinning, reorder them on a timeline, choose playback speed and follow 6 guided lessons on timing. No sound tracks, export to video or layers."
+    "plan": "Draw frames of a bouncing seed with onion skinning, reorder them on a timeline, choose playback speed and follow 6 guided lessons on timing. No sound tracks, export to video or layers."
   },
   {
     "id": "BD-09",
@@ -187,7 +187,7 @@
     },
     "toddler": 1,
     "minAge": 6,
-    "plan": "First playable: a tile-palette editor for small platformer levels with drag-placed platforms, a goal and a test-play button using the shared controller, saved locally with 6 samples. No sharing or other game types."
+    "plan": "A tile-palette editor for small platformer levels with drag-placed platforms, a goal and a test-play button using the shared controller, saved locally with 6 samples. No sharing or other game types."
   },
   {
     "id": "BD-10",
@@ -212,7 +212,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: a 2D blueprint and side view where a tiny home is built from frame parts and materials, checked for load paths and a step-free route with ramps, across 15 client briefs. No 3D walkthrough or costs."
+    "plan": "A 2D blueprint and side view where a tiny home is built from frame parts and materials, checked for load paths and a step-free route with ramps, across 15 client briefs. No 3D walkthrough or costs."
   },
   {
     "id": "BD-11",
@@ -239,7 +239,7 @@
     },
     "toddler": 1,
     "minAge": 7,
-    "plan": "First playable: one small seeded 3D meadow where the player places and removes blocks, builds a greenhouse and wires simple switches and lamps, with 6 guided challenges. No survival, crafting tree or multiplayer."
+    "plan": "One small seeded 3D meadow where the player places and removes blocks, builds a greenhouse and wires simple switches and lamps, with 6 guided challenges. No survival, crafting tree or multiplayer."
   },
   {
     "id": "BD-12",
@@ -259,7 +259,7 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: six tiny rooms whose boxes open item by item; drag study objects to fitting spots while a path from door to desk must stay clear and wide enough. No story chapters or furniture shop."
+    "plan": "Six tiny rooms whose boxes open item by item; drag study objects to fitting spots while a path from door to desk must stay clear and wide enough. No story chapters or furniture shop."
   },
   {
     "id": "BD-13",
@@ -279,7 +279,7 @@
     },
     "toddler": 2,
     "minAge": 5,
-    "plan": "First playable: a gridded backpack and 30 field tools with tetromino-like shapes; drag and rotate them to fit, with glowing synergy links for complementary neighbours across 25 packing tasks. No combat or loot."
+    "plan": "A gridded backpack and 30 field tools with tetromino-like shapes; drag and rotate them to fit, with glowing synergy links for complementary neighbours across 25 packing tasks. No combat or loot."
   },
   {
     "id": "BD-14",
@@ -299,6 +299,6 @@
     },
     "toddler": 3,
     "minAge": 4,
-    "plan": "First playable: a spinning clay pot shaped by touch on its side profile, rendered as a pseudo-3D lathe, with 12 reference silhouettes and a volume and symmetry check. No kiln, glazing or 3D export."
+    "plan": "A spinning clay pot shaped by touch on its side profile, rendered as a pseudo-3D lathe, with 12 reference silhouettes and a volume and symmetry check. No kiln, glazing or 3D export."
   }
 ]

@@ -1,0 +1,382 @@
+[
+  {
+    "id": "SH-01",
+    "algorithms": [
+      "electric-circuit",
+      "drag-drop-snap",
+      "inventory-crafting",
+      "tap-feedback"
+    ],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 45,
+      "animations": 8,
+      "backgrounds": 4,
+      "ui": 5,
+      "sfx": 25,
+      "music": 2,
+      "voice": 30,
+      "levels": 12,
+      "content": 60,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "One mender's bench, 12 radios to rebuild from three dead sets each, a simple tube and coil circuit check and a voiced Brann; speaker patching and coil rewinding come later."
+  },
+  {
+    "id": "SH-02",
+    "algorithms": [
+      "audio-synth",
+      "pattern-sequence",
+      "rhythm-timing",
+      "particle-effects",
+      "tap-feedback"
+    ],
+    "extraLoc": 600,
+    "assets": {
+      "sprites": 30,
+      "animations": 6,
+      "backgrounds": 4,
+      "ui": 4,
+      "sfx": 30,
+      "music": 2,
+      "voice": 25,
+      "levels": 15,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "The rooftop scene, 15 nights of synthesized static with hidden pulse groups to tap out, antenna turning and a pulse notebook; no timing failure, building a better coil is left for later."
+  },
+  {
+    "id": "SH-03",
+    "algorithms": [
+      "drag-drop-snap",
+      "sort-classify",
+      "day-cycle",
+      "tween-cause-effect"
+    ],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 35,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 3,
+      "sfx": 15,
+      "music": 1,
+      "voice": 20,
+      "levels": 10,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "The root cellar and one valley plot, 10 seed types to dry, sort, save half and plant half across 10 seasons with simple growth; couriers and the cellar map are left out."
+  },
+  {
+    "id": "SH-04",
+    "algorithms": ["graph-network", "drag-drop-snap", "puzzle-solver-hints"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 35,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 15,
+      "music": 1,
+      "voice": 20,
+      "levels": 20,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "A cutaway tenement with 20 heat puzzles where families, blankets, rags and coal are moved so one stove warms everyone, with a solver for hints; heat pipes between blocks come later."
+  },
+  {
+    "id": "SH-05",
+    "algorithms": ["drag-drop-snap", "particle-effects", "tween-cause-effect"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 30,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 15,
+      "music": 1,
+      "voice": 20,
+      "levels": 12,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "A filter bench with 12 water sources, four layer materials, a simple clarity model judged against a saucer disc and a boil step; acid rain chemistry and the barrel tower are left out."
+  },
+  {
+    "id": "SH-06",
+    "algorithms": [
+      "sort-classify",
+      "drag-drop-snap",
+      "physics-2d",
+      "tap-feedback"
+    ],
+    "extraLoc": 400,
+    "assets": {
+      "sprites": 40,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 3,
+      "sfx": 15,
+      "music": 1,
+      "voice": 10,
+      "levels": 12,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "One dune slope with gently tumbling scrap, magnet and scratch tests, four baskets and 12 picture requests from neighbors; the town view of finished builds is left for later."
+  },
+  {
+    "id": "SH-07",
+    "algorithms": [
+      "dialogue-branching",
+      "arithmetic-gen",
+      "word-list",
+      "counting"
+    ],
+    "extraLoc": 500,
+    "assets": {
+      "sprites": 30,
+      "animations": 5,
+      "backgrounds": 2,
+      "ui": 4,
+      "sfx": 10,
+      "music": 1,
+      "voice": 40,
+      "levels": 10,
+      "content": 80,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "The cellar classroom, 10 nights with four pupils who each need a reading or number idea explained with picture cards, beans and string; pupil pairing is left for later."
+  },
+  {
+    "id": "SH-08",
+    "algorithms": ["economy-sim", "drag-drop-snap", "quest-state"],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 35,
+      "animations": 6,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 12,
+      "music": 1,
+      "voice": 30,
+      "levels": 14,
+      "content": 50,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 13,
+    "plan": "The soup table, 14 mornings of short deliveries shared among a line of 8 to 16 people with visible needs and a cooperative show-of-hands vote; the week view and roof garden come later."
+  },
+  {
+    "id": "SH-09",
+    "algorithms": ["city-sim", "weather-sim", "day-cycle", "quest-state"],
+    "extraLoc": 1300,
+    "assets": {
+      "sprites": 60,
+      "animations": 12,
+      "backgrounds": 4,
+      "ui": 8,
+      "sfx": 25,
+      "music": 2,
+      "voice": 30,
+      "levels": 6,
+      "content": 80,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 13,
+    "plan": "One ice town on a small grid with coal, fungus, heat pipes and a greenhouse, neighbor roles and 6 winter scenarios with blizzards; trains, newcomers and the school are left out."
+  },
+  {
+    "id": "SH-10",
+    "algorithms": [
+      "hidden-object",
+      "spot-difference",
+      "dialogue-branching",
+      "tap-feedback"
+    ],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 40,
+      "animations": 6,
+      "backgrounds": 5,
+      "ui": 4,
+      "sfx": 20,
+      "music": 1,
+      "voice": 30,
+      "levels": 10,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 13,
+    "plan": "10 rockets to inspect by lantern, each with hidden faults to circle in chalk and a sign or refuse choice voiced with Brann; listening to pumps and cold-crack faults come later."
+  },
+  {
+    "id": "SH-11",
+    "algorithms": [
+      "grid-board",
+      "pathfinding",
+      "agent-steering",
+      "weather-sim",
+      "quest-state"
+    ],
+    "extraLoc": 1100,
+    "assets": {
+      "sprites": 50,
+      "animations": 10,
+      "backgrounds": 4,
+      "ui": 6,
+      "sfx": 20,
+      "music": 2,
+      "voice": 30,
+      "levels": 10,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 13,
+    "plan": "10 valley maps with wind arrows, families with different needs, carts and runners, routed uphill before launch with gentle walking agents; every level ends before the launch, clinics come later."
+  },
+  {
+    "id": "SH-12",
+    "algorithms": [
+      "grid-board",
+      "ecosystem-sim",
+      "particle-effects",
+      "tap-feedback"
+    ],
+    "extraLoc": 700,
+    "assets": {
+      "sprites": 40,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 15,
+      "music": 1,
+      "voice": 20,
+      "levels": 12,
+      "content": 30,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "12 valley grids where smoke spreads tile by tile, firebreaks and bucket lines stop it, then a replanting phase with grass, birch and oak growth over years; extra valleys and ponds come later."
+  },
+  {
+    "id": "SH-13",
+    "algorithms": ["dialogue-branching", "quest-state", "timeline"],
+    "extraLoc": 900,
+    "assets": {
+      "sprites": 30,
+      "animations": 8,
+      "backgrounds": 5,
+      "ui": 4,
+      "sfx": 12,
+      "music": 2,
+      "voice": 120,
+      "levels": 7,
+      "content": 150,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 13,
+    "plan": "Seven days before a launch told in voiced scenes with three speech cards per beat, five characters, a trust meter and three endings; no choice harms anyone, extra endings come later."
+  },
+  {
+    "id": "SH-14",
+    "algorithms": [
+      "graph-network",
+      "dialogue-branching",
+      "quest-state",
+      "hidden-object"
+    ],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 30,
+      "animations": 5,
+      "backgrounds": 4,
+      "ui": 5,
+      "sfx": 12,
+      "music": 1,
+      "voice": 60,
+      "levels": 8,
+      "content": 120,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 13,
+    "plan": "The archive room, 8 ledger cases linked with red thread to reveal causes, short voiced scenes with the people behind them and one final rule to rewrite; a wider Hold simulation is left out."
+  },
+  {
+    "id": "SH-15",
+    "algorithms": [
+      "inventory-crafting",
+      "drag-drop-snap",
+      "chemistry-reactions",
+      "day-cycle"
+    ],
+    "extraLoc": 800,
+    "assets": {
+      "sprites": 45,
+      "animations": 8,
+      "backgrounds": 3,
+      "ui": 5,
+      "sfx": 15,
+      "music": 1,
+      "voice": 20,
+      "levels": 10,
+      "content": 40,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "One rooftop, glass panes to fit into a frame, rain barrels with a cabbage-juice acidity test, three crops over 10 seasons; worm bins, fungus beds and neighbor roofs come later."
+  },
+  {
+    "id": "SH-16",
+    "algorithms": [
+      "electric-circuit",
+      "acoustics-sim",
+      "pattern-sequence",
+      "dialogue-branching",
+      "quest-state",
+      "inventory-crafting",
+      "grid-board"
+    ],
+    "extraLoc": 2400,
+    "assets": {
+      "sprites": 80,
+      "animations": 20,
+      "backgrounds": 10,
+      "ui": 10,
+      "sfx": 40,
+      "music": 4,
+      "voice": 120,
+      "levels": 20,
+      "content": 200,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 13,
+    "plan": "A campaign of 20 nights to decode prime pulses, salvage and build a transmitter, compose a dot-picture reply and agree on it with voiced neighbors; hiding from the Radio Hold is left for later."
+  }
+]

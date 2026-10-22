@@ -1,10 +1,16 @@
 # Choose a game to prototype
 
-Browse **216 ideas in 12 collections**. Each game has its own page with a
-learning objective, mechanic, prototype scope and four independent concept-art
-directions. All 168 existing IDs are preserved; 48 additions fill gaps in the
-[game-ideas list](../game-ideas.md). These are proposals for choosing a prototype,
-not implemented games.
+Browse **300 ideas in 16 collections**. Each game has its own page with a
+learning objective, mechanic, prototype scope, an estimated plan (algorithms,
+code size, assets, youngest age, toddler learnability) and four concept-art
+views. All 168 existing IDs are preserved; 48 additions fill gaps in the
+[game-ideas list](../game-ideas.md), and 84 games in four new collections were
+added for the [Raya feedback](../../case-studies/issue-1/requirements.md#raya-shacados-toddlers-and-the-website-r55r76).
+These are proposals for choosing a prototype, not implemented games.
+
+To choose what to build first, use the [development plan](../development-plan.md)
+(every game sorted by development effort and by start score) or the filterable
+[website](../README.md#website).
 
 ## Browse by collection
 
@@ -22,6 +28,10 @@ not implemented games.
 | [Space and physics](sp.md)       | 17    | Docking, survivor-style rescue, rover geology                                                                                                               |
 | [Stories and adventures](sa.md)  | 15    | Metroidvania exploration, evidence-based social deduction, non-combat roguelikes                                                                            |
 | [Strategy and simulation](ss.md) | 20    | Automation, helper-team synergies, restaurant queues, repair workshops, railway dispatch, disaster preparation                                              |
+| [Toddlers (1–3)](td.md)          | 30    | One-tap toys, peekaboo, first words, routines, sorting and feelings for ages 1–3; art pending                                                               |
+| [Preschool (3–5)](pk.md)         | 22    | Letters, numbers, rhymes, patterns, paths, mixing colors, sharing and seasons for ages 3–5; art pending                                                     |
+| [Raya life](ry.md)               | 16    | The Orbi, copying an apple, sky-lane flight, tower tuning, the Guard, waivers, nests and Renewal; art pending                                               |
+| [Shacados](sh.md)                | 16    | Mending, salvage, sharing heat and food, water filters, night school and unsafe rockets, for ages 10+ and 13+; art pending                                  |
 
 ## Start with a small prototype
 
@@ -44,9 +54,29 @@ materials** for identity, and **Expanded play** for whether the idea has room to
 grow. Open each image for its full native resolution. A strong world picture
 alone does not prove the mechanic is readable or fun.
 
+## Collections with art pending
+
+The Toddlers, Preschool, Raya life and Shacados collections have no images
+yet; another agent will generate them later (requirement R76). Their pages
+carry **four image descriptions** instead: the gameplay scene, the world, the
+characters and materials, and the expanded play. The complete generation
+prompts are in `jobs/td.json`, `jobs/pk.json`, `jobs/ry.json` and
+`jobs/sh.json`, built from the catalog fields `scene` and
+`views.world`, `views.details` and `views.discovery`. Raya prompts describe
+untouched nature, tall white acoustic and telecom towers, tight white
+clothing and the white Orbi spheres; Shacados prompts describe rust, smog,
+junk and dying nature with one warm lamp and one living plant for hope. Each
+of these games also has a short **story with a wisdom line**.
+
+[`jobs/loading-screens.json`](jobs/loading-screens.json) holds 32
+loading-screen and menu-background prompts (portrait 1080 × 1920 and landscape
+1920 × 1080 for each collection). They show Raya's landscape, or Shacados for
+its collection, with a quiet band left free for the progress indicator
+(requirement R58).
+
 ## Image generation and provenance
 
-The catalog contains **four separately generated images for each of 216 ideas**:
+The first 12 collections contain **four separately generated images for each of 216 ideas**:
 864 original concept images. Each is a standalone composition, with its own
 prompt and generation call; images are not crops from a shared contact sheet.
 Full images retain their native pixel dimensions, with a minimum of 1024 pixels
@@ -82,8 +112,11 @@ describes the inspection method and observations for completed collections.
 
 ## Maintaining the catalog
 
-1. Edit a game record in `catalog/<family>.json`, retaining its stable ID.
-2. Run `node scripts/build-game-concepts.mjs` to rebuild pages and prompt jobs.
+1. Edit a game record in `catalog/<family>.json`, retaining its stable ID, and
+   its estimate in [`estimates/<family>.json`](estimates/README.md).
+2. Run `node scripts/build-development-plan.mjs`, then
+   `node scripts/build-game-concepts.mjs` to rebuild the plan, the pages and
+   the prompt jobs.
    This command never generates images or replaces existing artwork.
 3. Generate each requested image with the built-in image tool. Persist each
    result with `python3 experiments/save-concept-art.py JOB_ID SOURCE_IMAGE`

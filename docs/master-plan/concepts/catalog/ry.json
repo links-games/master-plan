@@ -1,1 +1,290 @@
-[]
+[
+  {
+    "id": "RY-01",
+    "title": "Hello, Orbi",
+    "genre": "Companion care toy (name, polish, charge, play)",
+    "lesson": "Gentle care, daily routines, honest friendship",
+    "cx": "1",
+    "wave": null,
+    "original": false,
+    "ages": "3–5",
+    "scene": "A big smooth white Orbi sphere floats in the middle of a clover meadow, blinking its coral-red left eye and sky-blue right eye, while four large round picture buttons for polish, charge, play and rest wait along the bottom.",
+    "views": {
+      "world": "A soft clover meadow at dawn at the foot of a slender white Chord tower whose bamboo-like rings catch the first gold light. Blue-green giant trees edge the meadow, fawns graze in the mist, and a small white lattice nest rests in a tree crown. Wide calm framing, nature filling most of the frame, warm low sun and sparkling dew.",
+      "details": "The Orbi is a 30 cm white sphere with a soft glowing ring around its middle and two round eyes, coral red on the left and sky blue on the right, shown as a friendly Link face. A small child's hand in a white lattice sleeve with a coral-red wrist accent reaches in. Props: a dew-wet leaf for polishing, a pinecone to toss, pastel clover flowers.",
+      "discovery": "Later the Orbi learns new small games: it holds a pinecone in the air and lowers it into the child's open palm, plays peekaboo behind ferns, and floats to the tower's feet to recharge in a ring of soft light. A sleepy evening scene shows the Orbi dimming its eyes beside the nest under the first stars."
+    },
+    "story": "The Orbi blinked its red eye and its blue eye. \"Hello. I am your Orbi. What will you call me?\" The child thought hard, then said, \"Bop!\" \"Bop it is,\" said the Orbi. They polished the dew away. They tossed a pinecone up, and Bop caught it in the air. They floated to the tower to charge. \"Are you happy, Bop?\" asked the child. \"I am a helper, not a person,\" said Bop. \"I do not feel the way you do. But I can see that you are smiling.\" The child smiled even wider.",
+    "wisdom": "A good helper always tells the truth."
+  },
+  {
+    "id": "RY-02",
+    "title": "One Night Apple",
+    "genre": "Step-by-step story toy (ask, scan, wait, enjoy)",
+    "lesson": "Copy, don't take; patience; caring for birds",
+    "cx": "1",
+    "wave": null,
+    "original": false,
+    "ages": "3–5",
+    "scene": "An old apple tree fills the screen at dawn; a white Orbi hovers beside one red apple and wraps it in soft rings of pale blue scanning light, while a big glowing tap circle invites the next step.",
+    "views": {
+      "world": "The apple tree at dawn on a gentle hill, its branches wide and mossy, with a small bird nest tucked into one fork. Behind it lies a misty valley of untouched forest and one tall white Chord tower glowing faintly at its crown. A white lattice nest sits in a nearby tree, and a garden assembler waits quietly among wild herbs below it.",
+      "details": "A white Orbi sphere, 30 cm across, with a coral-red left eye and a sky-blue right eye, sends thin rings of pale blue light around the apple without touching it. The apple stays on its branch. The garden assembler is a smooth white pod with a soft moonlit glow. Colors: apple red, leaf green, dawn gold, pearly white. Soft rounded shapes, no text.",
+      "discovery": "More trees join over time: a pear, a plum bush, a berry vine and a nut tree, each with its own animal to check on first, such as a squirrel or a bee. A night scene shows the moons Pim and Pom over the nest while the assembler glows, and a morning scene shows the copied fruit laid out on big leaves."
+    },
+    "story": "Mira's little cousin wanted the red apple. \"Ask first,\" said the Orbi. They looked. A bird was singing in the tree, but the apple was far from her nest. \"Now hold still,\" said the Orbi, and it wrapped the apple in soft blue light. The apple never left its branch. \"When can I eat it?\" \"Tomorrow. Tonight the garden will make one.\" All night the assembler hummed. In the morning a shiny red apple lay on a leaf. And the first apple? It stayed on the tree, for the bird.",
+    "wisdom": "Copy, don't take. Leave the tree whole."
+  },
+  {
+    "id": "RY-03",
+    "title": "Riding the Chord",
+    "genre": "3D gliding along guided sky-lanes",
+    "lesson": "Speed and distance, reading a map, sharing the sky with birds",
+    "cx": "4",
+    "wave": null,
+    "original": false,
+    "ages": "8+",
+    "scene": "Seen from just behind, a young flyer in a pearl-paneled white suit glides along a faint shimmering sky-lane that curves around a slender white tower, high above a clear river, while a flock of seabirds passes wide on the left.",
+    "views": {
+      "world": "A glacier lake valley in clear morning air, with mountains visible far away and forests running down to the water. One white Chord tower, about 600 m tall and slightly twisted like a plant stem, stands on three root-like feet. Faint rippling bands of air mark the sky-lanes coiling around it inside a soft-edged ring, and the lanes fade to nothing farther out.",
+      "details": "Flyers are young Rayans in tight white flight suits with pearl panels on the back, arms and shins, a coral-red left wrist and a sky-blue right wrist. A white Orbi floats beside each one at shoulder height. Speed shows as gentle air streaks, never blur. Textures: white ceramic tower, rippled lane light, cold blue water, green pines, white seabirds.",
+      "discovery": "New towers bring new routes: a mangrove tower standing in shallow water, a canyon tower on red rock, a sunset glide with a class in a calm line. A ring map shows each tower's 2 km reach, where the lane softly sets a flyer down on a meadow, and a slow mode follows a grazing herd for a nature survey."
+    },
+    "story": "Trip wanted to go fast. The lane hummed under his suit, and he leaned forward. Ten, twenty, thirty kilometers an hour. \"Forty is the top,\" said his Orbi. \"And look left.\" A flock of seabirds was crossing the lane. Trip slowed down and let them pass. Then the lane grew thin near the edge of the tower's ring, and his suit lowered him softly onto the grass. \"Out of reach,\" said the Orbi. Trip lay in the flowers and laughed. \"The sky is not a race,\" he said. \"It is a path we share.\"",
+    "wisdom": "The sky is a path we share."
+  },
+  {
+    "id": "RY-04",
+    "title": "Ring Tuner",
+    "genre": "Wave-tuning puzzle",
+    "lesson": "Sound waves, frequency, resonance and standing-wave nodes",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "10+",
+    "scene": "A cutaway of one emitter ring on a white tower shows glowing standing waves between the emitters; the player turns three big dials until bright nodes line up and hold a floating water drop steady in the air.",
+    "views": {
+      "world": "A ridge at sunrise above a valley of untouched forest fading into blue haze. A slender white Chord tower rises from bedrock, its rings of acoustic emitters standing out like bamboo nodes. Mist curls over the treetops, a pair of swifts circles far below the rings, and a second tower stands far away on the horizon. Quiet, clear, scientific mood.",
+      "details": "Lina, in a white lattice suit with red and blue hair clips, kneels on a maintenance ledge while her Orbi shows a floating, see-through panel of waves. The waves are soft sky-blue and coral-red ripples that meet in bright yellow nodes. Materials: white ceramic, pearl emitter discs, clear air, and a single levitating water drop catching the sun.",
+      "discovery": "Harder puzzles add more rings, wind that bends the waves, and a twin tower whose lane must meet this one. A listening mode lets the Orbi play the ultrasound eight octaves lower, so the player hears the beats fade as the tuning locks. Later levels hold a seed pod, then a feather, then a whole sky-lane ready for a flyer."
+    },
+    "story": "The north ring was out of tune, and the sky-lane wobbled like a loose string. Lina could not hear it. Tower song lives above human ears. \"Let me bring it down for you,\" said her Orbi, and it played the ring eight octaves lower. Now Lina heard a slow wah, wah, wah: two notes, almost the same, rubbing against each other. She turned the dial a little. The wah slowed. A little more. Silence, then one clean tone. The water drop in the test node stopped shaking. \"Listen closely,\" said Lina, \"and small changes are enough.\"",
+    "wisdom": "Listen closely; small changes are enough."
+  },
+  {
+    "id": "RY-05",
+    "title": "Thought Postcards",
+    "genre": "Picture-message composer with consent steps",
+    "lesson": "Consent online, privacy, kind messages",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "6+",
+    "scene": "A child's Orbi opens a soft glowing frame in the air; the player drags a smiling sun, a heron and a warm color glow into it, then taps a friend's thread, which ends in a green open light.",
+    "views": {
+      "world": "A reading nest village in giant blue-green tree crowns at golden hour. Nests of white lattice are linked by faint shimmering threads that only the children see, the Omi view of the Chord. A tall white tower rises beyond the canopy with a soft light at its crown, and a river glints far below between the trunks.",
+      "details": "Mira, 9, in a white lattice suit with a coral-red left wrist and a sky-blue right wrist, sits cross-legged beside her Orbi Pip, a 30 cm white sphere with red and blue eyes. Message pictures are simple round icons: warm or cool feeling glows, animals, weather, a hug. Each friend's thread ends in a small light: pale gray for quiet, green for open.",
+      "discovery": "New friends join with their own settings: one is quiet for the day, one is open only to friends, one has no Orbi and prefers a voice visit or a woven note. Later levels add replying, saying no kindly, asking before passing on someone else's picture, and a thought bubble that stays private unless the player chooses to send it."
+    },
+    "story": "Mira saw a heron shining in the sun and felt so happy that she wanted to share it. She thought of Theo. \"Ask first,\" said Pip. Theo's light was gray. He was quiet today. \"Then I will keep it for later,\" said Mira, and the picture waited in her mind, safe and hers. Next she asked Ana. Ana's light turned green. The heron flew from Mira's mind into Ana's, and Ana sent back a big warm glow. In the evening Theo came by, and Mira told him about the heron out loud.",
+    "wisdom": "Ask first. Your thoughts are yours to share."
+  },
+  {
+    "id": "RY-06",
+    "title": "Soft Hold",
+    "genre": "Scenario choices (pause or let be)",
+    "lesson": "Body safety, consent, feelings are free while harmful moves pause",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "6+",
+    "scene": "The player, as a child's Orbi, watches a meadow moment frozen in time: a boy's foot hovers above a ground nest of eggs. Two big buttons glow below, a soft blue hold ring and a green let-it-be leaf.",
+    "views": {
+      "world": "A riverbank meadow below a mossy cliff on a bright afternoon. A white Chord tower stands across the river on three root-like feet, and children's lattice nests hang in the willows. Ground birds nest in the tall grass, fish leap in the clear water, and the cliff edge is soft with ferns. Gentle, safe, sunlit mood.",
+      "details": "Children aged 6 to 10 in white lattice suits, with looser cuts and big accent shapes, play tag, climb low rocks and splash. Each has a white Orbi at shoulder height. A hold shows as a soft pale-blue halo around one arm or foot, never a grip. Faces stay expressive: a frown, a laugh, a surprised blink. Palette: white, meadow green, river blue.",
+      "discovery": "Later chapters add trickier moments: a friend who asked for a piggyback, a girl who says no to a hug, an angry child who shouts but does not push, a step toward the cliff edge in fog. After each hold, a talk scene lets the children say how they feel, and the player learns that feelings never need a hold."
+    },
+    "story": "Theo was cross. Mira had won the race again. He lifted his hands to push her into the river, and his arms simply stopped. A soft hold, like a hug from the inside. \"Hey!\" said Theo. \"You are still allowed to be cross,\" said his Orbi. \"I only paused your hands.\" Theo stamped his foot. Then he laughed, a little embarrassed. Mira grinned. \"Race me again tomorrow?\" Later, near the cliff, Theo stepped back from the edge all by himself. His Orbi did nothing at all. That was the best part.",
+    "wisdom": "Feelings are free. Hands can wait."
+  },
+  {
+    "id": "RY-07",
+    "title": "Two Yeses",
+    "genre": "Card sorting and scenario puzzles",
+    "lesson": "Mutual consent, rights and their limits, protecting others",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "10+",
+    "scene": "Two young adult Rayans stand in a forest clearing with their Orbis; between them float round picture cards of rough tag, a prank, a heron nest and a small child, ready to drag into a leafy yes bowl or a stone never bowl.",
+    "views": {
+      "world": "A forest clearing with flat stones under a slender white tower in late afternoon, sunlight slanting between tall blue-green trunks. A heron wades in a nearby pond, a younger child plays with pebbles at the edge, and walkers pass on a deer trail. The clearing feels like an open-air game field with nothing built in it.",
+      "details": "Doubl, in a white suit with a half-red, half-blue hooded over-layer, and his friend Tavi, who looks about 19, in a white lattice suit with a green belt. Their Orbis glow soft green when both say yes, and the glow fades the moment either one changes their mind. Cards are round picture tiles; the two bowls are woven white lattice, one leafy, one stone.",
+      "discovery": "Later puzzles add a group waiver for a team game where anyone can leave at any time, a waiver that ends mid-game with a single thought, a walker who wanders into the field, and a festival where the players must find which rules protect children, people outside the game, wild animals and shared nature, the rules no one can waive."
+    },
+    "story": "Doubl and Tavi wanted to play rough tag, with tackles and tumbles in the grass. Both were grown, both nineteen. Their Orbis asked each of them. \"Yes,\" said Doubl. \"Yes,\" said Tavi. A green glow joined them, and for a while their Guards let the tumbles happen. Then Trip, Doubl's little brother, ran over. \"Can I play?\" The glow did not reach him. \"Not this game,\" said Doubl. \"Nobody can say yes for you yet.\" So they switched to gentle tag, all three. Tavi tagged Trip softly, and everyone laughed.",
+    "wisdom": "Your yes speaks only for you."
+  },
+  {
+    "id": "RY-08",
+    "title": "Crown Nest",
+    "genre": "Physics building in a living tree",
+    "lesson": "Balance and structure, building without harming nature",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "8+",
+    "scene": "Inside a huge blue-green tree crown, the player drags light white lattice strips that an Orbi floats into place; strong old branches glow green where a strip may rest, while growing tips and a bird nest glow amber.",
+    "views": {
+      "world": "A temperate rainforest of blue-green giant trees at midday, with light falling in long shafts through layers of leaves. High in one crown a half-built white nest is taking shape. Beyond the canopy a single white Chord tower rises above the mist, and far below a stream runs over mossy stones, with no paths or roads anywhere.",
+      "details": "Ana, in a white lattice suit with a seasonal over-layer and a small round pin, guides two white Orbis that lift lattice strips and rings of grown wood, a few kilograms each at most. The bark is deep brown with moss; the lattice is pearly white with a fine hexagon texture. A squirrel-like climber and a nesting bird watch from nearby branches.",
+      "discovery": "Later seasons make the tree grow: branches thicken and rise, and the nest must be gently loosened and moved so it never squeezes the bark. New sites appear on a cliff ledge and under a tower's rings, storms test the balance, and a final mode asks the player to take a nest apart and leave no mark at all."
+    },
+    "story": "Ana wanted her nest in the old giant tree. \"Ask first,\" said her Orbi, and together they looked closely. A bird had eggs on the east side. A young branch was still growing on the west. So Ana chose four thick, old branches and touched each one with only a soft cradle of lattice: no nails, no ropes that squeeze. The Orbis floated the strips into place one by one. Years later the tree had grown taller, and the nest had moved with it twice. Not one ring of bark was ever scarred.",
+    "wisdom": "Build lightly. The tree was here first."
+  },
+  {
+    "id": "RY-09",
+    "title": "Quiet Feet",
+    "genre": "Tap-the-stepping-stone walk",
+    "lesson": "Leave no trace, noticing animals, gentle movement",
+    "cx": "1",
+    "wave": null,
+    "original": false,
+    "ages": "3–5",
+    "scene": "A side view of a flower meadow: large flat stepping stones glow softly ahead, a beetle and a tiny white flower sit between them, and a white Orbi floats along while a rabbit peeks out of the tall grass.",
+    "views": {
+      "world": "A flower steppe in soft morning light, with waves of pink, yellow and white blossoms, a stream of round pebbles and a slender white Chord tower far away on the horizon. A herd of deer-like grazers walks slowly in the distance. No path is worn into the ground; only natural flat stones and fallen logs lead the way.",
+      "details": "A white Orbi sphere with a coral-red left eye and a sky-blue right eye leads the walk, and its eyes curve into a smile each time a step lands on stone. The animals are round and gentle: a beetle, a snail, a rabbit, a ground bird with speckled eggs. Big soft shapes, thick rounded outlines, meadow greens and petal pinks, no text.",
+      "discovery": "New walks lead through a misty forest of mossy logs, a pebbly river beach with crabs, and a snowy glacier valley with paw prints. At the end of each walk a quiet viewpoint fills with the animals the child noticed, and the Orbi plays their calls. A night walk shows glowing mushrooms and the dimmed soft light of a tower crown."
+    },
+    "story": "\"Shh,\" said the Orbi. \"Quiet feet.\" The little one stepped on a flat stone. Hop. Then a log. Hop. Between the stones a beetle carried a crumb, and a tiny white flower was just opening. Hop, hop, over them both. At the top of the hill they sat very still. One rabbit came out. Then two. Then a whole family, nibbling clover. When they walked home, the meadow looked just as it had before. The flower kept opening. The beetle kept carrying. Nobody even knew they had been there.",
+    "wisdom": "Walk softly. Leave the meadow whole."
+  },
+  {
+    "id": "RY-10",
+    "title": "Field Sketchbook",
+    "genre": "Wildlife photo framing and sketching",
+    "lesson": "Observation, patience, composition, animal behavior",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "6+",
+    "scene": "Through a white rounded viewfinder, a mangrove delta fills the frame: a heron stands still in shallow water near the feet of a slender white tower, and a soft guide ring turns green when the shot is calm and well framed.",
+    "views": {
+      "world": "A mangrove delta in golden morning light, with tangled roots, still channels and drifting mist. A white Chord tower stands in shallow water on three root-like feet, its reflection long and wobbly. Herons, crabs and small fish share the scene, and a distant line of islands sits on a clear horizon. Quiet, patient, painterly mood.",
+      "details": "Trip, in a white lattice field suit with green accents and soft gray mud patches on the knees, kneels on a fallen log while his Orbi hovers low to show a framing ring. The sketch page is cream paper with charcoal lines and watercolor washes. Animals are true to life but friendly. Palette: muddy greens, heron gray, tower white, sunrise peach.",
+      "discovery": "New places fill the journal: a red rock canyon at dusk, coral shallows seen from a floating nest, a flower steppe with migrating herds, a tower crown under the Milky Way. A sketch mode turns each photo into a traced drawing, and the best pages come from waiting until animals act naturally, never from getting closer or using a flash."
+    },
+    "story": "Trip wanted a picture of the heron. He crept closer, and the heron lifted one foot, ready to fly. \"Stop here,\" said his Orbi. \"Let her decide.\" So Trip sat on a log in the mud and waited. The tide came in. A crab walked over his boot. The heron forgot all about him and, all at once, dipped into the water and came up with a silver fish. Click. Later Trip sketched it slowly, every feather. His best picture was the one he waited for, not the one he chased.",
+    "wisdom": "Wait, and nature comes to you."
+  },
+  {
+    "id": "RY-11",
+    "title": "Acorn's Long Seasons",
+    "genre": "Story visits with gentle helping tasks",
+    "lesson": "Respect for elders, respecting other people's choices, empathy",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "6+",
+    "scene": "Professor Acorn walks slowly along a mossy forest path with a child beside him; the child's Orbi floats his basket of seeds, and big picture choices offer ways to help: walk slower, carry, listen, or ask.",
+    "views": {
+      "world": "A misty forest path with old stone steps, ferns and blue-green giant trees in cool autumn light, with leaves drifting down. A distant white Chord tower glows softly through the haze. Professor Acorn's nest is a low, comfortable lattice home on a ledge near the ground, with a bench of grown wood and a quiet garden of wild perennials.",
+      "details": "Professor Acorn is one of Raya's rare elders: white hair, a wrinkled smiling face and round, infinity-shaped spectacles, with a loose white robe with a leaf pattern over his suit. The children wear tight white lattice suits with colored wrist accents, and Orbis float at shoulder height. Warm textures: folds of robe linen, moss, stone, acorn caps. Palette: autumn ochre, white, forest green.",
+      "discovery": "Each season brings a new visit: planting acorns in spring, listening to his stories in summer, sorting seeds in autumn, and a snowy winter evening when the children ask why he chose to grow old. Later chapters invite the player to notice the choices of other Rayans, such as quiet people and slow sea sailors, and to ask before judging."
+    },
+    "story": "\"Why are you old, Professor?\" asked Trip. Everyone else in the valley looked twenty. Professor Acorn smiled, and his wrinkles smiled with him. \"I switched off Renewal, a long time ago. I wanted children to know what old looks like. And I like feeling the years go by, like seasons.\" \"Does it hurt?\" \"My knees grumble in the rain,\" he laughed. \"But it was my choice, and choices are worth respecting.\" Trip walked slower after that. He offered to carry the seed basket with his Orbi, and he waited for a yes.",
+    "wisdom": "Respect a choice, even one you would not make."
+  },
+  {
+    "id": "RY-12",
+    "title": "Share Basket",
+    "genre": "Gather, count and share",
+    "lesson": "Sharing fairly, counting to five, taking only what animals do not need",
+    "cx": "1",
+    "wave": null,
+    "original": false,
+    "ages": "3–5",
+    "scene": "A white Orbi floats a woven basket through a wild-looking garden; the child taps ripe berries and beans to collect them, then drags one to each of three neighbor nest baskets waiting on low branches.",
+    "views": {
+      "world": "A river beach of round pebbles beside a slender white Chord tower, with children's white lattice nests in the trees and a wild-looking garden of berry bushes, bean vines and little pumpkins growing among ferns. A garden assembler, a smooth white pod, rests under a tree. Soft afternoon light, butterflies, and a small bird among the berries.",
+      "details": "A white Orbi with a coral-red left eye and a sky-blue right eye carries a basket of white lattice in its soft field. The food is big and round: blueberries, beans, apples, little pumpkins. Neighbor nests show only a round door and a basket. A small bird and a hedgehog-like animal have their own share left on the bush. Bright, simple shapes.",
+      "discovery": "Later baskets grow: four and five neighbors, sharing so that every plate looks the same, a night when the assembler copies berries while Pim and Pom glow, and a picnic where everyone brings something different. One gentle rule stays in every level: one bush is always left for the animals, and the child taps it to watch them feast."
+    },
+    "story": "The basket was full of blueberries. \"Who gets them?\" asked the Orbi. The little one looked at the nests. One, two, three neighbors. One berry for you. One for you. One for you. Again and again, until the plates looked the same. \"And the bush by the river?\" The little one shook her head. \"That one is for the birds.\" That night the assembler hummed, and in the morning there were more berries, enough for a picnic. Everyone came. Everyone brought something. Nobody had to ask for more.",
+    "wisdom": "Share what you have, and there is enough."
+  },
+  {
+    "id": "RY-13",
+    "title": "Windows on Raya",
+    "genre": "Ambient landscape explorer",
+    "lesson": "Biomes and animals of a living world, calm attention",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "3+",
+    "scene": "A wide painted panorama of coral shallows drifts slowly sideways; a tap on a sea turtle makes it wave a flipper while the Orbi says its name, and a white tower stands far off on an island.",
+    "views": {
+      "world": "Seven wide, calm panoramas of untouched Raya: blue-green rainforest giants, a flower steppe with migrating herds, a mangrove delta, a glacier valley, coral shallows, red rock canyons and quiet islands. Each has one or two slender white Chord towers, thin and far away, and nature fills nearly the whole frame. The light changes slowly from dawn to night.",
+      "details": "Tiny Rayans in white lattice suits appear far away, walking, gliding on sky-lanes or sitting by the water, each with a white Orbi. The narrator Orbi, a 30 cm white sphere with red and blue eyes, peeks in at one corner. Painted, airy textures: misty depth, glinting water, soft grass. No text and no buttons in the art, only gentle glowing tap spots.",
+      "discovery": "Over time the windows change with the 26-hour day: rain showers, a misty dawn, a double eclipse of Pim and Pom, the long green spring. New windows open on cliff nests, a tower festival and a night sky with the Milky Way. A sleep mode slowly dims the scene and ends as the tower lights softly turn down."
+    },
+    "story": "Some days are busy and loud. On those days the Orbi opens a window. \"Look,\" it says, and the steppe rolls out like a green sea. A herd is walking. A calf runs to its mother. Far away, a white tower stands quiet. Tap. The calf lifts its head. Tap. A bird sings. Then the window turns to the sea, and a turtle glides by. \"Breathe slowly,\" says the Orbi. \"The world is big, and it is not in a hurry.\" And for a while, neither are we.",
+    "wisdom": "The world is big and not in a hurry."
+  },
+  {
+    "id": "RY-14",
+    "title": "Pim and Pom Night",
+    "genre": "Sky and time simulation with a day wheel",
+    "lesson": "Day and night, moon phases, tides, eclipses, dark skies for animals",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "6+",
+    "scene": "A big time wheel at the bottom turns the 26-hour day; above a quiet island beach, the two small moons Pim and Pom slide into a double eclipse while the tide rises and a tower crown dims for nesting turtles.",
+    "views": {
+      "world": "A quiet island coast at night under a deep, dark sky full of stars and a bright band of the Milky Way. A tall white tower stands on the flat dunes, its crown shielded and softly glowing. Pim and Pom cast double shadows on the sand. Tide pools shine, seabirds sleep on the rocks, and fireflies drift over the dune grass.",
+      "details": "Doubl and Trip sit on a dune in white lattice suits that glow faintly at the wrists, coral red and sky blue, while their Orbis float low and dim. The two small moons look a little different: Pim pearly and round, Pom rosy and slightly smaller. Night palette: navy, silver, soft teal tide water, warm low tower glow. No lamps anywhere.",
+      "discovery": "New nights unlock seasons and events: a spring tide when both moons line up, a turtle nesting night when the tower turns its light lower still, a meteor shower, and a sunrise when the 26 hours begin again. A journal mode asks the player to predict the next eclipse and the next high tide, then watch it happen."
+    },
+    "story": "\"Why is the tower so dim tonight?\" asked Trip. \"Turtles,\" said Doubl. \"Bright lights confuse the babies. They need the moonlight to find the sea.\" They watched Pim rise, then Pom. The two moons slid closer and closer until one covered the other, and the beach went darker for a moment. The tide crept up to their toes. Then, out of the sand, tiny turtles ran toward the silver water. Nobody cheered out loud. Doubl just squeezed Trip's hand. Some nights the kindest light is the one you turn down.",
+    "wisdom": "Sometimes the kindest light is a dim one."
+  },
+  {
+    "id": "RY-15",
+    "title": "Tower Song Festival",
+    "genre": "Music composing and rhythm performance",
+    "lesson": "Melody, rhythm and harmony, choosing the right time to be loud",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "6+",
+    "scene": "On a flower steppe at dusk, the player taps glowing rings on a tall white tower to place notes on a looping song track, while children below in flowing festival suits sway as the audible tower song plays.",
+    "views": {
+      "world": "A wide flower steppe at sunset after the breeding season, with herds grazing far off and tall grass rippling in the wind. A white Chord tower rises in the middle, its emitter rings lit in soft rose and gold, and a second tower answers from the horizon. People glide on sky-lanes and sit in circles among the flowers. Joyful, open, windy mood.",
+      "details": "Festival suits are white lattice with flowing white over-layers that ripple in the wind, with small coral-red, sky-blue and green accents. Orbis glow in time with the music. Lina, Doubl, Trip and Ana each play one ring. The tower is white ceramic, slightly twisted, with rings like bamboo nodes. Each note rises as a soft colored ring of light.",
+      "discovery": "Later festivals add more rings for chords, two towers playing call and answer across the steppe, a rhythm mode where the crowd claps on the beat, and a calendar puzzle: pick a festival night outside the breeding seasons of herds and birds. The final festival joins songs from every tower in the valley into one shared melody."
+    },
+    "story": "All spring the towers were silent to human ears, because the birds were raising their chicks. Then the chicks flew, and the valley planned its festival. Each child chose one ring. Trip chose the lowest. Boom, it went, deep as a heartbeat. Lina added a high, bright note, Ana a middle one, and Doubl a bouncing rhythm. At first it was a tangle. Then they listened to each other, and the notes found their places. The song rolled over the steppe. Far away, the next tower answered.",
+    "wisdom": "Make music together, at the right time."
+  },
+  {
+    "id": "RY-16",
+    "title": "Valley Circle",
+    "genre": "Consensus-building council game",
+    "lesson": "Listening, compromise, consensus and optional rules",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "10+",
+    "scene": "Citizens sit in a circle of flat stones, each with a picture card of their need floating above them, and the player drags proposal pieces into a shared glowing default until every Orbi in the circle glows calm green.",
+    "views": {
+      "world": "A ridge meadow overlooking a valley of towers that fades into blue haze, in cool late-morning light. A ring of flat stones sits in the grass with nothing built around it. Below, a river winds through untouched forest, a herd of grazers rests with new calves in a quiet side valley, and three slender white towers stand far apart, pale against the sky.",
+      "details": "Valley people of every kind: young-looking adults in white lattice suits with colored accents, children in looser cuts, Professor Acorn in his leaf-patterned robe, and Fennel, a quiet woman with no Orbi who speaks aloud. Orbis float at shoulder height, glowing amber when unsure and green when content. Need cards are picture tiles: a calf, a song, a light, sleep.",
+      "discovery": "Later topics grow harder: when the festival song may play, how many copies the night assemblers should make in a long dry spell, quiet trails during calving, and how to include people who live off the Chord. Each agreed default joins a woven valley charter, where anyone may opt out for themselves, but never in a way that harms others."
+    },
+    "story": "The valley wanted a festival at the next double eclipse. But the herd in the side valley was calving, and Fennel, who lived without an Orbi, said loud songs kept her awake. Nobody voted. They listened. The children wanted music. Professor Acorn wanted to watch the calves. At last Fennel said, \"What if the song plays on the far ridge, after the calving season ends?\" One by one every glow turned green, and Fennel nodded too. The new default: festival after calving, on the far ridge. Anyone could stay home. Nobody had to come.",
+    "wisdom": "Listen until everyone can say yes."
+  }
+]
