@@ -19,12 +19,12 @@ research snapshots retain their original provenance.
 - [x] Audit lore, conclusions, stories, pilot scenes, ages and physics against the latest maintainer vision; correct contradictions everywhere.
 - [x] Build realistic pilot environments in Blender and export lightweight website scenes from the same source; retain reproducible sources, render settings and outputs.
 - [x] Render and validate scenes in CI/CD, with bounded resource use and downloadable artifacts.
-- [ ] Improve the website's immersion and presentation across home, explorer, game and lore pages; preserve filtering, sorting, static content, keyboard access and reduced-motion support.
-- [ ] Capture browser screenshots before/after; verify artwork and 3D behavior on desktop and mobile, including fallback behavior. Commit final screenshots for the PR.
+- [x] Improve the website's immersion and presentation across home, explorer, game and lore pages; preserve filtering, sorting, static content, keyboard access and reduced-motion support.
+- [x] Capture browser screenshots before/after; verify artwork and 3D behavior on desktop and mobile, including fallback behavior. Commit final screenshots for the PR.
 - [x] Update all current catalog counts, generated docs, maintenance instructions and release changeset.
 - [x] Run focused tests followed by all local CI checks; preserve verbose logs under ci-logs/; inspect failures.
-- [ ] Commit useful atomic steps and push only issue-3-15f93486408a.
-- [ ] Fetch/merge latest main, inspect PR diff, refresh all PR feedback, title and description; retain Fixes #3.
+- [x] Commit useful atomic steps and push only issue-3-15f93486408a.
+- [x] Fetch/merge latest main, inspect PR diff, refresh all PR feedback, title and description; retain Fixes #3.
 - [ ] List recent CI runs with timestamps/SHA, download failing logs, resolve failures and verify the latest head passes.
 - [ ] Verify clean working tree and mark PR #4 ready only after all requirements are verified.
 
@@ -177,6 +177,9 @@ geometry, 326,374 gzip bytes and 325,554 bytes for a WebP preview. Five focused
 source and render tests pass. These checks validate provenance and budgets;
 the recorded visual inspection covers the artistic review.
 
+The [fresh six-batch run on the complete feature commit](https://github.com/links-games/master-plan/actions/runs/39879553145)
+also passes with those same frozen rendering inputs.
+
 CI subsequently caught formatting differences in all 22 imported manifests.
 The importer now applies the repository's JSON formatter after validating the
 fresh render set. Source, output and license validation pass after import;
@@ -205,11 +208,48 @@ no elapsed-time deadline. An initial unrestricted lint run reached that reserve;
 the smaller heap completed successfully. Existing warnings on unchanged lines
 remain handled by the repository's normal lint policy.
 
+A later full-check repeat for the screenshot follow-up also reached the reserve.
+The follow-up's focused lint, formatting and documentation checks pass locally;
+the full runtime/platform matrix and browser comparison run on CI's larger
+runners. Resource stops remain recorded as incomplete local repeats, not passing
+test runs.
+
 The final website build contains 353 HTML pages for 310 games. The output audit
 resolves all 11,731 local links, fragments, image sources and lazy mesh references.
 Required documentation, line limits, syntax, package-version and minor-changeset
 guards also pass. The full real-browser capture and final-head CI checks are
 tracked separately in the work plan above.
+
+## Browser verification and final review
+
+The [complete browser capture](https://github.com/links-games/master-plan/actions/runs/39879554642)
+at `0c67f2e024ed1712e4b21227dfde94c2a014f8a9` passed. It decoded all 1,672
+concept images across all 310 game pages, opened and rotated every environment
+on desktop and mobile, and verified filtering, URL state, keyboard focus,
+closing/reopening, failed downloads, cancellation, context loss, idle rendering,
+the device-pixel-ratio cap, unavailable WebGL and disabled JavaScript.
+All ten candidate screenshots were downloaded and visually inspected before
+being committed as regression baselines. The ordinary run at the same head
+correctly rejected the missing home baseline; its preserved log identifies
+the missing file at line 287. Reviewed captures supply those required files.
+
+The focused [embedded-pilot layout probe](../../../experiments/verify-pilot-layout.mjs)
+also confirms that every preview aligns with its 16:9 stage without horizontal
+overflow at both viewport sizes. Document-image margins collapse outside the
+stages, so their computed values do not indicate a layout error. The full
+browser verifier now checks the actual rectangles on every run.
+The [desktop](../../screenshots/issue-3/pilot-layout-desktop.png) and
+[mobile](../../screenshots/issue-3/pilot-layout-mobile.png) captures show this
+separate document layout.
+
+GitHub's unified PR-diff endpoint rejects this change because it exceeds
+300 files. Final review therefore uses the complete paginated changed-files
+API plus a local diff against the merge base. All 1,834 remote file blob hashes
+matched the reviewed local revision before the screenshot follow-up. Generated
+catalog pages and assets additionally pass their content, provenance and
+coverage guards; source, tests, workflows and documentation are reviewed as
+separate patches. The original 300 game IDs, original concept images,
+thumbnails and generation prompts are preserved.
 
 ## Default-branch CI investigation
 

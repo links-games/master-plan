@@ -294,6 +294,28 @@ async function everyGame() {
   assert.equal(imageCount, 1672);
 }
 
+async function embeddedPreviews(page, device) {
+  await page.goto(`${origin}/lore/scenery-pilots.html`);
+  await images(page);
+  const alignment = await page.locator('.scene-stage').evaluateAll((stages) =>
+    stages.map((stage) => {
+      const parent = stage.getBoundingClientRect();
+      const image = stage.querySelector('img').getBoundingClientRect();
+      return (
+        ['x', 'y', 'width', 'height'].every(
+          (key) => Math.abs(parent[key] - image[key]) < 0.5
+        ) && Math.abs(parent.width / parent.height - 16 / 9) < 0.01
+      );
+    })
+  );
+  assert.deepEqual(
+    alignment,
+    Array(22).fill(true),
+    'Embedded previews must align with their 16:9 interactive stages'
+  );
+  console.log(`LAYOUT ${device}: all 22 embedded pilot previews align`);
+}
+
 try {
   for (const [device, width, height] of [
     ['desktop', 1440, 1000],
@@ -334,6 +356,7 @@ try {
     }
     if (!before) {
       await scenes(page, device);
+      await embeddedPreviews(page, device);
     }
     await page.close();
   }
