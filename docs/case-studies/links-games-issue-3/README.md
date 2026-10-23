@@ -25,8 +25,8 @@ research snapshots retain their original provenance.
 - [x] Run focused tests followed by all local CI checks; preserve verbose logs under ci-logs/; inspect failures.
 - [x] Commit useful atomic steps and push only issue-3-15f93486408a.
 - [x] Fetch/merge latest main, inspect PR diff, refresh all PR feedback, title and description; retain Fixes #3.
-- [ ] List recent CI runs with timestamps/SHA, download failing logs, resolve failures and verify the latest head passes.
-- [ ] Verify clean working tree and mark PR #4 ready only after all requirements are verified.
+- [x] List recent CI runs with timestamps/SHA, download failing logs, resolve failures and verify the latest head passes.
+- [x] Verify clean working tree and mark PR #4 ready only after all requirements are verified.
 
 ## Requirement evidence map
 
@@ -209,10 +209,13 @@ the smaller heap completed successfully. Existing warnings on unchanged lines
 remain handled by the repository's normal lint policy.
 
 A later full-check repeat for the screenshot follow-up also reached the reserve.
-The follow-up's focused lint, formatting and documentation checks pass locally;
-the full runtime/platform matrix and browser comparison run on CI's larger
-runners. Resource stops remain recorded as incomplete local repeats, not passing
-test runs.
+The follow-up's focused lint, formatting and documentation checks pass locally.
+The [complete feature commit's nine-job runtime/platform matrix](https://github.com/links-games/master-plan/actions/runs/39879553247)
+passes on CI's larger runners. The existing incremental detector reuses that
+result for the screenshot follow-up, which changes only screenshots, case-study
+notes and experiment scripts. Browser verification still executes the updated
+experiment and compares all ten screenshots. Resource stops remain recorded as
+incomplete local repeats, not passing test runs.
 
 The final website build contains 353 HTML pages for 310 games. The output audit
 resolves all 11,731 local links, fragments, image sources and lazy mesh references.
@@ -233,6 +236,12 @@ being committed as regression baselines. The ordinary run at the same head
 correctly rejected the missing home baseline; its preserved log identifies
 the missing file at line 287. Reviewed captures supply those required files.
 
+The [ordinary comparison run on the committed baselines](https://github.com/links-games/master-plan/actions/runs/39881058488)
+passes at `d804aafe9ac878c36a2aa9f46cfcb07a033b6c3f`: all ten screenshots have
+0.00% differing pixels. Its full interaction, artwork and desktop/mobile
+embedded-layout checks also pass. The generated website again resolves all
+11,731 local references across 353 pages.
+
 The focused [embedded-pilot layout probe](../../../experiments/verify-pilot-layout.mjs)
 also confirms that every preview aligns with its 16:9 stage without horizontal
 overflow at both viewport sizes. Document-image margins collapse outside the
@@ -245,11 +254,19 @@ separate document layout.
 GitHub's unified PR-diff endpoint rejects this change because it exceeds
 300 files. Final review therefore uses the complete paginated changed-files
 API plus a local diff against the merge base. All 1,834 remote file blob hashes
-matched the reviewed local revision before the screenshot follow-up. Generated
+matched the reviewed local revision before the screenshot follow-up. The same
+comparison also matched all 1,844 files after the follow-up. Generated
 catalog pages and assets additionally pass their content, provenance and
 coverage guards; source, tests, workflows and documentation are reviewed as
 separate patches. The original 300 game IDs, original concept images,
 thumbnails and generation prompts are preserved.
+
+All six workflows passed at `d804aafe9ac878c36a2aa9f46cfcb07a033b6c3f`,
+including the [fresh six-batch render](https://github.com/links-games/master-plan/actions/runs/39881058496)
+and ordinary browser comparison. The latest `main` was already an ancestor,
+all issue and review feedback was refreshed, and the working tree was clean
+before PR #4 was marked ready. This final evidence-only update records those
+observations; the PR's live checks identify validation of later revisions.
 
 ## Default-branch CI investigation
 
