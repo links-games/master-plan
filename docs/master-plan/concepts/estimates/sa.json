@@ -358,5 +358,45 @@
     "toddler": 1,
     "minAge": 8,
     "plan": "Seeded forest runs of about 12 rooms on a small map, choosing paths by food supply and weather clues, with 80 room events and gentle return-home endings. Combat and meta-progression trees are left out."
+  },
+  {
+    "id": "SA-16",
+    "algorithms": ["map-geo", "camera-photo", "puzzle-solver-hints"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 24,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 6,
+      "content": 24,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "Six original authored panoramas of Raya with a fictional biome map; explain each clue after choosing, no real location tracking or external street imagery."
+  },
+  {
+    "id": "SA-17",
+    "algorithms": ["hidden-object", "pathfinding", "quest-state"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 24,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 6,
+      "content": 24,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "One small nest with six opt-in hiding places, adjustable audio clues and a practice seeker; no elimination, scares or chasing children."
   }
 ]

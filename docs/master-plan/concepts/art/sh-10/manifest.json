@@ -1,0 +1,57 @@
+{
+  "gameId": "SH-10",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:31:00.247658+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "65f971e079878b8b9e27c41f57418c497ddaa8158fe8d3155692d613dbc6b6ae",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution original educational game concept. Request 2048x2048 pixels or the highest native resolution available.\nMandatory style: flat 2D storybook game illustration. Draw a very simple graphic screen print with thick charcoal ink contours and only six solid spot colors. Broad flat shapes, almost no texture, no gradients, no realistic modeling. Absolutely no 3D rendering, photography, cinematic lighting, detailed scenery, glossy shading or depth of field. The result should look like a small set of carefully drawn paper shapes, not a painted movie frame.\nGame: Brann's Red Chalk (SH-10). Mechanic: Inspection and fault-finding puzzle.\nShow this exact playable interaction, with large readable pieces: Under a riveted kerosene rocket on a cracked pad, the player sweeps a lantern across seams, valves and welds, circling each fault in red chalk, while a blank inspection sheet waits unsigned on a clipboard.\nLearning objective: Engineering safety, systematic checking, moral courage.\nShacados setting: a small, simplified backdrop of soot-gray industrial silhouettes. Rust, mustard, ash, sick green, one lamp-orange light and one small green plant. Humanlike people in patched work clothes and scarves, dignified and hopeful. Technology from roughly 1890–1960. Keep people secondary to the board or activity. Leave generous quiet space around the pieces.\nOne complete original composition. No collage, panels, written title, logo, watermark, shop, advertising, weapons, gore or cruelty. Use shape and pattern as well as color. Concept art, not a validated scientific diagram.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:42:51.584298+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "cfbf9abf3393420c2fe53fe6733b602652fdb2ec2da063f4e1472ea4fd151ac1",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Brann's Red Chalk (SH-10). Genre/mechanic: Inspection and fault-finding puzzle.\nPrimary scene and action: Under a riveted kerosene rocket on a cracked pad, the player sweeps a lantern across seams, valves and welds, circling each fault in red chalk, while a blank inspection sheet waits unsigned on a clipboard.\nThis view: A launch yard of the Rocket Hold at dusk: a tall rocket of riveted steel plates stands on a pad of cracked concrete, tied to a rusted gantry. Kerosene drips into oily puddles. Gas flares burn on the horizon, and the shanty town of the debt crews huddles beyond the fence. Old Brann's lantern is the one warm orange light, and a dandelion grows from a crack in the pad.\nLearning objective expressed by the actual interaction: Engineering safety, systematic checking, moral courage.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:49:28.740800+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b925793e447509f10a9ea5c6fe08a0a40b82ea3b7df448d43f993857e2c47ce9",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Brann's Red Chalk (SH-10). Genre/mechanic: Inspection and fault-finding puzzle.\nPrimary scene and action: Under a riveted kerosene rocket on a cracked pad, the player sweeps a lantern across seams, valves and welds, circling each fault in red chalk, while a blank inspection sheet waits unsigned on a clipboard.\nThis view: Old Brann, a former rocket welder with burned hands, wears a long patched mustard coat, a leather apron and goggles. Beside him the player's apprentice holds the red chalk. Rivets, weld beads, rubber gaskets, round pressure gauges with blank faces, kerosene cans, ropes and pulleys. Rust, soot and ash-gray steel, with bright red chalk circles and one warm lantern.\nLearning objective expressed by the actual interaction: Engineering safety, systematic checking, moral courage.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:49:30.309675+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "bc91e6e18f81b0e5676997c02b51e3331e85e680e4e5648b363090818d130186",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Brann's Red Chalk (SH-10). Genre/mechanic: Inspection and fault-finding puzzle.\nPrimary scene and action: Under a riveted kerosene rocket on a cracked pad, the player sweeps a lantern across seams, valves and welds, circling each fault in red chalk, while a blank inspection sheet waits unsigned on a clipboard.\nThis view: Later rockets hide subtler faults: a weld that cracks only when cold, a valve fitted backwards, a fuel line rubbed thin by a shaking strut, a crew couch with no straps. The player learns to listen to pumps and tap welds by ear. After every rocket the same quiet choice returns: sign, or refuse and explain. The final view shows a young crew walking home for breakfast.\nLearning objective expressed by the actual interaction: Engineering safety, systematic checking, moral courage.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

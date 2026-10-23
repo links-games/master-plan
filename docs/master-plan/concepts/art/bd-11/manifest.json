@@ -52,6 +52,32 @@
       "sha256": "b67aaf9444004feba799e7f833ed88380f499d9d350caf714069f8f9cbec5818",
       "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Block World (BD-11). Genre/mechanic: Voxel sandbox (Minecraft).\nPrimary scene and action: Construct a small voxel greenhouse using visible blocks and simple logic wiring.\nLearning objective expressed by the actual interaction: Geometry, volume, engineering, redstone-like logic.\nWorld: a sunlit community makerspace, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
       "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "05-storybook.webp",
+      "direction": "Flat storybook alternative",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T22:50:24.642180+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "c8c2d98f6955f9ccea470cf3af56c22c3693a5f8dab9371ca1e984b18dfc4d61",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Block World (BD-11). Genre/mechanic: Voxel sandbox (Minecraft).\nPrimary scene and action: Construct a small voxel greenhouse using visible blocks and simple logic wiring.\nLearning objective expressed by the actual interaction: Geometry, volume, engineering, redstone-like logic.\nWorld: a sunlit community makerspace, in the shared Links universe.\nArt direction: Flat storybook alternative. Show this core playable interaction as a clear, graphic 2D game screen, with a simple readable board and generous touch targets.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a flat 2D storybook game illustration, with bold clean outlines, simple cel-shaded color areas and a restrained printed-paper texture. Readable graphic shapes seen overhead or side-on. Absolutely no 3D rendering, glossy plastic shading, photographic lighting, realistic depth of field or photorealism. This is the graphic illustration alternative to the separate 3D concept.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "06-anime.webp",
+      "direction": "Painted anime alternative",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T22:50:26.200941+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "968a3c4802b9b69df31a305afb62990ad89587e253de175738d085c0d8fd47d7",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Block World (BD-11). Genre/mechanic: Voxel sandbox (Minecraft).\nPrimary scene and action: Construct a small voxel greenhouse using visible blocks and simple logic wiring.\nLearning objective expressed by the actual interaction: Geometry, volume, engineering, redstone-like logic.\nWorld: a sunlit community makerspace, in the shared Links universe.\nArt direction: Painted anime alternative. Show this core playable interaction in an expressive, traditional anime environment painting, with the board or activity unmistakable in the foreground.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
     }
   ]
 }

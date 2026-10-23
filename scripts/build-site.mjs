@@ -10,13 +10,15 @@
 import {
   copyFileSync,
   cpSync,
+  existsSync,
   mkdirSync,
   readFileSync,
   readdirSync,
   rmSync,
+  statSync,
   writeFileSync,
 } from 'node:fs';
-import { dirname, join, posix } from 'node:path';
+import { dirname, extname, join, posix } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { rankGames } from './build-development-plan.mjs';
 import { hasArt } from './game-families.mjs';
@@ -29,6 +31,7 @@ import {
   homePage,
   layout,
 } from './site-pages.mjs';
+import { SCENES, sceneViewer, scenesBody } from './site-scenes.mjs';
 
 const DOCS = 'docs/master-plan';
 const EXCLUDED = ['templates/'];
@@ -106,6 +109,15 @@ function write(out, path, html) {
   writeFileSync(join(out, path), html);
 }
 
+export function copySiteArt(source, destination, { scenes = false } = {}) {
+  const extensions = new Set(scenes ? ['.webp', '.json'] : ['.webp']);
+  cpSync(source, destination, {
+    recursive: true,
+    filter: (path) =>
+      statSync(path).isDirectory() || extensions.has(extname(path)),
+  });
+}
+
 function renderDoc(rel, games) {
   const { html, title } = renderMarkdown(
     readFileSync(join(DOCS, rel), 'utf8'),
@@ -119,7 +131,27 @@ function renderDoc(rel, games) {
     ? `<p class="summary-bar">Start rank <strong>#${game.startRank}</strong> of ${games.size}: easy to develop and easy to play first.</p>${chips(game)}`
     : '';
   const path = sitePath(rel);
-  const body = summary ? html.replace(/<\/h1>/, `</h1>\n${summary}`) : html;
+  let body = summary ? html.replace(/<\/h1>/, `</h1>\n${summary}`) : html;
+  if (!game) {
+    const collection = /^concepts\/([a-z]+)\.md$/.exec(rel)?.[1];
+    const family =
+      collection ||
+      (/lore\/(shacados|first-contact)\.md$/.test(rel) ? 'sh' : 'ry');
+    const root = depthPrefix(path);
+    const label =
+      family === 'sh' ? 'Shacados · ages 10+' : 'A place in the Links universe';
+    const art = `${root}concepts/art/loading/${family}`;
+    const panorama = `<figure class="doc-panorama"><picture><source media="(max-width: 600px)" srcset="${art}-portrait.webp" width="941" height="1672"><img src="${art}-landscape.webp" alt="" width="1672" height="941" fetchpriority="high"></picture><figcaption>${label}</figcaption></figure>`;
+    body = body.replace(/<\/h1>/, `</h1>\n${panorama}`);
+  }
+  if (rel === 'lore/scenery-pilots.md') {
+    for (const scene of SCENES) {
+      const anchor = scene.pilot.split('#')[1];
+      const heading = new RegExp(`(<h3 id="${anchor}">.*?</h3>)`);
+      body = body.replace(heading, `$1\n${sceneViewer(scene, '../')}`);
+    }
+    body += '<script src="../assets/scenes.js" defer></script>';
+  }
   return [
     path,
     layout({ title, root: depthPrefix(path), body, source: `${DOCS}/${rel}` }),
@@ -129,7 +161,7 @@ function renderDoc(rel, games) {
 export function buildSite({ out = '_site', copyArt = true } = {}) {
   rmSync(out, { recursive: true, force: true });
   mkdirSync(join(out, 'assets'), { recursive: true });
-  for (const file of ['site.css', 'explorer.js']) {
+  for (const file of ['site.css', 'explorer.js', 'scenes.js', 'favicon.svg']) {
     copyFileSync(join('site', file), join(out, 'assets', file));
   }
   writeFileSync(join(out, '.nojekyll'), '');
@@ -141,13 +173,24 @@ export function buildSite({ out = '_site', copyArt = true } = {}) {
   }
   write(out, 'index.html', homePage(context));
   write(out, 'games.html', explorerPage(context));
+  write(
+    out,
+    'worlds.html',
+    layout({
+      title: 'Explore worlds',
+      root: '',
+      body: scenesBody(),
+      wide: true,
+    })
+  );
   if (copyArt) {
-    cpSync(join(DOCS, 'concepts', 'art'), join(out, 'concepts', 'art'), {
-      recursive: true,
-      filter: (source) => !source.endsWith('manifest.json'),
-    });
+    copySiteArt(join(DOCS, 'concepts', 'art'), join(out, 'concepts', 'art'));
+    const scenes = join(DOCS, 'lore', 'scenes');
+    if (existsSync(scenes)) {
+      copySiteArt(scenes, join(out, 'lore', 'scenes'), { scenes: true });
+    }
   }
-  return { pages: docs.length + 2, games: games.size };
+  return { pages: docs.length + 3, games: games.size };
 }
 
 const isMain =

@@ -52,6 +52,32 @@
       "sha256": "14b6aaf2a6c8674386c4817a5e752ce5859ddc952b8114140b99816984d334eb",
       "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Pair Friends (PZ-01). Genre/mechanic: Memory / pairs.\nPrimary scene and action: Turn over two leaf cards in a small wooden memory grid, revealing a matching pair.\nLearning objective expressed by the actual interaction: Vocabulary in many languages, memory.\nWorld: a tactile botanical puzzle garden, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
       "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "05-storybook.webp",
+      "direction": "Flat storybook alternative",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T17:33:57.053474+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "46f91bf957b05e22865bd3aceda2eb724ce1a890c4e64120a8ed883508b3f175",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Pair Friends (PZ-01). Genre/mechanic: Memory / pairs.\nPrimary scene and action: Turn over two leaf cards in a small wooden memory grid, revealing a matching pair.\nLearning objective expressed by the actual interaction: Vocabulary in many languages, memory.\nWorld: a tactile botanical puzzle garden, in the shared Links universe.\nArt direction: Flat storybook alternative. Show this core playable interaction as a clear, graphic 2D game screen, with a simple readable board and generous touch targets.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a flat 2D storybook game illustration, with bold clean outlines, simple cel-shaded color areas and a restrained printed-paper texture. Readable graphic shapes seen overhead or side-on. Absolutely no 3D rendering, glossy plastic shading, photographic lighting, realistic depth of field or photorealism. This is the graphic illustration alternative to the separate 3D concept.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "06-anime.webp",
+      "direction": "Painted anime alternative",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T17:33:58.551808+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "dbfacb59efb3d4bf1d803ded355b17a8b6f372f9b0f747bf60478f07611a254a",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Pair Friends (PZ-01). Genre/mechanic: Memory / pairs.\nPrimary scene and action: Turn over two leaf cards in a small wooden memory grid, revealing a matching pair.\nLearning objective expressed by the actual interaction: Vocabulary in many languages, memory.\nWorld: a tactile botanical puzzle garden, in the shared Links universe.\nArt direction: Painted anime alternative. Show this core playable interaction in an expressive, traditional anime environment painting, with the board or activity unmistakable in the foreground.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
     }
   ]
 }

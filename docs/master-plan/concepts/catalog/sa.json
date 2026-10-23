@@ -148,5 +148,29 @@
     "wave": null,
     "original": false,
     "scene": "Choose between procedurally arranged forest rooms using a small map, food supplies and weather clues."
+  },
+  {
+    "id": "SA-16",
+    "title": "Where on Raya?",
+    "genre": "Scenery-based geographic deduction",
+    "lesson": "Geography, evidence, uncertainty",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "8+",
+    "scene": "Compare a panorama of a glacial valley with a habitat map, a sun-shadow compass and plant samples; place a pin near the white tower that best fits the environmental clues.",
+    "expansion": "issue-3"
+  },
+  {
+    "id": "SA-17",
+    "title": "Lantern Seekers",
+    "genre": "Cooperative hide-and-seek and prop search",
+    "lesson": "Observation, perspective, consent",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "6+",
+    "scene": "A smiling Orbi peeks from behind a leaf-shaped lantern in a white lattice reading nest; friends follow sound rings and invite it out with an open hand.",
+    "expansion": "issue-3"
   }
 ]

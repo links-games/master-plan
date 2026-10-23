@@ -199,5 +199,17 @@
     "wave": null,
     "original": false,
     "scene": "Place rain gardens, water stores and safe footpaths on a town model before a forecast storm."
+  },
+  {
+    "id": "SS-21",
+    "title": "Riverline Transit",
+    "genre": "Transit-network drawing and capacity planning",
+    "lesson": "Graph connectivity, queues, sustainable transport",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "8+",
+    "scene": "Connect colored passenger markers at river landings with looping boat routes on a readable map; a crowded landing asks for one extra ferry instead of punishing the player.",
+    "expansion": "issue-3"
   }
 ]

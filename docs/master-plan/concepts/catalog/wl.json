@@ -179,5 +179,29 @@
     "wave": null,
     "original": false,
     "scene": "Rearrange illustrated word-and-object tiles on a theater stage to reveal a familiar phrase."
+  },
+  {
+    "id": "WL-19",
+    "title": "Theme Trails",
+    "genre": "Themed adjacent-letter word paths",
+    "lesson": "Vocabulary, semantic categories, spelling",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "7+",
+    "scene": "Trace a continuous path through adjacent letter stones to spell the names of wetland animals, leaving a glowing reed trail across a board in a quiet garden.",
+    "expansion": "issue-3"
+  },
+  {
+    "id": "WL-20",
+    "title": "Perimeter Words",
+    "genre": "Word chaining with alternating border groups",
+    "lesson": "Spelling, word planning, letter coverage",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "8+",
+    "scene": "Connect letter pebbles around a triangular pond, alternating banks as each new word begins with the last letter of the previous word; used letters bloom into flowers.",
+    "expansion": "issue-3"
   }
 ]

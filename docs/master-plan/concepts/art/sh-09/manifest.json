@@ -1,0 +1,57 @@
+{
+  "gameId": "SH-09",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:30:58.965305+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "4418782cfbd08f2c60972adb2a565ba2f9eb71fe714e595a37150470e4896b6e",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution original educational game concept. Request 2048x2048 pixels or the highest native resolution available.\nMandatory style: flat 2D storybook game illustration. Draw a very simple graphic screen print with thick charcoal ink contours and only six solid spot colors. Broad flat shapes, almost no texture, no gradients, no realistic modeling. Absolutely no 3D rendering, photography, cinematic lighting, detailed scenery, glossy shading or depth of field. The result should look like a small set of carefully drawn paper shapes, not a painted movie frame.\nGame: Seam Town Winter (SH-09). Mechanic: Survival town-building simulation.\nShow this exact playable interaction, with large readable pieces: A top-down view of a small town half buried in snow around a steaming coal seam. The player assigns neighbors to dig coal, tend cave fungus and mend roofs, and lays warm pipes between huts as a blizzard rolls in.\nLearning objective: Resource planning, community roles, heat and food chains.\nShacados setting: a small, simplified backdrop of soot-gray industrial silhouettes. Rust, mustard, ash, sick green, one lamp-orange light and one small green plant. Humanlike people in patched work clothes and scarves, dignified and hopeful. Technology from roughly 1890–1960. Keep people secondary to the board or activity. Leave generous quiet space around the pieces.\nOne complete original composition. No collage, panels, written title, logo, watermark, shop, advertising, weapons, gore or cruelty. Use shape and pattern as well as color. Concept art, not a validated scientific diagram.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:38:09.880420+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "057049bd083ca8b5973b1d6f977488c8c7f6da0d59ea2bee1f1e584fba7cd2ff",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Seam Town Winter (SH-09). Genre/mechanic: Survival town-building simulation.\nPrimary scene and action: A top-down view of a small town half buried in snow around a steaming coal seam. The player assigns neighbors to dig coal, tend cave fungus and mend roofs, and lays warm pipes between huts as a blizzard rolls in.\nThis view: An ice town in the frozen north: rows of huts dug into the snow around an open coal seam that steams in the cold. The chimneys of an older, buried town poke out of the drifts. The sky is pale gray with a red sun low on the horizon. At the town's heart a greenhouse dome of patched glass glows lamp orange, and inside it one cabbage is green.\nLearning objective expressed by the actual interaction: Resource planning, community roles, heat and food chains.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:38:11.461315+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "af75e59220b561892b263cb2ce789b85bef78338c68494f1707f5db62cb848cc",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Seam Town Winter (SH-09). Genre/mechanic: Survival town-building simulation.\nPrimary scene and action: A top-down view of a small town half buried in snow around a steaming coal seam. The player assigns neighbors to dig coal, tend cave fungus and mend roofs, and lays warm pipes between huts as a blizzard rolls in.\nThis view: Townsfolk in fur-lined patched parkas, frost-crusted goggles and scarves wrapped three times. A mender fixes a sled runner, a teacher leads children through a snow tunnel, a cook stirs fungus soup. Coal carts on rails, frosted rusted pipes, canvas windbreaks, ice-block walls and fungus trays in a mine tunnel. Ash, soot, rust and frost white, with one warm glow.\nLearning objective expressed by the actual interaction: Resource planning, community roles, heat and food chains.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:38:13.087000+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6cc0bff5f4c48323eb11e990c08c9634115d8a1650e5576b230c847c9107d481",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Seam Town Winter (SH-09). Genre/mechanic: Survival town-building simulation.\nPrimary scene and action: A top-down view of a small town half buried in snow around a steaming coal seam. The player assigns neighbors to dig coal, tend cave fungus and mend roofs, and lays warm pipes between huts as a blizzard rolls in.\nThis view: Each winter grows longer and asks for new ideas: pipe the seam's waste heat under the greenhouse, open a school in the warm tunnel, swap fungus for medicine with a passing train, take in families from a town whose seam ran out. The final view shows the town at night from above, dark except the greenhouse dome, with people skating on a frozen pond in its light.\nLearning objective expressed by the actual interaction: Resource planning, community roles, heat and food chains.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

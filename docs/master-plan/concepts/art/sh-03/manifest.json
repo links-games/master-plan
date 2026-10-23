@@ -1,0 +1,57 @@
+{
+  "gameId": "SH-03",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:30:50.767944+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "64ed677cdd5c5b41df9967e36bf1dbb0355515991416bf19c6bcbefd0e03ad44",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution original educational game concept. Request 2048x2048 pixels or the highest native resolution available.\nMandatory style: flat 2D storybook game illustration. Draw a very simple graphic screen print with thick charcoal ink contours and only six solid spot colors. Broad flat shapes, almost no texture, no gradients, no realistic modeling. Absolutely no 3D rendering, photography, cinematic lighting, detailed scenery, glossy shading or depth of field. The result should look like a small set of carefully drawn paper shapes, not a painted movie frame.\nGame: Jars for After (SH-03). Mechanic: Collect, sort and plant (seed saving).\nShow this exact playable interaction, with large readable pieces: In a hidden valley, Sela holds an open glass jar while the player drags dry seed heads onto a cloth, shakes out the seeds, saves half in the jar and plants half in a sheltered patch of dark soil.\nLearning objective: Plant life cycles, seed saving, caring for the future.\nShacados setting: a small, simplified backdrop of soot-gray industrial silhouettes. Rust, mustard, ash, sick green, one lamp-orange light and one small green plant. Humanlike people in patched work clothes and scarves, dignified and hopeful. Technology from roughly 1890–1960. Keep people secondary to the board or activity. Leave generous quiet space around the pieces.\nOne complete original composition. No collage, panels, written title, logo, watermark, shop, advertising, weapons, gore or cruelty. Use shape and pattern as well as color. Concept art, not a validated scientific diagram.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:05:22.067824+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "ed51071ffaaa329dd35c07393f613ecf65a7642e160e8059918eaed2d346bf29",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Jars for After (SH-03). Genre/mechanic: Collect, sort and plant (seed saving).\nPrimary scene and action: In a hidden valley, Sela holds an open glass jar while the player drags dry seed heads onto a cloth, shakes out the seeds, saves half in the jar and plants half in a sheltered patch of dark soil.\nThis view: The Last Woods: a small green valley tucked between gray slag heaps, its stream half clean, its trees thin but alive. Smog lies like a lid over the hills, yet sunlight leaks through in one patch. Inside a moss-covered root cellar, shelves of seed jars wait under a single lamp-orange lantern, and a fern unfurls at the doorway.\nLearning objective expressed by the actual interaction: Plant life cycles, seed saving, caring for the future.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:05:24.575777+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "26c43aae9fc14f18bd953c4369e225b9a425dea2b6bb4e126677c1edd4fd6511",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Jars for After (SH-03). Genre/mechanic: Collect, sort and plant (seed saving).\nPrimary scene and action: In a hidden valley, Sela holds an open glass jar while the player drags dry seed heads onto a cloth, shakes out the seeds, saves half in the jar and plants half in a sheltered patch of dark soil.\nThis view: Sela, a seed keeper with gray-streaked braids, wears layered patched wool in mustard and ash, a soil-stained apron and fingerless gloves. Her apprentice, a boy in an oversized coat, marks jars with drawn pictures instead of words. Glass jars, waxed cloth, wooden trays, dried pods and husks, wet dark soil. Rust, ash and sick green, with one warm lantern.\nLearning objective expressed by the actual interaction: Plant life cycles, seed saving, caring for the future.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:05:26.755510+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "a4b77ed9af944be82cb47e4693a8602b807b72535ff82600b04195d56c5428c4",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Jars for After (SH-03). Genre/mechanic: Collect, sort and plant (seed saving).\nPrimary scene and action: In a hidden valley, Sela holds an open glass jar while the player drags dry seed heads onto a cloth, shakes out the seeds, saves half in the jar and plants half in a sheltered patch of dark soil.\nThis view: Seasons turn in the valley. The player learns which seeds need cold, which need ash and which must dry for a month. New jars arrive from far towns with quiet couriers. A picture map of plantings spreads across the cellar wall, and the final view shows one young tree standing bravely at the foot of a slag heap, planted by the player.\nLearning objective expressed by the actual interaction: Plant life cycles, seed saving, caring for the future.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

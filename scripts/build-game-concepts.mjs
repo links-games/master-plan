@@ -8,14 +8,18 @@ import { join } from 'node:path';
 import {
   DIRECTIONS as directions,
   loadingScreenJobs,
+  extraStyleDirections,
+  styleVariationJobs,
   promptFor,
   viewText,
 } from './concept-prompts.mjs';
 import {
   CONCEPTS_DIR as base,
   FAMILIES as families,
-  PENDING_ART_FAMILIES,
+  STORY_FAMILIES,
   readCatalog,
+  hasArt,
+  hasArtViews,
 } from './game-families.mjs';
 import { loadGames } from './game-estimates.mjs';
 import { rankGames } from './build-development-plan.mjs';
@@ -40,7 +44,7 @@ function technology(game) {
 
 function imagesSection(game, family) {
   const id = game.id.toLowerCase();
-  if (PENDING_ART_FAMILIES.has(family)) {
+  if (!hasArt(game.id)) {
     const views = directions
       .map(([key, label]) => `### ${label}\n\n${viewText(game, key)}\n`)
       .join('\n');
@@ -54,21 +58,31 @@ the brief for one view; the full generation prompts are in
 
 ${views}`;
   }
-  const images = directions
-    .map(
-      ([key, label]) =>
-        `### ${label}\n\n![${game.title}: ${label.toLowerCase()} concept](../art/${id}/${key}.webp)\n`
-    )
-    .join('\n');
+  const alternatives = extraStyleDirections(game, family);
+  const visible = hasArtViews(
+    id,
+    alternatives.map(([key]) => key)
+  )
+    ? alternatives
+    : [];
+  const renderImages = (views) =>
+    views
+      .map(
+        ([key, label]) =>
+          `### ${label}\n\n${game.views ? `${viewText(game, key)}\n\n` : ''}![${game.title}: ${label.toLowerCase()} concept](../art/${id}/${key}.webp)\n`
+      )
+      .join('\n');
   return `## Four visual directions
 
 These are independently generated concept proposals for selecting a prototype.
 The four views compare gameplay readability, world appeal, tactile identity and
-room to grow. They are not screenshots of an implemented game. Native image
+room to grow.${visible.length ? ' Two additional core-screen alternatives make the flat storybook and painted anime styles explicit alongside the tactile 3D study.' : ''} They are not screenshots of an implemented game. Native image
 dimensions, hashes, exact prompts and generation provenance are recorded in the
 [art manifest](../art/${id}/manifest.json); see the [generation notes](../README.md#image-generation-and-provenance).
 
-${images}`;
+The [core prompts](../jobs/${family}.json) use IDs \`${id}/01-gameplay\` to \`${id}/04-discovery\`.${visible.length ? ' Additional [style prompts](../jobs/style-variations.json) match the two alternatives below.' : ''}
+
+${renderImages(directions)}${visible.length ? `\n## Additional style alternatives\n\n${renderImages(visible)}` : ''}`;
 }
 
 function storySection(game) {
@@ -142,9 +156,11 @@ How the numbers are computed: [development plan](../../development-plan.md#how-t
 function header(game, family) {
   const origin = game.original
     ? 'Original catalog'
-    : PENDING_ART_FAMILIES.has(family)
-      ? 'Added for the Raya feedback'
-      : 'Added in the visual-catalog expansion';
+    : game.expansion === 'issue-3'
+      ? 'Research catalog'
+      : STORY_FAMILIES.has(family)
+        ? 'Raya story catalog'
+        : 'Extended catalog';
   const parts = [
     game.id,
     `[${families[family][0]}](../${family}.md)`,
@@ -195,7 +211,7 @@ ${previous ? `[← ${previous.title}](${previous.id.toLowerCase()}.md) · ` : ''
 }
 
 function familyPage(family, games, ranked) {
-  const pending = PENDING_ART_FAMILIES.has(family);
+  const pending = games.some((game) => !hasArt(game.id));
   const score = (game) => {
     const entry = ranked.get(game.id);
     return entry
@@ -212,7 +228,7 @@ function familyPage(family, games, ranked) {
   });
   const intro = pending
     ? `[All collections](README.md) · ${games.length} ideas · art pending: every page carries four image descriptions, and the prompts are in [\`jobs/${family}.json\`](jobs/${family}.json).`
-    : `[All collections](README.md) · ${games.length} ideas · four full-resolution views per idea.`;
+    : `[All collections](README.md) · ${games.length} ideas · four full-resolution core views per idea${games.some((game) => extraStyleDirections(game, family).length) ? ', with flat storybook and painted anime alternatives on the original illustrated games' : ''}.`;
   const head = pending
     ? '| Idea | Mechanic | Ages | Cx | Days | Toddler |\n| --- | --- | --- | --- | --- | --- |'
     : '| Gameplay preview | Idea | Mechanic | Cx | Days | Toddler |\n| --- | --- | --- | --- | --- | --- |';
@@ -297,6 +313,11 @@ for (const family of Object.keys(families)) {
     familyPage(family, games, context.ranked)
   );
 }
+const styles = styleVariationJobs();
+writeFileSync(
+  join(base, 'jobs', 'style-variations.json'),
+  `${JSON.stringify(styles, null, 2)}\n`
+);
 const loading = loadingScreenJobs();
 writeFileSync(
   join(base, 'jobs', 'loading-screens.json'),
@@ -304,5 +325,5 @@ writeFileSync(
 );
 writeFileSync('docs/master-plan/game-ideas.md', ideaLines.join('\n'));
 console.log(
-  `Built ${all.length} pages, ${all.length * directions.length} independent image prompts and ${loading.length} loading-screen prompts.`
+  `Built ${all.length} pages, ${all.length * directions.length} core image prompts, ${styles.length} additional style prompts and ${loading.length} loading-screen prompts.`
 );

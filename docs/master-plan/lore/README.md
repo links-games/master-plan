@@ -166,7 +166,9 @@ Raya's meadows and Omi. For teens and adults, there is the realistic layer
 of **[First Contact](first-contact.md)**: the peaceful, advanced civilization
 **Raya** meets the rusted, hungry and violent anti-utopia
 **[Shacados](shacados.md)**. It is the setting of our last, fully realistic multi-genre
-simulator, and its rules are real physics. The proposed bridge between the
+simulator. Light delay, conservation laws and scale follow real physics;
+Raya’s explicitly labeled exceptions E1–E5 remain speculative worldbuilding,
+and the extreme propulsion concepts are feasibility proposals. The proposed bridge between the
 layers is that Omi is the learning world of Rayan children, so growing up
 through our games is growing up as a Rayan
 ([details](first-contact.md#how-it-connects-to-omi-and-the-links-proposal)).

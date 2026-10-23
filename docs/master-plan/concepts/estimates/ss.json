@@ -448,5 +448,25 @@
     "toddler": 1,
     "minAge": 8,
     "plan": "12 town models where rain gardens, water stores and safe footpaths are placed before a forecast storm that then plays out and shows what held. Real hazard maps and multiplayer are deferred."
+  },
+  {
+    "id": "SS-21",
+    "algorithms": ["graph-network", "pathfinding", "agent-steering"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 24,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 6,
+      "content": 24,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "One river map with six landings, two ferry loops and visible capacity; allow pause and compare passenger waiting time before and after a route edit."
   }
 ]

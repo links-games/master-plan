@@ -52,6 +52,32 @@
       "sha256": "df5ae70fdedffa823bd73ba464fc3be2d0f7851b7fa786c9b9bef2f36ca80fab",
       "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Linky Home (NC-08). Genre/mechanic: Virtual pet.\nPrimary scene and action: Give a sleepy link pet water, rest and a comfortable corner in its home.\nLearning objective expressed by the actual interaction: Care routines, emotions.\nWorld: an ecologically rich garden community, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
       "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "05-storybook.webp",
+      "direction": "Flat storybook alternative",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T22:27:06.794145+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "0951f4303436358678588b6090639334b324e5096fa1edd4736c8fd974383da4",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Linky Home (NC-08). Genre/mechanic: Virtual pet.\nPrimary scene and action: Give a sleepy link pet water, rest and a comfortable corner in its home.\nLearning objective expressed by the actual interaction: Care routines, emotions.\nWorld: an ecologically rich garden community, in the shared Links universe.\nArt direction: Flat storybook alternative. Show this core playable interaction as a clear, graphic 2D game screen, with a simple readable board and generous touch targets.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a flat 2D storybook game illustration, with bold clean outlines, simple cel-shaded color areas and a restrained printed-paper texture. Readable graphic shapes seen overhead or side-on. Absolutely no 3D rendering, glossy plastic shading, photographic lighting, realistic depth of field or photorealism. This is the graphic illustration alternative to the separate 3D concept.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "06-anime.webp",
+      "direction": "Painted anime alternative",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T22:27:36.192692+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6a5df6727f9a87b340e343f7bfd5ffab713a4bf750248ad94f9e994563415dbe",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Linky Home (NC-08). Genre/mechanic: Virtual pet.\nPrimary scene and action: Give a sleepy link pet water, rest and a comfortable corner in its home.\nLearning objective expressed by the actual interaction: Care routines, emotions.\nWorld: an ecologically rich garden community, in the shared Links universe.\nArt direction: Painted anime alternative. Show this core playable interaction in an expressive, traditional anime environment painting, with the board or activity unmistakable in the foreground.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
     }
   ]
 }

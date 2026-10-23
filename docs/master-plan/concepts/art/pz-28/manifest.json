@@ -52,6 +52,32 @@
       "sha256": "808b639d33b3e981e75eb74c8d144ecc867cf6bf29f090354fb50d2c3501788c",
       "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: One Stroke Garden (PZ-28). Genre/mechanic: One-line drawing puzzle.\nPrimary scene and action: Trace every path of a small garden graph exactly once, linking all its flower-shaped junctions.\nLearning objective expressed by the actual interaction: Euler paths and graph degree.\nWorld: a tactile botanical puzzle garden, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
       "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "05-storybook.webp",
+      "direction": "Flat storybook alternative",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T18:18:54.118481+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "413383cb9346f982cc2dcdf61e39a3ff7023c2775aa91cea48cb879940f8b814",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: One Stroke Garden (PZ-28). Genre/mechanic: One-line drawing puzzle.\nPrimary scene and action: Trace every path of a small garden graph exactly once, linking all its flower-shaped junctions.\nLearning objective expressed by the actual interaction: Euler paths and graph degree.\nWorld: a tactile botanical puzzle garden, in the shared Links universe.\nArt direction: Flat storybook alternative. Show this core playable interaction as a clear, graphic 2D game screen, with a simple readable board and generous touch targets.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a flat 2D storybook game illustration, with bold clean outlines, simple cel-shaded color areas and a restrained printed-paper texture. Readable graphic shapes seen overhead or side-on. Absolutely no 3D rendering, glossy plastic shading, photographic lighting, realistic depth of field or photorealism. This is the graphic illustration alternative to the separate 3D concept.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "06-anime.webp",
+      "direction": "Painted anime alternative",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T18:18:55.961399+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "0c6f28cd649f9f5bff0e3c30520f2cbd9dee5ff2857950b34637f5d4949fa984",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: One Stroke Garden (PZ-28). Genre/mechanic: One-line drawing puzzle.\nPrimary scene and action: Trace every path of a small garden graph exactly once, linking all its flower-shaped junctions.\nLearning objective expressed by the actual interaction: Euler paths and graph degree.\nWorld: a tactile botanical puzzle garden, in the shared Links universe.\nArt direction: Painted anime alternative. Show this core playable interaction in an expressive, traditional anime environment painting, with the board or activity unmistakable in the foreground.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
     }
   ]
 }

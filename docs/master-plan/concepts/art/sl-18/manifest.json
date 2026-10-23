@@ -52,6 +52,32 @@
       "sha256": "34d8120dab9ab4c6d688bf7d01afb12462c3a680b2948ff97131af2012138e94",
       "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Momentum Pinball (SL-18). Genre/mechanic: Pinball.\nPrimary scene and action: Use two flippers to guide a polished ball through a botanical laboratory pinball table with spring bumpers.\nLearning objective expressed by the actual interaction: Momentum and angle of reflection.\nWorld: a bright, safe, hands-on science workshop, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
       "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "05-storybook.webp",
+      "direction": "Flat storybook alternative",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T22:13:35.308589+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f4b1b1dc63b3bfa3521a3b57a1025a017064db74a3f10482e87260c062d7a8d5",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Momentum Pinball (SL-18). Genre/mechanic: Pinball.\nPrimary scene and action: Use two flippers to guide a polished ball through a botanical laboratory pinball table with spring bumpers.\nLearning objective expressed by the actual interaction: Momentum and angle of reflection.\nWorld: a bright, safe, hands-on science workshop, in the shared Links universe.\nArt direction: Flat storybook alternative. Show this core playable interaction as a clear, graphic 2D game screen, with a simple readable board and generous touch targets.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a flat 2D storybook game illustration, with bold clean outlines, simple cel-shaded color areas and a restrained printed-paper texture. Readable graphic shapes seen overhead or side-on. Absolutely no 3D rendering, glossy plastic shading, photographic lighting, realistic depth of field or photorealism. This is the graphic illustration alternative to the separate 3D concept.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "06-anime.webp",
+      "direction": "Painted anime alternative",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T22:13:56.456269+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "c4fdb85d827372cc6e810f355a4fb5deccd705639a2532015b3dbca4561cee92",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Momentum Pinball (SL-18). Genre/mechanic: Pinball.\nPrimary scene and action: Use two flippers to guide a polished ball through a botanical laboratory pinball table with spring bumpers.\nLearning objective expressed by the actual interaction: Momentum and angle of reflection.\nWorld: a bright, safe, hands-on science workshop, in the shared Links universe.\nArt direction: Painted anime alternative. Show this core playable interaction in an expressive, traditional anime environment painting, with the board or activity unmistakable in the foreground.\nIdentity: adorable, intelligent and welcoming for children and adults. An original tiny Links guide may appear: a soft round creature with a coral-red left eye, sky-blue right eye and gentle curved smile. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
     }
   ]
 }

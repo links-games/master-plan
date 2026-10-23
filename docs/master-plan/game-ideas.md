@@ -1,12 +1,13 @@
 # Game Ideas — the Big List
 
 **[Browse the visual concept catalog](concepts/README.md)** to choose a
-prototype by its key visuals. The expanded list has **300 ideas**: the original
-168, 48 visual-catalog additions and 84 ideas for toddlers, preschoolers, Raya
-life and Shacados. Every title below opens its own concept page with four art
-directions (or, where art is pending, four image descriptions), prototype scope
+prototype by its key visuals. The expanded list has **310 ideas**: the original
+168, 48 visual-catalog additions, 84 ideas for toddlers, preschoolers, Raya
+life and Shacados, and ten mechanic additions for
+[issue #3](../case-studies/links-games-issue-3/research-and-lore.md). Every title below opens its own concept page with four art
+directions, prototype scope
 and an estimated plan. The [development plan](development-plan.md) sorts all
-300 by development effort and toddler learnability. Added genre evidence is in
+310 by development effort and toddler learnability. Added genre evidence is in
 the [visual-catalog research](../case-studies/issue-1/data/research-visual-catalog.md).
 
 Covers requirements **R36, R37, R39, R40, R41, R49** (see the
@@ -58,6 +59,8 @@ Names are **working names** and need a trademark search before release
    ([evidence](../case-studies/issue-1/data/research-genres-ideas.md#22-brain-training-collections-the-warning-case)).
    Science content is reviewed by a domain expert, so we do not repeat
    Spore's "failing grades" in biology.
+
+Ten further mechanics, their primary research sources and the distinctions from existing ideas are in the [issue #3 research note](../case-studies/links-games-issue-3/research-and-lore.md).
 
 ## Complexity ladder
 
@@ -150,26 +153,28 @@ ones. Every game is still its own repository and its own package:
 
 ## Words and languages (WL)
 
-| ID    | Idea                                            | Proven genre (example)            | What it teaches                         | Cx  |
-| ----- | ----------------------------------------------- | --------------------------------- | --------------------------------------- | --- |
-| WL-01 | [Letter Train](concepts/pages/wl-01.md) **W1**  | Snake                             | Spelling, counting                      | 1   |
-| WL-02 | [Alphabet Trace](concepts/pages/wl-02.md)       | Tracing                           | Handwriting of many scripts             | 1   |
-| WL-03 | [Phonics Pop](concepts/pages/wl-03.md)          | Bubble pop                        | Letter sounds, reading readiness        | 1   |
-| WL-04 | [Word Search Garden](concepts/pages/wl-04.md)   | Word search                       | Vocabulary, scanning                    | 1   |
-| WL-05 | [Translate Bridge](concepts/pages/wl-05.md)     | Matching                          | Foreign words, cognates                 | 1   |
-| WL-06 | [Word Links](concepts/pages/wl-06.md) **W1**    | Daily word guess                  | Spelling, letter frequency              | 2   |
-| WL-07 | [Anagram Bakery](concepts/pages/wl-07.md)       | Word scramble                     | Morphology, spelling                    | 2   |
-| WL-08 | [Honeycomb Words](concepts/pages/wl-08.md)      | Letters-around-a-center word game | Vocabulary, prefixes and suffixes       | 2   |
-| WL-09 | [Crossword Links](concepts/pages/wl-09.md)      | Mini crossword                    | Definitions, synonyms                   | 2   |
-| WL-10 | [Rhyme Time](concepts/pages/wl-10.md)           | Rhythm matching                   | Rhymes, syllables, poetry               | 2   |
-| WL-11 | [Sign Friends](concepts/pages/wl-11.md)         | Matching / memory                 | Sign-language alphabets                 | 2   |
-| WL-12 | [Type the Rain](concepts/pages/wl-12.md)        | Typing tutor (falling words)      | Touch typing — words water the garden   | 2   |
-| WL-13 | [Code Words](concepts/pages/wl-13.md)           | Cipher puzzles                    | Cryptography from Caesar to public keys | 2–3 |
-| WL-14 | [Prime Sprites](concepts/pages/wl-14.md) **W3** | Sentence building                 | Grammar, word order across languages    | 3   |
-| WL-15 | [Story Dice](concepts/pages/wl-15.md)           | Storytelling cards                | Narrative structure, speaking           | 3   |
-| WL-16 | [Word Ladder Grove](concepts/pages/wl-16.md)    | Word transformation ladder        | Spelling and edit distance              | 2   |
-| WL-17 | [Category Picnic](concepts/pages/wl-17.md)      | Word grouping puzzle              | Semantic categories and ambiguity       | 2   |
-| WL-18 | [Picture Phrase](concepts/pages/wl-18.md)       | Rebus puzzle                      | Language inference and idioms           | 2   |
+| ID    | Idea                                            | Proven genre (example)                       | What it teaches                           | Cx  |
+| ----- | ----------------------------------------------- | -------------------------------------------- | ----------------------------------------- | --- |
+| WL-01 | [Letter Train](concepts/pages/wl-01.md) **W1**  | Snake                                        | Spelling, counting                        | 1   |
+| WL-02 | [Alphabet Trace](concepts/pages/wl-02.md)       | Tracing                                      | Handwriting of many scripts               | 1   |
+| WL-03 | [Phonics Pop](concepts/pages/wl-03.md)          | Bubble pop                                   | Letter sounds, reading readiness          | 1   |
+| WL-04 | [Word Search Garden](concepts/pages/wl-04.md)   | Word search                                  | Vocabulary, scanning                      | 1   |
+| WL-05 | [Translate Bridge](concepts/pages/wl-05.md)     | Matching                                     | Foreign words, cognates                   | 1   |
+| WL-06 | [Word Links](concepts/pages/wl-06.md) **W1**    | Daily word guess                             | Spelling, letter frequency                | 2   |
+| WL-07 | [Anagram Bakery](concepts/pages/wl-07.md)       | Word scramble                                | Morphology, spelling                      | 2   |
+| WL-08 | [Honeycomb Words](concepts/pages/wl-08.md)      | Letters-around-a-center word game            | Vocabulary, prefixes and suffixes         | 2   |
+| WL-09 | [Crossword Links](concepts/pages/wl-09.md)      | Mini crossword                               | Definitions, synonyms                     | 2   |
+| WL-10 | [Rhyme Time](concepts/pages/wl-10.md)           | Rhythm matching                              | Rhymes, syllables, poetry                 | 2   |
+| WL-11 | [Sign Friends](concepts/pages/wl-11.md)         | Matching / memory                            | Sign-language alphabets                   | 2   |
+| WL-12 | [Type the Rain](concepts/pages/wl-12.md)        | Typing tutor (falling words)                 | Touch typing — words water the garden     | 2   |
+| WL-13 | [Code Words](concepts/pages/wl-13.md)           | Cipher puzzles                               | Cryptography from Caesar to public keys   | 2–3 |
+| WL-14 | [Prime Sprites](concepts/pages/wl-14.md) **W3** | Sentence building                            | Grammar, word order across languages      | 3   |
+| WL-15 | [Story Dice](concepts/pages/wl-15.md)           | Storytelling cards                           | Narrative structure, speaking             | 3   |
+| WL-16 | [Word Ladder Grove](concepts/pages/wl-16.md)    | Word transformation ladder                   | Spelling and edit distance                | 2   |
+| WL-17 | [Category Picnic](concepts/pages/wl-17.md)      | Word grouping puzzle                         | Semantic categories and ambiguity         | 2   |
+| WL-18 | [Picture Phrase](concepts/pages/wl-18.md)       | Rebus puzzle                                 | Language inference and idioms             | 2   |
+| WL-19 | [Theme Trails](concepts/pages/wl-19.md)         | Themed adjacent-letter word paths            | Vocabulary, semantic categories, spelling | 2   |
+| WL-20 | [Perimeter Words](concepts/pages/wl-20.md)      | Word chaining with alternating border groups | Spelling, word planning, letter coverage  | 2   |
 
 ## Math and logic (ML)
 
@@ -198,26 +203,28 @@ ones. Every game is still its own repository and its own package:
 
 ## Board and card games (BC)
 
-| ID    | Idea                                                | Proven genre (example)                     | What it teaches                               | Cx  |
-| ----- | --------------------------------------------------- | ------------------------------------------ | --------------------------------------------- | --- |
-| BC-01 | [Tic-Tac-Links](concepts/pages/bc-01.md)            | Tic-tac-toe and ultimate tic-tac-toe       | Strategy, forced moves                        | 1   |
-| BC-02 | [Ropes and Ladders](concepts/pages/bc-02.md)        | Snakes and ladders (Moksha Patam)          | Counting, history of the game's moral lessons | 1   |
-| BC-03 | [Happy Families](concepts/pages/bc-03.md)           | Go Fish / families                         | Categories, asking politely                   | 1   |
-| BC-04 | [Dominoes](concepts/pages/bc-04.md)                 | Dominoes                                   | Number matching, addition                     | 1–2 |
-| BC-05 | [Rela's Board Club](concepts/pages/bc-05.md) **W1** | Reversi, checkers, mancala, four in a row  | Strategy, counting, fair play                 | 2–3 |
-| BC-06 | [Nim Garden](concepts/pages/bc-06.md)               | Nim                                        | Game theory, winning positions, binary XOR    | 2   |
-| BC-07 | [Home Run Race](concepts/pages/bc-07.md)            | Ludo / pachisi (pieces go home, not "die") | Counting, probability of dice                 | 2   |
-| BC-08 | [Solitaire](concepts/pages/bc-08.md) **W2**         | Klondike, FreeCell, spider                 | Sequencing, suits                             | 2   |
-| BC-09 | [Tile Pairs](concepts/pages/bc-09.md) **W2**        | Mahjong solitaire                          | Chinese numerals and symbols                  | 2   |
-| BC-10 | [Sets and Runs](concepts/pages/bc-10.md)            | Rummy                                      | Sets, sequences, planning                     | 2–3 |
-| BC-11 | [Hex Bridges](concepts/pages/bc-11.md)              | Hex (connection game)                      | Topology: one side always connects            | 3   |
-| BC-12 | [Garden Plots](concepts/pages/bc-12.md)             | Go (territory)                             | Territory, liberty, patience                  | 3–4 |
-| BC-13 | [Chess Friends](concepts/pages/bc-13.md)            | Chess (captured pieces "go home")          | Planning, history of chess                    | 3–4 |
-| BC-14 | [Island Rescue](concepts/pages/bc-14.md)            | Cooperative board game                     | Teamwork, risk management                     | 3   |
-| BC-15 | [Acorn Backgammon](concepts/pages/bc-15.md)         | Backgammon                                 | Probability and risk-aware planning           | 3   |
-| BC-16 | [Leaf Hearts](concepts/pages/bc-16.md)              | Hearts card game                           | Counting suits and forecasting                | 2   |
-| BC-17 | [Signal Crew](concepts/pages/bc-17.md)              | Cooperative trick-taking                   | Communication constraints and deduction       | 3   |
-| BC-18 | [Expedition Deck](concepts/pages/bc-18.md)          | Roguelite deckbuilder                      | Probability and resource trade-offs           | 4   |
+| ID    | Idea                                                | Proven genre (example)                     | What it teaches                                | Cx  |
+| ----- | --------------------------------------------------- | ------------------------------------------ | ---------------------------------------------- | --- |
+| BC-01 | [Tic-Tac-Links](concepts/pages/bc-01.md)            | Tic-tac-toe and ultimate tic-tac-toe       | Strategy, forced moves                         | 1   |
+| BC-02 | [Ropes and Ladders](concepts/pages/bc-02.md)        | Snakes and ladders (Moksha Patam)          | Counting, history of the game's moral lessons  | 1   |
+| BC-03 | [Happy Families](concepts/pages/bc-03.md)           | Go Fish / families                         | Categories, asking politely                    | 1   |
+| BC-04 | [Dominoes](concepts/pages/bc-04.md)                 | Dominoes                                   | Number matching, addition                      | 1–2 |
+| BC-05 | [Rela's Board Club](concepts/pages/bc-05.md) **W1** | Reversi, checkers, mancala, four in a row  | Strategy, counting, fair play                  | 2–3 |
+| BC-06 | [Nim Garden](concepts/pages/bc-06.md)               | Nim                                        | Game theory, winning positions, binary XOR     | 2   |
+| BC-07 | [Home Run Race](concepts/pages/bc-07.md)            | Ludo / pachisi (pieces go home, not "die") | Counting, probability of dice                  | 2   |
+| BC-08 | [Solitaire](concepts/pages/bc-08.md) **W2**         | Klondike, FreeCell, spider                 | Sequencing, suits                              | 2   |
+| BC-09 | [Tile Pairs](concepts/pages/bc-09.md) **W2**        | Mahjong solitaire                          | Chinese numerals and symbols                   | 2   |
+| BC-10 | [Sets and Runs](concepts/pages/bc-10.md)            | Rummy                                      | Sets, sequences, planning                      | 2–3 |
+| BC-11 | [Hex Bridges](concepts/pages/bc-11.md)              | Hex (connection game)                      | Topology: one side always connects             | 3   |
+| BC-12 | [Garden Plots](concepts/pages/bc-12.md)             | Go (territory)                             | Territory, liberty, patience                   | 3–4 |
+| BC-13 | [Chess Friends](concepts/pages/bc-13.md)            | Chess (captured pieces "go home")          | Planning, history of chess                     | 3–4 |
+| BC-14 | [Island Rescue](concepts/pages/bc-14.md)            | Cooperative board game                     | Teamwork, risk management                      | 3   |
+| BC-15 | [Acorn Backgammon](concepts/pages/bc-15.md)         | Backgammon                                 | Probability and risk-aware planning            | 3   |
+| BC-16 | [Leaf Hearts](concepts/pages/bc-16.md)              | Hearts card game                           | Counting suits and forecasting                 | 2   |
+| BC-17 | [Signal Crew](concepts/pages/bc-17.md)              | Cooperative trick-taking                   | Communication constraints and deduction        | 3   |
+| BC-18 | [Expedition Deck](concepts/pages/bc-18.md)          | Roguelite deckbuilder                      | Probability and resource trade-offs            | 4   |
+| BC-19 | [Probability Orchard](concepts/pages/bc-19.md)      | Poker-hand roguelite without gambling      | Combinatorics, probability, expected outcomes  | 3   |
+| BC-20 | [Sum Garden](concepts/pages/bc-20.md)               | Domino placement with regional constraints | Addition, inequalities, constraint propagation | 2   |
 
 ## Science lab (SL)
 
@@ -265,25 +272,27 @@ ones. Every game is still its own repository and its own package:
 | NC-15 | [Clean Little World](concepts/pages/nc-15.md) | Cleaning simulator                         | Material care and water budgeting        | 3   |
 | NC-16 | [Terrarium Journal](concepts/pages/nc-16.md)  | Creature collection and care               | Microhabitats and species observation    | 3   |
 | NC-17 | [Magnet Fishing Day](concepts/pages/nc-17.md) | Fishing-style cleanup                      | Magnetism and material classification    | 3   |
+| NC-18 | [Tidepool Sizes](concepts/pages/nc-18.md)     | Growth-and-navigation arcade               | Scale, food webs, conservation           | 3   |
 
 ## Build and create (BD)
 
-| ID    | Idea                                         | Proven genre (example)               | What it teaches                                    | Cx  |
-| ----- | -------------------------------------------- | ------------------------------------ | -------------------------------------------------- | --- |
-| BD-01 | [Omi Colors](concepts/pages/bd-01.md) **W1** | Coloring / color by number           | Colors, numbers, art history                       | 2   |
-| BD-02 | [Pixel Studio](concepts/pages/bd-02.md)      | Pixel art editor                     | Grids, symmetry                                    | 1–2 |
-| BD-03 | [Costume Designer](concepts/pages/bd-03.md)  | Dress-up / fashion                   | Color theory, patterns of world cultures           | 2   |
-| BD-04 | [Origami Folds](concepts/pages/bd-04.md)     | Folding puzzle                       | Geometry of folding                                | 2–3 |
-| BD-05 | [Robot Programmer](concepts/pages/bd-05.md)  | Visual coding (Lightbot, Scratch Jr) | Sequences, loops, functions                        | 2–3 |
-| BD-06 | [Map Maker](concepts/pages/bd-06.md)         | Map editor                           | Cartography, scale, compass directions             | 3   |
-| BD-07 | [Marble Run](concepts/pages/bd-07.md)        | Construction physics                 | Gravity, energy conservation                       | 3   |
-| BD-08 | [Animation Studio](concepts/pages/bd-08.md)  | Flipbook maker                       | Frames, timing, persistence of vision              | 3   |
-| BD-09 | [Level Maker](concepts/pages/bd-09.md)       | Level editor for our other games     | Design, testing, sharing                           | 3   |
-| BD-10 | [Tiny Architect](concepts/pages/bd-10.md)    | Building design                      | Structures, materials, accessibility               | 4   |
-| BD-11 | [Block World](concepts/pages/bd-11.md)       | Voxel sandbox (Minecraft)            | Geometry, volume, engineering, redstone-like logic | 5   |
-| BD-12 | [Room for Everyone](concepts/pages/bd-12.md) | Unpacking and room organization      | Spatial fit and accessible design                  | 2   |
-| BD-13 | [Research Backpack](concepts/pages/bd-13.md) | Inventory packing and synergies      | Area and adjacency constraints                     | 2   |
-| BD-14 | [Clay and Symmetry](concepts/pages/bd-14.md) | Pottery shaping                      | Rotational symmetry and volume                     | 3   |
+| ID    | Idea                                         | Proven genre (example)                        | What it teaches                                    | Cx  |
+| ----- | -------------------------------------------- | --------------------------------------------- | -------------------------------------------------- | --- |
+| BD-01 | [Omi Colors](concepts/pages/bd-01.md) **W1** | Coloring / color by number                    | Colors, numbers, art history                       | 2   |
+| BD-02 | [Pixel Studio](concepts/pages/bd-02.md)      | Pixel art editor                              | Grids, symmetry                                    | 1–2 |
+| BD-03 | [Costume Designer](concepts/pages/bd-03.md)  | Dress-up / fashion                            | Color theory, patterns of world cultures           | 2   |
+| BD-04 | [Origami Folds](concepts/pages/bd-04.md)     | Folding puzzle                                | Geometry of folding                                | 2–3 |
+| BD-05 | [Robot Programmer](concepts/pages/bd-05.md)  | Visual coding (Lightbot, Scratch Jr)          | Sequences, loops, functions                        | 2–3 |
+| BD-06 | [Map Maker](concepts/pages/bd-06.md)         | Map editor                                    | Cartography, scale, compass directions             | 3   |
+| BD-07 | [Marble Run](concepts/pages/bd-07.md)        | Construction physics                          | Gravity, energy conservation                       | 3   |
+| BD-08 | [Animation Studio](concepts/pages/bd-08.md)  | Flipbook maker                                | Frames, timing, persistence of vision              | 3   |
+| BD-09 | [Level Maker](concepts/pages/bd-09.md)       | Level editor for our other games              | Design, testing, sharing                           | 3   |
+| BD-10 | [Tiny Architect](concepts/pages/bd-10.md)    | Building design                               | Structures, materials, accessibility               | 4   |
+| BD-11 | [Block World](concepts/pages/bd-11.md)       | Voxel sandbox (Minecraft)                     | Geometry, volume, engineering, redstone-like logic | 5   |
+| BD-12 | [Room for Everyone](concepts/pages/bd-12.md) | Unpacking and room organization               | Spatial fit and accessible design                  | 2   |
+| BD-13 | [Research Backpack](concepts/pages/bd-13.md) | Inventory packing and synergies               | Area and adjacency constraints                     | 2   |
+| BD-14 | [Clay and Symmetry](concepts/pages/bd-14.md) | Pottery shaping                               | Rotational symmetry and volume                     | 3   |
+| BD-15 | [Repair Runway](concepts/pages/bd-15.md)     | Themed outfit design and cooperative showcase | Materials, reuse, weather suitability              | 2   |
 
 ## Music and rhythm (MR)
 
@@ -302,25 +311,26 @@ ones. Every game is still its own repository and its own package:
 
 ## Sports and motion (SM)
 
-| ID    | Idea                                        | Proven genre (example)           | What it teaches                  | Cx  |
-| ----- | ------------------------------------------- | -------------------------------- | -------------------------------- | --- |
-| SM-01 | [Juggle](concepts/pages/sm-01.md)           | Timing                           | Rhythm, parabolas                | 2   |
-| SM-02 | [Linky Run](concepts/pages/sm-02.md) **W2** | Endless runner                   | Categories (lanes), quick recall | 2–3 |
-| SM-03 | [Mini Golf](concepts/pages/sm-03.md)        | Mini golf                        | Angles, friction, energy         | 3   |
-| SM-04 | [Curling Friends](concepts/pages/sm-04.md)  | Curling / bowling                | Friction, momentum               | 3   |
-| SM-05 | [Hoops](concepts/pages/sm-05.md)            | Basketball shots                 | Projectile motion                | 3   |
-| SM-06 | [Billiard Links](concepts/pages/sm-06.md)   | Billiards                        | Elastic collisions, momentum     | 3   |
-| SM-07 | [Paper Planes](concepts/pages/sm-07.md)     | Glider                           | Lift, drag, glide ratio          | 3   |
-| SM-08 | [Kite Day](concepts/pages/sm-08.md)         | Flying toy                       | Wind, lift, tension              | 3   |
-| SM-09 | [Ski Slalom](concepts/pages/sm-09.md)       | Downhill                         | Slopes, gravity, friction        | 3   |
-| SM-10 | [Table Tennis](concepts/pages/sm-10.md)     | Racket sports                    | Spin, the Magnus effect          | 3–4 |
-| SM-11 | [Kart Friends](concepts/pages/sm-11.md)     | Kart racing (no items that hurt) | Vectors, grip, racing lines      | 4   |
-| SM-12 | [Sailing](concepts/pages/sm-12.md)          | Sailing sim                      | Real sail physics, wind vectors  | 4   |
-| SM-13 | [Climbing](concepts/pages/sm-13.md)         | Physics climber                  | Balance, center of mass          | 4   |
-| SM-14 | [Skate Park](concepts/pages/sm-14.md)       | Trick sports                     | Rotation, angular momentum       | 4–5 |
-| SM-15 | [Crossing Friends](concepts/pages/sm-15.md) | Endless crossing arcade          | Timing and gap estimation        | 2   |
-| SM-16 | [Keep It Up](concepts/pages/sm-16.md)       | Cooperative volleyball           | Trajectories and cooperation     | 3   |
-| SM-17 | [Rooftop Routes](concepts/pages/sm-17.md)   | Precision platformer             | Momentum and safe route planning | 3   |
+| ID    | Idea                                        | Proven genre (example)               | What it teaches                   | Cx  |
+| ----- | ------------------------------------------- | ------------------------------------ | --------------------------------- | --- |
+| SM-01 | [Juggle](concepts/pages/sm-01.md)           | Timing                               | Rhythm, parabolas                 | 2   |
+| SM-02 | [Linky Run](concepts/pages/sm-02.md) **W2** | Endless runner                       | Categories (lanes), quick recall  | 2–3 |
+| SM-03 | [Mini Golf](concepts/pages/sm-03.md)        | Mini golf                            | Angles, friction, energy          | 3   |
+| SM-04 | [Curling Friends](concepts/pages/sm-04.md)  | Curling / bowling                    | Friction, momentum                | 3   |
+| SM-05 | [Hoops](concepts/pages/sm-05.md)            | Basketball shots                     | Projectile motion                 | 3   |
+| SM-06 | [Billiard Links](concepts/pages/sm-06.md)   | Billiards                            | Elastic collisions, momentum      | 3   |
+| SM-07 | [Paper Planes](concepts/pages/sm-07.md)     | Glider                               | Lift, drag, glide ratio           | 3   |
+| SM-08 | [Kite Day](concepts/pages/sm-08.md)         | Flying toy                           | Wind, lift, tension               | 3   |
+| SM-09 | [Ski Slalom](concepts/pages/sm-09.md)       | Downhill                             | Slopes, gravity, friction         | 3   |
+| SM-10 | [Table Tennis](concepts/pages/sm-10.md)     | Racket sports                        | Spin, the Magnus effect           | 3–4 |
+| SM-11 | [Kart Friends](concepts/pages/sm-11.md)     | Kart racing (no items that hurt)     | Vectors, grip, racing lines       | 4   |
+| SM-12 | [Sailing](concepts/pages/sm-12.md)          | Sailing sim                          | Real sail physics, wind vectors   | 4   |
+| SM-13 | [Climbing](concepts/pages/sm-13.md)         | Physics climber                      | Balance, center of mass           | 4   |
+| SM-14 | [Skate Park](concepts/pages/sm-14.md)       | Trick sports                         | Rotation, angular momentum        | 4–5 |
+| SM-15 | [Crossing Friends](concepts/pages/sm-15.md) | Endless crossing arcade              | Timing and gap estimation         | 2   |
+| SM-16 | [Keep It Up](concepts/pages/sm-16.md)       | Cooperative volleyball               | Trajectories and cooperation      | 3   |
+| SM-17 | [Rooftop Routes](concepts/pages/sm-17.md)   | Precision platformer                 | Momentum and safe route planning  | 3   |
+| SM-18 | [Meadow Outlines](concepts/pages/sm-18.md)  | Territory enclosure by drawing loops | Area, perimeter, spatial planning | 2   |
 
 ## Space and physics (SP)
 
@@ -346,48 +356,51 @@ ones. Every game is still its own repository and its own package:
 
 ## Stories and adventures (SA)
 
-| ID    | Idea                                                      | Proven genre (example)               | What it teaches                            | Cx  |
-| ----- | --------------------------------------------------------- | ------------------------------------ | ------------------------------------------ | --- |
-| SA-01 | [Choose Your Path](concepts/pages/sa-01.md)               | Interactive picture book             | Reading, choices and consequences          | 1–2 |
-| SA-02 | [Kindness Quests](concepts/pages/sa-02.md)                | Daily quests                         | Social and emotional learning              | 2   |
-| SA-03 | [Museum Night](concepts/pages/sa-03.md)                   | Point and click                      | Art history                                | 3   |
-| SA-04 | [Little Detective](concepts/pages/sa-04.md)               | Mystery / deduction                  | Evidence, reasoning, fair judgment         | 3   |
-| SA-05 | [Escape Room Together](concepts/pages/sa-05.md)           | Cooperative escape room              | Teamwork, logic                            | 3   |
-| SA-06 | [Archaeology Dig](concepts/pages/sa-06.md)                | Dig and restore                      | Stratigraphy, history                      | 3   |
-| SA-07 | [Language Quest](concepts/pages/sa-07.md)                 | Adventure in a foreign language      | Immersion learning                         | 3–4 |
-| SA-08 | [Time Travel Diary](concepts/pages/sa-08.md)              | Visual novel                         | History from many points of view           | 3–4 |
-| SA-09 | [Messages Across the Dark](concepts/pages/sa-09.md)       | Language and code puzzle             | Building a shared language from math       | 4   |
-| SA-10 | [Cadets of Depth Academy](concepts/pages/sa-10.md) **W3** | Story-led puzzle campaign            | Links theory: point → doublet → network    | 4   |
-| SA-11 | [Explore Omi](concepts/pages/sa-11.md) **W3**             | 3D exploration with the anime hosts  | Geography, ecology of Omi mapped to Earth  | 5   |
-| SA-12 | [The Escape (13+)](concepts/pages/sa-12.md)               | Narrative adventure                  | Empathy for people inside a violent system | 5   |
-| SA-13 | [Lantern Labyrinth](concepts/pages/sa-13.md)              | Exploration metroidvania             | Mapping and tool-based reasoning           | 4   |
-| SA-14 | [Evidence Circle](concepts/pages/sa-14.md)                | Social deduction without elimination | Evidence quality and revising beliefs      | 3   |
-| SA-15 | [Map of Whispers](concepts/pages/sa-15.md)                | Non-combat roguelike exploration     | Risk assessment and navigation             | 3   |
+| ID    | Idea                                                      | Proven genre (example)                    | What it teaches                            | Cx  |
+| ----- | --------------------------------------------------------- | ----------------------------------------- | ------------------------------------------ | --- |
+| SA-01 | [Choose Your Path](concepts/pages/sa-01.md)               | Interactive picture book                  | Reading, choices and consequences          | 1–2 |
+| SA-02 | [Kindness Quests](concepts/pages/sa-02.md)                | Daily quests                              | Social and emotional learning              | 2   |
+| SA-03 | [Museum Night](concepts/pages/sa-03.md)                   | Point and click                           | Art history                                | 3   |
+| SA-04 | [Little Detective](concepts/pages/sa-04.md)               | Mystery / deduction                       | Evidence, reasoning, fair judgment         | 3   |
+| SA-05 | [Escape Room Together](concepts/pages/sa-05.md)           | Cooperative escape room                   | Teamwork, logic                            | 3   |
+| SA-06 | [Archaeology Dig](concepts/pages/sa-06.md)                | Dig and restore                           | Stratigraphy, history                      | 3   |
+| SA-07 | [Language Quest](concepts/pages/sa-07.md)                 | Adventure in a foreign language           | Immersion learning                         | 3–4 |
+| SA-08 | [Time Travel Diary](concepts/pages/sa-08.md)              | Visual novel                              | History from many points of view           | 3–4 |
+| SA-09 | [Messages Across the Dark](concepts/pages/sa-09.md)       | Language and code puzzle                  | Building a shared language from math       | 4   |
+| SA-10 | [Cadets of Depth Academy](concepts/pages/sa-10.md) **W3** | Story-led puzzle campaign                 | Links theory: point → doublet → network    | 4   |
+| SA-11 | [Explore Omi](concepts/pages/sa-11.md) **W3**             | 3D exploration with the anime hosts       | Geography, ecology of Omi mapped to Earth  | 5   |
+| SA-12 | [The Escape (13+)](concepts/pages/sa-12.md)               | Narrative adventure                       | Empathy for people inside a violent system | 5   |
+| SA-13 | [Lantern Labyrinth](concepts/pages/sa-13.md)              | Exploration metroidvania                  | Mapping and tool-based reasoning           | 4   |
+| SA-14 | [Evidence Circle](concepts/pages/sa-14.md)                | Social deduction without elimination      | Evidence quality and revising beliefs      | 3   |
+| SA-15 | [Map of Whispers](concepts/pages/sa-15.md)                | Non-combat roguelike exploration          | Risk assessment and navigation             | 3   |
+| SA-16 | [Where on Raya?](concepts/pages/sa-16.md)                 | Scenery-based geographic deduction        | Geography, evidence, uncertainty           | 2   |
+| SA-17 | [Lantern Seekers](concepts/pages/sa-17.md)                | Cooperative hide-and-seek and prop search | Observation, perspective, consent          | 3   |
 
 ## Strategy and simulation (SS)
 
-| ID    | Idea                                             | Proven genre (example)                                | What it teaches                              | Cx  |
-| ----- | ------------------------------------------------ | ----------------------------------------------------- | -------------------------------------------- | --- |
-| SS-01 | [Idle Science](concepts/pages/ss-01.md) **W2**   | Idle / incremental                                    | Exponents, compound growth                   | 2   |
-| SS-02 | [Garden Guard](concepts/pages/ss-02.md) **W2**   | Tower defense (nets and umbrellas vs weather)         | Geometry, resource planning                  | 3   |
-| SS-03 | [Traffic Lights](concepts/pages/ss-03.md)        | Traffic puzzle                                        | Flow, queues, timing                         | 3   |
-| SS-04 | [Energy Grid](concepts/pages/ss-04.md)           | Balancing sim                                         | Supply and demand of power, storage          | 4   |
-| SS-05 | [Water Commons](concepts/pages/ss-05.md)         | Commons management                                    | Ostrom's rules for shared resources          | 4   |
-| SS-06 | [Logistics Links](concepts/pages/ss-06.md)       | Transport tycoon (needs met, not profit)              | Networks, logistics                          | 4   |
-| SS-07 | [Outbreak Stoppers](concepts/pages/ss-07.md)     | Cooperative epidemic game                             | Epidemiology (SIR models), vaccines, hygiene | 4   |
-| SS-08 | [Food Web](concepts/pages/ss-08.md)              | Ecosystem sim                                         | Predator–prey cycles as population curves    | 4   |
-| SS-09 | [Care Hospital](concepts/pages/ss-09.md)         | Hospital management                                   | Health systems, triage, empathy              | 4   |
-| SS-10 | [Town of Links](concepts/pages/ss-10.md)         | City builder                                          | Urban planning, resource flows               | 4–5 |
-| SS-11 | [Climate Council](concepts/pages/ss-11.md)       | Policy sim                                            | Climate models, trade-offs                   | 5   |
-| SS-12 | [Two Planets](concepts/pages/ss-12.md)           | 4X without war (explore, expand, exchange, cooperate) | Resource-based vs scarcity economies         | 5   |
-| SS-13 | [Mars Habitat](concepts/pages/ss-13.md)          | Survival / colony sim                                 | Life support: air, water, food, energy       | 5–6 |
-| SS-14 | [First Contact (final)](concepts/pages/ss-14.md) | Realistic multi-genre simulator                       | Everything above, at real scale              | 7   |
-| SS-15 | [Circular Factory](concepts/pages/ss-15.md)      | Factory automation                                    | Flow rates and closed material loops         | 4   |
-| SS-16 | [Helper Teams](concepts/pages/ss-16.md)          | Non-combat autobattler                                | Complementary roles and scheduling           | 4   |
-| SS-17 | [Lunch for All](concepts/pages/ss-17.md)         | Restaurant time management                            | Queueing and nutrition planning              | 3   |
-| SS-18 | [Repair Cafe](concepts/pages/ss-18.md)           | Workshop management                                   | Repairability and resource allocation        | 4   |
-| SS-19 | [Railway Signals](concepts/pages/ss-19.md)       | Train dispatch and track routing                      | Scheduling and collision avoidance           | 3   |
-| SS-20 | [Ready Together](concepts/pages/ss-20.md)        | Cooperative disaster preparation                      | Preparedness and resilient systems           | 4   |
+| ID    | Idea                                             | Proven genre (example)                                | What it teaches                                   | Cx  |
+| ----- | ------------------------------------------------ | ----------------------------------------------------- | ------------------------------------------------- | --- |
+| SS-01 | [Idle Science](concepts/pages/ss-01.md) **W2**   | Idle / incremental                                    | Exponents, compound growth                        | 2   |
+| SS-02 | [Garden Guard](concepts/pages/ss-02.md) **W2**   | Tower defense (nets and umbrellas vs weather)         | Geometry, resource planning                       | 3   |
+| SS-03 | [Traffic Lights](concepts/pages/ss-03.md)        | Traffic puzzle                                        | Flow, queues, timing                              | 3   |
+| SS-04 | [Energy Grid](concepts/pages/ss-04.md)           | Balancing sim                                         | Supply and demand of power, storage               | 4   |
+| SS-05 | [Water Commons](concepts/pages/ss-05.md)         | Commons management                                    | Ostrom's rules for shared resources               | 4   |
+| SS-06 | [Logistics Links](concepts/pages/ss-06.md)       | Transport tycoon (needs met, not profit)              | Networks, logistics                               | 4   |
+| SS-07 | [Outbreak Stoppers](concepts/pages/ss-07.md)     | Cooperative epidemic game                             | Epidemiology (SIR models), vaccines, hygiene      | 4   |
+| SS-08 | [Food Web](concepts/pages/ss-08.md)              | Ecosystem sim                                         | Predator–prey cycles as population curves         | 4   |
+| SS-09 | [Care Hospital](concepts/pages/ss-09.md)         | Hospital management                                   | Health systems, triage, empathy                   | 4   |
+| SS-10 | [Town of Links](concepts/pages/ss-10.md)         | City builder                                          | Urban planning, resource flows                    | 4–5 |
+| SS-11 | [Climate Council](concepts/pages/ss-11.md)       | Policy sim                                            | Climate models, trade-offs                        | 5   |
+| SS-12 | [Two Planets](concepts/pages/ss-12.md)           | 4X without war (explore, expand, exchange, cooperate) | Resource-based vs scarcity economies              | 5   |
+| SS-13 | [Mars Habitat](concepts/pages/ss-13.md)          | Survival / colony sim                                 | Life support: air, water, food, energy            | 5–6 |
+| SS-14 | [First Contact (final)](concepts/pages/ss-14.md) | Realistic multi-genre simulator                       | Everything above, at real scale                   | 7   |
+| SS-15 | [Circular Factory](concepts/pages/ss-15.md)      | Factory automation                                    | Flow rates and closed material loops              | 4   |
+| SS-16 | [Helper Teams](concepts/pages/ss-16.md)          | Non-combat autobattler                                | Complementary roles and scheduling                | 4   |
+| SS-17 | [Lunch for All](concepts/pages/ss-17.md)         | Restaurant time management                            | Queueing and nutrition planning                   | 3   |
+| SS-18 | [Repair Cafe](concepts/pages/ss-18.md)           | Workshop management                                   | Repairability and resource allocation             | 4   |
+| SS-19 | [Railway Signals](concepts/pages/ss-19.md)       | Train dispatch and track routing                      | Scheduling and collision avoidance                | 3   |
+| SS-20 | [Ready Together](concepts/pages/ss-20.md)        | Cooperative disaster preparation                      | Preparedness and resilient systems                | 4   |
+| SS-21 | [Riverline Transit](concepts/pages/ss-21.md)     | Transit-network drawing and capacity planning         | Graph connectivity, queues, sustainable transport | 3   |
 
 The First Contact seeds (Station Watch, Deflect!, Probe Workshop,
 Light-Lag Chess, Messages Across the Dark, The Escape, Two Planets) are
@@ -401,8 +414,8 @@ Added for the [Raya feedback](../case-studies/issue-1/requirements.md#raya-shaca
 [toddler design rules](../case-studies/issue-1/data/research-raya-shacados.md#7-toddlers-and-screens-r68-r69):
 tap before drag, no reading, no failure, no timers, co-play under age 2.
 Every game has a toddler learnability rating in the
-[development plan](development-plan.md#toddler-learnability-rubric). Art is
-pending; each page carries four image descriptions.
+[development plan](development-plan.md#toddler-learnability-rubric). Each page
+has four illustrated concept views with the matching generation briefs.
 
 | ID    | Idea                                              | Proven genre (example)                | What it teaches                                 | Cx  |
 | ----- | ------------------------------------------------- | ------------------------------------- | ----------------------------------------------- | --- |

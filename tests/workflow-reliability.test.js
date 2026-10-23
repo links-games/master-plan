@@ -102,6 +102,11 @@ function evaluateWorkflowIf(expression, context) {
     )
     .replaceAll('!cancelled()', '!context.cancelled')
     .replaceAll('github.event_name', 'context.github.event_name')
+    .replaceAll('github.ref', 'context.github.ref')
+    .replaceAll(
+      'inputs.update_visual_baselines',
+      'context.inputs.update_visual_baselines'
+    )
     .replaceAll(
       'github.event.inputs.release_mode',
       'context.github.event.inputs.release_mode'
@@ -442,6 +447,26 @@ describe('workflow artifact and writer reliability', () => {
 });
 
 describe('release workflow change gates', () => {
+  it('captures candidate website baselines without running the main preview writer', () => {
+    const workflow = readWorkflow('.github/workflows/example-app.yml');
+    const condition = getMultilineIfExpression(
+      getJobBlock(workflow, 'preview-regen')
+    );
+    for (const [eventName, ref, capture, expected] of [
+      ['workflow_dispatch', 'refs/heads/issue-3-15f93486408a', true, false],
+      ['workflow_dispatch', 'refs/heads/issue-3-15f93486408a', false, true],
+      ['push', 'refs/heads/main', false, true],
+      ['pull_request', 'refs/pull/4/merge', false, false],
+    ]) {
+      expect(
+        evaluateWorkflowIf(condition, {
+          github: { event_name: eventName, ref },
+          inputs: { update_visual_baselines: capture },
+        })
+      ).toBe(expected);
+    }
+  });
+
   it('skips the slow test matrix for pull requests with no code changes', () => {
     const workflow = readWorkflow('.github/workflows/release.yml');
     const testJob = getJobBlock(workflow, 'test');

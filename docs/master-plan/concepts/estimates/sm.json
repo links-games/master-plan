@@ -373,5 +373,25 @@
     "toddler": 1,
     "minAge": 6,
     "plan": "20 authored rooftop garden levels with forgiving jumps, a jump arc preview, wind ribbons and soft landing pads; collectibles, time trials and a level editor are left out."
+  },
+  {
+    "id": "SM-18",
+    "algorithms": ["draw-trace", "flood-fill", "grid-board"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 24,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 6,
+      "content": 24,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "One 12x12 survey board, five loop challenges and undo; compare equal perimeters and different areas, no enemies or loss of another player's territory."
   }
 ]

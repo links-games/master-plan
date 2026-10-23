@@ -22,7 +22,7 @@ flowchart LR
 issue in any repository produces an AI pull request.
 
 Before selecting the first prototype, review the
-[300-game concept catalog](concepts/README.md) and the
+[310-game concept catalog](concepts/README.md) and the
 [development plan](development-plan.md), or browse both on the
 [website](README.md#website). Compare the four views on candidate pages, then
 prefer the lowest start scores (easy to develop and easy to play) and Cx 1–2
@@ -171,15 +171,15 @@ only lists them. Order of creation (all under `links-games`):
 
 ## Decisions needed from maintainers
 
-| Decision                                                                 | Proposed default                                                                                                        | Needed by |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | --------- |
-| Canonical role colors (avatar vs figure 10 of Links Theory 0.0.2)        | red = source, green = linker, blue = target                                                                             | Phase 0   |
-| Hero name ("Linky" is used by a French smart meter)                      | Keep as working name; trademark search decides                                                                          | Phase 0   |
-| Code license                                                             | Unlicense for code, CC0 for art and texts, trademarks for names                                                         | Phase 0   |
-| Legal entity and jurisdiction (stores, VK, payments)                     | One company that owns the trademarks; see [legal](legal.md)                                                             | Phase 2   |
-| Default AI tool for the pipeline when formal-ai cannot finish a task     | Keep `formal-ai`; allow per-repository override                                                                         | Phase 0   |
-| Raya / Shacados reading of the pilot scene and its sub-light probe speed | Station is Rayan, object is a Shacados probe; probe at 0.5 _c_ ([open questions](lore/first-contact.md#open-questions)) | S6        |
-| Is Omi the learning world of Rayan children?                             | Yes, as the bridge between the two lore layers                                                                          | Phase 4   |
+| Decision                                                                 | Proposed default                                                                                                                        | Needed by |
+| ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| Canonical role colors (avatar vs figure 10 of Links Theory 0.0.2)        | red = source, green = linker, blue = target                                                                                             | Phase 0   |
+| Hero name ("Linky" is used by a French smart meter)                      | Keep as working name; trademark search decides                                                                                          | Phase 0   |
+| Code license                                                             | Unlicense for code, CC0 for art and texts, trademarks for names                                                                         | Phase 0   |
+| Legal entity and jurisdiction (stores, VK, payments)                     | One company that owns the trademarks; see [legal](legal.md)                                                                             | Phase 2   |
+| Default AI tool for the pipeline when formal-ai cannot finish a task     | Keep `formal-ai`; allow per-repository override                                                                                         | Phase 0   |
+| Raya / Shacados reading of the pilot scene and its sub-light probe speed | Station is Rayan; Shacados object at 10,000 km/s, Rayan interceptor at 0.5 _c_ ([open questions](lore/first-contact.md#open-questions)) | S6        |
+| Is Omi the learning world of Rayan children?                             | Yes, as the bridge between the two lore layers                                                                                          | Phase 4   |
 
 ## Requirement-to-phase mapping
 

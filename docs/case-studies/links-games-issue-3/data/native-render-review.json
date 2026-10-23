@@ -1,0 +1,162 @@
+{
+  "reviewedAt": "2026-10-22T20:06:08.995180+00:00",
+  "method": "Visual inspection of all 22 native renders in labeled review sheets; delivered PNGs are unchanged.",
+  "sourceCommit": "afb68c01d004dd6cc21c32a94ff30279db8f0e51",
+  "renderRun": "https://github.com/links-games/master-plan/actions/runs/39841118927",
+  "renders": [
+    {
+      "scene": "01-the-clover-meadow",
+      "path": "docs/master-plan/lore/scenes/01-the-clover-meadow/poster.png",
+      "sha256": "3896bde3de3c7914e7412a6659c492493bcb8f8b307db7e0784a9b08e2d8e1a4",
+      "meanLuminance": 114.68,
+      "nearBlackFraction": 0.0006
+    },
+    {
+      "scene": "02-the-apple-at-dawn",
+      "path": "docs/master-plan/lore/scenes/02-the-apple-at-dawn/poster.png",
+      "sha256": "343444081460260bc05b2cd04592078e20f7fab6fd248c3e8e8aef540ed67a19",
+      "meanLuminance": 107.51,
+      "nearBlackFraction": 0.0028
+    },
+    {
+      "scene": "03-first-ride-on-the-chord",
+      "path": "docs/master-plan/lore/scenes/03-first-ride-on-the-chord/poster.png",
+      "sha256": "1b7b5a51a4ea6d155ec20df118e6c2914503735cc3270bd2e566a53f0e556d5e",
+      "meanLuminance": 139.82,
+      "nearBlackFraction": 0.0006
+    },
+    {
+      "scene": "04-the-double-eclipse",
+      "path": "docs/master-plan/lore/scenes/04-the-double-eclipse/poster.png",
+      "sha256": "ab6ed894da45d7ad43c0a18cedcb58be6ddca34930267568b9040ab058e81ca9",
+      "meanLuminance": 115.92,
+      "nearBlackFraction": 0.0006
+    },
+    {
+      "scene": "05-the-arm-that-stopped",
+      "path": "docs/master-plan/lore/scenes/05-the-arm-that-stopped/poster.png",
+      "sha256": "b8c0d44c1d86ee21bd1b2786f6a62e56f570452804f0a082956906c6a6ae39ce",
+      "meanLuminance": 136.52,
+      "nearBlackFraction": 0.001
+    },
+    {
+      "scene": "06-a-tower-grows",
+      "path": "docs/master-plan/lore/scenes/06-a-tower-grows/poster.png",
+      "sha256": "418c9306782c1ed14f1b0ffc92d3ae5ffae00f8011888fde039034337e199cfe",
+      "meanLuminance": 112.21,
+      "nearBlackFraction": 0.0141
+    },
+    {
+      "scene": "07-the-tower-song",
+      "path": "docs/master-plan/lore/scenes/07-the-tower-song/poster.png",
+      "sha256": "6370bf495cadc965809df04fb97246373d32dcd83802ac6cc68c8462d940cf30",
+      "meanLuminance": 57.57,
+      "nearBlackFraction": 0.031
+    },
+    {
+      "scene": "08-rain-in-the-delta",
+      "path": "docs/master-plan/lore/scenes/08-rain-in-the-delta/poster.png",
+      "sha256": "e31fe35945bddce0cb1ff4afb3cffcd45292cbf034641f91a8db377a15c00eaa",
+      "meanLuminance": 118.56,
+      "nearBlackFraction": 0.0021
+    },
+    {
+      "scene": "09-the-wall-without-the-guard",
+      "path": "docs/master-plan/lore/scenes/09-the-wall-without-the-guard/poster.png",
+      "sha256": "165d61d2c63188ae5630158ed47e5feb7b566fcb50d920ce09890357d51a8e00",
+      "meanLuminance": 81.95,
+      "nearBlackFraction": 0.1179
+    },
+    {
+      "scene": "10-why-is-professor-acorn-old",
+      "path": "docs/master-plan/lore/scenes/10-why-is-professor-acorn-old/poster.png",
+      "sha256": "e2a4611374cb070a3a8afa2f226321d136a29441a79130332a63d03402699d59",
+      "meanLuminance": 49.84,
+      "nearBlackFraction": 0.0907
+    },
+    {
+      "scene": "11-ration-line-at-dawn",
+      "path": "docs/master-plan/lore/scenes/11-ration-line-at-dawn/poster.png",
+      "sha256": "ef8bb7b1956424886674f073d850cd5e55e57379f5cd4555aa8a8f68240f4b91",
+      "meanLuminance": 91.1,
+      "nearBlackFraction": 0.0235
+    },
+    {
+      "scene": "12-the-scrap-dunes",
+      "path": "docs/master-plan/lore/scenes/12-the-scrap-dunes/poster.png",
+      "sha256": "4e4289b31bcf381832d4623762738f647fe1768dfdbd80b2a054a78c34a7ae68",
+      "meanLuminance": 89.3,
+      "nearBlackFraction": 0.0363
+    },
+    {
+      "scene": "13-the-ice-town",
+      "path": "docs/master-plan/lore/scenes/13-the-ice-town/poster.png",
+      "sha256": "ed24281711a814ef2a5c665cac2d46d383bec38b1020ba50c76afb05417886fe",
+      "meanLuminance": 117.32,
+      "nearBlackFraction": 0.0017
+    },
+    {
+      "scene": "14-launch-day",
+      "path": "docs/master-plan/lore/scenes/14-launch-day/poster.png",
+      "sha256": "3d972ec4b0337211e85f814e05cbf35752498b47b96c64e560cf927876f110e4",
+      "meanLuminance": 87.45,
+      "nearBlackFraction": 0.0053
+    },
+    {
+      "scene": "15-the-last-woods",
+      "path": "docs/master-plan/lore/scenes/15-the-last-woods/poster.png",
+      "sha256": "44469c921d0aa5e07b12b184334c0639de8db429faf0a87b204ba4cc835d1f6d",
+      "meanLuminance": 67.63,
+      "nearBlackFraction": 0.052
+    },
+    {
+      "scene": "16-the-radio-roof",
+      "path": "docs/master-plan/lore/scenes/16-the-radio-roof/poster.png",
+      "sha256": "7732aea34f76e459142f8aa57d3f337660361026b733dcdf5017b1bee9b54b81",
+      "meanLuminance": 54.51,
+      "nearBlackFraction": 0.1192
+    },
+    {
+      "scene": "17-the-night-school",
+      "path": "docs/master-plan/lore/scenes/17-the-night-school/poster.png",
+      "sha256": "86bb37d828e9c7ed4ac458e30245d44a8588c1c9eff3cd3627765e5681920fa2",
+      "meanLuminance": 84.29,
+      "nearBlackFraction": 0.079
+    },
+    {
+      "scene": "18-three-dead-radios",
+      "path": "docs/master-plan/lore/scenes/18-three-dead-radios/poster.png",
+      "sha256": "e304ff08f8cd6dd803dec3e66bcab4b77e24f67f94e23380d72c4f8cacac26e5",
+      "meanLuminance": 87.96,
+      "nearBlackFraction": 0.0478
+    },
+    {
+      "scene": "19-fifty-seconds-the-stations-side",
+      "path": "docs/master-plan/lore/scenes/19-fifty-seconds-the-stations-side/poster.png",
+      "sha256": "c2363c9384649f116c658e143f3ad03024ff552878407bd40b5538dfd26b54d3",
+      "meanLuminance": 22.14,
+      "nearBlackFraction": 0.0698
+    },
+    {
+      "scene": "20-fifty-seconds-the-tracking-rooms-side",
+      "path": "docs/master-plan/lore/scenes/20-fifty-seconds-the-tracking-rooms-side/poster.png",
+      "sha256": "73f052d8365c9f41596049f9502ade4c7197ed4560e7311d8de2785f13585af5",
+      "meanLuminance": 83.58,
+      "nearBlackFraction": 0.0401
+    },
+    {
+      "scene": "21-the-first-answer",
+      "path": "docs/master-plan/lore/scenes/21-the-first-answer/poster.png",
+      "sha256": "2011d6038ac22324d3e1fe206e63d9174347fb9ad746e17e0a0387bdbce2be61",
+      "meanLuminance": 49.49,
+      "nearBlackFraction": 0.1525
+    },
+    {
+      "scene": "22-two-skies",
+      "path": "docs/master-plan/lore/scenes/22-two-skies/poster.png",
+      "sha256": "b5b2dfe48412f86e60df641942e21f8c0f8f9a6429d0b1582adce90523a99cec",
+      "meanLuminance": 46.79,
+      "nearBlackFraction": 0.0358
+    }
+  ]
+}

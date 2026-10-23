@@ -168,5 +168,17 @@
     "wave": null,
     "original": false,
     "scene": "Choose jumps between low rooftop gardens with soft landing pads and visible wind ribbons."
+  },
+  {
+    "id": "SM-18",
+    "title": "Meadow Outlines",
+    "genre": "Territory enclosure by drawing loops",
+    "lesson": "Area, perimeter, spatial planning",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "6+",
+    "scene": "Draw a closed ribbon loop across a virtual meadow grid to mark a wildlife survey area; the enclosed flowers light up while a side strip compares boundary length with counted squares.",
+    "expansion": "issue-3"
   }
 ]

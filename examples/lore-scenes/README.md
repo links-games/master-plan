@@ -66,14 +66,20 @@ JavaScript fallbacks.
 
 ```sh
 node scripts/build-site.mjs
-python3 -m http.server 4173 --directory _site
+node experiments/serve-master-plan.mjs _site
 # In another terminal, with Playwright 1.59.1 installed:
 PLAYWRIGHT_MODULE=/path/to/playwright/index.mjs node experiments/verify-master-plan.mjs
 ```
 
-`--update` captures approved screenshot baselines; ordinary verification compares
-against the committed images. `--before` preserves the original website's
+`--update` captures candidate screenshot baselines; inspect them before committing.
+Ordinary verification compares against the committed images. `--before` preserves the original website's
 screenshots. Runtime scene diagnostics are disabled unless `?debugScene` is set.
+
+On machines without enough browser memory, dispatch the Example app workflow on
+the PR branch with `update_visual_baselines=true`. Its pinned Playwright container
+runs the full verifier and uploads `master-plan-browser`, including the candidate
+screenshots. Download and inspect those images, commit the reviewed baselines,
+then require an ordinary PR run to pass without updating them.
 
 The browser receives one flat-colored, single-draw-call mesh at a time, with
 at most 60,000 triangles, 4 MB raw JSON and 600 KB gzip. Detailed leaves,
@@ -106,5 +112,9 @@ trees. All downloaded art assets are from Poly Haven under
 it checks the provider's checksums before recording the local SHA-256.
 
 The stages use composition units, not engineering scale. Far spires represent
-the tall Chord towers in the lore. The paired “Two skies” composition shows
-separate worlds and does not put them next to one another in the story.
+the tall Chord towers in the lore. “Two skies” renders two complete, separate
+night environments into scene-linear EXR half-frames, then composes their native
+split-screen still. Both scenes and their packed half-frames remain in the
+Blender project; rerun the Python renderer to refresh the half-frames after
+editing either world. The browser uses a lightweight paired study of the two
+settings. Neither composition makes the distant planets adjacent in the story.

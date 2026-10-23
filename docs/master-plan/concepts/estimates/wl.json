@@ -378,5 +378,45 @@
     "toddler": 1,
     "minAge": 7,
     "plan": "20 rebus phrases on a theatre stage built from illustrated word and object tiles that are dragged into order, with a voiced reveal of the idiom meaning. Player-made rebuses are left out."
+  },
+  {
+    "id": "WL-19",
+    "algorithms": ["word-search-gen", "word-list", "draw-trace"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 24,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 6,
+      "content": 24,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "One 6x6 authored letter board with five wetland words, optional spoken clues and undo; teach adjacency and vocabulary without a timer."
+  },
+  {
+    "id": "WL-20",
+    "algorithms": ["word-list", "word-search-gen", "graph-network"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 24,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 6,
+      "content": 24,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 8,
+    "plan": "One nine-letter triangular board with a curated vocabulary and a verified solution chain; optional audio, undo and no timer, with bank shapes as well as colors."
   }
 ]

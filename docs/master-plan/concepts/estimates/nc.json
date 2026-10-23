@@ -404,5 +404,25 @@
     "toddler": 3,
     "minAge": 3,
     "plan": "A dock with a magnet on a line lowered by tap or drag to lift metal litter while fish swim past, over 8 ponds, sorting catches into metal and non-metal; rods upgrades and timers are left out."
+  },
+  {
+    "id": "NC-18",
+    "algorithms": ["agent-steering", "ecosystem-sim", "physics-2d"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 24,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 6,
+      "content": 24,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 6,
+    "plan": "One microscopic water droplet with inert nutrients and three organism sizes; mass is conserved and other organisms remain unharmed, no online arena or predation."
   }
 ]
