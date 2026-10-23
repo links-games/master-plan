@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'test-anywhere';
+import { readFileSync } from 'node:fs';
 import {
   NUCLEAR_PULSE_MAX_KM_S,
   PILOT_SCENE,
@@ -13,6 +14,19 @@ import {
 // The numbers asserted here are quoted in
 // docs/master-plan/lore/first-contact.md ("Physics check of the pilot").
 describe('First Contact pilot scene physics check', () => {
+  it('keeps impact claims conditional on mass and separates kinematics from engineering', () => {
+    const lore = readFileSync('docs/master-plan/lore/first-contact.md', 'utf8');
+    const energyRow = lore
+      .split('\n')
+      .find((line) => line.startsWith('| Energy of the object '));
+    expect(energyRow).toContain(
+      `${Math.round(analyzeScene().objectEnergyPerTonneMt)} megatons TNT`
+    );
+    expect(lore.includes('planet-killer by speed alone')).toBe(false);
+    expect(lore.includes('the only physical error')).toBe(false);
+    expect(lore).toContain('Total impact energy depends on the object’s mass');
+    expect(lore).toContain('do not establish engineering feasibility');
+  });
   it('reproduces the 50 second impact window of the scene', () => {
     const result = analyzeScene();
     expect(result.impactSeconds).toBe(50);

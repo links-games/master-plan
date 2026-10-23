@@ -1,0 +1,44 @@
+{
+  "id": "16-the-radio-roof",
+  "number": 16,
+  "title": "The radio roof",
+  "world": "Shacados",
+  "kind": "radio",
+  "seed": 2734,
+  "night": true,
+  "ages": 10,
+  "pilot": "scenery-pilots.md#16-the-radio-roof",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [1280, 720],
+  "triangles": 19272,
+  "files": {
+    "scene.json": {
+      "bytes": 2066313,
+      "sha256": "dc92ef8614f4e7546dd5c3d0f2711ff44407fc5d34047bad34e66d694231629b"
+    },
+    "environment.blend": {
+      "bytes": 9738068,
+      "sha256": "19217f72a98e807ab3b4fe4de09a57cd0d409ae3774e8e4c428279e731d9ff08"
+    },
+    "poster.png": {
+      "bytes": 1289292,
+      "sha256": "7732aea34f76e459142f8aa57d3f337660361026b733dcdf5017b1bee9b54b81"
+    },
+    "poster.webp": {
+      "bytes": 85060,
+      "sha256": "05198bb2d87e12e5e58c4f3124f45cc7ced589b65d91058e7307c4e9b2c85690"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

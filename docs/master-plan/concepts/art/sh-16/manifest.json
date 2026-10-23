@@ -1,0 +1,57 @@
+{
+  "gameId": "SH-16",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:31:10.952945+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "68e8a03562e63f29fcf743d0abb9dc16c7931a0d58ea40ab5f99c9ca84f7b229",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution original educational game concept. Request 2048x2048 pixels or the highest native resolution available.\nMandatory style: flat 2D storybook game illustration. Draw a very simple graphic screen print with thick charcoal ink contours and only six solid spot colors. Broad flat shapes, almost no texture, no gradients, no realistic modeling. Absolutely no 3D rendering, photography, cinematic lighting, detailed scenery, glossy shading or depth of field. The result should look like a small set of carefully drawn paper shapes, not a painted movie frame.\nGame: Answer to the Stars (SH-16). Mechanic: Signal-crafting puzzle and community narrative.\nShow this exact playable interaction, with large readable pieces: In a radio shack on a water tower, the player punches dots into a paper tape to build a simple picture grid, then gathers neighbors' hands on one shared telegraph key to send the reply toward the point in the sky where the signal rises.\nLearning objective: Universal messages, primes, picture grids, light delay, consensus.\nShacados setting: a small, simplified backdrop of soot-gray industrial silhouettes. Rust, mustard, ash, sick green, one lamp-orange light and one small green plant. Humanlike people in patched work clothes and scarves, dignified and hopeful. Technology from roughly 1890–1960. Keep people secondary to the board or activity. Leave generous quiet space around the pieces.\nOne complete original composition. No collage, panels, written title, logo, watermark, shop, advertising, weapons, gore or cruelty. Use shape and pattern as well as color. Concept art, not a validated scientific diagram.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:23:13.575494+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "dfe4bb02748192093a8cdfd0bcbc9c0fed59127ddac1d7799a9609e3785ac2e7",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Answer to the Stars (SH-16). Genre/mechanic: Signal-crafting puzzle and community narrative.\nPrimary scene and action: In a radio shack on a water tower, the player punches dots into a paper tape to build a simple picture grid, then gathers neighbors' hands on one shared telegraph key to send the reply toward the point in the sky where the signal rises.\nThis view: A hidden radio station on a water tower above the scrap dunes, built from salvaged dish reflectors and copper wire, on a clear cold night after a storm. Below, the town sleeps under smoke and gas-flare glow. Above, the brightest star in the sky is Raya's sun. A kerosene lamp glows lamp orange inside the shack, and a small fern grows in a can by its door.\nLearning objective expressed by the actual interaction: Universal messages, primes, picture grids, light delay, consensus.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:29:23.189341+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "8cd58041fd118d734162a97f12201c864b3ad398872203761b721e84e8fbf406",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Answer to the Stars (SH-16). Genre/mechanic: Signal-crafting puzzle and community narrative.\nPrimary scene and action: In a radio shack on a water tower, the player punches dots into a paper tape to build a simple picture grid, then gathers neighbors' hands on one shared telegraph key to send the reply toward the point in the sky where the signal rises.\nThis view: Teyo, now older, Wren with her slate, Old Brann at the transmitter, Sela holding a jar of seeds and a dozen neighbors crowded into the shack. Patched coats, scarves and goggles pushed up. Vacuum tubes, punched paper tape, a hand-wound coil, a brass telegraph key and a chalk grid of dots on a board. Soot, rust, mustard and ash, with one warm lamp.\nLearning objective expressed by the actual interaction: Universal messages, primes, picture grids, light delay, consensus.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:29:24.306207+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "14d75c417deab6f51c9018427f42418244eb7d42e4c649876e41b8df009be1bf",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Answer to the Stars (SH-16). Genre/mechanic: Signal-crafting puzzle and community narrative.\nPrimary scene and action: In a radio shack on a water tower, the player punches dots into a paper tape to build a simple picture grid, then gathers neighbors' hands on one shared telegraph key to send the reply toward the point in the sky where the signal rises.\nThis view: The campaign grows from decoding the radio pulses to building a stronger transmitter from town salvage, composing a reply in primes and dot pictures, and keeping the station hidden from the Radio Hold. The town debates what to send: a warning about the probe, a greeting or a picture of a seed. The final view shows the reply leaving as faint rings over the dunes, a few hours from the listening probe and twelve days from Raya.\nLearning objective expressed by the actual interaction: Universal messages, primes, picture grids, light delay, consensus.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

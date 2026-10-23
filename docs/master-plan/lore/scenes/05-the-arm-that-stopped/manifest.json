@@ -1,0 +1,44 @@
+{
+  "id": "05-the-arm-that-stopped",
+  "number": 5,
+  "title": "The arm that stopped",
+  "world": "Raya",
+  "kind": "pebbles",
+  "seed": 2723,
+  "night": false,
+  "ages": 6,
+  "pilot": "scenery-pilots.md#5-the-arm-that-stopped",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [1280, 720],
+  "triangles": 19836,
+  "files": {
+    "poster.png": {
+      "bytes": 1776439,
+      "sha256": "b8c0d44c1d86ee21bd1b2786f6a62e56f570452804f0a082956906c6a6ae39ce"
+    },
+    "environment.blend": {
+      "bytes": 36277306,
+      "sha256": "ed8582250bdaeb8ba135c5f7ad225e3c44eb50842c2a930c7088e21e032015ee"
+    },
+    "scene.json": {
+      "bytes": 2140329,
+      "sha256": "05fe20d5392e05c9e0058d53575874d2dfcb7218c37974fedf861959071bee34"
+    },
+    "poster.webp": {
+      "bytes": 214084,
+      "sha256": "4b49eae1438e38eaf33796c7e971ef2d21868f4508bf4fe25bcaef1fa8e3d663"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

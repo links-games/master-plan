@@ -178,5 +178,29 @@
     "wave": null,
     "original": false,
     "scene": "Play weather, rope and shelter cards to complete a mountain research expedition, without combat or gambling."
+  },
+  {
+    "id": "BC-19",
+    "title": "Probability Orchard",
+    "genre": "Poker-hand roguelite without gambling",
+    "lesson": "Combinatorics, probability, expected outcomes",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "10+",
+    "scene": "Arrange illustrated fruit cards into pairs and runs on a wooden research table; transparent probability beads show how many unseen cards could complete the chosen botanical collection.",
+    "expansion": "issue-3"
+  },
+  {
+    "id": "BC-20",
+    "title": "Sum Garden",
+    "genre": "Domino placement with regional constraints",
+    "lesson": "Addition, inequalities, constraint propagation",
+    "cx": "2",
+    "wave": null,
+    "original": false,
+    "ages": "7+",
+    "scene": "Place two-ended seed tiles into garden beds whose carved stone signs show a target dot count or a same-number rule; shaped borders distinguish each region independently of color.",
+    "expansion": "issue-3"
   }
 ]

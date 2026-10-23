@@ -1,6 +1,6 @@
 # Nature and care — visual concepts
 
-[All collections](README.md) · 17 ideas · four full-resolution views per idea.
+[All collections](README.md) · 18 ideas · four full-resolution core views per idea, with flat storybook and painted anime alternatives on the original illustrated games.
 
 Open a game page to compare the four views, the learning objective, the prototype scope and the estimated plan. Cx follows the [complexity ladder](../game-ideas.md#complexity-ladder); days and the toddler learnability rating (1–5) come from the [development plan](../development-plan.md).
 
@@ -23,3 +23,4 @@ Open a game page to compare the four views, the learning objective, the prototyp
 | [![Clean Little World gameplay thumbnail](art/nc-15/thumbnail.webp)](pages/nc-15.md) | [Clean Little World](pages/nc-15.md) (NC-15) | Cleaning simulator                         | 3   | 26.3 | 4       |
 | [![Terrarium Journal gameplay thumbnail](art/nc-16/thumbnail.webp)](pages/nc-16.md)  | [Terrarium Journal](pages/nc-16.md) (NC-16)  | Creature collection and care               | 3   | 39.9 | 3       |
 | [![Magnet Fishing Day gameplay thumbnail](art/nc-17/thumbnail.webp)](pages/nc-17.md) | [Magnet Fishing Day](pages/nc-17.md) (NC-17) | Fishing-style cleanup                      | 3   | 34.5 | 3       |
+| [![Tidepool Sizes gameplay thumbnail](art/nc-18/thumbnail.webp)](pages/nc-18.md)     | [Tidepool Sizes](pages/nc-18.md) (NC-18)     | Growth-and-navigation arcade               | 3   | 30.5 | 1       |

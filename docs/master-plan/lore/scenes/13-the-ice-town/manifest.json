@@ -1,0 +1,44 @@
+{
+  "id": "13-the-ice-town",
+  "number": 13,
+  "title": "The ice town",
+  "world": "Shacados",
+  "kind": "ice",
+  "seed": 2731,
+  "night": true,
+  "ages": 10,
+  "pilot": "scenery-pilots.md#13-the-ice-town",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [1280, 720],
+  "triangles": 26192,
+  "files": {
+    "scene.json": {
+      "bytes": 2843425,
+      "sha256": "d2aeb2c7bb37daefae1b4fa222e16f147e00b6bae1e7e200887d0d734b2a2e43"
+    },
+    "environment.blend": {
+      "bytes": 9916228,
+      "sha256": "5a58159c7bacba084a748b7d0ed3f6e243ecff5af273e3454f1fe6662aa87b88"
+    },
+    "poster.png": {
+      "bytes": 1160007,
+      "sha256": "ed24281711a814ef2a5c665cac2d46d383bec38b1020ba50c76afb05417886fe"
+    },
+    "poster.webp": {
+      "bytes": 57140,
+      "sha256": "edff02c43042e436784ec35b77d14c55e213abbd6d10649a7dc2efa94da27f70"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

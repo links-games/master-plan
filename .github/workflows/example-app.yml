@@ -4,6 +4,13 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
     paths:
+      - 'examples/lore-scenes/**'
+      - 'experiments/encode-lore-scenes.py'
+      - 'experiments/install-lore-blender.sh'
+      - 'experiments/verify-master-plan.mjs'
+      - 'experiments/audit-website-links.mjs'
+      - 'experiments/serve-master-plan.mjs'
+      - 'scripts/validate-scenes.mjs'
       - 'examples/universal-app/**'
       - 'src/**'
       - 'package.json'
@@ -20,6 +27,13 @@ on:
     branches:
       - main
     paths:
+      - 'examples/lore-scenes/**'
+      - 'experiments/encode-lore-scenes.py'
+      - 'experiments/install-lore-blender.sh'
+      - 'experiments/verify-master-plan.mjs'
+      - 'experiments/audit-website-links.mjs'
+      - 'experiments/serve-master-plan.mjs'
+      - 'scripts/validate-scenes.mjs'
       - 'examples/universal-app/**'
       - 'src/**'
       - 'package.json'
@@ -33,6 +47,12 @@ on:
       - 'scripts/build-development-plan.mjs'
       - '.github/workflows/example-app.yml'
   workflow_dispatch:
+    inputs:
+      update_visual_baselines:
+        description: Capture candidate website baselines for review
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: read
@@ -105,6 +125,54 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: _site
+
+  website-browser:
+    name: Verify master-plan website
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    container:
+      image: mcr.microsoft.com/playwright@sha256:b0ab6f3cb99aa7803adbc14d9027ec1785fc6e433b97e134e0f8fe61683b6b53 # v1.59.1-noble
+    concurrency:
+      group: check-${{ github.workflow }}-${{ github.ref }}-website-browser
+      cancel-in-progress: true
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: /ms-playwright
+      UPDATE_VISUAL_BASELINES: ${{ github.event_name == 'workflow_dispatch' && inputs.update_visual_baselines }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24.x'
+      - name: Install isolated browser tooling
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+        run: npm install --prefix /tmp/master-plan-browser --ignore-scripts --no-audit --no-fund playwright@1.59.1 # zizmor: ignore[adhoc-packages]
+      - name: Verify artwork, responsive layouts, visual baselines and 3D
+        shell: bash
+        run: |
+          node scripts/build-site.mjs --out _site
+          node experiments/audit-website-links.mjs _site
+          mkdir -p ci-logs/browser
+          node experiments/serve-master-plan.mjs _site > ci-logs/browser/server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          if [ "$UPDATE_VISUAL_BASELINES" = 'true' ]; then
+            node experiments/verify-master-plan.mjs --update 2>&1 | tee ci-logs/browser/verification.log
+          else
+            node experiments/verify-master-plan.mjs 2>&1 | tee ci-logs/browser/verification.log
+          fi
+      - name: Upload browser verification artifacts
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: master-plan-browser
+          path: |
+            ci-logs/browser/
+            docs/screenshots/issue-3/after-*.png
+          if-no-files-found: warn
+          retention-days: 7
 
   # Requires Settings → Pages → Source = GitHub Actions to be set once
   # in the repository before this job can succeed. See README → "Deploying
@@ -274,7 +342,7 @@ jobs:
       cancel-in-progress: false
     if: |
       (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
-      github.event_name == 'workflow_dispatch'
+      (github.event_name == 'workflow_dispatch' && !inputs.update_visual_baselines)
     permissions:
       contents: write
     env:
@@ -384,6 +452,7 @@ jobs:
       !cancelled()
     needs:
       - web-build
+      - website-browser
       - pages-deploy
       - desktop-package
       - android-build

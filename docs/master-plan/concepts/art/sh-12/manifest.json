@@ -1,0 +1,57 @@
+{
+  "gameId": "SH-12",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:31:04.193242+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f54744c7cae5ab598ac3a5c47da9ef3aef61ed9cb739fc31d754d10f6a83d69f",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution original educational game concept. Request 2048x2048 pixels or the highest native resolution available.\nMandatory style: flat 2D storybook game illustration. Draw a very simple graphic screen print with thick charcoal ink contours and only six solid spot colors. Broad flat shapes, almost no texture, no gradients, no realistic modeling. Absolutely no 3D rendering, photography, cinematic lighting, detailed scenery, glossy shading or depth of field. The result should look like a small set of carefully drawn paper shapes, not a painted movie frame.\nGame: Ember Watch (SH-12). Mechanic: Firebreak strategy and replanting puzzle.\nShow this exact playable interaction, with large readable pieces: A grid map of the Last Woods seen from above, with a thin line of smoke creeping in from a slag heap. The player taps big tiles to clear firebreaks, sends a bucket line from the stream, then plants saplings in the scorched squares.\nLearning objective: How fires spread, firebreaks, forest regrowth.\nShacados setting: a small, simplified backdrop of soot-gray industrial silhouettes. Rust, mustard, ash, sick green, one lamp-orange light and one small green plant. Humanlike people in patched work clothes and scarves, dignified and hopeful. Technology from roughly 1890–1960. Keep people secondary to the board or activity. Leave generous quiet space around the pieces.\nOne complete original composition. No collage, panels, written title, logo, watermark, shop, advertising, weapons, gore or cruelty. Use shape and pattern as well as color. Concept art, not a validated scientific diagram.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:54:23.426365+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "3b9d40be37cf4ab060b96a101af97d8472b6184bc77a65065baa0c447a6ed1f8",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Ember Watch (SH-12). Genre/mechanic: Firebreak strategy and replanting puzzle.\nPrimary scene and action: A grid map of the Last Woods seen from above, with a thin line of smoke creeping in from a slag heap. The player taps big tiles to clear firebreaks, sends a bucket line from the stream, then plants saplings in the scorched squares.\nThis view: The Last Woods at the edge of a coal district: a valley of birches and pines, thin but alive, ringed by smoking slag heaps. A hot cinder has rolled into dry grass at the valley mouth, and gray smoke drifts low. Downhill, a stream still runs clear over stones. A watch hut's lantern glows lamp orange, and a young fern grows by its door.\nLearning objective expressed by the actual interaction: How fires spread, firebreaks, forest regrowth.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:00:24.798544+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "c34b5a08d7bdc4e5796c8e74ded65f5a605df51f0d8581c8f1a9cace4e34e39a",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Ember Watch (SH-12). Genre/mechanic: Firebreak strategy and replanting puzzle.\nPrimary scene and action: A grid map of the Last Woods seen from above, with a thin line of smoke creeping in from a slag heap. The player taps big tiles to clear firebreaks, sends a bucket line from the stream, then plants saplings in the scorched squares.\nThis view: Sela and the valley watchers in patched wool and canvas, damp scarves over their faces and goggles on. Children pass buckets hand to hand from the stream while an elder rakes leaves off a path. Tin buckets, shovels, wet sacks, a bell on a post and seedlings in tin cans. Rust, ash, soot and sick green, with one warm lantern and no flames near people.\nLearning objective expressed by the actual interaction: How fires spread, firebreaks, forest regrowth.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:00:27.779064+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "70a7c554fa50fe5536c69108e0f7a374f8a30fad9be0c43307c1dd0e02e330eb",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Ember Watch (SH-12). Genre/mechanic: Firebreak strategy and replanting puzzle.\nPrimary scene and action: A grid map of the Last Woods seen from above, with a thin line of smoke creeping in from a slag heap. The player taps big tiles to clear firebreaks, sends a bucket line from the stream, then plants saplings in the scorched squares.\nThis view: After each dry season the player replants: hardy grasses first, then birches, then slow oaks from Sela's top shelf. Scorched tiles turn green over the years. New valleys join the watch, and the player builds stone firebreaks and small ponds. The final view shows the valley from a ridge, green creeping up an old slag heap and a hawk circling above.\nLearning objective expressed by the actual interaction: How fires spread, firebreaks, forest regrowth.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

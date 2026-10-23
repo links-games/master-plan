@@ -168,5 +168,17 @@
     "wave": null,
     "original": false,
     "scene": "Lower a magnet from a small dock to retrieve metal litter while fish swim safely past."
+  },
+  {
+    "id": "NC-18",
+    "title": "Tidepool Sizes",
+    "genre": "Growth-and-navigation arcade",
+    "lesson": "Scale, food webs, conservation",
+    "cx": "3",
+    "wave": null,
+    "original": false,
+    "ages": "6+",
+    "scene": "Guide a translucent round microbe through a magnified tidepool, gathering floating nutrient beads while larger organisms pass peacefully; a scale bar compares its changing diameter.",
+    "expansion": "issue-3"
   }
 ]

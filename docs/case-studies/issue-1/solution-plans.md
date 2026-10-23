@@ -14,6 +14,11 @@ gives:
 Versions, licenses, prices and sources for every library and service named
 here are in the [research data](README.md#data) (snapshot 2026-10-15).
 
+This records issue #1's original delivery. Its 300-game and 216-image-catalog
+counts are historical. [Issue #3](../links-games-issue-3/README.md) expands the
+current catalog to 310 fully illustrated games and supplies the previously
+pending 84 concepts, 32 loading backgrounds and 22 reproducible 3D scenes.
+
 ## Summary
 
 | ID      | Requirement (short)                                                          | Solution in one line                                                                           | Status in this PR          |
@@ -807,5 +812,7 @@ Requirements R36–R49 come from the maintainer's
 - **Solution:** the 84 new ideas (toddler, preschool, Raya life, Shacados)
   have four image descriptions and four generation prompts each, in the same
   job format as the existing art, plus 32 loading-screen prompts. Their pages
-  say "art pending" and link to the prompts, so an image agent can generate
-  them later without changing the text.
+  originally said "art pending" and linked to the prompts. This original
+  delivery boundary is resolved by [issue #3](../links-games-issue-3/README.md):
+  all 84 now have four standalone illustrations in distinct visual styles,
+  and all 32 loading backgrounds are generated and displayed on the website.

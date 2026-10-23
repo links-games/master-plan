@@ -1,0 +1,44 @@
+{
+  "id": "15-the-last-woods",
+  "number": 15,
+  "title": "The Last Woods",
+  "world": "Shacados",
+  "kind": "woods",
+  "seed": 2733,
+  "night": false,
+  "ages": 10,
+  "pilot": "scenery-pilots.md#15-the-last-woods",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [1280, 720],
+  "triangles": 16856,
+  "files": {
+    "scene.json": {
+      "bytes": 1802543,
+      "sha256": "23d8ec3c41084d8136df08ceaff1ca4f9c94055a576e0bbce2f509e8448eb72d"
+    },
+    "environment.blend": {
+      "bytes": 10200941,
+      "sha256": "443529657d684fac9e287ba01964e8cd7652bf3818951421adf1ba433f7de911"
+    },
+    "poster.png": {
+      "bytes": 1748871,
+      "sha256": "44469c921d0aa5e07b12b184334c0639de8db429faf0a87b204ba4cc835d1f6d"
+    },
+    "poster.webp": {
+      "bytes": 217598,
+      "sha256": "5685fa02dfa560cf53f297fcf26b4cb6dd7deca6af37523ab271b3622a6460ce"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

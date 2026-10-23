@@ -7,7 +7,7 @@ estimates in [`concepts/estimates/`](concepts/estimates/library.json); do
 not edit by hand. The same data is browsable and filterable on the
 [website](README.md#website).
 
-Every one of the **300 game concepts** has an estimated plan: the
+Every one of the **310 game concepts** has an estimated plan: the
 algorithms it needs (from a shared library of 82),
 its game-specific code size, its assets, the youngest age it suits and how
 likely a toddler is to learn to play it. Each game page shows its own plan
@@ -116,17 +116,17 @@ Games rated 4–5 on the rubric, easiest to develop first
 | Collection                                | Games | Median days | Toddler-friendly (4–5) | Easiest game                                     |
 | ----------------------------------------- | ----- | ----------- | ---------------------- | ------------------------------------------------ |
 | [Puzzles](concepts/pz.md)                 | 30    | 24.1        | 0                      | [Slide Home](concepts/pages/pz-07.md)            |
-| [Words and languages](concepts/wl.md)     | 18    | 24.7        | 0                      | [Word Search Garden](concepts/pages/wl-04.md)    |
+| [Words and languages](concepts/wl.md)     | 20    | 25.1        | 0                      | [Word Search Garden](concepts/pages/wl-04.md)    |
 | [Math and logic](concepts/ml.md)          | 20    | 23.6        | 0                      | [Tower of Hanoi Acorns](concepts/pages/ml-10.md) |
-| [Board and card games](concepts/bc.md)    | 18    | 29.2        | 0                      | [Dominoes](concepts/pages/bc-04.md)              |
+| [Board and card games](concepts/bc.md)    | 20    | 26.1        | 0                      | [Dominoes](concepts/pages/bc-04.md)              |
 | [Science lab](concepts/sl.md)             | 20    | 30.1        | 2                      | [Light and Color](concepts/pages/sl-01.md)       |
-| [Nature and care](concepts/nc.md)         | 17    | 32.7        | 6                      | [Healthy Habits](concepts/pages/nc-01.md)        |
-| [Build and create](concepts/bd.md)        | 14    | 31.7        | 2                      | [Pixel Studio](concepts/pages/bd-02.md)          |
+| [Nature and care](concepts/nc.md)         | 18    | 32.7        | 6                      | [Healthy Habits](concepts/pages/nc-01.md)        |
+| [Build and create](concepts/bd.md)        | 15    | 29.5        | 2                      | [Pixel Studio](concepts/pages/bd-02.md)          |
 | [Music and rhythm](concepts/mr.md)        | 10    | 32.4        | 1                      | [Echo Links](concepts/pages/mr-01.md)            |
-| [Sports and motion](concepts/sm.md)       | 17    | 30.7        | 0                      | [Juggle](concepts/pages/sm-01.md)                |
+| [Sports and motion](concepts/sm.md)       | 18    | 30.7        | 0                      | [Juggle](concepts/pages/sm-01.md)                |
 | [Space and physics](concepts/sp.md)       | 17    | 42.5        | 0                      | [Star Names](concepts/pages/sp-01.md)            |
-| [Stories and adventures](concepts/sa.md)  | 15    | 45.1        | 0                      | [Choose Your Path](concepts/pages/sa-01.md)      |
-| [Strategy and simulation](concepts/ss.md) | 20    | 51.1        | 0                      | [Idle Science](concepts/pages/ss-01.md)          |
+| [Stories and adventures](concepts/sa.md)  | 17    | 44.4        | 0                      | [Lantern Seekers](concepts/pages/sa-17.md)       |
+| [Strategy and simulation](concepts/ss.md) | 21    | 50.4        | 0                      | [Idle Science](concepts/pages/ss-01.md)          |
 | [Toddlers (1–3)](concepts/td.md)          | 30    | 14.3        | 22                     | [Bubble Meadow](concepts/pages/td-01.md)         |
 | [Preschool (3–5)](concepts/pk.md)         | 22    | 23.5        | 2                      | [Mixing Puddles](concepts/pages/pk-13.md)        |
 | [Raya life](concepts/ry.md)               | 16    | 33.8        | 0                      | [One Night Apple](concepts/pages/ry-02.md)       |
@@ -236,206 +236,216 @@ Games rated 4–5 on the rubric, easiest to develop first
 | 98  | [Leaf Hearts](concepts/pages/bc-16.md)              | BC-16 | Board and card games    | 8+  | 1       | 1540 | 65      | 23.7  | 3    |
 | 99  | [Postie's Treasure](concepts/pages/ml-06.md)        | ML-06 | Math and logic          | 7+  | 1       | 1480 | 69      | 23.8  | 3    |
 | 100 | [Cage Sums](concepts/pages/ml-09.md)                | ML-09 | Math and logic          | 8+  | 1       | 1580 | 64      | 23.8  | 3    |
-| 101 | [Curling Friends](concepts/pages/sm-04.md)          | SM-04 | Sports and motion       | 4+  | 2       | 1230 | 83      | 24    | 2    |
-| 102 | [Pixel Itsy](concepts/pages/pz-11.md)               | PZ-11 | Puzzles                 | 7+  | 1       | 1050 | 92      | 24.1  | 3    |
-| 103 | [Bicycle Jam](concepts/pages/pz-25.md)              | PZ-25 | Puzzles                 | 5+  | 2       | 1000 | 95      | 24.2  | 3    |
-| 104 | [Omi Colors](concepts/pages/bd-01.md)               | BD-01 | Build and create        | 3+  | 4       | 680  | 112     | 24.3  | 2    |
-| 105 | [Screw Garden](concepts/pages/pz-16.md)             | PZ-16 | Puzzles                 | 4+  | 3       | 930  | 99      | 24.3  | 2    |
-| 106 | [Link It!](concepts/pages/pz-10.md)                 | PZ-10 | Puzzles                 | 4+  | 2       | 1030 | 94      | 24.3  | 3    |
-| 107 | [One Tree, Four Seasons](concepts/pages/pk-22.md)   | PK-22 | Preschool (3–5)         | 3+  | 3       | 720  | 111     | 24.4  | 1    |
-| 108 | [Habitat Merge](concepts/pages/pz-24.md)            | PZ-24 | Puzzles                 | 5+  | 2       | 990  | 97      | 24.4  | 1    |
-| 109 | [Acorn Tower](concepts/pages/sl-03.md)              | SL-03 | Science lab             | 3+  | 3       | 1230 | 85      | 24.4  | 2    |
-| 110 | [Hoops](concepts/pages/sm-05.md)                    | SM-05 | Sports and motion       | 4+  | 2       | 1200 | 87      | 24.4  | 2    |
-| 111 | [Honeycomb Words](concepts/pages/wl-08.md)          | WL-08 | Words and languages     | 8+  | 1       | 1130 | 90      | 24.4  | 3    |
-| 112 | [Pipe Garden](concepts/pages/pz-13.md)              | PZ-13 | Puzzles                 | 4+  | 2       | 1330 | 81      | 24.6  | 3    |
-| 113 | [Wet Sand Letters](concepts/pages/pk-01.md)         | PK-01 | Preschool (3–5)         | 4+  | 2       | 850  | 106     | 24.7  | 2    |
-| 114 | [Word Ladder Grove](concepts/pages/wl-16.md)        | WL-16 | Words and languages     | 8+  | 1       | 1000 | 98      | 24.7  | 2    |
-| 115 | [Pebble Beach Picnic](concepts/pages/pk-16.md)      | PK-16 | Preschool (3–5)         | 3+  | 4       | 670  | 116     | 24.8  | 1    |
-| 116 | [Long Stick, Heavy Stone](concepts/pages/pk-21.md)  | PK-21 | Preschool (3–5)         | 3+  | 3       | 680  | 115     | 24.8  | 1    |
-| 117 | [Origami Folds](concepts/pages/bd-04.md)            | BD-04 | Build and create        | 5+  | 2       | 1430 | 77      | 24.8  | 3    |
-| 118 | [Harvest Drop](concepts/pages/pz-23.md)             | PZ-23 | Puzzles                 | 4+  | 3       | 1330 | 83      | 24.9  | 2    |
-| 119 | [Island Bridges](concepts/pages/ml-18.md)           | ML-18 | Math and logic          | 7+  | 1       | 1730 | 63      | 24.9  | 3    |
-| 120 | [Sound Waves](concepts/pages/sl-13.md)              | SL-13 | Science lab             | 3+  | 3       | 1380 | 82      | 25.1  | 3    |
-| 121 | [Anagram Bakery](concepts/pages/wl-07.md)           | WL-07 | Words and languages     | 7+  | 1       | 840  | 110     | 25.3  | 1    |
-| 122 | [Home Run Race](concepts/pages/bc-07.md)            | BC-07 | Board and card games    | 4+  | 2       | 1480 | 78      | 25.3  | 3    |
-| 123 | [Pollinator Path](concepts/pages/nc-06.md)          | NC-06 | Nature and care         | 4+  | 3       | 1050 | 101     | 25.6  | 2    |
-| 124 | [Density Tank](concepts/pages/sl-05.md)             | SL-05 | Science lab             | 3+  | 4       | 1270 | 91      | 25.7  | 2    |
-| 125 | [Element Cards](concepts/pages/sl-02.md)            | SL-02 | Science lab             | 6+  | 1       | 930  | 108     | 25.8  | 1    |
-| 126 | [Sets and Runs](concepts/pages/bc-10.md)            | BC-10 | Board and card games    | 7+  | 1       | 1760 | 67      | 25.8  | 3    |
-| 127 | [Solitaire](concepts/pages/bc-08.md)                | BC-08 | Board and card games    | 6+  | 1       | 1760 | 69      | 26.1  | 3    |
-| 128 | [Parcel Conveyor](concepts/pages/pz-27.md)          | PZ-27 | Puzzles                 | 5+  | 2       | 1200 | 97      | 26.2  | 3    |
-| 129 | [Clean Little World](concepts/pages/nc-15.md)       | NC-15 | Nature and care         | 2+  | 4       | 1180 | 99      | 26.3  | 2    |
-| 130 | [Fraction Kitchen](concepts/pages/ml-07.md)         | ML-07 | Math and logic          | 5+  | 2       | 960  | 111     | 26.5  | 1    |
-| 131 | [Billiard Links](concepts/pages/sm-06.md)           | SM-06 | Sports and motion       | 6+  | 1       | 1500 | 84      | 26.5  | 2    |
-| 132 | [Body Explorer](concepts/pages/sl-04.md)            | SL-04 | Science lab             | 4+  | 3       | 930  | 113     | 26.6  | 1    |
-| 133 | [Picture Phrase](concepts/pages/wl-18.md)           | WL-18 | Words and languages     | 7+  | 1       | 680  | 129     | 27.2  | 1    |
-| 134 | [Prism Breaker](concepts/pages/sl-19.md)            | SL-19 | Science lab             | 5+  | 2       | 1250 | 100     | 27.2  | 2    |
-| 135 | [Optics Bench](concepts/pages/sl-11.md)             | SL-11 | Science lab             | 6+  | 1       | 1450 | 91      | 27.2  | 3    |
-| 136 | [Mini Golf](concepts/pages/sm-03.md)                | SM-03 | Sports and motion       | 4+  | 2       | 1400 | 94      | 27.3  | 2    |
-| 137 | [Arrow Stones for Orbi](concepts/pages/pk-19.md)    | PK-19 | Preschool (3–5)         | 4+  | 2       | 1150 | 106     | 27.3  | 3    |
-| 138 | [Crossword Links](concepts/pages/wl-09.md)          | WL-09 | Words and languages     | 7+  | 1       | 950  | 117     | 27.4  | 1    |
-| 139 | [Ocean Cleanup](concepts/pages/nc-05.md)            | NC-05 | Nature and care         | 3+  | 4       | 1080 | 112     | 27.7  | 3    |
-| 140 | [Code Words](concepts/pages/wl-13.md)               | WL-13 | Words and languages     | 8+  | 1       | 1280 | 103     | 27.8  | 1    |
-| 141 | [Pim and Pom Night](concepts/pages/ry-14.md)        | RY-14 | Raya life               | 6+  | 1       | 1170 | 109     | 27.9  | 1    |
-| 142 | [Ribbon Rescue](concepts/pages/pz-29.md)            | PZ-29 | Puzzles                 | 5+  | 2       | 1500 | 92      | 27.9  | 3    |
-| 143 | [Research Backpack](concepts/pages/bd-13.md)        | BD-13 | Build and create        | 5+  | 2       | 1150 | 110     | 28    | 3    |
-| 144 | [Jars for After](concepts/pages/sh-03.md)           | SH-03 | Shacados                | 10+ | 1       | 940  | 122     | 28.2  | 1    |
-| 145 | [Gravity Turn](concepts/pages/pz-18.md)             | PZ-18 | Puzzles                 | 5+  | 2       | 1080 | 116     | 28.3  | 2    |
-| 146 | [Seed Sling](concepts/pages/sl-08.md)               | SL-08 | Science lab             | 4+  | 2       | 1300 | 106     | 28.5  | 2    |
-| 147 | [Rhythm Tap](concepts/pages/mr-04.md)               | MR-04 | Music and rhythm        | 5+  | 2       | 1180 | 113     | 28.6  | 2    |
-| 148 | [Rhyme Time](concepts/pages/wl-10.md)               | WL-10 | Words and languages     | 4+  | 3       | 930  | 125     | 28.6  | 2    |
-| 149 | [Crossing Friends](concepts/pages/sm-15.md)         | SM-15 | Sports and motion       | 4+  | 2       | 1260 | 109     | 28.7  | 2    |
-| 150 | [Shuttle Queue](concepts/pages/pz-26.md)            | PZ-26 | Puzzles                 | 5+  | 2       | 1380 | 103     | 28.7  | 3    |
-| 151 | [Sand, Charcoal, Cloth](concepts/pages/sh-05.md)    | SH-05 | Shacados                | 10+ | 1       | 1100 | 118     | 28.8  | 1    |
-| 152 | [Piano Steps](concepts/pages/mr-03.md)              | MR-03 | Music and rhythm        | 6+  | 1       | 1030 | 121     | 28.8  | 2    |
-| 153 | [Magnet Maze](concepts/pages/sl-06.md)              | SL-06 | Science lab             | 5+  | 2       | 1500 | 98      | 28.8  | 2    |
-| 154 | [Kite Day](concepts/pages/sm-08.md)                 | SM-08 | Sports and motion       | 3+  | 3       | 1600 | 93      | 28.8  | 3    |
-| 155 | [Clay and Symmetry](concepts/pages/bd-14.md)        | BD-14 | Build and create        | 4+  | 3       | 1500 | 100     | 29.1  | 2    |
-| 156 | [Acorn Backgammon](concepts/pages/bc-15.md)         | BC-15 | Board and card games    | 8+  | 1       | 2030 | 74      | 29.2  | 3    |
-| 157 | [Four Nest Sorting](concepts/pages/pk-07.md)        | PK-07 | Preschool (3–5)         | 4+  | 2       | 830  | 135     | 29.3  | 1    |
-| 158 | [Tiny Triples](concepts/pages/pz-21.md)             | PZ-21 | Puzzles                 | 4+  | 3       | 860  | 133     | 29.3  | 1    |
-| 159 | [Animation Studio](concepts/pages/bd-08.md)         | BD-08 | Build and create        | 5+  | 2       | 1400 | 106     | 29.3  | 2    |
-| 160 | [Type the Rain](concepts/pages/wl-12.md)            | WL-12 | Words and languages     | 7+  | 1       | 1050 | 124     | 29.4  | 1    |
-| 161 | [Costume Designer](concepts/pages/bd-03.md)         | BD-03 | Build and create        | 3+  | 4       | 700  | 142     | 29.5  | 1    |
-| 162 | [Raker's Dune](concepts/pages/sh-06.md)             | SH-06 | Shacados                | 10+ | 1       | 1050 | 126     | 29.7  | 2    |
-| 163 | [Choose Your Path](concepts/pages/sa-01.md)         | SA-01 | Stories and adventures  | 3+  | 3       | 880  | 135     | 29.8  | 2    |
-| 164 | [Tile Pairs](concepts/pages/bc-09.md)               | BC-09 | Board and card games    | 6+  | 1       | 1140 | 122     | 29.9  | 3    |
-| 165 | [Hex Bridges](concepts/pages/bc-11.md)              | BC-11 | Board and card games    | 6+  | 1       | 2030 | 78      | 29.9  | 3    |
-| 166 | [Lamplight Lessons](concepts/pages/sh-07.md)        | SH-07 | Shacados                | 10+ | 1       | 1270 | 117     | 30.1  | 2    |
-| 167 | [Circuit Garden](concepts/pages/sl-10.md)           | SL-10 | Science lab             | 5+  | 2       | 1500 | 106     | 30.1  | 3    |
-| 168 | [Momentum Pinball](concepts/pages/sl-18.md)         | SL-18 | Science lab             | 4+  | 2       | 1530 | 106     | 30.4  | 2    |
-| 169 | [Two Yeses](concepts/pages/ry-07.md)                | RY-07 | Raya life               | 10+ | 1       | 1080 | 130     | 30.7  | 2    |
-| 170 | [Paper Planes](concepts/pages/sm-07.md)             | SM-07 | Sports and motion       | 4+  | 3       | 1630 | 103     | 30.7  | 3    |
-| 171 | [Ski Slalom](concepts/pages/sm-09.md)               | SM-09 | Sports and motion       | 5+  | 2       | 1800 | 94      | 30.7  | 3    |
-| 172 | [Kindness Quests](concepts/pages/sa-02.md)          | SA-02 | Stories and adventures  | 4+  | 3       | 1150 | 127     | 30.8  | 2    |
-| 173 | [Blossom Swap](concepts/pages/pz-19.md)             | PZ-19 | Puzzles                 | 5+  | 2       | 1280 | 122     | 31    | 2    |
-| 174 | [Story Stones](concepts/pages/pk-15.md)             | PK-15 | Preschool (3–5)         | 4+  | 2       | 650  | 155     | 31.3  | 1    |
-| 175 | [Bubble Canopy](concepts/pages/pz-20.md)            | PZ-20 | Puzzles                 | 5+  | 2       | 1210 | 128     | 31.4  | 1    |
-| 176 | [Lunar Lander](concepts/pages/sp-04.md)             | SP-04 | Space and physics       | 7+  | 1       | 1550 | 112     | 31.5  | 3    |
-| 177 | [Robot Programmer](concepts/pages/bd-05.md)         | BD-05 | Build and create        | 5+  | 2       | 1300 | 125     | 31.7  | 1    |
-| 178 | [Plush Patch Clinic](concepts/pages/pk-17.md)       | PK-17 | Preschool (3–5)         | 3+  | 3       | 830  | 150     | 31.8  | 1    |
-| 179 | [Sharing Circle](concepts/pages/pk-18.md)           | PK-18 | Preschool (3–5)         | 3+  | 3       | 810  | 151     | 31.8  | 1    |
-| 180 | [Shortest Path Postie](concepts/pages/ml-16.md)     | ML-16 | Math and logic          | 7+  | 1       | 1730 | 104     | 31.8  | 3    |
-| 181 | [Detective Grid](concepts/pages/ml-13.md)           | ML-13 | Math and logic          | 7+  | 1       | 1330 | 125     | 31.9  | 3    |
-| 182 | [Balance Friends](concepts/pages/ml-08.md)          | ML-08 | Math and logic          | 5+  | 2       | 1450 | 120     | 32.1  | 3    |
-| 183 | [Garden Grow](concepts/pages/nc-09.md)              | NC-09 | Nature and care         | 3+  | 3       | 1350 | 126     | 32.3  | 1    |
-| 184 | [Marble Run](concepts/pages/bd-07.md)               | BD-07 | Build and create        | 4+  | 3       | 1550 | 117     | 32.4  | 2    |
-| 185 | [Sing Along](concepts/pages/mr-08.md)               | MR-08 | Music and rhythm        | 5+  | 2       | 1350 | 127     | 32.4  | 3    |
-| 186 | [Melody Garden](concepts/pages/mr-06.md)            | MR-06 | Music and rhythm        | 4+  | 3       | 1550 | 117     | 32.5  | 3    |
-| 187 | [Bird Watch](concepts/pages/nc-04.md)               | NC-04 | Nature and care         | 3+  | 3       | 1380 | 126     | 32.5  | 3    |
-| 188 | [Ring Tuner](concepts/pages/ry-04.md)               | RY-04 | Raya life               | 10+ | 1       | 1550 | 118     | 32.5  | 3    |
-| 189 | [Animal Vet](concepts/pages/nc-07.md)               | NC-07 | Nature and care         | 3+  | 4       | 1180 | 137     | 32.7  | 1    |
-| 190 | [Room for Everyone](concepts/pages/bd-12.md)        | BD-12 | Build and create        | 4+  | 3       | 1050 | 144     | 32.7  | 2    |
-| 191 | [Compass Garden](concepts/pages/ml-15.md)           | ML-15 | Math and logic          | 9+  | 1       | 2030 | 95      | 32.8  | 3    |
-| 192 | [Big Piece Pictures](concepts/pages/pk-09.md)       | PK-09 | Preschool (3–5)         | 3+  | 3       | 850  | 155     | 32.9  | 2    |
-| 193 | [Windows on Raya](concepts/pages/ry-13.md)          | RY-13 | Raya life               | 3+  | 3       | 850  | 156     | 33    | 1    |
-| 194 | [Push & Think](concepts/pages/pz-17.md)             | PZ-17 | Puzzles                 | 5+  | 2       | 1250 | 137     | 33.2  | 3    |
-| 195 | [Atom Merge](concepts/pages/sl-09.md)               | SL-09 | Science lab             | 5+  | 2       | 1580 | 122     | 33.5  | 3    |
-| 196 | [Rela's Board Club](concepts/pages/bc-05.md)        | BC-05 | Board and card games    | 5+  | 2       | 2030 | 100     | 33.6  | 3    |
-| 197 | [Watergate Pins](concepts/pages/sl-20.md)           | SL-20 | Science lab             | 4+  | 3       | 1780 | 112     | 33.6  | 4    |
-| 198 | [Acorn's Long Seasons](concepts/pages/ry-11.md)     | RY-11 | Raya life               | 6+  | 1       | 1370 | 135     | 33.8  | 2    |
-| 199 | [Table Tennis](concepts/pages/sm-10.md)             | SM-10 | Sports and motion       | 7+  | 1       | 1980 | 104     | 33.8  | 2    |
-| 200 | [Keep It Up](concepts/pages/sm-16.md)               | SM-16 | Sports and motion       | 4+  | 2       | 1780 | 115     | 33.9  | 3    |
-| 201 | [Thought Postcards](concepts/pages/ry-05.md)        | RY-05 | Raya life               | 6+  | 1       | 1150 | 147     | 34    | 2    |
-| 202 | [Rope Friends](concepts/pages/sl-07.md)             | SL-07 | Science lab             | 4+  | 2       | 1680 | 122     | 34.3  | 3    |
-| 203 | [Deflect!](concepts/pages/sp-03.md)                 | SP-03 | Space and physics       | 8+  | 1       | 1580 | 127     | 34.3  | 4    |
-| 204 | [Map Maker](concepts/pages/bd-06.md)                | BD-06 | Build and create        | 6+  | 1       | 1550 | 129     | 34.4  | 3    |
-| 205 | [Field Sketchbook](concepts/pages/ry-10.md)         | RY-10 | Raya life               | 6+  | 1       | 1380 | 138     | 34.4  | 3    |
-| 206 | [Magnet Fishing Day](concepts/pages/nc-17.md)       | NC-17 | Nature and care         | 3+  | 3       | 1820 | 116     | 34.5  | 3    |
-| 207 | [Weather Maker](concepts/pages/sl-14.md)            | SL-14 | Science lab             | 4+  | 3       | 1950 | 110     | 34.6  | 3    |
-| 208 | [Soft Hold](concepts/pages/ry-06.md)                | RY-06 | Raya life               | 6+  | 1       | 1230 | 147     | 34.8  | 2    |
-| 209 | [Railway Signals](concepts/pages/ss-19.md)          | SS-19 | Strategy and simulation | 5+  | 2       | 1530 | 133     | 34.8  | 2    |
-| 210 | [One Stove for the Block](concepts/pages/sh-04.md)  | SH-04 | Shacados                | 10+ | 1       | 1550 | 133     | 35.1  | 3    |
-| 211 | [Traffic Lights](concepts/pages/ss-03.md)           | SS-03 | Strategy and simulation | 5+  | 2       | 1530 | 135     | 35.3  | 3    |
-| 212 | [Brann's Red Chalk](concepts/pages/sh-10.md)        | SH-10 | Shacados                | 13+ | 1       | 1350 | 145     | 35.4  | 2    |
-| 213 | [Conductor](concepts/pages/mr-07.md)                | MR-07 | Music and rhythm        | 5+  | 2       | 1530 | 138     | 35.7  | 2    |
-| 214 | [Static on the Roof](concepts/pages/sh-02.md)       | SH-02 | Shacados                | 10+ | 1       | 1530 | 141     | 36.2  | 2    |
-| 215 | [Sand and Water](concepts/pages/sl-16.md)           | SL-16 | Science lab             | 3+  | 3       | 2900 | 73      | 36.3  | 4    |
-| 216 | [Beat Path](concepts/pages/mr-10.md)                | MR-10 | Music and rhythm        | 6+  | 1       | 1600 | 139     | 36.5  | 2    |
-| 217 | [Orbit Garden](concepts/pages/sp-05.md)             | SP-05 | Space and physics       | 5+  | 2       | 1900 | 125     | 36.6  | 4    |
-| 218 | [Dance Dialogue](concepts/pages/mr-09.md)           | MR-09 | Music and rhythm        | 5+  | 2       | 1480 | 146     | 36.7  | 2    |
-| 219 | [The Fair Ladle](concepts/pages/sh-08.md)           | SH-08 | Shacados                | 13+ | 1       | 1750 | 133     | 36.7  | 3    |
-| 220 | [Linky Run](concepts/pages/sm-02.md)                | SM-02 | Sports and motion       | 4+  | 2       | 1390 | 154     | 37.2  | 2    |
-| 221 | [Simple Machines](concepts/pages/sl-12.md)          | SL-12 | Science lab             | 5+  | 2       | 2050 | 124     | 37.7  | 3    |
-| 222 | [Debris Sweep](concepts/pages/sp-16.md)             | SP-16 | Space and physics       | 7+  | 1       | 1700 | 143     | 37.9  | 3    |
-| 223 | [Ember Watch](concepts/pages/sh-12.md)              | SH-12 | Shacados                | 10+ | 1       | 1780 | 139     | 37.9  | 4    |
-| 224 | [The Heir's Ledger](concepts/pages/sh-14.md)        | SH-14 | Shacados                | 13+ | 1       | 1850 | 136     | 38.1  | 2    |
-| 225 | [Tower Song Festival](concepts/pages/ry-15.md)      | RY-15 | Raya life               | 6+  | 1       | 1600 | 150     | 38.3  | 3    |
-| 226 | [Rooftop Routes](concepts/pages/sm-17.md)           | SM-17 | Sports and motion       | 6+  | 1       | 1800 | 141     | 38.5  | 3    |
-| 227 | [Community Kitchen](concepts/pages/nc-10.md)        | NC-10 | Nature and care         | 4+  | 3       | 1580 | 153     | 38.6  | 1    |
-| 228 | [Crown Nest](concepts/pages/ry-08.md)               | RY-08 | Raya life               | 8+  | 1       | 1720 | 146     | 38.6  | 2    |
-| 229 | [Lunch for All](concepts/pages/ss-17.md)            | SS-17 | Strategy and simulation | 4+  | 3       | 1250 | 173     | 39.2  | 1    |
-| 230 | [Garden Plots](concepts/pages/bc-12.md)             | BC-12 | Board and card games    | 6+  | 1       | 2530 | 109     | 39.3  | 3    |
-| 231 | [Signal Crew](concepts/pages/bc-17.md)              | BC-17 | Board and card games    | 9+  | 1       | 2310 | 122     | 39.6  | 3    |
-| 232 | [Terrarium Journal](concepts/pages/nc-16.md)        | NC-16 | Nature and care         | 3+  | 3       | 1660 | 156     | 39.9  | 3    |
-| 233 | [Archaeology Dig](concepts/pages/sa-06.md)          | SA-06 | Stories and adventures  | 5+  | 2       | 1720 | 157     | 40.5  | 2    |
-| 234 | [Evidence Circle](concepts/pages/sa-14.md)          | SA-14 | Stories and adventures  | 8+  | 1       | 1880 | 149     | 40.5  | 3    |
-| 235 | [Island Rescue](concepts/pages/bc-14.md)            | BC-14 | Board and card games    | 7+  | 1       | 2210 | 133     | 40.6  | 2    |
-| 236 | [Climbing](concepts/pages/sm-13.md)                 | SM-13 | Sports and motion       | 5+  | 2       | 2230 | 133     | 40.7  | 2    |
-| 237 | [Garden Guard](concepts/pages/ss-02.md)             | SS-02 | Strategy and simulation | 5+  | 2       | 1700 | 160     | 40.8  | 2    |
-| 238 | [Rain-Glass Garden](concepts/pages/sh-15.md)        | SH-15 | Shacados                | 10+ | 1       | 1970 | 147     | 40.9  | 3    |
-| 239 | [Level Maker](concepts/pages/bd-09.md)              | BD-09 | Build and create        | 6+  | 1       | 2050 | 144     | 41    | 3    |
-| 240 | [Bridge Builder](concepts/pages/sl-15.md)           | SL-15 | Science lab             | 7+  | 1       | 2500 | 122     | 41.1  | 2    |
-| 241 | [Valley Circle](concepts/pages/ry-16.md)            | RY-16 | Raya life               | 10+ | 1       | 1870 | 156     | 41.5  | 2    |
-| 242 | [Light-Lag Chess](concepts/pages/sp-08.md)          | SP-08 | Space and physics       | 10+ | 1       | 2350 | 132     | 41.5  | 3    |
-| 243 | [Proof Steps](concepts/pages/ml-17.md)              | ML-17 | Math and logic          | 10+ | 1       | 2750 | 112     | 41.6  | 3    |
-| 244 | [Story Dice](concepts/pages/wl-15.md)               | WL-15 | Words and languages     | 4+  | 2       | 1510 | 177     | 42.1  | 2    |
-| 245 | [Orbital Dock](concepts/pages/sp-15.md)             | SP-15 | Space and physics       | 8+  | 1       | 2350 | 137     | 42.3  | 3    |
-| 246 | [Little Detective](concepts/pages/sa-04.md)         | SA-04 | Stories and adventures  | 7+  | 1       | 1870 | 162     | 42.5  | 2    |
-| 247 | [Solar Sail](concepts/pages/sp-10.md)               | SP-10 | Space and physics       | 9+  | 1       | 2300 | 140     | 42.5  | 4    |
-| 248 | [Three Dead Radios](concepts/pages/sh-01.md)        | SH-01 | Shacados                | 10+ | 1       | 1730 | 169     | 42.6  | 3    |
-| 249 | [Kesh on the Ground](concepts/pages/sh-13.md)       | SH-13 | Shacados                | 13+ | 1       | 1750 | 173     | 43.4  | 2    |
-| 250 | [Map of Whispers](concepts/pages/sa-15.md)          | SA-15 | Stories and adventures  | 8+  | 1       | 2100 | 159     | 43.9  | 3    |
-| 251 | [Sailing](concepts/pages/sm-12.md)                  | SM-12 | Sports and motion       | 8+  | 1       | 2750 | 126     | 43.9  | 3    |
-| 252 | [Prime Sprites](concepts/pages/wl-14.md)            | WL-14 | Words and languages     | 5+  | 2       | 1600 | 186     | 44.3  | 2    |
-| 253 | [Escape Room Together](concepts/pages/sa-05.md)     | SA-05 | Stories and adventures  | 7+  | 1       | 2230 | 155     | 44.4  | 3    |
-| 254 | [Migration Map](concepts/pages/nc-12.md)            | NC-12 | Nature and care         | 7+  | 1       | 2370 | 149     | 44.6  | 3    |
-| 255 | [Linky Home](concepts/pages/nc-08.md)               | NC-08 | Nature and care         | 2+  | 4       | 1900 | 174     | 44.8  | 2    |
-| 256 | [Outbreak Stoppers](concepts/pages/ss-07.md)        | SS-07 | Strategy and simulation | 9+  | 1       | 2360 | 152     | 45    | 2    |
-| 257 | [Museum Night](concepts/pages/sa-03.md)             | SA-03 | Stories and adventures  | 6+  | 1       | 1880 | 177     | 45.1  | 2    |
-| 258 | [Chess Friends](concepts/pages/bc-13.md)            | BC-13 | Board and card games    | 6+  | 1       | 2830 | 135     | 46.1  | 3    |
-| 259 | [Messages Across the Dark](concepts/pages/sa-09.md) | SA-09 | Stories and adventures  | 10+ | 1       | 2500 | 159     | 47.3  | 3    |
-| 260 | [Time Travel Diary](concepts/pages/sa-08.md)        | SA-08 | Stories and adventures  | 9+  | 1       | 1750 | 197     | 47.4  | 2    |
-| 261 | [Energy Grid](concepts/pages/ss-04.md)              | SS-04 | Strategy and simulation | 8+  | 1       | 2570 | 157     | 47.6  | 3    |
-| 262 | [Ready Together](concepts/pages/ss-20.md)           | SS-20 | Strategy and simulation | 8+  | 1       | 2550 | 160     | 47.9  | 3    |
-| 263 | [Station Watch](concepts/pages/sp-06.md)            | SP-06 | Space and physics       | 9+  | 1       | 2700 | 157     | 48.6  | 4    |
-| 264 | [Aquarium Balance](concepts/pages/nc-13.md)         | NC-13 | Nature and care         | 6+  | 1       | 2650 | 160     | 48.7  | 4    |
-| 265 | [Water Commons](concepts/pages/ss-05.md)            | SS-05 | Strategy and simulation | 9+  | 1       | 2900 | 153     | 49.7  | 3    |
-| 266 | [Repair Cafe](concepts/pages/ss-18.md)              | SS-18 | Strategy and simulation | 7+  | 1       | 2550 | 175     | 50.4  | 3    |
-| 267 | [Kart Friends](concepts/pages/sm-11.md)             | SM-11 | Sports and motion       | 5+  | 2       | 2800 | 164     | 50.6  | 3    |
-| 268 | [Rover Geologist](concepts/pages/sp-17.md)          | SP-17 | Space and physics       | 7+  | 1       | 2820 | 165     | 50.9  | 4    |
-| 269 | [Food Web](concepts/pages/ss-08.md)                 | SS-08 | Strategy and simulation | 8+  | 1       | 2400 | 187     | 51.1  | 4    |
-| 270 | [Probe Workshop](concepts/pages/sp-07.md)           | SP-07 | Space and physics       | 8+  | 1       | 2700 | 175     | 51.6  | 4    |
-| 271 | [Before the Pulse](concepts/pages/sh-11.md)         | SH-11 | Shacados                | 13+ | 1       | 2650 | 178     | 51.8  | 3    |
-| 272 | [Logistics Links](concepts/pages/ss-06.md)          | SS-06 | Strategy and simulation | 8+  | 1       | 2850 | 177     | 53.2  | 3    |
-| 273 | [Tiny Architect](concepts/pages/bd-10.md)           | BD-10 | Build and create        | 7+  | 1       | 2600 | 191     | 53.5  | 2    |
-| 274 | [Telescope Tour](concepts/pages/sp-09.md)           | SP-09 | Space and physics       | 5+  | 2       | 2200 | 213     | 53.8  | 3    |
-| 275 | [Circular Factory](concepts/pages/ss-15.md)         | SS-15 | Strategy and simulation | 8+  | 1       | 2700 | 188     | 53.8  | 3    |
-| 276 | [Microscope Explorer](concepts/pages/sl-17.md)      | SL-17 | Science lab             | 5+  | 2       | 2250 | 215     | 54.6  | 3    |
-| 277 | [Helper Teams](concepts/pages/ss-16.md)             | SS-16 | Strategy and simulation | 7+  | 1       | 2500 | 203     | 54.7  | 3    |
-| 278 | [Forest Keeper](concepts/pages/nc-14.md)            | NC-14 | Nature and care         | 8+  | 1       | 3200 | 168     | 54.7  | 4    |
-| 279 | [Skate Park](concepts/pages/sm-14.md)               | SM-14 | Sports and motion       | 7+  | 1       | 3230 | 173     | 55.7  | 3    |
-| 280 | [Language Quest](concepts/pages/sa-07.md)           | SA-07 | Stories and adventures  | 6+  | 1       | 2380 | 222     | 56.8  | 2    |
-| 281 | [Care Hospital](concepts/pages/ss-09.md)            | SS-09 | Strategy and simulation | 7+  | 1       | 2800 | 205     | 57.5  | 3    |
-| 282 | [Satellite Network](concepts/pages/sp-11.md)        | SP-11 | Space and physics       | 9+  | 1       | 3650 | 163     | 57.6  | 4    |
-| 283 | [Seam Town Winter](concepts/pages/sh-09.md)         | SH-09 | Shacados                | 13+ | 1       | 3020 | 206     | 59.4  | 4    |
-| 284 | [Riding the Chord](concepts/pages/ry-03.md)         | RY-03 | Raya life               | 8+  | 1       | 2970 | 211     | 59.9  | 4    |
-| 285 | [Cadets of Depth Academy](concepts/pages/sa-10.md)  | SA-10 | Stories and adventures  | 8+  | 1       | 3200 | 234     | 65.6  | 3    |
-| 286 | [Expedition Deck](concepts/pages/bc-18.md)          | BC-18 | Board and card games    | 9+  | 1       | 3260 | 233     | 66    | 3    |
-| 287 | [Lantern Labyrinth](concepts/pages/sa-13.md)        | SA-13 | Stories and adventures  | 7+  | 1       | 3300 | 237     | 67    | 3    |
-| 288 | [Town of Links](concepts/pages/ss-10.md)            | SS-10 | Strategy and simulation | 8+  | 1       | 3800 | 224     | 69    | 4    |
-| 289 | [Seasons Farm](concepts/pages/nc-11.md)             | NC-11 | Nature and care         | 6+  | 1       | 3820 | 236     | 71.1  | 3    |
-| 290 | [Climate Council](concepts/pages/ss-11.md)          | SS-11 | Strategy and simulation | 10+ | 1       | 4700 | 340     | 95.8  | 3    |
-| 291 | [Block World](concepts/pages/bd-11.md)              | BD-11 | Build and create        | 7+  | 1       | 5570 | 306     | 97.4  | 4    |
-| 292 | [Answer to the Stars](concepts/pages/sh-16.md)      | SH-16 | Shacados                | 13+ | 1       | 4650 | 360     | 98.8  | 3    |
-| 293 | [Rocket Builder](concepts/pages/sp-12.md)           | SP-12 | Space and physics       | 10+ | 1       | 4500 | 400     | 104.2 | 4    |
-| 294 | [Planet Maker](concepts/pages/sp-13.md)             | SP-13 | Space and physics       | 10+ | 1       | 6020 | 383     | 114   | 4    |
-| 295 | [Two Planets](concepts/pages/ss-12.md)              | SS-12 | Strategy and simulation | 10+ | 1       | 5800 | 422     | 118.7 | 4    |
-| 296 | [The Escape (13+)](concepts/pages/sa-12.md)         | SA-12 | Stories and adventures  | 13+ | 1       | 5050 | 480     | 122.1 | 4    |
-| 297 | [Mars Habitat](concepts/pages/ss-13.md)             | SS-13 | Strategy and simulation | 10+ | 1       | 5920 | 437     | 122.2 | 3    |
-| 298 | [Explore Omi](concepts/pages/sa-11.md)              | SA-11 | Stories and adventures  | 7+  | 1       | 5200 | 486     | 124.3 | 4    |
-| 299 | [Relativity Ride](concepts/pages/sp-14.md)          | SP-14 | Space and physics       | 12+ | 1       | 6550 | 461     | 131.4 | 5    |
-| 300 | [First Contact (final)](concepts/pages/ss-14.md)    | SS-14 | Strategy and simulation | 12+ | 1       | 7850 | 741     | 188.9 | 5    |
+| 101 | [Repair Runway](concepts/pages/bd-15.md)            | BD-15 | Build and create        | 6+  | 1       | 1020 | 93      | 24    | 2    |
+| 102 | [Curling Friends](concepts/pages/sm-04.md)          | SM-04 | Sports and motion       | 4+  | 2       | 1230 | 83      | 24    | 2    |
+| 103 | [Pixel Itsy](concepts/pages/pz-11.md)               | PZ-11 | Puzzles                 | 7+  | 1       | 1050 | 92      | 24.1  | 3    |
+| 104 | [Bicycle Jam](concepts/pages/pz-25.md)              | PZ-25 | Puzzles                 | 5+  | 2       | 1000 | 95      | 24.2  | 3    |
+| 105 | [Omi Colors](concepts/pages/bd-01.md)               | BD-01 | Build and create        | 3+  | 4       | 680  | 112     | 24.3  | 2    |
+| 106 | [Screw Garden](concepts/pages/pz-16.md)             | PZ-16 | Puzzles                 | 4+  | 3       | 930  | 99      | 24.3  | 2    |
+| 107 | [Meadow Outlines](concepts/pages/sm-18.md)          | SM-18 | Sports and motion       | 6+  | 1       | 1050 | 93      | 24.3  | 2    |
+| 108 | [Link It!](concepts/pages/pz-10.md)                 | PZ-10 | Puzzles                 | 4+  | 2       | 1030 | 94      | 24.3  | 3    |
+| 109 | [One Tree, Four Seasons](concepts/pages/pk-22.md)   | PK-22 | Preschool (3–5)         | 3+  | 3       | 720  | 111     | 24.4  | 1    |
+| 110 | [Habitat Merge](concepts/pages/pz-24.md)            | PZ-24 | Puzzles                 | 5+  | 2       | 990  | 97      | 24.4  | 1    |
+| 111 | [Acorn Tower](concepts/pages/sl-03.md)              | SL-03 | Science lab             | 3+  | 3       | 1230 | 85      | 24.4  | 2    |
+| 112 | [Hoops](concepts/pages/sm-05.md)                    | SM-05 | Sports and motion       | 4+  | 2       | 1200 | 87      | 24.4  | 2    |
+| 113 | [Honeycomb Words](concepts/pages/wl-08.md)          | WL-08 | Words and languages     | 8+  | 1       | 1130 | 90      | 24.4  | 3    |
+| 114 | [Pipe Garden](concepts/pages/pz-13.md)              | PZ-13 | Puzzles                 | 4+  | 2       | 1330 | 81      | 24.6  | 3    |
+| 115 | [Wet Sand Letters](concepts/pages/pk-01.md)         | PK-01 | Preschool (3–5)         | 4+  | 2       | 850  | 106     | 24.7  | 2    |
+| 116 | [Word Ladder Grove](concepts/pages/wl-16.md)        | WL-16 | Words and languages     | 8+  | 1       | 1000 | 98      | 24.7  | 2    |
+| 117 | [Pebble Beach Picnic](concepts/pages/pk-16.md)      | PK-16 | Preschool (3–5)         | 3+  | 4       | 670  | 116     | 24.8  | 1    |
+| 118 | [Long Stick, Heavy Stone](concepts/pages/pk-21.md)  | PK-21 | Preschool (3–5)         | 3+  | 3       | 680  | 115     | 24.8  | 1    |
+| 119 | [Origami Folds](concepts/pages/bd-04.md)            | BD-04 | Build and create        | 5+  | 2       | 1430 | 77      | 24.8  | 3    |
+| 120 | [Harvest Drop](concepts/pages/pz-23.md)             | PZ-23 | Puzzles                 | 4+  | 3       | 1330 | 83      | 24.9  | 2    |
+| 121 | [Island Bridges](concepts/pages/ml-18.md)           | ML-18 | Math and logic          | 7+  | 1       | 1730 | 63      | 24.9  | 3    |
+| 122 | [Lantern Seekers](concepts/pages/sa-17.md)          | SA-17 | Stories and adventures  | 6+  | 1       | 1150 | 93      | 25.1  | 2    |
+| 123 | [Theme Trails](concepts/pages/wl-19.md)             | WL-19 | Words and languages     | 7+  | 1       | 1150 | 93      | 25.1  | 2    |
+| 124 | [Sound Waves](concepts/pages/sl-13.md)              | SL-13 | Science lab             | 3+  | 3       | 1380 | 82      | 25.1  | 3    |
+| 125 | [Probability Orchard](concepts/pages/bc-19.md)      | BC-19 | Board and card games    | 10+ | 1       | 1160 | 93      | 25.2  | 3    |
+| 126 | [Anagram Bakery](concepts/pages/wl-07.md)           | WL-07 | Words and languages     | 7+  | 1       | 840  | 110     | 25.3  | 1    |
+| 127 | [Home Run Race](concepts/pages/bc-07.md)            | BC-07 | Board and card games    | 4+  | 2       | 1480 | 78      | 25.3  | 3    |
+| 128 | [Perimeter Words](concepts/pages/wl-20.md)          | WL-20 | Words and languages     | 8+  | 1       | 1200 | 93      | 25.5  | 2    |
+| 129 | [Sum Garden](concepts/pages/bc-20.md)               | BC-20 | Board and card games    | 7+  | 1       | 1200 | 93      | 25.5  | 3    |
+| 130 | [Pollinator Path](concepts/pages/nc-06.md)          | NC-06 | Nature and care         | 4+  | 3       | 1050 | 101     | 25.6  | 2    |
+| 131 | [Density Tank](concepts/pages/sl-05.md)             | SL-05 | Science lab             | 3+  | 4       | 1270 | 91      | 25.7  | 2    |
+| 132 | [Element Cards](concepts/pages/sl-02.md)            | SL-02 | Science lab             | 6+  | 1       | 930  | 108     | 25.8  | 1    |
+| 133 | [Sets and Runs](concepts/pages/bc-10.md)            | BC-10 | Board and card games    | 7+  | 1       | 1760 | 67      | 25.8  | 3    |
+| 134 | [Solitaire](concepts/pages/bc-08.md)                | BC-08 | Board and card games    | 6+  | 1       | 1760 | 69      | 26.1  | 3    |
+| 135 | [Parcel Conveyor](concepts/pages/pz-27.md)          | PZ-27 | Puzzles                 | 5+  | 2       | 1200 | 97      | 26.2  | 3    |
+| 136 | [Clean Little World](concepts/pages/nc-15.md)       | NC-15 | Nature and care         | 2+  | 4       | 1180 | 99      | 26.3  | 2    |
+| 137 | [Fraction Kitchen](concepts/pages/ml-07.md)         | ML-07 | Math and logic          | 5+  | 2       | 960  | 111     | 26.5  | 1    |
+| 138 | [Billiard Links](concepts/pages/sm-06.md)           | SM-06 | Sports and motion       | 6+  | 1       | 1500 | 84      | 26.5  | 2    |
+| 139 | [Body Explorer](concepts/pages/sl-04.md)            | SL-04 | Science lab             | 4+  | 3       | 930  | 113     | 26.6  | 1    |
+| 140 | [Riverline Transit](concepts/pages/ss-21.md)        | SS-21 | Strategy and simulation | 8+  | 1       | 1350 | 93      | 26.8  | 3    |
+| 141 | [Picture Phrase](concepts/pages/wl-18.md)           | WL-18 | Words and languages     | 7+  | 1       | 680  | 129     | 27.2  | 1    |
+| 142 | [Prism Breaker](concepts/pages/sl-19.md)            | SL-19 | Science lab             | 5+  | 2       | 1250 | 100     | 27.2  | 2    |
+| 143 | [Optics Bench](concepts/pages/sl-11.md)             | SL-11 | Science lab             | 6+  | 1       | 1450 | 91      | 27.2  | 3    |
+| 144 | [Mini Golf](concepts/pages/sm-03.md)                | SM-03 | Sports and motion       | 4+  | 2       | 1400 | 94      | 27.3  | 2    |
+| 145 | [Arrow Stones for Orbi](concepts/pages/pk-19.md)    | PK-19 | Preschool (3–5)         | 4+  | 2       | 1150 | 106     | 27.3  | 3    |
+| 146 | [Crossword Links](concepts/pages/wl-09.md)          | WL-09 | Words and languages     | 7+  | 1       | 950  | 117     | 27.4  | 1    |
+| 147 | [Ocean Cleanup](concepts/pages/nc-05.md)            | NC-05 | Nature and care         | 3+  | 4       | 1080 | 112     | 27.7  | 3    |
+| 148 | [Code Words](concepts/pages/wl-13.md)               | WL-13 | Words and languages     | 8+  | 1       | 1280 | 103     | 27.8  | 1    |
+| 149 | [Pim and Pom Night](concepts/pages/ry-14.md)        | RY-14 | Raya life               | 6+  | 1       | 1170 | 109     | 27.9  | 1    |
+| 150 | [Ribbon Rescue](concepts/pages/pz-29.md)            | PZ-29 | Puzzles                 | 5+  | 2       | 1500 | 92      | 27.9  | 3    |
+| 151 | [Research Backpack](concepts/pages/bd-13.md)        | BD-13 | Build and create        | 5+  | 2       | 1150 | 110     | 28    | 3    |
+| 152 | [Where on Raya?](concepts/pages/sa-16.md)           | SA-16 | Stories and adventures  | 8+  | 1       | 1500 | 93      | 28    | 3    |
+| 153 | [Jars for After](concepts/pages/sh-03.md)           | SH-03 | Shacados                | 10+ | 1       | 940  | 122     | 28.2  | 1    |
+| 154 | [Gravity Turn](concepts/pages/pz-18.md)             | PZ-18 | Puzzles                 | 5+  | 2       | 1080 | 116     | 28.3  | 2    |
+| 155 | [Seed Sling](concepts/pages/sl-08.md)               | SL-08 | Science lab             | 4+  | 2       | 1300 | 106     | 28.5  | 2    |
+| 156 | [Rhythm Tap](concepts/pages/mr-04.md)               | MR-04 | Music and rhythm        | 5+  | 2       | 1180 | 113     | 28.6  | 2    |
+| 157 | [Rhyme Time](concepts/pages/wl-10.md)               | WL-10 | Words and languages     | 4+  | 3       | 930  | 125     | 28.6  | 2    |
+| 158 | [Crossing Friends](concepts/pages/sm-15.md)         | SM-15 | Sports and motion       | 4+  | 2       | 1260 | 109     | 28.7  | 2    |
+| 159 | [Shuttle Queue](concepts/pages/pz-26.md)            | PZ-26 | Puzzles                 | 5+  | 2       | 1380 | 103     | 28.7  | 3    |
+| 160 | [Sand, Charcoal, Cloth](concepts/pages/sh-05.md)    | SH-05 | Shacados                | 10+ | 1       | 1100 | 118     | 28.8  | 1    |
+| 161 | [Piano Steps](concepts/pages/mr-03.md)              | MR-03 | Music and rhythm        | 6+  | 1       | 1030 | 121     | 28.8  | 2    |
+| 162 | [Magnet Maze](concepts/pages/sl-06.md)              | SL-06 | Science lab             | 5+  | 2       | 1500 | 98      | 28.8  | 2    |
+| 163 | [Kite Day](concepts/pages/sm-08.md)                 | SM-08 | Sports and motion       | 3+  | 3       | 1600 | 93      | 28.8  | 3    |
+| 164 | [Clay and Symmetry](concepts/pages/bd-14.md)        | BD-14 | Build and create        | 4+  | 3       | 1500 | 100     | 29.1  | 2    |
+| 165 | [Acorn Backgammon](concepts/pages/bc-15.md)         | BC-15 | Board and card games    | 8+  | 1       | 2030 | 74      | 29.2  | 3    |
+| 166 | [Four Nest Sorting](concepts/pages/pk-07.md)        | PK-07 | Preschool (3–5)         | 4+  | 2       | 830  | 135     | 29.3  | 1    |
+| 167 | [Tiny Triples](concepts/pages/pz-21.md)             | PZ-21 | Puzzles                 | 4+  | 3       | 860  | 133     | 29.3  | 1    |
+| 168 | [Animation Studio](concepts/pages/bd-08.md)         | BD-08 | Build and create        | 5+  | 2       | 1400 | 106     | 29.3  | 2    |
+| 169 | [Type the Rain](concepts/pages/wl-12.md)            | WL-12 | Words and languages     | 7+  | 1       | 1050 | 124     | 29.4  | 1    |
+| 170 | [Costume Designer](concepts/pages/bd-03.md)         | BD-03 | Build and create        | 3+  | 4       | 700  | 142     | 29.5  | 1    |
+| 171 | [Raker's Dune](concepts/pages/sh-06.md)             | SH-06 | Shacados                | 10+ | 1       | 1050 | 126     | 29.7  | 2    |
+| 172 | [Choose Your Path](concepts/pages/sa-01.md)         | SA-01 | Stories and adventures  | 3+  | 3       | 880  | 135     | 29.8  | 2    |
+| 173 | [Tile Pairs](concepts/pages/bc-09.md)               | BC-09 | Board and card games    | 6+  | 1       | 1140 | 122     | 29.9  | 3    |
+| 174 | [Hex Bridges](concepts/pages/bc-11.md)              | BC-11 | Board and card games    | 6+  | 1       | 2030 | 78      | 29.9  | 3    |
+| 175 | [Lamplight Lessons](concepts/pages/sh-07.md)        | SH-07 | Shacados                | 10+ | 1       | 1270 | 117     | 30.1  | 2    |
+| 176 | [Circuit Garden](concepts/pages/sl-10.md)           | SL-10 | Science lab             | 5+  | 2       | 1500 | 106     | 30.1  | 3    |
+| 177 | [Momentum Pinball](concepts/pages/sl-18.md)         | SL-18 | Science lab             | 4+  | 2       | 1530 | 106     | 30.4  | 2    |
+| 178 | [Tidepool Sizes](concepts/pages/nc-18.md)           | NC-18 | Nature and care         | 6+  | 1       | 1800 | 93      | 30.5  | 4    |
+| 179 | [Two Yeses](concepts/pages/ry-07.md)                | RY-07 | Raya life               | 10+ | 1       | 1080 | 130     | 30.7  | 2    |
+| 180 | [Paper Planes](concepts/pages/sm-07.md)             | SM-07 | Sports and motion       | 4+  | 3       | 1630 | 103     | 30.7  | 3    |
+| 181 | [Ski Slalom](concepts/pages/sm-09.md)               | SM-09 | Sports and motion       | 5+  | 2       | 1800 | 94      | 30.7  | 3    |
+| 182 | [Kindness Quests](concepts/pages/sa-02.md)          | SA-02 | Stories and adventures  | 4+  | 3       | 1150 | 127     | 30.8  | 2    |
+| 183 | [Blossom Swap](concepts/pages/pz-19.md)             | PZ-19 | Puzzles                 | 5+  | 2       | 1280 | 122     | 31    | 2    |
+| 184 | [Story Stones](concepts/pages/pk-15.md)             | PK-15 | Preschool (3–5)         | 4+  | 2       | 650  | 155     | 31.3  | 1    |
+| 185 | [Bubble Canopy](concepts/pages/pz-20.md)            | PZ-20 | Puzzles                 | 5+  | 2       | 1210 | 128     | 31.4  | 1    |
+| 186 | [Lunar Lander](concepts/pages/sp-04.md)             | SP-04 | Space and physics       | 7+  | 1       | 1550 | 112     | 31.5  | 3    |
+| 187 | [Robot Programmer](concepts/pages/bd-05.md)         | BD-05 | Build and create        | 5+  | 2       | 1300 | 125     | 31.7  | 1    |
+| 188 | [Plush Patch Clinic](concepts/pages/pk-17.md)       | PK-17 | Preschool (3–5)         | 3+  | 3       | 830  | 150     | 31.8  | 1    |
+| 189 | [Sharing Circle](concepts/pages/pk-18.md)           | PK-18 | Preschool (3–5)         | 3+  | 3       | 810  | 151     | 31.8  | 1    |
+| 190 | [Shortest Path Postie](concepts/pages/ml-16.md)     | ML-16 | Math and logic          | 7+  | 1       | 1730 | 104     | 31.8  | 3    |
+| 191 | [Detective Grid](concepts/pages/ml-13.md)           | ML-13 | Math and logic          | 7+  | 1       | 1330 | 125     | 31.9  | 3    |
+| 192 | [Balance Friends](concepts/pages/ml-08.md)          | ML-08 | Math and logic          | 5+  | 2       | 1450 | 120     | 32.1  | 3    |
+| 193 | [Garden Grow](concepts/pages/nc-09.md)              | NC-09 | Nature and care         | 3+  | 3       | 1350 | 126     | 32.3  | 1    |
+| 194 | [Marble Run](concepts/pages/bd-07.md)               | BD-07 | Build and create        | 4+  | 3       | 1550 | 117     | 32.4  | 2    |
+| 195 | [Sing Along](concepts/pages/mr-08.md)               | MR-08 | Music and rhythm        | 5+  | 2       | 1350 | 127     | 32.4  | 3    |
+| 196 | [Melody Garden](concepts/pages/mr-06.md)            | MR-06 | Music and rhythm        | 4+  | 3       | 1550 | 117     | 32.5  | 3    |
+| 197 | [Bird Watch](concepts/pages/nc-04.md)               | NC-04 | Nature and care         | 3+  | 3       | 1380 | 126     | 32.5  | 3    |
+| 198 | [Ring Tuner](concepts/pages/ry-04.md)               | RY-04 | Raya life               | 10+ | 1       | 1550 | 118     | 32.5  | 3    |
+| 199 | [Animal Vet](concepts/pages/nc-07.md)               | NC-07 | Nature and care         | 3+  | 4       | 1180 | 137     | 32.7  | 1    |
+| 200 | [Room for Everyone](concepts/pages/bd-12.md)        | BD-12 | Build and create        | 4+  | 3       | 1050 | 144     | 32.7  | 2    |
+| 201 | [Compass Garden](concepts/pages/ml-15.md)           | ML-15 | Math and logic          | 9+  | 1       | 2030 | 95      | 32.8  | 3    |
+| 202 | [Big Piece Pictures](concepts/pages/pk-09.md)       | PK-09 | Preschool (3–5)         | 3+  | 3       | 850  | 155     | 32.9  | 2    |
+| 203 | [Windows on Raya](concepts/pages/ry-13.md)          | RY-13 | Raya life               | 3+  | 3       | 850  | 156     | 33    | 1    |
+| 204 | [Push & Think](concepts/pages/pz-17.md)             | PZ-17 | Puzzles                 | 5+  | 2       | 1250 | 137     | 33.2  | 3    |
+| 205 | [Atom Merge](concepts/pages/sl-09.md)               | SL-09 | Science lab             | 5+  | 2       | 1580 | 122     | 33.5  | 3    |
+| 206 | [Rela's Board Club](concepts/pages/bc-05.md)        | BC-05 | Board and card games    | 5+  | 2       | 2030 | 100     | 33.6  | 3    |
+| 207 | [Watergate Pins](concepts/pages/sl-20.md)           | SL-20 | Science lab             | 4+  | 3       | 1780 | 112     | 33.6  | 4    |
+| 208 | [Acorn's Long Seasons](concepts/pages/ry-11.md)     | RY-11 | Raya life               | 6+  | 1       | 1370 | 135     | 33.8  | 2    |
+| 209 | [Table Tennis](concepts/pages/sm-10.md)             | SM-10 | Sports and motion       | 7+  | 1       | 1980 | 104     | 33.8  | 2    |
+| 210 | [Keep It Up](concepts/pages/sm-16.md)               | SM-16 | Sports and motion       | 4+  | 2       | 1780 | 115     | 33.9  | 3    |
+| 211 | [Thought Postcards](concepts/pages/ry-05.md)        | RY-05 | Raya life               | 6+  | 1       | 1150 | 147     | 34    | 2    |
+| 212 | [Rope Friends](concepts/pages/sl-07.md)             | SL-07 | Science lab             | 4+  | 2       | 1680 | 122     | 34.3  | 3    |
+| 213 | [Deflect!](concepts/pages/sp-03.md)                 | SP-03 | Space and physics       | 8+  | 1       | 1580 | 127     | 34.3  | 4    |
+| 214 | [Map Maker](concepts/pages/bd-06.md)                | BD-06 | Build and create        | 6+  | 1       | 1550 | 129     | 34.4  | 3    |
+| 215 | [Field Sketchbook](concepts/pages/ry-10.md)         | RY-10 | Raya life               | 6+  | 1       | 1380 | 138     | 34.4  | 3    |
+| 216 | [Magnet Fishing Day](concepts/pages/nc-17.md)       | NC-17 | Nature and care         | 3+  | 3       | 1820 | 116     | 34.5  | 3    |
+| 217 | [Weather Maker](concepts/pages/sl-14.md)            | SL-14 | Science lab             | 4+  | 3       | 1950 | 110     | 34.6  | 3    |
+| 218 | [Soft Hold](concepts/pages/ry-06.md)                | RY-06 | Raya life               | 6+  | 1       | 1230 | 147     | 34.8  | 2    |
+| 219 | [Railway Signals](concepts/pages/ss-19.md)          | SS-19 | Strategy and simulation | 5+  | 2       | 1530 | 133     | 34.8  | 2    |
+| 220 | [One Stove for the Block](concepts/pages/sh-04.md)  | SH-04 | Shacados                | 10+ | 1       | 1550 | 133     | 35.1  | 3    |
+| 221 | [Traffic Lights](concepts/pages/ss-03.md)           | SS-03 | Strategy and simulation | 5+  | 2       | 1530 | 135     | 35.3  | 3    |
+| 222 | [Brann's Red Chalk](concepts/pages/sh-10.md)        | SH-10 | Shacados                | 13+ | 1       | 1350 | 145     | 35.4  | 2    |
+| 223 | [Conductor](concepts/pages/mr-07.md)                | MR-07 | Music and rhythm        | 5+  | 2       | 1530 | 138     | 35.7  | 2    |
+| 224 | [Static on the Roof](concepts/pages/sh-02.md)       | SH-02 | Shacados                | 10+ | 1       | 1530 | 141     | 36.2  | 2    |
+| 225 | [Sand and Water](concepts/pages/sl-16.md)           | SL-16 | Science lab             | 3+  | 3       | 2900 | 73      | 36.3  | 4    |
+| 226 | [Beat Path](concepts/pages/mr-10.md)                | MR-10 | Music and rhythm        | 6+  | 1       | 1600 | 139     | 36.5  | 2    |
+| 227 | [Orbit Garden](concepts/pages/sp-05.md)             | SP-05 | Space and physics       | 5+  | 2       | 1900 | 125     | 36.6  | 4    |
+| 228 | [Dance Dialogue](concepts/pages/mr-09.md)           | MR-09 | Music and rhythm        | 5+  | 2       | 1480 | 146     | 36.7  | 2    |
+| 229 | [The Fair Ladle](concepts/pages/sh-08.md)           | SH-08 | Shacados                | 13+ | 1       | 1750 | 133     | 36.7  | 3    |
+| 230 | [Linky Run](concepts/pages/sm-02.md)                | SM-02 | Sports and motion       | 4+  | 2       | 1390 | 154     | 37.2  | 2    |
+| 231 | [Simple Machines](concepts/pages/sl-12.md)          | SL-12 | Science lab             | 5+  | 2       | 2050 | 124     | 37.7  | 3    |
+| 232 | [Debris Sweep](concepts/pages/sp-16.md)             | SP-16 | Space and physics       | 7+  | 1       | 1700 | 143     | 37.9  | 3    |
+| 233 | [Ember Watch](concepts/pages/sh-12.md)              | SH-12 | Shacados                | 10+ | 1       | 1780 | 139     | 37.9  | 4    |
+| 234 | [The Heir's Ledger](concepts/pages/sh-14.md)        | SH-14 | Shacados                | 13+ | 1       | 1850 | 136     | 38.1  | 2    |
+| 235 | [Tower Song Festival](concepts/pages/ry-15.md)      | RY-15 | Raya life               | 6+  | 1       | 1600 | 150     | 38.3  | 3    |
+| 236 | [Rooftop Routes](concepts/pages/sm-17.md)           | SM-17 | Sports and motion       | 6+  | 1       | 1800 | 141     | 38.5  | 3    |
+| 237 | [Community Kitchen](concepts/pages/nc-10.md)        | NC-10 | Nature and care         | 4+  | 3       | 1580 | 153     | 38.6  | 1    |
+| 238 | [Crown Nest](concepts/pages/ry-08.md)               | RY-08 | Raya life               | 8+  | 1       | 1720 | 146     | 38.6  | 2    |
+| 239 | [Lunch for All](concepts/pages/ss-17.md)            | SS-17 | Strategy and simulation | 4+  | 3       | 1250 | 173     | 39.2  | 1    |
+| 240 | [Garden Plots](concepts/pages/bc-12.md)             | BC-12 | Board and card games    | 6+  | 1       | 2530 | 109     | 39.3  | 3    |
+| 241 | [Signal Crew](concepts/pages/bc-17.md)              | BC-17 | Board and card games    | 9+  | 1       | 2310 | 122     | 39.6  | 3    |
+| 242 | [Terrarium Journal](concepts/pages/nc-16.md)        | NC-16 | Nature and care         | 3+  | 3       | 1660 | 156     | 39.9  | 3    |
+| 243 | [Archaeology Dig](concepts/pages/sa-06.md)          | SA-06 | Stories and adventures  | 5+  | 2       | 1720 | 157     | 40.5  | 2    |
+| 244 | [Evidence Circle](concepts/pages/sa-14.md)          | SA-14 | Stories and adventures  | 8+  | 1       | 1880 | 149     | 40.5  | 3    |
+| 245 | [Island Rescue](concepts/pages/bc-14.md)            | BC-14 | Board and card games    | 7+  | 1       | 2210 | 133     | 40.6  | 2    |
+| 246 | [Climbing](concepts/pages/sm-13.md)                 | SM-13 | Sports and motion       | 5+  | 2       | 2230 | 133     | 40.7  | 2    |
+| 247 | [Garden Guard](concepts/pages/ss-02.md)             | SS-02 | Strategy and simulation | 5+  | 2       | 1700 | 160     | 40.8  | 2    |
+| 248 | [Rain-Glass Garden](concepts/pages/sh-15.md)        | SH-15 | Shacados                | 10+ | 1       | 1970 | 147     | 40.9  | 3    |
+| 249 | [Level Maker](concepts/pages/bd-09.md)              | BD-09 | Build and create        | 6+  | 1       | 2050 | 144     | 41    | 3    |
+| 250 | [Bridge Builder](concepts/pages/sl-15.md)           | SL-15 | Science lab             | 7+  | 1       | 2500 | 122     | 41.1  | 2    |
+| 251 | [Valley Circle](concepts/pages/ry-16.md)            | RY-16 | Raya life               | 10+ | 1       | 1870 | 156     | 41.5  | 2    |
+| 252 | [Light-Lag Chess](concepts/pages/sp-08.md)          | SP-08 | Space and physics       | 10+ | 1       | 2350 | 132     | 41.5  | 3    |
+| 253 | [Proof Steps](concepts/pages/ml-17.md)              | ML-17 | Math and logic          | 10+ | 1       | 2750 | 112     | 41.6  | 3    |
+| 254 | [Story Dice](concepts/pages/wl-15.md)               | WL-15 | Words and languages     | 4+  | 2       | 1510 | 177     | 42.1  | 2    |
+| 255 | [Orbital Dock](concepts/pages/sp-15.md)             | SP-15 | Space and physics       | 8+  | 1       | 2350 | 137     | 42.3  | 3    |
+| 256 | [Little Detective](concepts/pages/sa-04.md)         | SA-04 | Stories and adventures  | 7+  | 1       | 1870 | 162     | 42.5  | 2    |
+| 257 | [Solar Sail](concepts/pages/sp-10.md)               | SP-10 | Space and physics       | 9+  | 1       | 2300 | 140     | 42.5  | 4    |
+| 258 | [Three Dead Radios](concepts/pages/sh-01.md)        | SH-01 | Shacados                | 10+ | 1       | 1730 | 169     | 42.6  | 3    |
+| 259 | [Kesh on the Ground](concepts/pages/sh-13.md)       | SH-13 | Shacados                | 13+ | 1       | 1750 | 173     | 43.4  | 2    |
+| 260 | [Map of Whispers](concepts/pages/sa-15.md)          | SA-15 | Stories and adventures  | 8+  | 1       | 2100 | 159     | 43.9  | 3    |
+| 261 | [Sailing](concepts/pages/sm-12.md)                  | SM-12 | Sports and motion       | 8+  | 1       | 2750 | 126     | 43.9  | 3    |
+| 262 | [Prime Sprites](concepts/pages/wl-14.md)            | WL-14 | Words and languages     | 5+  | 2       | 1600 | 186     | 44.3  | 2    |
+| 263 | [Escape Room Together](concepts/pages/sa-05.md)     | SA-05 | Stories and adventures  | 7+  | 1       | 2230 | 155     | 44.4  | 3    |
+| 264 | [Migration Map](concepts/pages/nc-12.md)            | NC-12 | Nature and care         | 7+  | 1       | 2370 | 149     | 44.6  | 3    |
+| 265 | [Linky Home](concepts/pages/nc-08.md)               | NC-08 | Nature and care         | 2+  | 4       | 1900 | 174     | 44.8  | 2    |
+| 266 | [Outbreak Stoppers](concepts/pages/ss-07.md)        | SS-07 | Strategy and simulation | 9+  | 1       | 2360 | 152     | 45    | 2    |
+| 267 | [Museum Night](concepts/pages/sa-03.md)             | SA-03 | Stories and adventures  | 6+  | 1       | 1880 | 177     | 45.1  | 2    |
+| 268 | [Chess Friends](concepts/pages/bc-13.md)            | BC-13 | Board and card games    | 6+  | 1       | 2830 | 135     | 46.1  | 3    |
+| 269 | [Messages Across the Dark](concepts/pages/sa-09.md) | SA-09 | Stories and adventures  | 10+ | 1       | 2500 | 159     | 47.3  | 3    |
+| 270 | [Time Travel Diary](concepts/pages/sa-08.md)        | SA-08 | Stories and adventures  | 9+  | 1       | 1750 | 197     | 47.4  | 2    |
+| 271 | [Energy Grid](concepts/pages/ss-04.md)              | SS-04 | Strategy and simulation | 8+  | 1       | 2570 | 157     | 47.6  | 3    |
+| 272 | [Ready Together](concepts/pages/ss-20.md)           | SS-20 | Strategy and simulation | 8+  | 1       | 2550 | 160     | 47.9  | 3    |
+| 273 | [Station Watch](concepts/pages/sp-06.md)            | SP-06 | Space and physics       | 9+  | 1       | 2700 | 157     | 48.6  | 4    |
+| 274 | [Aquarium Balance](concepts/pages/nc-13.md)         | NC-13 | Nature and care         | 6+  | 1       | 2650 | 160     | 48.7  | 4    |
+| 275 | [Water Commons](concepts/pages/ss-05.md)            | SS-05 | Strategy and simulation | 9+  | 1       | 2900 | 153     | 49.7  | 3    |
+| 276 | [Repair Cafe](concepts/pages/ss-18.md)              | SS-18 | Strategy and simulation | 7+  | 1       | 2550 | 175     | 50.4  | 3    |
+| 277 | [Kart Friends](concepts/pages/sm-11.md)             | SM-11 | Sports and motion       | 5+  | 2       | 2800 | 164     | 50.6  | 3    |
+| 278 | [Rover Geologist](concepts/pages/sp-17.md)          | SP-17 | Space and physics       | 7+  | 1       | 2820 | 165     | 50.9  | 4    |
+| 279 | [Food Web](concepts/pages/ss-08.md)                 | SS-08 | Strategy and simulation | 8+  | 1       | 2400 | 187     | 51.1  | 4    |
+| 280 | [Probe Workshop](concepts/pages/sp-07.md)           | SP-07 | Space and physics       | 8+  | 1       | 2700 | 175     | 51.6  | 4    |
+| 281 | [Before the Pulse](concepts/pages/sh-11.md)         | SH-11 | Shacados                | 13+ | 1       | 2650 | 178     | 51.8  | 3    |
+| 282 | [Logistics Links](concepts/pages/ss-06.md)          | SS-06 | Strategy and simulation | 8+  | 1       | 2850 | 177     | 53.2  | 3    |
+| 283 | [Tiny Architect](concepts/pages/bd-10.md)           | BD-10 | Build and create        | 7+  | 1       | 2600 | 191     | 53.5  | 2    |
+| 284 | [Telescope Tour](concepts/pages/sp-09.md)           | SP-09 | Space and physics       | 5+  | 2       | 2200 | 213     | 53.8  | 3    |
+| 285 | [Circular Factory](concepts/pages/ss-15.md)         | SS-15 | Strategy and simulation | 8+  | 1       | 2700 | 188     | 53.8  | 3    |
+| 286 | [Microscope Explorer](concepts/pages/sl-17.md)      | SL-17 | Science lab             | 5+  | 2       | 2250 | 215     | 54.6  | 3    |
+| 287 | [Helper Teams](concepts/pages/ss-16.md)             | SS-16 | Strategy and simulation | 7+  | 1       | 2500 | 203     | 54.7  | 3    |
+| 288 | [Forest Keeper](concepts/pages/nc-14.md)            | NC-14 | Nature and care         | 8+  | 1       | 3200 | 168     | 54.7  | 4    |
+| 289 | [Skate Park](concepts/pages/sm-14.md)               | SM-14 | Sports and motion       | 7+  | 1       | 3230 | 173     | 55.7  | 3    |
+| 290 | [Language Quest](concepts/pages/sa-07.md)           | SA-07 | Stories and adventures  | 6+  | 1       | 2380 | 222     | 56.8  | 2    |
+| 291 | [Care Hospital](concepts/pages/ss-09.md)            | SS-09 | Strategy and simulation | 7+  | 1       | 2800 | 205     | 57.5  | 3    |
+| 292 | [Satellite Network](concepts/pages/sp-11.md)        | SP-11 | Space and physics       | 9+  | 1       | 3650 | 163     | 57.6  | 4    |
+| 293 | [Seam Town Winter](concepts/pages/sh-09.md)         | SH-09 | Shacados                | 13+ | 1       | 3020 | 206     | 59.4  | 4    |
+| 294 | [Riding the Chord](concepts/pages/ry-03.md)         | RY-03 | Raya life               | 8+  | 1       | 2970 | 211     | 59.9  | 4    |
+| 295 | [Cadets of Depth Academy](concepts/pages/sa-10.md)  | SA-10 | Stories and adventures  | 8+  | 1       | 3200 | 234     | 65.6  | 3    |
+| 296 | [Expedition Deck](concepts/pages/bc-18.md)          | BC-18 | Board and card games    | 9+  | 1       | 3260 | 233     | 66    | 3    |
+| 297 | [Lantern Labyrinth](concepts/pages/sa-13.md)        | SA-13 | Stories and adventures  | 7+  | 1       | 3300 | 237     | 67    | 3    |
+| 298 | [Town of Links](concepts/pages/ss-10.md)            | SS-10 | Strategy and simulation | 8+  | 1       | 3800 | 224     | 69    | 4    |
+| 299 | [Seasons Farm](concepts/pages/nc-11.md)             | NC-11 | Nature and care         | 6+  | 1       | 3820 | 236     | 71.1  | 3    |
+| 300 | [Climate Council](concepts/pages/ss-11.md)          | SS-11 | Strategy and simulation | 10+ | 1       | 4700 | 340     | 95.8  | 3    |
+| 301 | [Block World](concepts/pages/bd-11.md)              | BD-11 | Build and create        | 7+  | 1       | 5570 | 306     | 97.4  | 4    |
+| 302 | [Answer to the Stars](concepts/pages/sh-16.md)      | SH-16 | Shacados                | 13+ | 1       | 4650 | 360     | 98.8  | 3    |
+| 303 | [Rocket Builder](concepts/pages/sp-12.md)           | SP-12 | Space and physics       | 10+ | 1       | 4500 | 400     | 104.2 | 4    |
+| 304 | [Planet Maker](concepts/pages/sp-13.md)             | SP-13 | Space and physics       | 10+ | 1       | 6020 | 383     | 114   | 4    |
+| 305 | [Two Planets](concepts/pages/ss-12.md)              | SS-12 | Strategy and simulation | 10+ | 1       | 5800 | 422     | 118.7 | 4    |
+| 306 | [The Escape (13+)](concepts/pages/sa-12.md)         | SA-12 | Stories and adventures  | 13+ | 1       | 5050 | 480     | 122.1 | 4    |
+| 307 | [Mars Habitat](concepts/pages/ss-13.md)             | SS-13 | Strategy and simulation | 10+ | 1       | 5920 | 437     | 122.2 | 3    |
+| 308 | [Explore Omi](concepts/pages/sa-11.md)              | SA-11 | Stories and adventures  | 7+  | 1       | 5200 | 486     | 124.3 | 4    |
+| 309 | [Relativity Ride](concepts/pages/sp-14.md)          | SP-14 | Space and physics       | 12+ | 1       | 6550 | 461     | 131.4 | 5    |
+| 310 | [First Contact (final)](concepts/pages/ss-14.md)    | SS-14 | Strategy and simulation | 12+ | 1       | 7850 | 741     | 188.9 | 5    |
 
 ## Algorithm library and reuse
 
@@ -448,41 +458,43 @@ Algorithms used by many games are the best candidates for shared packages
 | `drag-drop-snap`        | Drag and snap              | 150  | 1          | 93    | Drag an object and snap it into a matching slot, with forgiving hit areas.              |
 | `tween-cause-effect`    | Cause-and-effect animation | 100  | 1          | 76    | Scripted reactions: pop, bounce, grow, hide and reveal.                                 |
 | `particle-effects`      | Particles                  | 150  | 1          | 75    | Bubbles, sparkles, confetti, smoke, rain and snow.                                      |
-| `grid-board`            | Grid board                 | 150  | 1          | 63    | Grid model, rendering, selection and highlighting.                                      |
-| `shuffle-deal`          | Seeded shuffle and deal    | 60   | 1          | 31    | Deterministic shuffling and dealing from a seed.                                        |
-| `physics-2d`            | 2D physics                 | 300  | 2          | 30    | Rigid bodies, collisions and joints through a physics library adapter.                  |
-| `quest-state`           | Quest and story state      | 300  | 2          | 27    | Goals, flags and chapters with save and resume.                                         |
+| `grid-board`            | Grid board                 | 150  | 1          | 65    | Grid model, rendering, selection and highlighting.                                      |
+| `shuffle-deal`          | Seeded shuffle and deal    | 60   | 1          | 32    | Deterministic shuffling and dealing from a seed.                                        |
+| `physics-2d`            | 2D physics                 | 300  | 2          | 31    | Rigid bodies, collisions and joints through a physics library adapter.                  |
+| `quest-state`           | Quest and story state      | 300  | 2          | 29    | Goals, flags and chapters with save and resume.                                         |
+| `graph-network`         | Node-link graph            | 300  | 2          | 25    | Create, connect and lay out nodes and links; detect paths and cycles.                   |
 | `dialogue-branching`    | Branching dialogue         | 300  | 2          | 24    | Dialogue trees with conditions and voice lines.                                         |
-| `graph-network`         | Node-link graph            | 300  | 2          | 23    | Create, connect and lay out nodes and links; detect paths and cycles.                   |
-| `sort-classify`         | Sorting by attribute       | 120  | 1          | 23    | Sort objects into bins by color, shape, size or category.                               |
+| `puzzle-solver-hints`   | Puzzle solver and hints    | 400  | 3          | 24    | Search-based solver that validates levels and gives the next-step hint.                 |
+| `sort-classify`         | Sorting by attribute       | 120  | 1          | 24    | Sort objects into bins by color, shape, size or category.                               |
 | `day-cycle`             | Day and season cycle       | 120  | 1          | 22    | Time of day, seasons and lighting changes.                                              |
-| `puzzle-solver-hints`   | Puzzle solver and hints    | 400  | 3          | 22    | Search-based solver that validates levels and gives the next-step hint.                 |
-| `pathfinding`           | Pathfinding                | 250  | 2          | 20    | A\* on grids and graphs.                                                                |
+| `pathfinding`           | Pathfinding                | 250  | 2          | 22    | A\* on grids and graphs.                                                                |
+| `word-list`             | Word lists and validation  | 150  | 1          | 19    | Per-language word lists, lookup and validation.                                         |
 | `swipe-gesture`         | Swipe gestures             | 80   | 1          | 18    | Recognize swipes and flicks with direction and speed.                                   |
-| `word-list`             | Word lists and validation  | 150  | 1          | 17    | Per-language word lists, lookup and validation.                                         |
+| `agent-steering`        | Agent steering             | 350  | 3          | 16    | Flocking, seeking and avoidance for creatures and crowds.                               |
 | `audio-synth`           | Playable instrument        | 250  | 2          | 15    | Web Audio synthesis or samples with low-latency playback.                               |
 | `board-rules`           | Board game rules           | 400  | 2          | 15    | Turn order, legal moves and win conditions for a board game.                            |
-| `agent-steering`        | Agent steering             | 350  | 3          | 14    | Flocking, seeking and avoidance for creatures and crowds.                               |
 | `game-ai-minimax`       | Turn-based AI              | 500  | 3          | 13    | Minimax or Monte Carlo opponent with difficulty levels and kind play.                   |
+| `hidden-object`         | Hidden objects             | 150  | 1          | 13    | Find listed objects in a busy scene; hint glows.                                        |
 | `counting`              | Counting and quantity      | 120  | 1          | 12    | Count objects, match numerals to quantities, subitizing.                                |
+| `draw-trace`            | Freehand drawing           | 250  | 2          | 12    | Finger painting and strokes with smoothing, brushes and undo.                           |
 | `economy-sim`           | Resource economy           | 600  | 3          | 12    | Resources, production chains and needs, without money.                                  |
-| `hidden-object`         | Hidden objects             | 150  | 1          | 12    | Find listed objects in a busy scene; hint glows.                                        |
 | `camera-3d`             | 3D camera                  | 300  | 3          | 11    | Orbit, follow and framing cameras for touch screens.                                    |
 | `level-generator`       | Procedural level generator | 500  | 3          | 11    | Generate levels from a seed and keep only solvable ones within a difficulty band.       |
 | `phonics-audio`         | Letter sounds              | 120  | 1          | 11    | Play phonemes and letter names with matching visuals.                                   |
 | `rhythm-timing`         | Rhythm timing              | 300  | 2          | 11    | Beat clock, timing windows, latency calibration.                                        |
-| `draw-trace`            | Freehand drawing           | 250  | 2          | 10    | Finger painting and strokes with smoothing, brushes and undo.                           |
 | `projectile-arc`        | Projectile arcs            | 150  | 1          | 10    | Aim and launch with a predicted arc.                                                    |
 | `vehicle-sim`           | Vehicle handling           | 500  | 3          | 10    | Simple car, boat or glider handling with tuned forces.                                  |
 | `inventory-crafting`    | Inventory and crafting     | 400  | 2          | 9     | Items, recipes and repair.                                                              |
 | `weather-sim`           | Weather and climate        | 500  | 3          | 9     | Temperature, rain, wind and seasons over a map.                                         |
 | `orbital-mechanics`     | Orbital mechanics          | 500  | 4          | 8     | N-body or patched-conic orbits with stable integration.                                 |
 | `pattern-sequence`      | Pattern completion         | 150  | 1          | 8     | Generate and check repeating patterns and sequences.                                    |
-| `card-rules`            | Card game rules            | 450  | 3          | 6     | Deck, hands, tricks or melds, legal plays and scoring.                                  |
+| `arithmetic-gen`        | Arithmetic generator       | 200  | 2          | 7     | Generate graded arithmetic tasks and check answers.                                     |
+| `card-rules`            | Card game rules            | 450  | 3          | 7     | Deck, hands, tricks or melds, legal plays and scoring.                                  |
 | `sticker-scene`         | Sticker scene              | 200  | 1          | 6     | Place, scale and arrange stickers in a scene; save the scene.                           |
 | `timeline`              | Timeline                   | 250  | 2          | 6     | Ordering events on a time axis with zoom.                                               |
 | `typing-input`          | Keyboard and letter input  | 150  | 1          | 6     | On-screen and physical keyboard input for letters and words.                            |
-| `arithmetic-gen`        | Arithmetic generator       | 200  | 2          | 5     | Generate graded arithmetic tasks and check answers.                                     |
+| `ecosystem-sim`         | Ecosystem simulation       | 700  | 4          | 5     | Food webs, populations and seasons.                                                     |
+| `map-geo`               | Maps and geography         | 400  | 3          | 5     | Map projection, regions and places.                                                     |
 | `rope-cloth`            | Ropes and cloth            | 350  | 3          | 5     | Verlet ropes and cloth with constraints.                                                |
 | `runner-loop`           | Endless runner             | 350  | 2          | 5     | Scrolling lanes, spawning and collisions.                                               |
 | `stacking-stability`    | Stacking and balance       | 250  | 2          | 5     | Stability checks, wobble and gentle collapse.                                           |
@@ -490,29 +502,28 @@ Algorithms used by many games are the best candidates for shared packages
 | `terrain-gen`           | Procedural terrain         | 600  | 4          | 5     | Height-map terrain and biomes from a seed.                                              |
 | `card-memory`           | Memory cards               | 120  | 1          | 4     | Flip, compare and match pairs of cards.                                                 |
 | `character-3d`          | 3D character controller    | 700  | 4          | 4     | Walk, look and interact in 3D with touch controls.                                      |
-| `ecosystem-sim`         | Ecosystem simulation       | 700  | 4          | 4     | Food webs, populations and seasons.                                                     |
+| `dress-up-layers`       | Layered dress-up           | 150  | 1          | 4     | Swap clothing and accessory layers on a character with anchor points.                   |
 | `electric-circuit`      | Electric circuits          | 500  | 3          | 4     | Batteries, resistors, bulbs and switches with circuit solving.                          |
 | `idle-progression`      | Idle progression           | 250  | 2          | 4     | Gentle, capped progress over real time with no pressure.                                |
 | `jigsaw-cut`            | Jigsaw pieces              | 300  | 2          | 4     | Cut images into pieces with tabs, snap neighbors and edges.                             |
-| `map-geo`               | Maps and geography         | 400  | 3          | 4     | Map projection, regions and places.                                                     |
 | `multi-touch`           | Multi-touch gestures       | 150  | 2          | 4     | Pinch, rotate and two-finger gestures.                                                  |
 | `optics-rays`           | Ray optics                 | 450  | 3          | 4     | Mirrors, lenses and refraction with ray tracing.                                        |
 | `peekaboo-reveal`       | Hide and reveal            | 80   | 1          | 4     | Objects hide behind covers and reappear on tap or after a pause.                        |
 | `trace-check`           | Trace checking             | 200  | 2          | 4     | Compare a traced stroke with a template path (letters, numbers, shapes) with tolerance. |
 | `acoustics-sim`         | Acoustics and waves        | 450  | 3          | 3     | Standing waves, resonance and levitation nodes.                                         |
-| `dress-up-layers`       | Layered dress-up           | 150  | 1          | 3     | Swap clothing and accessory layers on a character with anchor points.                   |
+| `flood-fill`            | Coloring fill              | 200  | 2          | 3     | Tap-to-fill regions of line art, with region maps.                                      |
 | `platformer-controller` | Platformer controller      | 600  | 3          | 3     | Run, jump and climb on a tile map with forgiving controls.                              |
 | `spot-difference`       | Spot the difference        | 120  | 1          | 3     | Hit regions for differences with forgiving radius.                                      |
+| `word-search-gen`       | Word search generator      | 300  | 2          | 3     | Place words in a grid in several directions; fill the rest.                             |
+| `camera-photo`          | Camera input               | 250  | 3          | 2     | Use the device camera with permission (scan, photo); offline processing only.           |
 | `chemistry-reactions`   | Chemistry reactions        | 500  | 3          | 2     | Elements, bonds and reaction rules for a safe virtual lab.                              |
 | `city-sim`              | Settlement simulation      | 800  | 4          | 2     | Zoned grid, services, flows and needs.                                                  |
-| `flood-fill`            | Coloring fill              | 200  | 2          | 2     | Tap-to-fill regions of line art, with region maps.                                      |
 | `fluid-2d`              | 2D fluid                   | 700  | 4          | 2     | Grid or particle fluid for water, sand or air.                                          |
 | `lino-parser`           | Links Notation parser      | 300  | 2          | 2     | Parse and render LiNo snippets as links.                                                |
 | `music-sequencer`       | Music sequencer            | 450  | 3          | 2     | Step sequencer with tracks, loops and tempo.                                            |
 | `polygon-fit`           | Shape fitting              | 350  | 3          | 2     | Fit rotated polygons into an outline and detect coverage (tangram).                     |
 | `relativity`            | Relativistic physics       | 600  | 5          | 2     | Light delay, Lorentz factors and relativistic kinematics.                               |
 | `spaced-repetition`     | Spaced repetition          | 250  | 2          | 2     | Schedule reviews of items by recall success.                                            |
-| `camera-photo`          | Camera input               | 250  | 3          | 1     | Use the device camera with permission (scan, photo); offline processing only.           |
 | `logic-circuit`         | Logic circuit simulation   | 450  | 3          | 1     | Gates, wires and signal propagation.                                                    |
 | `match-cascade`         | Match-3 cascade            | 400  | 2          | 1     | Swap, detect lines, clear, refill and cascade.                                          |
 | `microphone-input`      | Microphone input           | 200  | 3          | 1     | Volume and pitch detection from the microphone, processed on device.                    |
@@ -520,7 +531,6 @@ Algorithms used by many games are the best candidates for shared packages
 | `slide-merge`           | Slide and merge            | 200  | 1          | 1     | Slide tiles in four directions and merge equal ones (2048 family).                      |
 | `sliding-tiles`         | Sliding tile puzzle        | 200  | 2          | 1     | Fifteen-puzzle movement with solvability checks.                                        |
 | `voxel-build`           | Voxel building             | 900  | 4          | 1     | Place and remove blocks in a 3D grid with meshing.                                      |
-| `word-search-gen`       | Word search generator      | 300  | 2          | 1     | Place words in a grid in several directions; fill the rest.                             |
 | `crossword-gen`         | Crossword generator        | 600  | 3          | 0     | Fill a crossword grid from a word list with clues.                                      |
 | `multiplayer-sync`      | Network play               | 1200 | 5          | 0     | Real-time or turn-based sync, rooms and safety. Deferred by default.                    |
 | `pose-tracking`         | Body pose tracking         | 600  | 4          | 0     | Camera pose estimation on device for movement games.                                    |

@@ -4,7 +4,11 @@ import { dirname, join, resolve } from 'node:path';
 
 // Lychee checks that linked files exist but not that #fragments match a
 // heading, so cross-document anchors in the master plan are checked here.
-const roots = ['docs/master-plan', 'docs/case-studies/issue-1'];
+const roots = [
+  'docs/master-plan',
+  'docs/case-studies/issue-1',
+  'docs/case-studies/links-games-issue-3',
+];
 
 function readText(filePath) {
   return readFileSync(filePath, 'utf8').replaceAll('\r\n', '\n');

@@ -1,6 +1,6 @@
 # Scenery pilots
 
-Short pilot-episode ideas for the two worlds of the Links universe: [Raya](raya.md), the home world of untouched nature and white Chord towers, [Shacados](shacados.md), the rusted world, and the moment they meet in [First Contact](first-contact.md). Each pilot is a self-contained scene. It can become an animated short, a loading-screen series or the opening of a game. The maintainer asked for "ideas on different scenery pilots, so we later will be able to picture them" (requirements R55–R76 in the [case study](../../case-studies/issue-1/requirements.md#raya-shacados-toddlers-and-the-website-r55r76)). No art exists for these scenes yet, so every scene ends with a prompt-ready image description for the image-generation pass.
+Short pilot-episode ideas for the two worlds of the Links universe: [Raya](raya.md), the home world of untouched nature and white Chord towers, [Shacados](shacados.md), the rusted world, and the moment they meet in [First Contact](first-contact.md). Each pilot is a self-contained scene. It can become an animated short, a loading-screen series or the opening of a game. The maintainer asked for "ideas on different scenery pilots, so we later will be able to picture them" (requirements R55–R76 in the [case study](../../case-studies/issue-1/requirements.md#raya-shacados-toddlers-and-the-website-r55r76)). All 22 pilot settings now have [Blender environment studies](scenes/README.md), native rendered backgrounds and low-detail interactive versions on the website. The image descriptions remain briefs for the characters and story shots; the environment renders do not claim to implement the animated episodes.
 
 Status: **draft for maintainer review.** Names, places and numbers that the lore does not already state are marked _(proposal)_ and collected in [open questions](#open-questions). Read-aloud stories set in the same places are in [stories with wisdom](stories.md).
 
@@ -13,7 +13,7 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 - **As a game opening.** Play the beats as a 20–40 second intro, then hand control to the player in one of the games under "Seeds games".
 - **Image prompts.** Copy the paragraph as it is and add the shared negative prompt: "no text, no letters, no numbers, no logos, no watermarks, no signatures, no UI". Raya frames follow the [background rules](raya.md#loading-screens-and-backgrounds): nature fills at least 70% of the frame, towers are white, thin and few, and there are no roads, fences, power lines or crowds. Shacados frames follow the [visual guide](shacados.md#visual-guide): the rust, soot, mustard, ash and sick-green palette, one warm lamp-orange light, one small living green thing, tired faces with dignity, and never gore, corpses, weapons in use or cruelty as spectacle.
 - **Ages.** Labels follow the [age tiers](characters.md#age-tiers). 1+ means co-play with a parent. Toddler scenes show only creatures, Orbis and Raya's meadows. Children never see Shacados threats. Shacados and First Contact scenes are 10+ when they show only repair, sharing and hope, and 13+ otherwise.
-- **Physics checklist.** Raya may go beyond today's science only through lore exceptions E1–E5 in the [research note](../../case-studies/issue-1/data/research-raya-shacados.md). Chord flight needs a lattice flight suit, works only within about 2 km of a tower and moves at 5–40 km/h. An Orbi lifts a few kilograms within about 1 m. A copy takes one night. The day has 26 hours, the year has 401 days, and the two small moons are Pim and Pom. Shacados has no exceptions at all.
+- **Physics checklist.** Raya may go beyond today's science only through lore exceptions E1–E5 in the [research note](../../case-studies/issue-1/data/research-raya-shacados.md). Chord flight needs a lattice flight suit, works only within about 2 km of a tower and moves at 5–40 km/h. An Orbi lifts a few kilograms within about 1 m. A copy takes one night. The day has 26 hours, the year has 401 days, and the two small moons are Pim and Pom. Shacados has no magical exceptions. Its extreme spaceflight proposals still require feasibility work; a calculated upper bound is not proof of buildable hardware.
 - **Quality.** Every scene passes the [adorability gate](adorability-gate.md) for its tier and the Shacados tone rule: dark but never hopeless, people never villains, the player never harms.
 
 ## Raya scenes
@@ -106,7 +106,7 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 **Wisdom:** "Rest is important. Nothing is also something." — Nully
 
-**Image description:** Ground-level shot in a fern garden at midday during a partial eclipse, hand-painted anime style, unusual silver-blue light with sharp shadows. On mossy ground between giant ferns, hundreds of small bright crescent-shaped light spots, each with two curved bites, fall through the gaps in the leaves. A boy of seven in a white lattice suit with green accents kneels and touches one crescent with his finger. Behind him, an old man with round spectacles shaped like an infinity loop, in a loose white robe with a leaf pattern, smiles. Ancient stone circles stand among the ferns. Through the canopy, a slender white spire rises against a dim blue sky. White sphere companions glow softly. Palette of silver, fern green, white and pale gold. Hushed, wondering mood.
+**Image description:** Ground-level shot in a fern garden at midday during a partial eclipse, hand-painted anime style, unusual silver-blue light with sharp shadows. On mossy ground between giant ferns, hundreds of small bright crescent-shaped light spots, each with two curved bites, fall through the gaps in the leaves. A boy of seven in a white lattice suit with green accents kneels and touches one crescent with his finger. Behind him, an old man with round spectacles shaped like an infinity loop, in a fitted white suit with a leaf pattern, smiles. Ancient stone circles stand among the ferns. Through the canopy, a slender white spire rises against a dim blue sky. White sphere companions glow softly. Palette of silver, fern green, white and pale gold. Hushed, wondering mood.
 
 **Sound and mood:** Birdsong fading to silence, leaves rustling, one bird singing again at the end; hushed wonder.
 
@@ -118,7 +118,7 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 **Logline:** Theo tries to push Mira into the river as a joke, and the Guard holds his arm.
 
-**Setting:** The preschool home place: a river beach of round pebbles beside a tower. Late afternoon, warm gold light, high summer. Physics note: the Guard pauses a motor command for a moment when a movement would hurt someone. It does not move Theo, and it never touches what he thinks or wants. Children's Guards cannot be switched off. Mira is standing on rocks, so a surprise push could hurt her.
+**Setting:** The preschool home place: a river beach of round pebbles beside a tower. Late afternoon, warm gold light, high summer. Physics note: the Guard pauses a motor command for a moment when a movement would hurt someone. It does not move Theo, and it never touches what he thinks or wants. Theo has chosen to keep his Guard on; nobody can waive it for Mira. Mira is standing on rocks, so a surprise push could hurt her.
 
 **Beats:**
 
@@ -214,7 +214,7 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 **Logline:** A young adult switches off her Guard to climb a glacier wall, and an elder chooses to watch instead of stopping her.
 
-**Setting:** A glacier valley with a granite wall above blue ice. A cold, bright morning in early spring. Physics note: each adult may switch off their own Guard, instantly and privately, and nobody can switch it back on for them. Renewal heals injuries in days, but it cannot undo everything. Sora _(proposal)_, 19, climbs without a flight suit, so no tower can catch her.
+**Setting:** A glacier valley with a granite wall above blue ice. A cold, bright morning in early spring. Physics note: each citizen may switch off their own Guard, instantly and privately, and nobody can switch it back on for them. Renewal heals injuries in days, but it cannot undo everything. Sora _(proposal)_, 19, climbs without a flight suit, so no tower can catch her.
 
 **Beats:**
 
@@ -226,7 +226,7 @@ Every scene has the same card: a logline, the setting, beats, a wisdom line, an 
 
 **Wisdom:** "Let go gently." — Letgo
 
-**Image description:** Dramatic vertical shot of a sheer granite wall above a blue glacier on a cold, bright spring morning, painterly anime style with crisp air. Halfway up, a young woman in a tight white climbing suit with soft gray patches hangs from one hand, reaching calmly for the next hold, her face focused, chalk on her fingers. Her white sphere companion floats a few meters away, eyes dimmed to show it is only watching. Far below, on a boulder by the ice, a small old man with round spectacles in a loose white robe holds a steaming cup. A slender white tower stands far down the valley. Palette of ice blue, granite gray, white and sunrise gold. Tense but respectful mood, no fall, no injury shown.
+**Image description:** Dramatic vertical shot of a sheer granite wall above a blue glacier on a cold, bright spring morning, painterly anime style with crisp air. Halfway up, a young woman in a tight white climbing suit with soft gray patches hangs from one hand, reaching calmly for the next hold, her face focused, chalk on her fingers. Her white sphere companion floats a few meters away, eyes dimmed to show it is only watching. Far below, on a boulder by the ice, a small old man with round spectacles in a fitted white suit holds a steaming cup. A slender white tower stands far down the valley. Palette of ice blue, granite gray, white and sunrise gold. Tense but respectful mood, no fall, no injury shown.
 
 **Sound and mood:** Wind, breath, the scrape of fingers on rock, a single falling pebble; tense, then warm.
 

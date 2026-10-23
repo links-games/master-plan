@@ -94,10 +94,11 @@ describe('master-plan website (R71, R72)', () => {
   });
 
   it('renders every idea, the lore, the stories and the plan', () => {
-    expect(result.games).toBe(300);
+    expect(result.games).toBe(310);
     for (const page of [
       'index.html',
       'games.html',
+      'worlds.html',
       'development-plan.html',
       'game-ideas.html',
       'lore/index.html',
@@ -113,7 +114,7 @@ describe('master-plan website (R71, R72)', () => {
     }
     expect(pages.length).toBe(result.pages);
     expect((read('games.html').match(/<li class="card"/g) || []).length).toBe(
-      300
+      310
     );
   });
 
@@ -146,9 +147,11 @@ describe('master-plan website (R71, R72)', () => {
           ? posix.normalize(posix.join(posix.dirname(page), path))
           : page;
         // Concept art is copied from the docs at build time.
-        const file = target.startsWith('concepts/art/')
-          ? join('docs/master-plan', target)
-          : join(out, target);
+        const file =
+          target.startsWith('concepts/art/') ||
+          (target.startsWith('lore/scenes/') && !target.endsWith('.html'))
+            ? join('docs/master-plan', target)
+            : join(out, target);
         if (!existsSync(file)) {
           broken.push(`${page}: ${attr} ${href}`);
         } else if (
@@ -161,6 +164,22 @@ describe('master-plan website (R71, R72)', () => {
       }
     }
     expect(broken).toEqual([]);
+  });
+
+  it('offers a rendered fallback and an opt-in scene for every pilot', () => {
+    for (const page of ['worlds.html', 'lore/scenery-pilots.html']) {
+      const html = read(page);
+      expect((html.match(/data-scene=/g) || []).length).toBe(22);
+      expect((html.match(/data-open-scene hidden/g) || []).length).toBe(22);
+      expect(
+        (
+          html.match(
+            /class="scene-status" role="status">Rendered view\.<\/p>/g
+          ) || []
+        ).length
+      ).toBe(22);
+      expect(html).toContain('assets/scenes.js');
+    }
   });
 
   it('is built and published by the Pages workflow', () => {

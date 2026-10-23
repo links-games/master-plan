@@ -1,6 +1,6 @@
 # Music and rhythm — visual concepts
 
-[All collections](README.md) · 10 ideas · four full-resolution views per idea.
+[All collections](README.md) · 10 ideas · four full-resolution core views per idea, with flat storybook and painted anime alternatives on the original illustrated games.
 
 Open a game page to compare the four views, the learning objective, the prototype scope and the estimated plan. Cx follows the [complexity ladder](../game-ideas.md#complexity-ladder); days and the toddler learnability rating (1–5) come from the [development plan](../development-plan.md).
 

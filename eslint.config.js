@@ -135,6 +135,7 @@ export default [
       'reports/**',
       // Generated master-plan website (scripts/build-site.mjs)
       '_site/**',
+      'ci-logs/**',
       // Case study raw data files (downloaded from external sources)
       'docs/case-studies/*/data/**',
     ],

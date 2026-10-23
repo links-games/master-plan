@@ -1,0 +1,57 @@
+{
+  "gameId": "SH-01",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:30:47.923515+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d0ba711e1bdaf6cf0de7cb16582529f1f19e0e94239f9791c0272b13199a2ade",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution original educational game concept. Request 2048x2048 pixels or the highest native resolution available.\nMandatory style: flat 2D storybook game illustration. Draw a very simple graphic screen print with thick charcoal ink contours and only six solid spot colors. Broad flat shapes, almost no texture, no gradients, no realistic modeling. Absolutely no 3D rendering, photography, cinematic lighting, detailed scenery, glossy shading or depth of field. The result should look like a small set of carefully drawn paper shapes, not a painted movie frame.\nGame: Three Dead Radios (SH-01). Mechanic: Repair puzzle, salvage and rebuild.\nShow this exact playable interaction, with large readable pieces: A mender's workbench seen from above: three gutted radios in a row, their tubes, coils and dials laid out on a rag. The player drags a good tube into the one sound chassis while a lamp warms the bench.\nLearning objective: Basic circuits, troubleshooting, the value of mending.\nShacados setting: a small, simplified backdrop of soot-gray industrial silhouettes. Rust, mustard, ash, sick green, one lamp-orange light and one small green plant. Humanlike people in patched work clothes and scarves, dignified and hopeful. Technology from roughly 1890–1960. Keep people secondary to the board or activity. Leave generous quiet space around the pieces.\nOne complete original composition. No collage, panels, written title, logo, watermark, shop, advertising, weapons, gore or cruelty. Use shape and pattern as well as color. Concept art, not a validated scientific diagram.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T18:50:50.743647+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "448ee10c8d35b57d76afa553a5f8478bc708ab8486ff0637a581ce053278bbfb",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Three Dead Radios (SH-01). Genre/mechanic: Repair puzzle, salvage and rebuild.\nPrimary scene and action: A mender's workbench seen from above: three gutted radios in a row, their tubes, coils and dials laid out on a rag. The player drags a good tube into the one sound chassis while a lamp warms the bench.\nThis view: A narrow mender's stall under a rusted rail bridge in a warm-belt coal town. Brown smog hangs over soot-black brick, and freight trains rattle overhead. Dead machines lie piled outside like driftwood. Inside, one oil lamp glows lamp orange over the bench, and a sprouting tuber in a tin cup sits on the windowsill, the only green thing in the street.\nLearning objective expressed by the actual interaction: Basic circuits, troubleshooting, the value of mending.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T18:50:53.221615+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "8c6ffab7ebd4eda0c592a7314bb440561291f55b8603b18609814ced2b46815f",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Three Dead Radios (SH-01). Genre/mechanic: Repair puzzle, salvage and rebuild.\nPrimary scene and action: A mender's workbench seen from above: three gutted radios in a row, their tubes, coils and dials laid out on a rag. The player drags a good tube into the one sound chassis while a lamp warms the bench.\nThis view: Old Brann, a former rocket welder with burned, careful hands, wears a patched mustard coat, a soot-gray scarf and goggles pushed up on his forehead. Beside him a raker girl holds a soldering iron for the first time. Brass knobs, cracked bakelite cases, cloth-wrapped wire, glass tubes and copper coils. Rust, soot, ash and mustard tones, lit by one warm lamp.\nLearning objective expressed by the actual interaction: Basic circuits, troubleshooting, the value of mending.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T18:50:55.587102+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d35800f909be3ef2f9803b480b2afcf44b0101cd00a2adfa55441c6abd0fc0e6",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Three Dead Radios (SH-01). Genre/mechanic: Repair puzzle, salvage and rebuild.\nPrimary scene and action: A mender's workbench seen from above: three gutted radios in a row, their tubes, coils and dials laid out on a rag. The player drags a good tube into the one sound chassis while a lamp warms the bench.\nThis view: Later benches bring harder salvage: a torn speaker cone to patch with paper and glue, a coil to rewind by counting turns, a tube that only works when warm. The view widens to a shelf of radios mended for neighbors and a quiet line of people at the door, each holding a broken kettle, clock or lamp, waiting their turn with patience.\nLearning objective expressed by the actual interaction: Basic circuits, troubleshooting, the value of mending.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

@@ -1,49 +1,48 @@
-"""Create temporary review sheets; these are never catalog deliverables.
+"""Build labeled review sheets without changing any delivered artwork.
 
-Usage: python3 experiments/review-concept-art.py bc /tmp/concept-review
-Each sheet compares four complete games, with four independently generated views
-per game. Full-resolution originals and their manifests remain unchanged.
+Usage: /usr/bin/python3 experiments/review-concept-art.py td
+Outputs under ignored ci-logs/art-review/; 16 native images per sheet,
+including additional style alternatives. Loading screens include both orientations.
 """
-
 import argparse
+import hashlib
 import json
+import subprocess
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageOps
 
-
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("family", help="Two-letter collection ID")
-    parser.add_argument("output", type=Path)
-    args = parser.parse_args()
-    base = Path(__file__).resolve().parents[1] / "docs/master-plan/concepts"
-    games = json.loads((base / "catalog" / f"{args.family}.json").read_text())
-    directions = ["01-gameplay", "02-world", "03-details", "04-discovery"]
-    complete = [
-        game for game in games
-        if all((base / "art" / game["id"].lower() / f"{d}.webp").exists()
-               for d in directions)
-    ]
-    args.output.mkdir(parents=True, exist_ok=True)
-    for start in range(0, len(complete), 4):
-        batch = complete[start:start + 4]
-        sheet = Image.new("RGB", (1024, len(batch) * 286), "#f4f1e8")
-        draw = ImageDraw.Draw(sheet)
-        for row, game in enumerate(batch):
-            for column, direction in enumerate(directions):
-                path = base / "art" / game["id"].lower() / f"{direction}.webp"
-                with Image.open(path) as source:
-                    preview = source.convert("RGB")
-                    preview.thumbnail((248, 248))
-                sheet.paste(preview, (column * 256 + 4, row * 286 + 4))
-                draw.text((column * 256 + 6, row * 286 + 256),
-                          f'{game["id"]}: {direction}', fill="#242424")
-        destination = args.output / f"{args.family}-{start // 4 + 1:02d}.jpg"
-        sheet.save(destination, quality=90)
-        print(destination)
-    print(f"{len(complete)}/{len(games)} complete games available for review")
-
-
-if __name__ == "__main__":
-    main()
+parser = argparse.ArgumentParser()
+parser.add_argument('family', help='Collection prefix, or loading')
+parser.add_argument('--only-new', action='store_true', help='Skip artwork already present in HEAD')
+args = parser.parse_args()
+root = Path('docs/master-plan/concepts/art')
+output = Path('ci-logs/art-review')
+output.mkdir(parents=True, exist_ok=True)
+if args.family == 'loading':
+    paths = sorted((root/'loading').glob('*.webp'))
+else:
+    paths = sorted(p for game in root.glob(f'{args.family}-*')
+                   for p in game.glob('0[1-6]-*.webp'))
+if args.only_new:
+    tracked=set(subprocess.check_output(['git','ls-files','--',str(root)],text=True).splitlines())
+    paths=[path for path in paths if str(path) not in tracked]
+if not paths:
+    raise SystemExit('No images to review')
+records = []
+for start in range(0, len(paths), 16):
+    group = paths[start:start+16]
+    sheet = Image.new('RGB', (1024, 4*286), '#142326')
+    draw = ImageDraw.Draw(sheet)
+    for index, path in enumerate(group):
+        x, y = index % 4*256, index // 4*286
+        with Image.open(path) as source:
+            preview = ImageOps.contain(source.convert('RGB'), (256, 256))
+        sheet.paste(preview, (x+(256-preview.width)//2, y))
+        draw.text((x+5, y+262), f'{path.parent.name}/{path.stem}', fill='white')
+        records.append({'image': str(path), 'sheet': f'{args.family}-{start//16+1:02}.jpg',
+                        'sha256': hashlib.sha256(path.read_bytes()).hexdigest()})
+    target = output/f'{args.family}-{start//16+1:02}.jpg'
+    sheet.save(target, quality=88)
+    print(target)
+(output/f'{args.family}.json').write_text(json.dumps(records, indent=2)+'\n')

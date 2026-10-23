@@ -431,5 +431,45 @@
     "toddler": 1,
     "minAge": 9,
     "plan": "One mountain expedition of a branching map with weather, rope and shelter cards, a 60-card pool to draft from and 12 encounter types, with no combat or gambling. More regions and characters are deferred."
+  },
+  {
+    "id": "BC-19",
+    "algorithms": ["card-rules", "shuffle-deal", "arithmetic-gen"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 24,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 6,
+      "content": 24,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 10,
+    "plan": "One 20-card fruit deck, three rounds and four rule modifiers; show exact draw chances, no money, wagering, purchasable cards or gambling imagery."
+  },
+  {
+    "id": "BC-20",
+    "algorithms": ["grid-board", "puzzle-solver-hints", "arithmetic-gen"],
+    "extraLoc": 450,
+    "assets": {
+      "sprites": 24,
+      "animations": 5,
+      "backgrounds": 3,
+      "ui": 4,
+      "sfx": 8,
+      "music": 1,
+      "voice": 12,
+      "levels": 6,
+      "content": 24,
+      "models3d": 0
+    },
+    "toddler": 1,
+    "minAge": 7,
+    "plan": "One authored eight-tile board, three region rules and visible running sums; allow rotation, undo and a spoken explanation of each satisfied rule."
   }
 ]

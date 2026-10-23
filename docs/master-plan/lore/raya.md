@@ -36,7 +36,7 @@ that the maintainer did not state is marked _(proposal)_ or listed in
 | Companions  | Spherical white robots; electromagnetic transmitters for a "telepathy internet"  | Named **Orbis**; the network is the **Chord**                                                                         |
 | Telekinesis | Spheres let people move and copy things without damage                           | Diamagnetic and acoustic fields up to about 1 m and a few kg; copies assembled overnight                              |
 | Ethics      | Highly ethical by default; in harmony with nature                                | A short default charter, the **Gentle Defaults**                                                                      |
-| Laws        | Entirely optional; defaults are peaceful; two citizens can waive rules instantly | **Waivers**: personal and mutual, instant and revocable; third parties and nature stay protected                      |
+| Laws        | Entirely optional; defaults are peaceful; two citizens can waive rules instantly | **Waivers**: personal and mutual, instant and revocable; each citizen keeps control of their own Guard and choices    |
 | Safety      | Spheres can take neural control of muscles to prevent damage; thoughts are free  | The **Guard**: it pauses a movement and never writes a thought; each citizen may switch it off for themselves         |
 | Age         | Immortal and forever young (18–21); old people only if they disabled treatment   | **Renewal**: a default, gentle treatment; elders are rare and honored                                                 |
 | Backgrounds | Loading screens and backgrounds use Raya's landscape                             | One [loading-screen place per collection](#loading-screens-and-backgrounds); only Shacados games show their own world |
@@ -206,14 +206,17 @@ does not happen.
 - **Each citizen can switch it off for themselves** (canon). They do it for
   sports, adventure, art, or simply out of principle. Switching it off is
   instant and private.
-- **It cannot be switched off for someone else.** Your Guard protects other
-  people from you until they waive it themselves (see
-  [waivers](#waivers--laws-are-optional)).
+- **It cannot be switched off for someone else.** Your choice changes your
+  own Guard; every other citizen still controls theirs. A personal waiver
+  does not speak for anyone else (see [waivers](#waivers--laws-are-optional)).
 - **It does not punish.** There are no prisons on Raya. A paused movement is
   the whole response. If someone keeps trying to harm, friends come to talk,
   listen and help.
-- **Children.** The Guard cannot be switched off before the age of 18.
-  Parents cannot switch it off for their children either.
+- **Children.** The same personal choice belongs to every citizen. The Guard
+  starts on, and nobody, including a parent, can waive it for another person.
+  Games for young children present gentle, cooperative play and keep physical
+  risk demonstrations in their older age tiers. This product choice does not
+  change the fictional citizen’s rights.
 
 ### Renewal — forever young
 
@@ -255,12 +258,12 @@ a rule on you, and you cannot force your own choices on anyone else.
 
 ### Waivers — laws are optional
 
-| Kind                 | Who                           | What it does                                                                                                                                                                                     |
-| -------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Personal waiver**  | One adult, for themselves     | Switches off a default for oneself. Examples: no Guard when climbing free solo; no Renewal; being "quiet" on the Chord.                                                                          |
-| **Mutual waiver**    | Two adults (canon), instantly | Both agree through the Chord to switch off rules between them only. Examples: a full-contact wrestling match; a game of pranks; a duel of insults for fun. Either one can end it with a thought. |
-| **Group waiver**     | A circle of adults            | The same, for a team game or an expedition. Anyone can leave at any time, and the waiver ends for them.                                                                                          |
-| **No waiver exists** | —                             | For harm to children, to people outside the waiver, to wild animals and to shared nature. These are protected by everyone's Guard and cannot be waived.                                          |
+| Kind                | Who                             | What it does                                                                                                                                                                                                                                                                  |
+| ------------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Personal waiver** | One citizen, for themselves     | Switches off a default for oneself. Examples: no Guard when climbing free solo; no Renewal; being "quiet" on the Chord.                                                                                                                                                       |
+| **Mutual waiver**   | Two citizens (canon), instantly | Both agree through the Chord to waive any rule between them. Examples: a full-contact wrestling match; a game of pranks; a duel of insults for fun. Either one can end it with a thought.                                                                                     |
+| **Group waiver**    | A circle of citizens            | The same, for a team game or an expedition. Anyone can leave at any time, and the waiver ends for them.                                                                                                                                                                       |
+| **Consent scope**   | Everyone affected               | A waiver changes the participants' own defaults. It does not give consent on behalf of outsiders, wild animals or shared nature. A citizen can still disable their own Guard entirely; this is a real freedom, with real consequences, not an absolute technical ban on harm. |
 
 Real-world parallels: informed consent in medicine, and the voluntary
 rules of contact sports, where boxers agree to blows that would be assault
@@ -271,8 +274,8 @@ in the street. Rayans just make consent instant, mutual and revocable.
 A realistic society needs friction. These are the tensions Rayan stories
 explore:
 
-- **Without punishment, what stops a bad actor?** The Guard stops the act,
-  the Chord makes help instant, and the culture makes harm unthinkable for
+- **Without punishment, what stops a bad actor?** The Guard stops the act by
+  default, the Chord makes help quick, and the culture makes harm unthinkable for
   most people. For the rare few, the answer is patience, and that is not
   always enough. Stories may show it.
 - **Boredom of forever.** Some immortals drift. Rayans answer with art,

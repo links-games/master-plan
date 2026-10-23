@@ -1,0 +1,44 @@
+{
+  "id": "10-why-is-professor-acorn-old",
+  "number": 10,
+  "title": "Why is Professor Acorn old?",
+  "world": "Raya",
+  "kind": "nest",
+  "seed": 2728,
+  "night": true,
+  "ages": 6,
+  "pilot": "scenery-pilots.md#10-why-is-professor-acorn-old",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [1280, 720],
+  "triangles": 23596,
+  "files": {
+    "scene.json": {
+      "bytes": 2565644,
+      "sha256": "704ddaf338bfda3f77e122d236d0b7162667e3b00fe3a50df0b34e1658dba650"
+    },
+    "environment.blend": {
+      "bytes": 35102056,
+      "sha256": "1f347da44fdd1ce6e29a4db788ae60aebbf6f9241a15a32b7b9e980a70307be9"
+    },
+    "poster.png": {
+      "bytes": 1879532,
+      "sha256": "e2a4611374cb070a3a8afa2f226321d136a29441a79130332a63d03402699d59"
+    },
+    "poster.webp": {
+      "bytes": 214726,
+      "sha256": "d5ac7c0152752b6a1e7f06c94772274b72ece1837ec05c6aa2f4384d19f2f12e"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}

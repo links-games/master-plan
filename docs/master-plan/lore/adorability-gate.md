@@ -37,8 +37,9 @@ A change passes the gate only when **every applicable** item is ✅.
 
 ### Motion and sound
 
-- [ ] Idle animation exists (breathing, blinking, wiggle) — nothing is ever
-      frozen.
+- [ ] Gentle idle motion (breathing, blinking, wiggle) is optional while visible.
+      Respect reduced-motion preferences; a still scene stays welcoming. Pause
+      animation off-screen and in background tabs.
 - [ ] Squash-and-stretch on jumps, landings and taps.
 - [ ] Every tap gives feedback within 100 ms (visual + optional sound +
       optional haptic).
@@ -65,7 +66,7 @@ A change passes the gate only when **every applicable** item is ✅.
 ### Error states and edge cases
 
 - [ ] Loading screens, empty states, offline screens and crash dialogs use a
-      character and a gentle animation (e.g. _Nully_ the sleepy ghost from the
+      character and optional gentle motion respecting reduced-motion preferences (e.g. _Nully_ the sleepy ghost from the
       [character bible](characters.md)).
 - [ ] Error messages for adults are still precise and actionable.
 

@@ -12,8 +12,8 @@ const PLAN = 'docs/master-plan/development-plan.md';
 const data = loadGames();
 
 describe('development plan (R66, R67, R69)', () => {
-  it('has a valid estimate for every one of the 300 games', () => {
-    expect(data.games.length).toBe(300);
+  it('has a valid estimate for every one of the 310 games', () => {
+    expect(data.games.length).toBe(310);
     expect(validateGames(data)).toEqual([]);
     for (const game of data.games) {
       expect(Boolean(game.estimate)).toBe(true);
@@ -56,7 +56,7 @@ describe('development plan (R66, R67, R69)', () => {
 
   it('sorts every game by development effort', () => {
     const ranked = rankGames(data);
-    expect(ranked.length).toBe(300);
+    expect(ranked.length).toBe(310);
     for (let index = 1; index < ranked.length; index++) {
       expect(
         ranked[index - 1].score.effortDays <= ranked[index].score.effortDays

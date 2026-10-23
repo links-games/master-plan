@@ -8,7 +8,8 @@ Status: **draft for maintainer review.** Story names and small details that the 
 
 **Age rules for these stories.** The tiers follow the [age tiers](characters.md#age-tiers); the children's tier is split into 6–9 and 10–12 by reading level.
 
-- **1–3 and 3–5:** only Link creatures, Orbis, Raya's meadows and gentle Rayan children. No Shacados, no danger, no death, no villains.
+- **1–3:** only Link creatures, Orbis and Raya's meadows. No human characters or humanoid hosts. No Shacados, no danger, no death, no villains.
+- **3–5:** gentle Rayan children may join the creatures and Orbis. No Shacados or threats.
 - **6–9:** Raya's everyday life: the Guard, Renewal, the towers. Problems are puzzles and misunderstandings.
 - **10–12:** Shacados may appear through repair, sharing and hope. Hard things are named, never shown.
 - **13+:** honest about risk, poverty and fear, but never hopeless. Violence stays off the page, and every story has someone who shares, mends, teaches or refuses to harm.
@@ -732,7 +733,7 @@ Talk about it:
 
 _Ages 13+ · Raya, a glacier valley in early spring · Sora (proposal), Professor Acorn_
 
-Like every Rayan adult, Sora could switch off her own Guard whenever she chose. At nineteen, she never had. She had waited for the right wall.
+Like every Rayan citizen, Sora could switch off her own Guard whenever she chose. At nineteen, she never had. She had waited for the right wall.
 
 It stood above the glacier, three hundred meters of gray granite with the morning sun just reaching its top. No tower stood close enough to catch a falling climber. No flight suit. Just rock, chalk and her own hands.
 
@@ -770,7 +771,7 @@ That evening they sat by a small stove in the valley.
 
 Talk about it:
 
-1. On Raya, every adult may switch off their own Guard, but nobody else's. Is that fair? Where should freedom stop?
+1. On Raya, every citizen may switch off their own Guard, but nobody else's. Is that fair? Where should freedom stop?
 2. Professor Acorn was afraid but did not stop Sora. When is it right to step back and let someone take their own risk?
 
 ### The Word Kesh Said

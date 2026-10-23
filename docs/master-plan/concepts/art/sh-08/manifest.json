@@ -1,0 +1,57 @@
+{
+  "gameId": "SH-08",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:30:57.485891+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "e2cf686ce7248b2bc381695c30fbb3cbbde18801f4d87cb210103975ec73add2",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution original educational game concept. Request 2048x2048 pixels or the highest native resolution available.\nMandatory style: flat 2D storybook game illustration. Draw a very simple graphic screen print with thick charcoal ink contours and only six solid spot colors. Broad flat shapes, almost no texture, no gradients, no realistic modeling. Absolutely no 3D rendering, photography, cinematic lighting, detailed scenery, glossy shading or depth of field. The result should look like a small set of carefully drawn paper shapes, not a painted movie frame.\nGame: The Fair Ladle (SH-08). Mechanic: Cooperative sharing puzzle.\nShow this exact playable interaction, with large readable pieces: At a long plank soup table at dawn, the player drags ladles of soup, gray loaves and tubers into the bowls of a waiting line, each person showing a small picture of their need, until the cooperative agrees every share is fair.\nLearning objective: Fair division, needs versus equal shares, fractions, empathy.\nShacados setting: a small, simplified backdrop of soot-gray industrial silhouettes. Rust, mustard, ash, sick green, one lamp-orange light and one small green plant. Humanlike people in patched work clothes and scarves, dignified and hopeful. Technology from roughly 1890–1960. Keep people secondary to the board or activity. Leave generous quiet space around the pieces.\nOne complete original composition. No collage, panels, written title, logo, watermark, shop, advertising, weapons, gore or cruelty. Use shape and pattern as well as color. Concept art, not a validated scientific diagram.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:27:54.111851+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "fdccb41b128ea70a3a7640bced20d2194eeef49311988a1d691c2435a4d85230",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: The Fair Ladle (SH-08). Genre/mechanic: Cooperative sharing puzzle.\nPrimary scene and action: At a long plank soup table at dawn, the player drags ladles of soup, gray loaves and tubers into the bowls of a waiting line, each person showing a small picture of their need, until the cooperative agrees every share is fair.\nThis view: A coal-town square at dawn under a sky thick with smoke. A long line of Hands waits with tin bowls beside a soot-streaked brick wall, while chimneys and a mine's winding tower rise behind them. Neighbors run a soup table of planks on barrels. A big kettle on a coal brazier gives the one warm orange glow, and a sprig of parsley floats in the pot.\nLearning objective expressed by the actual interaction: Fair division, needs versus equal shares, fractions, empathy.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:38:03.981023+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "c6786a95df7a4d8c05d7ff6b918932be6fea5a6de4e6114dd88ef8818090d2cc",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: The Fair Ladle (SH-08). Genre/mechanic: Cooperative sharing puzzle.\nPrimary scene and action: At a long plank soup table at dawn, the player drags ladles of soup, gray loaves and tubers into the bowls of a waiting line, each person showing a small picture of their need, until the cooperative agrees every share is fair.\nThis view: Cooks in patched aprons and wool caps, a girl handing out spoons, an elder counting bread on a cloth. In line: a miner with a lamp helmet, a mother with a baby in a sling, an old man leaning on a crutch. Tin bowls, cracked ladles, gray loaves, knobby tubers and ration cards tucked into coat pockets. Rust, soot, mustard and ash, with one brazier.\nLearning objective expressed by the actual interaction: Fair division, needs versus equal shares, fractions, empathy.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:38:05.869058+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b0c5a83485e58adcd55e0d93ba06ca337585376f949626cb36a19f82d0b381b8",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: The Fair Ladle (SH-08). Genre/mechanic: Cooperative sharing puzzle.\nPrimary scene and action: At a long plank soup table at dawn, the player drags ladles of soup, gray loaves and tubers into the bowls of a waiting line, each person showing a small picture of their need, until the cooperative agrees every share is fair.\nThis view: Harder mornings bring short deliveries, a newcomer with no ration card, a sick neighbor who cannot come and a miner starting a double shift. The player decides together with the cooperative, by a show of raised hands, and sees how the street fares over a week. The final view shows the cooperative's own small vegetable patch on a roof, now feeding the table.\nLearning objective expressed by the actual interaction: Fair division, needs versus equal shares, fractions, empathy.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

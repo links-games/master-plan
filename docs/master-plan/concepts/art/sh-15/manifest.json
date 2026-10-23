@@ -1,0 +1,57 @@
+{
+  "gameId": "SH-15",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:31:09.368558+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "7cff5682f0ba49fbc4104b90ede7c5b604b3ced2dd683777381176c49fa0fa87",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution original educational game concept. Request 2048x2048 pixels or the highest native resolution available.\nMandatory style: flat 2D storybook game illustration. Draw a very simple graphic screen print with thick charcoal ink contours and only six solid spot colors. Broad flat shapes, almost no texture, no gradients, no realistic modeling. Absolutely no 3D rendering, photography, cinematic lighting, detailed scenery, glossy shading or depth of field. The result should look like a small set of carefully drawn paper shapes, not a painted movie frame.\nGame: Rain-Glass Garden (SH-15). Mechanic: Greenhouse building and gardening simulation.\nShow this exact playable interaction, with large readable pieces: A rooftop greenhouse of mismatched scrap glass. The player fits panes into a rusted frame, catches sour rain in barrels, stirs in crushed eggshell and ash until a cabbage-juice test turns from pink to purple, and watches tuber sprouts open.\nLearning objective: Soil acidity, plant needs, building with salvage.\nShacados setting: a small, simplified backdrop of soot-gray industrial silhouettes. Rust, mustard, ash, sick green, one lamp-orange light and one small green plant. Humanlike people in patched work clothes and scarves, dignified and hopeful. Technology from roughly 1890–1960. Keep people secondary to the board or activity. Leave generous quiet space around the pieces.\nOne complete original composition. No collage, panels, written title, logo, watermark, shop, advertising, weapons, gore or cruelty. Use shape and pattern as well as color. Concept art, not a validated scientific diagram.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:10:28.307171+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d43d900f49cdd7100c4c19f867cb176cf450b8f410253c04dbfcb3edec367656",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Rain-Glass Garden (SH-15). Genre/mechanic: Greenhouse building and gardening simulation.\nPrimary scene and action: A rooftop greenhouse of mismatched scrap glass. The player fits panes into a rusted frame, catches sour rain in barrels, stirs in crushed eggshell and ash until a cabbage-juice test turns from pink to purple, and watches tuber sprouts open.\nThis view: A flat tenement rooftop in the warm belt, surrounded by chimneys and laundry lines under a brown sky. Acid rain streaks the soot on the walls. In the middle stands a greenhouse built from window glass, bottle bottoms and an old truck windshield in an iron frame, its seams patched with tar. A lantern inside glows lamp orange, and green leaves press against the fogged panes.\nLearning objective expressed by the actual interaction: Soil acidity, plant needs, building with salvage.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:15:13.094985+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "7e9e8c1000214306faaf2a3213d2861600e96096f44d06ae1f0b87888a360cb8",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Rain-Glass Garden (SH-15). Genre/mechanic: Greenhouse building and gardening simulation.\nPrimary scene and action: A rooftop greenhouse of mismatched scrap glass. The player fits panes into a rusted frame, catches sour rain in barrels, stirs in crushed eggshell and ash until a cabbage-juice test turns from pink to purple, and watches tuber sprouts open.\nThis view: A grandfather and his granddaughter in patched rust and ash coats, boots cut from old tires, scarves and goggles. Neighbors hand up buckets of ash and eggshells. Mismatched glass, tar seams, a rusted iron frame, rain barrels, jars of red cabbage juice for testing, crates of soil, tuber sprouts and beans on strings. Sick green leaves turning healthy green, with one lamp.\nLearning objective expressed by the actual interaction: Soil acidity, plant needs, building with salvage.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:15:15.627986+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f1ecfd33d01d2e16510c18869a910090e055692659ea41fa075e80fea7613f2f",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Rain-Glass Garden (SH-15). Genre/mechanic: Greenhouse building and gardening simulation.\nPrimary scene and action: A rooftop greenhouse of mismatched scrap glass. The player fits panes into a rusted frame, catches sour rain in barrels, stirs in crushed eggshell and ash until a cabbage-juice test turns from pink to purple, and watches tuber sprouts open.\nThis view: As seasons pass the greenhouse grows: a worm bin for richer soil, a filter for the rain barrels, a bed of cave fungus underneath, and new crops like beans, kale and a tiny apple seedling. Neighbors build their own glasshouses on nearby roofs. The final view shows a skyline of glinting scrap-glass gardens between the chimneys.\nLearning objective expressed by the actual interaction: Soil acidity, plant needs, building with salvage.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

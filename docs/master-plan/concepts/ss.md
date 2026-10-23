@@ -1,6 +1,6 @@
 # Strategy and simulation — visual concepts
 
-[All collections](README.md) · 20 ideas · four full-resolution views per idea.
+[All collections](README.md) · 21 ideas · four full-resolution core views per idea, with flat storybook and painted anime alternatives on the original illustrated games.
 
 Open a game page to compare the four views, the learning objective, the prototype scope and the estimated plan. Cx follows the [complexity ladder](../game-ideas.md#complexity-ladder); days and the toddler learnability rating (1–5) come from the [development plan](../development-plan.md).
 
@@ -26,3 +26,4 @@ Open a game page to compare the four views, the learning objective, the prototyp
 | [![Repair Cafe gameplay thumbnail](art/ss-18/thumbnail.webp)](pages/ss-18.md)           | [Repair Cafe](pages/ss-18.md) (SS-18)           | Workshop management                                   | 4   | 50.4  | 1       |
 | [![Railway Signals gameplay thumbnail](art/ss-19/thumbnail.webp)](pages/ss-19.md)       | [Railway Signals](pages/ss-19.md) (SS-19)       | Train dispatch and track routing                      | 3   | 34.8  | 2       |
 | [![Ready Together gameplay thumbnail](art/ss-20/thumbnail.webp)](pages/ss-20.md)        | [Ready Together](pages/ss-20.md) (SS-20)        | Cooperative disaster preparation                      | 4   | 47.9  | 1       |
+| [![Riverline Transit gameplay thumbnail](art/ss-21/thumbnail.webp)](pages/ss-21.md)     | [Riverline Transit](pages/ss-21.md) (SS-21)     | Transit-network drawing and capacity planning         | 3   | 26.8  | 1       |

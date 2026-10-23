@@ -2,6 +2,7 @@ import { describe, it, expect } from 'test-anywhere';
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
+import { extraStyleDirections } from '../scripts/concept-prompts.mjs';
 
 const base = 'docs/master-plan/concepts';
 const expectedOriginals = {
@@ -18,12 +19,40 @@ const expectedOriginals = {
   sa: 12,
   ss: 14,
 };
+const baselineCounts = {
+  pz: 30,
+  wl: 18,
+  ml: 20,
+  bc: 18,
+  sl: 20,
+  nc: 17,
+  bd: 14,
+  mr: 10,
+  sm: 17,
+  sp: 17,
+  sa: 15,
+  ss: 20,
+  td: 30,
+  pk: 22,
+  ry: 16,
+  sh: 16,
+};
 const directions = ['01-gameplay', '02-world', '03-details', '04-discovery'];
+const directionsFor = (game) => [
+  ...directions,
+  ...extraStyleDirections(game, game.id.split('-')[0].toLowerCase()).map(
+    ([key]) => key
+  ),
+];
 const read = (path) => readFileSync(path, 'utf8');
 const json = (path) => JSON.parse(read(path));
-const catalog = Object.keys(expectedOriginals).flatMap((family) =>
-  json(join(base, 'catalog', `${family}.json`))
-);
+const catalog = [
+  ...Object.keys(expectedOriginals),
+  'td',
+  'pk',
+  'ry',
+  'sh',
+].flatMap((family) => json(join(base, 'catalog', `${family}.json`)));
 
 // Inspect the actual WebP bitstream, independently of manifest dimensions.
 function dimensions(buffer) {
@@ -59,10 +88,19 @@ function dimensions(buffer) {
 }
 
 describe('visual game catalog', () => {
-  it('preserves every original ID and adds 48 distinct ideas', () => {
-    expect(catalog.length).toBe(216);
-    expect(new Set(catalog.map((game) => game.id)).size).toBe(216);
+  it('preserves every original ID and covers all 310 distinct ideas', () => {
+    expect(catalog.length).toBe(310);
+    expect(new Set(catalog.map((game) => game.id)).size).toBe(310);
     expect(catalog.filter((game) => game.original).length).toBe(168);
+    expect(
+      Object.values(baselineCounts).reduce((sum, count) => sum + count, 0)
+    ).toBe(300);
+    for (const [family, count] of Object.entries(baselineCounts)) {
+      for (let number = 1; number <= count; number++) {
+        const id = `${family.toUpperCase()}-${String(number).padStart(2, '0')}`;
+        expect(catalog.some((game) => game.id === id)).toBe(true);
+      }
+    }
     for (const game of catalog) {
       expect(typeof game.original).toBe('boolean');
       for (const field of ['title', 'genre', 'lesson', 'cx', 'scene']) {
@@ -80,12 +118,12 @@ describe('visual game catalog', () => {
     }
   });
 
-  it('gives every idea its own reachable page, scope and four image links', () => {
+  it('gives every idea its own reachable page, scope and all core and style image links', () => {
     const overview = read(join(base, 'README.md'));
     expect(
       readdirSync(join(base, 'pages')).filter((name) => name.endsWith('.md'))
         .length
-    ).toBe(300);
+    ).toBe(310);
     for (const game of catalog) {
       const id = game.id.toLowerCase();
       const family = id.split('-')[0];
@@ -104,15 +142,22 @@ describe('visual game catalog', () => {
       ]) {
         expect(page.includes(text)).toBe(true);
       }
-      for (const direction of directions) {
+      for (const direction of directionsFor(game)) {
         expect(page.includes(`](../art/${id}/${direction}.webp)`)).toBe(true);
+      }
+      expect(page.includes(`](../jobs/${family}.json)`)).toBe(true);
+      expect(page.includes(`${id}/01-gameplay`)).toBe(true);
+      expect(page.includes(`${id}/04-discovery`)).toBe(true);
+      if (extraStyleDirections(game, family).length) {
+        expect(page.includes('](../jobs/style-variations.json)')).toBe(true);
       }
     }
   });
 
-  it('has four independent native-resolution generated images per idea with accurate provenance', () => {
+  it('has 1,672 independent native-resolution images with accurate provenance', () => {
     const errors = [];
     const hashes = new Set();
+    const styleJobs = json(join(base, 'jobs', 'style-variations.json'));
     for (const game of catalog) {
       const id = game.id.toLowerCase();
       const art = join(base, 'art', id);
@@ -123,9 +168,13 @@ describe('visual game catalog', () => {
       }
       const manifest = json(manifestPath);
       expect(manifest.gameId).toBe(game.id);
-      expect(manifest.images.length).toBe(4);
-      const jobs = json(join(base, 'jobs', `${id.split('-')[0]}.json`));
-      for (const direction of directions) {
+      const expectedDirections = directionsFor(game);
+      expect(manifest.images.length).toBe(expectedDirections.length);
+      const jobs = [
+        ...json(join(base, 'jobs', `${id.split('-')[0]}.json`)),
+        ...styleJobs,
+      ];
+      for (const direction of expectedDirections) {
         const entry = manifest.images.find(
           (image) => image.file === `${direction}.webp`
         );
@@ -151,12 +200,11 @@ describe('visual game catalog', () => {
       expect(width <= 320 && height <= 320).toBe(true);
     }
     expect(errors).toEqual([]);
-    expect(hashes.size).toBe(864);
+    expect(hashes.size).toBe(1672);
   });
 });
 
-// Collections added for the Raya feedback (R55–R76): image descriptions and
-// prompts now, images later (R76).
+// Story collections added for the Raya feedback now have complete concept art.
 const pendingCounts = { td: 30, pk: 22, ry: 16, sh: 16 };
 const pending = Object.keys(pendingCounts).flatMap((family) =>
   json(join(base, 'catalog', `${family}.json`))
@@ -167,11 +215,29 @@ const views = {
   '04-discovery': 'discovery',
 };
 
-describe('art-pending collections', () => {
+describe('story collections', () => {
+  it('keeps toddler prototype acceptance observable during caregiver co-play', () => {
+    for (const game of pending.filter((item) => item.id.startsWith('TD-'))) {
+      const page = read(join(base, 'pages', `${game.id.toLowerCase()}.md`));
+      const rows = page.split('\n');
+      const prototype = rows.find((row) => row.startsWith('| First prototype'));
+      const acceptance = rows.find((row) =>
+        row.startsWith('| Prototype acceptance')
+      );
+      expect(prototype.includes('tap')).toBe(true);
+      expect(prototype.includes('No score or fail state')).toBe(true);
+      expect(acceptance.includes('caregiver co-play')).toBe(true);
+      expect(acceptance.includes('no reading or spoken explanation')).toBe(
+        true
+      );
+      expect(acceptance.includes('without help')).toBe(false);
+    }
+  });
+
   it('adds toddler, preschool, Raya life and Shacados ideas with stories', () => {
     expect(new Set(pending.map((game) => game.id)).size).toBe(84);
     expect(new Set([...catalog, ...pending].map((game) => game.id)).size).toBe(
-      300
+      310
     );
     for (const [family, count] of Object.entries(pendingCounts)) {
       const games = pending.filter((game) =>
@@ -214,13 +280,15 @@ describe('art-pending collections', () => {
         game.wisdom,
         ...Object.values(views).map((view) => game.views[view]),
         '## Estimated plan',
-        'Four image descriptions (art pending)',
+        '## Four visual directions',
         `](../jobs/${family}.json)`,
       ]) {
         expect(page.includes(text)).toBe(true);
       }
-      expect(page.includes('.webp)')).toBe(false);
-      expect(existsSync(join(base, 'art', id))).toBe(false);
+      for (const direction of directions) {
+        expect(page.includes(`](../art/${id}/${direction}.webp)`)).toBe(true);
+      }
+      expect(page.includes('art pending')).toBe(false);
     }
   });
 
@@ -253,6 +321,32 @@ describe('art-pending collections', () => {
       const world = job.family === 'sh' ? 'Shacados' : 'Raya';
       expect(job.prompt.includes(`The planet ${world}`)).toBe(true);
       expect(job.prompt.includes('no text')).toBe(true);
+    }
+  });
+
+  it('ships all 32 distinct loading backgrounds at their native aspect ratio', () => {
+    const jobs = json(join(base, 'jobs', 'loading-screens.json'));
+    const manifest = json(join(base, 'art', 'loading', 'manifest.json'));
+    expect(manifest.images.length).toBe(32);
+    const hashes = new Set();
+    for (const job of jobs) {
+      const name = `${job.id.split('/')[1]}.webp`;
+      const entry = manifest.images.find((image) => image.file === name);
+      expect(Boolean(entry)).toBe(true);
+      const image = readFileSync(join(base, 'art', 'loading', name));
+      const [width, height] = dimensions(image);
+      expect(Math.min(width, height) >= 900).toBe(true);
+      expect(width * height >= 1500000).toBe(true);
+      const ratio = job.orientation === 'portrait' ? 9 / 16 : 16 / 9;
+      expect(Math.abs(width / height - ratio) < 0.004).toBe(true);
+      expect([entry.width, entry.height]).toEqual([width, height]);
+      const hash = createHash('sha256').update(image).digest('hex');
+      expect(entry.sha256).toBe(hash);
+      expect(hashes.has(hash)).toBe(false);
+      hashes.add(hash);
+      expect(entry.prompt).toBe(job.prompt);
+      expect(entry.tool).toBe('image_gen.imagegen (built-in)');
+      expect(entry.modelReported).toBe(null);
     }
   });
 });

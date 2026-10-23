@@ -1,0 +1,57 @@
+{
+  "gameId": "SH-04",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:30:52.019350+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "251b1f634abbd4f208e38e76dfe056a9fa2f1e6fd190e5618880ea3fd02a62ac",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution original educational game concept. Request 2048x2048 pixels or the highest native resolution available.\nMandatory style: flat 2D storybook game illustration. Draw a very simple graphic screen print with thick charcoal ink contours and only six solid spot colors. Broad flat shapes, almost no texture, no gradients, no realistic modeling. Absolutely no 3D rendering, photography, cinematic lighting, detailed scenery, glossy shading or depth of field. The result should look like a small set of carefully drawn paper shapes, not a painted movie frame.\nGame: One Stove for the Block (SH-04). Mechanic: Heat logistics puzzle.\nShow this exact playable interaction, with large readable pieces: A cutaway of a frosty tenement block, each room a box. The player moves families and blankets into the room with the big stove, stuffs drafts with rags and routes the last coal until the frost on its window melts.\nLearning objective: Heat and insulation, planning scarce resources, fairness.\nShacados setting: a small, simplified backdrop of soot-gray industrial silhouettes. Rust, mustard, ash, sick green, one lamp-orange light and one small green plant. Humanlike people in patched work clothes and scarves, dignified and hopeful. Technology from roughly 1890–1960. Keep people secondary to the board or activity. Leave generous quiet space around the pieces.\nOne complete original composition. No collage, panels, written title, logo, watermark, shop, advertising, weapons, gore or cruelty. Use shape and pattern as well as color. Concept art, not a validated scientific diagram.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:05:30.433059+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "a5c4f6f2d4680716dc2c24cf1b5436709cf7f51c7292f97c3bbc7156391eb4c6",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: One Stove for the Block (SH-04). Genre/mechanic: Heat logistics puzzle.\nPrimary scene and action: A cutaway of a frosty tenement block, each room a box. The player moves families and blankets into the room with the big stove, stuffs drafts with rags and routes the last coal until the frost on its window melts.\nThis view: A five-story brick tenement in a coal town at the edge of the frozen north, soot-black against gray snow. Icicles hang from rusted fire escapes and chimneys smoke thinly. Through one window a single cast-iron stove glows lamp orange, the only warm light on the street. On that windowsill a potted bean plant leans toward the heat.\nLearning objective expressed by the actual interaction: Heat and insulation, planning scarce resources, fairness.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:14:56.580986+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "10be61a59d458fa270992335c4777dd63572289d3d9e4c07fdbfffee0eb59f38",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: One Stove for the Block (SH-04). Genre/mechanic: Heat logistics puzzle.\nPrimary scene and action: A cutaway of a frosty tenement block, each room a box. The player moves families and blankets into the room with the big stove, stuffs drafts with rags and routes the last coal until the frost on its window melts.\nThis view: Families in layered patched coats, scarves over their mouths and mittens made from old socks. A grandmother knits by the stove, a miner carries half a bucket of coal up the stairs, and children sleep in a heap of blankets. Rusted pipes, cracked plaster, rag-stuffed windows and frost ferns on the glass. Soot, ash and rust, with one orange glow.\nLearning objective expressed by the actual interaction: Heat and insulation, planning scarce resources, fairness.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:14:58.151646+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "c526c5dbd515d4a1ce2c88a9b96ec569f5cf44780bd85c1e551498ba01ce440e",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: One Stove for the Block (SH-04). Genre/mechanic: Heat logistics puzzle.\nPrimary scene and action: A cutaway of a frosty tenement block, each room a box. The player moves families and blankets into the room with the big stove, stuffs drafts with rags and routes the last coal until the frost on its window melts.\nThis view: Colder weeks bring harder blocks: a draft in the stairwell, a baby who needs warmth first, a neighbor block whose stove has cracked. The player learns to carry heat through pipes, insulate walls with sawdust and paper and swap coal for soup. The final view shows two blocks joined by a covered walkway, every resident gathered around one fire.\nLearning objective expressed by the actual interaction: Heat and insulation, planning scarce resources, fairness.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

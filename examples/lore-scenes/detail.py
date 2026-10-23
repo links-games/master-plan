@@ -1,0 +1,567 @@
+"""Render detail for the pilot environments; web scenes retain bounded proxies.
+
+Procedural Blender geometry and vendored CC0 surface/lighting textures.
+No paid libraries, remote services or machine learning run during rendering.
+"""
+import math
+import random
+from pathlib import Path
+
+import bpy
+from mathutils import Matrix, Vector
+
+ROCK_TEMPLATES = []
+
+
+def reset_detail():
+    ROCK_TEMPLATES.clear()
+
+
+def scanned_stone(proxy, seed):
+    """Use measured stone silhouettes offline; retain the authored web proxy."""
+    if not ROCK_TEMPLATES:
+        path=Path(__file__).parent/'assets/rock_moss_set_01/rock_moss_set_01_1k.blend'
+        with bpy.data.libraries.load(str(path),link=False) as (source,target):
+            target.objects=list(source.objects)
+        ROCK_TEMPLATES.extend(obj for obj in target.objects if obj and obj.type=='MESH')
+    template=ROCK_TEMPLATES[seed%len(ROCK_TEMPLATES)]
+    bounds=[Vector(point) for point in template.bound_box]
+    low=Vector(tuple(min(point[axis] for point in bounds) for axis in range(3)))
+    high=Vector(tuple(max(point[axis] for point in bounds) for axis in range(3)))
+    center=(low+high)/2
+    dimensions=high-low
+    normalize=Matrix.Diagonal(tuple(2/max(value,.001) for value in dimensions)+(1,))
+    instance=template.copy()
+    instance.data=template.data
+    instance.parent=proxy
+    instance.matrix_parent_inverse=Matrix.Identity(4)
+    instance.matrix_basis=normalize @ Matrix.Translation(-center)
+    instance.hide_render=False
+    instance['render_only']=True
+    instance.name='Photogrammetry stone: '+proxy.name
+    bpy.context.collection.objects.link(instance)
+    material=proxy.data.materials[0]
+    if proxy.name.startswith(('Carbonaceous','Fractured')) or material.name!='Granite':
+        for slot in instance.material_slots:
+            slot.link='OBJECT'
+            slot.material=material
+    proxy.hide_render=True
+
+
+def detail_mesh(name, vertices, faces, material):
+    mesh = bpy.data.meshes.new(name)
+    mesh.from_pydata(vertices, [], faces)
+    mesh.update()
+    obj = bpy.data.objects.new(name, mesh)
+    bpy.context.collection.objects.link(obj)
+    obj.data.materials.append(material)
+    obj['render_only'] = True
+    return obj
+
+
+def meadow(seed, materials, ground_height, wet=False):
+    rng = random.Random(seed + 500)
+    vertices, faces = [], []
+    # Narrow bent blades, concentrated near the eye-level camera. One mesh
+    # avoids tens of thousands of objects and the cost of a particle system.
+    for _ in range(96000):
+        x, y = rng.uniform(-24, 24), rng.uniform(-14, 35)
+        z = ground_height(x, y, seed)
+        length = rng.uniform(.12, .48)
+        width = rng.uniform(.008, .025)
+        lean = rng.uniform(-.15, .15)
+        a = len(vertices)
+        vertices.extend([(x-width,y,z),(x+width,y,z),
+                         (x+lean+width*.3,y+.04,z+length*.7),
+                         (x+lean-width*.3,y+.04,z+length*.7),
+                         (x+lean*1.4,y+.06,z+length)])
+        faces.extend([(a,a+1,a+2,a+3),(a+3,a+2,a+4)])
+    detail_mesh('Fine bent meadow grasses', vertices, faces, materials['leaf'])
+    vertices, faces = [], []
+    for _ in range(24000):
+        x, y = rng.uniform(-20, 20), rng.uniform(-11, 30)
+        z = ground_height(x, y, seed) + rng.uniform(.05, .15)
+        for leaf in range(3):
+            angle = leaf*math.tau/3 + rng.random()
+            direction = Vector((math.cos(angle),math.sin(angle),0))
+            across = Vector((-direction.y,direction.x,0))
+            center = Vector((x,y,z)) + direction*.055
+            a = len(vertices)
+            vertices.extend([center-direction*.04,
+                             center+across*.045+Vector((0,0,.012)),
+                             center+direction*.075+across*.015,
+                             center+direction*.063,
+                             center+direction*.075-across*.015,
+                             center-across*.045+Vector((0,0,.012))])
+            faces.append(tuple(a+i for i in range(6)))
+    detail_mesh('Three-leaf clover ground cover', vertices, faces, materials['leaf'])
+    vertices, faces = [], []
+    for _ in range(600):
+        x,y = rng.uniform(-15,15),rng.uniform(-9,20)
+        z = ground_height(x,y,seed)+rng.uniform(.16,.29)
+        for petal in range(16):
+            angle = petal*math.tau/16
+            center = Vector((x+math.cos(angle)*.035,y+math.sin(angle)*.035,z))
+            a=len(vertices)
+            vertices.extend([center+Vector((-.018,0,0)),center+Vector((0,-.022,.025)),
+                             center+Vector((.018,0,0)),center+Vector((0,.022,.025))])
+            faces.append((a,a+1,a+2,a+3))
+    detail_mesh('Small white clover flower heads',vertices,faces,materials['flower'])
+    if wet:
+        materials['ground'].node_tree.nodes.get('Principled BSDF').inputs['Roughness'].default_value=.25
+
+
+def distant_hills(seed, materials, mesh_factory):
+    from mathutils import noise
+    n=48
+    vertices=[]
+    for j in range(n+1):
+        for i in range(n+1):
+            x=(i/n-.5)*600
+            y=100+j/n*300
+            ridge=noise.fractal(Vector((x*.009,y*.009,seed*.01)),1,2,4)
+            z=(ridge+1)*16-8
+            vertices.append((x,y,z))
+    faces=[(j*(n+1)+i,j*(n+1)+i+1,(j+1)*(n+1)+i+1,(j+1)*(n+1)+i)
+           for j in range(n) for i in range(n)]
+    obj=mesh_factory('Fractal distant mountain ridge',vertices,faces,materials['rock'])
+    for face in obj.data.polygons: face.use_smooth=True
+
+
+def masonry(materials, seed, ground_height):
+    rng=random.Random(seed)
+    vertices,faces=[],[]
+    # Fine mortar joints on the visible street-facing surfaces.
+    for i in range(9):
+        x=(-1 if i%2 else 1)*rng.uniform(7,21)
+        y=8+i*4
+        z=ground_height(x,y,seed)
+        h=rng.uniform(2.1,4.2)
+        for course in range(int(h/.18)):
+            for brick in range(13):
+                bx=x-2.5+brick*.4+(course%2)*.2
+                bz=z+.08+course*.18
+                a=len(vertices)
+                vertices.extend([(bx,y-2.012,bz),(bx+.38,y-2.012,bz),
+                                 (bx+.38,y-2.012,bz+.165),(bx,y-2.012,bz+.165)])
+                faces.append((a,a+1,a+2,a+3))
+        # Match the random calls used by the base-building generator.
+    detail_mesh('Hand-laid brick faces and recessed mortar',vertices,faces,materials['brick'])
+
+
+def settlement_detail(spec, mats, helpers):
+    """Weathered construction; offline detail leaves browser proxies bounded."""
+    ball,cube,pole,tree,height=helpers
+    seed=spec['seed']
+    rng=random.Random(seed+918)
+    before=set(bpy.context.scene.objects)
+    shelters=[obj for obj in bpy.context.scene.objects if obj.name.startswith('Repaired brick shelter')]
+    for shelter in shelters:
+        x,y,center=shelter.location
+        h=shelter.dimensions.z
+        base=center-h/2
+        dx=x-1.5
+        cube('Dark recessed doorway',(dx,y-2.05,base+1.02),(1.10,.08,2.04),mats['dark'],.015)
+        for offset in [-.59,.59]:
+            cube('Reclaimed door jamb',(dx+offset,y-2.13,base+1.07),(.10,.13,2.18),mats['bark'],.015)
+        cube('Door lintel',(dx,y-2.13,base+2.18),(1.28,.18,.16),mats['bark'],.015)
+        for board in range(6):
+            cube('Uneven timber door board',(dx-.43+board*.17,y-2.14,base+1.04),(.16,.07,1.93-rng.uniform(0,.035)),mats['bark'],.008)
+        for level in [.43,1.65]:
+            cube('Hand-forged door hinge',(dx-.3,y-2.19,base+level),(.48,.035,.05),mats['rust'],.009)
+        pole('Door latch',(dx+.27,y-2.24,base+.95),(dx+.41,y-2.24,base+.95),.025,mats['rust'],8)
+        for step in range(2):
+            cube('Worn entrance step',(dx,y-2.4-step*.3,base-.10-step*.12),(1.5,.65,.24),mats['rock'],.025)
+        # True corrugation, overlapping seams and thin sheet edges catch light.
+        for column in range(5):
+            vertices,faces=[],[]
+            left=x-2.8+column*1.12
+            for row in range(31):
+                ry=y-2.5+row/30*5
+                for across in range(15):
+                    rx=left+across/14*1.18
+                    rz=base+h+.22-(rx-x)*.08+math.sin(across/14*math.tau*4)*.026
+                    vertices.append((rx,ry,rz))
+            for row in range(30):
+                for across in range(14):
+                    a=row*15+across
+                    faces.append((a,a+1,a+16,a+15))
+            panel=detail_mesh('Overlapping corrugated iron roof sheet',vertices,faces,mats['rust'])
+            solid=panel.modifiers.new('Thin iron sheet edge','SOLIDIFY')
+            solid.thickness=.012
+        pole('Eaves gutter',(x-2.8,y-2.52,base+h+.19),(x+2.8,y-2.52,base+h-.25),.065,mats['rust'],12)
+        pole('Reused drain pipe',(x+2.72,y-2.48,base+.22),(x+2.72,y-2.48,base+h-.22),.065,mats['rust'],12)
+        pole('Drain elbow',(x+2.72,y-2.48,base+.22),(x+2.95,y-2.8,base+.12),.065,mats['rust'],12)
+        for side in [-1,1]:
+            cube('Old window shutter',(x+side*.82,y-2.13,base+h*.55),(.32,.08,1.12),mats['bark'],.012)
+        cube('Projecting stone window sill',(x,y-2.20,base+h*.55-.57),(1.60,.42,.14),mats['rock'],.02)
+        for level in range(3):
+            cube('Wall repair plate',(x+2.15,y-2.03,base+.45+level*.65),(.48,.045,.50),mats['rust'],.016)
+            for bx in [-.17,.17]:
+                for bz in [-.17,.17]:
+                    ball('Repair plate bolt',(x+2.15+bx,y-2.07,base+.45+level*.65+bz),(.025,.018,.025),mats['rust'],1)
+        for item in range(14):
+            rx,ry=x+rng.uniform(-2.8,2.8),y-rng.uniform(2.3,3.6)
+            brick=cube('Broken brick at the foundation',(rx,ry,height(rx,ry,seed)+.07),(.24,.12,.10),mats['brick'],.014)
+            brick.rotation_euler.z=rng.random()*math.tau
+    for obj in set(bpy.context.scene.objects)-before:
+        obj['render_only']=True
+    if spec['kind']=='scrap':
+        salvage_dunes(spec,mats,helpers)
+
+
+def salvage_dunes(spec, mats, helpers):
+    """Layered heaps of steel sheets, pipes and dismantled cylindrical boilers."""
+    ball,cube,pole,tree,height=helpers
+    rng=random.Random(spec['seed']+730)
+    before=set(bpy.context.scene.objects)
+    for cx,cy,radius,peak in [(-6,3,5,3.2),(7,15,6,4.8),(-11,23,7,5.5)]:
+        for index in range(110):
+            angle=rng.random()*math.tau
+            distance=radius*math.sqrt(rng.random())
+            x,y=cx+math.cos(angle)*distance,cy+math.sin(angle)*distance
+            z=height(x,y,spec['seed'])+peak*(1-distance/radius)*rng.uniform(.4,1)
+            sheet=cube('Layered salvaged steel plate',(x,y,z),
+                       (rng.uniform(.4,1.8),rng.uniform(.4,1.5),rng.uniform(.025,.08)),mats['rust'],.025)
+            sheet.rotation_euler=(rng.uniform(-.7,.7),rng.uniform(-.7,.7),rng.random()*math.tau)
+            if index%7==0:
+                pole('Exposed bent pipe',(x,y,z+.12),(x+.6,y+.9,z+.35),.09,mats['rust'],12)
+        for index in range(3):
+            x,y=cx+rng.uniform(-2,2),cy+rng.uniform(-2,2)
+            z=height(x,y,spec['seed'])+1
+            pole('Salvaged cylindrical boiler',(x-.65,y,z),(x+.65,y,z),.48,mats['rust'],32)
+            for end in [-.65,.65]:
+                bpy.ops.mesh.primitive_torus_add(major_segments=24,minor_segments=6,
+                    major_radius=.47,minor_radius=.045,location=(x+end,y,z),rotation=(0,math.pi/2,0))
+                bpy.context.object.data.materials.append(mats['rust'])
+                bpy.context.object.name='Boiler rolled steel rim'
+    for obj in set(bpy.context.scene.objects)-before:
+        obj['render_only']=True
+
+
+def weathered_stone(obj, seed):
+    """Break spherical silhouettes with deterministic erosion and strata."""
+    from mathutils import noise
+    for vertex in obj.data.vertices:
+        p=vertex.co
+        variation=noise.fractal(p*3+Vector((seed*.13,0,0)),1,2,3)
+        p*=.88+variation*.24
+        p.z+=math.sin(p.x*7+p.y*3)*.055
+    # Dense geometry creates real silhouette detail, not just shader bumps.
+    modifier=obj.modifiers.new('Fractured stone subdivision','SUBSURF')
+    modifier.subdivision_type='CATMULL_CLARK'
+    modifier.levels=2
+    texture=bpy.data.textures.new('Fine rock erosion',type='CLOUDS')
+    texture.noise_scale=.20
+    displace=obj.modifiers.new('Fine chipped stone','DISPLACE')
+    displace.texture=texture
+    displace.strength=.075
+    displace.texture_coords='GLOBAL'
+    if not obj.name.startswith('Blue glacier'):
+        scanned_stone(obj,seed)
+
+
+def woven_nest(z, material):
+    """Continuous ceramic weave around an open, ellipsoidal tree nest."""
+    def strand(name, points):
+        data=bpy.data.curves.new(name,'CURVE')
+        data.dimensions='3D'
+        data.resolution_u=1
+        data.bevel_depth=.035
+        data.bevel_resolution=2
+        spline=data.splines.new('POLY')
+        spline.points.add(len(points)-1)
+        for point,position in zip(spline.points,points): point.co=(*position,1)
+        obj=bpy.data.objects.new(name,data)
+        bpy.context.collection.objects.link(obj)
+        data.materials.append(material)
+        obj['render_only']=True
+    for index in range(32):
+        angle=index*math.tau/32
+        points=[]
+        for step in range(49):
+            latitude=-math.pi/2+step/48*math.pi
+            p=(4*math.cos(latitude)*math.cos(angle),
+               6+3*math.cos(latitude)*math.sin(angle),z+2.2+2.3*math.sin(latitude))
+            if -2.3<angle-math.tau<-.8 and p[2]<z+3.0: continue
+            points.append(p)
+        if len(points)>1: strand('Curved ceramic nest meridian',points)
+    for index in range(1,17):
+        latitude=-math.pi/2+index/17*math.pi
+        points=[]
+        for step in range(97):
+            angle=step/96*math.tau
+            p=(4*math.cos(latitude)*math.cos(angle),
+               6+3*math.cos(latitude)*math.sin(angle),z+2.2+2.3*math.sin(latitude))
+            entrance=-2.3<angle-math.tau<-.8 and p[2]<z+3.0
+            if entrance:
+                if len(points)>1: strand('Woven nest latitude',points)
+                points=[]
+            else: points.append(p)
+        if len(points)>1: strand('Woven nest latitude',points)
+
+
+def snow_drift(x,y,seed,material,height):
+    """Wind-shaped snow accumulation, continuous with its natural ground."""
+    from mathutils import noise
+    vertices,faces=[],[]
+    for row in range(33):
+        for column in range(37):
+            dx,dy=(column/36-.5)*8,(row/32-.5)*10
+            px,py=x+dx,y+dy
+            radius=(dx/4)**2+(dy/5)**2
+            depth=2.8*max(0,1-radius)**1.7
+            ripple=noise.noise(Vector((px*.7,py*.7,seed*.01)))*.12
+            vertices.append((px,py,height(px,py,seed)+depth+ripple+.03))
+    for row in range(32):
+        for column in range(36):
+            a=row*37+column
+            faces.append((a,a+1,a+38,a+37))
+    obj=detail_mesh('Wind-shaped drift meeting the ground',vertices,faces,material)
+    for face in obj.data.polygons: face.use_smooth=True
+
+
+def sky(scene, spec):
+    background=scene.world.node_tree.nodes.get('Background')
+    if not spec['night'] and spec['kind']!='orbit':
+        atmosphere=scene.world.node_tree.nodes.new('ShaderNodeTexSky')
+        atmosphere.sky_type='NISHITA'
+        atmosphere.sun_elevation=math.radians(12 if spec['kind']=='apple' else 24)
+        atmosphere.sun_rotation=math.radians(125)
+        atmosphere.sun_size=math.radians(.7)
+        atmosphere.altitude=.1
+        atmosphere.air_density=1.0
+        atmosphere.dust_density=3.0 if spec['world']=='Shacados' else .7
+        scene.world.node_tree.links.new(atmosphere.outputs['Color'],background.inputs['Color'])
+        background.inputs['Strength'].default_value=.24
+        if spec['world']=='Shacados':
+            # Dense particulate haze hides the blue sky. A diffuse olive-grey
+            # environment and broad sun retain readable, physically lit forms.
+            scene.world.node_tree.links.remove(background.inputs['Color'].links[0])
+            background.inputs['Color'].default_value=(.18,.17,.12,1)
+            background.inputs['Strength'].default_value=.4
+    # An actual CC0 HDR panorama supplies natural outdoor illumination.
+    if not spec['night'] and spec['kind']!='orbit' and spec['world']=='Raya':
+        image=scene.world.node_tree.nodes.new('ShaderNodeTexEnvironment')
+        image.image=bpy.data.images.load(str(Path(__file__).parent/'assets/spruit_sunrise_1k.hdr'),check_existing=True)
+        scene.world.node_tree.links.new(image.outputs['Color'],background.inputs['Color'])
+        background.inputs['Strength'].default_value=.45
+        # Keep the scanned terrestrial panorama as lighting only. Camera rays
+        # see Raya's procedural sky and authored untouched landscape.
+        nodes=scene.world.node_tree.nodes
+        links=scene.world.node_tree.links
+        camera_sky=nodes.new('ShaderNodeBackground')
+        camera_sky.inputs['Strength'].default_value=.24
+        links.new(atmosphere.outputs['Color'],camera_sky.inputs['Color'])
+        path=nodes.new('ShaderNodeLightPath')
+        mix=nodes.new('ShaderNodeMixShader')
+        links.new(path.outputs['Is Camera Ray'],mix.inputs[0])
+        links.new(background.outputs[0],mix.inputs[1])
+        links.new(camera_sky.outputs[0],mix.inputs[2])
+        links.new(mix.outputs[0],nodes.get('World Output').inputs['Surface'])
+    scene.use_nodes=False
+
+
+def landmarks(spec, mats, helpers):
+    ball,cube,pole,tree,height=helpers
+    seed=spec['seed']
+    rng=random.Random(seed)
+    kind=spec['kind']
+    if kind=='woods':
+        for obj in list(bpy.context.scene.objects):
+            if any(obj.name.startswith(name) for name in ['Repaired brick shelter','Shelter masonry foundation','Corrugated patched roof','Roof seam','Warm window','Recessed window','Window mullion','Stored rooftop','Reused rooftop','Chimney','Salvaged rusted metal','Hand-laid brick']):
+                bpy.data.objects.remove(obj,do_unlink=True)
+        for i in range(30):
+            x,y=rng.uniform(-20,20),rng.uniform(-1,45)
+            tree(x,y,height(x,y,seed),rng.uniform(5,11),mats['bark'],mats['leaf'],rng)
+        slag=mats['rock'].copy()
+        slag.name='Black volcanic slag'
+        slag.node_tree.nodes.get('Principled BSDF').inputs['Base Color'].default_value=(.02,.025,.024,1)
+        for x in [-29,29]:ball('Slag heap sheltering the Last Woods',(x,25,1),(10,24,12),slag,3)
+        for x in [-24,26]:pole('Distant industrial chimney',(x,50,0),(x,50,22),.6,mats['rust'])
+        cube('Surviving clean spring',(1,15,-.1),(1.2,35,.05),mats['sky'])
+    if kind=='eclipse':
+        z=height(0,6,seed)
+        ball('Pale stone receiving leaf-pinhole light',(0,6,z),(.9,.8,.12),mats['flower'],3)
+        for x,y in [(-.25,5.78),(.15,6.18)]:
+            ball('Two moon silhouettes in the pinhole projection',(x,y,z+.11),(.30,.30,.015),mats['dark'],3)
+    if kind=='delta':
+        for x,y in [(-5,9),(8,18),(-6,26)]:
+            for index in range(7):
+                a=index*math.tau/7
+                pole('Mangrove stilt root',(x,y,3),(x+math.cos(a)*2.2,y+math.sin(a)*2.2,-.6),.10,mats['bark'])
+    if kind=='ice':
+        shelters=[obj for obj in bpy.context.scene.objects if obj.name.startswith('Repaired brick shelter')]
+        for shelter in shelters:
+            x,y,z=shelter.location
+            for dx in [-3,3]:
+                proxy=ball('Deep drift around the buried house',(x+dx,y,z-1),(3.5,4.5,2.2),mats['snow'],3)
+                proxy.hide_render=True
+                snow_drift(x+dx,y,seed,mats['snow'],height)
+            ball('Snow tunnel entrance',(x,y-3,z-1),(.65,1.2,.7),mats['dark'],3)
+    if kind=='launch':
+        pole('Heavy steel pusher plate',(0,28,-.1),(0,28,.45),4.8,mats['rust'],48)
+        for index in range(12):
+            angle=index*math.tau/12
+            x,y=math.cos(angle)*4,28+math.sin(angle)*4
+            pole('Pusher plate shock absorber',(x,y,.4),(x*.28,28+(y-28)*.28,3),.14,mats['rust'],12)
+    if kind=='glacier':
+        ice=mats['snow'].copy()
+        ice.name='Blue compact glacier ice'
+        ice.diffuse_color=(.13,.36,.49,1)
+        ice.node_tree.nodes.get('Principled BSDF').inputs['Base Color'].default_value=ice.diffuse_color
+        for i in range(15):
+            x=-22+i*3
+            wall=ball('Fractured granite climbing face',(x,26,9+math.sin(i)*2),(3.2,6,12),mats['rock'],2)
+            weathered_stone(wall,seed+i)
+            wall.rotation_euler.y=rng.uniform(-.12,.12)
+            serac=ball('Blue glacier serac',(x,17,1),(2.5,5,rng.uniform(2,5)),ice,2)
+            weathered_stone(serac,seed+i+30)
+    if kind in ['nest','festival']:
+        z=8 if kind=='nest' else 0
+        for i in range(20):
+            a=i*math.tau/20
+            pole('Open white lattice nest',(math.cos(a)*4,5+math.sin(a)*4,z),
+                 (math.cos(a+.7)*3,5+math.sin(a+.7)*3,z+4),.065,mats['white'])
+            bpy.context.object.hide_render=True
+        woven_nest(z,mats['white'])
+        if kind=='nest':
+            for x,y in [(-5,8),(5,9)]:
+                tree(x,y,height(x,y,seed),15,mats['bark'],mats['leaf'],rng)
+        for i in range(30):
+            x,y=rng.uniform(-9,9),rng.uniform(1,20)
+            ball('Warm firefly',(x,y,rng.uniform(1,6)),(.025,.025,.025),mats['lamp'],1)
+    if kind=='ridge':
+        for i in range(4):
+            pole('Young tower growth rib',(-1+i*.6,8,0),(-1+i*.6,8,5+i*.3),.12,mats['white'])
+    if kind=='ration':
+        for x in [-2.1,2.1]:pole('Empty ration queue railing',(x,-2,.65),(x,15,.65),.055,mats['rust'])
+        for y in [0,4,8,12]:
+            for x in [-2.1,2.1]:pole('Railing post',(x,y,0),(x,y,.7),.05,mats['rust'])
+    if kind=='repair':
+        from mathutils import Matrix
+        # Three distinct broken radios, with no people in danger.
+        for original in list(bpy.context.scene.objects):
+            if original.type=='MESH' and any(word in original.name.lower() for word in ['radio','grille','knob','tube','aerial']):
+                for offset in [-2.1,2.1]:
+                    copy=original.copy()
+                    copy.data=original.data
+                    bpy.context.collection.objects.link(copy)
+                    copy.matrix_world=Matrix.Translation((offset,0,0)) @ original.matrix_world
+
+
+def surface_textures(materials, shacados):
+    root=Path(__file__).parent/'assets'
+    mat=materials['ground']
+    asset='forest_ground_04' if shacados else 'leafy_grass'
+    nodes=mat.node_tree.nodes
+    links=mat.node_tree.links
+    bsdf=nodes.get('Principled BSDF')
+    coords=nodes.new('ShaderNodeTexCoord')
+    mapping=nodes.new('ShaderNodeVectorMath')
+    mapping.operation='SCALE'
+    mapping.inputs[3].default_value=.35
+    links.new(coords.outputs['UV'],mapping.inputs[0])
+    mapping.inputs[3].default_value=1
+    for suffix,socket in [('diff','Base Color'),('rough','Roughness'),('nor_gl',None)]:
+        image=nodes.new('ShaderNodeTexImage')
+        image.image=bpy.data.images.load(str(root/f'{asset}_{suffix}_1k.jpg'),check_existing=True)
+        if suffix!='diff': image.image.colorspace_settings.name='Non-Color'
+        links.new(mapping.outputs[0],image.inputs['Vector'])
+        if suffix=='diff':
+            tint=nodes.new('ShaderNodeMixRGB')
+            tint.blend_type='MULTIPLY'
+            tint.inputs[0].default_value=1 if shacados else .65
+            tint.inputs[2].default_value=(.40,.36,.28,1) if shacados else (.32,.72,.18,1)
+            links.new(image.outputs['Color'],tint.inputs[1])
+            links.new(tint.outputs[0],bsdf.inputs[socket])
+        elif socket:
+            links.new(image.outputs['Color'],bsdf.inputs[socket])
+        else:
+            normal=nodes.new('ShaderNodeNormalMap')
+            normal.inputs['Strength'].default_value=.6
+            links.new(image.outputs['Color'],normal.inputs['Color'])
+            links.new(normal.outputs[0],bsdf.inputs['Normal'])
+    for key,asset,scale in [('bark','wood_table_001',.65),('brick','brown_brick_02',.5),('rust','rusty_metal_02',.8)]:
+        mat=materials[key]
+        nodes,links=mat.node_tree.nodes,mat.node_tree.links
+        bsdf=nodes.get('Principled BSDF')
+        coords=nodes.new('ShaderNodeTexCoord')
+        mapping=nodes.new('ShaderNodeVectorMath')
+        mapping.operation='SCALE'
+        mapping.inputs[3].default_value=scale
+        links.new(coords.outputs['Object'],mapping.inputs[0])
+        for suffix,socket in [('diff','Base Color'),('rough','Roughness')]:
+            image=nodes.new('ShaderNodeTexImage')
+            image.image=bpy.data.images.load(str(root/f'{asset}_{suffix}_1k.jpg'),check_existing=True)
+            image.projection='BOX'
+            image.projection_blend=.2
+            links.new(mapping.outputs[0],image.inputs['Vector'])
+            if suffix!='diff': image.image.colorspace_settings.name='Non-Color'
+            if suffix=='diff' and shacados:
+                soot=nodes.new('ShaderNodeMixRGB')
+                soot.blend_type='MULTIPLY'
+                soot.inputs[0].default_value=1
+                soot.inputs[2].default_value={'bark':(.60,.46,.32,1),'brick':(.45,.39,.32,1),'rust':(.42,.32,.22,1)}[key]
+                links.new(image.outputs['Color'],soot.inputs[1])
+                links.new(soot.outputs[0],bsdf.inputs[socket])
+            else:
+                links.new(image.outputs['Color'],bsdf.inputs[socket])
+            if suffix=='rough':
+                relief=nodes.new('ShaderNodeBump')
+                relief.inputs['Strength'].default_value=.3
+                relief.inputs['Distance'].default_value=.035
+                links.new(image.outputs['Color'],relief.inputs['Height'])
+                links.new(relief.outputs[0],bsdf.inputs['Normal'])
+
+    # Triplanar photogrammetry detail also covers authored cliff silhouettes
+    # and the orbital rock. Desaturation removes terrestrial moss coloration.
+    mat=materials['rock']
+    nodes,links=mat.node_tree.nodes,mat.node_tree.links
+    bsdf=nodes.get('Principled BSDF')
+    coords=nodes.new('ShaderNodeTexCoord')
+    for suffix,socket in [('diff','Base Color'),('rough','Roughness'),('nor_gl',None)]:
+        texture=nodes.new('ShaderNodeTexImage')
+        extension='exr' if suffix=='nor_gl' else 'jpg'
+        texture.image=bpy.data.images.load(str(root/'rock_moss_set_01'/'textures'/f'rock_moss_set_01_{suffix}_1k.{extension}'),check_existing=True)
+        texture.projection='BOX'
+        texture.projection_blend=.3
+        links.new(coords.outputs['Object'],texture.inputs['Vector'])
+        if suffix!='diff': texture.image.colorspace_settings.name='Non-Color'
+        if suffix=='diff':
+            gray=nodes.new('ShaderNodeRGBToBW')
+            ramp=nodes.new('ShaderNodeValToRGB')
+            ramp.color_ramp.elements[0].color=(.08,.09,.085,1)
+            ramp.color_ramp.elements[1].color=(.48,.50,.47,1)
+            links.new(texture.outputs['Color'],gray.inputs[0])
+            links.new(gray.outputs[0],ramp.inputs[0])
+            links.new(ramp.outputs[0],bsdf.inputs[socket])
+        elif socket: links.new(texture.outputs['Color'],bsdf.inputs[socket])
+        else:
+            normal=nodes.new('ShaderNodeNormalMap')
+            normal.inputs['Strength'].default_value=.8
+            links.new(texture.outputs['Color'],normal.inputs['Color'])
+            links.new(normal.outputs[0],bsdf.inputs['Normal'])
+
+
+def scanned_understory(seed, ground_height):
+    """Linked CC0 photogrammetry instances; never exported to the web mesh."""
+    from mathutils import Matrix
+    root=Path(__file__).parent/'assets'
+    rng=random.Random(seed+710)
+    for asset,count in [('fern_02',180),('rock_moss_set_01',24)]:
+        with bpy.data.libraries.load(str(root/asset/f'{asset}_1k.blend'),link=False) as (source,target):
+            target.objects=list(source.objects)
+        templates=[obj for obj in target.objects if obj and obj.type=='MESH']
+        for template in templates:
+            template['render_only']=True
+        for index in range(count):
+            template=templates[index%len(templates)]
+            obj=template.copy()
+            obj.data=template.data
+            obj.parent=None
+            x,y=rng.uniform(-19,19),rng.uniform(-8,33)
+            size=rng.uniform(.6,1.7) if asset=='fern_02' else rng.uniform(.35,1.1)
+            obj.matrix_world=Matrix.Translation((x,y,ground_height(x,y,seed)-.03)) @ Matrix.Rotation(rng.random()*math.tau,4,'Z') @ Matrix.Scale(size,4)
+            obj['render_only']=True
+            bpy.context.collection.objects.link(obj)

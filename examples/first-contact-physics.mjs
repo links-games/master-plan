@@ -37,8 +37,8 @@ export const PILOT_SCENE = Object.freeze({
 
 // Dyson's optimistic nuclear-pulse ("ablation") ship reaches about c/30
 // (F. J. Dyson, "Interstellar Transport", Physics Today, October 1968).
-// It is the fastest drive the least advanced spacefaring civilization,
-// Shacados, could build (docs/master-plan/lore/shacados.md).
+// Use it as an assumed upper bound for this kinematic study of Shacados
+// (docs/master-plan/lore/shacados.md), not proof of buildable hardware.
 export const NUCLEAR_PULSE_MAX_KM_S = 1e4;
 
 // Proposed variant: a crude Shacados nuclear-pulse probe at the drive limit,

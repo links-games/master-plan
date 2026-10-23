@@ -7,7 +7,7 @@ export const CONCEPTS_DIR = 'docs/master-plan/concepts';
 
 // [title, world used in image prompts, Raya loading-screen place]
 // Collections from `td` on were added for the Raya feedback (R55–R76); their
-// art is pending and their pages carry image descriptions instead.
+// pages retain detailed scene descriptions alongside generated art.
 export const FAMILIES = {
   pz: [
     'Puzzles',
@@ -87,11 +87,11 @@ export const FAMILIES = {
   sh: [
     'Shacados',
     'the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions',
-    "Raya's star as a faint dot seen through the smog over a Shacados rooftop",
+    "Raya's bright star seen through a clear gap in the smog over a Shacados rooftop",
   ],
 };
 
-export const PENDING_ART_FAMILIES = new Set(['td', 'pk', 'ry', 'sh']);
+export const STORY_FAMILIES = new Set(['td', 'pk', 'ry', 'sh']);
 
 export const familyTitle = (family) => FAMILIES[family][0];
 
@@ -114,5 +114,24 @@ export function readLibrary() {
 
 export const familyOf = (gameId) => gameId.split('-')[0].toLowerCase();
 
-export const hasArt = (gameId) =>
-  existsSync(join(CONCEPTS_DIR, 'art', gameId.toLowerCase(), 'manifest.json'));
+export const hasArtViews = (gameId, views, conceptsDir = CONCEPTS_DIR) => {
+  const dir = join(conceptsDir, 'art', gameId.toLowerCase());
+  if (!existsSync(join(dir, 'manifest.json'))) {
+    return false;
+  }
+  const manifest = JSON.parse(readFileSync(join(dir, 'manifest.json'), 'utf8'));
+  return (
+    views.every(
+      (view) =>
+        manifest.images.some((image) => image.file === `${view}.webp`) &&
+        existsSync(join(dir, `${view}.webp`))
+    ) && existsSync(join(dir, 'thumbnail.webp'))
+  );
+};
+
+export const hasArt = (gameId, conceptsDir = CONCEPTS_DIR) =>
+  hasArtViews(
+    gameId,
+    ['01-gameplay', '02-world', '03-details', '04-discovery'],
+    conceptsDir
+  );

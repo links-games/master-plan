@@ -1,0 +1,57 @@
+{
+  "gameId": "SH-06",
+  "images": [
+    {
+      "file": "01-gameplay.webp",
+      "direction": "Gameplay",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T20:30:54.926976+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "61bffcafcb0660a20b48a86a52c62e1451893b9b38c4abd9f50fb87333bfbc38",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution original educational game concept. Request 2048x2048 pixels or the highest native resolution available.\nMandatory style: flat 2D storybook game illustration. Draw a very simple graphic screen print with thick charcoal ink contours and only six solid spot colors. Broad flat shapes, almost no texture, no gradients, no realistic modeling. Absolutely no 3D rendering, photography, cinematic lighting, detailed scenery, glossy shading or depth of field. The result should look like a small set of carefully drawn paper shapes, not a painted movie frame.\nGame: Raker's Dune (SH-06). Mechanic: Sorting and salvage puzzle.\nShow this exact playable interaction, with large readable pieces: A slope of rusted scrap tumbles gently down the screen. The player tests each piece with a magnet or a scratch and drops it into big baskets for iron, copper wire, glass and rubber, while a sack kite flies overhead.\nLearning objective: Materials and their properties, sorting, reuse.\nShacados setting: a small, simplified backdrop of soot-gray industrial silhouettes. Rust, mustard, ash, sick green, one lamp-orange light and one small green plant. Humanlike people in patched work clothes and scarves, dignified and hopeful. Technology from roughly 1890–1960. Keep people secondary to the board or activity. Leave generous quiet space around the pieces.\nOne complete original composition. No collage, panels, written title, logo, watermark, shop, advertising, weapons, gore or cruelty. Use shape and pattern as well as color. Concept art, not a validated scientific diagram.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "02-world.webp",
+      "direction": "World",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:15:12.377556+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "a60571d041be036ccf7ec7df1b24523b7d391f01f4b214346786d3fc970851f0",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Raker's Dune (SH-06). Genre/mechanic: Sorting and salvage puzzle.\nPrimary scene and action: A slope of rusted scrap tumbles gently down the screen. The player tests each piece with a magnet or a scratch and drops it into big baskets for iron, copper wire, glass and rubber, while a sack kite flies overhead.\nThis view: The scrap dunes: rolling hills of rusted machines, wheels, pipes and broken glass stretching to a smoky horizon. Red-brown dust blows across them in ribbons, and dead trucks lie where they stopped. A child flies a kite made from a grain sack. In the shade of an upturned boiler, a kettle sits on a small orange fire beside a single blooming thistle.\nLearning objective expressed by the actual interaction: Materials and their properties, sorting, reuse.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: World. Show a wide establishing key visual of the game world, with the specific gameplay interaction visible in the foreground. Use cinematic anime-inspired environmental painting, layered depth and thoughtful lighting.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.\nMandatory style: a traditional hand-painted 2D anime background and anime character drawing, visible watercolor and gouache brushwork, expressive ink contours, atmospheric painted layers. A cinematic environment painting, never a 3D render or photograph. Preserve painterly material marks and illustrated faces throughout.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "03-details.webp",
+      "direction": "Characters and materials",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:27:42.424356+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b1edf9f9b83315b89f16ade0a274f9d07b77a8bc47cfbb97a25b3dda360e7b9c",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Raker's Dune (SH-06). Genre/mechanic: Sorting and salvage puzzle.\nPrimary scene and action: A slope of rusted scrap tumbles gently down the screen. The player tests each piece with a magnet or a scratch and drops it into big baskets for iron, copper wire, glass and rubber, while a sack kite flies overhead.\nThis view: Rakers of all ages in layered patched clothes, goggles against the dust, scarves over noses and gloves sewn from old boot leather. Teyo carries a horseshoe magnet on a string and shows a younger boy how to use it. Woven wire baskets, a rusted wheelbarrow, sorted heaps of copper, green glass and iron. Rust, soot, mustard and ash, with one orange fire.\nLearning objective expressed by the actual interaction: Materials and their properties, sorting, reuse.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Characters and materials. Show a close-up concept of the specific game objects and a friendly Links character interacting with them. Use a tactile, beautifully lit stylized 3D diorama, physically plausible materials and clear silhouettes.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    },
+    {
+      "file": "04-discovery.webp",
+      "direction": "Expanded play",
+      "tool": "image_gen.imagegen (built-in)",
+      "modelRequested": "GPT Image 2.5 or latest available",
+      "modelReported": null,
+      "generatedAt": "2026-10-22T19:27:44.047262+00:00",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "88a550665296ca75acb7e1ee5be62d5c527e1be895fb09e050741d5c12b16ac4",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone high-resolution concept art for an original educational mobile-first game. Request 2048x2048 pixels or the highest native resolution available.\nGame: Raker's Dune (SH-06). Genre/mechanic: Sorting and salvage puzzle.\nPrimary scene and action: A slope of rusted scrap tumbles gently down the screen. The player tests each piece with a magnet or a scratch and drops it into big baskets for iron, copper wire, glass and rubber, while a sack kite flies overhead.\nThis view: Deeper in the dunes the player finds mixed treasures: tubes still good for radios, springs for menders, bottle glass for greenhouse panes. Requests from neighbors appear as pictures, a mender asking for copper, a gardener asking for glass. The final view shows a greenhouse, a working radio and a mended stove in town, each built from what the player sorted.\nLearning objective expressed by the actual interaction: Materials and their properties, sorting, reuse.\nWorld: the rusted, dusty, smog-covered industrial planet Shacados, with junk everywhere, dying polluted forests and frozen regions, in the shared Links universe.\nArt direction: Expanded play. Show a later, richer playable scenario that develops this exact mechanic and makes its learning objective visible through the objects. Use polished illustrated game art and a different camera and atmosphere from the other views.\nIdentity: dark but dignified and hopeful, for teens and adults. Technology of roughly 1890-1960: riveted steel, coal stoves, vacuum tubes, steam and diesel. Palette of rust, soot, mustard, ash and sick green, with one warm lamp-orange light source for hope and one small living green plant. People are humanlike, in layered patched work clothes with scarves and goggles, tired but never shown as monsters. No gore, corpses or cruelty. Keep the main mechanic unmistakable.\nConstraints: one complete standalone image, no collage, no contact sheet, no inset panels. Original characters, compositions, boards and objects; do not copy existing games' art or trade dress. No violence, weapons, money, shop, advertising, logos, watermarks, or written title. Use pattern and shape as well as color. Educational visuals are concept proposals, not validated scientific diagrams. Preserve physical plausibility where relevant. Beautiful deliberate composition and readable large interaction targets.",
+      "encoding": "WebP quality 92, original pixel dimensions; no upscaling"
+    }
+  ]
+}

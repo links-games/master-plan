@@ -1,0 +1,44 @@
+{
+  "id": "03-first-ride-on-the-chord",
+  "number": 3,
+  "title": "First ride on the Chord",
+  "world": "Raya",
+  "kind": "river",
+  "seed": 2721,
+  "night": false,
+  "ages": 6,
+  "pilot": "scenery-pilots.md#3-first-ride-on-the-chord",
+  "blender": "4.0.2",
+  "engine": "Cycles CPU",
+  "samples": 64,
+  "denoiser": "OpenImageDenoise",
+  "resolution": [1280, 720],
+  "triangles": 19728,
+  "files": {
+    "scene.json": {
+      "bytes": 2130268,
+      "sha256": "a7d22b3bda2d6f2b2ed5b31dd441d6a4fd625b5c2be68220be5ee00c859f0a43"
+    },
+    "environment.blend": {
+      "bytes": 36267341,
+      "sha256": "635f77a60ca8a310710018f2c22daeee940736733dd1122a41cae4cc27f2b419"
+    },
+    "poster.png": {
+      "bytes": 1774178,
+      "sha256": "1b7b5a51a4ea6d155ec20df118e6c2914503735cc3270bd2e566a53f0e556d5e"
+    },
+    "poster.webp": {
+      "bytes": 216868,
+      "sha256": "91c191c27f3f3c19f2c94ae1f65e17b935520671ee1ebfce0084f1d258e7030c"
+    }
+  },
+  "source": "examples/lore-scenes/render.py",
+  "sourceInputs": {
+    "render.py": "dbb70754176c0a75e9efd7393c6f64e5b8ec0652ede2104430f6911bd3e5d5a1",
+    "detail.py": "736452c53617228d0246fee29b84e463810449235266b4e052579cc52c37bdf1",
+    "trees.py": "b1bbfb25e28b3b69d6b8d7558256073d52915e8f5d3eb9e5cb8d615d33f63f51",
+    "scenes.json": "c55d64d49782eeb9da03c9e90e4ce7c5bcc000c77aeeb4b629edcb4ab3fd8cfd",
+    "assets/manifest.json": "5ebbdd27b0cc0219a0b805c9743555314270fec9d82974640585d41404a42171"
+  },
+  "webPreview": "WebP quality 90; original rendered pixel dimensions"
+}
